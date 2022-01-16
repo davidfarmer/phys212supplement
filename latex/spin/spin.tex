@@ -132,7 +132,8 @@ a value $E_2$ in a measurement of the energy of this particle?  (c)
 What is the probability of obtaining a value of either $E_1$, $E_3$,
 or $E_4$ when measuring the energy of this particle?
 
-\solution
+%\solution
+\begin{solution}
 (a) To calculate the probability, we determine the coefficient of the
 basis state vector $|\mbox{$E_3$}\rangle$, which is the
 probability amplitude $c_3 = 2i/\sqrt{6}$, and calculate its magnitude
@@ -160,6 +161,7 @@ This makes sense because these are the only three values of energy that
 could be measured so that the probability of measuring any one of them
 is 100\%.
 
+\end{solution}
 \end{example}
 
 In part (c) of the previous example, we see that if the squares of
@@ -188,7 +190,9 @@ Consider a particle in a state given by the following linear superposition of en
 Determine some possible values for the probability amplitude $c_3$
 such that this state is properly normalized.
 
-\solution We use the condition given in equation \ref{eqn:normalize}
+%\solution 
+\begin{solution}
+We use the condition given in equation \ref{eqn:normalize}
 \begin{eqnarray}
 |c_1|^2 + |c_2|^2 + |c_3|^2 & = & 1 \nonumber\\
 \nonumber \\
@@ -204,6 +208,7 @@ because
 |c_3|^2 = \left| i \sqrt{\frac{1}{3}}\right|^2 = \left( i \sqrt{\frac{1}{3}} \right) \left( -i \sqrt{\frac{1}{3}} \right) = - i^2 \left(\frac{1}{3} \right) = + \frac{1}{3}  .\nonumber
 \end{equation}
 
+\end{solution}
 \end{example}
 
 \section{Quantum Measurements}
@@ -565,7 +570,9 @@ $|\mbox{$+y$}\rangle$ and $|\mbox{$-y$}\rangle$; they are important.}
 \label{exam:ztox}
 Using Equations~\ref{eq:plusx} and \ref{eq:minusx}, show that we can write the spin-up $S_z$ state $|\mbox{$+z$}\rangle$ as a linear superposition of the states $|\mbox{$+x$}\rangle$ and $|\mbox{$-x$}\rangle$.
 
-\solution If we add equations \ref{eq:plusx} and \ref{eq:minusx} we obtain
+%\solution 
+\begin{solution}
+If we add equations \ref{eq:plusx} and \ref{eq:minusx} we obtain
 
 \begin{eqnarray}
 |\mbox{$+x$}\rangle + |\mbox{$-x$}\rangle & = & \left[ \sqrt{\frac{1}{2}}|\mbox{$+z$}\rangle + \sqrt{\frac{1}{2}}|\mbox{$-z$}\rangle \right] + \left[ \sqrt{\frac{1}{2}}|\mbox{$+z$}\rangle - \sqrt{\frac{1}{2}}|\mbox{$-z$}\rangle \right] \nonumber\\
@@ -588,6 +595,7 @@ In a similar manner we can use equations \ref{eq:plusx} $-$
 the others.  The complete set of transformations among the basis spin
 states appears in Table \ref{table:spinTransform}.
 
+\end{solution}
 \end{example}
 
 
@@ -639,7 +647,8 @@ the $z$-component of the spin angular momentum is measured.  (b) Calculate the p
 will be measured to have an $x$-component of spin of $-\hbar/2$.  (c)
 Calculate the probability that an electron in the state $|\psi\rangle$
 will be measured to have a $y$-component of spin of $-\hbar/2$.
-\solution
+%\solution
+\begin{solution}
 (a) This is straightforward because $|\psi\rangle$ is written
 as a superposition of the $|\mbox{$\pm z$}\rangle$-states. The probability of
 the spin being found as ``spin up'' is the square of the
@@ -681,6 +690,7 @@ in measuring a value of the $y$-component of spin, $S_y$, we need to
 express our quantum state as a superposition of the $S_y$ basis states.
 We will leave this to you to finish, but you should obtain an answer of
 0.5 for the probability.  
+\end{solution}
 \end{example}
 
 \section{Spin Magnetic Moment in a Magnetic Field}
@@ -768,7 +778,9 @@ The reversal of spin component $S_z$ is called {\it spin-flipping}.
 \label{example:spinFlip}
 Consider a proton that is placed in a magnetic field such that it is in the spin-up state $|\mbox{$+z$}\rangle$. If the magnitude of the magnetic field is $B_0 = 24.8 \units{mT}$, determine the frequency of the photon that would be absorbed by the proton causing it to make a transition to the spin-down state?
 
-{\bf Solution:} For the magnetic field strength given, the energy difference between the spin-up and spin-down states is 
+%{\bf Solution:} 
+\begin{solution}
+For the magnetic field strength given, the energy difference between the spin-up and spin-down states is 
 \begin{eqnarray}
 \Delta E_\text{proton} 
   &=& 2 \mu_\text{p} B_0 \nonumber \\
@@ -782,6 +794,7 @@ f_\text{photon} = \frac{E_\text{photon}}{h} = \frac{\Delta E_\text{proton}}{h}
   = \frac{6.99 \times 10^{-28} \units{J}}{6.63 \times 10^{-34} \units{J$\cdot$s}} = 1.05 \times 10^{6} \units{Hz} = 1.05 \units{MHz} . \nonumber
 \end{equation}
 This frequency lies in the region of the electromagnetic spectrum associated with radio waves.
+\end{solution}
 \end{example}
 
 Like the proton, an electron also has intrinsic spin with spin quantum 
