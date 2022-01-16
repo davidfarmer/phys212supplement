@@ -231,7 +231,9 @@ square well of width $L$.  Consider a particular carbon nanotube
 of length $L = 10.0\units{nm}$ and negligible diameter.  Calculate 
 the ground state energy for an electron trapped inside of this carbon nanotube.
 
-{\bf Solution:} Approximating the carbon nanotube as an infinite
+%{\bf Solution:} 
+\begin{solution}
+Approximating the carbon nanotube as an infinite
 square well, the possible allowed energies for the electron are 
 given by Eq.~(\ref{eq:squarewell_6}).  For the ground state
 energy, where $n = 1$, the energy is given as
@@ -255,6 +257,7 @@ E_1 &=& (1)^2 \frac{(1240\units{eV$\cdot$nm})^2}
 \end{eqnarray} 
 It is, of course, valid to use SI units for $h$, $m_\text{e}$, and $L$, but 
 this entails calculations with large exponents and more unit conversions.
+\end{solution}
 \end{example}
 
 % \section{Probability and Probability Density for the Particle in a Box}
@@ -292,7 +295,9 @@ the particle most likely to be found within the well?  (b) What is the
 probability of finding the particle between positions $x = L/4$ and $x
 = L/2$?
 
-{\bf Solution: (a)} The wavefunction for this particle is shown as
+%{\bf Solution: 
+\begin{solution}
+(a)} The wavefunction for this particle is shown as
 $\psi_2(x)$ in Fig.~\ref{fig:infinite_sq_well_solutions}.  Using
 Eq.~(\ref{eq:squarewell_7}), the probability density for this
 wavefunction is
@@ -335,6 +340,7 @@ Because of the symmetry of the probability density, the area under the
 curve of $\left|\psi\right|^2$ between $x = L/4$ and $x = L/2$ is
 one-quarter of the total area, therefore it makes sense that the
 probability is $\frac{1}{4}$.
+\end{solution}
 \end{example}
 
 % If a particle is in a {\bf three-dimensional} box (i.e., a
@@ -420,7 +426,9 @@ with $\kappa > 0$.
   Schr\"odinger's equation~(\ref{eq:SchrodingerE<U}) and determine
   what the constant $\kappa$ must be for this to be a solution.
 
-\noindent {\bf Solution:} To see if $\psi(x) = C e^{+\kappa x}$ is a
+%\noindent {\bf Solution:} 
+\begin{solution}
+To see if $\psi(x) = C e^{+\kappa x}$ is a
 solution, we first evaluate the left hand side of Eq.~(\ref{eq:SchrodingerE<U})
  by calculating the second derivative of $\psi(x)$:
 \begin{eqnarray}
@@ -439,6 +447,7 @@ therefore
 \begin{equation}
 \kappa^2 = \frac{2m}{\hbar^2}\left( U_0 - E \right) .
 \end{equation}
+\end{solution}
 \end{example}
 \newpage
 
@@ -729,7 +738,9 @@ radiation can be emitted from this molecule, and calculate (b) the
 largest and (c) the smallest wavelengths of
 EM radiation that can be emitted from this molecule.
 
-{\bf Solution:} (a) There are several possible transitions that an 
+%{\bf Solution:} 
+\begin{solution}
+(a) There are several possible transitions that an 
 electron can make that will emit a photon in this system. An electron
 can drop from energy level 3 down to level 0, 1 or 2; it can drop
 from energy level 2 down to level 0 or 1; and it can drop from
@@ -779,6 +790,7 @@ to a transition from energy level 3 down to energy level 0.
 \end{equation}
 This wavelength is also outside the visible spectrum (it's ultraviolet, in 
 this case).
+\end{solution}
 \end{example}
 
 Everything in the previous example works the other way for absorption. 
@@ -828,7 +840,8 @@ energy states occupied by an electron) and an empty conduction band separated
 by a band gap energy of $3.2\units{eV}$. Calculate the largest wavelength of light 
 most effectively absorbed by this detector.
 
-{\bf Solution:} 
+%{\bf Solution:} 
+\begin{solution}
 The energy of the photon $E_\text{ph} = |\Delta E|$
 and since $E_\text{ph} = hc/\lambda$, it follows that $hc/\lambda = |\Delta E|$.
 The largest wavelength corresponds to the smallest energy
@@ -837,6 +850,7 @@ unoccupied energy level is at the bottom of the conduction band, so
 $\Delta E_\text{min} = 3.2\units{eV}$.
 So $\lambda_\text{max} = hc/\Delta E 
             = (1240\units{eV$\cdot$nm})/(3.2 \units{eV}) = 387.5\units{nm}$. 
+\end{solution}
 \end{example}
 
 \section{Fluorescence and Phosphorescence}
@@ -960,7 +974,9 @@ $1.38\units{eV}$  and $\eta = 20.5$) is fabricated with a radius
 $4.22\units{nm}$.  Calculate the longest wavelength emitted
 by this quantum dot.
 
-{\bf Solution:} The longest wavelength corresponds to the smallest
+%{\bf Solution:} 
+\begin{solution}
+The longest wavelength corresponds to the smallest
 energy (Eq.~(\ref{eq:QDot})). 
 Since, $E_\text{ph} = hc/\lambda$, and using the trick employed in
 Example~\ref{exam:nanoTube} of multiplying the numerator and 
@@ -984,6 +1000,7 @@ Rearranging this gives
 %             \cdot(3.0\times 10^8\units{m/s})}
 %              {(1.38\units{eV})\cdot (1.6\times 10^{-19}\units{J/eV}) +20.5\frac{(6.63\times 10^{-34}\units{J$\cdot$s})^2} {8\cdot (9.11\times 10^{-31}\units{kg})\cdot (4.22\times 10^{-9}\units{m})^2}} \nonumber \\
 %        &=& 6.85\times 10^{-7} \units{m} \nonumber \\
+\end{solution}
 \end{example}
 
 One final question in this chapter: {\it when will an excited electron
