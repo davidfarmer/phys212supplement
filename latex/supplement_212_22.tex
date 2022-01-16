@@ -1,0 +1,81 @@
+\documentclass[11pt,letterpaper]{book}
+
+\usepackage{graphicx}
+\usepackage[small,bf,hang]{caption2}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{multicol}
+\usepackage{supplement}  % local style file, defines example env
+
+\begin{document}
+\frontmatter
+
+\setlength{\topskip}{7in}
+\noindent
+Copyright \copyright\ 2022 by the Bucknell University Physics \& Astronomy 
+Department.\\ 
+
+\noindent
+All rights reserved. 
+
+\setcounter{tocdepth}{0}  % gets rid of sections in table of contents
+
+\setlength{\topskip}{0in}
+
+\tableofcontents
+
+\setcounter{tocdepth}{1}  % necessary for list of tables
+
+\listoftables
+
+%\listoffigures
+\newpage
+\thispagestyle{empty}
+
+
+\mainmatter
+
+%\chapter*{Additional Problems}
+%\renewcommand{\labelenumi}{\bf A\arabic{enumi}}
+
+\pagestyle{myheadings}
+\markboth{ADDITIONAL PROBLEMS}{ADDITIONAL PROBLEMS}
+\input{additional_problems/additional_problems.tex}
+\pagestyle{headings}
+
+\renewcommand{\labelenumi}{\bf \arabic{chapter}.\arabic{enumi}}
+
+\input{phasors/phasors.tex}
+
+\input{beyond_classical/beyond_classical.tex}
+
+\input{waves_prob_and_uncertainty/waves_prob_and_uncertainty}
+
+\input{quantized_energies/quantized_energies.tex}
+
+\input{spin/spin.tex}
+
+\input{quantum_statistics/quantum_statistics.tex}
+
+\input{semiconductors_3D/semiconductors_3D.tex}
+
+\input{quantum_entanglement/quantum_entanglement.tex}
+
+
+\input{particles/particles.tex}
+
+\input{fundamental_forces_I/fundamental_forces_I.tex}
+
+\input{fundamental_forces_II/fundamental_forces_II.tex}
+
+\input{cosmology/cosmology.tex}
+
+\newpage
+
+\pagestyle{myheadings}
+\markboth{ANSWERS}{ANSWERS}
+\input{answers.tex}
+\pagestyle{headings}
+
+
+\end{document}
