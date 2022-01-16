@@ -1,0 +1,1390 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter[Quantum States and Spin]{Quantum States and Spin}
+\label{chapter:spin}
+%\setcounter{ex}{0}
+
+\section{Introduction}
+
+In the previous chapters, 
+we have emphasized the use of the wavefunction $\psi(x)$ to describe
+the quantum state of a particle.  This wavefunction formalism is mainly
+focused on answering the question ``Where is the particle?'' by virtue of
+the fact that the square of the magnitude of the wavefunction, $\left|
+\psi(x) \right|^2$, represents the probability density for finding
+the particle near the location $x$. This wavefunction approach is
+useful in describing how electrons arrange themselves in an individual
+atom as well as describing how electrons behave in a conductor, among
+other things.  On the other hand, there are certain systems for which
+the wavefunction approach is neither appropriate nor meaningful, as for
+example the quantum description of photon states and, as we shall see
+later in this chapter, the quantum description of spin. Therefore in
+this chapter we will develop a more abstract mathematical structure in
+which to describe quantum systems that is more widely applicable and
+also reveals more of the non-intuitive quantum behavior.  We will use
+this new mathematical formalism to describe a property of elementary
+particles called spin angular momentum, or simply {\em spin}, and how the
+spin of the particle interacts with a magnetic field. This description
+has important implications for understanding nuclear magnetic resonance
+(NMR) which is the basis for magnetic resonance imaging (MRI).
+
+
+\section{State Representation for Quantum Systems}
+
+In order to proceed further with our discussion of quantum mechanics, we
+will develop a mathematical framework in which to discuss the more general
+behavior of quantum systems that will allow us to perform calculations and
+make predictions that can be compared with experiment.  As stated above,
+the wavefunction formalism gives a description of quantum behavior in
+which measurement of the position of the particle is of prime importance.
+A more encompassing mathematical structure for describing quantum behavior
+was devised by the English theoretical physicist P.A.M. Dirac in 1930
+that is capable of describing a wide variety of phenomena,
+including photons and spin.
+
+Fundamental to this new description is the concept of the quantum {\em
+state}.  Mathematically, the state of a particle is represented by the
+symbol $|\mbox{$\phi$}\rangle$ called a ``state'' or ``ket vector.''
+The quantity $\phi$ written inside the symbol $|\mbox{\ \ }\rangle$
+usually gives some meaningful description which uniquely describes the
+state in which the particle is at a certain time.  For example, if a
+particle was in a state of constant momentum $p$, moving uniformly through
+space not subject to any forces, then we could write $|\mbox{$p$}\rangle$
+for its state vector. 
+% Similarly, if we are talking about an electron in a
+% hydrogen atom with specified quantum numbers $n$, $l$, and $m_l$, as in
+%the previous chapter, then we would write $|\mbox{$n, l, m_l$}\rangle$
+%for its state vector. 
+These state vectors satisfy a set of mathematical
+rules similar to those for ordinary vectors in 3-dimensional space
+(like $\vec{A}, \vec{B}$, etc.), hence the reason for referring to them
+as state {\em vectors}.
+
+As an example, we have seen that for a one-dimensional infinite potential
+square well, a particle placed in this well can have a discrete set of
+possible energy values ($E_1$, $E_2$, $E_3$, $\ldots$, $E_n$, $\ldots$).
+For each of these values of energy we can define a state vector
+($|\mbox{$E_1$}\rangle$, $|\mbox{$E_2$}\rangle$, $|\mbox{$E_3$}\rangle$,
+$\ldots$, $|\mbox{$E_n$}\rangle$, $\ldots$) that represents the system
+in a state with that definite value of energy.  So for a particle that
+is placed in the infinite well in a state $|\mbox{$E_3$}\rangle$,
+if we were to measure the particle's energy we would definitely get
+the value $E_3$ as a result of that measurement.  The collection
+of state vectors \{$|\mbox{$E_1$}\rangle$, $|\mbox{$E_2$}\rangle$,
+$|\mbox{$E_3$}\rangle$,$\ldots$\} for all possible states is said to be
+a {\em basis}, (in this case an {\em energy} basis).  This set of state
+vectors is analogous to the set of unit vectors \{$\hat{\imath}$, 
+$\hat{\jmath}$,
+$\hat{k}$\} that we used with ordinary vectors in three-dimensions. Recall
+that we could write any 3-dimensional vector $\vec{A}$ as a linear
+combination of these unit vectors
+
+\begin{equation}
+\vec{A} = A_x\, \hat{\imath}  + A_y\, \hat{\jmath} + A_z\, \hat{k}
+\end{equation}
+
+\noindent where $A_x$, $A_y$, and $A_z$ are the $x$-, $y$-, and
+$z$-components of $\vec{A}$.  In an analogous fashion we can write
+an expression for an arbitrary state of a quantum system as a linear
+combination of the energy basis states
+
+\begin{equation}
+|\mbox{$\phi$}\rangle = c_1 |\mbox{$E_1$}\rangle + c_2 |\mbox{$E_2$}\rangle + c_3 |\mbox{$E_3$}\rangle + \cdots ,
+\label{eqn:linearSuper}
+\end{equation}
+
+\noindent where the coefficients $c_1$, $c_2$, $\ldots$, are complex
+numbers.\footnote{Recall that a complex number $z$ is defined as $z = a +
+ib$, where $a$ and $b$ are real numbers and $i$ is the imaginary number
+$i=\sqrt{-1}$. The ``real part'' of the complex number is $a$, and $b$
+is the ``imaginary part.'' The magnitude of a complex number is $|z| =
+\sqrt{z\ z^*}= \sqrt{a^2 + b^2}$, where $z^*$ is the complex conjugate as
+defined in the section (\ref{sec:ProbDensity}).}  In the mathematical
+structure of quantum mechanics, these coefficients have a special
+significance when making predictions about the results of measurements
+on a system.  If we were to measure the energy of a particle in a state
+given by Eq.~(\ref{eqn:linearSuper}), then the probability that we will
+measure a value $E_3$, for instance, is given by $|c_3|^2$.  That is,
+the coefficients tell us something about the probability of finding a
+particle in a certain specific state of the measured quantity, such as
+energy in this case. It is for this reason that the coefficients $c_j$
+are referred to as {\em probability amplitudes}.
+
+\begin{example}{Superposition of states.}
+\label{examp:Super}
+
+Suppose the possible energies for a certain particle are $E_1$,
+$E_2$,  $E_3$, $E_4$, \dots, with the values of energy such that $E_1 <
+E_2 < E_3 < E_4 < \ldots $.  Consider a particle in a state given by
+the following linear superposition of energy basis states:
+
+\begin{equation}
+|\mbox{$\phi$}\rangle = \frac{1}{\sqrt{6}} |\mbox{$E_1$}\rangle + \frac{2 i}{\sqrt{6}} |\mbox{$E_3$}\rangle + \frac{1}{\sqrt{6}} |\mbox{$E_4$}\rangle .
+\end{equation}
+
+(a) Calculate the probability of obtaining a value $E_3$ when the energy
+of the particle is measured.  Calculate similar probabilities for
+obtaining $E_1$ and $E_4$.  (b) What is the probability of obtaining
+a value $E_2$ in a measurement of the energy of this particle?  (c)
+What is the probability of obtaining a value of either $E_1$, $E_3$,
+or $E_4$ when measuring the energy of this particle?
+
+\solution
+(a) To calculate the probability, we determine the coefficient of the
+basis state vector $|\mbox{$E_3$}\rangle$, which is the
+probability amplitude $c_3 = 2i/\sqrt{6}$, and calculate its magnitude
+squared,
+
+\begin{equation} \nonumber
+P(E_3) = |c_3|^2 = \left|\frac{2 i}{\sqrt{6}}\right|^2 = \left(\frac{2 i}{\sqrt{6}}\right) \left(\frac{-2 i}{\sqrt{6}} \right) = \frac{2}{3} .
+\end{equation}
+
+\noindent In a similar manner, $P(E_1) = 1/6 = P(E_4)$.
+
+(b) Since the basis state vector $|\mbox{$E_2$}\rangle$ does not appear in
+the linear superposition, this means that the probability amplitude $c_2 =
+0$ and therefore $P(E_2) = |c_2|^2 = 0$.  Therefore we would never obtain
+the value $E_2$ when measuring the energy of the particle in this state.
+
+(c) Since we want to know the probability of measuring any of these
+values, we simply add the probabilities for measuring each of these
+values:
+
+\begin{equation} \nonumber
+P(E_1, E_3, E_4) = P(E_1) + P(E_3) + P(E_4) = \frac{1}{6} + \frac{2}{3} + \frac{1}{6} = 1 .
+\end{equation}
+This makes sense because these are the only three values of energy that
+could be measured so that the probability of measuring any one of them
+is 100\%.
+
+\end{example}
+
+In part (c) of the previous example, we see that if the squares of
+the probability amplitudes in a linear superposition state give us
+information about probabilities, then the probability amplitudes must
+satisfy the property
+
+\begin{equation}
+|c_1|^2 + |c_2|^2 + |c_3|^2 + |c_4|^2 + \ldots = 1 .
+\label{eqn:normalize}
+\end{equation}
+This condition is referred to as {\em normalization} and a state vector that satisfies this condition is said to be {\em normalized}.  Therefore we conclude:
+\\
+\begin{quote}
+{\bf State vectors which properly describe the quantum state of a particle must be normalized.}
+\end{quote}
+
+\begin{example}{Normalization of states.}
+\label{exam:Normalized}
+Consider a particle in a state given by the following linear superposition of energy basis states
+
+\begin{equation}
+|\mbox{$\phi$}\rangle = \frac{1}{\sqrt{6}} |\mbox{$E_1$}\rangle + \sqrt{\frac{3}{6}} |\mbox{$E_2$}\rangle + c_3 |\mbox{$E_3$}\rangle  .
+\end{equation}
+
+Determine some possible values for the probability amplitude $c_3$
+such that this state is properly normalized.
+
+\solution We use the condition given in equation \ref{eqn:normalize}
+\begin{eqnarray}
+|c_1|^2 + |c_2|^2 + |c_3|^2 & = & 1 \nonumber\\
+\nonumber \\
+\left|\frac{1}{\sqrt{6}}\right|^2 + \left|\sqrt{\frac{3}{6}}\right|^2 + |c_3|^2 & = & 1 \nonumber 
+\end{eqnarray}
+
+\noindent which is satisfied for the value $|c_3|^2 = 1/3$.  The simplest
+solution for the value of the probability amplitude would be $c_3 =
+\sqrt{1/3}$.  However, the solution $c_3 = i \sqrt{1/3}$ also works
+because
+
+\begin{equation}
+|c_3|^2 = \left| i \sqrt{\frac{1}{3}}\right|^2 = \left( i \sqrt{\frac{1}{3}} \right) \left( -i \sqrt{\frac{1}{3}} \right) = - i^2 \left(\frac{1}{3} \right) = + \frac{1}{3}  .\nonumber
+\end{equation}
+
+\end{example}
+
+\section{Quantum Measurements}
+
+As discussed earlier, a quantum state $|\mbox{$\phi$}\rangle$ can be
+written as a linear superposition of a set of states called a basis.
+As shown before, this basis could be a set of states each representing
+a specific energy $E_1$, $E_2$, $E_3$, \ldots . The same quantum state
+$|\mbox{$\phi$}\rangle$ could also be written in terms of a basis of
+states having definite values of some other measurable quantity,
+say momentum ($p_1$, $p_2$, $p_3$, \ldots).  Thus the same state could be
+written as either
+
+\begin{equation}
+\label{eqn:EnergyBasis}
+|\phi\rangle = c_1 |E_1\rangle + c_2 |E_2\rangle 
+     + c_3 |E_3\rangle + \cdots  \hspace{1.0cm} \mbox{(Energy)}
+\end{equation}
+
+\noindent or
+
+\begin{equation}
+\phi\rangle = d_1 |p_1\rangle + d_2 |p_2\rangle 
+  + d_3 |p_3\rangle + \cdots . \hspace{1.0cm} \mbox{(Momentum)}
+\end{equation}
+
+\noindent Which linear superposition we use depends upon which quantity
+we want to measure.  If we are interested in doing an experiment in which
+we measure the energy of the particles, we would therefore use equation
+(\ref{eqn:EnergyBasis}) to compute the probabilities for obtaining
+the allowed energy values $E_1, E_2, E_3, \ldots$ from the probability
+amplitudes $c_1$, $c_2$, $c_3$, \ldots.
+
+In quantum mechanics we consider the measurement of a quantity (say energy
+$E$) associated with a particle in the state $|\mbox{$\phi$}\rangle$ in
+the following way, as indicated in Fig.~\ref{fig:Measurement}.  First,
+a particle is prepared in some quantum state $|\mbox{$\phi$}\rangle$ and
+then is sent into some device (which I have called an {\em Energy Device}
+in the figure) which is capable of measuring the particle's energy.
+As a result of the measurement, the device displays the value obtained in
+the measurement.  The value displayed by the device can be {\em only} one
+of the discrete values $E_1$, $E_2$, $E_3$, \dots, and nothing else! Before
+the measurement is made, we cannot predict what the resulting value
+of measured energy will be for a particle in a state such as given by
+Eq.~(\ref{eqn:EnergyBasis}). We can only calculate the probability of
+getting a particular value.  For instance, Fig.~\ref{fig:Measurement}
+shows the result of a particular measurement yielding the energy value
+$E_2$.  The probability of obtaining this result is $P(E_2) = |c_2|^2$.
+
+\begin{figure}
+\begin{center}
+\scalebox{0.6}{\includegraphics{spin/Measurement}}
+\caption{Conceptual device for measuring the energy of a particle in a state $|\mbox{$\phi$}\rangle$. In this example, the result of the measurement is the energy value $E_2$ and the state of the particle collapses to $|\mbox{$E_2$}\rangle$.}
+\label{fig:Measurement}
+\end{center}
+\end{figure}
+
+Quantum mechanics also has something new to say about the state of the
+particle \emph{after} the measurement is made.  In terms of classical
+physics, the measurement leaves the system untouched and the system is
+left in the same state as it was before the measurement.  On the other
+hand, quantum mechanics says something completely different:
+
+
+\boxittext{
+{\bf Collapse of the State:}  An ideal measurement of the state
+of a system forces the system, at the instant of measurement, into a 
+particular basis state vector corresponding to the measured value.}
+
+As indicated in Fig.~\ref{fig:Measurement}, if a particle is in
+the state $|\mbox{$\phi$}\rangle$ and a measurement of the energy
+results in obtaining a value of $E_2$, then the state of the system
+``collapses'' into the state $|\mbox{$E_2$}\rangle$.  In general, {\bf
+measurements made on quantum systems affect --- and often change --- the
+state of the system.}  This is a profound statement for it says that the
+particle being measured and the measurement device can not be treated
+independently. The measurement device must be considered as part of the
+system being measured!
+
+\section{Spin}
+
+We would now like to introduce a new property of particles that lends
+itself nicely to being described using the new mathematical formalism
+that we have just introduced.  In addition to the angular momentum
+associated with a particle's motion about some origin, many types
+of elementary particles have an \textit{intrinsic} angular momentum,
+as though the particle were a tiny sphere rotating about an internal
+axis.  This internal angular momentum is given the name {\it spin\/}
+and is represented by the vector symbol $\vec{S}$.  Every particle is
+characterized by a spin quantum number, $s$, and 
+%, analogous to equations \ref{eq:Lmag} 
+% and \ref{eq:Lcomponent} for orbital angular momentum,
+the magnitude and $z$-component of spin angular momentum are given by
+
+\begin{equation}
+|\vec{S}| = \sqrt{s(s+1)}\hbar,
+\end{equation}
+\begin{equation}
+S_z = m_s \hbar .
+\label{eq:zComponent}
+\end{equation}
+
+An important issue for spin angular momentum 
+% The major difference between spin and orbital angular momentum in quantum systems 
+is the allowed values associated with the quantum numbers
+$s$. These values can be determined from a complicated mathematical
+analysis whose details are beyond the level of this class.  However,
+the interesting result is that the possible values for spin quantum
+numbers are integer multiples of $1/2$, i.e., $s = 0$, 1/2, 1, 
+3/2, 2, 5/2, \dots, which differ from the allowed values of $l$
+because the list now includes half-integer values.  Electrons, protons,
+neutrons, and $^3$He nuclei all have the same spin quantum number
+$s=1/2$ (sometimes referred to as ``spin-$\frac{1}{2}$'');
+photons have $s=1$ (or ``spin-$1$''); He$^4$ nuclei have $s=0$
+(or ``spin-$0$'').
+
+Every kind of particle has its particular value of $s$ --- for example
+electrons have $s=1/2$.  This means that every electron in the universe
+has {\em exactly} the same intrinsic angular momentum magnitude: $\vert
+\vec{S}\vert = (\sqrt{3}/2)\hbar$.  For classical, macroscopic-sized
+objects, we can change the spin angular momentum by changing the rotation
+rate of the object. However, in quantum mechanics we are stuck with
+a constant magnitude of spin angular momentum for elementary particles.
+
+All elementary particles are classified according to their spin quantum
+numbers $s$.  All particles with integer spin quantum numbers ($s$
+= 0, 1, 2, \dots ) are called {\it bosons\/}, and all particles with
+half-odd integer spin quantum numbers ($s$ = 1/2, 3/2, 5/2, \dots )
+are called {\it fermions\/}.  This distinction is crucial in determining
+the behavior of systems consisting of many of these particles, as will
+be discussed in later chapters.
+
+Equation~(\ref{eq:zComponent}) gives the possible values one can
+measure for the component of spin in the $z$-direction, $S_z$.  For spin
+quantum number $s$, the possible values of $S_z$ are given by $m_s\hbar$,
+where he quantum number $m_s$ can assume values 
+\begin{equation} 
+m_s = -s,\ -s+1,\ -s+2,\ \dots\, s-2\, s-1\, s. 
+\end{equation}
+
+\noindent For a spin--1/2 particle, for instance, $S_z$ can be $-\hbar/2$
+or $+\hbar/2$. For a spin-1 particle, $S_z$ can be $-\hbar$, 0 or
+$+\hbar$. For a spin-3/2 particle, $S_z$ can be $-3\hbar/2$,
+$-\hbar/2$, $+\hbar/2$, or $+3\hbar/2$.
+
+The points raised in the previous paragraphs should make your head
+spin (no pun intended)\footnote{Okay, so maybe the pun isn't {\it
+entirely\/} unintentional.}.  There are a few issues here that are
+inherently quantum in nature:
+
+\begin{itemize}
+
+\item[(1)] The word {\it spin} glosses over just how strange this
+phenomena actually is.  It is easy to envision, say, a basketball that
+is spinning on its axis, resulting in the ball having angular
+momentum.  However, elementary particles can have spin angular
+momentum {\it even if the particle has no spatial extent!}  The
+electron, for instance, is a point-particle (as far as our 
+best measurements can determine), as are quarks, and
+yet these particles carry angular momentum.  A photon doesn't even
+have any mass and yet it, too, carries angular momentum.
+
+\item[(2)] A spinning basketball could always be stopped, such
+that its angular momentum becomes zero.  This is not the case for
+an elementary particle.  An electron can't be stopped from
+``spinning'' --- the spin angular momentum is always there.
+
+\item[(3)] Although spin angular momentum is a vector with both
+a magnitude and direction, measuring {\it components\/} of that
+vector along different directions produces results that simply
+can't be explained classically.  For instance, if a basketball were
+spinning, you could define a direction for the angular momentum
+$\vec{S}$. Measurement of the component of the angular
+momentum perpendicular to $\vec{S}$ would produce a
+value of zero.  This is often not the case for spin angular
+momentum for elementary particles.  For instance, for an electron 
+it is {\it impossible} to obtain a value of zero from {\it any\/}
+measurement of {\it any\/} component of spin angular momentum.
+
+\end{itemize}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.6}{\includegraphics{spin/SGDevice}}
+\caption{Stern-Gerlach apparatus for measuring the $z$-component of spin.}
+\label{fig:SGDevice}
+\end{center}
+\end{figure}
+
+To illustrate some of these issues, we will introduce a device capable of
+measuring the $z$-component of spin, $S_z$, for a particle.  This device
+is called a ``Stern-Gerlach'' (SG) device, named after the two physicists
+who first performed experiments like those we describe.  Although the
+technical details of the device are not important to our discussion,
+the significant thing is that this device is capable of separating a
+beam of particles according to the $z$-component of their spins, where
+the $z$-axis is determined by the orientation of the SG device.
+
+\begin{figure}[b]
+\begin{center}
+\includegraphics[width=4.5in]{spin/SGDevice2}
+\caption{Consecutive measurements of $z$-component for spin-up electrons.}
+\label{fig:SGDevice2}
+\end{center}
+\end{figure}
+
+
+If we take a source of electrons with random spin component (say from a
+heated filament) and direct a beam of these electrons through a SG device
+to measure $S_z$, as shown in Fig.~\ref{fig:SGDevice}, we find that the
+SG device splits the beam into two beams: one composed of electrons with
+$S_z = +\hbar/2$ (called ``spin-up'') and the other with $S_z = -\hbar/2$
+(called ``spin-down'').  Approximately equal numbers of electrons appear
+in the two beams.
+
+If we now direct the spin-up beam from the SG device to a second SG
+device, as shown in Fig.~\ref{fig:SGDevice2}, the second SG device
+outputs only a spin-up beam ($S_z = +\hbar/2$) and {\it no\/} spin-down
+beam.  What does this mean?  Obviously if you measure $S_z = +\hbar/2$
+in the first SG device, then if you measure $S_z$ again you will always
+get the same result.  This means that all of the electrons entering the
+second SG device are spin-up electrons, or are in the spin-up ``state.''
+
+Now imagine that we take the spin-up beam from the first SG device and
+direct it to a second SG device which measures the $x$-component of spin
+$S_x$, as in Fig.~\ref{fig:SGDevice3}.  This can be accomplished by
+orienting a SG device along the $x$-axis as shown.  What will be the
+result of the measurement made by this second SG device?
+
+\begin{figure}
+\begin{center}
+\scalebox{0.5}{\includegraphics{spin/SGDevice3}}
+\caption{Measurement of $S_x$ after measuring $S_z$.}
+\label{fig:SGDevice3}
+\end{center}
+\end{figure}
+
+The measurement of $S_x$ results in two beams with approximately equal
+count rates, one of $S_x = +\hbar/2$ (spin-up along $x$) and the other of
+$S_x = -\hbar/2$ (spin-down along $x$).  This result is true regardless
+of whether we had used the spin-up or spin-down beam from the first SG
+device.  Also if we send the electrons into the second SG device one at a
+time, what we observe from the output is an electron randomly coming out
+of the second SG device as either $S_x = +\hbar/2$ or $S_x = -\hbar/2$.
+So the result of this experiment is that we have measured $S_z$ to be
+$+\hbar/2$ for an electron in the first SG device and $S_x$ to be either
+$+\hbar/2$ or $-\hbar/2$ for the same electron in the second SG device.
+
+\begin{figure}[b]
+\begin{center}
+\scalebox{0.5}{\includegraphics{spin/SGDevice4}}
+\caption{Measurement of $S_z$ after measuring $S_x$.}
+\label{fig:SGDevice4}
+\end{center}
+\end{figure}
+
+Now we perform a very interesting experiment.  As shown in
+Fig.~\ref{fig:SGDevice4}, we select electrons in the state spin-up
+along $z$ in the first SG device and then select electrons in the state
+spin-down along $x$ in the second SG device.  If we now pass these
+electrons through a third SG device to measure $S_z$ once again, what
+will be the result?  Shouldn't we get just all electrons coming out in
+the spin-up ($S_z = +\hbar/2$) beam, since that is what we measured in
+the first SG device?
+
+The answer is --- {\it ``NO!''\/}  The measurement of $S_z$ in the third
+SG device shows electrons coming out as either spin-up ($S_z = +\hbar/2$)
+or spin-down ($S_z = -\hbar/2$) with equal count rate.  This certainly
+is not the classically expected result!  It is as if the electrons lost
+all memory of being in the spin-up state from the first SG device.
+
+{\bf This stuff should really bother you!}  There is simply no
+classical way to explain the observations (and these results are from
+{\it experimental observations\/}) about spin and its components.
+But that's the way in which sub-atomic particles work.
+
+
+
+\section{State Representation for Spin}
+
+We can now apply the mathematical framework of state vectors from
+the previous sections to the case of spin states for particles.
+When considering the spin state of an electron, the component
+of spin measured along a certain direction has only two possible
+states, either ``spin-up'' or ``spin-down''; i.e., with a component
+of either $+\hbar/2$ or $-\hbar/2$. For the component of spin in the
+$z$-direction, we can denote the ``spin-up'' and ``spin-down'' states by
+the kets $|\mbox{$+z$}\rangle$ and $|\mbox{$-z$}\rangle$, respectively.
+For example, in Fig.~\ref{fig:SGDevice}, the electrons exiting the
+top and bottom of the SG device are in states $|\mbox{$+z$}\rangle$
+and $|\mbox{$-z$}\rangle$, respectively.  Measurement of the
+$z$-component of spin $S_z$ for the state $|\mbox{$+z$}\rangle$
+will always produce the value $+\hbar/2$ (as indicated by the
+experiment in Fig.~\ref{fig:SGDevice2}), and the same measurement
+for the $|\mbox{$-z$}\rangle$ state will always produce a value $S_z
+= -\hbar/2$.  Similarly, we can define the states $|\mbox{$+x$}\rangle$
+and $|\mbox{$-x$}\rangle$ as the states with $x$-component of spin $S_x =
++\hbar/2$ and $S_x = -\hbar/2$, respectively.  Similar definitions apply
+for the states $|\mbox{$+y$}\rangle$ and $|\mbox{$-y$}\rangle$.
+
+In the experiment depicted in Fig.~\ref{fig:SGDevice4} we found that
+a measurement of the $z$-component of spin for an electron in the state
+$|\mbox{$+x$}\rangle$ will produce either $+\hbar/2$ or $-\hbar/2$.
+This implies that it should be possible to write $|\mbox{$+x$}\rangle$
+as a superposition of the states $|\mbox{$+z$}\rangle$ and
+$|\mbox{$-z$}\rangle$:
+
+\begin{equation}
+|\mbox{$+x$}\rangle = c_+ |\mbox{$+z$}\rangle + c_- |\mbox{$-z$}\rangle
+\label{eq:superState}
+\end{equation}
+
+\noindent where $c_+$ and $c_-$ are constants.  We interpret this equation
+in the following way: if an electron is in a state $|\mbox{$+x$}\rangle$
+and we measure the $z$-component of spin $S_z$, then the probabilities
+that the measurement will yield the result $+\hbar/2$ or $-\hbar/2$
+are $|c_+|^2$ and $|c_-|^2$, respectively.
+
+Since the results of the experiment in Fig.~\ref{fig:SGDevice4} give
+beams of equal intensity from the third SG device measuring $S_z$, this
+means that $|c_+|^2 = |c_-|^2 = 1/2$.  Therefore the simplest linear
+superposition of states representing $|\mbox{$+x$}\rangle$ consistent
+with this result is
+
+\begin{equation}
+|\mbox{$+x$}\rangle = \sqrt{\frac{1}{2}}|\mbox{$+z$}\rangle + \sqrt{\frac{1}{2}}|\mbox{$-z$}\rangle .
+\end{equation}
+
+The same can be done for the states $|\mbox{$-x$}\rangle$,
+$|\mbox{$+y$}\rangle$, and $|\mbox{$-y$}\rangle$.  The linear
+superpositions for these states in terms of the states
+$|\mbox{$+z$}\rangle$ and $|\mbox{$-z$}\rangle$ are presented below
+without proof:
+
+\begin{subequations}
+\begin{eqnarray}
+|\mbox{$+x$}\rangle &=&\sqrt{\frac{1}{2}} \,|\mbox{$+z$}\rangle +
+  \sqrt{\frac{1}{2}} \,|\mbox{$-z$}\rangle
+\label{eq:plusx}  \\
+  |\mbox{$-x$}\rangle &=& \sqrt{\frac{1}{2}}
+  \,|\mbox{$+z$}\rangle - \sqrt{\frac{1}{2}} \,|\mbox{$-z$}\rangle
+\label{eq:minusx}  \\
+  |\mbox{$+y$}\rangle &=&\sqrt{\frac{1}{2}} \,|\mbox{$+z$}\rangle +
+  i\sqrt{\frac{1}{2}} \,|\mbox{$-z$}\rangle
+\label{eq:plusy}  \\
+  |\mbox{$-y$}\rangle &=& \sqrt{\frac{1}{2}}
+  \,|\mbox{$+z$}\rangle - i\sqrt{\frac{1}{2}} \,|\mbox{$-z$}\rangle  .
+\label{eq:minusy}
+\end{eqnarray}
+\end{subequations}
+{\bf Don't forget the factors of ``$i$'' in the equations for
+$|\mbox{$+y$}\rangle$ and $|\mbox{$-y$}\rangle$; they are important.}
+
+
+\begin{example}{Spin-up and spin-down states of $S_z$ in terms of spin-up and spin-down states of $S_x$.}
+\label{exam:ztox}
+Using Equations~\ref{eq:plusx} and \ref{eq:minusx}, show that we can write the spin-up $S_z$ state $|\mbox{$+z$}\rangle$ as a linear superposition of the states $|\mbox{$+x$}\rangle$ and $|\mbox{$-x$}\rangle$.
+
+\solution If we add equations \ref{eq:plusx} and \ref{eq:minusx} we obtain
+
+\begin{eqnarray}
+|\mbox{$+x$}\rangle + |\mbox{$-x$}\rangle & = & \left[ \sqrt{\frac{1}{2}}|\mbox{$+z$}\rangle + \sqrt{\frac{1}{2}}|\mbox{$-z$}\rangle \right] + \left[ \sqrt{\frac{1}{2}}|\mbox{$+z$}\rangle - \sqrt{\frac{1}{2}}|\mbox{$-z$}\rangle \right] \nonumber\\
+ & = & 2 \cdot \sqrt{\frac{1}{2}} |\mbox{$+z$}\rangle .\nonumber
+\end{eqnarray}
+
+\noindent Solving for $|\mbox{$+z$}\rangle$ we get
+
+\begin{equation}
+|\mbox{$+z$}\rangle = \sqrt{\frac{1}{2}}\ |\mbox{$+x$}\rangle + \sqrt{\frac{1}{2}}\ |\mbox{$-x$}\rangle .\nonumber
+\end{equation}
+Similarly, if we subtract equations \ref{eq:plusx} and \ref{eq:minusx} and solve for $|\mbox{$-z$}\rangle$ we obtain
+
+\begin{equation}
+|\mbox{$-z$}\rangle = \sqrt{\frac{1}{2}} |\mbox{$+x$}\rangle - \sqrt{\frac{1}{2}} |\mbox{$-x$}\rangle .\nonumber
+\end{equation}
+
+In a similar manner we can use equations \ref{eq:plusx} $-$
+\ref{eq:minusy} to determine any of the basis spin vectors in terms of
+the others.  The complete set of transformations among the basis spin
+states appears in Table \ref{table:spinTransform}.
+
+\end{example}
+
+
+\begin{table}[b]
+\caption{Transformation of the basis spin vectors.}
+\label{table:spinTransform}
+
+\begin{center}
+\begin{tabular}[tbp]{rclcl}
+
+$|\mbox{$+z$}\rangle$ & $=$ & $\sqrt{\frac{1}{2}} |\mbox{$+x$}\rangle + \sqrt{\frac{1}{2}} |\mbox{$-x$}\rangle$ & $=$ & $\sqrt{\frac{1}{2}} |\mbox{$+y$}\rangle + \sqrt{\frac{1}{2}} |\mbox{$-y$}\rangle$ \nonumber \\
+
+$|\mbox{$-z$}\rangle$ & $=$ & $\sqrt{\frac{1}{2}} |\mbox{$+x$}\rangle - \sqrt{\frac{1}{2}} |\mbox{$-x$}\rangle$ & $=$ & $-i\sqrt{\frac{1}{2}} |\mbox{$+y$}\rangle + i\sqrt{\frac{1}{2}} |\mbox{$-y$}\rangle$ \nonumber 
+\end{tabular}
+
+\begin{tabular}[tbp]{rcl}
+$|\mbox{$+x$}\rangle$ & $=$ & $\sqrt{\frac{1}{2}} |\mbox{$+z$}\rangle + \sqrt{\frac{1}{2}} |\mbox{$-z$}\rangle$  \nonumber \\
+
+$|\mbox{$-x$}\rangle$ & $=$ & $\sqrt{\frac{1}{2}} |\mbox{$+z$}\rangle - \sqrt{\frac{1}{2}} |\mbox{$-z$}\rangle$  \nonumber \\
+
+$|\mbox{$+y$}\rangle$ & $=$ & $\sqrt{\frac{1}{2}} |\mbox{$+z$}\rangle + i\sqrt{\frac{1}{2}} |\mbox{$-z$}\rangle$  \nonumber \\
+
+$|\mbox{$-y$}\rangle$ & $=$ & $\sqrt{\frac{1}{2}} |\mbox{$+z$}\rangle - i\sqrt{\frac{1}{2}} |\mbox{$-z$}\rangle$  \nonumber 
+
+\end{tabular}
+\end{center}
+\end{table}
+
+
+The previous example demonstrates exactly what we discovered in the
+experiment of Fig.~\ref{fig:SGDevice3}.  If we have a beam of electrons
+in the state $|\mbox{$+z$}\rangle$ and measure the $x$-component of
+spin $S_x$, we find that we obtain $S_x = +\hbar /2$ (spin-up
+along $x$) and $S_x = -\hbar /2$ (spin-down along $x$) with equal
+probabilities $|\frac{1}{\sqrt{2}}|^2 = \frac{1}{2}$.
+
+
+%\newpage
+\begin{example}{Spins and probabilities.} 
+\label{exam:spinsProbabilities}
+Consider an electron in the state given by
+\begin{equation}
+|\psi\rangle = \sqrt{\frac{2}{3}}|\mbox{$+z$}\rangle +
+ \sqrt{\frac{1}{3}}|\mbox{$-z$}\rangle .
+\label{eq:ex3}
+\end{equation}
+(a) Calculate the probability of obtaining the value $+\hbar/2$ and $-\hbar/2$ when
+the $z$-component of the spin angular momentum is measured.  (b) Calculate the probability that an electron in the state $|\psi\rangle$
+will be measured to have an $x$-component of spin of $-\hbar/2$.  (c)
+Calculate the probability that an electron in the state $|\psi\rangle$
+will be measured to have a $y$-component of spin of $-\hbar/2$.
+\solution
+(a) This is straightforward because $|\psi\rangle$ is written
+as a superposition of the $|\mbox{$\pm z$}\rangle$-states. The probability of
+the spin being found as ``spin up'' is the square of the
+coefficient of the base state $|\mbox{$+z$}\rangle$. That is,
+\begin{equation}
+\mbox{Prob}\bigl(\mbox{spin measured to be spin-up}\bigr) = P(+z) = 
+\left|\sqrt{\frac{2}{3}}\right|^2 = \frac{2}{3}. \nonumber
+\end{equation}
+\noindent Likewise, the probability of the spin being found as ``spin down'' is 
+\begin{equation}
+\mbox{Prob}\bigl(\mbox{spin measured to be spin-down}\bigr) = P(-z) = 
+\left|\sqrt{\frac{1}{3}}\right|^2 = \frac{1}{3}.\nonumber
+\end{equation}
+
+(b) For the $x$-component of spin, we need to rewrite
+$|\mbox{$\psi$}\rangle$ as a linear superposition of the $S_x$ basis
+states $|\mbox{$+x$}\rangle$ and $|\mbox{$-x$}\rangle$. This can be
+accomplished by using the results of Example \ref{exam:ztox} and Table
+\ref{table:spinTransform} to write the states $|\mbox{$+z$}\rangle$ and
+$|\mbox{$-z$}\rangle$ in terms of the basis states $|\mbox{$+x$}\rangle$
+and $|\mbox{$-x$}\rangle$.
+
+\begin{eqnarray}
+|\mbox{$\psi$}\rangle & = & \sqrt{\frac{2}{3}} \left[ \sqrt{\frac{1}{2}} \left[ |\mbox{$+x$}\rangle + |\mbox{$-x$}\rangle \right] \right] + \sqrt{\frac{1}{3}} \left[ \sqrt{\frac{1}{2}} \left[ |\mbox{$+x$}\rangle - |\mbox{$-x$}\rangle \right] \right] \nonumber\\
+ & = & \sqrt{\frac{1}{2}} \left[ \sqrt{\frac{2}{3}} + \sqrt{\frac{1}{3}} \right] |\mbox{$+x$}\rangle + \sqrt{\frac{1}{2}} \left[ \sqrt{\frac{2}{3}} - \sqrt{\frac{1}{3}} \right] |\mbox{$-x$}\rangle \nonumber\\
+ & = & \left( \sqrt{\frac{1}{3}} + \sqrt{\frac{1}{6}}\right)|\mbox{$+x$}\rangle +  \left( \sqrt{\frac{1}{3}} - \sqrt{\frac{1}{6}}\right)|\mbox{$-x$}\rangle .
+\end{eqnarray}
+
+Therefore, the probability that the electron is in the spin-down state of $S_x$ is equal to the square of the coefficient of the $|\mbox{$-x$}\rangle$ basis state
+
+\begin{equation}
+\mbox{Prob}\bigl(\mbox{spin-down in $S_x$}\bigr) = \left|\sqrt{\frac{1}{3}} - \sqrt{\frac{1}{6}}\right|^2 \approx 0.029 .
+\end{equation} 
+
+(c) The calculation here is very similar to that for part (b) {\em except}
+that we should write the states $|\mbox{$\pm z$}\rangle$ in terms of
+the basis states $|\mbox{$\pm y$}\rangle$.  Since we are interested
+in measuring a value of the $y$-component of spin, $S_y$, we need to
+express our quantum state as a superposition of the $S_y$ basis states.
+We will leave this to you to finish, but you should obtain an answer of
+0.5 for the probability.  
+\end{example}
+
+\section{Spin Magnetic Moment in a Magnetic Field}
+
+We are now ready to apply the major ideas of this chapter to
+some interesting examples which have important applications to 
+medical physics, chemistry, and astronomy.
+
+Both protons and electrons have intrinsic spin, with spin quantum
+number $s = 1/2$ (both are fermions).  
+The proton also has a charge $q = +e$.
+Classically speaking, the proton is viewed as a tiny spinning charged
+sphere that has current loops associated with the circulating charge.
+In the previous unit on electricity and magnetism, we learned that a
+magnetic moment $\vec{\mu}$ can be associated with these circulating
+currents.  When these concepts are applied to the proton as a classical
+spinning charged sphere, we find that the magnetic moment of the proton
+is proportional to the proton's intrinsic angular momentum $\vec{S}$.
+In fact, the magnetic moment for the proton is found to be
+
+\begin{equation}
+\vec{\mu} = \frac{2 \mu_\text{p}}{\hbar} \vec{S}
+\label{eq:magMoment}
+\end{equation}
+where $\mu_\text{p} = 1.41 \times 10^{-26}$ \units{J/T}.  Since measuring any component of $\vec{S}$ results in a value of $\pm \frac{\hbar}{2}$, equation \ref{eq:magMoment} tells us that, {\bf for a proton}, $\vec{\mu}$ has a magnitude of $\mu_\text{p}$ and points in the direction of $\vec{S}$.
+
+We learned in the unit on electricity and magnetism that if a
+magnetic moment $\vec{\mu}$ is placed in a constant magnetic field
+$\vec{B}$, there is a magnetic potential energy associated with the
+orientation of the magnetic moment relative to the magnetic field given as
+\begin{equation}
+U = - \vec{\mu} \cdot \vec{B} .
+\label{eq:magPotential}
+\end{equation}
+
+This energy is greatest when $\vec{\mu}$ and $\vec{B}$ are pointing in
+opposite directions and least when pointing in the same direction.  If we
+take  $\vec{B}$ to be pointing in the $z$-direction such that $\vec{B} =
+B_0 \hat{z}$, then Eqs.~\ref{eq:magMoment} and \ref{eq:magPotential}
+can be written as
+\begin{equation} U = - \vec{\mu} \cdot \vec{B} = - \frac{2 \mu_\text{p}}{\hbar}
+B_0 S_z = - 2 \mu_\text{p} B_0 m_s \label{eq:magPotential2}\end{equation}
+where we have used equation (\ref{eq:zComponent}) for the
+$z$-component of the proton's spin.  Since $m_s = \pm 1 / 2$ for a
+spin-$1/2$ particle, each of the orientations of the proton (spin-up
+or spin-down) corresponds to a different energy of the proton in the
+magnetic field
+\begin{eqnarray}
+  U_+ = -  \mu_\text{p} B_0 & \mbox{$(m_s = +\frac{1}{2}$, spin-up)} \\
+  U_- = +  \mu_\text{p} B_0 & \mbox{$(m_s = -\frac{1}{2}$, spin-down)} .
+\end{eqnarray}
+Consequently, the proton has a different energy depending
+on whether it is in the spin-up ($|\mbox{$+z$}\rangle$) state or
+the spin-down ($|\mbox{$-z$}\rangle$) state.  Therefore the states
+$|\mbox{$+z$}\rangle$ and $|\mbox{$-z$}\rangle$, in addition to being
+states of definite $z$-component of spin $S_z$, are also states of
+definite energy $U_+$ and $U_-$, respectively. Thus when placed in a
+magnetic field, the state of the proton splits into two possible energy
+states, as shown in Fig.~\ref{fig:levelsplitting} separated in energy by
+\begin{equation}
+\label{eq:deltaE}
+\Delta E_\text{proton} \equiv |U_+ - U_-| =  2\mu_\text{p} B_0 .
+\end{equation}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.6}{\includegraphics{spin/levelsplitting}}
+\caption{Splitting of energy levels of a {\bf proton} in a magnetic field}
+\label{fig:levelsplitting}
+\end{center}
+\end{figure}
+
+Figure~\ref{fig:levelsplitting} suggests that for a spin-up proton
+$|\mbox{$+z$}\rangle$ placed in a magnetic field $\vec{B} = B_0 \hat{z}$,
+if the proton then absorbs a photon of energy 
+$E_\text{photon} = \Delta E_\text{proton} =
+2 \mu_\text{p} B_0$, then the proton will make a transition to the spin-down
+state $|\mbox{$-z$}\rangle$, which has higher energy. 
+%This absorption
+%is usually referred to as {\it nuclear magnetic resonance} (NMR) and the
+The reversal of spin component $S_z$ is called {\it spin-flipping}.
+
+\begin{example}{Spin-flip transitions of protons in a magnetic field.} 
+\label{example:spinFlip}
+Consider a proton that is placed in a magnetic field such that it is in the spin-up state $|\mbox{$+z$}\rangle$. If the magnitude of the magnetic field is $B_0 = 24.8 \units{mT}$, determine the frequency of the photon that would be absorbed by the proton causing it to make a transition to the spin-down state?
+
+{\bf Solution:} For the magnetic field strength given, the energy difference between the spin-up and spin-down states is 
+\begin{eqnarray}
+\Delta E_\text{proton} 
+  &=& 2 \mu_\text{p} B_0 \nonumber \\
+  &=& 2 (1.41 \times 10^{-26} \units{J/T}) (24.8 \times 10^{-3} \units{T}) 
+                              \nonumber \\ 
+  &\approx& 6.99 \times 10^{-28} \units{J} .
+\end{eqnarray}
+Therefore the frequency associated with a photon of this energy is
+\begin{equation}
+f_\text{photon} = \frac{E_\text{photon}}{h} = \frac{\Delta E_\text{proton}}{h} 
+  = \frac{6.99 \times 10^{-28} \units{J}}{6.63 \times 10^{-34} \units{J$\cdot$s}} = 1.05 \times 10^{6} \units{Hz} = 1.05 \units{MHz} . \nonumber
+\end{equation}
+This frequency lies in the region of the electromagnetic spectrum associated with radio waves.
+\end{example}
+
+Like the proton, an electron also has intrinsic spin with spin quantum 
+number $s = 1/2$.  In contrast to the proton, the negative charge of an
+electron means its magnetic moment $\vec{\mu}$ points opposite the 
+direction of $\vec{S}$.  The electron has
+$\mu_\text{e} = -9.28 \times 10^{-24} \units{J/T}$, where the negative sign
+ denotes the opposing directions of $\vec{\mu}$ and $\vec{S}$.   
+Replacing $\mu_\text{p}$ with $\mu_\text{e}$ in equation \ref{eq:magPotential2},
+ we find that the higher energy level for an electron occurs when the electron is spin-up and the lower energy level occurs when the electron is spin-down (for the case where $\vec{B}$ is pointing in the positive $z$-direction). 
+
+In a hydrogen atom, the nucleus (a proton) and the electron both have spin magnetic moments.  Thus, the energy levels of the hydrogen atom are slightly split by the interaction between the electron spin and the nuclear spin, a phenomenon known as {\it hyperfine splitting}.  When the electron's spin flips, the atom transitions between two hyperfine energy levels and a photon can be emitted or absorbed in the process.  Because so much of the gas composing galaxies is neutral hydrogen, this spin-flip transition allowed astronomers to map the spiral structure of the Milky Way for the first time.  In your homework, you'll take a closer look at hyperfine splitting.
+
+%\section{NMR Spectroscopy}
+%
+%NMR spectroscopy is a very important research technique that uses the
+%magnetic resonance phenomenon to provide microscopic information about
+%the structural and chemical environment of molecules.  The sensitivity
+%of this technique is high enough to discriminate Hydrogen atoms (or
+%protons) bonded to different chemical groups thereby giving a unique
+%``fingerprint'' for different molecular species.
+%
+%In a basic NMR spectrometer, a sample of material is placed in a
+%thin-walled glass tube and located between the poles of an electromagnet.
+%The external magnetic field $\vec{B}_\text{ext}$ provided by this magnet
+%causes the splitting of the energy states of the protons in the sample
+%as shown in Fig.~\ref{fig:levelsplitting}.
+%
+%The proton of a Hydrogen atom that is bonded to a particular chemical
+%group is also subject to internal magnetic fields that are created
+%by the magnetic moments of other atoms and nuclei in the proton's
+%local environment. The magnetic field $\vec{B}$ that appears in
+%Eq.~(\ref{eq:magPotential}) is actually the total magnetic field at the
+%site of the proton which undergoes a spin-flip.  The total field is the
+%vector sum of the external field $\vec{B}_\text{ext}$ set up by a laboratory
+%magnet and the internal field $\vec{B}_\text{int}$ due to the magnetic moments
+%of atoms and nuclei in the vicinity of the proton: 
+%\begin{equation}
+%\label{eq:TotalmagField} \vec{B} = \vec{B}_\text{int} + \vec{B}_\text{ext} .
+%\end{equation} 
+%The total magnetic field produces two energy states for
+%the proton according to whether it is spin-up or spin-down, as shown
+%in Fig.~\ref{fig:levelsplitting}.
+%
+%When the proton is placed in an additional oscillating electromagnetic
+%field with a frequency in the RF range, a peak emission of RF energy can
+%be detected when the RF frequency corresponds to the energy difference
+%$\Delta E_\text{proton}$ for the spin-flip transition as demonstrated in Example
+%(\ref{example:spinFlip}).  This maximum emission is referred to as a
+%\emph{magnetic resonance}.  Chemists use such a technique to measure
+%the frequency of magnetic resonances in compounds, thereby obtaining
+%what is referred to as an \emph{NMR spectrum}.
+%
+%%When an NMR spectrum is taken of a substance, the external magnetic field is held at a fixed value while a radio-frequency (RF) source of photons is swept through a range of frequencies while monitoring the energy absorbed by the RF source.  A graph of energy emission versus frequency, called an {\emph NMR spectrum} will show a {\emph resonance peak} when the frequency sweeps through a value at which spin-flipping will occur.  
+%
+%Figure~\ref{fig:Ethanol} shows an NMR spectrum of ethanol 
+%(CH$_3$CH$_2$OH) that was obtained using the NMR spectrometer in the Chemistry
+%Department at Bucknell. This spectrum shows magnetic resonance peaks
+%for protons in different chemical groups within the ethanol molecule.
+%Instead of the horizontal axis being frequency, the horizontal axis is
+%given in terms of \emph{chemical shift}, $\delta$, defined as
+%
+%\begin{equation}
+%\delta = \frac{f - f_0}{f_0}
+%\label{eq:chemshift}
+%\end{equation}
+%
+%\begin{figure}[h]
+%\begin{center}
+%\scalebox{0.6}{\includegraphics{spin/Ethanol}}
+%\caption{NMR spectrum of Ethanol in water. The horizontal axis is scaled according to the chemical shift.}
+%\label{fig:Ethanol}
+%\end{center}
+%\end{figure}
+%
+%\noindent where $f$ is the frequency of the magnetic resonance peak and
+%$f_0$ is the resonant frequency of a standard reference.  The values of
+%chemical shift $\delta$ are usually given in parts per million (ppm).
+%The NMR spectrum of ethanol shows three distinct groups of resonances.
+%These resonances correspond to protons in the atomic groups of OH, CH$_2$,
+%and CH$_3$.  The protons in each of these groups experience different
+%internal magnetic fields $\vec{B}_\text{int}$ and therefore have resonance
+%peaks at different resonant frequencies.  The chemical shifts for each
+%of these groups is approximately $5.3 \units{ppm},\ 3.6 \units{ppm}$,
+%and $1.1\units{ppm}$, respectively.
+%
+%\begin{example}{Resonant magnetic field.}
+%\label{example:ResonantField}
+%
+%In the NMR spectrum of ethanol shown in Fig.~\ref{fig:Ethanol} the OH
+%group of resonances is centered at a chemical shift of about 5.3 ppm. What
+%is the total magnetic field associated with this group of resonances?
+%
+%{\bf Solution:} In the spectrum of Fig.~\ref{fig:Ethanol}, the reference
+%frequency $f_0$ is determined by the resonance of a standard compound
+%mixed with ethanol in the sample.  This standard compound\footnote{The
+%compound Tetramethylsilane, (CH$_3$)$_4$Si, or simply TMS, is commonly
+%used which gives a single sharp NMR proton resonance that does not
+%interfere with the resonances normally observed for organic compounds.
+%The frequency of this resonance is used as the standard reference $f_0$
+%used to determine the chemical shift of the resonances in the sample.}
+%gives a single proton resonance whose frequency $f_0$ determines the
+%zero of chemical shift.  In this example, the reference frequency is
+%determined to be $f_0 = 400.132869\units{MHz}$.  Using the fact that the
+%chemical shift of the OH groups is centered at 5.3 ppm, the frequency
+%difference between the OH resonance and the standard reference can be
+%calculated from Eq.~(\ref{eq:chemshift}) as
+%\begin{equation}
+%\Delta f= f - f_0 = (\delta) (f_0) = (5.3 \times 10^{-6}) (400.132869) = 0.002121 \units{MHz}, \nonumber
+%\end{equation}
+%and consequently the absolute frequency of the OH resonance is
+%\begin{equation}
+%f = f_0 + \Delta f = 400.134990 \units{MHz} . \nonumber
+%\end{equation}
+%
+%The resonant frequency $f$ corresponds to the energy difference 
+%$\Delta E_\text{proton}$ of the two spin states of the proton
+%\begin{equation}
+%f = \frac{\Delta E_\text{proton}}{h} = \frac{2 \mu_\text{p} B}{h} ,  \nonumber
+%\end{equation}
+%\noindent and therefore the magnetic field associated with this resonance is 
+%
+%\begin{eqnarray}
+%B_\text{OH} & = & \frac{1}{2 \mu_\text{p}} h f \nonumber \\
+% & = & \frac{1}{2 (1.41 \times 10^{-26}\units{J/T})} (6.63 \times 10^{-34}\units{J$\cdot$s}) (400.134990 \times 10^6\units{Hz}) \nonumber \\
+% & = & 9.41 \units{T}. \nonumber
+%\end{eqnarray}
+%
+%This magnetic field strength is typical of the fields developed in superconducting magnets used in modern NMR spectrometers.
+%\end{example}
+%
+%\begin{exampleb}{Differences in chemical shift and internal magnetic fields.} 
+%As shown in Example (\ref{example:ResonantField}), the measured
+%chemical shift of a resonant peak can be directly related to the magnetic
+%field that the proton experiences.  Use this fact to determine the
+%difference in magnetic fields experienced by protons in the OH group
+%and CH$_2$ group of the ethanol NMR spectrum.
+%
+%{\bf Solution:} As in Example \ref{example:ResonantField}, the frequency
+%shift from the standard frequency for proton resonances in the groups
+%OH and CH$_2$ can be written as
+%
+%\begin{eqnarray}
+%& \Delta f_\text{OH}  =f_\text{OH} - f_0 = (\delta_\text{OH}) (f_0) \nonumber \\
+%& \Delta f_\text{CH$_2$}  =f_\text{CH$_2$} - f_0 = (\delta_\text{CH$_2$}) (f_0)  .\nonumber
+%\end{eqnarray}
+%If we take the difference of these two expressions, we find
+%\begin{equation}
+%\Delta f_\text{OH} - \Delta f_\text{CH$_2$} = f_\text{OH} - f_\text{CH$_2$} 
+%=  \left( \delta_\text{OH} - \delta_\text{CH$_2$} \right) f_0 . \nonumber
+%\end{equation}
+%Since $f = (2 \mu_\text{p} B)/h$ for the proton resonances in each group, we can relate the frequency difference to the magnetic field difference:
+%\begin{equation}
+%f_\text{OH} - f_\text{CH$_2$} = \frac{2 \mu_\text{p}}{h} \left( B_\text{OH} - B_\text{CH$_2$} \right) =  \left( \delta_\text{OH} - \delta_\text{CH$_2$} \right) f_0 . \nonumber
+%\end{equation}
+%Therefore, the total magnetic field difference between protons in these 
+%two atomic groups is 
+%\begin{eqnarray}
+%\label{eq:IntMagFieldDiff}
+%\left( B_\text{OH} - B_\text{CH$_2$} \right) & = & 
+%\frac{\left( \delta_\text{OH} - \delta_\text{CH$_2$} \right)}{2 \mu_\text{p}} h f_0 
+%\nonumber \\
+% & = & \frac{(5.3 - 3.6)\times 10^{-6}}{2 (1.410607 \times 10^{-26}\units{J/T})} \times \nonumber \\
+% & & \times \ \left(6.626069 \times 10^{-34}\units{J$\cdot$s}\right) (400.132869\units{MHz}) \nonumber \\
+% & = & 0.000016\units{T} = 1.6 \times 10^{-5}\units{T} .
+%\end{eqnarray}
+%
+%Notice that we have used more precise values for the constants $\mu_\text{p}$
+%and $h$ in evaluating this difference.  Since the total magnetic field
+%is the sum of the external $\vec{B}_\text{ext}$ and internal $\vec{B}_\text{int}$
+%fields, and the external field is the same for protons in each atomic
+%group, the value obtained in Eq.~(\ref{eq:IntMagFieldDiff}) is the
+%difference in the \emph{internal} magnetic fields at the site of the OH
+%and CH$_2$ atomic groups.  The size of this result shows how sensitive
+%this technique is to measuring resonances for protons within different
+%regions of the same molecule.
+%\end{exampleb}
+
+\newpage
+
+\section*{Problems}
+\markright{PROBLEMS}
+
+%\vspace{1.5in}
+
+
+\begin{problem}
+Write either a poem, a song, or a few sentences explaining
+what it is about spin --- on a quantum level --- that can't be
+explained by classical laws of physics. \label{prob:spin_poem}
+\end{problem}
+
+
+\begin{problem}
+Suppose an electron is known to have a $z$-component of spin $S_z$ of $+\hbar/2$; that is, we know it is in the $|\mbox{$+z$}\rangle$ state.
+\begin{enumerate} 
+\item   Find the probability that a measurement of
+    its spin along the $x$-axis gives the value $+\hbar/2$.
+\item Find the probability that a measurement of its spin along
+    the $y$-axis gives the value $-\hbar/2$.
+ \end{enumerate}
+\label{prob:spin_i}
+\end{problem}
+
+\begin{problem}
+Assume that a particle is in the state
+\[ \vert\mbox{$\psi$}\rangle = \frac{1}{\sqrt{2}} \vert\mbox{$\phi_1$}\rangle + i \frac{1}{\sqrt{2}} \vert\mbox{$\phi_2$}\rangle \]
+where $\vert\mbox{$\phi_1$}\rangle$ and $\vert\mbox{$\phi_2$}\rangle$ are a normalized set of basis states.
+\begin{enumerate}
+\item A measurement is made on the particle.
+% to determine whether or not the particle is in state $\vert\mbox{$\phi_1$}\rangle$. 
+%Calculate the probability of measuring the particle to be in the state $\vert\mbox{$\phi_1$}\rangle$.
+Calculate the probability that this measurement will result in a value 
+corresponding to the state $\vert\mbox{$\phi_1$}\rangle$.
+\item Let's say that the measurement made in part (a) {\it does},
+in fact, produce a result corresponding to the state
+$\vert\mbox{$\phi_1$}\rangle$. 
+The measurement is then immediately repeated.  Calculate the probability 
+that this {\it second} measurement will result in a value corresponding
+to the state $\vert\mbox{$\phi_2$}\rangle$.
+% after the measurement made in part (a) the particle {\it is}, in fact, found to be in the state $\vert\mbox{$\phi_1$}\rangle$. The measurement is then immediately repeated.  Calculate the probability of measuring the particle to be in the state $\vert\mbox{$\phi_2$}\rangle$ in this second measurement.
+%\item Another particle is prepared in the original state $\vert\mbox{$\psi$}\rangle$. A measurement is made on this new particle to determine whether it is in the state $\vert\mbox{$\phi_2$}\rangle$. Calculate the probability of measuring {\it this new} particle to be in the state $\vert\mbox{$\phi_2$}\rangle$.
+\item Another particle is prepared in the original state $\vert\mbox{$\psi$}\rangle$. 
+A measurement is made on this new particle. Calculate the probability 
+that {\it this} measurement will result in a value corresponding to
+the state $\vert\mbox{$\phi_2$}\rangle$.
+\end{enumerate}
+\label{prob:SuperpositionProbs}
+\end{problem}
+
+\begin{problem}
+An electron is known to be in the spin state $|\psi\rangle =
+  \frac{3}{5}|\mbox{$+z$}\rangle + \frac{4}{5}|\mbox{$-z$}\rangle$.
+
+  \begin{enumerate}
+  \item The electron is sent
+  through a device that measures its spin angular momentum along the
+  $x$-direction.  Compute the probability of obtaining the result
+  $+\hbar/2$ for the $x$-component of spin.  Compute the
+  probability of obtaining $-\hbar/2$ for this measurement.  (Check to make
+  sure that your probabilities add up to 1.)
+  \item The electron initially in the state $|\psi\rangle$ specified
+  above is sent through a device that measures its spin angular
+  momentum along the $y$-direction.  Compute the probability of
+  obtaining the result $+\hbar/2$ for the $y$-component of spin.
+  Compute the probability of obtaining $-\hbar/2$ for this
+  measurement.
+  \item Note that you get different answers for parts (a) and (b).
+  Mathematically, this comes from the factor of ``$i$'' in the
+  equations for $|\mbox{$+y$}\rangle$ and $|\mbox{$-y$}\rangle$.
+  Conceptually, this is another example of some quantum weirdness~---
+  you would think that a state that is a superposition of stuff solely
+  in the $z$-direction would give the same results for $x-$ and
+  $y$-components, but that isn't the case.  Think about this for a
+  moment, and convince yourself that this is weird.
+ \end{enumerate}
+\label{prob:spin_ii}
+\end{problem}
+
+
+\begin{problem}
+  Assume that you have an electron that is in a superposition of
+  ``spin-up'' and ``spin-down'' states:
+  \[  
+      \vert\psi_1\rangle = i \sqrt{\frac{1}{5}}\vert\mbox{$+z$}\rangle
+                   + \sqrt{\frac{4}{5}}\vert\mbox{$-z$}\rangle 
+  .  \]
+
+  \begin{enumerate}
+  \item You measure the vertical component of spin. What is the
+    probability that you will find $S_z = + \hbar/2$?
+  \item Another electron is in the same state $|\psi_1\rangle$.  You
+    now measure the $y$-component of spin. What is the probability
+    that you will find $S_y = + \hbar/2$? 
+
+  \item Another electron is prepared in a superposition state
+    \[ |\psi_2\rangle =  
+    \sqrt{\frac{1}{5}}\vert\mbox{$+z$}\rangle
+    +  \sqrt{\frac{4}{5}} |\mbox{$-z$}\rangle. \] 
+    What is the
+    probability that a measurement of {\em this} electron's
+    $y$-component of spin will find $S_y = + \hbar/2$? 
+  \item Now, assume that you do find $S_y = + \hbar/2$. You measure
+    $S_y$ again for the same particle. What is the probability that
+    you'll find $S_y = -\hbar/2$?
+  \end{enumerate}
+  \label{prob:spin_iv}
+\end{problem}
+
+
+\begin{problem}
+A particle is in the state given by
+\[ \vert\mbox{$\phi$}\rangle = \frac{1}{\sqrt{2}} \vert\mbox{$\psi_1$}\rangle - \frac{i}{\sqrt{2}} \vert\mbox{$\psi_2$}\rangle \]
+where $\vert\mbox{$\psi_1$}\rangle$ and $\vert\mbox{$\psi_2$}\rangle$ are a normalized set of basis states.
+\begin{enumerate}
+\item A measurement is made on the particle.  Calculate the probability 
+that the measurement will result in a value corresponding to the state
+$\vert\mbox{$\psi_1$}\rangle$.
+\item Another particle is prepared in the state $\vert\mbox{$\phi$}\rangle$, 
+and a measurement is made on {\it this} particle. Calculate the probability 
+that {\it this} measurement will result in a value corresponding to 
+the state $\vert\mbox{$\psi_2$}\rangle$.
+\end{enumerate}
+\label{prob:SuperpositionProbs2}
+\end{problem}
+
+\begin{problem}
+
+The quantum state of a photon propagating along the $z$-direction
+can be written in terms of the states $\vert\mbox{$X$}\rangle$ and
+$\vert\mbox{$Y$}\rangle$, where $\vert\mbox{$X$}\rangle$ represents a
+photon polarized along the $x$-direction and $\vert\mbox{$Y$}\rangle$
+represents a photon polarized along the $y$-direction. A photon in an
+arbitrary polarization state can be written as a linear superposition
+of the states $\vert\mbox{$X$}\rangle$ and $\vert\mbox{$Y$}\rangle$ as
+
+\[\vert\theta\rangle = \cos{\theta} \vert\mbox{$X$}\rangle + \sin{\theta} \vert\mbox{$Y$}\rangle \]
+where $\theta$ is the angle of polarization of the photon measured with 
+respect to the $x$-axis.
+\begin{enumerate}
+
+\item Assuming that the states $\vert\mbox{$X$}\rangle$ and
+$\vert\mbox{$Y$}\rangle$ form a basis, show that the state
+$\vert\theta\rangle$ is normalized.
+
+\item A polarizer is a device that measures the polarization of
+a photon along a certain direction.  Let's say that a polarizer is
+oriented along the $x$-direction, that is, it is measuring for the state
+$\vert\mbox{$X$}\rangle$. For an incident beam of photons in the state
+$\vert\mbox{$\theta$}\rangle$ as given above, what is the probability
+that the polarizer measures the state $\vert\mbox{$X$}\rangle$ (i.e.,
+the photons go through the polarizer)?  What is the state of the photons
+after making this measurement?
+
+\item Let's say we have a beam of photons in polarization state
+$\vert\mbox{$X$}\rangle$ incident on a polarizer oriented in a direction
+making an angle $\theta$ with respect to the $x$-axis.  What is the
+probability that the photons pass through the polarizer oriented at angle
+$\theta$? (Hint: think about the previous question in the reverse order of
+events).  What is the state of the photons after making this measurement?
+
+\item Following up on part (c), the beam in state
+$\vert\mbox{$\theta$}\rangle$ is incident on a second polarizer oriented
+along the $y$-axis.  What is the probability that the photons pass
+through the second polarizer?
+
+\item Now, putting this all together, photons pass through polarizer \#1
+oriented along the $x$-axis, then pass through polarizer \#2 oriented at
+an angle $\theta$, then on to polarizer \#3 oriented along the $y$-axis.
+What is the total probability that a photon passing through polarizer
+\#1 will also pass through polarizer \#3? [Note: Compare your result
+with what you did in Lab \#18 ``Polarization of Light.'']
+
+\end{enumerate}
+\label{prob:PhotonProbs}
+\end{problem}
+
+\begin{problem}
+  Using a technique similar to that used in Example \ref{exam:ztox},
+  show that you can write the spin-down $S_z$ state
+  $\vert\mbox{$-z$}\rangle$ as a linear superposition of the states
+  $\vert\mbox{$+x$}\rangle$ and $\vert\mbox{$-x$}\rangle$ Compare your
+  results with those given in Table~\ref{table:spinTransform}.
+\end{problem}
+
+\begin{problem}
+Using equations~(\ref{eq:plusy}) and (\ref{eq:minusy}), write expressions for the states $\vert\mbox{$+z$}\rangle$ and $\vert\mbox{$-z$}\rangle$ in terms of linear combinations of the states $\vert\mbox{$+y$}\rangle$ and $\vert\mbox{$-y$}\rangle$.  Compare your results with those given in Table~\ref{table:spinTransform}.
+\end{problem}
+
+\begin{problem}
+An electron is placed in a spin state given by
+\[ \vert\mbox{$\psi$}\rangle = \frac{1}{2}\vert\mbox{$+z$}\rangle -\frac{\sqrt{3}}{2}\vert\mbox{$-z$}\rangle .\]
+\begin{enumerate}
+\item Calculate the probability of obtaining a value of $-\hbar/2$ when the $z$-component of spin $S_z$ is measured.
+\item Calculate the probability that an electron in state $\vert\mbox{$\psi$}\rangle$ will be measured to have an $x$-component of spin $S_x$ of $+\hbar/2$.
+\end{enumerate}
+\label{prob:ElectronSpinState}
+\end{problem}
+
+\begin{problem}
+An electron is placed in the spin state
+\[ \vert\mbox{$\psi$}\rangle = \sqrt{\frac{2}{3}}\vert\mbox{$+z$}\rangle +\sqrt{\frac{1}{3}}\vert\mbox{$-z$}\rangle \]
+as is the case in Example~\ref{exam:spinsProbabilities}. An experiment is performed to measure the $y$-component $S_y$ of spin.  Calculate the probability that this measurement results in a value of $-\hbar/2$.
+\label{prob:ElectronSpinState2}
+\end{problem}
+
+\begin{problem}
+An electron in a particular system can have any of the discrete
+  energies $E_n = (-8.00\units{eV})/n^2$, where $n = 1, 2, 3, \dots$. Assume
+  that the electron is in a state 
+  \[ |\psi\rangle = 0.7\,|1\rangle + 0.5\,|2\rangle + 0.4\,|3\rangle 
+        + 0.3\,|4\rangle + 0.1\,|5\rangle.  \]
+  \begin{enumerate}
+  \item Show that this state is normalized.
+  \item If the energy of the electron is measured, what is the probability that the result of the measurement will be $E_2 = -2.0\units{eV}$? What is the probability of the measured energy being $E_4 = -0.5\units{eV}$?
+  \item What is the probability that the result of measuring the energy would be either $E_1$, $E_3$, or $E_5$?
+  
+  \item Assume that 10,000 electrons are prepared to be in the same
+    state $|\psi\rangle$ and that the energy is measured for each of these electrons.  Approximately how many of these electrons will be measured to have energy $E_1$?  $E_2$?  $E_3$?  $E_4$?  $E_5$?
+  
+  \end{enumerate}
+\label{prob:atomic_energies}
+\end{problem}
+
+\begin{problem}
+Protons placed in a magnetic field can be either in the spin-up
+$\vert\mbox{$+z$}\rangle$ or spin-down $\vert\mbox{$-z$}\rangle$ state
+with an energy difference between these two states $\Delta E_\text{proton}$.  
+Incident photons of frequency $2.20 \units{MHz}$ are absorbed 
+causing transitions
+of the protons from the spin-up $\vert\mbox{$+z$}\rangle$ state to the
+spin-down $\vert\mbox{$-z$}\rangle$ state.  Determine the magnitude of
+the total magnetic field $B$ in which these protons are placed.
+\end{problem}
+
+
+\begin{problem}
+The bulk of gas in our galaxy is atomic hydrogen (composed of a proton and an electron) in the ground electronic state.  Astronomers map the location of this neutral hydrogen by detecting photons that are emitted when the spin of the {\bf electron} flips from being parallel with the spin of the proton to being anti-parallel.  The effective magnetic field experienced by the electron in a hydrogen atom is $0.0507 \units{T}$.  Determine the wavelength of the photon emitted when the electron undergoes a spin flip.
+\label{prob:H_hyperfine}
+\end{problem}
+
+%\begin{problem}
+%The chemical shifts for the CH$_2$ and CH$_3$ resonance groups in ethanol
+%are approximately $3.6 \units{ppm}$ and $1.1 \units{ppm}$ as shown in
+%the NMR spectrum of Fig.~\ref{fig:Ethanol}.
+%\begin{enumerate}
+%\item Determine the difference in total magnetic field strengths for 
+%protons of these two resonance groups for the NMR spectrum shown 
+%in Fig.~\ref{fig:Ethanol}.
+%\item If the ethanol sample used in the spectrum of Fig.~\ref{fig:Ethanol} 
+%was placed in a uniform external magnetic field known to have magnitude 
+%$B_\text{ext}= 9.397756 \units{T}$, explain why there is a magnetic 
+%field difference for protons in these two groups as calculated in part (a).
+%\end{enumerate}
+%\end{problem}
+%
+%\begin{problem}
+%The chemical shifts for the OH and CH$_3$ resonance groups in ethanol
+%are approximately $5.3 \units{ppm}$ and $1.1 \units{ppm}$ as shown in
+%the NMR spectrum of Fig.~\ref{fig:Ethanol}.  Determine the difference
+%in total magnetic field strengths for protons of these two resonance
+%groups for the NMR spectrum shown in Fig.~\ref{fig:Ethanol}.
+%\label{prob:ChemicalShift2}
+%\end{problem}
+
+\begin{problem}
+In the presence of a strong magnetic field, the energy levels of an
+atom change due to the interaction of the electronic spins with the
+magnetic field.  This is known as the \emph{``anomalous'' Zeeman effect},
+and can be used to determine the strength of magnetic fields on the Sun.
+\begin{enumerate}
+\item Magnetically active regions of the Sun have typical magnetic
+fields strengths of $0.4 \units{T}$.  Determine the energy difference
+(in eV) between electrons that are aligned with the magnetic field and
+anti-aligned with the magnetic field.
+\item This difference in energy causes a split in each electronic energy
+level of the atom.  Imagine that we have a 2-level atom where the 1$^\text{st}$
+excited state is $0.1 \units{eV}$ above the ground state.  Draw energy
+level diagrams for this atom: i) when there is no magnetic field and ii)
+in the presence of the magnetic field from part (a).
+\item How would we expect the spectrum of photons absorbed by this atom to
+change in the presence of a strong magnetic field versus in the absence
+of a magnetic field?  How would this spectrum change as the strength of
+the magnetic field increases?
+\end{enumerate}
+\label{prob:H_zeeman}
+\end{problem}
+
+\newpage 
+
+\begin{problem}
+Let's use a simulation of the Stern-Gerlach experiment to explore 
+quantum states and spin.  Go to \\ 
+\verb+http://phet.colorado.edu/sims/stern-gerlach/stern-gerlach_en.html+ 
+By default, the atoms start in the state $\vert\mbox{$+x$}\rangle$, and the device is setup to make a measurement of the $z$-component of spin. 
+\begin{enumerate}
+
+\item To get a feel for how this works, try firing a few atoms.
+You'll notice a counter at the bottom of the page keeping track of how
+many atoms have been measured to be spin up or spin down as measured
+along the $z$ axis.  Can you predict whether an individual atom will
+have a measured $z$-component of spin up or down?
+\item For atoms starting in the state $\vert\mbox{$+x$}\rangle$, what is
+the probability that a measurement of the $z$-component of spin results
+in $S_z = +\hbar/2$?  To determine this, turn on ``Auto Fire" and keep
+it running until the percentages are not longer changing.
+\item For atoms starting in the state $\vert\mbox{$+x$}\rangle$, what is
+the probability that a measurement of the $x$-component of spin results
+in $S_x = +\hbar/2$?  To measure the $x$-component of spin, change the
+``angle" in the simulation to $-90^\circ$.
+\item Now, change the number of magnets to 2.  Orient the first magnet
+so that it is measuring the z-component of spin (angle~=~0) and orient
+the second magnet so that it is measuring the x-component of spin
+($\mbox{angle} = -90^\circ$).  In this setup the simulation starts
+with atoms in the state $\vert\mbox{$+x$}\rangle$ and measures the
+$z$-component of spin.  For atoms with measured $S_z = +\hbar/2$,
+it then measures the $x$-component of spin.  For an atom that started
+in the state $\vert\mbox{$+x$}\rangle$, for which we then measure 
+$S_z = +\hbar/2$, what is the probability that a subsequent measurement of
+the $x$-component of spin results in $S_x = +\hbar/2$?
+\item Based on your answer to part (c), what is the state of the atom
+immediately after a measurement of its $z$-component of spin results in
+$S_z = +\hbar/2$?  Hint:  Think about collapse of state!
+\end{enumerate}
+\label{prob:sterngerlach}
+\end{problem}
+
+%****************** New problem, based on question 6, exam 3, 2016 ***
+
+\begin{problem}
+Suppose the possible energies that a particle can have are $E_1$,
+$E_2$,  $E_3$, $E_4$, \dots\  Consider a particle in a state given by
+the following linear superposition of energy basis states:
+\begin{equation}
+|\psi\rangle = \frac{1+2 i}{6} |E_1\rangle 
+                + \frac{2-3  i}{6} |E_3\rangle 
+                + c_4 |E_4\rangle,
+\end{equation}
+where $c_4$ is an undetermined constant.
+\begin{enumerate}
+\item Calculate the probability of obtaining a value $E_3$ in 
+a measurement of the energy of this particle.
+\item The particle is prepared again in the state $|\psi\rangle$.
+Calculate the probability of obtaining a value $E_2$ in a 
+measurement of the energy of this particle?  
+
+\item How many possible values are there for the constant $c_4$?  
+Determine \textbf{two} possible values for this constant.
+\end{enumerate}
+\label{prob:energystates}
+\end{problem}
+
+%****************** New problem, based on question 9, Final, 2012 ***
+
+\begin{problem}
+  A quantum particle is in the following superposition of energy states
+  \[
+  \ket{\psi} = \frac{1}{3}\ket{E_1} - \frac{4+6 i}{9}\ket{E_2}
+  -\frac{4i - 2}{9}\ket{E_3} .
+  \]
+
+  \begin{enumerate}
+  \item Determine the probability that a measurement of the energy
+    will yield the value $E_3$.
+
+  \item You measure the energy and do, in fact, find the energy to be
+    $E_3$.  Write
+    down a correct expression for the new state of the particle just
+    after this energy measurement.
+
+% {\Large $\ket{\psi_\text{after}} = $}
+
+  \end{enumerate}
+\end{problem}
+
+%****************** New problem, based on question 3, Exam3, 2012 ***
+
+\begin{problem}
+  Each of the following diagrams shows a beam of electrons inititally with
+  random spin orientations passing through a series of Stern-Gerlach (SG)
+  apparatuses of different orientations.  In each case, determine whether
+  a beam will come out of one, both, or neither of the two exits of the final
+  SG apparatus, and also determine how the intensity of any non-zero beam 
+  will compare with the intensity of the initial beam of electrons.
+
+  \begin{enumerate}
+  \item
+    \includegraphics[width=4.5in]{spin/SGDeviceA.pdf}
+  \item
+    \includegraphics[width=4.5in]{spin/SGDeviceB}
+  \end{enumerate}
+\label{prob:SG1}
+\end{problem}
+
+
+%****************** New problem, based on question 8, final, 2013 ***
+
+\begin{problem}
+Consider the following Stern-Gerlach (SG) experiment.
+A beam of electrons, prepared in a certain state $\ket{\psi}$,
+is emitted from an electron source. The beam passes into a Stern-Gerlach 
+device which measures the $z$-component of spin $S_z$ as shown below. 
+A total of 1000 electrons go through this apparatus, of which 
+exactly 400 emerge with $S_z=+\hbar/2$ 
+(spin-up along the $z$-axis) and exactly 600 emerge with 
+$S_z=-\hbar/2$ (spin-down along the $z$-axis). 
+\begin{center}
+\includegraphics[width=3in]{spin/SGDevice}   
+\end{center}
+
+%\begin{itemize}
+%\item[(a)] 
+Write a possible normalized state $\ket{\psi}$ for the electrons in 
+the initial beam that corresponds to the observations in this experiment.
+
+% part (b) is based on the assumption that the number of +hbar/2 and -hbar/2
+% are governed by Poisson statistics, but they're not.  It's a binomial
+% distribution, which the students don't know how to do.
+%
+%\item[(b)] 
+%
+%You repeat the experiment again with the same apparatus.  Again, you 
+%send 1000 electrons through the system, but this time you find 
+%that 382 electrons emerge with $S_z = +\hbar/2$ and 618 electrons 
+%emerge with $S_z = -\hbar/2$.
+%Should you conclude that the electrons in the initial beam have a
+%state that is different than the one from part~(a)? Explain why or why not.
+%
+%\end{itemize}
+
+
+\end{problem}

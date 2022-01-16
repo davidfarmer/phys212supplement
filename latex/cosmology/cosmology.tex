@@ -1,0 +1,463 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Cosmology}
+\label{chapter:cosmology}
+%\setcounter{ex}{0}
+
+
+\section{Introduction}
+
+Cosmology is the study of the origins of the cosmos, that is, the
+history of the universe.  The present standard model of cosmology is
+the subject of this chapter.
+
+At the end of Chapter~\ref{chapter:interactions}, we claimed that the
+temperature and available energy in the early universe were sufficient
+to achieve universal symmetry.  In this chapter we present a simple
+relation that shows how energy and temperature decrease with time.  We
+then look in detail at each of the major events that served to mark
+transitions from one phase of the universe to another.  We'll learn
+why these events occurred when they did, and what ramifications these
+events had for the interactions that followed.  And finally we'll see
+what observational evidence exists that could test the microscopic
+theories of particle physics.
+
+\section{The Early Universe}
+
+The standard theory of cosmology is the Big Bang model, in which the
+universe began as a hot dense ball of stuff and has been expanding and
+cooling ever since.  The first and primary evidence for this model was
+Edwin Hubble's discovery in the 1920's that the universe is expanding.
+From analysis of Doppler shifted spectra and other observations,
+Hubble showed that most distant galaxies are receding from our
+galaxy. Furthermore, their velocity of recession is roughly
+proportional to their distance from us.
+
+To see how this could happen, imagine baking a giant loaf of raisin
+bread.  As the dough expands, each raisin gets farther from all the
+others and, if the expansion is uniform, the recessional rates at any
+instant of time are proportional to the separations.  The recession
+rates of galaxies in the expanding universe are similarly proportional
+to the separation between galaxies. The proportionality can be
+expressed simply as
+\begin{equation}
+V = HR  \qquad\mbox{(Hubble's Relation)}
+\end{equation}
+where $V$ is the velocity of recession, $R$ is the galaxy distance and
+$H$ is Hubble's constant.  By constant, we mean it is the same number
+for many different galaxies, not that it doesn't change with time.  In
+fact we argue below that it must be decreasing with time.  Its current 
+accepted value is $20.8\units{km/s}$ per million light-years.  
+This means that if
+% Planck Mission value of H is 67.8 \pm 0.77 km/s/Mpc, or 
+% 20.8 \pm 0.24 km/s/Mly
+%    ML April 2016
+%IF YOU UPDATE THIS, PLEASE UPDATE THE VALUE 2 LINES DOWN TOO.  
+% H is now 70 km/s/Mpc, or 21 km/s/Mly -NFL Dec07
+%value is about $15\, \mbox{km/s}$ per million light-years.  This means that if
+galaxy $B$ is a million light years more distant than galaxy $A$, then $B$
+is receding $20.4\units{km/s}$ faster than $A$.
+
+Okay, now here is the key point: if the universe is expanding, then it
+is also cooling down.  Especially when considering the early moments
+of the universe, you can compare it to a gas that is undergoing an
+adiabatic expansion (no heat flow into or out of the system, which is
+the entire universe in this case).  Recall from PHYS 211 that a gas
+cools down when undergoing an adiabatic expansion.  It can be shown
+that\footnote{``It can be shown that'' is physics-lingo for ``the
+derivation is a royal pain-in-the-neck, so we will just skip it
+here.''} the temperature $T$ of the universe during its early stages
+--- during the ``radiation-dominated'' epochs, i.e., the first million
+years --- is given roughly by the equation
+\begin{equation}
+T = \frac{10^{10}}{\sqrt t},
+\label{eq:early_univ_temp}
+\end{equation}
+where time $t$ is in seconds and temperature $T$ is in Kelvin.  Even
+though the assumptions of this derivation\footnote{Which we haven't
+told you.}  are very much oversimplified,
+Eq.~(\ref{eq:early_univ_temp}) gives results correct within a factor
+of 2 or 3 up to $t = 10^6$ years.  After that time, the universe is
+cool enough to start acting like a collection of material particles
+rather than a bunch of photons.\footnote{One of the assumptions that we
+haven't explained.}  Thus, for times near the present,
+Eq.~(\ref{eq:early_univ_temp}) overestimates the temperature of
+radiation considerably.
+
+A useful relation can be obtained from Eq.~(\ref{eq:early_univ_temp}).
+Recall from kinetic theory (PHYS 211) that for particles in
+equilibrium, the average kinetic energy equals $\frac{3}{2}kT$, where
+Boltzmann's constant $k= 8.63\times 10^{-5}\units{eV/K}$.  If we round these
+figures to the same accuracy as Eq.~(\ref{eq:early_univ_temp}), we
+find $E \simeq kT$ with $k \simeq 10^{-4}\units{eV/K}$, and thus typical
+particle energies of the early universe are given by
+\begin{equation}
+\label{eq:early_univ_energy}
+E \simeq kT \simeq \frac{10^6}{\sqrt t},
+\end{equation}
+where energy $E$ is in eV and time $t$ is again in seconds.
+Equations~(\ref{eq:early_univ_temp}) and (\ref{eq:early_univ_energy})
+are handy relations that will be used throughout the chapter.
+
+\section{Crucial Events of the Early Universe}
+\label{section:crucial_events}
+
+The universe began some 14 billion years ago with a Big Bang and
+has been expanding and cooling ever
+since. Table~\ref{table:early_universe} is a list of the crucial
+events that occurred early on, most of which we will try to explain.
+
+How can we possibly determine when these events occurred? Except for
+the end of neutrino interactions and the time of quark confinement,
+each of these events can be understood in terms of the energies
+available to maintain thermal equilibrium.  For instance, the end of
+the electro-weak unification occurred when the massive gauge bosons of
+electro-weak theory (the $W^+$, $W^-$, and $Z^0$) could no longer be
+produced in prodigious amounts from random collisions of particles in
+thermal equilibrium.  In other words, as the universe cooled, the
+ambient thermal energy became insufficient to create such massive
+particles.  When this occurred, the large mass of the $W$ and $Z$
+differentiated them from the massless photon, the messenger particle
+of electromagnetic theory.  After this time the weak and
+electromagnetic interactions were observed to behave differently.
+
+\begin{table}[tbp]
+\caption{Events of the early universe.}
+\label{table:early_universe}
+\begin{center}
+\begin{tabular}[tbp]{cl}
+Time & Event \\
+\hline\hline
+$0$          & Big Bang \\
+$10^{-43}\units{s}$ & Planck Time --- end of Universal Symmetry\\
+$10^{-34}\units{s}$ & End of Grand Unification\\
+$10^{-10}\units{s}$ & End of Electro-weak Unification\\
+$10^{-4}\units{s}$  & Confinement of quarks into hadrons\\
+$1\units{s}$        & Neutrinos stop interacting (decouple)\\
+$400\units{s}$      & Protons and neutrons combine to form nuclei\\
+$10^5\units{yr}$    & Nuclei and electrons combine to form atoms\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+So how can we relate the time of the splitting off of the weak
+interaction to properties of the $W$'s and $Z$'s?  Here's how. The
+theoretical model for electro-weak unification, the Weinberg-Salam
+theory of 1973, predicted rest energies for $W$ and $Z$ in the range
+of 80--$100\units{GeV}$.  This prediction was dramatically confirmed when the
+rest energies of $W$ ($84\units{GeV}$) and $Z$ ($92\units{GeV}$) were 
+measured in the
+process of their experimental discovery at CERN in 1983.  If we round
+these rest energies up to $E=100\units{GeV}=10^{11}\units{eV}$, we can use
+Eq.~(\ref{eq:early_univ_energy}) to estimate the time when this much
+energy was available as ambient thermal energy.  We find
+\begin{equation}
+t = \left(\frac{10^6}{E}\right)^2 = \left(\frac{10^6}{10^{11}}\right)^2 
+   = 10^{-10}\units{s}
+\end{equation}
+as shown in the table. In general, the energy available at the time of
+all but two of the events above is related either to the rest energy
+of a particle or to a reaction energy associated with the event.  The
+problems expand on this relationship.
+
+Finally, let's try to explain the remaining two events: the decoupling
+of neutrinos from thermal equilibrium with the rest of the universe
+and the confinement of quarks inside hadrons.  Both of these events
+depend on the average density of the universe which, as the universe
+expands, is continually decreasing.
+
+Using some of the assumptions needed (but not presented here) to
+derive Eqs.~(\ref{eq:early_univ_temp}) and
+(\ref{eq:early_univ_energy}), along with estimates of the present
+average density of the universe, we find a density of $4\times
+10^5\units{g/cm$^3$}$ (and thus $4\times 10^5$ times that of water) for
+neutrino decoupling and $4\times 10^{13}\units{g/cm$^3$}$ for quark
+confinement.  Now neutrinos are very penetrating particles. Those
+produced in modern accelerators can penetrate miles of plate steel
+with less than one in a million being absorbed!  The high energy
+neutrinos of the early universe were even more penetrating.  When the
+universe's density fell to $4\times 10^5\units{g/cm$^3$}$, the absorption
+rate of neutrinos (in reactions like $\nu+p \to n + e^+$) fell
+significantly below their production rate, and neutrinos could no
+longer exchange enough energy with the rest of the universe to
+maintain thermal equilibrium.
+
+Quark confinement is explained by density considerations in a similar
+way.  Before $10^{-4}\units{s}$, individual quarks were ``free'' in
+the sense that they did not travel around through space in groups of
+quark-quark-quark (baryons) or quark-antiquark (mesons).  A single
+colored quark could go where it pleased.  But this was only because
+the density of the universe was comparable to the density of an atomic
+nucleus, around $10^{14}\units{g/cm$^3$}$.  The entire universe was
+one big nucleus!  As a result, any individual quark was never far from
+lots of other quarks, and the gluon ``rubber band'' never had to be
+stretched to give rise to confining forces. After this time, the
+density decreased enough that spaces started forming between nucleons
+and other particles, and quarks became confined inside hadrons in
+colorless combinations.
+
+\section{Epochs of the Early Universe}
+
+Let's now see what was going on in the universe during each epoch, the
+intervals between the crucial events of
+Section~\ref{section:crucial_events}, and explain briefly why.
+
+\begin{description}
+
+\item[Bang to $\mathbf{10^{-43}}\units{s}$:] Very speculative.  This would be
+  the time of universal symmetry, with quantized gravity incorporated
+  with the other three interactions.  Nobody really knows how.
+
+\item[$\mathbf{10^{-43}}$ to $\mathbf{10^{-34}}\units{s}$:] Grand
+  unification prevails.  The strong, weak and electromagnetic
+  interactions are on equal footings.  Quarks and leptons are not yet
+  distinct, since there are plenty of $X$ bosons to facilitate
+  interconversion.
+
+\item[$\mathbf{10^{-34}}$ to $\mathbf{10^{-10}}\units{s}$:] The strong
+  interaction acts separately from the electro-weak.  The $X$ bosons
+  are now too heavy to be produced in random collisions and they decay
+  away quickly leaving distinct quarks, antiquarks, leptons and
+  antileptons.  However, due to a very subtle flaw in symmetry (which
+  we won't explain here), the $X$ boson and its antiparticle
+  ($\overline X$) decay slightly differently.  This leaves a slight
+  excess (about one part in $10^9$) of quarks over antiquarks.  The
+  universe now consists of a hot ``soup'' of quarks, leptons, and
+  gauge bosons ($W$'s and $Z$'s, gluons, photons) all in exact thermal
+  equilibrium.
+
+\item[$\mathbf{10^{-10}}$ to $\mathbf{10^{-4}}\units{s}$:] The weak
+  interaction now acts separately from electromagnetism, because $W$'s
+  and $Z$'s are no longer produced abundantly.  By the end of this
+  epoch, the density of the universe has fallen sufficiently that
+  quarks begin collecting into hadrons.
+
+\item[$\mathbf{10^{-4}}$ to 1 s:] With quarks permanently confined,
+  the ``soup'' now consists of hadrons and leptons.  Energies are now
+  insufficient to create exotic particles or to produce hadronic
+  particle-antiparticle pairs. Thus annihilation of antiparticles
+  occurs rapidly and essentially all baryonic antimatter is wiped out,
+  leaving the small original (since the time $t=10^{-34}\units{s}$) excess of
+  matter.  We are left with primarily protons, neutrons, electrons,
+  positrons, neutrinos and photons in thermal equilibrium.  So much
+  radiation is released from the annihilation of quarks that there are
+  approximately $10^9$ photons/baryon, the value we observe today.
+
+\item[1 to 400 s:] The universe is now diffuse enough (``only'' about
+  400,000 times as dense as water) that neutrinos don't interact
+  enough to stay in equilibrium with the rest.  From 1 second on they
+  evolve separately.  This means that inverse beta decay:
+  \begin{equation}
+    \overline\nu_e + p \to n + e^+
+  \end{equation}
+  stops turning protons back into neutrons.  But a neutron can
+  spontaneously decay to a proton, with 10 percent decaying every 100
+  seconds.  So the ratio of protons to neutrons starts growing.
+
+  Also during this epoch the available thermal energy falls below that
+  required to create electron-positron pairs and so positrons pretty
+  much disappear. At the same time, thermal energies start to fall
+  below the binding energies of small nuclei, most notably the
+  deuteron.  This means that protons and neutrons can start coalescing
+  to form helium and lithium nuclei without being blasted apart by
+  high energy photons. By the end of this period, essentially all the
+  neutrons are bound into light nuclei. The ratio of protons to
+  neutrons and the relative abundances of primordial elements are
+  fixed at this time.
+
+\item[400 s to $10^5$ years:] The universe consists of a plasma of
+  protons, helium nuclei, electrons and photons, and decoupled
+  neutrinos. Any remaining free neutrons have long since decayed away.
+  The photons interact easily with the free electrons via the Compton
+  effect and thermal equilibrium between radiation and matter is
+  maintained.
+
+\item[$10^5$ years to the present:] At last it is cool enough that
+  electrons and nuclei can combine to form atoms, since the photon
+  energies are too low to easily ionize the atoms.  Later the photon
+  energies fall below even that level necessary to excite atomic
+  transitions, so there is no longer any efficient way for photons to
+  transfer energy.  The universe becomes transparent to light as the
+  photons decouple from the matter. Those primordial photons are still
+  wandering around the universe.
+\end{description}
+
+
+\section{Observational Tests}
+
+Three pieces of observational evidence can serve as a testing ground
+for the theories of what went on in the early universe:
+\begin{itemize}
+\item the discovery of the $3\units{K}$ microwave background radiation,
+\item the measurement of the ratio of photons to baryons,
+\item the observation of the relative abundances of hydrogen, helium,
+  deuterium, and lithium in the interstellar medium.
+\end{itemize}
+Let's look at each in turn.
+
+Penzias and Wilson's discovery of the $3\units{K}$ microwave radiation in 1965
+was a stunning confirmation of the Big Bang model.  This radiation
+seems to be coming from everywhere in the universe.  It has a
+{\em blackbody} spectrum corresponding to a body at $3\units{K}$.  A simple
+calculation shows that these photons are the remnants of the Big Bang,
+the photons that decoupled at $\sim 10^5$ years and have been cooling ever
+since!
+
+The present observed ratio of photons to baryons seems to be about
+$10^9$. Recall our previous claim that these photons are those
+produced during the annihilation of almost equal numbers of hadronic
+particles and antiparticles. If Grand Unified Theories (GUTs) are
+correct in their description of the $X$-boson, then the slightly
+different decay modes for $\overline X$ and $X$ should lead to a quark
+excess (over antiquarks) of about 1 in $10^9$.  Various versions of
+GUTs are now being developed, and each version will presumably lead
+to an estimate of the $X$-$\overline X$ decay asymmetry.  See
+Problem~
+%\ref{chapter:cosmology}.
+\ref{prob:X_asymmetry}.  The 1 in
+$10^9$ figure thus provides an ``experimental'' test of various
+possible grand unified theories.  It is known so far that the simplest
+conceivable scheme for {\em grand unification} (so-called minimal
+coupling) {\em does not} get the $X$ and $\overline X$ decay modes
+right, and thus is effectively ruled out as a viable theory on
+observational grounds.
+
+Finally let's consider the question of relative abundances of the
+light elements.  The more neutrons there were at the end of the time
+of nuclear synthesis, the higher the ratio of helium to hydrogen would
+be. (Ignore for the moment all the other elements; these constitute
+less than 1\% of the mass of the universe.)  For example, if there were
+seven times as many protons as neutrons, then in a group of sixteen
+baryons, fourteen would be protons and two would be neutrons. After
+combination (see sketch below), there is one helium nucleus (mass 4)
+and twelve hydrogen nuclei (total mass 12).  The universe would then
+be 25\% helium, by weight.  See Fig.~\ref{fig:helium_abundance}.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=3.5in]{cosmology/helium_abundance}
+\caption{Fourteen protons and two neutrons combine to form one
+  $^4$He nucleus, with 12 protons left over.}
+\label{fig:helium_abundance}
+\end{center}
+\end{figure}
+
+One of the things the exact proton to neutron ratio depends on is the
+number of different types of neutrinos that exist.  The more types
+there are, the longer the neutrinos could initiate proton-to-neutron
+conversions (inverse beta decay) in the period just before nuclear
+synthesis, and the more neutrons there would be.  This in turn would
+lead to a higher helium abundance in the present universe.  Using
+standard nuclear physics, the helium abundances for two, three, or
+four neutrino types can be calculated and compared to the
+observational abundance data.  It turns out that three neutrino types
+is the best fit. This means that cosmology can tell us what no
+theoretical arguments have yet been able to show, that there are just
+three neutrino types and thus just three generations of quarks and
+leptons!  The predictions have been confirmed recently by measuring
+the uncertainty in the mass of the $Z^0$ boson.
+
+\newpage
+
+\section*{Problems}
+\markright{PROBLEMS}
+
+\begin{problem}
+Use the time in Table~\ref{table:early_universe} to calculate
+  the rest energy associated with the end of Grand Unification.  What
+  particles would have about this mass?
+\label{prob:grand_unification}
+\end{problem}
+
+\begin{problem}
+About how long after the Big Bang would there be insufficient
+  energy to create $\Lambda$-$\overline\Lambda$ pairs?  The rest
+  energy of a $\Lambda$ is $1116\units{MeV}$.
+\label{prob:Lambda_pair_production}
+\end{problem}
+
+\begin{problem}
+ Assuming that one photon is released in each baryon-antibaryon
+  annihilation, why are there $10^9$ photons/baryon after annihilation
+  and not some other number?
+\label{prob:baryon_abundance}
+\end{problem}
+
+\begin{problem}
+What is the thermal energy per particle available at $t = 1\units{s}$?  How does this
+compare with the combined rest energies of an electron-positron
+pair?  What happens to positrons after this time?
+\label{prob:electron_pair_production}
+\end{problem}
+
+\begin{problem}
+List the types of particles you might expect to find abundantly
+in the early universe during the following epochs:
+  \begin{enumerate}
+  \item $10^{-10}$ s to $10^{-4}$ s after the Big Bang
+  \item 1 s to 400 s after the Big Bang
+  \item $10^5$ years after the Big Bang
+  \end{enumerate}
+\label{prob:particles_and_epochs}
+\end{problem}
+
+\begin{problem}
+What particle energy is associated with the time of quark
+confinement?  What hadron has about this rest energy?
+\label{prob:quark_confinement}
+\end{problem}
+
+\begin{problem}
+Use Eq.~(\ref{eq:early_univ_temp}) to estimate the photon
+temperature at the present time ($\sim$10--15 billion years after
+the Bang).  Note that this is an overestimate since the assumptions
+of Eq.~(\ref{eq:early_univ_temp}) have broken down.
+\label{prob:background_radiation}
+\end{problem}
+
+\begin{problem}
+Transition energies for typical atomic states are about
+1--$10\units{eV}$. That is, photons in this energy range are captured 
+by atoms to excite upward transitions.  Use Eq.~(\ref{eq:early_univ_energy}) 
+to estimate when in the early universe this ``capture effect'' became
+energetically impossible.  
+\label{prob:transparent_universe}
+\end{problem}
+
+\newpage
+
+\begin{problem}
+The $X$ and $\overline X$ bosons decay slightly differently
+  because of a small flaw in charge conjugation invariance.  Suppose
+  the decay scheme for $X$ had the following branching ratios:
+\begin{center}
+\includegraphics[width=4cm]{cosmology/X_decay}
+\end{center}
+  That is, there is a 90\% probability that $X$ decays to two quarks,
+  and a 10\% chance that $X$ decays to an antiquark plus an antilepton.
+  Similarly suppose $\overline X$ decays by
+\begin{center}
+\includegraphics[width=4.2cm]{cosmology/antiX_decay}
+\end{center}
+
+  \begin{enumerate}
+  \item Take 3000 random $X$'s and 3000 random $\overline X$'s.  How
+    many each of quarks, leptons, antiquarks, and antileptons would
+    appear after all $X$'s and $\overline X$'s decayed?
+  \item Let all the quarks combine into baryons, and all the
+    antiquarks combine into antibaryons.  How many of each are there?
+  \item Now let all the particles and antiparticles annihilate as
+    completely as possible.  What's left over?  Assume one photon is
+    released from each annihilation.
+  \item Calculate the photon to baryon ratio for this ($X$, $\overline
+    X$) decay scheme.
+  \end{enumerate}
+  \label{prob:X_asymmetry}
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+

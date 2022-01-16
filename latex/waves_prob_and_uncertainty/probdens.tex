@@ -1,0 +1,258 @@
+\section{Probability Density}
+\label{sec:ProbDensity}
+
+Now that we have a method for obtaining the wavefunction $\psi(x)$ of
+a particle, let us return to the discussion of how to determine the
+probability density.  Simply put, the probability density $P(x)$ for a
+particle whose wavefunction is $\psi(x)$ is defined to be the square 
+of the magnitude of the wavefunction $|\psi(x)|$.  The concept of
+probability density can be tricky --- it's not the same as
+probability!  Probability density is really a {\em probability per
+  unit length}. So to get probability from $|\psi(x)|^2$, you must
+multiply by a length interval. Specifically
+\begin{equation}
+\label{eq:probDensity}
+P(x) dx = |\psi(x)|^2\, dx = \left[ \begin{array}{l}
+         \mbox{Probability of finding the particle in an} \\
+         \mbox{interval of length $dx$ centered at position $x$}
+                    \end{array} \right] .
+\end{equation}
+
+While a general wavefunction may be very complicated, the prescription
+for its interpretation is always the same: from $\psi(x)$, calculate
+$|\psi(x)|^2$, its magnitude squared.  Then the probability density is
+given by $P(x)=|\psi(x)|^2$.
+
+One of the complications of a general wavefunction is that it may be
+complex-valued, involving factors of the imaginary number $ i = \sqrt{-1}$.  
+When this occurs $|\psi(x)|^2$ does not just mean ``square the wavefunction''
+to get the magnitude squared.  Rather you should follow this three-step
+process:
+
+\begin{enumerate}
+
+\item[(1)] Write the {\em complex conjugate} of the wavefunction, $\psi^*$,
+  by replacing every occurrence of ``$i$'' with ``$-i$'' in the
+  wavefunction.  For example if $\psi(x) = 2 e^{i3x} - 5 i x^2$, then
+  $\psi^*(x) = 2 e^{-i3x} + 5 i x^2$.
+
+\item[(2)] Multiply $\psi(x)$ times $\psi^*(x)$.
+
+\item[(3)] Replace any occurrences of ``$i^2$'' with ``$-1$'' and
+  simplify. Your result should be real (no left-over ``$i$''s) and
+  non-negative for all values of $x$, as required by a probability
+  density.
+
+\end{enumerate}
+
+\begin{example}{Calculating probability density}
+\label{exam:CalcProbDensity}
+A particle in a region of space is represented by the wavefunction
+\begin{equation}
+\psi(x) = \sqrt{5} e^{ikx} \sin(2x) e^{-x} \nonumber
+\end{equation}
+
+\noindent where $k$ is a real constant.  Calculate the probability
+density for this particle and determine at what position the particle
+is most likely to be found.
+
+{\bf Solution:} According to the prescription given above, the
+probability density for this particle is calculated to be
+\begin{eqnarray}
+\left| \psi(x) \right| ^2 & = & \psi(x) \cdot \psi^*(x) \nonumber \\
+ & = & \left( \sqrt{5} e^{ikx} \sin(2x) e^{-x} \right) \left( \sqrt{5} e^{-ikx} \sin(2x) e^{-x} \right) \nonumber \\
+ & = & 5 \sin^2(2x) e^{-2x} \nonumber
+\end{eqnarray}
+
+\noindent where we have used the fact that
+\begin{eqnarray}
+(e^{ikx}) (e^{ikx})^* &=& (e^{ikx}) (e^{-ikx}) \nonumber \\
+&=& e^{(ikx-ikx)} = e^0 = 1. \nonumber
+\end{eqnarray}
+
+\begin{figure}[!hb]
+\begin{center}
+\includegraphics[width=3in]{wavefunctions/fig42.eps}
+\end{center}
+\caption{Probability density for the wavefunction of Example~\ref{exam:CalcProbDensity}.}
+\label{fig:prob_density_example}
+\end{figure}
+
+Fig.~\ref{fig:prob_density_example} shows a plot of $P(x)$ versus
+$x$. Using the interpretation for the probability density as given in
+Eq.~(\ref{eq:probDensity}), we see from
+Fig.~\ref{fig:prob_density_example} that $P(x)$ has a maximum near the
+position $x \approx 0.55$ and therefore the probability of finding the
+particle is the greatest at this position. So, if a measurement of the
+position of the particle is made, it will most likely yield the value
+$x = 0.55$.
+\end{example}
+
+In most cases, we are not interested in knowing the probability of
+finding the particle at any precise position, but rather the
+probability of being located within a finite range of positions.
+Fig.~\ref{fig:prob_density_integral} is the graph of a probability
+density for a particle in some quantum state.  The quantity $P(x_o)
+dx$ represents the probability for finding the particle within a
+narrow interval $dx$ about position $x_o$, shown as the shaded region
+in the figure.  If we would like to know the probability of finding
+the particle anywhere between the two positions $x_a$ and $x_b$, then
+we would add probabilities such as $P(x_o) dx$ for all positions $x_o$
+from $x_o = x_a$ to $x_o = x_b$.  Mathematically, this is the same as saying
+we need to {\em integrate} the probability density:
+
+%\begin{figure}[!hb]
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=4in]{wavefunctions/prob_density_integral.eps}
+\end{center}
+\caption{Determining the probability over a range of positions.}
+\label{fig:prob_density_integral}
+\end{figure}
+
+\begin{equation}
+\label{eq:IntegralprobDensity}
+\left( \begin{array}{l}
+         \mbox{Probability of finding the particle} \\
+         \mbox{in the region $[x_a, x_b]$}
+                    \end{array} \right) = \int_{x_a}^{x_b} P(x) dx
+                                        = \int_{x_a}^{x_b} |\psi(x)|^2 dx .
+\end{equation}
+Eq.~(\ref{eq:IntegralprobDensity}) brings up an important
+property of wavefunctions and probability densities.  What if the
+region we are interested in is the entire $x$-axis, that is, 
+$[x_a, x_b] = (-\infty, +\infty)$?  
+Another way of saying this is, `What is
+the probability of finding the particle anywhere?'  Certainly the
+answer to this question is $100\%$ !  This implies that the
+wavefunction must be given such that
+\begin{equation}
+\label{eq:normalization}
+\int_{-\infty}^{+\infty} |\psi(x)|^2 dx = 1 .
+\end{equation}
+When a wavefunction satisfies this requirement, it is said to be {\em
+  normalized}.  Normalization is usually accomplished by multiplying
+the wavefunction by a suitable constant factor, as we will see in the
+following examples.
+
+\begin{example}{Probability of finding a particle I.}
+Fig.~\ref{fig:example_wavefunction} shows the wavefunction for a
+certain particle, where $A$ is a positive constant. (a) Determine a
+value for the constant $A$ such that the wavefunction is properly
+normalized. (b) What is the probability of finding the particle in the
+region between $x = 2\units{nm}$ and $x = 4\units{nm}$?
+
+\begin{figure}[!hb]
+\begin{center}
+\includegraphics[width=3in]{wavefunctions/prob_density_example.eps}
+\end{center}
+\caption{Example wavefunction.}
+\label{fig:example_wavefunction}
+\end{figure}
+
+{\bf Solution: (a)} To determine probabilities we must first determine
+$|\psi(x)|^2$ for the given wavefunction. We do this by computing the
+value of $|\psi(x)|^2$ at every position on the graph which results in
+the graph of Fig.~\ref{fig:example_prob_density}.
+
+\begin{figure}[!hb]
+\begin{center}
+\includegraphics[width=3in]{wavefunctions/prob_density_example_a.eps}
+\end{center}
+\caption{Probability density for wavefunction.}
+\label{fig:example_prob_density}
+\end{figure}
+The total probability of finding the particle anywhere is the total
+area under the curve of Fig.~\ref{fig:example_prob_density}:
+\begin{eqnarray} 
+\int_{-\infty}^{+\infty} |\psi(x)|^2 dx &=& A^2 (2 - 1) + \left( - \frac{A}{2} \right)^2 (4 - 2) \nonumber \\
+&=& A^2 + \frac{A^2}{2} = \frac{3}{2} A^2 .
+\end{eqnarray}
+
+For the wavefunction to be properly normalized, this area must equal
+one.  Therefore, the value for the constant $A$ must be
+\begin{equation}
+\frac{3}{2} A^2 = 1 \hspace{0.3in} \rightarrow \hspace{0.3in} A = \sqrt{\frac{2}{3}}.
+\end{equation}
+{\bf (b)} Now that we know the value for the constant $A$ that
+properly normalizes the wavefunction, the probability of finding the
+particle in the region between $x = 2\units{nm}$ and $x = 4\units{nm}$ is just the area
+under the curve of the probability density between $x = 2\units{nm}$ and $x =
+4\units{nm}$:
+\begin{equation}
+\text{Prob}([2, 4]) = \frac{A^2}{4} (4 - 2) = \frac{A^2}{2} = \frac{1}{3}. 
+\end{equation}
+\end{example}
+
+Now that we understand the concept of normalization, we know how
+to assign a value to the constant $A$ in the wavefunction solutions of
+the infinite square well potential given in 
+Eq.~(\ref{eq:squarewell_7}). Given that the wavefunction is zero outside
+of the well, the total probability of finding the particle within the
+well should be one.  Therefore,
+
+\begin{equation}
+\int_0^L |\psi_2(x)|^2 dx = \int_0^L A^2 \sin^2\left(\frac{n
+  \pi}{L}x\right) dx = 1 .
+\end{equation}
+Using the table of integrals in Appendix A of your Wolfson text, we
+can evaluate the integral using
+\begin{equation}
+\int_0^L \sin^2\left(\frac{n \pi}{L} x\right) = \frac{L}{2} .
+\end{equation}
+Therefore
+\begin{equation}
+A^2 \left( \frac{L}{2} \right) = 1 \hspace{0.3in} \mbox{and} \hspace{0.3in} A = \sqrt{\frac{2}{L}} .
+\end{equation}
+Notice that this value of $A$ is the same for all of the solutions,
+independent of $n$.
+
+\begin{example}{Probability of finding a particle II.}
+A particle of mass $m$ is placed in an infinite square well of width
+$L$ in a quantum state for which $n = 2$. (a) At what position(s) is
+the particle most likely to be found within the well?  (b) What is the
+probability of finding the particle between positions $x = L/4$ and $x
+= L/2$?
+
+{\bf Solution: (a)} The wavefunction for this particle is shown as
+$\psi_2(x)$ in Fig.~\ref{fig:infinite_sq_well_solutions}.  Using
+Eq.~(\ref{eq:squarewell_7}), the probability density for this
+wavefunction is
+\begin{equation}
+|\psi_2(x)|^2 = \left(\sqrt{\frac{2}{L}} \right)^2 \sin^2\left(\frac{2 \pi}{L}x\right) ,
+\end{equation}
+
+\begin{figure}[!tb]
+\begin{center}
+\includegraphics[width=3in]{wavefunctions/ProbState_2.eps}
+\end{center}
+\caption{Probability density for a particle in the n=2 state of an infinite square well.}
+\label{fig:ProbState_2}
+\end{figure}
+
+\noindent as shown in Fig.~\ref{fig:ProbState_2}. The positions
+where the particle is most likely to be found are where the
+probability density is the greatest. By examining the graph of
+probability density, these positions are located at $x = L/4$ and $x =
+3L/4$.  {\bf (b)} To calculate the probability of finding the particle
+between $x = L/4$ and $x = L/2$, we use 
+Eq.~(\ref{eq:IntegralprobDensity}):
+\begin{equation}
+Prob\left[\frac{L}{4}, \frac{L}{2}\right] = \int_{L/4}^{L/2} |\psi_2(x)|^2 dx \nonumber 
+\end{equation}
+\begin{equation}
+ = \int_{L/4}^{L/2} \left(\frac{2}{L}\right) \sin^2\left(\frac{2 \pi}{L}x\right) dx
+\nonumber 
+\end{equation}
+\begin{equation}
+ = \frac{2}{L} \left[\frac{x}{2} - \frac{L}{8 \pi}\sin \left(\frac{4 \pi}{L}x\right) \right]_{L/4}^{L/2} =
+ \frac{1}{4} \nonumber
+\end{equation}
+\noindent where we have used the table of integrals in Appendix A of
+your Wolfson text.
+
+Because of the symmetry of the probability density, the area under the
+curve of $\left|\psi\right|^2$ between $x = L/4$ and $x = 3L/4$ is
+one-quarter of the total area, therefore it makes sense that the
+probability is $\frac{1}{4}$.
+\end{example}

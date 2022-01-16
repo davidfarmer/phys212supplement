@@ -1,0 +1,1049 @@
+\chapter[3D Wavefunctions and Semiconductors]{Three-Dimensional Wavefunctions and Semiconductors}
+% \chapter[3D Wavefunctions and Time Dependence]{Three-Dimensional Wavefunctions and the Time Dependence of Wavefunctions}
+%\label{chapter:wavefunctions3D}
+\label{chapter:3D_and_semiconductors}
+%\setcounter{ex}{0}
+
+\section{Introduction}
+\indent The basics of quantum mechanics and its interpretation can be
+understood by first looking at one-dimensional problems.  This is what
+we have done so far in this unit.  But the real world has three spatial
+dimensions, and most real systems have more than one particle to keep
+track of.  The extension of the Schr\"{o}dinger equation to three
+dimensions is straight-forward, but the math can get a little
+complicated.
+
+We will confine our study primarily to the case of electrons in atoms.  
+A key feature of wavefunctions in
+three dimensions (3D) is that the allowed quantum states are described by
+{\bf three} quantum numbers instead of one.  For the states of
+electrons in atoms, each quantum number has a distinct physical
+interpretation, as we will see.
+
+Also in this chapter we describe the basics of semiconductor physics,
+which follows from the discussion of energy bands in Chapter
+\ref{chapter:quantized_energies}. We will explain how the conductivity
+of materials can be understood in terms of these bands, and we'll
+discuss how these quantum properties have led to some really
+cool (and tremendously important) techniques that form the basis
+of modern electronics.
+
+\section{Quantum in 3D}
+
+In earlier chapters we have seen how to use the Schr\"odinger
+equation to solve for the wavefunctions of a particle in one
+dimension.  In three dimensions, the Schr\"{o}dinger equation
+can be written in spherical coordinates $(r, \theta, \phi)$
+as:
+\begin{equation}
+\label{eq:3Dschrodinger}
+-\frac{\hbar^2}{2mr^2} \left[ \frac{\partial}{\partial r} \left( r^2
+  \frac{\partial \psi}{\partial r} \right) + \frac{1}{\sin{\theta}}
+  \frac{\partial}{\partial \theta} \left( \sin{\theta} \frac{\partial
+    \psi}{\partial \theta} \right) + \frac{1}{\sin^2{\theta}}
+  \frac{\partial^2 \psi}{\partial \phi^2} \right] + U \psi = E \psi.
+% \frac{k e^2}{r} \psi = E \psi .
+\end{equation}
+At this point, you might be hyperventilating, but don't worry --- we
+will restrict ourselves to cases where everything is
+spherically-symmetric (with no $\theta$- or $\phi$-dependence), so
+most of the terms in this equation drop out.  And we won't ask you to
+{\it solve} this equation, but will instead use the approach from
+earlier where we give you a solution and ask for you to test to see if
+it does or does not satisfy the equation.
+
+\begin{example}{Schr\"{o}dinger equation for 3D Harmonic Oscillator}
+Show that the test wavefunction $\psi(r) = Ae^{-br^2}$ is a solution
+to Eq.~(\ref{eq:3Dschrodinger}) for the harmonic oscillator with
+potential energy function $U =\frac{1}{2}kr^2$. If it is a solution
+(which it is), determine the energy of the quantum state.
+
+{\bf Solution}: If you have never seen a partial derivative such as
+$\partial \psi/\partial r$, fear not --- it is the same thing as a
+regular derivative where everything else (in this case, $\theta$ and
+$\phi$) is treated as constant.  And since the test wavefunction for
+this example doesn't have any $\theta$ or $\phi$'s in it, we can
+quickly simplify Schr\"{o}dinger's equation by dropping out any terms
+that have derivatives with respect to $\theta$ or $\phi$. So, we now
+have:
+\begin{equation}
+-\frac{\hbar^2}{2mr^2} \frac{\partial}{\partial r} \left( r^2
+\frac{\partial \psi}{\partial r} \right) + \frac{1}{2}kr^2 \psi = E
+\psi.
+\label{eq:ReducedSE}
+\end{equation}
+The derivative $\partial \psi/\partial r = Ae^{-br^2}(-2br)$ and the
+expression $\frac{\partial}{\partial r}(r^2\frac{\partial
+  \psi}{\partial r}) = -6br^2Ae^{-br^2} +4b^2r^4Ae^{-br^2}$. So,
+Eq.~(\ref{eq:ReducedSE}) becomes:
+\begin{equation}
+-\frac{\hbar^2}{2mr^2} \left[-6br^2Ae^{-br^2}+4b^2r^4Ae^{-br^2}\right]
++ \frac{1}{2}kr^2 \psi = E \psi.
+\end{equation}
+The terms $Ae^{-br^2}$ are present in each term, so they
+cancel. Simplifying,
+\begin{align}
+\frac{3b\hbar^2}{m} - \frac{2b^2\hbar^2}{m}r^2 + \frac{1}{2}kr^2 =
+E\\ \rightarrow r^2\left(\frac{1}{2}k-\frac{2b^2\hbar^2}{m}\right) +
+\left(\frac{3b\hbar^2}{m} - E\right) = 0
+\end{align}
+and this is satisfied only if both the constant and $r^2$ terms
+separately add to zero.  Setting the $r^2$ terms to zero gives us $b =
+\frac{\sqrt{mk}}{2\hbar}$ and $E = \frac{3b\hbar^2}{m} =
+\frac{3\hbar^2}{m}\frac{\sqrt{mk}}{2\hbar} =
+\frac{3}{2}\hbar\sqrt{k/m}$.
+
+So, {\bf yes}, the test function $\psi(r) = Ae^{-br^2}$ satisfies
+Schr\"{o}dinger's equation for a harmonic oscillator as long as $b$
+and $E$ are given by the values above.
+\end{example}
+
+A particularly important case for the 3D Schr\"{o}dinger equation
+(Eq.~(\ref{eq:3Dschrodinger})) is that of a hydrogen atom where the
+potential energy function $U = -ke^2/r$.  The complete general
+solutions for this equation, describing all possible states for an
+electron in a hydrogen atom, are beyond the scope of this
+course.\footnote{But not beyond the scope of a class in physical
+  chemistry or upper-level quantum mechanics --- something to look
+  forward to if you are a chemistry or physics major!}  We'll be
+content with checking a few of the simplest cases (you'll be doing
+this for homework, using an approach very similar to the example
+above).  But certain general observations will be made.
+
+The first observation is that the spatial wavefunction $\psi(x,y,z)$
+for any single-particle, 3D quantum system involves three quantum
+numbers.  For atoms, each of the three quantum numbers ($n, l,$ and
+$m_l$) which arise in solving this particular 3D problem can be
+associated with a particular spherical coordinate.  The principal
+quantum number $n$ is associated with the radial coordinate $r$, and
+is related to the number of nodes in the wavefunction as you move
+outward from the origin on a radial line.  The orbital quantum number
+$l$ is associated with the polar angle $\theta$ (measured from the
+``North pole'').  When $l=0$, the associated wavefunction has no
+dependence on $\theta$.  The orbital magnetic quantum number $m_l$ is
+associated with the azimuthal angle $\phi$; when $m_l = 0$, there is
+no $\phi$-dependence.\footnote{In other math classes you have taken
+  you may have used $\phi$ for the polar angle and $\theta$ for the
+  azimuthal angle.  This is just a matter of convention. In this
+  course we will consistently use the definitions given in the text
+  above.}
+
+Actually, there is a fourth quantum number $m_s$ associated with the
+spin angular momentum of the electron --- this is the same quantum
+number that we discussed in the previous chapter.  So, a full
+description of the state of an electron in an atom requires the
+specification of four quantum numbers: $|n,l,m_l,m_s\rangle$.
+
+The second observation is that the quantum numbers are directly
+connected to measurable physical quantities of the atom.  For
+solutions of Eq.~(\ref{eq:3Dschrodinger}), the energy of the electron
+in hydrogen is determined to a high degree of accuracy by the
+principal quantum number $n$.\footnote{For real atoms, there are
+  slight modifications to the energy based on the other quantum
+  numbers, but we won't discuss those slight corrections in this
+  course.}  The energy formula for an electron in a state of quantum
+number $n$ is
+
+\begin{equation}
+\label{eq:hydrogenE}
+E_n = -\frac{1}{n^2} \frac{m k^2 e^4}{2 \hbar^2} 
+= - \frac{13.6 \units{eV}}{n^2}  .
+\end{equation}
+
+Another useful physical quantity is the electron's orbital angular
+momentum $\vec{L}$, whose magnitude is given in terms of the orbital
+quantum number $l$ as
+
+\begin{equation}
+\label{eq:Lmag}
+|\vec{L}| = \sqrt{l (l + 1)} \hbar  .
+\end{equation}
+
+The $z$-component of the orbital angular momentum $L_z$ is
+given by
+\begin{equation}
+\label{eq:Lcomponent}
+L_z = m_l \hbar  ,
+\end{equation}
+and the $z$-component of the spin angular moment $S_z$ is given by
+\begin{equation}
+\label{eq:Scomponent}
+S_z = m_s \hbar .
+\end{equation}
+
+\section{The Hydrogen Atom}
+
+We are now ready to talk about the actual wavefunctions of the
+simplest atom: hydrogen.  Specifically, we consider the wavefunctions
+for the electron that ``orbits'' around the single proton in the
+nucleus.  We put the word ``orbits'' in quotes because the behavior of
+the electron is quite different from the behavior of a satellite
+orbiting around the Earth. Because of the small mass of an electron
+and the small size of an atom, quantum wave-like effects are quite
+significant.
+
+Because of the Uncertainty Principle, we can't specify both the
+position and the velocity of the electron. An electron orbiting in an
+atom is typically smeared out into a probability wave around the atom,
+so there really {\it isn't\/} a ``position'' per se.  And because of
+the fact that the motion of the electron (whatever {\it motion\/}
+really means in the quantum world) isn't in a straight line, it isn't
+meaningful to specify the velocity or momentum of the
+electron. Instead we solve the Schr\"{o}dinger equation
+(\ref{eq:3Dschrodinger}) to find wavefunctions representing various
+states of the hydrogen atom.  As usual, the square of the magnitude of
+the wavefunction is to be interpreted as a probability density, in
+this case, probability per unit {\bf {\em volume}}.
+
+By solving Schr\"{o}dinger's equation (\ref{eq:3Dschrodinger}), each
+hydrogen wavefunction solution is characterized by three quantum
+numbers $\left(n, l, m_l\right)$, and is written as
+$\psi_{nlm}(r,\theta,\phi)$.  (The quantum number $m_s$ isn't needed
+to specify the wavefunction.)  For instance, the lowest energy
+(ground) state wavefunction of hydrogen ($n=1, l=0, m_l=0$) is
+calculated to be
+
+\begin{equation}
+\psi_{100} = \frac{1}{\sqrt{\pi a_0^3}}\ e^{-r/a_0} .
+\label{eq:H100}
+\end{equation}
+
+\noindent The excited state ($n=2, l=1, m_l=0$) is given by
+
+\begin{equation}
+\psi_{210} = \frac{1}{\sqrt{32\pi a_0^3}} \left( \frac{r}{a_0} \right)
+e^{-r/2a_0} \cos{\theta}
+\label{eq:H210}
+\end{equation}
+
+\noindent and the excited states ($n=2, l=1, m_l=+1$) and ($n=2, l=1,
+m_l=-1$) are
+\begin{equation}
+\psi_{211} = -\frac{1}{\sqrt{64\pi a_0^3}} \left( \frac{r}{a_0}
+\right) e^{-r/2a_0} \sin{\theta}\, e^{i\phi}.
+\label{eq:H211}
+\end{equation}
+
+\begin{equation}
+\psi_{21-1} = \frac{1}{\sqrt{64\pi a_0^3}} \left( \frac{r}{a_0}
+\right) e^{-r/2a_0} \sin{\theta}\, e^{-i\phi} ,
+\label{eq:H21-1}
+\end{equation}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.0in]{semiconductors_3D/hydrogen100Dot}
+\end{center}
+\caption{Plot of probability density for an electron in state
+  $\psi_{100}$ of hydrogen.}
+\label{fig:hydrogen100Dot}
+\end{figure}
+\noindent respectively. We can use these wavefunctions to calculate
+their probability densities $\left|\psi_{nlm_l}\right|^2$ and then
+plot these probability densities to get a visualization of the
+``location'' of the electron in this state.
+Figure~\ref{fig:hydrogen100Dot} shows such a plot for the ground state
+$\psi_{100}$.  In this plot, the probability density for finding the
+electron at any location is related to the density of dots in the
+plot.  Thus, the probability density is greatest at the center $r=0$
+and drops off exponentially as you move away from the origin, in
+agreement with the wavefunction in Eq.(\ref{eq:H100}). Also we notice
+that the probability density is spherically symmetric, implying that
+it doesn't depend on the direction in space, which follows from
+Eq.~(\ref{eq:H100}) since there is no dependence on the coordinates
+$\theta$ and $\phi$.
+
+In the case of the excited states ($n=2$, $l=1$, $m_l=1$, 0,-1), it is
+actually real linear combinations of the wavefunctions given in
+equations (\ref{eq:H211}) and (\ref{eq:H21-1}) that make up the
+familiar atomic $p$-orbitals that are important in chemical
+bonding. For instance, the linear combination
+
+\begin{align}
+  \psi_{2p_x} &= -\frac{1}{\sqrt{2}} \left[ \psi_{211} - \psi_{21-1} \right]\\
+              &= \frac{1}{\sqrt{32 \pi a_0^3}}\ \left( \frac{r}{a_0} \right) \ e^{-r/2a_0} \sin{\theta} \cos{\phi}
+  \nonumber
+\end{align}
+
+\noindent corresponds to what is known as the ``$p_x$'' orbital that
+you might have seen in chemistry textbooks. The probability density is
+shown in Fig.~\ref{fig:hydrogen21xDot}.  In this case you will notice
+that the probability density is not spherically symmetric as in the
+ground state, but instead has two lobes that extend outward along the
+$x$-axis.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.0in]{semiconductors_3D/hydrogen21xDot}
+\end{center}
+\caption{Plot of probability density for an electron in an orbital state $\psi_{2p_x}$ of hydrogen.}
+\label{fig:hydrogen21xDot}
+\end{figure}
+
+Finally, here are a few rules relating the atomic quantum numbers $n,
+l, m_l$.  We won't derive them here in PHYS 212.  You'll have to take
+PHYS 222 for more details about this.
+
+\begin{itemize}
+    \item The possible values for the principal quantum number $n$ are 
+     \begin{equation}
+     n = \mbox{1, 2, 3, \dots}
+\end{equation}
+\item Given a principle quantum number $n$ for an electron, the
+  orbital quantum number $l$ can have the following values
+    \begin{equation}
+      l= 0,\, 1,\, \dots,\, n-1  .
+    \label{eq:lquantumnumber}
+    \end{equation}
+    So, for example, if $n=1$, then $l$ can only be 0.  If $n=2$, then
+    $l$ can be 0 or 1.  If $n=3$, then $l$ can be 0, 1, or 2.  Etc.
+  \item Given an orbital quantum number $l$, the magnetic quantum
+    number $m_l$ can have the following values
+    \begin{equation}
+      m_l=-l,\, -(l-1),\, \dots,\, -1,\, 0,\, 1,\, \dots,\, l-1,\, l  .
+    \label{eq:mlquantumnumber}
+    \end{equation}
+    So, for example, if $l=0$, then $m_l$ can only be 0.  If $l=1$,
+    then $m_l$ can be $-1$, 0, or 1.  If $l=2$, then $m_l$ can be
+    $-2$, $-1$, 0, 1, 2,  etc.
+\end{itemize}
+The rule for the quantum number $m_s$ is the same as was discussed
+in Chapter \ref{chapter:spin} for an electron: $m_s = -1/2$ or $+1/2$, 
+regardless of the other three quantum numbers $n, l$ and $m_l$.
+
+Some of the consequences of these rules will be explored in the
+problems.
+
+\section{Periodic Table}
+
+We now have the basic tools to explain the periodic table of the 
+elements. Electrons are fermions since they have a half-integral
+spin quantum number ($s = 1/2$ for an electron). Consequently,
+electrons obey the Pauli Exclusion Principle (see Section
+\ref{section:Pauli}): no two electrons can be in the same
+state. So, if there is more than one electron in an atom, no
+two of them can have the same combination of quantum numbers
+$n, l, m_l$ and $m_s$.
+
+Consider lithium, which has three protons in the nucleus
+and three electrons orbiting it.  The first two electrons can go into
+the ground state, but Pauli demands that the third electron go into a
+new state.  If the lithium atom is in its lowest possible energy
+state, that third electron must be in some $n=2$ orbital.  Most of the
+chemical behavior of atoms is due to the shape and size of their outer
+electron orbitals, so the Pauli exclusion principle is what makes
+lithium act very differently than helium.
+
+This process repeats many times over to make up the periodic table.
+The more electrons there are, the higher the energy levels must be filled,
+similar to the five particle system in Example~\ref{chapter:quantum_statistics}-\ref{example:five_particles}.
+For some specific orbital, meaning some specific values of $n$, $\ell$
+and $m_\ell$, there are two possible single-electron states:
+$|n\,\ell\,m_\ell\uparrow\rangle$ and
+$|n\,\ell\,m_\ell\downarrow\rangle$, and we can put two electrons into
+the antisymmetric combination of these two states.  Any additional
+electrons will have to go into a new orbital.
+
+Were it not for the Pauli Exclusion Principle (i.e., if it didn't apply
+to electrons in atoms), then all elements would have all of their
+electrons in the lowest energy state with $n = 1$ (except when
+excited). Were that the case, then there would be no chemical diversity ---
+each element would behave almost identically to each other, and
+there would be no chemical interactions. Chemistry would be really dull
+in this case. Even worse, we wouldn't be around to notice that chemistry
+had become dull.
+
+\section{Conductors, Semiconductors, and Insulators}
+
+For the second half of this chapter, we return to our discussion from
+Chapter~\ref{chapter:quantized_energies} of quantized energy levels
+and band structure. It turns out that some clever manipulations of
+these materials can result in some really important electronic
+components. The material in this chapter is the basis behind some of
+the most important developments in modern electronics.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5.0in]{semiconductors_3D/FermiLevel}
+\end{center}
+\caption{Highest valence and lowest conduction bands (with Fermi Level) for:
+(a) an insulator; (b) a semiconductor; and (c) a conductor. The dark shading
+denotes filled energy levels.}
+\label{fig:FermiLevel}
+\end{figure}
+
+We return to the discussion of energy bands from 
+Chapter~\ref{chapter:quantized_energies}.
+First, we need to discuss the electrical conductivity of a material
+and how it relates to the band structure. Figure~\ref{fig:FermiLevel}
+shows the highest energy, filled valence band and the lowest energy,
+unfilled conduction band for a typical material. We define an energy 
+level referred to as
+the ``Fermi energy'' $E_F$ that denotes the boundary between the
+highest energy filled level and the lowest unfilled level for a
+material at a temperature of absolute zero ($T = 0$ K). By convention,
+for a situation like that in Fig.~\ref{fig:FermiLevel}, $E_F$ is in
+the middle of the forbidden energy gap.
+
+The electrical properties of a material depend critically on the band gap
+energy $E_g$. For the case in Fig.~\ref{fig:FermiLevel}a, the band gap
+energy is so large that electrons in the filled valence band rarely jump
+up to the conduction band. Since the valence band is completely full,
+there is no possibility for electrical conduction if an electric field
+is applied to this material, because there is no way for any electron in
+the valence band to change its energy since all the other energy levels
+in the valence band are filled. (Recall: Pauli's Exclusion Principle
+applies here, since electrons are fermions.) And there are no electrons
+in the conduction band either. So, Fig.~\ref{fig:FermiLevel}a corresponds
+to an electrical insulator.
+
+An electrical conductor is shown in Fig.~\ref{fig:FermiLevel}c. In this
+case, the band gap energy $E_g = 0$, so if an electrical field is applied, electrons
+in the valence band can easily be excited into one of the available energy
+levels in the conduction band.
+
+Figure \ref{fig:FermiLevel}b corresponds to a ``semiconductor.'' The
+energy band structure is similar to the insulator of Fig.~\ref{fig:FermiLevel}a,
+except that the band gap energy $E_g$ is smaller. This is important because
+the smaller but non-zero $E_g$ makes it possible to ``turn on'' and ``turn off''
+electrical conductivity, a {\bf very} useful property.
+
+We discuss two ways in which a semiconductor can be manipulated to
+produce good conductivity.
+
+\subsection{Temperature Dependence of Conductivity for a Semiconductor}
+
+If the temperature of the material is not zero, then there is
+thermal energy that can cause electrons in the valence band to 
+become excited into the conduction band. The larger the temperature,
+the larger the interatomic collision energies that can excite electrons.
+The temperature dependence is captured well by the {\it Fermi-Dirac}
+probability distribution function:
+\begin{equation}
+p(E) = \frac{1}{1+e^{(E-E_F)/k_BT}} .
+\label{eq:Fermi-Dirac}
+\end{equation}
+This relation is plotted in Fig.~\ref{fig:Fermi-Dirac}a for three
+different temperatures.  For a material at absolute zero ($T = 0$), all
+of the energy levels for $E < E_F$ are filled (with probability $p(E) = 1$),
+whereas all energy levels for $E > E_F$ are empty ($p(E) = 0$).
+If the temperature is not zero, though, thermal excitations result in
+a decrease in $p$ for $E < E_F$ and an increase for $E > E_F$.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5.0in]{semiconductors_3D/Fermi-Dirac}
+\end{center} 
+\caption{(a) Fermi-Dirac relation (Eq.~(\ref{eq:Fermi-Dirac})) for
+three temperatures. (b) Energy band diagram for a temperature large
+enough to excite several electrons from the valence to conduction bands.} 
+\label{fig:Fermi-Dirac} 
+\end{figure}
+
+If the temperature is large enough, then the probability $p(E)$ for electrons
+to be found for energies in the conduction band 
+may become non-negligible, and there may be sufficient electrons
+excited into the conduction band for the material to become a good conductor.
+An important question:  {\bf how large is ``large enough?''} The answer
+to this question can be seen by noticing the factor of $k_BT$
+in Eq.~(\ref{eq:Fermi-Dirac}). This factor should look familiar to you
+from our thermodynamics unit from PHYS 211 --- this is the well-known
+{\it Boltzmann factor} that gives a characteristic energy for thermal
+collisions.  If the temperatue in a semiconductor is such that $k_BT$ is
+comparable to or greater than the band gap energy $E_g$, then there will
+be sufficient thermal energy for the semiconductor to be a 
+good conductor. This is shown conceptually in Fig.~\ref{fig:Fermi-Dirac}b: for 
+a sufficiently large temperature, some of the higher energy levels in the
+valence band become empty and some of the lower energy bands in the conduction
+band contain electrons. This enables conduction not only for electrons
+in the conduction band but also for electrons in the valence band who now
+have open energy levels if an electric field is applied.
+
+\begin{example}{Probabilities from Fermi-Dirac.}
+\label{ex:FD}
+Lead sulfide (PbS) has a band gap energy of $0.37\units{eV}$. (a) Use an
+approximation where $k_BT \approx E_g$ to determine a temperature for which you 
+would expect PbS to be an excellent conductor.
+(b) Calculate the
+probability of finding an electron with energy at the bottom of the
+conduction band for temperatures of 400K and 4000K.
+
+{\bf Solution}: (a) As a reasonable approximation, if the temperature is
+such that $k_BT \approx E_g$, then there should be sufficient energy
+from thermal collisions to excite electrons from the valence to the conduction
+band.  So, 
+$T \approx E_g/k_B 
+= (0.37\units{eV})/(8.62\times 10^{-5}\units{eV$\cdot$K$^{-1}$})  
+= 4290\units{K}$.
+
+(b) We can calculate probabilities from the Fermi-Dirac equation
+(Eq.~(\ref{eq:Fermi-Dirac})). Since the Fermi energy $E_F$ is in the center
+of the band gap, the lowest conduction band energy $E = E_F + E_g/2$,
+so for $T = 400\units{K}$,
+\begin{align}
+p(E) &= \frac{1}{1+e^{(E-E_F)/k_BT}} = \frac{1}{1+e^{E_g/2k_BT}}\nonumber \\
+&= \frac{1}{1+e^{(0.37\units{eV$\cdot$K$^{-1}$})/(2 \times 8.62\times 10^{-5}\units{eV$\cdot$K$^{-1}$}\cdot 400\units{K})}}\nonumber \\ 
+&= 0.0047 
+\end{align}
+This temperature is about 10 times lower than the value that we calculated in
+part (a), so it makes sense that the probability is small for finding an 
+electron at the bottom level of the conduction band.
+
+If you repeat the calculation for $T = 4000\units{K}$, you'll find 
+a probability of 0.37, which is quite appreciable. This is consistent 
+with the result in part (a) which predicts a temperature of $4290\units{K}$ 
+for appreciable conduction.
+
+\end{example}
+
+In the previous example, it is tempting to say that if $p(E) = 0.0047$ for
+an electron to be found in the lowest conduction-band energy state, then
+the material will be an insulator. But remember how many electrons are
+in a typical solid (a {\bf lot}!), so even if the probabilities are low,
+there will still be some electrons that can conduct electricity. But 
+with higher and higher temperatures there
+would be more and more conduction band electrons.
+
+So, semiconductors conduct electricity better at higher temperatures.
+That can be both a good thing and a bad thing. On the good side, this 
+principle can be used to make very sensitive and precise temperature 
+measurement devices called {\it thermistors}.
+On the bad side, the electronic devices that we'll discuss in the next
+section can fail if the semiconductor gets too hot. This is why it
+is so critical for electronic devices to be cooled.
+
+\subsection{Doping and n- and p-Type Semiconductors}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.5in]{semiconductors_3D/Doping}
+\end{center} 
+\caption{(a) n-type semiconductor; donor atom impurities are added to provide 
+some extra electrons which occupy some of the levels in the conduction band. 
+(b) p-type semiconductor; acceptor atom impurities are added that remove
+electrons from the valence band, leaving conducting ``holes'' behind. } 
+\label{fig:Doping} 
+\end{figure}
+
+
+
+There is another way that you can make a semiconductor conduct: doping, 
+i.e., add impurities to a semiconductor with a different number of valence
+electrons than the primary semiconductor material. For example, silicon
+is a common ``Group IV'' semiconductor element with 4 valence electrons; i.e., 
+4 electrons in the highest energy (unfilled) shell. If a silicon semiconductor
+is doped with trace amounts of  an impurity ``Group V'' element such as arsenic
+with 5 valence electrons, 4 of the valence electrons in the impurity
+will fill the valence band along with the silicon atoms, but there will be
+one additional outer-shell electron for each impurity atom. Arsenic is
+considered to be a ``donor impurity'' for silicon semiconductors since
+it donates an additional electron. The additional donated electrons
+are mobile charge carriers in the conduction band, as shown in 
+Fig.~\ref{fig:Doping}a.\footnote{This is a simplification: the impurities
+alter the band structure, but the basic principle is the same.}
+Semiconductors doped with donor atoms are called ``n-type'' semiconductors,
+because they have mobile charge carriers that have negative charge 
+(electrons).
+
+Doping a semiconductor with ``acceptor impurities'' results in
+``p-type'' semiconductors, as shown in Fig.~\ref{fig:Doping}b.
+An example of a p-type semiconductor would be silicon (Group IV)
+doped with impurities from Group III (with 3 valence electrons), such as
+boron. Since the impurity atoms have only 3 valence electrons (unlike
+the 4 for the bulk silicon atoms), each impurity atom would fill only
+3 out of the 4 available energy levels, leaving an unfilled ``hole''
+in the valence band. This hole provides other electrons in the valence 
+band with an opportunity to change their energies in response to
+an applied electric field. Consequently, the presence of holes in
+the valence band allows for conductivity. An applied electric field
+results in electrons in the valence band moving opposite the
+field into available holes; the result is that the holes move
+in the direction of the electric field. Conceptually, the holes themselves
+act like positive, mobile charge carriers; hence the term {\it p-type}
+to describe these semiconductors.
+
+Things become very interesting if a p-type semiconductor is joined
+with an n-type semiconductor. Figure \ref{fig:pnJunction}a shows
+an n-type semiconductor (on the left) with mobile electrons (dark
+circles) connected to a p-type semiconductor (on the right) with
+mobile holes (white circles). But in the absence of an applied
+electric field, the mobile electrons and holes diffuse around the 
+material, moving randomly in the sample, including moving across 
+the p-n junction. Invariably, mobile electrons and holes near the
+junction come into contact with each other and {\it annihilate},
+with the mobile electron dropping into the open energy level left
+by the hole. This annihilation process removes both the electron and
+the hole from the conduction process. The result is that in
+the vicinity of the junction between the n- and p-type materials, there
+is a {\it depletion zone} (DZ) with no mobile charge 
+carriers, as shown in Fig.~\ref{fig:pnJunction}b. The annihilation process at the junction produces
+a {\it bias} electric field that eventually stops the diffusion of the
+electrons and holes across the junction, stabilizing the width
+of the DZ.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.0in]{semiconductors_3D/pnJunction}
+\end{center} 
+\caption{(a) A pn junction (in the absence of diffusion or a depletion
+zone) made by connecting an n-type semiconductor on the left (with
+negative mobile charges --- black dots) and a p-type semiconductor 
+on the right (with positive mobile charges --- white dots). 
+(b) A more realistic pn junction; n-type electrons and p-type holes diffuse
+across the junction and annihilate each other, resulting in a depletion
+zone (DZ) around the junction with no mobile charge carriers.
+} 
+\label{fig:pnJunction} 
+\end{figure}
+
+\section{Diodes, Photodiodes, and LEDs}
+
+A p-n junction like that shown in Fig.~\ref{fig:pnJunction} forms what
+is know in electronics as a {\it diode} --- a device that enables
+current to pass only in one direction.  Diodes are used for
+{\it rectifiers} which turn AC (alternating current) power from the
+outlets in your house into DC (direct current) power needed for most
+devices.  Diodes are used to protect sensitive electronic devices from
+accidental reverse voltages.  And diodes form some of the fundamental
+elements in digital computer circuitry.\footnote{For a full appreciation of
+the importance of diodes --- and other electronic elements --- consider
+PHYS 235 (``Applied Electronics'').}
+
+To understand how a p-n junction works as a diode, consider 
+Figs.~\ref{fig:pnJunction} and \ref{fig:BiasedpnJunction}.  The
+key is the depletion zone (DZ) at the junction. Since there are no 
+mobile charge carriers in the DZ, then that part of the device
+is a good electrical insulator. For a p-n junction to conduct, the DZ has to
+be eliminated.
+
+If you want to run an electrical 
+current through a p-n junction, you need to apply an electric field.
+If the field points from the p-type to the n-type semiconductor
+(as in Fig.~\ref{fig:BiasedpnJunction}a), the holes in the
+p-type material are pulled in the direction of the electric field
+toward the junction, and the electrons in the n-type material are
+pulled in the direction opposite the electric field, also toward
+the junction.  Consequently, the DZ shrinks.
+If the field is strong enough\footnote{It turns out that
+for silicon semiconductors, there is a ``turn-on voltage'' of
+0.6 V that needs to be exceeded for a diode to conduct in the
+forward-biased direction.} the holes and electrons meet at the junction,
+and the DZ is completely gone; consequently, the entire device
+conducts and the current can pass. So, a strong enough electric field
+in this {\it forward-biased} direction will eliminate the DZ and
+produce an electrical current.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.0in]{semiconductors_3D/BiasedpnJunction}
+\end{center} 
+\caption{(a) Forward-biased pn junction with an electric field
+pointing from the p-type toward the n-type semiconductor. This electric
+field pulls n-type charges (electrons) to the right and p-type charges
+(holes) to the left, decreasing the size of the depletion zone.
+(b) Reverse-biased pn junction with an enlarged depletion zone.
+} 
+\label{fig:BiasedpnJunction} 
+\end{figure}
+
+On the other hand, if an electric field is applied pointing from the
+n-type to the p-type semiconductor, the field pushes the holes and
+mobile electrons {\it away} from the junction, making the DZ even
+larger. With the DZ intact, the p-n junction won't conduct electricity
+in this {\it reverse-biased} direction. So, a p-n junction works as
+a diode --- it allows current to flow in one direction but
+not the other.\footnote{It isn't an ideal diode because of the turn-on voltage,
+but there are ways of getting around this limitation.}
+
+But more can be done with a diode (p-n junction) than just passing
+current only in one direction. When a forward-biased diode is conducting
+a current, mobile electrons and holes are continually annihilating each
+other at the junction. Each time an electron-hole pair annihilates,
+a photon is emitted, as shown in Fig.~\ref{fig:LED_PhotoExcitation}a.
+This is the principle behind what are called {\it light-emitting
+diodes} (LEDs), which can be found in almost any piece of modern
+electronics. The little red and blue indicator lights on your cell phone
+are LEDs. The ``flash'' that your cell phone uses to take pictures at
+night (which you probably use more as a flashlight when walking back
+to your dorm at night) is an LED. Most scoreboards at games are made with
+LEDs.  And you can now buy LED light bulbs which are {\it significantly}
+more efficient and reliable than standard, incandescent light bulbs.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.0in]{semiconductors_3D/LED_PhotoExcitation}
+\end{center} 
+\caption{(a) Photon emitted when an n-type charge carrier (an electron)
+annihilates a p-type charge carrier (a hole); conceptually, the electron
+drops into the open, lower-energy state represented by the hole.
+(b) Excitation of a valence electron by an incoming photon. 
+The absorption of the photon results in the formation of an  n- 
+and p- charge carrier pair. 
+} 
+\label{fig:LED_PhotoExcitation} 
+\end{figure}
+
+The process works in reverse. If a photon with suitable wavelength and
+energy hits a p-n junction (Fig.~\ref{fig:LED_PhotoExcitation}b), it 
+can excite an electron from the
+valence to the conduction band, producing an electron-hole
+pair in the DZ. Some residual electric fields in the DZ\footnote{We won't
+explain the origin of this residual electric field here.} sweep this
+electron and hole away from the DZ and produce a small electrical current
+that can be measured. As a result, a diode can be used as a light
+detector --- it is referred to as a {\it photodiode} when used this
+way. This is the basic idea behind the detectors used in modern
+digital cameras, including the camera in your cell phone.
+
+Finally, an introduction to semiconductor physics would not be complete
+with a discussion of the {\it transistor}, the development of
+which completely revolutionized modern technology. A basic transistor
+can be made out of a sandwich of a p-type semiconductor between two pieces
+of n-type semiconductors (Fig.~\ref{fig:transistor}). For your homework
+problems, you will explain (by considering the depletion zones at
+each of the two p-n junctions) how a transistor works. The result is
+a device that will not pass an electrical current in {\it either} 
+direction unless a very small electrical current is provided at
+one of the p-n junctions. That very small, second current effectively
+``turns on'' or ``turns off'' the larger current flowing lengthwise
+through the device. As you will also see in your homework, the
+current can also be turned on by light shining on the p-n junction,
+as shown in Fig.~\ref{fig:transistor}b for a device referred to
+as a phototransistor.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.0in]{semiconductors_3D/transistor}
+\end{center} 
+\caption{(a) An npn transistor. (b) Phototransistor.
+} 
+\label{fig:transistor} 
+\end{figure}
+
+The use of a transistor as an electronic ``on-off switch'' has
+tremendous implications for modern technolgoy. Without electronic 
+switches, most of modern electronic technology would be useless.
+Simple examples of the use of transistor switches abound. 
+A transistor switch turns on the blue indicator light on your
+phone when you have a new email or the red indicator light if
+your phone is charging. A transistor switch turns on and off
+the display of your phone or the LED light that you use to
+walk home at night. In a computer, billions of transistor switches
+are rapidly turning on and off small currents that enable
+the computer to perform its tasks.
+
+Transistors are also very important for power amplification. As an example,
+your cell phone detects electromagnetic waves transmitted by a nearby
+cell tower, but the detected signal is very weak. A transistor amplifier
+makes the signal stronger so that your cell phone can decode the signal
+and produce a time-varying voltage which is then amplified by another
+transistor circuit to produce a sound loud enough for your ear to hear.
+
+The npn transistor was the first truly electronic switch that didn't depend
+on vacuum-tube technology.\footnote{Vacuum tubes were common in all
+radios and TVs up until the 1950s, but you will be hard-pressed to find
+them now.} There are many advantages to transistors over vacuum tubes, the
+most significant being that they can be miniaturized and printed into
+integrated circuits. Current computer CPUs have over a {\bf billion}
+transistors.  Think about that: that is a {\bf lot} of transistors.
+
+\newpage
+
+\section*{Problems}
+\markright{PROBLEMS}
+
+%\vspace{1.5in}
+
+
+%three  (old 5-8)
+
+\begin{problem}
+  The so-named Paschen series of radiation emitted by hydrogen
+  corrersponds to transitions from states of principle quantum numbers
+  $n = 4$, 5, 6, \dots, to the state $n = 3$.
+\begin{enumerate}
+\item Calculate the frequencies and wavelengths of the three lowest
+  energy photons emitted from hydrogen in the Paschen series.
+\item In what region of the electromagnetic spectrum are these
+  photons?
+\end{enumerate}
+\end{problem}
+
+% four (old 5-11)
+
+\begin{problem}
+  An electron in a hydrogen atom is in a state of principle quantum
+  number $n = 4$.  Using the notation ($n, l, m_l, m_s$) to specify a
+  state, write all of the possible states for this electron. [ HINT:
+  There should be a total of $32$ states.]
+\end{problem}
+
+% five (old 5-12)
+
+\begin{problem}
+  Find the maximum possible magnitude for the orbital angular momentum
+  $|\vec{L}|$ of an electron in the state of principle quantum number
+  $n = 7$ of a hydrogen atom.
+\end{problem}
+
+% six (Old 5-13)
+
+\begin{problem}
+  The orbital angular momentum of the electron in a hydrogen atom has
+  a magnitude $|\vec{L}| = 2.585 \times 10^{-34}
+  \units{J$\cdot$s}$. What is the minimum possible energy for this
+  electron in the hydrogen atom?
+\end{problem}
+
+% seven (Old 5-14)
+
+\begin{problem}
+  Determine the principle quantum number $n$ and orbital quantum
+  number $l$ for a hydrogen atom whose electron has energy $-0.850
+  \units{eV}$ and orbital angular momentum $|\vec{L}| = \sqrt{12}
+  \hbar$.
+\end{problem}
+
+% eight
+
+\begin{problem}
+Show that the probability that a state with energy $\Delta E$ above the
+Fermi energy will be occupied is equivalent to the probability that a state
+with energy $\Delta E$ {\it below} the Fermi energy will be
+{\it unoccupied}. Explain in 1 or 2 sentences why this result makes
+sense intuitively, when considering how conduction works in a semiconductor.
+\end{problem}
+
+\newpage
+
+% nine
+
+\begin{problem}
+A one-dimensional periodic potential composed of 10 side-by-side
+finite square well potentials has a valence band with 10 energy
+levels from a low of $0.81\units{ eV}$ to a high of $1.10\units{eV}$ 
+and a conduction band with 10 levels ranging from $3.19\units{eV}$ to 
+$4.39\units{eV}$ .
+The Fermi energy (in the middle of the band
+gap) is $2.145\units{eV}$ for this system. Assume that there are 20 electrons
+in this system (this is analogous to 10 atoms with 2 valence electrons
+each).
+\begin{enumerate}
+\item Calculate the probability that an electron will be found in the 
+energy state $E_{11} = 3.19\units{eV}$ (i.e., in the lowest conduction
+band state) for $T = 300\units{K} $(room temperature), $3,000\units{K}$, and
+$30,000\units{K}$.
+\item Calculate the values of $k_BT$ for each of the temperatures
+from part (a). Do the probabilities that you calculated in (a) make
+sense, given these values for $k_BT$?
+\item Now, download the Excel sheet ``FDForTenWells.xlsx'' from
+the calendar page.  This worksheet calculates Fermi-Dirac probabilities
+for electrons to occupy any of the 10 conduction band energies.
+The sheet also calculates an expected average number of electrons
+in each of these levels (by multiplying the probability by 2, since
+there are two energy levels per state) and adds up the total number of
+electrons expected in the conduction band. Use this worksheet to
+calculate the estimated number of conduction band electrons for
+$T = 300$, 3000, and $30000\units{K}$. For each of these temperatures,
+would you expect this system to be an electrical insulator or
+electrical conductor?
+\item if there were only 10 electrons (e.g., 10 atoms with only
+1 valence electron instead of 2), how would that affect the
+conduction properties of this system?
+\end{enumerate}
+\end{problem}
+
+% ten
+
+\begin{problem}
+Lead sulfide (PbS) has a band gap energy of $0.37\units{eV}$.
+\begin{enumerate}
+\item Calculate the value of $k_BT$ for temperatures $30\units{K}$,
+$300\units{K}$ (room temperature), $3,000\units{K}$ and $30,000\units{K}$. 
+At these temperatures would you expect PbS to be a poor, moderate or 
+good electrical conductor?
+\item Use the Fermi-Dirac relation to calculate the probability of the
+lowest conduction band energy state being occupied for temperatures
+30, 300, 3,000 and $30,000\units{K}$.  Are these results consistent with your
+answers from (a)? (Note: it's not necessary for {\it every} conduction
+band level to be filled for a material to be a reasonable conductor,
+but the probabilities should at least be on the order of $10^{-5}$
+or better.)
+\end{enumerate}
+\end{problem}
+
+% eleven
+
+\begin{problem}
+Some recent studies have investigated the possibility of using DNA
+strands as fundamental building blocks of nanotechnology. One
+possibility is the use of DNA for nanoelectronic devices.
+Experimental studies of a particular DNA sequence
+(Poly(dA)*Poly(dT) with a B-type structure\footnote{``DNA
+Electronics,'' M. Taniguchi and T. Kawai, Physica E {\bf 33},
+1-12 (2006).}) measured a band gap of $2.7\units{eV}$ between
+valence and conduction bands. Would you expect
+this DNA strand to be a good electrical conductor at room 
+temperature? Explain. (A ``$k_BT$'' analysis is sufficient ---
+you don't need to use Fermi-Dirac distributions here.) If it is
+a good conductor, approximate how low a temperature would be
+needed to make it a poor conductor. If it is a poor conductor,
+approximate how large a temperature would be needed to make it
+a good conductor.
+\end{problem}
+
+% twelve
+
+\begin{problem}
+A silicon photodiode has a band gap energy of $1.17\units{eV}$. 
+\begin{enumerate}
+\item Calculate
+the maximum wavelength of electromagnetic radiation that this photodiode
+can detect. 
+\item Why can't a silicon photodiode detect EM radiation
+with wavelengths larger than the value calculated in part (a)?
+\item Give an argument as to how a silicon photodiode {\it can}
+detect EM radiation with wavelengths {\it smaller} than the value
+calculated in part~(a).
+\end{enumerate}
+\end{problem}
+
+% thirteen
+
+\begin{problem}
+Calculate the wavelength (and state the color --- or ``IR'' or
+``UV'' if infrared or ultraviolet) of electromagnetic radiation 
+emitted from a light-emitting diode (LED) made from the
+following materials: 
+\begin{enumerate}
+\item Gallium arsenide (band gap $1.43\units{eV}$);
+\item Gallium (III) Phosphide (band gap $2.26 \units{eV}$); 
+\item Gallium nitride (band gap $3.4\units{eV}$).
+\end{enumerate}
+\end{problem}
+
+% fourteen
+
+\begin{problem}
+White light LED bulbs can be made by using blue or violet LEDs
+that are coated with phosphor (fluorescent) coatings. (a) Explain
+in a few sentences how this kind of approach can produce light that
+appears white. (b) Why would it {\it not} be possible to make a
+white light LED with a red LED as the source? (Note: white-light
+LED bulbs can also be made with coatings of quantum dots or can be 
+made with combinations of red, green and blue LEDs.)
+\end{problem}
+
+\newpage
+
+% fifteen
+
+\begin{problem}
+\begin{enumerate}
+\item Draw a sketch of a p-n junction in the absence of any imposed
+electric fields. In the sketch, show the depletion zone (DZ) and
+sketch mobile carriers within the p- and n-type semiconductors
+away from the DZ. Make sure that you have the correct type of
+charge carriers (+ or -) in the correct material.
+\item Now, make a similar sketch, but for the case with an applied
+electric field pointing from the n- to the p-type semiconductor.
+Is the DZ larger or smaller in this case than for the case with 
+$E = 0$ from part (a) Explain why. Do you expect this p-n junction
+to conduct electricity readily in the direction of this electric
+field? Explain.
+\item Repeat part (b), but for an electric field pointing from the p-
+to the n-type semiconductor, answering the same questions.
+\item Does this device act like a diode; i.e., a device that passes
+current readily in one direction but not in the other? In what ways does
+a p-n junction deviate from an ``ideal'' diode?
+\end{enumerate}
+\end{problem}
+
+% sixteen
+
+\begin{problem}
+{\bf Transistors.} Figure \ref{fig:transistor}(a) is a sketch of a sandwich made of
+2 n-type semiconductors with a thin p-type layer in between.
+\begin{enumerate}
+\item A wire is connected to each of the ends of this npn sandwich.
+Give a short explanation as to why this npn device would not be
+expected to conduct electricity in either direction. (Hint: consider what
+happens to the DZ at each junction if you apply an electric field in either 
+direction.)
+\item A third wire is connected to the right pn junction. If
+a very small current is fed into the device through this third wire,
+there can be a significant conduction of electricity between the
+two end wires if the current is going to the left. Explain why. 
+(Hint: consider the depletion zone and
+what happens if you inject some electrons or holes into it.)
+\item Instead of a third wire, you can make a phototransistor that turns
+on and off the current between the ends by shining light on the
+p-type layer. Explain why light can turn on the current. (Hint: this
+will only work if the light has a wavelength smaller than a particular
+critical value.)
+\end{enumerate}
+\end{problem}
+
+% seventeen
+
+\newpage
+
+%one
+
+\begin{problem}
+  The wavefunction for the ground state of the hydrogen atom 
+\hbox{($n=1, l=0, m_l=0$)} is 
+\[ \psi_{100} = \frac{1}{\sqrt{\pi a_0^3}}\,  e^{-r/a_0}, \] 
+where $a_0$ is a constant which can be written in terms of 
+fundamental constants
+as $a_0 = \frac{\hbar^2}{m_e k e^2}$.
+\begin{enumerate}
+\item Show that this wavefunction is a solution to the 3D
+  Schr\"{o}dinger equation %(\ref{eq:3Dschrodinger})
+  \[ -\frac{\hbar^2}{2mr^2} \left[ \frac{\partial}{\partial r} \left(
+      r^2 \frac{\partial \psi}{\partial r} \right) +
+    \frac{1}{\sin{\theta}} \frac{\partial}{\partial \theta} \left(
+      \sin{\theta} \frac{\partial \psi}{\partial \theta} \right) +
+    \frac{1}{\sin^2{\theta}} \frac{\partial^2 \psi}{\partial \phi^2}
+  \right] - \frac{k e^2}{r} \psi = E \psi \]
+(Hint: since there are no $\theta$ or $\phi$ terms in the wavefunction,
+the partial derivatives $\partial \psi/\partial \theta$ and 
+$\partial \psi/\partial \phi$
+are both zero. That will simplify things a {\bf lot}.)
+
+\item Determine the value of $E$ required for $\psi_{100}$ to be a
+  solution.  Compare your result with Eq.~(\ref{eq:hydrogenE}).
+\end{enumerate}
+\end{problem}
+
+% two
+
+\begin{problem}
+  The ground state wavefunction of the electron in the hydrogen atom
+  is spherically symmetric which means that the wavefunction $\psi(r)$
+  can be written solely in terms of the radial coordinate $r$
+  representing the distance between the proton and electron.
+
+\begin{enumerate}
+\item What does the quantity $|\psi(r)|^2$ mean physically?
+
+\item Show that the volume of a thin spherical shell of radius $r$
+  and thickness $dr$ is $4\pi r^2\, dr$. (You can use the approximation
+for small $dr$ that the volume is the surface area of the sphere
+times $dr$.)
+
+\item In spherical coordinates, the ground state solution of the
+  Schr\"{o}dinger equation for the hydrogen atom is
+\[ \psi_{100} = \frac{1}{\sqrt{\pi a_0^3}}\,  e^{-r/a_0}, \] 
+where $a_0$ is the same constant as from the previous problem.  Use the
+  result of part~(b) to write an expression for the probability that
+  the electron is in a spherical shell of radius $r$ and thickness
+  $dr$.
+
+\item Calculate the radius of the shell (of constant thickness $dr$)
+  where the electron is most likely to be found.
+\end{enumerate}
+\label{prob:hydrogen_wavefn}
+\end{problem}
+
+

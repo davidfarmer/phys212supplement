@@ -1,0 +1,813 @@
+\chapter[Beyond Classical Physics]{Beyond Classical Physics: Photons
+and Wave-Particle Duality}
+\label{chapter:beyond_classical}
+
+\section{Introduction to Quantum Mechanics}
+
+
+In the early 1900s, a series of experiments and theoretical breakthroughs
+dramatically changed our understanding of how the universe works,
+including our conceptions of space and time, predictability versus
+randomness, and the limits imposed on measurement at the atomic scale.
+Not only did these developments --- referred to as {\it modern physics}
+--- significantly overturn and revise the known laws of physics, they also
+became the foundation for a complete understanding of the foundations of
+chemistry (and therefore biology as well), and they led to a series of
+significant applications that have already resulted in  an explosion of
+modern technology, e.g., semiconductor physics and modern electronics;
+computer technology; communications (including cell phones); numerous
+medical diagnostic devices, surgical techniques and radiation therapies;
+new and significantly enhanced forms of microscopy; ultra-precise
+navigation devices; and nuclear power generation and weaponry.
+
+And the technological applications of modern physics will continue well
+into the future. In particular, there is a significant on-going research
+effort into the development of nanotechnological devices that will likely
+revolutionize the fields of medicine and engineering during the next
+50 years.  Imagine, for instance, nanometer-scale devices that could be
+programmed to search and destroy cancer cells or repair internal injuries
+at the cellular scale within the human body. This idea is currently
+speculative (as of the year 2021), but successful development of something
+like this --- which would almost certainly require an understanding of
+principles of modern physics --- could revolutionize cancer treatment in
+a way that will cause society to look back at chemotherapy and radiation
+treatment the way we currently look back at the use of leeches as
+medical ``devices'' in the middle ages. Other potential future quantum
+applications include quantum computing and encryption; replacements for
+semiconductor switches based on new graphene materials or quantum optical
+devices; or even molecular and biological electronic devices based on DNA.
+
+In PHYS 211, you learned about one of the two pillars of modern physics,
+Einstein's Theory of Relativity, which extends classical (Newtonian)
+physics to systems that travel at speeds approaching the speed of light
+and also sheds important light on the nature of matter and energy.
+In this unit, you will learn about the other pillar of modern physics:
+the theory of quantum mechanics.  Quantum effects are most noticeable on
+a microscopic scale, yet quantum behavior has critical effects on
+the macroscopic world that we see around us every day. As an example,
+atoms wouldn't be possible without quantum principles, so all matter
+around us would be dramatically different without this subatomic
+behavior (actually, there wouldn't be any ``us'').  And we have developed
+techniques that enable us to manipulate the subatomic world in ways that
+have significant technological applications, including much of what forms
+the basis of modern chemistry, chemical engineering, materials science,
+and electronics.
+
+What we've learned about the microscopic world is that it is {\it
+  unlike anything we can picture!}  Things in the microscopic world,
+such as electrons or protons or electric fields, can sometimes act as
+particles and sometimes act as waves.  
+Nothing in our macroscopic world is like this, so it is not easy
+to build simple mental pictures for it.  To give you a sense of how
+strange this is: when a ``particle'' such as an electron is ``acting
+as a wave'' it does not have a definite position!  Its very existence
+is spread out in some manner over a region of space.
+
+So be it.  It's one of the greatest triumphs of science that we have
+developed the experimental and theoretical tools to uncover the
+behavior of nature even when our fundamental intuition can no longer
+aid us.  The theory of quantum mechanics, as we shall see, is
+necessarily somewhat abstract.  But it is very much a {\it physical}
+theory, well-grounded in experimental evidence.
+
+
+To be an educated,
+scientifically aware citizen in the 21st century, it is essential to
+have a grounding in the basic laws of quantum mechanics.
+
+\section{Three Great Failures of Classical Physics}
+
+What emerged in the early years of the 20$^\text{th}$ century were puzzles 
+and mysteries that our well-developed and successful theories of Newtonian
+mechanics, electricity and magnetism, and thermodynamics --- what we
+now call {\it classical physics} --- were unable to solve.  Three of
+these mysteries stood out above the others.
+\begin{description}
+\item[The ultraviolet catastrophe.] Combining classical electromagnetism with
+  thermodynamics led to the (wrong) result that the thermal motion of
+  matter --- the acceleration of jiggling charges --- would create an
+  infinite amount of electromagnetic energy.  Oops!
+\item[The stability of atoms.] Combining classical electromagnet\-ism (EM) with
+  classical mechanics led to the result that electrons orbiting the
+  nucleus of an atom would radiate away their energy and collapse into
+  the nucleus after about $10^{-12}\units{s}$.  So atoms shouldn't be
+  stable.  Oops again!
+\item[Atomic spectral lines.] Experiments showed that when energy is
+  pumped into atoms, say by heating a gas, the atoms then radiate EM
+  waves back out, but only at certain distinct wavelengths.  Hydrogen
+  atoms emit one set of wavelengths, helium atoms a different set, and
+  so on.  Nothing in classical physics could come close to explaining
+  this phenomenon.  Strike three!
+\end{description}
+
+The attempt to resolve these issues led to the revolutionary,
+paradigm-changing, development of quantum mechanics.  In this unit we
+will show how a new quantum theory was able to address successfully
+these shortcomings of the classical theory.
+
+The story begins with Planck and Einstein, who introduced the notion
+that EM waves, for example light waves, can also act as particles.
+This is a phenomenon called \textit{wave-particle duality}: light is
+neither just a wave nor just particles, but has aspects of both.  In
+this chapter we will look closer at the ultraviolet catastrophe ---
+the incompatibility of thermodynamics and electromagnetism --- and
+show that the particle aspect of light resolves the problem.  Then
+we will explore the implications for the interaction between
+light and matter (explaining, for example, why you should wear
+sunscreen when you are outside for long periods on a sunny day).  
+Finally, we conclude with de~Broglie's stunning and
+ultimately correct hypothesis that not just light but all matter in
+the universe exhibits wave-particle duality.
+
+
+\section{Ultraviolet Catastrophe}
+
+Electromagnetism and thermodynamics were well-developed and successful
+theories by the end of the 19$^\text{th}$ century.  The theory of
+electromagnetism (Maxwell's equations) demonstrated the 
+unification of electricity and magnetism, and led to the realization
+that light is an electromagnetic wave.  This, in turn, led to the
+technology of generating and receiving radio waves, which was the
+second great step in the information technology revolution.\footnote{The
+printing press was the first.}  Similarly, our theories of
+thermodynamics explained the states of matter and provided an 
+understanding of the engines that powered the industrial revolution.
+
+There was just one big problem: classical E\&M and thermodynamics
+are incompatible.  Here is the basic issue.  Picture some substance
+at a temperature $T$.  The particles in that substance are vibrating
+around with thermal motion.  This amounts to accelerating charges, and
+accelerating charges emit EM waves.  Conclusion: we expect matter at a
+temperature $T$ to be radiating away some of its energy into electric
+and magnetic fields.
+
+But the energy exchange goes both ways.  These EM fields exert forces
+on the charged particles, giving them back some energy.  So all
+together we see that energy sloshes between the moving particles and
+the EM fields, much like it sloshes from particle to particle within
+the substance.  Then we should expect the EM fields, like the particle
+motion, to have some thermal equilibrium values determined by the
+temperature $T$.
+
+So far, so good.  Let us now try to calculate what the thermal
+equilibrium EM fields should be for the simplest case we can
+construct.  Imagine a cavity bounded by a pair of walls separated by a
+distance $L$ (i.e., a one-dimensional box), and to keep things simple 
+we will only have one spatial
+dimension.  The situation is illustrated in Fig.~\ref{fig:cavity}. The
+charges in the walls are in thermal equilibrium at temperature $T$, so
+they are moving and creating electric and magnetic fields.  What form
+can these EM fields take?  Basically, we get all the possible standing
+wave modes, just like waves on a string or sound waves in a tube.  As
+we found in the waves unit, the longest wavelength is $\lambda=2L$,
+the second longest $\lambda=L$, the third longest is $\lambda=2L/3$,
+and so on.  The actual EM fields contain all those modes and can be
+expressed as some superposition of these waves.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=4.5in]{beyond_classical/cavity}
+\caption{EM waves in cavity of length $L$.  These EM waves are
+created by the thermal motion of the charges in the walls.}
+\label{fig:cavity}
+\end{center}
+\end{figure}
+
+Now let's try to calculate the amplitude of these waves.  First,
+recall that the energy of a wave is proportional to the amplitude
+squared.  For a superposition of wave modes the energy turns out to be
+the superposition of the energies of each individual wave:
+\begin{equation}
+E = \alpha A_1^2 + \alpha A_2^2 + \alpha A_3^2 + \dots
+\end{equation}
+where $\alpha$ is some constant and $A_n$ is the amplitude of the
+$n^\text{th}$ longest wavelength mode of the EM wave.  Now comes the
+thermodynamics: the equipartition theorem says that in thermal
+equilibrium any quadratic term in the energy has an average value of
+$\textstyle\frac{1}{2}k_BT$.  Therefore we can conclude
+\begin{equation}
+\langle \alpha A_1^2\rangle = \langle \alpha A_2^2\rangle = 
+\langle \alpha A_3^2\rangle = \dots = \frac{1}{2}k_BT.
+\label{eq:EM_wave_equipartition}
+\end{equation}
+The equipartition theorem implies that each of those modes has
+to have the same average value, and they are all related to the
+temperature $T$.  It's a powerful theorem!
+
+And now we are ready to compute the total energy in the EM fields.
+All we need to do is count the number of modes in the cavity ($n=1$,
+$2$, $3$, \dots) and then multiply by $\textstyle\frac{1}{2}k_BT$.  But here is
+the problem: \textit{There are an infinite number of modes!}
+
+We can keep drawing waves with shorter and shorter wavelength, and we
+never run out of modes.  Each new one we draw brings another
+$\textstyle\frac{1}{2}k_BT$ to the energy.  So we are led to conclude that there
+is an infinite amount of energy in the EM fields.  This is clearly
+wrong --- thankfully, or we would all be blasted by the infinite
+radiation all around us.  And now we can see why this is called the
+ultraviolet catastrophe: it is the infinite piling up of shorter and
+shorter wavelengths, or higher and higher frequencies, that is where
+something in the theories are breaking down.
+
+So where did it go wrong?
+
+
+\section{Photons}
+
+The resolution of the ultraviolet catastrophe, reached in stages
+by Planck and Einstein, is that Maxwell's theory of electricity
+and magnetism is incomplete.  In 1905\footnote{1905 was Einstein's
+``Miracle Year'' --- the year that he published his first paper on
+relativity, a paper that explained molecular diffusion, and a paper
+introducing the concept of a photon.} Einstein introduced the concept
+of a photon: a ``particle'' of light whose energy is related to the EM
+wave frequency via 
+\begin{equation} 
+E_\text{ph} = hf 
+\end{equation}
+where 
+\begin{equation} h = 6.63\times 10^{-34}\units{J$\cdot$s} 
+                   = 4.14\times 10^{-15}\units{eV$\cdot$s} 
+\end{equation} 
+is known as
+Planck's constant.  Einstein's claim was that an EM wave of frequency $f$
+can be viewed as a gas of photons, each with this energy.  Photons are
+not part of Maxwell's equations; they are in some sense a supplementary
+property of EM waves.\footnote{The complete theory of
+  electricity and magnetism, including the full reconciliation with
+  quantum mechanics and relativity, is called \textit{quantum
+    electrodynamics} and wasn't fully developed until the 1950s.  We
+  will get a flavor of this theory in Unit 4.}
+
+\begin{example}{Number of photons.}
+  An EM wave of wavelength $\lambda=420\units{nm}$ has a total energy
+  of $1.80\units{J}$.  How many photons are in this wave?
+
+  \solution Each photon is contributing an energy
+  $E_\text{ph} = hf$.  Using $f = c/\lambda$ we can calculate the
+  energy per photon,  
+\begin{eqnarray}
+E_\text{ph} &=& \frac{hc}{\lambda} \nonumber \\
+            &=& \frac{(6.63\times 10^{-34}\units{J$\cdot$s}) 
+                (3.00\times 10^8\units{m/s})}
+                {420\times 10^{-9}\units{m}} \nonumber \\
+            &=& 4.74\times 10^{-19}\units{J}.
+\end{eqnarray}
+  The total energy $E$ is given by $N E_\text{ph}$, where $N$ is the
+  number of photons, so
+\begin{equation}
+N = \frac{E}{E_\text{ph}} = \frac{1.80\units{J}}{4.74\times
+  10^{-19}\units{J}} = 3.80\times 10^{18}.
+\end{equation}
+Evidently, EM waves with macroscopic energies contain a lot of
+photons!
+\end{example}
+
+The idea of light being composed of particle-like photons is tremendously
+important with numerous implications throughout all of science and
+engineering.  The photon picture also resolves the problem of infinite
+energy in a cavity.  Imagine sorting all the EM wave modes in the cavity
+from lowest frequency to highest frequency.  Since $E_\text{ph}=hf$,
+the photons in the lowest frequency mode have low energy, while the
+photons in the high frequency modes have higher energy.  But the total
+energy of each mode must be $\textstyle{\frac{1}{2}}k_B T$, which means each EM wave
+mode has exactly the same energy.
+
+How can higher energy photons add up to the same energy?  There must
+be fewer of them.  So as we go to higher and higher frequency modes,
+we must have fewer and fewer photons in each mode.  Eventually we will
+reach a high frequency mode with only one photon, and that's the end
+of the line.  There can be no higher frequency modes.  And so the
+ultraviolet catastrophe is averted.
+
+In Problems \ref{prob:cavity_freq} and \ref{prob:largest_mode}
+at the end of this chapter, you will do this quantitatively. You will find
+that the mode number $j_\text{max}$ where the number of photons drops to below
+$1$ in a one-dimensional cavity is
+\begin{equation}
+j_\text{max} =  \frac{L k_B T}{h c}.
+\label{eq:jmax}
+\end{equation}
+For modes with larger $j$, there is not enough thermal energy to produce
+even a single photon. 
+Given this result, we can find the total energy in the cavity.  We have modes $j=1$,
+$2$, \dots, $j_\text{max}$, each contributing an energy
+$\textstyle{\frac{1}{2}}k_BT$.  That adds up to
+\begin{equation}
+E =  j_\text{max}\times \Bigl(\frac{1}{2}k_BT\Bigr) = \frac{L (k_BT)^2}{2hc}.
+\label{eq:EM_wave_thermal_energy_1D}
+\end{equation}
+This answer is a much nicer result for the thermal energy of the EM
+fields, because it's not infinite!
+
+Let's reflect a moment on what we have just done.  We argued that EM
+waves, which in classical physics can have any continuous value of
+energy, instead come in energy chunks.  When the number of these
+photon chunks is large, some $10^{18}$ or so, then we can ignore the
+chunkiness and treat the EM waves classically.  Then the equipartition
+holds and we can use
+Eq.~(\ref{eq:EM_wave_equipartition}). 
+
+But for really high frequency (UV) waves, the photons have so much
+energy that there are only a few of them in a mode.  At this point,
+the classical physics result Eq.~(\ref{eq:EM_wave_equipartition}) 
+no longer holds.  Essentially, there is simply not enough thermal
+energy available to create even a single photon for these modes.
+So we counted an energy of $\textstyle{\frac{1}{2}}k_BT$ for each mode until
+we hit this wall, and then we stopped counting.  The result is 
+Eq.~(\ref{eq:EM_wave_thermal_energy_1D}).
+
+Note that this result only applies to a one-dimensional system. 
+Real materials, of course, are three dimensional.  We won't go through
+the full derivation for a three-dimensional cavity.  That would require
+working with the thermodynamics of a photon gas, something
+that we do in our PHYS 317 Thermodynamics course.  
+
+\section{Photons Interacting with Matter}
+
+In the previous section we argued why the photon picture resolved the
+dilemma of the UV catastrophe,  but many physicists at the time that
+Einstein proposed photons were skeptical of the idea.  But contained
+in Einstein's brilliant suggestion was the potential for a quantitative
+test of the idea, through a phenomenon called the photoelectric effect.  
+This is the work for which he was awarded his only Nobel 
+Prize.\footnote{Einstein
+  should have received five Nobel Prizes, for special relativity, the
+  photoelectric effect, Brownian motion (which demonstrated the
+  existence of atoms), general relativity, and Bose-Einstein
+  condensation.}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=2.8in]{beyond_classical/photoelectric_sketch}
+\caption{A sketch of the photoelectric effect: light shines on a metal,
+and electrons are released from the surface.}
+\label{fig:photoelectric_sketch}
+\end{center}
+\end{figure}
+
+\subsection{Photoelectric Effect}
+
+Metals are materials in which electrons are free to move around ---
+this is why metals are good conductors, why they are shiny, etc. But
+the electrons cannot just freely hop off the surface.  They are bound
+to remain inside the material by a binding energy $U_\text{bind}$.
+It was discovered at the close of the 19$^\text{th}$ century that some
+electrons can be made to fly off the surface of a metal by shining light
+on it, as sketched in Fig.~\ref{fig:photoelectric_sketch}.  This should
+seem reasonable: the EM wave gives some extra energy to the electrons,
+allowing them to break free of their binding to the metal.  The electron
+``pays off'' its binding energy debt and leaves with the remaining energy
+in the form of kinetic energy.
+
+Let's focus on how this effect should depend on the intensity and the
+frequency of the light.  With classical EM waves, increasing the
+amplitude of the wave should cause a stronger force on the electrons
+and give them more energy.  This would suggest that increasing the
+intensity of light should increase the energy given to the electrons
+and they should come off with a higher final speed.  Also, the
+classical EM wave picture would predict that it should be possible to
+eject electrons from the metal for any frequency of light, as long as
+the intensity is high enough.
+
+By 1905 there were qualitative indications that this was not what
+was happening in experiments, and Einstein's photon hypothesis
+provided a quantitative theory that could be tested experimentally.
+In Einstein's theory, which was quantitatively verified by experiments
+in 1916, the intensity of the light has {\it no effect} on the kinetic
+energy of the emitted electrons --- it is the frequency of the light
+that is related to the kinetic energy.  Shining low frequency light on
+the material results in no electrons being emitted, regardless of the
+intensity, and when electrons are emitted, the kinetic energy increases
+linearly with the frequency of the light. The experimental results are
+illustrated graphically in the Fig.~\ref{fig:photoelectric_data}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5in]{beyond_classical/photoelectric_data}
+\caption{Left: the maximum kinetic energy of the emitted electrons is
+  independent of the intensity of light.  Also, electrons are not
+  emitted regardless of the intensity of light if the frequency $f$ is
+  below some cutoff value $f_c$.  Right: the maximum kinetic energy of
+  the emitted electrons does depend on frequency, and the slope of the
+  graph is equal to Planck's constant.}
+\label{fig:photoelectric_data}
+\end{center}
+\end{figure}
+
+Einstein's theory of the photoelectric effect is based on the following
+key assumption: 
+
+\boxittext{ In the microscopic world of atoms and subatomic particles,
+  light interacts with matter in the form of \textit{single photons}.  }
+
+This means light of frequency $f$ can only give a single photon's
+energy to an electron.  That photon, with energy $E_\text{ph} =hf$,
+might or might not have enough energy to free the electron from the
+metal.  If the photon energy is below the binding energy ($E_\text{ph} < 
+U_\text{bind}$), then no
+electrons will escape.  Since $E_\text{ph} = hf$, this sets the
+cutoff frequency $f_c$ when $E_\text{ph} = hf_c = U_\text{bind}$.  If the
+photon energy is greater than the binding energy holding the electron
+to the metal ($E_\text{ph} > U_\text{bind}$), then the electron might escape (it can always squander
+the energy and head off in the wrong direction, or bump into an
+impurity in the metal).  But of those electrons that do escape, there
+will be an \textit{upper limit} to their kinetic energy given by
+\begin{eqnarray}
+K_\text{max} &=& E_\text{ph} - U_\text{bind} \nonumber \\
+             &=& hf - U_\text{bind}.
+\end{eqnarray}
+That upper limit is obtained when the electron uses the energy
+absorbed from the photon optimally.  Note that the maximum electron
+kinetic energy depends only on the frequency of the light and not on
+its intensity.  This was Einstein's bold prediction, and it was
+confirmed experimentally by Millikan, who measured $K_\text{max}$ for
+various frequencies and found data of the form sketched on the right
+in Fig.~\ref{fig:photoelectric_data}.
+
+Thus we see that the photon picture explains the experimental results
+for the photoelectric effect perfectly.  It also provides a quantitative
+measurement of Planck's constant $h$ from the slope of the $K_\text{max}$
+versus $f$ plot.
+
+\begin{example}{Electrons emitted from copper.}
+Copper has a binding energy of $4.7\units{eV}$.  For light of {\bf
+  (a)} $200\units{nm}$ and {\bf (b)} $400\units{nm}$ shining on a
+piece of copper, determine whether electrons are emitted and, in the
+case they are emitted, calculate their maximum kinetic energy.
+
+\solution First we calculate the photon energy.  A handy trick for
+getting photon energies in electron volts is the
+following:\footnote{The relation $hc=1240\units{eV$\cdot$nm}$ can save
+  a lot of calculator typing for problems with photon energies in eV and
+  wavelengths in nm.}
+%
+\begin{equation}
+  E_\text{ph} = hf = \frac{hc}{\lambda}
+  =\frac{1240\units{eV$\cdot$nm}}{\lambda}.
+\end{equation}
+%
+For (a), $\lambda = 200\units{nm}$, so the photon energy is
+%
+\begin{equation}
+  E_\text{ph}= \frac{1240\units{eV$\cdot$nm}}{200\units{nm}} =
+  6.2\units{eV}.
+\end{equation}
+
+When the photon is absorbed by the electron, the electron gains enough
+energy to pay off its binding energy debt and escape with
+\begin{equation}
+  K_\text{max} = E_\text{ph} - U_\text{bind} = 6.2 - 4.7 = 
+\boxed{1.5\units{eV}}.
+\end{equation}
+For (b) we have a photon energy of $1240/400= 3.1\units{eV}$.  This
+is less than the binding energy, so no electrons will be emitted.
+\end{example}
+
+\subsection{Ionization}
+
+Einstein's basic idea that photons are the energy chunks in the
+interaction of light with matter is able to explain more phenomena
+than just the photoelectric effect.  For example, an electron in an
+atomic orbital is held in the atom by some binding energy.  For the
+case of hydrogen --- which is just a single electron orbiting a single
+proton --- the electron is usually in the lowest energy state
+possible, called the ground state.  In the hydrogen ground state the
+binding energy for the electron is $13.6\units{eV}$.  When lower
+frequency radiation (EM waves) shines on a gas of hydrogen, then none
+of the electrons are freed from their atomic orbitals.  Radiation of
+higher frequency is able to liberate electrons from their host
+nucleus, creating \textit{ionized hydrogen}.  This higher frequency
+radiation is called, rather sensibly, ionizing radiation.
+
+This idea extends beyond simple hydrogen.  EM waves frequently induce
+chemical reactions, from a photographic plate to photosynthesis to
+mutation of DNA.  That is, the energy of the absorbed photon is being
+used to break and possibly re-arrange some chemical bonds. In the case of DNA mutation, the
+relevant energy scale of the chemical bonds is in the 0.1 to $10\units{eV}$
+range; EM waves with photon energies comparable to or greater than 
+these binding energies can cause mutations. {\bf This is a known mechanism
+for explaining why exposure to EM radiation with certain frequencies can
+cause cancer in humans.} The photon nature of light is also critical
+for understanding various photo-detectors, including the sensors
+in the digital camera in your cell phone. We will explore these ideas in the
+assigned problems and in subsequent chapters.
+
+Finally, we conclude this section with an important point: light had
+previously been considered to be exclusively a wave phenomenon, but
+with photons it has been shown to have particle characteristics.  But
+it's not an either/or situation.  It is not the case that the wave
+description is wrong; after all, you have seen the interference
+phenomena yourself in lab.  So we are led to acknowledge that light
+can be both wave-like and particle-like.  What it does in a particular
+experiment depends on what the experiment is measuring.  This is very
+strange! 
+
+\section{Wave-Particle Duality}
+
+Planck and Einstein made the first big steps towards quantum mechanics
+by introducing photons and showing the role they play when light
+interacts with matter.  The next breakthrough was made by de~Broglie
+(pronounced de-BROY), who proposed what is now called {\it
+  wave-particle duality.}
+
+Basically, de~Broglie noticed how strange the wave and photon
+character of light is and pondered whether this was perhaps not
+limited to light, but rather was a new feature of nature.  Since
+light, which had been considered a wave, could turn out to have
+particle properties, perhaps things which are considered particles,
+like protons and electrons, could turn out to have wave properties.
+Perhaps {\it everything} in the microscopic world exhibits
+wave-particle duality.
+
+\subsection{Electron Interference}
+
+What would this mean for an electron or a proton to have wave-like
+properties?  The clear signature of waves is interference, so we could
+try to make electrons interfere like waves.  Imagine an experiment
+where a beam of electrons is sent towards a double-slit apparatus,
+much like you did with a beam of light in lab.  If the electrons are
+strictly particles with no wave character, we would expect to find two
+spots on the screen where the electrons are striking: one bright spot
+is the electrons that passed through the left slit and the other is
+the electrons that passed through the right slit.  However, if the 
+electrons are acting as waves, we should expect to see a full
+interference pattern on the screen, with a sequence of bright and
+dark spots.
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=4in]{beyond_classical/simulated_electron_double_slit}
+\caption{Electrons are sent through a double slit apparatus and then
+  strike a screen.  The dots represent where the electrons hit the
+  screen.  As the number of electron detections grows, the
+  interference pattern becomes clear. (Simulated data.)}
+\label{fig:electron_double_slit}
+\end{center}
+\end{figure}
+
+These experiments have been done.  We show here a simulation of the data in
+Fig.~\ref{fig:electron_double_slit}.  This figure demonstrates that
+once enough electrons have reached the screen, an interference pattern
+develops.  Electrons can act as waves!
+
+There is an extremely peculiar aspect to this experiment.  First, note
+that the bright spots in the interference pattern are simply the
+regions where an electron hit more often.  Equivalently, they are
+regions where an electron has a higher probability to hit.  The
+electrons go through the double slit apparatus one at a time, and
+somehow they know where the higher and lower probability regions are.
+But the interference pattern is a property of both slits.  For
+example, if the slit spacing is changed, the distance between
+interference bright spots is changed.  This implies that somehow each
+single electron ``experiences'' both slits, since it passes through
+them knowing the probabilities of where to hit on the screen.  This is
+very strange!
+
+But very real.  In fact, the wave-like property of electrons is the
+basis of a handy tool called the \textit{electron
+  microscope}.\footnote{Bucknell has one.  Some of you may have used
+  it.}  This microscope can probe length scales significantly shorter
+than visible light to study, for example, cell organelles.
+
+\subsection{The de~Broglie Relation}
+
+de~Broglie went further than just proposing this wave-particle
+duality; he made a specific prediction for what the wavelengths
+should be for things we normally think of as particles.  The 
+de~Broglie relation,
+\begin{equation}
+\lambda = \frac{h}{p}
+\label{eq:deBroglie_first}
+\end{equation}
+says that the wavelength of a ``particle'' depends on its momentum and
+on Planck's constant.
+
+Let us check that this relation works for photons: recall from the
+relativity unit of PHYS 211 that massless photons have an energy
+$E_\text{ph} = c|p_\text{ph}|$.  The de~Broglie relation says that the
+photon momentum and wavelength should be related by $p=h/\lambda$, so
+all together this gives
+\begin{equation}
+E_\text{ph} = c |p_\text{ph}| = c\frac{h}{\lambda} = hf.
+\end{equation}
+Indeed, for photons Eq.~(\ref{eq:deBroglie_first}) is equivalent to
+Einstein's photon energy relation.
+
+So de~Broglie's proposal was that $\lambda=h/p$ holds for all
+particles, not just for photons.  Let's see how this works out for an
+electron microscope.
+
+\begin{example}{Electron microscope.}
+You wish to use an electron microscope to resolve features of a cell
+organelle that are on the scale of $1\units{nm}$.  To do this, you
+``shine'' a beam of electrons on the sample.  What is the minimum
+speed that these electrons could have?  \solution Recall that to
+resolve features on a certain scale, we need a wavelength at least
+that small, so we will need $\lambda \leq 1\units{nm}$.
+
+According to the de~Broglie relation, this implies
+\begin{equation}
+  p = \frac{h}{\lambda} \geq \frac{h}{1\units{nm}}  
+\end{equation}
+or
+\begin{equation}
+  p \geq \frac{6.63\times 10^{-34}\units{J$\cdot$s}}{10^{-9}\units{m}}
+  = 6.6\times 10^{-25}\units{kg$\cdot$m/s}.
+\end{equation}
+Now that we have the minimum for the momentum, we can find the 
+minimum speed simply by $p=mv$ (we are neglecting relativistic
+effects):
+\begin{equation}
+  v = \frac{p}{m} \geq \frac{6.6\times 10^{-25}\units{kg$\cdot$m/s}}
+  {9.11\times 10^{-31}\units{kg}} = \boxed{7.3\times 10^5\units{m/s}.}
+\end{equation}
+\end{example}
+
+So, we have seen that de~Broglie argued (successfully) that particles
+act like waves.  But {\it waves of what}?  We will discuss this further
+in the next chapter.
+
+\vfill
+
+\newpage
+
+\section*{Problems}
+\markright{PROBLEMS}
+
+
+\begin{problem}
+Calculate: 
+\begin{enumerate}
+\item the energy (in eV) of a $500\units{nm}$ wavelength photon,
+and 
+\item the non-relativistic kinetic energy for a $500\units{nm}$
+electron.
+\end{enumerate}
+\label{prob:photonenergy}
+\end{problem}
+
+\begin{problem}
+A certain electron has the same wavelength as orange light, $\lambda \simeq
+600\units{nm}$.   Calculate the speed of this electron.
+\end{problem}
+
+\begin{problem}
+The electron binding energy for a particular metal is
+$2.25\units{eV}$.  Calculate the cutoff frequency for the
+photoelectric effect in this metal.
+\label{prob:cutoff_freq}
+\end{problem}
+
+\begin{problem}
+\begin{enumerate}
+
+\item Let's say that you want to probe the structure of a bacteriophage
+T4 virus.\footnote{These viruses --- which attack common bacteria ---
+are amazingly cool. They are like little lunar landers that land on the
+surface of a bacterium, after which they inject DNA into the bacterium,
+which then produces many more of the viruses before exploding.  See,
+e.g., Kanamuru et al., Nature {\bf 415}, p. 553 (2002).} One way to probe
+the virus is to look at it with electromagnetic waves.  If one wants
+to ``see'' the T4 structure with a resolution of about 
+$1\units{nm}$, what must be the wavelength of the EM wave used?
+What is the energy of a single photon with this wavelength?
+
+\item Another way to probe the T4 is with an electron microscope.
+  What must the wavelength and energy of an electron used by the 
+  microscope if it is to resolve the T4 virus down to the same resolution of
+  $10^{-9}\units{m}$?
+\end{enumerate}
+\label{prob:T4virus}
+\end{problem}
+
+\begin{problem}
+Use the de~Broglie relation to calculate the momentum of an X-ray
+photon of frequency $f=1.0\times 10^{18}\units{Hz}$.
+\label{prob:deBmomentum}
+\end{problem}
+
+\begin{problem}
+Photons of frequency $6.0\times 10^{14}\units{Hz}$ are directed
+towards a metal.  As a result, electrons are ejected with kinetic
+energies up to $1.4\units{eV}$.  Determine the binding energy for this
+metal.
+\label{prob:BindingEnergy}
+\end{problem}
+
+\begin{problem} % [A52]
+A few years ago there was a flurry of attention given to the potential
+hazards of electromagnetic fields from overhead power lines.  The
+concern is that the alternating current (AC) in these power lines was
+emitting radiation that could cause cancer.
+\begin{enumerate}
+\item The AC current in power lines alternates with a frequency of
+  $60\units{Hz}$.  Use this to determine the energy of photons emitted
+  from the power lines (express your answer in eV).
+\item The weakest molecular bonds have binding energies around
+  $0.1\units{eV}$.  Use this explain why the scientific community is
+  highly skeptical of the claims of cancer dangers.
+\end{enumerate}
+\label{prob:EMFhazards}
+\end{problem}
+
+\begin{problem} %[A55]
+When a particular metal is illuminated with infrared radiation of
+wavelength $700\units{nm}$, electrons are emitted with kinetic
+energies that range up to $0.25\units{eV}$.  Calculate the largest
+kinetic energy for ejected electrons if the same surface is
+illuminated with light of wavelength $400\units{nm}$.
+\end{problem}
+
+\begin{problem}
+A one-dimensional cavity of length $L$ is filled with electromagnetic
+standing waves.  Show that the frequency of the $j^\text{th}$ longest
+wavelength mode is given by $f_j = cj/(2L)$.  
+\label{prob:cavity_freq}
+\end{problem}
+
+
+\begin{problem}
+\begin{enumerate}
+\item Given your results from Problem~\ref{prob:cavity_freq},
+calculate the energy of a single photon for the $j^\text{th}$ longest 
+wavelength mode in a one-dimensional (1D) cavity with length $L$.
+\item Considering that the Equipartition Theorem predicts an average
+total energy of $\textstyle{\frac{1}{2}}k_BT$ for each mode, calculate
+the number of photons that you would expect to find (on average)
+for the $j^\text{th}$ longest wavelength mode in a 1D cavity with length $L$.
+\item Based on your answer to (b), what would be the largest mode
+number $j$ for which you would expect to find (on average) one or more
+photons in the cavity?
+\item In one or two sentences, explain why the photon nature of light
+resolves the problem of the UV catastrophe (i.e., the prediction of
+an infinite total energy). 
+\end{enumerate}
+\label{prob:largest_mode}
+\end{problem}
+
+\begin{problem}
+As discussed in the reading, the Equipartition Theorem says that, classically,
+each electromagnetic wave mode should have an average energy of
+$\textstyle{\frac{1}{2}}k_BT$. For simplicity, we'll assume a one-dimensional cavity
+with a length of $2.0\units{cm}$.
+\begin{enumerate}
+\item Calculate the value of $\textstyle{\frac{1}{2}}k_BT$ at
+room temperature of $22^{\circ}\units{C}$.
+\item Calculate the wavelength and frequency of the lowest frequency
+normal mode electromagnetic wave for this cavity.
+\item Calculate the energy of one photon of light with this
+wavelength.
+\item Calculate the number of photons that you would expect (on the
+average) for the lowest frequency mode in this cavity.
+\item How many photons would you expect (on average) for the
+second lowest frequency mode in this cavity?
+\item How many photons would you expect for the $10^\text{th}$ lowest
+frequency mode in this cavity? The $100^\text{th}$ lowest mode? The
+$1000^\text{th}$ mode? The $10000^\text{th}$ lowest mode?
+\item Do you think that the equipartition theorem holds for all of your
+answers in part (f)? Why or why not?
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+The electromagnetic field in a one-dimensional cavity is in thermal
+equilibrium, and the longest wavelength mode contains $4500$ photons.
+\begin{enumerate}
+\item Calculate the number of photons in the second-longest wavelength
+mode.
+\item Calculate the number of photons in the third-longest wavelength
+mode.
+\item Calculate $j_\text{max}$, the largest mode number.
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+An X-ray photon of wavelength $60\units{nm}$ ionizes a hydrogen atom
+with an electron initially in its ground state (with energy $-13.6\units{eV}$).
+Calculate the kinetic energy of the resulting free electron.
+\label{prob:IonizeHAtom}
+\end{problem}
+
+\begin{problem}
+Wave-particle duality means that all the fundamental building blocks
+in the quantum microscopic world have both wave and particle
+properties.  This is demonstrated in the electron double slit
+experiment shown in Fig.~\ref{fig:electron_double_slit}.
+
+\begin{enumerate}
+\item Describe an aspect of the experiment that involves electrons
+  acting as particles.
+\item Describe an aspect of the experiment that involves the same
+electrons acting as waves.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+A He-Ne laser emits light of wavelength $633\units{nm}$.  Calculate
+how many photons per second are emitted by a $5\units{mW}$ He-Ne
+laser.
+\end{problem}
+

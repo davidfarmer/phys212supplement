@@ -1,0 +1,561 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter[Fund.\ Forces and Interactions II]{Fundamental Forces and Interactions II}
+\label{chapter:interactions}
+%\setcounter{ex}{0}
+
+\section{Introduction}
+
+%We are now ready to study particle interactions at the most
+%fundamental level of quarks and leptons.  You saw in
+%Section~\ref{section:feynman} that photons carry the electromagnetic
+%interaction between charged particles, thus changing their energy and
+%momentum.  In this chapter you'll learn how {\em gluons} carry the
+%strong interaction between quarks, thus changing their color and how
+%the $W^\pm$ and $Z^0$ bosons carry the weak interaction among quarks
+%and leptons, thus changing a quark's flavor or a lepton's family
+%membership.
+
+This chapter continues from the discussion begun in the previous
+chapter.  We now have the tools that we need to study particle
+interactions at the most fundamental level of quarks and leptons.
+In this chapter, you'll learn how to sketch particle reactions to
+reveal the details of the fundamental interactions.  And you'll
+learn how to predict a particle's decay scheme and lifetime from
+its mass and internal structure.  We'll look at the three
+generations of quarks and leptons and make a case for {\em grand
+unified theories} (GUTs).  And finally, we'll return to the early
+universe as the best laboratory for testing some of these ideas.
+
+
+\section[Feynman diagrams]{Feynman Diagrams and Particle Interactions}
+
+We now have all the pieces that we need to produce diagrams
+corresponding to the particle interactions that we discussed in the
+previous class.  All of the conservation laws that were used to
+analyze those interactions will be incorporated into these
+{\em interaction diagrams}.
+
+In the previous section, we reviewed the key features of Feynman
+diagrams as they pertain to the various interactions.  A quark or
+lepton goes along, then emits a messenger particle, changing the
+properties of the original particle.  Another particle receives and
+absorbs the messenger, and the interaction is complete.  Or perhaps
+the messenger decays into a quark-antiquark or lepton-antilepton pair.
+
+We can expand the Feynman diagram idea to composite particles like
+hadrons by just ``carrying along'' the non-interacting constituents.
+Here's the key point: in every diagram, you should consider very
+carefully each vertex where a messenger is emitted or absorbed.  Every
+vertex must conserve both charge and color.  The net charge before the
+emission/absorption process is the same as the net charge after the
+process.  Similarly, (net color before) = (net color after).  If you
+are careful to conserve both charge and color, then your diagrams will
+most likely be correct.
+
+\begin{figure}[tbp]
+\begin{minipage}{7cm}
+\caption{Interaction diagram for neutron decay, a weak interaction.}
+\label{fig:neutron_decay}
+\end{minipage}
+\hfill
+\begin{minipage}{4cm}
+\includegraphics[width=4cm]{fundamental_forces_II/neutron_decay}
+\end{minipage}
+\end{figure}
+
+A few examples will best illustrate this.  Consider the beta-decay of
+a free neutron, a process governed by the weak interaction:
+\begin{equation}
+      n \to p + e^- + \overline{\nu_e}  .
+\end{equation}
+To show the internal structure, simply expand the composite particle
+into quarks and antiquarks and let the reaction go.  See
+Fig.~\ref{fig:neutron_decay}.  Note the two types of $W$-boson
+vertices in the diagram: one changes the flavor of a quark and the
+other creates a lepton-antilepton pair.
+
+Take a look at the two vertices in this diagram.  The first is the
+vertex corresponding to the emission of the $W^-$ from the down quark,
+which is changed to an up quark by the emission.  Ignore the up and
+down quark at the left of the diagram and consider only the particles
+involved at that vertex.  If you draw a horizontal dotted line, then
+everything below the line is what was present before the emission and
+everything above the line is what was present after the emission.
+Now, consider charge conservation. Charge before: $Q_{\rm before} =
+Q_d = -1/3$ (recall that $Q$ refers to the charge of the particle).
+Charge after: $Q_{\rm after} = Q_u + Q_{W^-} = +2/3 - 1 = -1/3$, so
+this vertex conserves charge.  Note: we won't draw the horizontal
+dotted lines anymore.
+\begin{quote}
+{\bf Checkpoint 1:} convince yourself that charge is also conserved at
+the second vertex: the decay of the $W^-$ into the $e^-$ and $\overline\nu_e$.
+\end{quote}
+Note that color is automatically conserved at both of these vertices,
+since the $W$ particles never have any net color, nor do the $e^-$ and
+$\overline\nu_e$.
+
+
+For the strong interaction there are several possibilities.  The
+simplest type is an {\em exchange reaction}, an example of which is
+shown in Fig.~\ref{fig:pp_reaction}.  The quarks just get jumbled up
+in the collision and then rearrange themselves to make up the end
+products.  Note that there is still the exchange of a gluon here.
+Also, note that color is conserved at the vertices at both ends of the
+gluon.  At the first (lower) vertex, the color is initially $R$ (for
+the $d$ quark in the proton).  After the vertex, the color is $B$ (for
+the $d$ quark) + $R\overline B$ (for the gluon that has just been
+emitted).
+\begin{quote}
+{\bf Checkpoint 2:} convince yourself that color is also conserved at
+the second vertex.
+\end{quote}
+
+\begin{figure}[tbp]
+\begin{minipage}[t]{5.5cm}
+\begin{center}
+\includegraphics[width=4cm]{fundamental_forces_II/pp_reaction}
+\caption{Interaction diagram for $p + p \to \Delta^{++} + n$, a strong
+  interaction.}
+\label{fig:pp_reaction}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{5.5cm}
+\begin{center}
+\includegraphics[width=3.7cm]{fundamental_forces_II/pi_p_reaction}
+\caption{Interaction diagram for $\pi^- + p \to \Lambda + K^0$, a strong
+  interaction.}
+\label{fig:pi_p_reaction}
+\end{center}
+\end{minipage}
+\end{figure}
+
+Another possibility is to annihilate and create quark-antiquark pairs,
+mediated by a gluon.  Consider the bombardment of a stationary proton
+with a high-energy pions, as shown in Fig.~\ref{fig:pi_p_reaction}.
+There are several ways in which the colors could be labeled in this
+diagram.  Let's assume that the two quarks in the $\pi^-$ before the
+reaction have colors $G$ and $\overline G$.  The three quarks in the
+$p$ must always have colors $R$, $G$, and $B$, according to the
+colorless rule.  The gluon will then have the color combination
+$R\overline G$.
+
+A couple of additional points to note about the reaction in
+Fig.~\ref{fig:pi_p_reaction}. First, since strange quarks are more
+massive than up quarks, considerable kinetic energy (of the $\pi^-$)
+must be converted to mass-energy for this reaction to occur.  In fact,
+a $\pi^-$ hitting a stationary proton must have a kinetic energy of at
+least $770\units{MeV}$ to produce a $\Lambda$ and $K^0$.  Second, the gluons
+that mediate the strong interaction cannot change the net {\em flavor}
+of the quarks.  Up and antiup are destroyed together; strange and
+antistrange are created together.  As a result, the additive
+properties like strange\-ness, baryon number and charge are
+automatically conserved.
+
+\begin{figure}[tbp]
+\begin{minipage}{6cm}
+\begin{center}
+\includegraphics[width=4cm]{fundamental_forces_II/sigma-minus_decay}
+\caption{Reaction diagram for the strong decay $\Sigma^{\ast -} \to
+  \Lambda(1116) + \pi^-(135)$.}
+\label{fig:sigma-minus_decay}
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+\begin{center}
+\includegraphics[width=4cm]{fundamental_forces_II/weak_sigma-minus_decay}
+\caption{Reaction diagram for the weak decay $\Sigma^-(1197) \to n +
+  \pi^-$.}
+\label{fig:weak_sigma-minus_decay}
+\end{center}
+\end{minipage}
+\end{figure}
+
+
+A third possibility for the strong interaction involves the decay of
+{\em excited states} of quark configurations.  This can occur whenever
+the mass of the parent particle is high enough to have energy
+available for creating a quark-antiquark pair.  See
+Fig.~\ref{fig:sigma-minus_decay} for an example.
+
+Consider the decays of the particles labeled $\Sigma^-(1197)$ and
+$\Sigma^{*-}(1387)$ (the numbers in parenthesis are the masses in
+MeV/$c^2$).  A proposed decay scheme might be like that shown in
+Fig.~\ref{fig:sigma-minus_decay}.  Note that we've shown the
+colors on this diagram since it involves emission and decay of a
+gluon. However, when we check conservation of energy, we find that
+the mass of the products is greater than $1197\units{MeV/$c^2$}$ but less
+than $1387\units{MeV/$c^2$}$.  This means the $\Sigma^{*-}(1387)$ has 
+enough rest energy to decay this way but the $\Sigma^-(1197)$ does not.
+It must find another way.
+% (see
+% Problem~\ref{chapter:interactions}.\ref{prob:sigma-minus_decay}).
+
+\section{Particle Lifetimes}
+
+Let's see how the quark model can help us predict particle lifetimes.
+The two most important factors are the type of interaction involved
+and the amount of energy available.  We'll first illustrate with an
+example and then develop some general rules.
+
+In doing
+Problem~
+%\ref{chapter:interactions}.
+\ref{prob:Sigma_minus_decay},
+you'll discover that energy considerations severely limit the possible
+decay modes for $\Sigma^-(1197)$.  In fact, only $\Sigma^- \to n +
+\pi^-$ is allowed.  See Fig.~\ref{fig:weak_sigma-minus_decay}.
+There is a flavor change, because a strange quark has to turn into
+an up quark, so a $W^-$ boson must be involved, indicating the weak
+interaction.  And because the weak interaction is much weaker than the
+strong, it acts much more slowly and $\Sigma^-(1197)$ lives a
+relatively long time.  Compare the mean lifetimes: $1.5 \times 
+10^{-10}\units{s}$
+for $\Sigma^-(1197)$ and $2 \times 10^{-23}\units{s}$ for 
+$\Sigma^{*-}(1387)$.
+The fact that only a weak decay can occur allows $\Sigma^-(1197)$ to
+live 10 trillion times longer!
+
+Here are some general rules about decay schemes and lifetimes.
+\begin{itemize}
+\item A decay proceeds by the strongest interaction allowed:
+  strong, then electromagnetic, then weak.  The typical times for these
+  interactions are given in Tables~\ref{table:process_decay_times} and
+  \ref{table:mass_lifetimes}.
+
+\item Particles can only decay to lighter particles.  The more
+  excess energy available, the faster the decay proceeds.
+
+\item  A baryon's decay products must include a baryon.
+
+\item If quark flavor is not conserved, the decay must proceed by the
+  weak interaction (because a $W$ or $Z$ boson must be involved).
+
+\item If photons are involved, the decay process proceeds by the
+  electromagnetic interaction.
+
+\item Hadrons tend to decay to more hadrons.  Only when a decay into
+  hadrons is energetically impossible do hadrons decay to photons or
+  leptons.
+
+\end{itemize}
+
+\begin{table}[!b]
+\caption{Decay times for various processes.}
+\label{table:process_decay_times}
+\begin{center}
+\begin{tabular}[tbp]{lc}
+Process & Typical Decay Time  \\[0.5ex]
+\hline\hline
+Strong             & $10^{-23}$ s \\[0.5ex]
+Electromagnetic    & $10^{-20}$ s \\[0.5ex]
+Weak $\to$ hadrons & $10^{-10}$ s \\[0.5ex]
+Weak $\to$ leptons & $10^{-7}$ s  \\[0.5ex]
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%edited to remove confusing third column
+%\begin{table}[tbp]
+%\caption{Decay times for various processes.}
+%\label{table:process_decay_times}
+%\begin{center}
+%\begin{tabular}[tbp]{lcc}
+%Process & Typical Decay Time & Observed Range \\[0.5ex]
+%\hline\hline
+%Strong             & $10^{-23}$ s & $10^{-22}$--$10^{-24}$ s \\[0.5ex]
+%Electromagnetic    & $10^{-20}$ s & $10^{-16}$--$10^{-20}$ s \\[0.5ex]
+%Weak $\to$ hadrons & $10^{-10}$ s & $10^{-9} $--$10^{-13}$ s \\[0.5ex]
+%Weak $\to$ leptons & $10^{-7}$ s  & $10^{-8} $--$10^0$ s      \\[0.5ex]
+%\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+\begin{table}[!b]
+\caption{Selected particle masses and lifetimes.}
+\label{table:mass_lifetimes}
+\begin{center}
+\begin{tabular}[tbp]{lcccc}
+& Particle & Mass (MeV/$c^2$) & Lifetime & Comments \\
+\hline\hline
+Baryons & \\
+& $p$ & 938.3 & $>10^{30}\units{yrs}$ & \\
+& $n$ & 939.6 & 898 s & \\
+& $\Lambda$ &  1116 & $2.6\times 10^{-10}$ s & lightest $S = -1$ \\
+& $\Sigma^0$ & 1193 & $6\times 10^{-20}$ s & $\to \Lambda + \gamma$ \\
+& $\Sigma^-$ & 1197 & $1.5\times 10^{-10}$ s & $\to n + \pi^-$ \\
+& $\Sigma^{*-}$ & 1387 & $2\times 10^{-23}$ s & $\to \Lambda + \pi^-$ \\
+& $\Omega^-$ & 1672 & $8\times 10^{-11}$ s & lightest $S = -3$\\
+Mesons & \\
+& $\pi^\pm$  & 139.6 & $2.6\times 10^{-8}$ s & $\to \mu + \nu$\\
+& $\pi^0$    & 135   & $0.8\times 10^{-16}$ s & $\to\gamma + \gamma$\\
+& $K^\pm$    & 494   & $1.2\times 10^{-8}$ s & lightest $S = \pm 1$\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Grand Unified Theories (GUTs)}
+\label{sec:guts}
+Unification of the electrical and magnetic forces was explained in the
+late 1800's by Maxwell's comprehensive theory of electricity and
+magnetism, which showed that the two forces are really just different
+forms of the same fundamental force.  More recently, the discovery of
+the $W$ and $Z$ messenger particles (in 1983) verified the {\em Standard
+Model} that unifies electromagnetic forces with weak forces (now
+referred to in one word as ``electroweak'' forces).  But Einstein's
+dream of unification of the fundamental forces is not yet complete,
+since strong forces and gravitational forces have not yet been
+included in the model.  However, attempts are being made to include
+the strong force with the electroweak.
+
+To see how this inclusion would be possible, we must consider one more
+type of interaction, one that could change quarks into leptons and
+vice versa.  This interaction is one of the key ideas of {\em grand
+unified theories}.  But first let us reflect on the striking parallel
+between the set of quarks and leptons.  We expand the lepton family to
+include quarks and call the resulting group a generation.  See
+Table~\ref{table:particle_generations}.
+
+Only the first generation is really ``needed.''  All the normal
+everyday material of nuclei, atoms, and objects are made from these.
+The other generations are extra pieces of the puzzle of physics.  When
+grouped this way, one might ask if there isn't some scheme that unites
+the quarks and leptons.  In fact there is.  This is the job of grand
+unified theories (GUTs).
+
+\begin{table}[tbp]
+\caption{Generations of particles}
+\label{table:particle_generations}
+\begin{center}
+\begin{tabular}[tbp]{lcccc}
+ & Leptons & \multicolumn{3}{c}{Quarks} \\
+ & & red & blue & green \\
+\hline\hline
+1st generation & $e^-$ & $u$ & $u$ & $u$ \\
+               & $\nu_e$ & $d$ & $d$ & $d$ \\[0.5ex]
+2nd generation & $\mu^-$ & $s$ & $s$ & $s$ \\
+               & $\nu_\mu$ & $c$ & $c$ & $c$ \\[0.5ex]
+3rd generation & $\tau^-$ & $b$ & $b$ & $b$ \\
+               & $\nu_\tau$ & $t$ & $t$ & $t$ \\[0.5ex]
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+The term {\em grand unification} refers to the attempt to unify, in a
+single theory, the strong, electromagnetic, and weak interactions.
+That there is any hope for this to succeed comes from the fact that
+the strengths of the interactions seem to approach each other at short
+distances and thus at high energies (recall that to explore ever
+smaller-sized details requires more and more energetic probes).  We
+saw in the previous chapters that camouflage effects tend to make the
+effective color charge (and therefore the interaction strength of the
+strong force) {\em smaller} at closer distances.  On the other hand, the
+weak and electromagnetic interactions get {\em stronger} at closer
+distances.  In fact, the theories describing these interactions are
+sufficiently well understood that the distance (and thus the energy)
+at which the interaction strengths become comparable can be estimated
+to within a factor of 10.  See Fig.~\ref{fig:GUT}.
+
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=8cm]{fundamental_forces_II/GUT}
+\caption{Effective strength vs.\ energy for strong, weak, and
+  electromagnetic interactions.}
+\label{fig:GUT}
+\end{center}
+\end{figure}
+
+The energy for grand unification, as seen from the figure, is around
+$10^{17}\units{MeV}$. This corresponds to the rest energy of the proposed
+messenger particle, the $X$-boson or {\em leptoquark}.  The
+$X$-boson's job is to mediate interactions in which quarks turn into
+leptons and vice-versa.  With its tremendous mass of about $10^{14}$
+proton masses, it could never be produced on earth as a real particle.
+Even in its transitory virtual state as a messenger, it would have to
+borrow so much energy from the surrounding vacuum, that reactions
+involving the $X$ (under present-day earth-like conditions at least)
+are expected to be quite unlikely.  However, this boson would make
+possible the startling reaction shown in Fig.~\ref{fig:proton_decay}.
+
+\begin{figure}[tbp]
+\begin{minipage}{7.5cm}
+\caption{Proton decay, mediated by the $X$-boson.}
+\label{fig:proton_decay}
+\end{minipage}
+%\hfill
+\begin{minipage}{3cm}
+\includegraphics[width=2.5cm]{fundamental_forces_II/proton_decay}
+\end{minipage}
+\end{figure}
+
+If $X$-bosons are real, the reaction pictured --- proton decay ---
+would become possible, although extremely rare.  According to present
+theories, the mean lifetime of the proton would be greater than $10^{30}$
+years.  Even though this is 20 orders of magnitude longer than the
+lifetime of the universe, it may still be testable here on earth (see
+Problem~
+%\ref{chapter:interactions}.
+\ref{prob:proton_decay}).
+
+\section{Universal Symmetry}
+
+One of the goals of grand unified theories is to show that the strong,
+weak, and electromagnetic interactions are really different aspects of
+a single type of universal interaction.  As we've just seen, by
+studying how the strengths of these interactions vary with energy and
+distance, one learns that at high enough energies, the interaction
+strengths would become equal (see Fig.~\ref{fig:GUT}).  At this
+energy, one could observe directly what is known as universal
+symmetry.  All the interactions would be on the same footing, look the
+same, and have the same strength.
+
+At this grand unification energy, all interactions would be equally
+possible, including ones mediated by the $X$-boson, mentioned above in
+proton decay.  In order to really see the $X$-boson in action, we
+would need to have energies available comparable to the $X$-boson's
+rest energy $\sim 10^{17}\units{MeV}$.  Recall that the world's biggest
+accelerator, the {\it Large Hadron Collider} in Europe, runs at a 
+paltry $10^7\units{MeV}$.  A modern linear
+accelerator of $10^{17}\units{MeV}$ would have to extend beyond the outer
+reaches of Pluto's orbit around the sun.  So how can we hope to study
+such high energies where universal symmetry would be apparent?
+
+The answer is during the early universe!  Shortly after the Big Bang,
+the average thermal energies of particles were well in excess of the
+grand unification scale.  In those early moments, reactions occurred
+that determined the character of our present universe.  Since we
+believe that the same laws of physics governed then as now, we can use
+the early universe as the testing ground for modern particle physics.
+The details of the physics of the early universe are the subject of
+the next chapter.
+
+
+\newpage
+
+\section*{Problems}
+\markright{PROBLEMS}
+
+\begin{problem}
+Construct a reaction diagram for each of the following.
+  \begin{enumerate}
+  \item $\Delta^{++} \to p + \pi^+$
+  \item $p + e^- \to n + \nu_e$
+  \end{enumerate}
+\label{prob:reaction_diagram_i}
+\end{problem}
+
+\begin{problem}
+Construct a reaction diagram for each of the following:
+  \begin{enumerate}
+  \item $\pi^- + \Lambda \to K^- + n$
+  \item $K^- \to \mu^- + \overline\nu_\mu$
+  \end{enumerate}
+\label{prob:reaction_diagram_ii}
+\end{problem}
+
+\begin{problem}
+Suppose the proton's mean lifetime is
+$10^{31}$ years.  Now consider a pool of water $10\units{m} \times
+10\units{m} \times 3\units{m}$.  Estimate the number of protons in
+the pool and then the number that you would expect to decay in one
+year.  For this calculation, consider only the protons not bound in a
+complex nucleus; that is, only the protons in hydrogen atoms. 
+\label{prob:proton_decay} 
+\end{problem}
+
+\begin{problem}
+$\Sigma^-(1197)$ decays into hadrons only.  List all the
+possible decay schemes that conserve baryon number, energy, and
+charge, using the tables given in Chapter~\ref{chapter:particles} as a
+resource. 
+\label{prob:Sigma_minus_decay}
+\end{problem}
+
+\begin{problem}
+For each of the following reactions, tell which interaction is
+  involved (strong, weak or electromagnetic).
+  \begin{enumerate}
+  \item a green up quark emits a gluon
+  \item $\gamma \to e^+ + e^-$
+  \item $\nu_e + n \to e^- + p$
+  \end{enumerate}
+\label{prob:identify_interaction}
+\end{problem}
+
+\begin{problem}
+Which lives longer, $\Sigma^0(1192)$ or $\Lambda(1116)$?  Why?
+\label{prob:compare_lifetime}
+\end{problem}
+
+\begin{problem}
+An $\Omega^-$ particle is constructed from three $s$-quarks and
+  is the lightest $S = -3$ baryon.  Refer to
+  Table~\ref{table:mass_lifetimes} to answer the following:
+  \begin{enumerate}
+  \item Why must strange\-ness ($S$) change when $\Omega^-$ decays?
+  \item By what interaction does $\Omega^-$ decay?
+  \item Why does $\Omega^-$ live relatively long?
+  \end{enumerate}
+\label{prob:Omega_minus}
+\end{problem}
+
+\begin{problem}
+The particles $\Xi^-(1322)$ and $\Xi^{*-}(1535)$ both carry
+strange\-ness $S = -2$.  Which decays faster?  Why?  When the faster
+  one decays, what are the likely decay products?
+\label{prob:Xi_minus}
+\end{problem}
+
+\begin{problem}
+Pions are the lightest hadrons.  What can they decay to?  Why do
+  $\pi^+$ and $\pi^-$ live so much longer than $\pi^0$?
+\label{prob:pion_decay}
+\end{problem}
+
+\begin{problem}
+In Section \ref{sec:guts} we discussed the possibility of proton
+decay.  Fig.~\ref{fig:proton_decay} shows a {\em hypothetical} process
+in which proton decay is mediated by a {\em proposed} $X^{4/3}$ boson,
+which carries a $+\textstyle{\frac{4}{3}}$ charge.  (The $X^{4/3}$ boson 
+has not been observed, and is not one of the particles included in the 
+tables in this supplement.)  Note that the general rule for
+interactions involving an $X$-boson would be:
+  $$
+  \mbox{quark} +\mbox{quark} \to X \to \mbox{antiquark} +
+  \mbox{antilepton}
+  $$
+Another possible proton decay scheme, using a $X^{1/3}$ boson (with
+$+\textstyle{\frac{1}{3}}$ charge), would be $p \to \pi^+ + \overline\nu_e$.  Construct
+a reaction diagram like Fig.~\ref{fig:proton_decay} showing this 
+hypothesized decay process.  Be sure to conserve charges at each vertex!
+\label{prob:X_boson}
+\end{problem}
+
+\begin{problem}
+In Fig.~\ref{fig:neutron_decay}, label the colors of any
+particle in the diagram that has a color.  Be sure to satisfy the
+{\em colorless rule} for any hadron, and don't label colors on any
+particle that does {\em not} carry color.  (Note: there are several
+right answers to this question.)
+\label{prob:neutron_decay_reaction_diagram}
+\end{problem}
+
+\begin{problem}
+For each of the following reaction diagrams, identify the
+messenger particle and state the type of interaction involved
+(strong, weak, electromagnetic, or gravitational).  Denote the
+colors and/or charges for each messenger, where appropriate.
+\begin{center}
+  \includegraphics[width=9cm]{fundamental_forces_II/missing_particles_2}
+\end{center}
+\label{prob:identify_missing_info}
+\end{problem}
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

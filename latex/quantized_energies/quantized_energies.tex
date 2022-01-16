@@ -1,0 +1,1419 @@
+\chapter[Quantized Energies and Spectra]{Quantized Energies and Spectra}
+\label{chapter:quantized_energies}
+%\setcounter{ex}{0}
+
+\section{Introduction}
+\indent We have seen that particles have wave-like
+properties, and that the de~Broglie relation, connecting the
+properties of momentum and wavelength, has far-reaching consequences
+for the behavior of atoms and other microscopic systems. 
+The main consequence is that the idea of a particle as a
+point-like object having a precise position at any given time has to
+be replaced with a probability density describing a distribution of
+positions where the particle is likely to be found. 
+
+In the previous chapter, we introduced the idea of a wavefunction
+$\psi(x)$ from which we can determine the probability density
+$P(x) = |\psi(x)|^2$. We also discussed Heisenberg's uncertainty
+principle, that states that there is a minimum combined spread in 
+a particles position and momentum, a principle that also leads to
+a minimum kinetic energy for any confined particle.
+And at the end of the previous chapter, we
+introduced the Schr\"odinger equation which enables us to determine
+wavefunctions for particles in regions of given potential energy.
+
+In this chapter, we show how Schr\"odinger's Equation predicts
+the {\it quantization} of energies for confined particles, i.e., only
+certain, well-defined energies are allowed.\footnote{This
+is where the ``quantum'' in the name ``quantum mechanics'' comes from.}
+Quantization of energies is a profound and distinctly quantum principle
+(i.e., not predicted at all from classical mechanics) which has extensive
+applications in modern technology. We will illustrate quantization of
+particle energies with a simple system --- the {\it particle in a box} (also
+known as the {\it infinite square well potential}) --- for which
+solutions of Schr\"odinger's Equation are readily obtained. 
+We will discuss the properties of this system, which has recently
+led to the development of {\it quantum dots} for use in numerous
+applications.  
+
+We will also discuss how quantum systems absorb and emit
+light, a result that explains not only the colors that we see from
+many physical systems but which has also become a common tool for
+identifying the material constituents of a range of systems, from
+biological systems in microscopic studies up to stars 
+and star-forming regions
+millions (and billions) of light years from the Earth.
+
+\section{Solutions for the Infinite Square Well}
+\label{sec:Inf_Sq_Well}
+
+To demonstrate how we use Schr\"odinger's equation to derive
+wavefunction solutions, let's consider the simplest example of a
+``particle in a box,'' i.e., a
+particle trapped in one dimension (and unable to move in the other
+two dimensions) between two impenetrable walls
+located at $x = 0$ and $x = L$.  Since the particle feels no force in
+the region between the walls, the potential energy in this region is
+constant, and therefore we will take it to be zero.  Since the walls
+are impenetrable, the potential energy must become infinite at $x = 0$
+and $x = L$.  Therefore the graph of the potential energy $U(x)$ as a
+function of position is shown in Fig.~\ref{fig:infinite_sq_well}.
+This configuration is usually referred to as the {\it infinite square
+  well potential}.  For this example we will consider solutions for
+which the energy of the particle $E$ is positive. (Solutions for $E <
+0$ for this potential actually do not exist due to the fact that the
+potential energy goes to infinity at the boundaries of the well.)
+
+\begin{figure}[!tb]
+\begin{center}
+\includegraphics[width=3.2in]{quantized_energies/infinite_sq_well}
+\end{center}
+\caption{Graph of the infinite square well potential as a function of
+  position.}
+\label{fig:infinite_sq_well}
+\end{figure}
+
+
+Since there is no chance that the particle can penetrate either of the
+barriers at $x = 0$ or $x = L$, the wavefunction $\psi(x)$ must be
+exactly zero in the regions $x \le 0$ and $x > L$.  Inside the well,
+where $U(x) = 0$, Schr\"odinger's equation can be written as
+
+\begin{equation}
+\frac{d^2\psi(x)}{dx^2}  = - \left(\frac{2mE}{\hbar^2}\right)\psi(x).
+\label{eq:squarewell_1}
+\end{equation}
+
+Our job is to determine what mathematical function is consistent with
+Eq.~(\ref{eq:squarewell_1}), that is, can we find a function
+$\psi(x)$ whose second derivative is equal to {\it minus} a positive
+constant $(2 m E/ \hbar^2)$ times the original function?  
+We already testing a solution to this equation in Section 
+\ref{sec:test_Solution}.
+In that section, we found that the wavefunction 
+$\psi_1(x) = A\sin(kx)$
+works if 
+\begin{equation}
+\label{eq:squarewell_2}
+E = \frac{\hbar^2 k^2}{2m}.
+\end{equation}
+from which it follows that $k = \pm\sqrt{2mE}/\hbar$. 
+This isn't the only possible solution --- the wavefunction 
+$\psi_1(x) = B\cos(kx)$ also satisfies Eq.~(\ref{eq:squarewell_1}).
+Since either of these functions satisfies Schr\"odinger's equation, we
+can write a general solution as a linear combination of these two
+functions:
+
+\begin{equation}
+\label{eq:squarewell_3}
+\psi(x) = A \sin{(kx)} + B \cos{(kx)} .
+\end{equation}
+
+In order for this solution to work, we must adjust the values of the
+constants $A$, $B$, and $k$ such that the wavefunction inside the well
+matches up with the value of the wavefunction at positions $x = 0$ and
+$x = L$, where we previously concluded that the value of the
+wavefunction should be zero.  This process is called {\it matching the
+ boundary conditions}.  At $x = 0$, the wavefunction inside the well given
+by Eq.~(\ref{eq:squarewell_3}) becomes $\psi(0) = B$, so in order
+for the wavefunction to equal zero at the boundary $x = 0$, we must
+choose the value $B = 0$.  Thus the interior wavefunction must be
+given simply as $\psi(x) = A \sin{(kx)}$.
+
+Continuing, we now look at the boundary condition at $x = L$.  Again,
+the wavefunction must be zero here, so this requires that
+
+\begin{equation}
+\label{eq:squarewell_4}
+A \sin{(k L)} = 0.
+\end{equation}
+
+\noindent From our knowledge of the sine function, we know that this
+function is zero for values such that $k L = 0, \pi, 2\pi, 3\pi,
+\cdots = n \pi$ for any integer $n$.  Therefore this second boundary
+condition tells us that the possible values the constant $k$ can
+assume are
+
+\begin{equation}
+\label{eq:squarewell_5}
+k_n = \frac{n \pi}{L} . \hspace{0.5in} (n = 1, 2, 3, \dots)
+\end{equation}
+We have thrown out the $k = 0$ solution because that would correspond
+to a wavefunction $\psi(x) = 0$ which corresponds to a particle that has
+zero probability of being found anywhere, (i.e., the particle doesn't
+exist).
+Combining these values for $k$ with Eq.~(\ref{eq:squarewell_2}),
+we find that the possible energies $E_n$ that the particle can have
+inside the well are given by
+
+\begin{equation}
+\label{eq:squarewell_6}
+E_n = n^2 \frac{\pi^2 \hbar^2}{2mL^2} 
+= n^2 \frac{h^2}{8 m L^2} \hspace{0.2in} (n = 1, 2, 3, \dots),
+\end{equation}
+
+\noindent and the wavefunctions associated with each of these energies are
+
+\begin{equation}
+\label{eq:squarewell_7}
+\psi_n(x) = A \sin{\left(\frac{n \pi}{L}x\right)} .
+\end{equation}
+
+Fig.~\ref{fig:infinite_sq_well_energy} shows a graph of the
+allowed energies $E_n$ for a particle in an infinite square well
+potential superimposed on the graph of potential energy $U(x)$ and
+Fig.~\ref{fig:infinite_sq_well_solutions} shows the wavefunctions
+$\psi_n(x)$ for the four lowest allowed energies.
+
+A few general remarks are in order about these solutions. 
+\begin{figure}[!b]
+\begin{center}
+\includegraphics[width=3.2in]{quantized_energies/infinite_sq_well_energy}
+\end{center}
+\caption{The allowed energies for a particle bound in an infinite
+  square well potential. The energies are expressed in terms of the
+  lowest (ground state) energy $E_1$.}
+\label{fig:infinite_sq_well_energy}
+\end{figure}
+
+\begin{figure}[!t]
+\begin{center}
+\includegraphics[width=4.8in]{quantized_energies/infinite_sq_well_sols}
+\end{center}
+\caption{The wavefunction solutions for the infinite square well
+  potential for the four lowest energy states.}
+\label{fig:infinite_sq_well_solutions}
+\end{figure} 
+
+\begin{itemize} 
+\item Notice that the lowest allowed energy for a particle is {\bf
+  not} zero!  This coincides with our discussion in
+  chapter~\ref{chapter:uncertainty} in which Heisenberg's uncertainty
+  principle requires a minimum non-zero energy for a particle that is
+  confined to a finite region of space.
+
+\item There are only certain values of the energy $E$ for which there are
+  well-behaved solutions to Schr\"odinger's equation. When a particle is trapped 
+  in a finite region of space, its energy cannot be any continuous value
+  but rather can only be one of many discrete values of energy. In the
+  language of quantum mechanics, the energy is {\it quantized}.
+
+\item The integer $n$ is referred to as the {\it quantum number} of
+  the particle. For this problem, specifying a value for $n$ uniquely 
+  determines the state of the particle.  As we shall see in more
+  complicated systems, more than one quantum number will often be needed 
+  to completely specify a state.
+
+\item The wavefunctions as given in Eq.~(\ref{eq:squarewell_7})
+  and Fig.~\ref{fig:infinite_sq_well_solutions} should look
+  familiar to you.  Aren't these the same functions we used when
+  describing the standing wave patterns on a vibrating string fixed at
+  both ends?  Indeed they are! In fact, standing waves on a string are
+  determined by a differential equation similar to Eq.~(\ref{eq:squarewell_1}).
+  Standing waves on a string exhibit their own form of quantization --
+  in this case, the properties that are quantized are the wavelengths
+  and frequencies.
+
+\end{itemize}
+
+\begin{example}{Electron trapped in a 1-D nanotube.}
+\label{exam:nanoTube}
+Carbon atoms can be bonded into a cylindrical arrangement called a
+carbon nanotube.  Carbon nanotubes can be fabricated with
+length-to-diameter ratios that are extremely large. These nanotubes
+have a broad range of applications including uses as conducting nano-wires
+and mechanical ``scaffolding'' for growing new bone cells.
+
+A carbon nanotube of length $L$ can be approximated as an infinite 
+square well of width $L$.  Consider a particular carbon nanotube 
+of length $L = 10.0\units{nm}$ and negligible diameter.  Calculate 
+the ground state energy for an electron trapped inside of this carbon nanotube.
+
+{\bf Solution:} Approximating the carbon nanotube as an infinite
+square well, the possible allowed energies for the electron are 
+given by Eq.~(\ref{eq:squarewell_6}).  For the ground state
+energy, where $n = 1$, the energy is given as
+\begin{equation}
+E_1 = (1)^2 \frac{h^2}{8 m_\text{e} L^2}. 
+\end{equation}
+Because the length is given in nm, and eV's are convenient units 
+for energy at the microscopic scale, it makes calculations easier 
+if we multiply both the numerator and denominator by $c^2$, 
+giving 
+\begin{equation}
+E_1 = (1)^2 \frac{(hc)^2}{8 (m_\text{e}c^2) L^2}. 
+\end{equation}
+Then we can insert the values $hc = 1240\units{eV$\cdot$nm}$, 
+$L = 10\units{nm}$, and $m_\text{e}c^2 = 0.511\units{MeV} 
+= 511\times 10^3\units{eV}$, giving
+\begin{eqnarray}
+E_1 &=& (1)^2 \frac{(1240\units{eV$\cdot$nm})^2}
+    {8\times 511\times 10^3\units{eV}\times (10\units{nm})^2  }. \nonumber \\
+    &=& 3.8\units {meV} 
+\end{eqnarray} 
+It is, of course, valid to use SI units for $h$, $m_\text{e}$, and $L$, but 
+this entails calculations with large exponents and more unit conversions.
+\end{example}
+
+% \section{Probability and Probability Density for the Particle in a Box}
+% \label{sec:ProbDensity}
+
+We can use the idea of normalization (see Sec.~\ref{sec:ProbDensity}) to
+assign a value to the constant $A$ in the wavefunction solutions of
+the infinite square well potential given in 
+Eq.~(\ref{eq:squarewell_7}). Given that the wavefunction is zero outside
+of the well, the total probability of finding the particle within the
+well should be one.  Therefore,
+
+\begin{equation}
+\int_0^L |\psi_2(x)|^2\, dx 
+  = \int_0^L A^2 \sin^2\left(\frac{n \pi}{L}x\right)\, dx = 1 .
+\end{equation}
+Using the table of integrals in Appendix A of your Wolfson text,
+% or Wolfram Alpha online (www.wolframalpha.com), 
+we can evaluate the integral using
+\begin{equation}
+\int_0^L \sin^2\left(\frac{n \pi}{L} x\right) = \frac{L}{2} .
+\end{equation}
+Therefore
+\begin{equation}
+A^2 \left( \frac{L}{2} \right) = 1 \hspace{0.3in} 
+              \mbox{and} \hspace{0.3in} A = \sqrt{\frac{2}{L}} .
+\end{equation}
+Notice that this value of $A$ is the same for all of the solutions,
+independent of $n$.
+
+\begin{example}{Probability of finding a particle in an infinite square well potential.}
+A particle of mass $m$ is placed in an infinite square well of width
+$L$ in a quantum state for which $n = 2$. (a) In the vicinity of what position(s) is
+the particle most likely to be found within the well?  (b) What is the
+probability of finding the particle between positions $x = L/4$ and $x
+= L/2$?
+
+{\bf Solution: (a)} The wavefunction for this particle is shown as
+$\psi_2(x)$ in Fig.~\ref{fig:infinite_sq_well_solutions}.  Using
+Eq.~(\ref{eq:squarewell_7}), the probability density for this
+wavefunction is
+\begin{equation}
+|\psi_2(x)|^2 = \left(\sqrt{\frac{2}{L}} \right)^2 
+                      \sin^2\left(\frac{2 \pi}{L}x\right) ,
+\end{equation}
+
+\begin{figure}[!tb]
+\begin{center}
+\includegraphics[width=3in]{quantized_energies/ProbState_2}
+\end{center}
+\caption{Probability density for a particle in the $n=2$ state of an infinite square well.}
+\label{fig:ProbState_2}
+\end{figure}
+
+\noindent as shown in Fig.~\ref{fig:ProbState_2}. The positions
+near which the particle is most likely to be found are where the
+probability density is the greatest. By examining the graph of
+probability density, these positions are located at $x = L/4$ and $x =
+3L/4$.  {\bf (b)} To calculate the probability of finding the particle
+between $x = L/4$ and $x = L/2$, we use 
+Eq.~(\ref{eq:IntegralprobDensity}):
+\begin{eqnarray}
+\mbox{Prob}\left[\frac{L}{4}, \frac{L}{2}\right] 
+   &=& \int_{L/4}^{L/2} |\psi_2(x)|^2\, dx \nonumber \\
+   &=& \int_{L/4}^{L/2} \left(\frac{2}{L}\right) 
+              \sin^2\left(\frac{2 \pi}{L}x\right)\, dx \nonumber \\
+   &=& \frac{2}{L} \left[\frac{x}{2} 
+       - \frac{L}{8 \pi}\sin \left(\frac{4 \pi}{L}x\right) \right]_{L/4}^{L/2}
+           \nonumber \\ 
+   &=&  \frac{1}{4} 
+\end{eqnarray}
+\noindent where the integral can be evaluated using techniques that you
+learned in your calculus class or the table of integrals in Appendix A of
+your Wolfson text.
+%, your calculator (if it can do integrals), or Wolfram Alpha online (www.wolframalpha.com).
+
+Because of the symmetry of the probability density, the area under the
+curve of $\left|\psi\right|^2$ between $x = L/4$ and $x = L/2$ is
+one-quarter of the total area, therefore it makes sense that the
+probability is $\frac{1}{4}$.
+\end{example}
+
+% If a particle is in a {\bf three-dimensional} box (i.e., a
+% 3D infinite square-well potential) --- as is the case for quantum
+% dots --- then the wavefunction is a 3D wave with an integer number
+% of half-wavelengths in each of the three directions. The result is an
+% energy that depends on integers $n_x$, $n_y$ and $n_z$ that denote the 
+% number of half wavelengths in each direction:
+% \begin{eqnarray}
+% \label{eq:3Dquantumdot}
+% E_{n_x,n_y,n_z} = (n_x^2+n_y^2+n_z^2) \frac{\pi^2 \hbar^2}{2mL^2} 
+% = (n_x^2+n_y^2+n_z^2) \frac{h^2}{8 m L^2} ,
+% end{eqnarray}
+% with each of the quantum numbers $n_x, n_y$ or $n_z$ as a 
+% positive integer (1, 2, 3, \dots)
+% In Chapter~\ref{chapter:3D_and_semiconductors}, we'll say more about 
+% wavefunctions in three-dimensional systems.
+
+
+\section[Semi-infinite Square Well and Tunneling]{Semi-infinite Square Well Potential and Quantum Tunneling}
+
+If we want to determine the wavefunction solutions for a particle confined
+in a region where the potential energy is some known function $U(x)$,
+then we perform a procedure similar to what we did for the example of the
+infinite square well potential. However, this time the potential is not
+zero (or a constant) but changes with position.  Solving Schr\"odinger's
+equation for the case of a general potential energy function $U(x)$
+can be very complicated and certainly this is beyond the scope of this
+course. In fact, there are very few potential energy functions for which
+the Schr\"odinger equation can be solved exactly.
+
+However, we can give a slightly more complicated example of solving
+Schr\"odinger's equation where the potential energy has different
+constant values in two different regions of space, as shown in
+Fig.~\ref{fig:semiInfiniteSquareWell}. In this case, the potential
+differs from the infinite square well potential in that the boundary
+at $x = L$ is now set to the finite value $U(x) = U_0$ for $x > L$
+instead of being infinite. If we consider a solution for a total
+energy $E$ which is less than the potential energy step $U_0$, then we
+see that Schr\"{o}dinger's equation is different in the two regions $(0
+< x < L)$ and $(x > L)$.  Rearranging Schr\"{o}dinger's equation, we
+obtain
+
+\begin{figure}[!t]
+\begin{center}
+\includegraphics[width=3.2in]{quantized_energies/semiInfinite_sq_well}
+\end{center}
+\caption{The semi-infinite square well potential energy function.}
+\label{fig:semiInfiniteSquareWell}
+\end{figure}
+
+\begin{equation}
+\frac{d^2\psi(x)}{dx^2}  = \frac{2m}{\hbar^2}\left(U(x)-E\right)\psi(x).
+\end{equation}
+We see that in the region $0 < x < L$, Schr\"odinger's equation reduces
+again to Eq.~(\ref{eq:squarewell_1}) so we should expect wavefunction
+solutions in that region to be similar to sinusoidal functions as
+given in Eq.~(\ref{eq:squarewell_3}).  However, in the region $(x >
+L)$ the total energy is less than the potential energy ($E < U_0$)
+and Schr\"odinger's equation becomes
+\begin{equation}
+\frac{d^2\psi(x)}{dx^2} =
+\frac{2m}{\hbar^2}\left(U_0-E\right)\psi(x) \hspace{0.5in}\mbox{for  $x > L$}.
+\label{eq:SchrodingerE<U}
+\end{equation}
+
+As we did before, we must determine a mathematical function $\psi(x)$
+that is consistent with Eq.~(\ref{eq:SchrodingerE<U}),
+remembering that the quantity $\left[U_0 - E\right]$ is a positive
+quantity.  This time the second derivative of $\psi(x)$ is equal to a
+{\it positive} number times the same function.  In this case,
+sinusoidal functions will not work, but again, if we think back to our
+calculus course, we recall that another set of functions we know is
+the right choice here --- the exponential functions $C e^{+\kappa x}$
+and $D e^{-\kappa x}$, where $C, D$, and $\kappa$ are constants,
+with $\kappa > 0$.
+
+\begin{example}{Wavefunction solutions for $E < U$.}
+\label{ex:SolutionElessU}
+  Given the potential shown in Fig.~\ref{fig:semiInfiniteSquareWell},
+  show that the function $C e^{\kappa x}$ is a solution to
+  Schr\"odinger's equation~(\ref{eq:SchrodingerE<U}) and determine
+  what the constant $\kappa$ must be for this to be a solution.
+
+\noindent {\bf Solution:} To see if $\psi(x) = C e^{+\kappa x}$ is a
+solution, we first evaluate the left hand side of Eq.~(\ref{eq:SchrodingerE<U})
+ by calculating the second derivative of $\psi(x)$:
+\begin{eqnarray}
+\frac{d \psi(x)}{dx} & = & \kappa  C e^{\kappa x} \nonumber \\
+\frac{d^2 \psi(x)}{dx^2} & = & \kappa^2 C e^{\kappa x}. 
+\end{eqnarray}
+
+\noindent Inserting this into Schr\"odinger's equation~(\ref{eq:SchrodingerE<U})
+we find \begin{equation}
+\kappa^2 C e^{\kappa x} 
+   = \frac{2m}{\hbar^2}\left( U_0 - E \right) C e^{\kappa x} .
+\end{equation}
+In order for $\psi(x) = C e^{+\kappa x}$ to be a solution,
+the left side of this equation must equal the right side, and
+therefore
+\begin{equation}
+\kappa^2 = \frac{2m}{\hbar^2}\left( U_0 - E \right) .
+\end{equation}
+\end{example}
+\newpage
+
+\begin{exampleb}{Complete wavefunction solution for the semi-infinite square well.}
+\label{ex:SolutionSemiInf}
+The complete wavefunction for the semi-infinite square well is made
+by combining the three solutions to Schr\"odinger's equation in the
+three regions, ($x<0$), ($0 <x < L$), and ($ x > L$):
+\begin{equation}
+\psi(x) =  \left\{\begin{array}{ll} 
+              0                       & \mbox{for $x<0$}  \\
+              A \sin(kx) + B \cos(kx) & \mbox{for $0<x<L$} \\ 
+              C e^{+\kappa x} + D e^{- \kappa x} & \mbox{for $x > L$} 
+              \end{array} \right.  .
+\end{equation}
+As we did in the previous section, we can further simplify this
+solution by matching this solution to what the wavefunction should be
+at $x = 0$ and as $x \rightarrow \infty$. At $x = 0$, the wavefunction
+should be zero so that it matches $\psi(x)=0$ for $(x < 0)$.  This
+requires that the constant $B = 0$ so the function $\cos{(kx)}$ does
+not appear.  As $x \rightarrow \infty$, the function $e^{+ \kappa x}$
+would become infinite and is therefore a not well-behaved solution.
+So we choose $C = 0$ to eliminate that function from our solution and
+the final solution becomes
+\begin{equation}
+\label{eq:two_regions_wavefunction}
+\psi(x) =  \left\{\begin{array}{ll} 
+            0                & \mbox{for $x<0$} \\
+            A \sin(kx)       &  \mbox{for $0 < x < L$r} \\  
+            D e^{- \kappa x} & \mbox{for $x > L$}
+            \end{array} \right. .
+\end{equation}
+The wavefunctions in the two regions given in
+Eq.~(\ref{eq:two_regions_wavefunction}) must match at position $x =
+L$ such the the wavefunction and its first derivative make a smooth
+transition from the region $x<L$ to the region $x>L$.  The mathematics
+is beyond the scope of this course, but there are only certain values
+of $k$, and hence $E$, for which the wavefunctions make a smooth
+transition. Graphs of the wavefunctions for the two lowest energy states
+$\psi_1(x)$ and $\psi_2(x)$ are shown in Fig.~\ref{fig:Semi_Inf_States}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=4.8in]{quantized_energies/Semi_Inf_States}
+\end{center}
+\caption{The lowest two energy states of a particle in a semi-infinite
+  potential well.}
+\label{fig:Semi_Inf_States}
+\end{figure}
+In some of the problems at the end of the chapter you will use an Excel 
+spreadsheet to determine solutions to the semi-infinite square well using 
+a numerical method.
+\end{exampleb}
+An examination of Fig.~\ref{fig:Semi_Inf_States} leaves us the
+following important conclusions:
+
+\begin{itemize}
+\item Wavefunctions in the region where $E > U$ are sinusoidal
+  functions similar to those in the infinite square well potential.
+  The wavelength depends on the difference $\left|E - U\right|$.
+\item Wavefunctions in the region where $E < U$ are exponential functions.
+\item In the case of the semi-infinite well, the length of the well $L$
+is not exactly an integer or half-integer multiple of the wavelength as in
+the infinite square well (see Fig.~\ref{fig:infinite_sq_well_solutions}).
+\end{itemize}
+
+{\bf Note also} that in the region where $E < U$ the wavefunction $\psi(x)$
+is {\it not zero}. This might not seem at first glance to be all that
+surprising until you consider that a particle's kinetic energy $K = E - U$,
+and the region where $E < U$ is a classically forbidden region (i.e., a
+particle can't ever be found in that region, classically) since classical
+mechanics forbids a particle ever from having a negative kinetic energy.
+But even though classical mechanics says that a particle can never enter a
+region where $E < U$, we can see from this example that quantum theory
+predicts a non-zero probability for a particle to be found in this region.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.0in]{quantized_energies/tunnel_potential}
+\end{center}
+\caption{For this potential, a particle with energy $E$ in the region
+$0 < x < L_1$ would remain trapped forever, according to classical
+physics. But quantum theory predicts that the particle can ``tunnel''
+through the thin barrier and escape.}
+\label{fig:tunneling}
+\end{figure}
+
+But what if there is a potential well such as the one shown in
+Fig.~\ref{fig:tunneling}? If a particle confined in the region 
+$0 < x < L_1$ has an energy $E < U_0$, then according to classical
+theory, that particle will remain trapped between $x = 0$ and
+$x = L$ forever, since it can never pass through the classically-forbidden
+region $L_1 < x < L_2$. But we just saw in our previous example that
+Schr\"{o}dinger's Equation predicts a non-zero probability of a particle
+being found in a classically-forbidden region, so presumably, there is
+a non-zero probability that the particle in Fig.~\ref{fig:tunneling}
+can be found in the region $L_1 < x < L_2$. But if it can make it into
+that region, then there is a non-zero probability that the particle
+can be found {\bf outside} the confined region, i.e. for $x > L_2$!
+In other words, a classically-trapped particle can ``tunnel'' out of
+the trap in quantum mechanics.
+
+We won't calculate the probabilities for tunneling. But examination of
+Fig.~\ref{fig:Semi_Inf_States} indicates
+that the probabilities tail off the wider the classically-forbidden region
+is. So, the probabilities can become quite small unless the barrier is very
+narrow and unless the energy $E$ is close to the barrier height $U_0$.
+Despite these limitations, quantum mechanical tunneling can play a very
+important role in various processes, and has already found its way into
+some useful applications: 
+\begin{itemize}
+% \item Radioactivity can be considered as a quantum tunneling phenomena.
+% The nucleus of an unstable atom can be thought of as having a
+% subatomic particle (such as an electron
+% or positron) that tunnels out, producing a high energy emission and leaving
+% behind an altered nucleus with a different electric charge.
+\item Scanning tunneling microscopes (STMs) have been developed that use
+tunneling to produce images of surfaces that can resolve individual atoms.
+\item Josephson junctions and tunneling diodes have become tools of modern
+electronics. 
+\item Tunneling is being proposed as a new mechanism for developing
+transistors, which could improve the performance of integrated circuits
+in the future.
+\end{itemize}
+
+\section{Energy Bands}
+
+Quantized energies are found for particles confined in any system, not
+just the infinite or finite square well potentials. Schr\"{o}dinger's
+Equation can be solved to determine the allowed energies for particles 
+in any potential energy function. (In fact, determining allowed energies
+for electrons in atoms is one fundamental aspect of physical 
+chemistry.) Each element (and molecule) has its 
+own pattern of energy levels. As we'll see later this chapter, this 
+has implications for the light that is absorbed and emitted by different
+elements and molecules.
+
+But in addition to the case of a single electron trapped in a single 
+potential well, there are many systems composed of multiple electrons
+trapped in a repeating pattern of potential wells. Consider a chunk
+of aluminum in a crystalline pattern, for example. The nuclei of
+the aluminum atoms produce a potential energy function that has
+repeating energy wells that mobile electrons experience.
+
+An interesting thing happens to the quantized energy levels when there
+is more than one side-by-side potential well. For simplicity, we will
+consider the case of side-by-side, 1D, finite square-well potentials.
+Figure~\ref{fig:PeriodicPotentials}) shows a representation of what
+happens to the energy levels when more and more square-well potentials are
+added to the system. Each energy level in the single finite-well potential
+(Fig.~\ref{fig:PeriodicPotentials}a) splits into two nearby levels for the
+double-well potential (Fig.~\ref{fig:PeriodicPotentials}b).  If there are
+four side-by-side potential wells (Fig.~\ref{fig:PeriodicPotentials}c),
+there are four energy levels clustered around each value. As the number
+of side-by-side wells increases, the number of energy levels in each
+``band'' increases accordingly.
+
+\begin{figure}[!t]
+\begin{center}
+\includegraphics[width=4.5in]{quantized_energies/PeriodicPotentials}
+\end{center}
+\caption{Allowed energy levels for (a) infinite square well potential;
+(b) double, side-by-side potential wells, separated by a thin, finite
+barriers; and (c) four side-by-side potential wells.}
+\label{fig:PeriodicPotentials}
+\end{figure}
+
+In a real solid (such as aluminum), there are many, many, many side-by-side
+potential wells, so many that it becomes difficult to distinguish the
+individual energy levels within each band (Fig.~\ref{fig:bands}). They
+are still there --- in the figure, it may look like a continuous band of
+allowed energies, but there are still a finite number of allowed
+energy levels (although a {\bf very} large number of finite values)
+in each energy band. So, even though the energies appear continuous
+within each band, they are still quantized.
+
+\begin{figure}[!t]
+\begin{center}
+\includegraphics[width=2.5in]{quantized_energies/EnergyBands}
+\end{center}
+\caption{Valence and conduction bands for a typical solid composed of
+many atoms. Each of these bands contains a large (but finite) number of
+discrete energy levels.}
+\label{fig:bands}
+\end{figure}
+
+In Fig.~\ref{fig:bands}, we show only two bands of allowed energies,
+although there are typically more. The valence band is the highest
+energy band that is typically filled with electrons.\footnote{As we will
+see in Chapter \ref{chapter:quantum_statistics}, the Pauli Exclusion
+Principle argues that two electrons cannot occupy the same state,
+so there is a finite number of electrons that can have energies in any
+band in a solid.} The conduction band always has available energy levels
+that are unoccupied.  In Chapter~\ref{chapter:3D_and_semiconductors},
+we'll discuss how the band structure discussed here is important in
+understanding electrical conductivity for solids, and how the quantum
+properties of these bands have been used to develop some of the most
+important building blocks of modern electronics.
+
+\begin{figure}[!t]
+\begin{center}
+\includegraphics[width=2.5in]{quantized_energies/absorption_emission}
+\end{center}
+\caption{(a) Absorption of a single photon, causing an electron in
+the material to jump up to a higher (unoccupied) energy state. (b) Emission
+of a photon by an electron that drops from a higher to lower energy
+state.}
+\label{fig:absorption_emission}
+\end{figure}
+
+\section{Absorption, Emission, and Spectroscopy}
+
+Okay, we are now ready to address some questions that you might have asked
+when you were a kid: ``Why is a tomato red?" or ``How do glow-in-the-dark
+shirts work?'' or ``Why is it that black-light illumination (which looks
+kinda deep violet in color) cause certain pigments to glow orange'' or
+``Why do certain laundry detergents make my clothes look so unnaturally
+bright white?'' These questions all fall under the category of the topic
+of photophysics or photochemistry, i.e., the physics and chemistry of
+how light interacts with matter. In addition to providing answers to
+these questions, this subject also relates to the important topic of
+{\it spectroscopy} which is a critical diagnostic technique that spans
+all fields of science and engineering.
+
+There are a few different ways in which light (and any
+electromagnetic radiation) can interact with matter, but two important
+processes are absorption and emission of individual photons of
+light. Figure~\ref{fig:absorption_emission} shows these two processes.
+If a photon strikes a material, it can be absorbed by an electron,
+resulting in an increase in the energy of that electron from an
+initial (lower) value $E_1$ to a higher value $E_2$, as shown in
+Fig.~\ref{fig:absorption_emission}a. This process must conserve energy,
+which means that the energy gained by the electron must be the same as
+the energy of the absorbed photon:
+\begin{equation}
+\label{eq:photon_energy}
+E_\text{ph} = \Delta E = |E_\text{final} - E_\text{initial}|
+\end{equation} 
+Note that the upper energy level state must initially be unoccupied for
+this process to work. As we'll see in Chapter \ref{chapter:quantum_statistics},
+two electrons cannot occupy the same quantum state.
+
+The process of emission is the same thing in reverse 
+(Fig.~\ref{fig:absorption_emission}b). An electron in 
+a higher energy state can drop to a lower-energy state (if initially
+unoccupied), releasing a single photon with an energy given by
+Eq.~(\ref{eq:photon_energy}).
+
+These simple quantum principles now enable us to resolve the third of
+the great failures of classical physics --- the observation in the early
+1900s that when energy is pumped into atoms, they radiate EM waves only
+at certain distinct wavelengths; i.e., the problem of discrete atomic
+spectral lines discussed in Chapter \ref{chapter:beyond_classical}. The
+explanation is actually quite simple: each element or molecule
+has its own discrete, quantized energy level structure (e.g.,
+Fig.~\ref{fig:energy_levels}). An electron in an atom can make transitions
+between the energy levels.  Any transition from a higher to a lower
+energy level will result in the emission of a photon. But since there are
+only certain, well-defined, quantized energy levels for the electron,
+then there are only certain well-defined {\it differences} $\Delta E$
+allowed for the transitions between these levels. And since the photons
+emitted by these transitions have energy $E_\text{ph} = |\Delta E|$,
+that means that the emitted photons have only certain, well-defined
+energies. And since the energy of the photon is related to the frequency
+and wavelength of the electromagnetic radiation via $E_\text{ph} = hf =
+hc/\lambda$, that means that the light emitted by atoms has only certain,
+well-defined, discrete wavelengths.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.0in]{quantized_energies/energy_levels}
+\end{center}
+\caption{Example of an atom or molecule with four quantized energy
+levels.}
+\label{fig:energy_levels}
+\end{figure}
+\newpage
+
+\begin{example}{Light emitted from a molecule with four energy levels.}
+\label{exam:emission}
+For a molecule with the four-level system in Fig.~\ref{fig:energy_levels}, 
+assume that $E_0 = -11.5\units{eV}$, $E_1=-6.2\units{eV}$, 
+$E_2 = -5.4\units{eV}$, and $E_3 = -2.5\units{eV}$. 
+(a) Determine how many different wavelengths of EM
+radiation can be emitted from this molecule, and calculate (b) the 
+largest and (c) the smallest wavelengths of
+EM radiation that can be emitted from this molecule.
+
+{\bf Solution:} (a) There are several possible transitions that an 
+electron can make that will emit a photon in this system. An electron
+can drop from energy level 3 down to level 0, 1 or 2; it can drop
+from energy level 2 down to level 0 or 1; and it can drop from
+energy level 1 down to level 0. Altogether, there are 6 possible
+downward energy transitions, so there are 6 possible wavelengths of
+light that can be emitted. 
+
+\begin{figure}[!t]
+\begin{center}
+\includegraphics[width=2.0in]{quantized_energies/energy_levels2}
+\end{center}
+\caption{Possible transitions that result in emission of EM radiation
+for the 4-level system of Example \ref{exam:emission}.}
+\label{fig:energy_levels2}
+\end{figure}
+For parts (b) and (c), for any emitted photon, the energy 
+$E_text{ph} = |\Delta E|$ and since $E_\text{ph} = hc/\lambda$, 
+it follows that $hc/\lambda = |\Delta E|$ and
+$\lambda = hc/\Delta E$. So, the largest and smallest wavelengths
+correspond to the smallest and largest energy differences $\Delta E$.
+(b) The smallest energy difference $\Delta E$ given the allowed electron
+energies is the energy difference between levels 2 and 1. So, the largest
+emitted wavelength is:
+\begin{equation}
+\lambda = \frac{hc}{\Delta E} 
+        = \frac{1240 \units{eV$\cdot$nm}}{|-5.4 \units{eV} 
+               - (-6.2 \units{eV})|} 
+        = \frac{1240 \units{eV$\cdot$nm}}{0.8 \units{eV}} = 1550 \units{nm}, 
+\end{equation}
+where we have used the result $hc = 1240\units{eV$\cdot$nm}$, 
+which is convenient for 
+spectra problems where the energy levels and differences are expressed
+in electron volts and the wavelengths of emitted and absorbed light are 
+expressed in nanometers. We could have converted everything into SI units
+and used typical values for $h$ and $c$, but that is more time-consuming.
+
+Note that the longest wavelength emitted is a value beyond the visible spectrum
+(this is in the infrared spectrum), so the human eye wouldn't be able
+to see this emitted light. 
+(c) For the shortest wavelength for emitted EM radiation, we want the
+largest $\Delta E$ possible for these four energy levels, which corresponds
+to a transition from energy level 3 down to energy level 0. 
+
+\begin{equation}
+\lambda = \frac{hc}{\Delta E} = \frac{1240 \units{eV$\cdot$nm}}{|-2.5 \units{eV} - (-11.5 \units{eV})|} 
+= \frac{1240 \units{eV$\cdot$nm}}{9.0 \units{eV}} = 138 \units{nm} \nonumber
+\end{equation}
+This wavelength is also outside the visible spectrum (it's ultraviolet, in 
+this case).
+\end{example}
+
+Everything in the previous example works the other way for absorption. 
+But instead of an electron dropping to a lower energy level and emitting
+a photon, a photon is absorbed and the electron jumps up to a higher
+energy level. But this only works if the incoming photon has the right
+energy. From a practical perspective, if you shine white light through
+a gas of a particle element or molecule, all the light will pass through
+{\bf except} for light with particular wavelengths and energies corresponding
+to the energy differences $\Delta E$ for the sample.
+
+Since each element and each molecule has its own distinctive energy-level
+structure, the spectrum of EM radiation emitted is unique to each, as
+is the spectrum of radiation absorbed. This
+``fingerprint'' is often used to identify materials in systems as diverse
+as a microscopic sample of DNA\footnote{Spectroscopy is often used in
+the biological sciences. We have had many biology majors in PHYS 212
+in the past who have commented that they see these techniques used quite
+often in the biology labs at Bucknell.} up to astronomical-scale objects
+such as stars and planets; large, nebular clouds that are collapsing to 
+form new stars and planetary systems; and accretion disks of gas spiraling
+into supermassive black holes at the centers of ``active'' 
+galaxies.\footnote{Spectroscopy is the most important tool for identifying 
+materials in distant astronomical objects. It's not as though we can go
+collect a sample of gas from a nebula 100,000 light years away. The light
+that we see from these objects is the only data that we have in most
+cases.}
+
+So, why is a tomato red? Answer: because it contains a pigment called
+lycopene that has electronic energy levels with an energy difference
+corresponding to the energy of red photons. When an electron in an excited
+state in lycopene drops to a lower level, it emits red photons. (Lycopene 
+is actually a fluorescent pigment; fluorescence is discussed in the next
+section.)
+
+Finally, absorption and emission also work for solids with band structures
+similar to that in Fig.~\ref{fig:bands}. There are many, closely-spaced
+energy levels within the bands, allowing for EM radiation with very 
+large wavelengths to be emitted and absorbed. But it is also possible for
+electrons to make transitions between the bands, resulting in larger
+energy differences and smaller wavelengths for emitted or absorbed light.
+				
+\begin{example}{Absorption by a material with a band gap.}
+\label{exam:absorption_bands}
+A light detector uses a material with a filled valence band (all available
+energy states occupied by an electron) and an empty conduction band separated
+by a band gap energy of $3.2\units{eV}$. Calculate the largest wavelength of light 
+most effectively absorbed by this detector.
+
+{\bf Solution:} 
+The energy of the photon $E_\text{ph} = |\Delta E|$
+and since $E_\text{ph} = hc/\lambda$, it follows that $hc/\lambda = |\Delta E|$.
+The largest wavelength corresponds to the smallest energy
+difference $\Delta E$. Since the valence band is filled, the nearest 
+unoccupied energy level is at the bottom of the conduction band, so
+$\Delta E_\text{min} = 3.2\units{eV}$.
+So $\lambda_\text{max} = hc/\Delta E 
+            = (1240\units{eV$\cdot$nm})/(3.2 \units{eV}) = 387.5\units{nm}$. 
+\end{example}
+
+\section{Fluorescence and Phosphorescence}
+
+Many materials can absorb one wavelength of EM radiation and emit EM
+radiation with a different wavelength. Uranine dye (sodium fluorescein),
+for example, readily absorbs near-UV radiation, but emits green light. The
+principle --- which is called ``fluorescence'' --- is quite simple,
+and is very common in materials with more than two possible electronic
+energy levels.
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.5in]{quantized_energies/fluorescence}
+\end{center}
+\caption{{\bf Fluorescence: } Energy-level diagram for a 
+three-level atom, showing
+absorption of a photon with large energy and emission of two
+photons with smaller energy. }
+\label{fig:fluorescence}
+\end{figure}
+		
+Figure \ref{fig:fluorescence} shows the basic idea for fluorescence.
+A large energy photon (e.g., corresponding to ultraviolet light)
+is absorbed by a low energy electron, which jumps up more than one
+energy level.  The electron can later spontaneously drop back down to
+a lower energy level, but in addition to dropping back down directly to
+the original state, it can also drop back down to an intermediate state
+and then later drop to the original state. For a three-level system
+like in Fig.~\ref{fig:fluorescence}, there are three different energies
+possible for the emitted light: $E_\text{ph} = \Delta E_{31}$, $\Delta E_{32}$,
+or $\Delta E_{21}$.
+
+So, why does black light illumination cause certain pigments to glow at
+different colors?  Assume that the pigment has an energy level structure
+similar to that in Fig.~\ref{fig:fluorescence}. An incoming photon from
+the black light --- which is really near-UV radiation with a ``color''
+just beyond the visible (although there is usually a little violet light
+that comes out of a black light as well) --- has enough energy to cause an
+electron in the ground ($n = 0$) state to become excited to the $n = 2$
+state. After an undetermined amount of time, the electron spontaneously
+drops back down to a lower energy level. If it drops directly back to
+the $n = 0$ level, it emits another near-UV photon, which you don't
+really see. But if it drops first to the $n = 1$ level and then later
+to the $n = 0$ level, it emits two lower-energy photons, one of which
+(and maybe both) has energy in the visible part of the EM spectrum.
+(For many fluorescent pigments, one photon will be in the visible range,
+e.g., orange or green, and the other will be an infrared photon which you
+can't see.) So, that's why some materials fluoresce at a different
+color than they are illuminated with.
+
+Fluorescent pigments can be found in many applications. Of course,
+there are many toys with fluorescent pigments, including Crayola$^{TM}$
+crayons (with fluorescent colors such as {\it screamin' green}, {\it
+atomic tangerine}, and {\it unmellow yellow}). Fluorescent dyes are also
+used in laundry detergents to make clothes appear brighter (that's why
+white clothes glow when illuminated by black light).
+
+But fluorescence is also a {\it very} important tool used in scientific
+studies.  Fluorescent ``tags'' are often used in biological studies. The
+basic idea is that if you can attach a fluorescent marker to a particular
+molecule in a biological system, then if you illuminate your sample with
+near-UV radiation, only the tagged regions will fluoresce in the visible,
+enabling you to see (usually under a microscope) the particular molecules
+in question. In recent years, biologists have developed a fluorescent
+protein called ``green-fluorescent protein'' (or GFP for short) that can
+be attached to various molecules in a living cell. Better yet, techniques
+have been developed to create targeted mutations in microorganisms that
+result in the GFP tag being an {\it inherited} property of the organism
+(i.e., they are born fluorescing.)
+
+Fluorescence is also being used to revolutionize surgery with a new
+(as of 2017) technique referred to as ``fluorescence image guided surgery.''
+The idea is quite simple: a fluorescent dye that preferentially bonds to
+cancerous cells is injected into a patient. During surgery, the region
+is illuminated with high-frequency light (possibly near-UV), and the
+fluorescent dye attached to the cancerous tumor glows, enabling the
+surgeon to cut away the minimum amount of cancerous tissue without
+removing healthy tissue. This is a technique that figures to significantly
+improve survival rates for cancer patients during the next decade.
+
+Another very new technology is that of the ``quantum dot,'' which
+is a micro-engineered particle-in-a-box. We talk a lot about the
+particle-in-a-box problem because it is easy to solve, {\it but these
+things are actually being made!!} And the nice thing about a quantum dot
+is that the energy level structure can be altered simply by changing the
+size of the quantum dot (i.e., the width of the square-well potential).
+
+A quantum dot is a a semiconductor that is manufactured to be
+{\bf so} small (about 10 -- 50 atoms in diameter) that its charge
+carriers experience effects of quantum confinement, including
+quantized energy levels. The result is that the filled valence band
+and empty conduction band for the semiconductor are replaced by a smaller
+number of discrete energy levels, similar to those of the particle-in-a-box.
+%as shown in Fig.~\ref{fig:QDot}. 
+But since the electrons are confined
+(due to the small size of the dot), the minimum conduction band energy
+is shifted upward (away from the band) gap by a particle-in-box energy.
+Similarly, the maximum valence band energy is shifted downward.
+The result is the lowest energy $E_\text{ph}$ of an emitted photon for a 
+quantum dot is
+\begin{equation}
+E_\text{ph}=E_g+\eta\, \frac{h^2}{8m_\text{e}R^2} , 
+\label{eq:QDot}
+\end{equation}
+where $m_\text{e}$ is the electron
+mass and $\eta$ is a factor that includes all of the material-specific 
+semiconductor effects.\footnote{The constant $\eta$ includes deviations
+from the standard particle-in-box energies due to the fact that this box
+isn't empty; rather, the electron is moving within a semiconductor.}
+Since there are higher, open energy levels an electron in the quantum 
+dot can absorb smaller wavelength (higher energy) photons and then 
+fluoresce by emitting larger wavelength (smaller energy) photons 
+as it drops back down in energy.
+
+\begin{example}{Quantum dot fluorescence.}
+A quantum dot made from a CdTe semiconductor (with band gap energy
+$1.38\units{eV}$  and $\eta = 20.5$) is fabricated with a radius 
+$4.22\units{nm}$.  Calculate the longest wavelength emitted
+by this quantum dot.
+
+{\bf Solution:} The longest wavelength corresponds to the smallest
+energy (Eq.~(\ref{eq:QDot})). 
+Since, $E_\text{ph} = hc/\lambda$, and using the trick employed in
+Example~\ref{exam:nanoTube} of multiplying the numerator and 
+denominator of the second term  by $c^2$,  it follows that:
+\begin{eqnarray}
+\frac{hc}{\lambda} &=& E_g+\eta\,  \frac{h^2}{8m_\text{e}R^2} \nonumber \\
+              &=& E_g + \eta\, \frac{(hc)^2}{8(m_\text{e}c^2) R^2} \nonumber \\
+              &=& 1.38\units{eV} + 20.5\,  \frac{(1240\units{eV$\cdot$nm})^2}
+                {8 \times (511\times 10^3\units{eV})\times (4.22\units{nm})^2} 
+                   \nonumber \\
+              &=& 1.81\units{eV}. 
+\end{eqnarray}
+Rearranging this gives
+\begin{eqnarray}
+\lambda &=& \frac{hc}{1.81\units{eV}} \nonumber \\
+        &=& \frac{1240\units{eV$\cdot$nm}}{1.81\units{eV}}\nonumber \\
+        &=& 684\units{nm}.
+\end{eqnarray}
+%\lambda &=& \frac{hc}{E_g+\eta\, \frac{(hc)^2}{8(m_\text{e}c^2)R^2}}\nonumber \\
+%        &=& \frac{(6.63\times 10^{-34}\units{J$\cdot$s})
+%             \cdot(3.0\times 10^8\units{m/s})}
+%              {(1.38\units{eV})\cdot (1.6\times 10^{-19}\units{J/eV}) +20.5\frac{(6.63\times 10^{-34}\units{J$\cdot$s})^2} {8\cdot (9.11\times 10^{-31}\units{kg})\cdot (4.22\times 10^{-9}\units{m})^2}} \nonumber \\
+%        &=& 6.85\times 10^{-7} \units{m} \nonumber \\
+\end{example}
+
+One final question in this chapter: {\it when will an excited electron
+drop back down in energy, emitting a photon?} The answer: you can never
+know. There is nothing in quantum theory that enables you to
+predict the precise moment when the emission process will happen. {\bf However},
+it is possible to calculate a probability that an emission process will
+occur within a certain time range, similar to how we can calculate
+a probability for a particle to be found in a certain region, and it
+is also possible to define a {\it half-life} for emission processes; i.e.,
+the duration over which (on the average) half of the atoms in an excited
+state will have decayed back to the ground state, emitting photons.
+
+The half-life for spontaneous emission can vary dramatically from one
+material to another. Usually, the half-life is a very short time; e.g.,
+nanoseconds and even picoseconds. But there are some materials that have
+unnaturally long half-lives.  In these cases, the material will continue
+to emit light. Some composites made from SrAl$_2$O$_4$ have been made
+with half-lives of several minutes, which means that an excited sample of
+this material will emit light for quite a long time after it is excited.
+
+This is the principle (called {\it phosphorescence}) behind ``glow-in-the-dark''
+pigments and materials. You ``charge up'' the material by exposing
+it to visible or near-UV light, promoting electrons in the pigment
+to excited energy levels.  These electrons then drop back to the
+lower energy levels, but over the course of several minutes. During that
+time, the pigment appears to ``glow,'' even if there are no lights
+around.
+%
+\newpage
+
+
+\section*{Problems}
+\markright{PROBLEMS}
+
+%\vspace{1.5in}
+
+
+%one
+
+\begin{problem}
+\begin{enumerate}
+\item Draw a sketch of the wavefunction $\psi(x)$ for the $3^\text{rd}$ 
+lowest energy
+state for an electron trapped in a one-dimensional, infinite square well 
+potential (i.e., the ``particle in a box'').
+\item Interpreting your drawing from part (a) as a standing wave pattern, determine the 
+wavelength $\lambda$ (in terms of the width $L$ of the box)
+of this standing wave. 
+\item Substitute the wavefunction $\psi(x) = \sqrt{2/L}\sin(2\pi x/\lambda)$
+with your value of $\lambda$ from (b)
+into Schr\"{o}dinger's Equation for the infinite square well potential. Verify 
+that this is a solution for the
+region $0 < x < L$, and determine the energy of the state. Compare your
+result with what you get when using the formula from 
+Eq.~(\ref{eq:squarewell_6}).
+\end{enumerate}
+\label{prob:PinBox}
+\end{problem}
+
+%two
+
+\begin{problem}
+% A \emph{quantum wire} is a conducting structure so thin that quantum
+% effects are evident.  Electron energies in a quantum wire are quantized
+% and so, therefore, are electrical properties such as resistivity.
+% A particular quantum wire is made from carbon nanotubes $1.0 \units{nm}$
+% in diameter.  Approximating the structure as a one-dimensional infinite
+Find the energies (in eV) of an electron in (a) the ground
+state; and (b) the first excited state of a $1.0 \units{nm}$ one-dimensional
+infinite square well potential.
+\label{prob:QuantumWire}
+\end{problem}
+
+%three
+
+\begin{problem}
+A particle is in the ground state of an infinite square well between $x = 0$
+and $x = L$.  What is the
+probability of finding the particle in the region between $x=0$ and $x=
+L/3$ ?  ({\bf NOTE:} You may want to make use of the Table of Integrals
+in Appendix A of your Wolfson text for this problem!) 
+%Alternately, you
+%can use Wolfram Alpha {\tt www.wolframalpha.com} to evaluate the integral.)
+\end{problem}
+
+
+%four
+
+\begin{problem}
+Sketch the probability density for the $n=2$ state (first excited state)
+of an infinite square well
+extending from $x=0$ to $x=L$. In the vicinity of what position(s) is 
+the particle most likely to be found?
+\label{prob:WhereInPInBox}
+\end{problem}
+
+% \newpage
+
+%five
+
+\begin{problem}
+
+Let's apply what we have learned about infinite square wells to a
+macromolecule confined to a biological cell.  Consider a protein of mass
+$250,000 \units{u}$ (where $1\units{u} = 1.661 \times 10^{-27}\units{kg}$)
+confined to a $10 \units{$\mu$m}$-diameter cell.  Treating this as a
+particle in a one-dimensional square well, find the energy difference
+between the ground state and the first excited state.  Given that
+biochemical reactions typically involve energies on the order of 
+$1\units{eV}$, what so you conclude about the role of quantization in
+these reactions?
+
+\end{problem}
+
+\newpage
+
+%Old 4-5, now six
+
+\begin{problem}
+  The potential energy for the one-dimensional {\em finite} square
+  well is shown in Fig.~\ref{fig:finite_sq_well}, with dotted lines
+  representing the energies of the ground state and the first excited
+  state.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=2.6in]{quantized_energies/finite_sq_well}
+\end{center}
+\caption{Plot of $U(x)$ versus $x$, for Problem~\ref{prob:finite_sq_well}.}
+\label{fig:finite_sq_well}
+\end{figure}
+
+\begin{enumerate}
+\item Using general principles developed in Examples~\ref{ex:SolutionElessU} and \ref{ex:SolutionSemiInf}, sketch the ground state wavefunction versus position, including regions in which $E< U$.
+
+\item Compared to the ground state wavefunction of the infinite square 
+well with the same width, is the wavelength in the classically-allowed
+region longer or shorter? Is 
+the energy larger or smaller?  
+
+\item Repeat a) and b) for the first excited state.
+
+\item If you did (a) - (c) correctly, you should notice 
+that the wavefunction isn't zero for $x < 0$ or for
+$x > L$, so there is a non-zero probability that the particle could be
+located in these regions. Why is this a violation of classical physics?
+(Hint: what can you say about the kinetic energy and speed of the particle
+when it is in one of these regions?)
+\end{enumerate}
+\label{prob:finite_sq_well}
+\end{problem}
+
+%\begin{problem}
+%  For the potential energy in the top diagram of
+%  Fig.~\ref{fig:sawtooth}, the wavefunction of the ground state
+%  appears in the bottom diagram. Using the general properties of
+%  wavefunctions, sketch the wavefunctions for the first and second
+%  excited states. Pay attention to number of nodes, wavelength,
+%  inflection points, and concavity.
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=3.0in]{wavefunctions/sawtooth}
+%\end{center}
+%\caption{Plot of $U(x)$ versus $x$, and of $\psi_1$ versus $x$, for
+%  Problem~\ref{prob:sawtooth}.}
+%\label{fig:sawtooth}
+%\end{figure}
+%\label{prob:sawtooth}
+%\end{problem}
+
+%seven
+
+\begin{problem}
+The wavefunction solution to the semi-infinite square well was given in
+Eq.~(\ref{eq:two_regions_wavefunction}) for the two regions $0 < x < L$ and $x > L$:
+\begin{equation}
+\psi(x) =  \left\{\begin{array}{ll} 
+                 A \sin(kx)       & \mbox{for $0 < x <  L$} \\ 
+                 D e^{- \kappa x} & \mbox{for $x > L$} 
+                \end{array} \right.
+\end{equation}
+In order for the wavefunction solution to be continuous and smooth across
+the boundary at $x = L$, the value of the wavefunction and its first derivative
+for the two solutions must match up at the boundary at $x = L$.
+
+\begin{enumerate}
+
+\item Using the solutions given in
+Eq.~(\ref{eq:two_regions_wavefunction}), write an equation that states
+that the two wavefunction solutions are equal at the boundary $x = L$.
+(Your equation should only contain the symbols $k, \kappa, A, D$ and
+numerical constants.)
+
+\item Using the solutions given in
+Eq.~(\ref{eq:two_regions_wavefunction}), write an equation that states
+that the {\emph derivatives} of the two wavefunction solutions are equal
+at the boundary $x = L$.  (Your equation should only contain the symbols
+$k, \kappa, A, D$ and numerical constants.)
+
+\item Using the Schr\"{o}dinger equation, it can be shown that the
+quantities $k$ and $\kappa$ are related to the energy $E$ of the particle
+according to
+\begin{equation}
+k^2 = \frac{2 m E}{\hbar^2} \hspace{0.5in} 
+\mbox{and} \hspace{0.5in} \kappa^2 = \frac{2m \left( U_0 - E \right)}{\hbar^2}
+\end{equation}
+where $m$ is the mass of the particle and $U_0$ is the height of the
+potential well.  Given these relations and the results of parts~(a) and
+(b), do you think that the particle can have \emph{any} value of energy
+$E$ in the well?  
+\end{enumerate} 
+\end{problem}
+
+%\begin{problem}
+% Consider a superposition of two energy states for the infinite square-well potential.  When states are superposed in this way, the wavefunction for the superposition state is
+% \begin{equation}
+% \psi(x) = a_1 \psi_1(x) + a_2 \psi_2(x) = a_1 \sqrt{\frac{2}{L}} \sin{\left(\frac{\pi x}{L}\right)} + a_2 \sqrt{\frac{2}{L}} \sin{\left(\frac{2\pi x}{L}\right)}. \nonumber
+% \end{equation}
+% \begin{enumerate}
+% \item Determine the probability density function $|\psi(x)|^2$ for the above superpositions state in terms of $a_1$, $a_2$, and $L$, recognizing that the amplitudes $a_1$ and $a_2$ might be complex numbers.  In other words, calculate $\psi^*\psi$.
+%
+% \item Now, write down the probability density function $|\psi(x)|^2$ for the following three cases: (i) $a_1 = a_2 = 1/\sqrt{2}$; (ii) $a_1 = 1/\sqrt{2}$ and $a_2 = -1/\sqrt{2}$; and (iii) $a_1 = 1/\sqrt{2}$ and $a_2 = i/\sqrt{2}$.
+%
+% \item Set $L = 1$ and make graphs of the three functions that you determined in part (b).  You can use Excel or your calculator or whatever you want.  Either print out the graphs or sketch them on your paper.
+%
+% \item Comment on the graphs.  In particular, we have seen that adding together multiple energy states can localize the particle in the well.  Based on what you see in the graphs, what role do the amplitudes play in this localization process?
+% \end{enumerate}
+% \end{problem}
+
+%eight
+
+\begin{problem}
+ {\bf Semi-infinite square-well potential.} Download the Excel worksheet
+\verb+semi-finite.xls+ from either the {\it Handouts} page or from the
+Calendar page.  This sheet shows the calculations for determining the
+wavefunctions for a potential well that is infinite at $x=0$ but of 
+finite magnitude on the right side of the well (which is at $x=5$ in
+this problem).  You'll see two
+graphs: the top one shows the semi-infinite potential well (in
+purple) along with a non-normalized plot of the calculated
+wavefunction so you can see it along with the potential.  The bottom
+graph shows the normalized wavefunction, corresponding to the
+second-to-last column in the worksheet.  
+
+When you bring up the worksheet, the energy will be set for the
+value for the ground state.  Some questions:
+
+\begin{enumerate}
+
+\item Sketch or print out (just the first page!) the wavefunctions 
+that are displayed for the ground state along with at least two 
+of the excited states.  To display
+the 1$^{\rm st}$ and $2^{\rm nd}$ excited states, type in 0.64282 and 
+1.4144 respectively in the framed box for energy.  
+
+\item What happens if you type in an energy that {\bf isn't} one
+of the well-defined energies for the problem?  Try it out, and
+comment on what happens.  Had we not told you what the allowed
+energies were, how might you figure them out?  (You'll be doing
+this in lab later this semester.)
+
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+%nine
+
+\begin{problem}
+For the potential energy function $U(x)$ and total mechanical energy $E$
+in Fig.~\ref{fig:tunneling}:
+\begin{enumerate}
+\item Use classical physics to argue that if a particle starts out
+in the region $0 < x < L_1$, it will remain there forever.
+
+\item Use quantum arguments (specifically, refer to wavefunction) to
+argue that a particle that starts in the region $0 < x < L_1$ can escape
+(tunnel). Can you predict {\it the precise moment} when the particle will 
+escape? (Hint: no.)
+\end{enumerate}
+\end{problem}
+
+%ten
+
+
+\begin{problem} 
+Given the solution to Schr\"{o}dinger's Equation for an electron in the 
+semi-infinite square well potential (see Examples \ref{ex:SolutionElessU}
+and  \ref{ex:SolutionSemiInf}).
+Assume that $U_0 = 12\units{eV}$ and the electron is in a state with 
+an energy $E = 10\units{eV}$.
+\begin{enumerate}
+\item Calculate the value of the constant $\kappa$ in the exponent
+$e^{-\kappa x}$ for the wavefunction
+in the classically-forbidden region.
+\item Calculate the distance into the classically-forbidden region 
+beyond $x = L$ where the probability density is a factor of
+2 smaller than that at $x = L$ (i.e., calculate the value of $d$
+such that\\ $|\psi(L+d)|^2/|\psi(L)|^2 = e^{-2\kappa d} = 0.5$.
+% \item Repeat part (b) if the electron is in a state with energy 
+% $E = 8$ eV.
+\item Now, let's assume that the particle is a ball with mass 
+$0.5\units{kg}$, and assume that  $U_0$ and $E$ have everyday values 
+of, say, $100\units{J}$ and $50\units{J}$, 
+respectively. Repeat the calculations from parts (a) and (b).
+\item Now consider the potential energy function in Fig.~\ref{fig:tunneling}.
+What do you think is needed to get a reasonable (not ridiculously small)
+probability for the particle to tunnel through the barrier?
+Why do you think we never experience quantum tunneling for
+everyday objects?
+\end{enumerate}
+\label{prob:TunnelSemiInfinite}
+\end{problem}
+
+%eleven
+
+\begin{problem}
+  Consider a proton ($m_p = 1.67 \times 10^{-27}\units{kg}$) confined
+  in an infinite potential well of size $L =
+  10^{-14}\units{m}$. Calculate the energy of a photon emitted when
+  the proton makes a transition from the $n=4$ state to the $n=3$
+  state.
+\end{problem}
+
+%twelve
+
+\begin{problem}
+Electrons in an ensemble of $10\units{nm}$ wide one-dimensional 
+infinite square-well potentials are all initially in the 
+$n=4$ state.  Find the wavelengths of all possible photons emitted 
+as electrons make transitions to the ground state.
+\label{prob:EmittedWavelengths}
+\end{problem}
+
+%thirteen
+
+\begin{problem}
+Calculate the radius of a quantum dot made from CdSe (band gap energy
+$1.74\units{eV}$ and $\eta = 16.5$) so that the largest emitted wavelength
+will be $629\units{nm}$.
+\label{prob:QuantumDot}
+\end{problem}
+
+\newpage
+
+%fourteen
+
+\begin{problem}
+\begin{enumerate}
+\item Ozone (O$_3$) in the atmosphere absorbs ultraviolet radiation
+that can damage the skin and cause cancer. It does this via a photochemistry
+process $\mbox{O}_3 + \gamma \rightarrow \mbox{O}_2 + \mbox{O}$, 
+where $\gamma$ is a photon.  If the dissociation energy of ozone is 
+$3.94\units{eV}$, calculate the maximum wavelength of UV radiation
+that is absorbed by this photochemical process.
+\item Diatomic oxygen (O$_2$) also absorbs UV radiation with smaller
+wavelengths via the process $\mbox{O}_2 + \gamma \rightarrow 
+\mbox{O} + \mbox{O}$.
+Given a dissociation energy of $5.17\units{eV}$ for an O$_2$ molecule,
+calculate the maximum wavelength of UV radiation that is absorbed by
+this process.
+\end{enumerate}
+\label{prob:UVAbsorption}
+\end{problem}
+
+%fifteen
+
+\begin{problem}
+Titanium dioxide is one of many different possible ingredients used in
+sunblock lotions. It has a band gap energy of $3.2\units{eV}$. Calculate the
+maximum wavelength of radiation that you would expect TiO$_2$ to absorb
+via an absorption process that promotes electrons from the valence
+to the conduction band. Is your answer consistent with the use of TiO$_2$
+as an ingredient in sunblock lotions?
+\end{problem}
+
+%sixteen
+
+\begin{problem}
+Carbon dioxide has first and second excited vibrational states which 
+are $0.083\units{eV}$
+and $0.166\units{eV}$ above the ground state. Calculate the wavelengths of
+electromagnetic radiation that you would expect to be most readily
+absorbed by transitions between these vibrational energy levels in CO$_2$.
+
+The wavelengths that you will find are in the infrared range of
+$700\units{nm}$ to $1\units{mm}$. This is one of the reasons 
+why carbon dioxide contributes
+to global warming as IR radiation is one of the ways in which the Earth
+radiates heat, assuming it isn't absorbed in the atmosphere. (Note, though,
+that this is a simplification, as there are rotational energy levels
+in CO$_2$ as well that aren't included in this problem.)
+\label{prob:CO2}
+\end{problem}
+
+%seventeen
+
+\begin{problem}
+Class 3 (neutral phenol) Green Fluorescence Protein (GFP) used in cell
+and molecular biology studies has an excitation wavelength of 
+$399\units{nm}$
+(near-UV) and an emission wavelength of $511\units{nm}$ (green, duh).
+\begin{enumerate}
+\item Determine a 3-level energy diagram (with ground state energy
+zero) that is consistent with these data. (There are two answers
+that are consistent with the given data.)
+\item Based on your diagram, you might expect to see two different
+colors of emitted light. Why do you see only green light emitted
+from a sample tagged (or genetically mutated) with Class 3 GFP?
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+%eighteen
+
+\begin{problem}
+The spec sheets for Lumidot$^{TM}$ quantum dots from Sigma-Aldrich
+scientific supply company specifies the following core sizes (radius
+of the quantum dots) and wavelengths for their various dots.
+\begin{center}
+\begin{tabular}{c | c}
+Radius (nm) & Wavelength (nm) \\
+\hline
+3.0 & 510 \\
+3.3 & 530 \\
+3.4 & 560 \\
+4.0 & 590 \\
+5.2 & 610 \\
+6.3 & 640 \\
+\end{tabular}
+\end{center}
+
+\noindent Use this data to verify the $1/R^2$ dependence 
+of Eq.~(\ref{eq:QDot}) and to find the band gap energy. (Hint: Calculate 
+$E_\text{ph}$ for each of these wavelengths, and then plot $E_\text{ph}$ 
+versus $1/R^2$; a computer can make the calculations, plotting, and 
+fitting easier.)
+\end{problem}

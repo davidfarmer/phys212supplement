@@ -1,0 +1,1309 @@
+\chapter[Waves, Probabilities, and Uncertainty]{Waves, Probabilities, and 
+  Uncertainty}
+
+%\chapter[Uncertainty and Stability of Atoms]{Heisenberg's Uncertainty Principle 
+%  and the Stability of Atoms}
+\label{chapter:uncertainty}
+
+\section{Introduction}
+
+We concluded the last chapter with de~Broglie's hypothesis that all
+matter exhibits wave-particle duality, not just light.  
+%More
+% specifically, he proposed that the particle property of momentum and
+%the wave property of wavelength are related by
+%\begin{equation}
+%\label{eq:deBroglie}
+%\lambda = \frac{h}{p}.
+%\end{equation}
+De Broglie's proposal is radical.  Arguing that all matter has wave-like
+properties turns out to have far-reaching implications whose answers
+fundamentally change the way we view the laws of the universe.
+%The story is somewhat like Einstein's postulates for relativity, which
+%were simple to state but ended up revising our fundamental notions of
+%spacetime, mass, and energy when followed to their logical conclusion.
+%One difference, though, is that the story in quantum mechanics had
+%many authors: de~Broglie made the crucial hypothesis, but he was
+%already building on the work of Einstein, Planck, and Bohr, and it took
+%further developments by Heisenberg, Schr\"odinger, and others to
+%turn quantum mechanics into a complete theory.
+One important question is the following: waves are spread out over regions
+of space; so, {\it where is the particle} if it is acting like a wave?
+
+In this chapter, we will discuss the interpretation of de~Broglie's waves
+in terms of {\it probability}. An implication of this probabilistic
+description of matter waves is the well-known \textit{Heisenberg
+uncertainty principle}, which states that a particle cannot simultaneously
+have a precise position and momentum.  We will show that the uncertainty
+principle ends up solving one of the failures of classical physics:
+it explains why atoms are stable. The uncertainty principle also limits
+our ability to measure and manipulate matter at small, sub-atomic scales.
+
+We finish the chapter with a generalization of de~Broglie's relation --- 
+Schr\"odinger's equation --- that can be used to \textit{calculate} 
+wavefunctions for particles.
+
+\section{Quantum Waves}
+
+Let's consider a particle moving with a well-defined momentum
+$p$. According to de~Broglie, this particle can also be
+thought of as a wave with a wavelength $\lambda = h/p$. We can
+represent this graphically as a simple sine wave, as shown in
+Fig.~\ref{fig:wave_localization}(a).\footnote{Actually, a state with
+well-defined momentum has a complex wavefunction $\psi(x) = Ae^{2\pi
+ipx/h}$ whose real and imaginary parts are simple cosine and sine waves.}
+But a wave doesn't have to be a simple sine wave. The {\it wavefunction}
+$\psi(x)$ describing a particle's wave-like nature can take any shape.
+Figure~\ref{fig:wave_localization}(b) shows a wavepacket-shaped
+wavefunction, and Fig.~\ref{fig:wave_localization}(c) shows a pulse-like
+wavefunction. Later in this chapter, we will explain how the specific
+wavefunction can be determined for different physical situations.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5.4in]{waves_prob_and_uncertainty/wave_localization2}
+\caption{Wavefunctions $\psi(x)$ discussed in the text: (a) a pure
+sine wave, (b) a partially localized function, and (c) a localized blip.}
+\label{fig:wave_localization}
+\end{center}
+\end{figure}
+
+But first: what exactly {\it is} the wave here? An answer to that
+question was provided in 1926 by Max Born who argued that the wavefunction
+contains information about the probability for finding the particle.
+Specifically, given a wavefunction $\psi(x)$ that describes the
+wave properties of a particle, Born argued that $\psi(x)$ represents
+\textit{probability amplitude}, and taking the magnitude squared of
+the wavefunction produces the \textit{probability density} $P(x)$ ---
+probability per unit distance for a one-dimensional problem --- for
+finding the particle:
+\begin{equation}
+P(x) = |\psi(x)|^2.
+\label{eq:probdensity}
+\end{equation}
+This tells us that according to quantum physics, a particle has a range
+of possible positions, described by a probability density. We don't know
+where the particle is located --- there is a possibility that it could
+be found anywhere where the wavefunction $\psi(x)$ is non-zero. But it
+isn't just a statement that we don't {\it know} where the particle is;
+rather, {\it the particle doesn't HAVE a position} until we make a
+measurement and locate it.
+
+The interpretation of matter waves as probability amplitudes has
+tremendous implications, which we will explore later in this chapter
+and in the next few chapters. But before we explore those implications,
+we need to develop the  mathematics of probability densities.
+
+\subsection{Probability Densities}
+
+The concept of probability density can be tricky --- it's not the same
+as probability!  In one spatial dimension we write the probability
+density as $P(x)$, since it can vary with the position $x$.  To get
+probability from $P(x)$, you must multiply by a length interval since
+it is really {\em probability per unit length}.  Specifically,
+\begin{equation}
+P(x)\, dx = \left(\begin{array}{l}
+          \text{Probability of finding the particle within} \\
+          \text{an interval from $x$ to $x+dx$. }
+                    \end{array}\right).
+\end{equation}
+
+If the probability density is uniform, then it is easy to find
+probability for any interval.  To illustrate, suppose you are playing
+golf on a dark night (don't ask why) and after driving the ball you
+know it landed somewhere along the left edge of the fairway, between
+200 to 250 meters from the tee.\footnote{This is physics, so golf is
+  played using the metric system.}  You want to find it and learn
+about probability density at the same time.
+
+The total probability of finding your ball between $ =200\units{m}$ 
+and $x = 250\units{m}$ is 1 --- it is definitely
+somewhere in that interval.  Furthermore, the probability density is
+uniform.  That is, the ball is equally likely to be found anywhere in
+the interval.  Then the probability density $P(x)$ is given by
+\begin{equation}
+P(x) = \frac{\text{Total Probability}}{\text{Total Length of Interval}}
+\hspace{0.2in}\text{(uniform $P(x)$ only)},
+\end{equation}
+so in this case
+\begin{equation}
+P(x) = \frac{1}{(250\units{m}-200\units{m})} =
+\frac{1}{50}\units{m$^{-1}$}.
+\end{equation}
+If you limit your search to the region between
+$x_1 = 210\units{m}$ and $x_2 = 215\units{m}$, then your
+probability of finding the ball is
+\begin{align}
+\text{Probability} &= (\text{Probability Density})\times
+(\text{Length of Interval of Interest}) \nonumber \\ 
+% &=& P(x)(x_2-x_1) \nonumber \\ 
+ &= \frac{1}{50\units{m}} \left(215\units{m}-210\units{m}\right) 
+ % \nonumber \\ &=&
+ = \boxed{0.1 \text{ or 10\%}.}  %\frac{1}{10} %\nonumber \\ &=& 10\%
+\label{eq:prob_density_uniform}
+\end{align}
+
+On the other hand, if the probability density is not uniform, you have
+to integrate: % and Eq.~(\ref{eq:prob_density_uniform}) becomes
+\begin{equation}
+\text{Probability of finding ball between $x_1$ and $x_2$} 
+   = \int_{x_1}^{x_2} P(x)\, dx.
+\end{equation}
+This is the general relation you should use to determine probabilities
+for 1-D problems.
+
+Finally, we note a useful graphical connection to probability.  Since
+integrals have the nice interpretation of being area under a curve,
+lots of understanding of these concepts can be gained by plotting
+$P(x)$ vs.\ $x$, and simply calculating areas.
+\newpage
+
+\begin{example}{Probability Density I.}
+A plot of a non-uniform probability density for finding your ball near
+a different hole is shown below, in Fig.~\ref{fig:prob_density_golf}.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=4.8in]{waves_prob_and_uncertainty/prob_density_golf}
+\end{center}
+\caption{Probability density for location of a golf ball.}
+\label{fig:prob_density_golf}
+\end{figure}
+
+
+
+\begin{enumerate}
+\item Show that the total probability of finding your ball is 1.
+\item Use the plot to find the probability of finding your ball
+  between 150 and 200 m from the tee.
+\end{enumerate}
+\solution 
+\begin{enumerate}
+\item Since the total probability is the sum over the probabilities
+ of being at all possible positions, we must integrate the probability 
+density over all possible values of $x$, i.e., find the total area under 
+the graph.  The total net area is a triangle with 
+a base of $100\units{m}$ and a height of $0.02\units{m$^{-1}$}$, so 
+\begin{equation}
+\text{Probability} = \text{Area} = {\textstyle\frac{1}{2}}\times 100
+\times 0.02 = 1  .
+\end{equation}.
+\item The probability is equal to $\int_{150}^{200}P(x)\, dx$, which is the 
+area of the shaded trapezoid.  The trapezoid can be considered as a rectangle 
+(of base $b = 50$ and height $h = 0.01$) plus a triangle (of base $b = 50$ 
+and height $h = 0.01$). Therefore the total probability is
+\begin{align}
+\text{Probability} = \text{Area under curve} %\nonumber\\
+  &= bh +  {\textstyle\frac{1}{2}b h}\nonumber \\
+      &= 50 (0.01) + {\textstyle\frac{1}{2}}50 (0.02 - 0.01) \nonumber \\
+                                 &= \boxed{0.75 \text{ or 75\%}.}
+\end{align}
+\end{enumerate}
+\end{example}
+
+\subsection{Probabilities and Wavefunctions}
+\label{sec:ProbDensity}
+While a general wavefunction may be very complicated, the prescription
+for its interpretation is always the same: from $\psi(x)$, calculate
+$|\psi(x)|^2$, its magnitude squared.  Then the probability density is
+given by $P(x)=|\psi(x)|^2$.
+
+One of the complications of a general wavefunction is that it may be
+complex-valued, involving factors of the imaginary number $ i = \sqrt{-1}$.  
+When this occurs $|\psi(x)|^2$ does not just mean ``square the wavefunction''
+to get the magnitude squared.  Rather you should follow this three-step
+process:
+
+\begin{enumerate}
+
+\item[1.] Write the {\em complex conjugate} of the wavefunction, $\psi^*$,
+  by replacing every occurrence of ``$i$'' with ``$-i$'' in the
+  wavefunction.  For example if $\psi(x) = 2 e^{i3x} - 5 i x^2$, then
+  $\psi^*(x) = 2 e^{-i3x} + 5 i x^2$.
+
+\item[2.]  Multiply $\psi(x)$ times $\psi^*(x)$.
+
+\item[3.] Replace any occurrences of ``$i^2$'' with ``$-1$'' and
+  simplify. Your result should be real (no left-over ``$i$''s) and
+  non-negative for all values of $x$, as required for a probability
+  density.
+
+\end{enumerate}
+
+\begin{example}{Calculating probability density.}
+\label{exam:CalcProbDensity}
+A particle in a region of space with $x > 0$ is represented by 
+the wavefunction
+\begin{equation}
+\psi(x) = \sqrt{5} e^{ikx} \sin(2x) e^{-x} \nonumber
+\end{equation}
+where $k$ is a real constant.  Calculate the probability
+density for this particle.
+
+{\bf Solution:} According to the prescription given above, the
+probability density for this particle is calculated to be
+\begin{eqnarray}
+\left| \psi(x) \right| ^2 
+   & = & \psi(x) \cdot \psi^*(x) \nonumber \\
+   & = & \left( \sqrt{5} e^{ikx} \sin(2x) e^{-x} \right) 
+         \left( \sqrt{5} e^{-ikx} \sin(2x) e^{-x} \right) \nonumber \\
+   & = & 5 \sin^2(2x) e^{-2x}, \nonumber
+\end{eqnarray}
+where we have used the fact that
+\begin{eqnarray}
+(e^{ikx}) (e^{ikx})^* &=& (e^{ikx}) (e^{-ikx}) \nonumber \\
+                      &=& e^{(ikx-ikx)} = e^0 = 1. \nonumber
+\end{eqnarray}
+
+%\begin{figure}[!hb]
+%\begin{center}
+%\includegraphics[width=3in]{waves_prob_and_uncertainty/fig42}
+%\end{center}
+%\caption{Probability density for the wavefunction of Example~\ref{exam:CalcProbDensity}.}
+%\label{fig:prob_density_example}
+%\end{figure}
+
+%Fig.~\ref{fig:prob_density_example} shows a plot of $P(x)$ versus
+%$x$. Using the interpretation for the probability density as given in
+%Eq.~(\ref{eq:probDensity}), we see from
+%Fig.~\ref{fig:prob_density_example} that $P(x)$ has a maximum near the
+%position $x \approx 0.55$ and therefore the probability of finding the
+%particle is the greatest in the vicinity of this position. 
+\end{example}
+
+%To determine the probability of finding a particle in a region of
+%space, we integrate the probability density:
+Figure~\ref{fig:prob_density_integral} is the graph of a probability
+density for a particle in some quantum state.  The quantity $
+P(x_0)\, dx$ represents the probability for finding the particle within a
+narrow interval from $x_0$ to $x_0+dx$, shown as the shaded area
+in the figure.  If we would like to know the probability of finding
+the particle anywhere between the two positions $x_a$ and $x_b$, then
+we need to {\em integrate} the probability density:
+
+%\begin{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[width=4in]{waves_prob_and_uncertainty/prob_density_integral}
+\end{center}
+\caption{Determining the probability over a range of positions.}
+\label{fig:prob_density_integral}
+\end{figure}
+
+\begin{equation}
+\label{eq:IntegralprobDensity}
+\left( \begin{array}{l}
+         \mbox{Probability of finding the particle} \\
+         \mbox{in the region $[x_a, x_b]$}
+                    \end{array} \right) = \int_{x_a}^{x_b} P(x)\, dx
+                                        = \int_{x_a}^{x_b} |\psi(x)|^2\, dx ,
+\end{equation}
+which is the area under the curve from $x_a$ to $x_b$.
+Eq.~(\ref{eq:IntegralprobDensity}) brings up an important property of
+wavefunctions and probability densities.  What if the region we are
+interested in is the entire $x$-axis, that is, $[x_a, x_b] = (-\infty,
++\infty)$?  Another way of saying this is, `What is the probability of
+finding the particle anywhere?'  Certainly the answer to this question
+is $100\%$ !  This implies that the wavefunction must be given such that
+\begin{equation}
+\label{eq:normalization}
+\int_{-\infty}^{+\infty} |\psi(x)|^2\, dx = 1 .
+\end{equation}
+When a wavefunction satisfies this requirement, it is said to be {\em
+  normalized}.  Normalization is usually accomplished by multiplying
+the wavefunction by a suitable constant factor, as we will see in the
+following examples.
+
+\begin{example}{Probability of finding a particle I.}
+\label{ex:probabilityI}
+Figure \ref{fig:example_wavefunction} shows the wavefunction for a
+certain particle, where $A$ is a positive constant. (a) Determine a
+value for the constant $A$ such that the wavefunction is properly
+normalized. (b) What is the probability of finding the particle in the
+region between $x = 2\units{nm}$ and $x = 4\units{nm}$?
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=3.5in]{waves_prob_and_uncertainty/prob_density_example}
+\end{center}
+\caption{Wavefunction for Example \ref{ex:probabilityI}.}
+\label{fig:example_wavefunction}
+\end{figure}
+
+{\bf Solution: (a)} To determine probabilities we must first determine
+$|\psi(x)|^2$ for the given wavefunction. We do this by computing the
+value of $|\psi(x)|^2$ at every position on the graph which results in
+the graph of Fig.~\ref{fig:example_prob_density}.
+
+\begin{figure}[b]
+\begin{center}
+\includegraphics[width=3.5in]{waves_prob_and_uncertainty/prob_density_example_a}
+\end{center}
+\caption{Probability density for Example \ref{ex:probabilityI}.}
+\label{fig:example_prob_density}
+\end{figure}
+The total probability of finding the particle anywhere is the total
+area under the curve of Fig.~\ref{fig:example_prob_density}:
+\begin{eqnarray} 
+\int_{-\infty}^{+\infty} |\psi(x)|^2\, dx 
+  &=& A^2 (2 - 1) + \left( - \frac{A}{2} \right)^2 (4 - 2) \nonumber \\
+  &=& A^2 + \frac{A^2}{2} = \frac{3}{2} A^2 .
+\end{eqnarray}
+
+For the wavefunction to be properly normalized, this area must equal
+one.  Therefore, the value for the constant $A$ must be
+\begin{equation}
+\frac{3}{2} A^2 = 1 \hspace{0.3in} 
+              \longrightarrow \hspace{0.3in} A = \sqrt{\frac{2}{3}}.
+\end{equation}
+{\bf (b)} Now that we know the value for the constant $A$ that
+properly normalizes the wavefunction, the probability of finding the
+particle in the region between $x = 2\units{nm}$ and $x = 4\units{nm}$ 
+is just the area under the curve of the probability density between 
+$x = 2\units{nm}$ and $x = 4\units{nm}$:
+\begin{equation}
+\text{Prob}([2, 4]) = \frac{A^2}{4} (4 - 2) = \frac{A^2}{2} = \frac{1}{3}. 
+\end{equation}
+\end{example}
+
+\section{Heisenberg's Uncertainty Principle}
+
+Okay, back to Fig.~\ref{fig:wave_localization}. We have already
+commented that a particle moving with a well-defined momentum
+$p$ has a wavefunction $\psi(x)$ that is a pure sine wave, as in
+Fig.~\ref{fig:wave_localization}(a).  But where is the particle when
+it is in this state? The answer: it doesn't {\it have} a well-defined
+position.  There is a non-zero probability density for finding the
+particle anywhere where the wave is non-zero. But a pure sine wave with
+a definite wavelength extends all the way from $x = -\infty$ to $x =
++\infty$. So a particle with a well-defined momentum could be found {\it
+anywhere}. Phrased another way, the spread in the particle's location
+is infinite.  So, if the momentum of a particle is defined precisely,
+the particle's position is completely undetermined --- it could be found
+anywhere. (And remember: it isn't just that we don't know where the
+particle is located, but rather that the particle simply doesn't {\it
+have} a location.)
+
+But what if the particle's wavefunction looks like the one in
+Fig.~\ref{fig:wave_localization}(c)? In this case, $\psi(x) = 0$
+everywhere except in a narrow region where the sharp blip is. So, its
+position is well-defined and predictable. It is theoretically possible to
+make an arbitrarily narrow pulse-like wavefunction, i.e., with a spread
+in position which is arbitrarily small.  {\it But what is the wavelength
+--- and therefore the momentum --- of this particle?}
+
+Formally, we use the symbol $\sigma_x$ to denote the spread in a
+particle's position and $\sigma_p$ to denote the spread in a particle's
+momentum.\footnote{Mathematically, $\sigma_x$ is the same as the standard
+deviation
+\begin{equation}
+ \sigma_x = \sqrt{\langle x^2 \rangle - \langle x\rangle^2 }.
+\end{equation}
+where the averages $\langle x\rangle$ and $\langle x^2\rangle$ are
+defined as
+\begin{equation}
+\langle x\rangle = \int x\, P(x)\, dx \qquad
+\langle x^2\rangle = \int x^2\, P(x)\, dx
+\end{equation}
+with $P(x)$ being the probability density defined in the previous section.}
+For waves, there is an important theorem called {\it Fourier's
+theorem} that says that any function $f(x)$ --- which
+might be describing the height of a water wave or the pressure of a
+sound wave as a function of position or a quantum wavefunction $\psi$
+--- can be decomposed into a sum of sines and cosines.\footnote{Fourier's
+theorem is {\it really} cool and forms the basis for the theory of music
+among other things. The basilar membrane in your ear performs an operation
+very close to a Fourier transform, with different portions of the membrane
+responding to different sound frequencies. This process helps
+you to identify, say, the individual sounds produced by flutes,
+cellos and bass guitars that are all blended together during a concert. 
+And Fourier analysis is used to determine the characteristic ``fingerprint''
+of different musical instruments and, in fact, is used by designers
+of electronic music synthesizers to mimic  the sounds of real instruments.}
+We won't prove it here, but Fourier's theorem shows that a pulse-like
+wave with $\sigma_x = 0$ can be produced by adding sine waves with
+wavelengths ranging from 0 up to $\infty$. But since each wavelength
+corresponds to a different momentum, that means that a particle with
+a well-defined position (i.e., $\sigma_x = 0$) could have any momentum
+from infinity down to zero (i.e., $\sigma_p = \infty$).
+
+So, a particle can have a well-defined momentum (but completely uncertain
+position) or a well-defined position (but completely uncertain momentum).
+There is a third possibility: Fig.~\ref{fig:wave_localization}(b) shows
+a wavepacket that is reasonably (but not perfectly) localized and one
+that can be decomposed into the addition of sine waves with a limited
+(but non-zero) spread of wavelengths. In this case, the particle
+is neither perfectly localized nor does it have a perfectly determined
+momentum, but neither $\sigma_x$ nor $\sigma_p$ are infinite either.
+
+A strict application of Fourier's theorem to matter waves shows that 
+there is a minimum total spread in the particle's position and momentum:
+\begin{equation}
+  \sigma_x \sigma_p \geq \frac{\hbar}{2} ,
+  \label{eq:heisenberg_uncertainty}
+\end{equation}
+where $\hbar \equiv h/2\pi$.
+This is known as the Heisenberg uncertainty relation.  It is a profound
+result that caused Newton to roll over in his grave\footnote{Well, okay,
+maybe Newton didn't literally roll over in his grave, but this result
+is {\bf very} different than anything envisioned by classical physics},
+because it says that we cannot simultaneously know a particle's position
+and momentum.  A precise position and a precise momentum would mean both
+$\sigma_x$ and $\sigma_p$ are zero, but that is not allowed.
+
+Recall when we solved for the motion of an object in classical
+mechanics, say a blow dart shot straight upward, we needed to know
+the initial position of the dart and the initial velocity.  The
+Heisenberg uncertainty relation says that is not possible.  The
+more precisely you are able to determine the position of some
+object, the less you will be able to know about its momentum.
+
+Now, $\hbar$ is a really small constant.  For distances and momenta on
+our macroscopic scale, Heisenberg's uncertainty places no practical
+limitations.  But down at the atomic scale the Heisenberg uncertainty
+relation has a very big impact.  And, of course, experiments have
+confirmed the uncertainty relation, so it is not just a proposal but
+it is part of reality.
+
+Many people, when encountering the uncertainty relation for the first
+time, assume that this is a statement about the limits of our ability
+to do experiments.  But that is not the case.  It's a property of
+nature obeyed by all matter, even when we're not looking.  As we shall
+see, the Heisenberg uncertainty relation is essentially the reason
+that atoms are stable.
+
+\section{The Stability of Atoms}
+
+Now we are ready to address the second great failure of classical physics.
+Maxwell's equations make a crystal clear prediction: accelerating charges
+send out energy in the form of EM waves.  This is a big problem for the
+classical physics model of the atom.  If the electrons orbit the nucleus
+like the planets orbit the sun, then they definitely have acceleration
+(equal to $v^2/R$), and so they are radiating away their energy.
+
+But where would that energy come from?  It comes from the potential energy
+of the electron's electric force interaction with the proton.  To lower
+its potential energy, the electron must come closer to the proton,
+just like an object coming closer to the Sun lowers its gravitational
+potential energy.\footnote{Actually, only half of the potential energy
+is radiated away.  The other half goes into increased kinetic energy.
+But the total mechanical energy is still decreasing.} So that is the
+classical solution: the electron must radiate away energy by coming ever
+nearer to the nucleus.
+
+Working out the numbers involved for a hydrogen atom, we
+find that the electron should spiral in and essentially crash into the
+nucleus after a time of about $10^{-12}\units{s}$.  That is,
+classical mechanics and electromagnetism predict that atoms
+aren't stable and shouldn't last long enough for them (and us) to
+still be around.  All the matter in our universe should be simply
+electrons sitting in the nucleus with the protons and neutrons.
+
+Heisenberg's uncertainty principle resolves this dilemma.  An electron
+cannot sit on top of the nucleus because that would be a very precise
+position and a very precise momentum (namely, at rest), which violates
+the uncertainty relation, so the best the electron can do is some
+compromise.  It accepts the minimal spread in position and momentum
+that it can and then is stuck there.  Since it cannot lower its
+energy further, it quits radiating and is stable.\footnote{Thank
+  goodness!}
+
+Put another way, whenever a particle is confined -- i.e., if $\sigma_x$
+is less than $\infty$ -- then there is a minimum spread $\sigma_p
+\ne 0$ in the momentum.  Assume the product $\sigma_x\sigma_p$ in the
+Heisenberg uncertainty relation, Eq.~(\ref{eq:heisenberg_uncertainty}),
+to be as small as possible, namely, $\sigma_x\sigma_p\approx \hbar/2$.
+This gives us the inverse relation
+\begin{equation}
+ \sigma_p \approx\frac{\hbar}{2\sigma_x}.
+ \label{eq:sigmap_from_sigmax}
+\end{equation}
+If $\sigma_p \ne 0$, there is a non-zero kinetic energy.  The average 
+momentum must again be zero by symmetry, $\langle p\rangle=0$, so 
+\begin{equation}
+\sigma_p^2 = \langle p^2\rangle - \cancelto{0}{\langle p\rangle^2}
+ = \langle p^2\rangle.
+\end{equation}
+The average kinetic energy can be related to the spread in momentum:
+\begin{equation}
+  \langle K\rangle = \frac{1}{2}m\langle v^2\rangle =
+  \frac{1}{2m}\langle p^2\rangle = \frac{\sigma_p^2}{2m} .
+  \label{eq:ke_from_spread}
+\end{equation}
+Conceptually, the since the electron is confined, it 
+is forced to have some spread in velocity or momentum.  The
+larger this spread, the larger the resulting average kinetic energy.
+
+So, what does this mean? If an electron in an atom were to spiral into
+the center, the spread in its position $\sigma_x$ would get smaller
+and smaller. But smaller $\sigma_x$ would result in a larger and larger
+$\sigma_p$ (by the uncertainty principle) and a larger kinetic energy
+(larger than the classical increase in $K$ from spiraling inward). For
+an electron in an atom, the reduction in its potential energy (by moving
+closer to the center of the atom) would be countered by an increase in
+its kinetic energy, which grows toward infinity if the electron spirals
+all the way in. There is an optimal radial distance where the mechanical
+energy $E = \langle K\rangle + \langle U\rangle$ reaches its minimum.
+So, the classical problem of an electron spiraling in doesn't apply,
+because eventually the energy {\it increases} if the electron gets closer
+and closer to the center of the atom.
+
+So, the condition for the electron to spiral in all the way is gone. It can't
+keep radiating radiating EM waves, losing energy, and spiraling in to the
+nucleus of the atom. Heisenberg's principle indicates that the energy of the
+electron is not a minimum at the center of the atom but rather at
+a finite radius. So, an electron would need {\bf more} energy to
+fall further into the center of the atom, 
+
+This is, of course, a simplification of the quantum explanation for
+the stability of atoms. As we'll see in the next chapter, the energy of
+an electron in an atom (and, in fact, the energy of any confined particle)
+is quantized, having only certain, discrete values.
+
+In the meantime, an important consequence of Heisenberg's Uncertainty
+is the following:  
+
+\boxittext{A confined particle can never have zero kinetic energy.} 
+\break We will say a lot more about this in the
+next chapter.
+
+\section{Schr\"odinger's Wave Equation}
+
+We have talked about the idea of a wavefunction $\psi(x)$ that describes
+the wave-nature of a particle, and we have introduced the idea that the
+wave represents probability amplitudes, with the probability density
+$P(x)$ for locating a particle being given by $P(x) = |\psi(x)|^2$. But
+how can we determine what that wavefunction is for a specific problem?
+
+In 1926, Erwin Schr\"odinger proposed a differential equation whose
+solutions give the wavefunctions corresponding to matter waves.  For a
+particle of mass $m$ and total energy $E$, Schr\"odinger's equation
+written in one spatial dimension is
+\begin{equation}
+-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + U(x)\psi(x) = E\psi(x),
+\label{eq:schrodinger}
+\end{equation}
+where $U(x)$ is the potential energy function of the
+particle. Schr\"odinger's equation is similar in form to the types of
+equations that describe other wave phenomena, such as sound waves and
+electromagnetic waves.  The basic idea here is that, given a particle
+with mass $m$ and a potential energy $U(x)$, Schr\"odinger's equation
+will allow us to determine the possible energies $E$ and associated
+wavefunction solutions $\psi(x)$.  
+
+\subsection{Testing Solutions to an Equation.}
+
+There are advanced techniques from the theory of differential equations
+that we could use to start finding solutions to Schr\"odinger's equation
+from scratch.  But for this course, we use only the ``guess and check''
+method, which is also a standard technique in solving differential
+equations. (In lab, you will solve Schr\"{o}dinger's equation using a
+numerical iteration method.)  The approach is quite simple: you guess
+a particular function, you put it into the equation and see if it works.
+If it works for all values of $x$, then you say that it is a solution. If
+it doesn't, then you say that it {\bf isn't} a solution.
+
+We will illustrate the ``guess and check'' approach with an example:
+
+% As a simple example of the guess-and-check approach, let's
+% say, hypothetically, that you had never heard of the quadratic
+% formula to figure out the solution to an equation of the form
+% $ax^2+bx+c=0$.\footnote{We aren't going to write that formula down
+% here because we want you to pretend that you had never heard of it.}
+% If someone gave you an equation, say, $2x^2+10x+12 = 0$, you wouldn't be
+% able to solve it since you don't know the quadratic formula.  But let's
+% say that person said, ``Determine whether or not $x=-3$ is a solution to
+% this equation.'' You might say, ``okay'' and substitute $x=-3$ into the
+% equation to see if it works.  You'd get $2 \times (-3)^2 + 10 \times
+% (-3) +12$ which gives you $18 - 30 + 12$ which {\it does}, in fact,
+% equal 0. ``So, yes,'' you would say, ``$x = -3$ {\it is} a solution to
+% the equation $2x^2+10x+12=0$.'' If you were asked to test if $x = 4$
+% is a solution, you'd get $2 \times 4^2 + 10 \times 4 + 12$ which gives
+% you $32+40+12$ which is 84.  ``84 isn't the same as 0, so $x = 4$ is
+% {\bf not} a solution to the equation $2x^2+10x+12=0$.
+
+% This kind of approach, i.e., substituting in a test solution to
+% an equation to see if it works, can work with any kind of equation,
+% including complicated-looking differential equations.  We will do another
+% (longer) example to show how this works, and then apply the same approach
+% to Schr\"odinger's equation.
+
+\begin{example}{Testing solutions to an equation.}
+Some equations have solutions which are functions, instead of just a number.
+Let's say you are trying to determine the function $f(x)$ that solves
+the following equation:
+\begin{equation}
+\left[f(x)\right]^2 - x^2 + 8x - 16 = 0.
+\label{eq:TestEx1}
+\end{equation}
+You can probably solve this with algebra techniques, but let's pretend
+that you don't know how to solve it. Instead, we are going to test trial
+solutions.
+\begin{enumerate}
+\item[(a)]
+Test the solution $f(x) = ax+b$ to see if it satisfies Eq.~(\ref{eq:TestEx1}).
+If it does, determine the values of the constants $a$ and $b$ for the solution.
+\item[(b)]
+Test the solution $f(x) = ax$ to see if it satisfies Eq.~(\ref{eq:TestEx1}).
+If it does, determine the value of the constant $a$ for the solution.
+\item[(c)]
+Test the solution $f(x) = ax^2+b$ to see if it satisfies Eq.~(\ref{eq:TestEx1}).
+If it does, determine the values of the constants $a$ and $b$ for the solution.
+\end{enumerate}
+{\bf Solution: (a)} Substituting $f(x) = ax+b$ into Eq.~(\ref{eq:TestEx1}), 
+we get
+\begin{eqnarray}
+\left[f(x)\right]^2-x^2+8x-16 & = & (ax+b)^2-x^2+8x-16 \nonumber \\
+& = & a^2x^2+2abx+b^2-x^2+8x-16 \nonumber \\
+& = & (a^2-1)x^2+x(2ab+8)+(b^2-16) \nonumber
+\end{eqnarray}
+The question is whether this can all add up to zero for all values of $x$.
+The answer to that question is yes {\bf only} if the constants, the $x$-terms 
+and the $x^2$ terms all separately add to zero.  That means that all of 
+the terms in parentheses above need to add to zero separately.  (You can't
+satisfy this by making $x=0$, because then the function would only work for
+that particular value of $x$). So
+\begin{eqnarray}
+b^2-16 = 0 \rightarrow b = \pm 4 \nonumber \\
+2ab+8 = 0 \rightarrow 2ab=-8 \rightarrow a=-4/b \nonumber \\
+a^2-1=0 \rightarrow a= \pm1 \nonumber
+\end{eqnarray}
+All three of these relations work if $b=4$ and $a=-1$ or if $b=-4$ and
+$a=1$. So, we can say that $f(x)=ax+b$ {\it is} a solution to 
+Eq.~(\ref{eq:TestEx1}) if $b=4$ and $a=-1$ or if $b=-4$ and $a=1$, i.e.,
+$f(x) = -x+4$ and $f(x)=x-4$ are both solutions.
+
+{\bf (b)} Now let's substitute $f(x) = ax$ into Eq.~(\ref{eq:TestEx1}):
+\begin{eqnarray}
+\left[f(x)\right]^2-x^2+8x-16 & = & (ax)^2-x^2+8x-16 \nonumber \\
+& = & a^2x^2-x^2+8x-16 \nonumber \\
+& = & (a^2-1)x^2+8x-16 \nonumber
+\end{eqnarray}
+We could get rid of the $x^2$ term by making $a = \pm 1$, but we would still
+be left with $8x - 16 = 0$. The only way to make that work would be to say
+$x$ must be equal to 2. But that means that the test solution $f(x) = ax$
+(with $a = 1$) would only work at $x = 2$. If $f(x)$ only works at
+one particular value of $x$, then it isn't a solution of the equation.
+(Solutions must work for {\bf every} value of $x$.)
+
+{\bf (c)} Now let's substitute $f(x) = ax^2+b$ into Eq.~(\ref{eq:TestEx1}):
+\begin{eqnarray}
+\left[f(x)\right]^2-x^2+8x-16 & = & (ax^2+b)^2-x^2+8x-16 \nonumber \\
+& = & a^2x^4+2abx^2+b^2-x^2+8x-16 \nonumber \\
+& = & a^2x^4+(2ab^2-1)x^2+ (8)x +(b^2-16) \nonumber
+\end{eqnarray}
+This would work only if the coefficients of the $x^4$, $x^2$, $x$ and
+constant terms were all zero. We can make the $x^4$ term disappear by
+making $a=0$ and we can make the constant term disappear by making 
+$b=\pm 4$, but that would leave non-zero coefficients for the
+$x^2$ and $x$ terms. There is no combination of $a$ and $b$ that can
+make all four terms disappear, so there is no function of the form
+$f(x) = ax^2+b$ that can satisfy Eq.~(\ref{eq:TestEx1}).
+
+\end{example}
+
+The same approach works for {\bf any} equation, including {\it differential
+equations} (i.e., equations that have derivatives in them).
+
+\subsection{Testing Solutions of Schr\"odinger's Equation}
+\label{sec:test_Solution}
+
+Okay, let's look at Schr\"odinger's equation now. We won't ``solve'' this
+equation (that requires mathematics beyond the scope of this course),
+but we will test possible solutions to see if they work. First, since
+Schr\"odinger's equation is a generalization of de~Broglie's result,
+we should get the same result for a free particle (i.e., if $U(x)=0$).
+De~Broglie says that a free particle with a momentum $p$ can be described
+as a sine wave with a wavelength $\lambda=h/p$. So, let's try a test
+solution $\psi_1(x)=A\sin(kx)$ and see if this satisfies Schr\"odinger's
+equation.
+
+With $U(x) = 0$, Schr\"odinger's equation becomes
+\begin{equation}
+-\frac{\hbar^2}{2m}\frac{d^2\psi_1(x)}{dx^2} + 0 = E\,\psi_1(x) .
+\label{eq:schroed_with_0pe}
+\end{equation}
+The Schr\"odinger equation has the second derivative of the
+wavefunction in it, so let's calculate that derivative for our trial
+solution:
+\begin{equation}
+\frac{d\psi_1}{dx} = kA\cos(kx) \hspace{0.5in}  \mbox{and} \hspace{0.5in} 
+\frac{d^2\psi_1}{dx^2} = -k^2A\sin(kx). \nonumber
+\end{equation}
+Next, substitute the second derivative and the wavefunction
+into Eq.~(\ref{eq:schroed_with_0pe})
+\begin{equation}
+-\frac{\hbar^2}{2m}\left[-k^2A\sin(kx)\right] + 0 = E\left[A\sin(kx)\right] 
+\end{equation}
+and combine the $\sin(kx)$ terms
+\begin{equation}
+A\sin(kx)\left[\frac{\hbar^2k^2}{2m}-E\right] = 0.
+\end{equation}
+This works for $A=0$, but that isn't interesting because then $\psi(x)$ would
+just be $0$. But $\psi_1(x)$ also works if the terms in brackets
+add up to zero, i.e., if 
+\begin{equation}
+\frac{\hbar^2k^2}{2m} - E = 0 \longrightarrow E = \frac{\hbar^2k^2}{2m} 
+\end{equation}
+and
+\begin{equation}
+k=\pm\frac{\sqrt{2mE}}{\hbar},
+\end{equation}
+where $k$ is the wavenumber $k=2\pi/\lambda$.  The mechanical energy $E$ is
+equal to the kinetic energy $K$ in this case (since $U = 0$ everywhere), so
+\begin{equation}
+\frac{2\pi}{\lambda}=\pm \frac{\sqrt{2m\left(\frac{1}{2}mv^2\right)}}{h/2\pi} 
+= \frac{2\pi\sqrt{m^2v^2}}{h} \
+= \frac{2\pi p}{h}. 
+\end{equation}
+We have dropped the $\pm$ since a negative wavelength doesn't have any
+physical relevance.)  So, we can say that a test solution $\psi_1(x) =
+A\sin(kx)$ {\it does} satisfy Schr\"odinger's equation for a free particle
+($U = 0$), assuming the wavenumber $k$ has a value that corresponds to
+a wavelength $\lambda = h/p$, as expected by de~Broglie's relation.
+
+(Note that this process has not determined the value of $A$ in our test
+solution.  The trial function $\psi_1(x) = A\sin(kx)$ works for any value
+of $A$ (assuming the correct $k$). The value of $A$ needs to be determined
+by normalization conditions. We'll discuss this in the next chapter.)
+
+For contrast, let's try a test solution that does {\it not} satisfy
+Schr\"odinger's equation.
+
+\begin{example}{Trying another test solution for a free particle.}
+Test the trial solution $\psi_1(x) = Bx^2$ to see whether or not 
+it satisfies Schr\"odinger's equation for a free particle.
+
+{\bf Solution:} With $U=0$, Schr\"odinger's equation is
+\begin{equation}
+-\frac{\hbar^2}{2m}\frac{d^2\psi_1(x)}{dx^2} + 0 = E\,\psi_1(x) . \nonumber
+\end{equation}
+Calculate the second derivative for our trial solution:
+\begin{equation}
+\frac{d\psi_1}{dx} = 2Bx \hspace{0.5in}  
+  \mbox{and} \hspace{0.5in} \frac{d^2\psi_1}{dx^2} = 2B. 
+\end{equation}
+Next, substitute the second derivative and the wavefunction
+into Schr\"odinger's equation:
+\begin{equation}
+-\frac{\hbar^2}{2m}\left[2B\right] + 0 = E\left[Bx^2\right], 
+\end{equation}
+and cancel common factors and simplify, giving
+\begin{equation}
+E B x^2 + \frac{\hbar^2 B}{m} = 0.
+\end{equation}
+In this equation there is no physically-meaningful choice 
+of $E$ and $B$ that could make this true for \textbf{all} $x$,\footnote{$B=0$ 
+would work, but then you'd have $\psi_1(x) = 0$, which isn't a 
+physically relevant solution, because $\psi_1(x) = 0$ means that 
+there is no probability of finding the particle anywhere.} so 
+$\psi_1(x)$ is \textbf{not} a solution.
+\end{example}
+\newpage
+
+Finally, let's illustrate a harder problem, the quantum harmonic
+oscillator.  
+
+\begin{example}{Test solution for a particle in a harmonic oscillator potential.}
+Recall that the spring potential energy is given by 
+$U(x) = \frac{1}{2}k_{\rm sp}x^2 = \frac{1}{2}m\omega^2x^2$, where 
+$\omega = \sqrt{k_{\rm sp}/m}$.  Inserting this into the 
+Schr\"odinger equation, we find
+\begin{equation}
+\frac{-\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + \frac{1}{2}k_\text{sp}x^2\,\psi(x)
+= E\,\psi(x).
+\label{eq:schroed_spring}
+\end{equation}
+Try the test function $\psi_2(x)=xe^{-ax^2}$ to see if this is a solution
+to Schr\"odinger's equation for a harmonic oscillator.  If it is,
+determine the unknown constant $a$ in the solution and the unknown energy $E$.
+
+\solution Again, we must calculate the second derivative of this
+function.  We will leave the calculation of the second derivative for
+you to do (remember to be careful to correctly use the product rule and
+the chain rule).
+%We will need to use the product rule, so let's write $\psi_3(x)$ as
+%\begin{equation}
+%\psi_3(x)  =  xe^{-ax^2} =  x \left(e^{-ax^2}\right) 
+%\end{equation}
+%Then the first derivative is
+%\begin{align}
+%\frac{d\psi_3(x)}{dx} &= \left[\frac{d}{dx}x\right]\left(e^{-ax^2}\right) 
+%+ x\frac{d}{dx}\left(e^{-ax^2}\right) \nonumber\\
+%&= 1\left(e^{-ax^2}\right) + x e^{-ax^2} (-2ax)
+%\end{align}
+%In the second line, the factor of $(-2ax)$ came from the chain rule.
+%Now we can factor out the common exponential to get
+%\begin{equation}
+%\frac{d\psi_3(x)}{dx} =  \left(1 - 2ax^2\right)e^{-ax^2} . 
+%\end{equation}
+%Whew!  Now we go to the second derivative.  We will need to use the
+%product rule and chain rule once again:
+%\begin{align}
+%\frac{d^2\psi_3(x)}{dx^2} % &= \frac{d}{dx}\left[\left(1 - 2ax^2\right)e^{-ax^2}\right] \\
+%&= \left[\frac{d}{dx}\left(1 - 2ax^2\right)\right]e^{-ax^2}
+%+ \left(1 - 2ax^2\right)\frac{d}{dx}\left(e^{-ax^2}\right) \nonumber\\
+%&= \left(-4ax\right)e^{-ax^2} + \left(1-2ax^2\right)e^{-ax^2}\left(-2ax\right)\nonumber\\
+%&= \left(4a^2x^3 - 6ax\right)e^{-ax^2} .
+%\end{align}
+%Now substitute this and $\psi_3$ into the Schr\"odinger equation, Eq.~(\ref{eq:schroed_spring}):
+%\begin{align}
+%\frac{-\hbar^2}{2m}\left(4a^2x^3 - 6ax\right)\cancel{e^{-ax^2}}
+%+\frac{1}{2}m\omega^2x^2\left(x\cancel{e^{-ax^2}}\right) &= E\left(x\cancel{e^{-ax^2}}\right) \\
+%\Rightarrow\quad \frac{-2\hbar^2a^2}{m}x^3 + 3\frac{a\hbar^2}{m}x + \frac{1}{2}m\omega^2x^3
+%- Ex &= 0 .
+%\end{align}
+The final result for the second derivative is
+\begin{equation}
+\label{eq:2ndDerivative}
+\frac{d^2 \psi_2(x)}{dx^2} = \left(4 a^2 x^3 - 6 a x \right) e^{- a x^2}.
+\end{equation}
+Now substitute this and $\psi_2(x)$ into Schr\"odinger's equation,
+Eq.~(\ref{eq:schroed_spring}):
+\begin{equation}
+-\frac{\hbar^2}{2m}\left(4a^2x^3 - 6ax\right) e^{-ax^2}
++\frac{1}{2}k_\text{sp}x^2\left(x \,e^{-ax^2}\right) = E\left(x \,e^{-ax^2}\right) .
+\end{equation}
+Every term has the same exponential factor in it, so we cancel those
+to get
+\begin{equation}
+\frac{-2\hbar^2a^2}{m}x^3 + 3\frac{a\hbar^2}{m}x + \frac{1}{2}k_\text{sp}x^3
+= Ex .
+\end{equation}
+Now to finish, move $Ex$ to the left hand side and collect common
+powers of $x$:
+\begin{equation}
+x^3\left(\frac{1}{2}k_\text{sp} - \frac{2\hbar^2a^2}{m}\right)
++ x\left(3\frac{a\hbar^2}{m} - E\right) = 0.
+\end{equation}
+
+For this equation to hold for all $x$, we must make the coefficient of 
+\textit{each} power of $x$ vanish separately.  So both the coefficient 
+of $x^3$ \textit{and} the coefficient of $x$ are set to zero:
+\begin{align}
+\frac{1}{2}k_\text{sp} - \frac{2\hbar^2a^2}{m} = 0 \quad \text{and} \quad 
+3\frac{a\hbar^2}{m} - E = 0.
+\end{align}
+Solving these for $a$ and $E$, we find
+\begin{equation}
+a = \frac{m\omega}{2\hbar} \quad 
+\mbox{\bf and} \quad E = 3\frac{a\hbar^2}{m}
+   = 3\left(\frac{m\omega}{2\hbar}\right)\frac{\hbar^2}{m} 
+   = \frac{3}{2}\hbar\omega .
+\end{equation}
+We see that $\psi_2(x) = x e^{-ax^2}$ \textit{is} a solution to the
+Schr\"odinger equation if the constants $a$ and $E$ are as given in
+the previous equation.  We see that Schr\"odinger's equation gives
+us the energy $E$ for this state, and also determines the unknown
+constant $a$ in our trial wavefunction, $\psi_2$.  This wavefunction
+solution is actually the first excited state of the quantum oscillator:
+$\psi_2(x) = x\,e^{-(m\omega/2\hbar)x^2}$ with definite energy $E_2 =
+\frac{3}{2}\hbar\omega$.  In one of the assigned problems at the end of
+the chapter, you will test the wavefunction solution corresponding to
+the ground state of the harmonic oscillator.
+\end{example}
+
+We'll say a lot more about quantization of energy states in the next chapter.
+
+\newpage
+
+\section*{Problems}
+\markright{PROBLEMS}
+
+
+%one
+
+\begin{problem} 
+ {\bf Probabilities with dice.} This problem gets at the idea of a
+ probability distribution. Take two of your dice, roll them, and
+ record the sum of the spots showing on the top faces.  (This should
+ be a number between 2 and 12!)  Repeat until you have recorded 20
+ results.
+   \begin{enumerate}
+   \item  Collect your results in three ``bins.''  How many trials do
+   you find in the bin containing numbers 2, 3, 4, or 5? How many in
+   the 6, 7, or 8 bin?  In the 9, 10, 11, or 12 bin?  Try to explain any
+   patterns.
+   \item  In problem session, combine your results with others to
+   estimate the  probabilities of getting a roll in each of the three
+   bins.
+   \item Can you calculate theoretical probabilities?  How do they
+    compare with individual or class results?
+   \end{enumerate}
+\label{prob:dice}
+\end{problem}
+
+%two
+
+\begin{problem}
+{\bf Classical probabilities for finding your car.}  John, an aspiring
+physics student, works part-time parking cars at a downtown hotel.
+The lot is a long, underground tunnel, with all the cars parked in a
+single long row, $600\units{m}$ long.  When owners return for their
+cars, instead of telling them exactly where to find their cars, he
+describes the location in terms of probability and probability
+density.
+\label{prob:parking_lot_1}
+   \begin{enumerate}
+   \item Mr.~Vanderbilt is told that his car ``could be anywhere in
+     the lot,'' which means that the probability density is constant.
+     Calculate the value of this uniform probability density $P(x)$
+     for Mr.~Vanderbilt to find his car a distance $x$ from one end of
+     the lot.  (Answer in units of probability/m.)
+    \item Find the probability that Mr.~Vanderbilt's car is in the first 
+     $100\units{m}$ of the lot.
+    \item Mrs.~Reeve is told that the probability density to find her
+      car is a constant $P_1$ from $x = 0$ to $x=200\units{m}$, and
+      a second constant \mbox{$P_2$ = $P_1/3$} in for $x=200$ to 
+      $x=600\units{m}$.  Find the different constant probability densities
+      $P_1$ for $0 < x < 200\units{m}$ and $P_2$ for $200\units{m}
+      < x < 600\units{m}$.
+     \item Based on your results from part (c), find the probability
+       that Mrs.~Reeve's car is in the first $400\units{m}$ of the
+       lot.
+     \end{enumerate}
+\end{problem}
+
+\newpage
+
+%three
+
+\begin{problem}
+The probability amplitude $\psi(x)$ for a certain particle to be at 
+position $x$ is
+\[ 
+\psi(x) = 
+\frac{\sqrt{x}}{a\sqrt{2}}, \hspace{0.2in}\text{for $0\leq x \leq a$.}
+% \begin{cases} \sqrt{2x}/a & \text{for $0\leq x \leq a$} \\
+%                     0    & \text{for $x<0$ or $x>a$.} 
+% \end{cases} 
+\]
+\begin{enumerate}
+\item Explain what the quantity $|\psi(x)|^2$ tells us about the particle.
+
+\item Calculate the probability that the particle is found between $x=0$ 
+and $x = a$. 
+
+\item Calculate the probability that the particle is found anywhere else
+(i.e., {\bf not} between $x=0$ and $x=a$).
+\end{enumerate}
+\end{problem}
+
+%four
+
+\begin{problem}
+Determine the probability of finding a particle between $x = 1.0$ and
+$x = 2.0$ for the following wavefunctions:
+\begin{enumerate}
+\item $\psi(x) = 0.10x+0.50$
+%
+% $\int_1^2 (0.1x+0.5)^2dx = \int_1^2 (0.01x^2+0.1x+0.25)dx = (0.01x^3/3
+% +0.05x^2+0.25x)_1^2 = (0.08/3-0.01/3)+(0.2-0.05)+(0.5-0.25)
+% = 0.25+0.15+0.02 = 0.42$
+%
+\item $\psi(x) = 0.10x+0.50i$
+%
+% $\int_1^2 (0.1x+0.5i)(0.1x-0.5i)dx = \int_1^2 (0.01x^2+0.25)dx
+% = (0.08/3-0.01/3)+(0.5-0.25)$ The difference is the (0.15) from the
+% cross terms. i.e., 0.27.
+\end{enumerate}
+\label{prob:WavefunctionProbs}
+\end{problem}
+
+% Old problem 4
+% \begin{problem}
+% A particle's wavefunction is given as $\psi(x) = A e^{-x^2/a^2}$, 
+% where $A$ and $a$ are constants.
+% \label{prob:GausWavefunction}
+% \begin{enumerate}
+% 
+% \item In the vicinity of what position(s) $x$ is the particle most 
+% likely to be found?
+% 
+% \item At what position(s) $x$ is the probability density half of 
+% its maximum value?
+%
+% \end{enumerate}
+% \end{problem}
+
+%five 
+
+\begin{problem}
+  An electron in a hydrogen atom has a spread in position typically 
+  around $\sigma_x = 5\times 10^{-11}\units{m}$.
+  \begin{enumerate}
+  \item Use the Heisenberg uncertainty relation to find a lower bound
+    on the spread in momentum, $\sigma_{p_x}$, for the electron.
+
+  \item Now find a lower bound on the spread in velocity, $\sigma_{v_x}$.
+
+%  \item Since the electron is stays within the atom, the average
+%    velocity must be zero.  Therefore the nonzero spread, $\sigma_v$, tells
+%    us the scale of typical speeds that we would find if we measured
+%    the electron's speed.  Based on your answer to part (b), do
+%    electrons in hydrogen atoms reach relativistic speeds?
+  \end{enumerate}
+\label{prob:UncertaintyHelectron}
+\end{problem}
+
+%six
+
+\begin{problem}
+  The Heisenberg uncertainty relation does not pose much of a
+  limitation on our macroscopic scale.  Consider a blow dart of mass
+  $2.5\units{g}$.  Let's imagine a measurement of the dart's position
+  with a precision limited to $1\units{$\mu$m}$.  Determine the lower 
+  bound on the spread in velocity imposed by the Heisenberg uncertainty 
+  relation.
+\label{prob:UncertaintyBlowDart}
+\end{problem}
+
+\newpage
+
+%seven
+
+\begin{problem}
+Fabrication of nano-scale devices requires the ability to position atoms
+and molecules with very small spatial spread $\sigma_x$.
+
+\begin{enumerate}
+
+\item Use Heisenberg's uncertainty principle to make a rough
+estimate of the precision by which a carbon atom (mass $2.00 \times
+10^{-26}\units{kg}$ and radius $70\units{pm}$) can be confined (i.e.,
+determine the smallest $\sigma_x$) to keep its minimum kinetic energy
+below typical molecular binding energies of around $1\units{eV}$.
+Would you expect the uncertainty principle to be a problem if you wanted
+to arrange carbon atoms in a nanotech device with a precision of around
+one-hundredth of the radius of a carbon atom?
+
+\item Repeat the calculations in part (a) for a proton (mass 
+$1.67 \times 10^{-27}\units{kg}$), also with $\langle K\rangle$ 
+below $1\units{eV}$. 
+
+\item 
+Compare your result from (b) to the
+size of the nucleus of a carbon atom ($2.7 \times 10^{-15}\units{m}$).
+What does this imply about a proton confined inside a carbon nucleus?
+I.e., what must be true for a proton to remain bound inside a carbon 
+nucleus?
+
+\end{enumerate}
+\label{prob:NanoscaleUncertainty}
+\end{problem}
+
+%eight
+
+\begin{problem}
+Back in 1975, Gordon Moore proposed that the number of transistors
+per area on integrated circuits roughly doubles every two years.
+This principle (``Moore's Law'') has worked surprisingly well for
+40 years now, with transistors introduced in 2012 as small as $22\units{nm}$
+and techniques are continually being developed to make them even 
+smaller. But Moore's Law will eventually fail due to limitations 
+imposed by the uncertainty principle.
+
+\begin{enumerate}
+\item Use the uncertainty principle to calculate the smallest spread
+$\sigma_x$ for an electron such that its minimum kinetic energy (due to
+uncertainty) is below the work function (binding energy) of silicon,
+which is $4.05\units{eV}$.  
+\item Let's assume that the smallest
+possible transistor has an area 100 times the square of the $\sigma_x$
+that you calculated in part (a).  Given the area (approximated as the square
+of $22\units{nm}$) for the best transistors from 2012, 
+if Moore's Law continues to hold into the future, roughly what year will
+transistors reach this quantum limit?  
+\end{enumerate}
+\end{problem}
+
+%nine
+
+\begin{problem}
+Explain in a few sentences why classical physics (Newtonian mechanics and 
+Electricity and Magnetism) predict that atoms with electrons
+orbiting around a nucleus are unstable and can't exist
+indefinitely.
+\end{problem}
+
+\newpage
+
+%ten
+
+\begin{problem}
+Use the uncertainty principle to estimate the minimum $\langle K\rangle$ 
+for 
+\begin{enumerate}
+\item an electron confined to a region of $50\units{pm}$ (roughly the 
+radius of a hydrogen atom); 
+\item a DNA molecule ($1.0 \times 10^{-25}\units{kg}$) confined 
+to the nucleus of a cell $3.0\units{$\mu$m}$ radius; and
+\item a $5.0\units{mg}$ grain of sand in a pill box with width 
+$2.0\units{cm}$.
+\end{enumerate}
+\label{prob:MinK}
+\end{problem}
+
+%eleven
+
+\begin{problem}
+Use the uncertainty principle to explain in 2 or 3 sentences 
+\begin{enumerate}
+\item why it is not possible for a confined particle to have zero
+kinetic energy; and
+\item why everyday-size objects (even something as small as a speck
+of dust) often seem to have zero kinetic energy, even when confined
+to a small region.
+\end{enumerate}
+\end{problem}
+
+%twelve
+
+\begin{problem}
+Given the equation $df/dx = 4.0\sin(0.25x)$, test (by direct substitution)
+to determine if the following functions are solutions.  If so, determine
+possible values of any constants.  
+\begin{enumerate}
+\item $f(x) = Bx^2$,
+\item $f(x) = B\sin(kx)$,
+\item $f(x) = B\cos(kx)$.
+\end{enumerate}
+\end{problem}
+
+%thirteen
+
+\begin{problem}
+Given the equation $d^2f/dx^2 = 5x + 6$, test (by direct substitution)
+to determine if the following functions are solutions.  If so, determine
+possible values of any constants.  
+\begin{enumerate}
+\item $f(x) = Ax^3+Bx^2+Cx$;
+\item $f(x) = A\sin(kx)$.
+\end{enumerate}
+\label{prob:SubstitutionPractice}
+\end{problem}
+
+\newpage
+
+%fourteen
+
+\begin{problem}
+{\bf Schr\"{o}dinger equation for a classically allowed situation.}
+Consider a particle of mass $m$ in a region in which the potential energy
+is constant, i.e., $U(x)=U_0$, and assume that the total energy of
+the particle $E$ is greater than the potential energy, i.e., $E>U_0$.
+(This is the case for classically allowed motion.)  To determine
+the wave function we must find a function $\psi(x)$  that satisfies
+the one-dimensional Schr\"{o}dinger equation \[ -\frac{\hbar^2}{2m}
+\frac{d^2\psi(x)}{dx^2} + U(x)\psi(x) = E\psi(x).  \]
+
+In this problem you will try three ``guesses'' for $\psi(x)$ 
+and see if they satisfy Schr\"{o}dinger's equation. The 
+three ``guesses'' are
+\begin{itemize}
+\item $\psi_1(x) = Ax^2$ 
+\item $\psi_2(x) = B\sin(kx)$
+\item $\psi_3(x) = Ce^{-\kappa x}$,
+\end{itemize}
+where $A$, $B$, $C$, $k$, and $\kappa$ are undetermined real
+constants.
+    \begin{enumerate}
+    \item Rearrange Schr\"{o}dinger's equation so that the
+    second derivative $d^2\psi/dx^2$ is alone on the left.
+    \item Plug $\psi_1(x)$ into Schr\"{o}dinger's equation and 
+    see if there is any choice for the constant $A$ that will
+    make $\psi_1(x)$ satisfy the equation for all values of $x$.
+    \item Plug $\psi_2(x)$ into Schr\"{o}dinger's equation and see
+    if there is any choice for the constants $B$ and $k$ that will
+    make $\psi_2(x)$ satisfy the equation for all values of $x$ .  
+    \item  Plug $\psi_3(x)$ into Schr\"{o}dinger's equation and see
+    if there is any choice for the constants $C$ and $\kappa$ that will
+    make $\psi_3(x)$ satisfy the equation for all values of $x$. 
+    \item You should have found that $\psi_2(x)$ can be a solution for
+    the proper choice of $k$.  Determine the wavelength of the
+    oscillations in terms of $\hbar$, $m$, $E$, and $U_0$. (i.e., solve
+    for $k$ and remember from the waves unit that $k=2\pi/\lambda$.)  
+    Is your result consistent with that predicted from the de~Broglie 
+    relationship?  (Hint: $E-U_0$ is the kinetic energy $K = p^2/2m$.  
+    Re-write things in terms of the momentum and the answer should drop 
+    into your lap.)
+    \end{enumerate}
+\label{prob:TestSchrod}
+\end{problem}
+
+% \newpage
+% fifteen
+
+\begin{problem}
+{\bf Schr\"{o}dinger equation for classically forbidden
+situation.}  Consider a particle of mass $m$ in a region with a
+constant potential energy $U_0$, and assume that the total energy of
+the particle $E$ is {\em less} than the potential energy,
+i.e., $E<U_0$.  (This isn't possible for classical motion, but continue
+anyway.)  To determine the wave function we must find a function
+$\psi(x)$ that satisfies the one-dimensional Schr\"{o}dinger equation
+\[ -\frac{\hbar^2}{2m} \frac{d^2\psi(x)}{dx^2} + U(x)\psi(x) 
+= E\psi(x).  \]
+In this problem you will try three ``guesses'' for $\psi(x)$ 
+and see if they satisfy Schr\"{o}dinger's equation. The 
+three ``guesses'' are 
+\begin{itemize}
+\item $\psi_1(x) = Ax^2$ 
+\item $\psi_2(x) = B\sin(kx)$
+\item and $\psi_3(x) = Ce^{-\kappa x}$,
+\end{itemize}
+where $A$, $B$, $C$, $k$, and $\kappa$ are undetermined real
+constants.
+    \begin{enumerate}
+    \item Rearrange Schr\"{o}dinger's equation so that the
+    second derivative $d^2\psi/dx^2$ is alone on the left.
+    \item Plug $\psi_1(x)$ into Schr\"{o}dinger's equation and 
+    see if there is any choice for the constant $A$ that will
+    make $\psi_1(x)$ satisfy the equation for all values of $x$.
+    \item Plug $\psi_2(x)$ into Schr\"{o}dinger's equation and see
+    if there is any choice for the constants $B$ and $k$ that will
+    make $\psi_2(x)$ satisfy the equation for all values of $x$.  
+    \item  Plug $\psi_3(x)$ into Schr\"{o}dinger's equation and see
+    if there is any choice for the constants $C$ and $\kappa$ that will
+    make $\psi_3(x)$ satisfy the equation for all values of $x$. 
+    \end{enumerate} 
+\end{problem}
+
+%sixteen
+
+\begin{problem}
+A special case of the quantum harmonic oscillator is described by 
+Schr\"{o}dinger's equation of the form
+\[ -\frac{d^2\psi}{dx^2} + 4x^2 \psi = E\psi.  \]
+Substitute the trial solution $\psi = Ae^{-x^2}$ and determine the value 
+of the energy $E$.
+\label{prob:harmonic_oscillator}
+\end{problem}
+
+%seventeen
+
+\begin{problem}
+\label{prob:harmonicOsc_ground}
+ The general case Schr\"{o}dinger equation for the one-dimensional
+ harmonic oscillator is
+\[ -\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + \frac{1}{2}m\omega^2 x^2 \psi
+   = E\psi.      \]
+Substitute the trial solution $\psi(x) = Ae^{-ax^2}$ (with $a>0$) 
+into this equation and determine the constants $a$ and $E$. This 
+is the ground state of the oscillator.  
+\end{problem}
+
+%eighteen, but probably leave out
+
+%\begin{problem} \label{prob:harmonicwavefn}
+%In section (4.6) we examined a trial wavefunction solution for the Schr\"{o}dinger
+%Equation describing a quantum harmonic oscillator.  The trial wavefunction was given
+%as
+%\[ \psi_2(x) = x e^{-a x^2} . \]
+
+%The Schr\"{o}dinger equation, given by Eq.(4.28) requires taking the second
+%derivative $$\psi_2^{''}(x)=\frac{d^2 \psi_2}{dx^2}$$ of this trial solution. 
+%Perform this calculation and compare your result with Eq.~(\ref{eq:2ndDerivative}).
+%\end{problem}
+
+
