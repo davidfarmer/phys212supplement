@@ -1,0 +1,10 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_3D_and_semiconductors">
+  <title>Three-Dimensional Wavefunctions and Semiconductors</title>
+  <xi:include  href="sec_3D_and_semiconductors_intro.ptx"/>
+  <xi:include  href="sec_3D_quantum.ptx"/>
+  <xi:include  href="sec_hydrogen_atom.ptx"/>
+  <xi:include  href="sec_periodic_table.ptx"/>
+  <xi:include  href="sec_conductors_semiconsuctors_insulators.ptx"/>
+  <xi:include  href="sec_diodes.ptx"/>
+  <xi:include  href="sec_3D_and_semiconductors_problems.ptx"/>
+</chapter>

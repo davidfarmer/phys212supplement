@@ -1,0 +1,32 @@
+<section xml:id="sec_bell_states">
+  <title>Bell States</title>
+  <p>
+    Not all entangled states are equally entangled.
+    Some are very nearly separable:
+    imagine tweaking the coefficients of 1/2 in <xref ref="eq_separable_state"/> to values like <m>0.49</m> and <m>0.51</m>.
+    Other states are far from separable.
+  </p>
+  <p>
+    There exist two-particle states that are,
+    in some sense, maximally entangled.
+    In these states, which are called Bell states,<fn>
+    Named after John Bell, an Irish physicist.
+    You'll be encountering more of his handiwork shortly.
+    </fn> the <m>S_z</m> value of the positron is completely determined by the <m>S_z</m> measurement on the electron.
+    One example is the following:
+    <men xml:id="eq_bell_state_example">
+      \ket{\psi} = \frac{1}{\sqrt{2}}\ket{\uparrow\uparrow} + \frac{1}{\sqrt{2}}\ket{\downarrow\downarrow}
+    </men>.
+  </p>
+  <p>
+    For an electron-positron pair in this state,
+    an electron spin measurement is equally likely to give spin up or spin down.
+    But a subsequent positron measurement will <em>always</em>
+    find the positron to have the same spin that you just measured for the electron.
+  </p>
+  <p>
+    By the way, the entanglement goes in both directions:
+    you could measure the positron spin first and collapse the state of the electron to be the same spin as the positron.
+    Also, it is possible to construct Bell states where the electron and positron spins are exactly opposite.
+  </p>
+</section>

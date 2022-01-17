@@ -1,0 +1,91 @@
+<section xml:id="sec_particle_types">
+  <title>Particle Types</title>
+  <p>
+    It appears that on the fundamental level,
+    all matter consists of particles.
+    But what are these particles?
+    How can they be distinguished and identified?
+    Are there a few basic types from which all matter is constructed?
+    These are some of the questions to be addressed in this section.
+  </p>
+  <p>
+    Now to the question of identifying particles.
+    Basically, a particle is characterized by its mass and charge,
+    but there are many other properties that contribute to identification.
+    In the relativistic momentum and energy lab from Physics 211,
+    you calculated the mass and charge of an invisible particle by invoking the conservation laws of energy and momentum.
+    You studied the reaction
+    <men>
+      \pi^- + p \to \pi^- + \pi^+ + X
+    </men>
+    and determined that particle <m>X</m> had a mass about as big as a proton,
+    but was charge neutral.
+    This was sufficient information to identify <m>X</m> as a neutron.
+  </p>
+  <p>
+    In the 1930's, the only particles known were protons,
+    neutrons, electrons, and photons.
+    As better detectors became available,
+    new particles were identified from reactions initiated by cosmic rays and as products of radioactive decay.
+    For instance,
+    when cosmic rays interact with gas in the upper atmosphere
+    <em>muons</em> are created.
+    These are negatively-charged particles that decay quickly into electrons,
+    releasing large amounts of energy by the reaction <m>\mu^- \to e^- + \mbox{energy}</m>.
+    Muons are not a part of normal matter and their existence was a puzzle for physicists.
+  </p>
+  <p>
+    Another milestone in particle physics was the discovery of the positron,
+    also known as an antielectron.
+    In 1932, Carl Anderson succeeded in identifying a positive particle in cosmic rays with the same mass as an electron.
+    Using a cloud chamber in a magnetic field,
+    he photographed an electron-like track being deflected in the opposite direction that one would expect from an electron.
+    This was the first direct evidence of an <em>antiparticle</em>
+    and served to confirm Dirac's theoretical prediction that all particles have antiparticles.
+    Since then antiparticles have been found for essentially all known particles.
+    Antiparticles have the same mass and spin as their corresponding particles,
+    but take the opposite sign for additive properties like charge.
+  </p>
+  <p>
+    Useful as these studies were,
+    the experimental physicists' dependence on naturally occurring energetic particles was very restrictive.
+    In the 1940's and 50's, particle accelerators were developed that enabled physicists to extend vastly the range of energies and particles available for study.
+    Particles like pions (<m>\pi</m>) and neutrinos (<m>\nu</m>) were found in reactions such as
+    <men>
+      p + n \to n + n + \pi^+
+    </men>,
+    and
+    <men>
+      n \to p + e^- + \nu_e
+    </men>.
+  </p>
+  <p>
+    Most of the particle physics of the 1950's and 1960's consisted of banging particles together with more and more energy and seeing what came out.
+    With higher energy accelerators,
+    more and more kinetic energy of the incident particle could be converted to rest energy of new particles.
+    An explosion of new particles,
+    with names like lambda (<m>\Lambda</m>),
+    sigma (<m>\Sigma</m>), kaon (<m>K</m>),
+    tau (<m>\tau</m>) and omega-minus (<m>\Omega^-</m>), appeared on the scene
+    (see <xref ref="table_leptons">Tables</xref>
+    through <xref ref="table_baryons"></xref>).
+    From the three or four particles known in the first third of the 20<m>^\text{ th }</m> century,
+    the list of
+    <q>elementary</q>
+    particles had grown to several hundred.
+    Fermi is said to have remarked that if he had known that there were so many particles whose properties he was expected to memorize,
+    he would have taken up botany!<fn>
+    Halliday and Resnick, Fundamentals of Physics Extended, Third Edition, John Wiley and Sons (1988), p. 1126.
+    </fn>
+  </p>
+  <p>
+    A list of particles known today would extend to many hundreds of entries.
+    The problem of devising separate symbols to name the particles long ago exhausted the resources of the Greek and Latin alphabets and numbering particles with their masses is now commonplace.
+    A database maintained by the <em>Particle Data Group</em>
+    (see <c>http://pdg.lbl.gov/</c>) contains entries like <m>\Delta</m>(1910) or <m>f'</m>(1523),
+    with a listing of the particle's properties
+    (mass, charge, spin, lifetime, etc.).
+    But to make any sense of this huge list of particles and properties,
+    we must look at the classification schemes available.
+  </p>
+</section>

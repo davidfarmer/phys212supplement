@@ -1,0 +1,28 @@
+<section xml:id="sec_uncertainty_intro">
+  <title>Introduction</title>
+  <p>
+    We concluded the last chapter with de<nbsp/>Broglie's hypothesis that all matter exhibits wave-particle duality,
+    not just light.
+    De Broglie's proposal is radical.
+    Arguing that all matter has wave-like properties turns out to have far-reaching implications whose answers fundamentally change the way we view the laws of the universe.
+    One important question is the following:
+    waves are spread out over regions of space;
+    so, <em>where is the particle</em>
+    if it is acting like a wave?
+  </p>
+  <p>
+    In this chapter,
+    we will discuss the interpretation of de<nbsp/>Broglie's waves in terms of <em>probability</em>.
+    An implication of this probabilistic description of matter waves is the well-known
+    <em>Heisenberg uncertainty principle</em>,
+    which states that a particle cannot simultaneously have a precise position and momentum.
+    We will show that the uncertainty principle ends up solving one of the failures of classical physics:
+    it explains why atoms are stable.
+    The uncertainty principle also limits our ability to measure and manipulate matter at small,
+    sub-atomic scales.
+  </p>
+  <p>
+    We finish the chapter with a generalization of de<nbsp/>Broglie's relation <mdash/> Schr&#xf6;dinger's equation <mdash/> that can be used to <em>calculate</em>
+    wavefunctions for particles.
+  </p>
+</section>

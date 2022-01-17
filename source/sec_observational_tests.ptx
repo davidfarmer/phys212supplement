@@ -1,0 +1,94 @@
+<section xml:id="sec_observational_tests">
+  <title>Observational Tests</title>
+  <p>
+    Three pieces of observational evidence can serve as a testing ground for the theories of what went on in the early universe:
+    <ul>
+      <li>
+        <p>
+          the discovery of the <m>3\Xunits{K}</m> microwave background radiation,
+        </p>
+      </li>
+      <li>
+        <p>
+          the measurement of the ratio of photons to baryons,
+        </p>
+      </li>
+      <li>
+        <p>
+          the observation of the relative abundances of hydrogen,
+          helium, deuterium, and lithium in the interstellar medium.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    Let's look at each in turn.
+  </p>
+  <p>
+    Penzias and Wilson's discovery of the
+    <m>3\Xunits{K}</m> microwave radiation in 1965 was a stunning confirmation of the Big Bang model.
+    This radiation seems to be coming from everywhere in the universe.
+    It has a <em>blackbody</em> spectrum corresponding to a body at <m>3\Xunits{K}</m>.
+    A simple calculation shows that these photons are the remnants of the Big Bang,
+    the photons that decoupled at
+    <m>\sim 10^5</m> years and have been cooling ever since!
+  </p>
+  <p>
+    The present observed ratio of photons to baryons seems to be about <m>10^9</m>.
+    Recall our previous claim that these photons are those produced during the annihilation of almost equal numbers of hadronic particles and antiparticles.
+    If Grand Unified Theories (GUTs) are correct in their description of the <m>X</m>-boson,
+    then the slightly different decay modes for
+    <m>\overline X</m> and <m>X</m> should lead to a quark excess
+    (over antiquarks)
+    of about 1 in <m>10^9</m>.
+    Various versions of GUTs are now being developed,
+    and each version will presumably lead to an estimate of the <m>X</m>-<m>\overline X</m> decay asymmetry.
+    See Problem<nbsp/> <xref ref="prob_X_asymmetry"></xref>.
+    The 1 in <m>10^9</m> figure thus provides an
+    <q>experimental</q>
+    test of various possible grand unified theories.
+    It is known so far that the simplest conceivable scheme for
+    <em>grand unification</em>
+    (so-called minimal coupling) <em>does not</em>
+    get the <m>X</m> and <m>\overline X</m> decay modes right,
+    and thus is effectively ruled out as a viable theory on observational grounds.
+  </p>
+  <p>
+    Finally let's consider the question of relative abundances of the light elements.
+    The more neutrons there were at the end of the time of nuclear synthesis,
+    the higher the ratio of helium to hydrogen would be.
+    (Ignore for the moment all the other elements;
+    these constitute less than 1% of the mass of the universe.)
+    For example,
+    if there were seven times as many protons as neutrons,
+    then in a group of sixteen baryons,
+    fourteen would be protons and two would be neutrons.
+    After combination
+    (see sketch below),
+    there is one helium nucleus (mass 4) and twelve hydrogen nuclei
+    (total mass 12).
+    The universe would then be 25% helium, by weight.
+    See <xref ref="fig_helium_abundance">Figure</xref>.
+  </p>
+  <figure xml:id="fig_helium_abundance">
+    <caption>Fourteen protons and two neutrons combine to form one
+    <m>^4</m>He nucleus, with 12 protons left over.</caption>
+    <image width="65%" source="images/helium_abundance"/>
+  </figure>
+  <p>
+    One of the things the exact proton to neutron ratio depends on is the number of different types of neutrinos that exist.
+    The more types there are,
+    the longer the neutrinos could initiate proton-to-neutron conversions
+    (inverse beta decay)
+    in the period just before nuclear synthesis,
+    and the more neutrons there would be.
+    This in turn would lead to a higher helium abundance in the present universe.
+    Using standard nuclear physics,
+    the helium abundances for two, three,
+    or four neutrino types can be calculated and compared to the observational abundance data.
+    It turns out that three neutrino types is the best fit.
+    This means that cosmology can tell us what no theoretical arguments have yet been able to show,
+    that there are just three neutrino types and thus just three generations of quarks and leptons!
+    The predictions have been confirmed recently by measuring the uncertainty in the mass of the <m>Z^0</m> boson.
+  </p>
+</section>

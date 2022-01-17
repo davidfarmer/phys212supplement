@@ -1,0 +1,134 @@
+<section xml:id="sec_spin_magnetic_moment">
+  <title>Spin Magnetic Moment in a Magnetic Field</title>
+  <p>
+    We are now ready to apply the major ideas of this chapter to some interesting examples which have important applications to medical physics,
+    chemistry,
+    and astronomy.
+  </p>
+  <p>
+    Both protons and electrons have intrinsic spin,
+    with spin quantum number <m>s = 1/2</m>
+    (both are fermions).
+    The proton also has a charge <m>q = +e</m>.
+    Classically speaking,
+    the proton is viewed as a tiny spinning charged sphere that has current loops associated with the circulating charge.
+    In the previous unit on electricity and magnetism,
+    we learned that a magnetic moment
+    <m>\vec{\mu}</m> can be associated with these circulating currents.
+    When these concepts are applied to the proton as a classical spinning charged sphere,
+    we find that the magnetic moment of the proton is proportional to the proton's intrinsic angular momentum <m>\vec{S}</m>.
+    In fact, the magnetic moment for the proton is found to be
+    <men xml:id="eq_magMoment">
+      \vec{\mu} = \frac{2 \mu_\text{p} }{\hbar} \vec{S}
+    </men>
+    where <m>\mu_\text{p}  = 1.41 \times 10^{-26}</m>  \mathrm{J/T}. Since measuring any component of <m>\vec{S}</m> results in a value of <m>\pm \frac{\hbar}{2}</m>,
+    <xref ref="eq_magMoment">equation</xref>
+    tells us that, <em>for a proton</em>,
+    <m>\vec{\mu}</m> has a magnitude of
+    <m>\mu_\text{p}</m> and points in the direction of <m>\vec{S}</m>.
+  </p>
+  <p>
+    We learned in the unit on electricity and magnetism that if a magnetic moment
+    <m>\vec{\mu}</m> is placed in a constant magnetic field <m>\vec{B}</m>,
+    there is a magnetic potential energy associated with the orientation of the magnetic moment relative to the magnetic field given as
+    <men xml:id="eq_magPotential">
+      U = - \vec{\mu} \cdot \vec{B}
+    </men>.
+  </p>
+  <p>
+    This energy is greatest when
+    <m>\vec{\mu}</m> and <m>\vec{B}</m> are pointing in opposite directions and least when pointing in the same direction.
+    If we take <m>\vec{B}</m> to be pointing in the <m>z</m>-direction such that <m>\vec{B} = B_0 \hat{z}</m>,
+    then Eqs.
+    <xref ref="eq_magMoment"></xref> and <xref ref="eq_magPotential"></xref> can be written as
+    <men xml:id="eq_magPotential2">
+      U = - \vec{\mu} \cdot \vec{B} = - \frac{2 \mu_\text{p} }{\hbar} B_0 S_z = - 2 \mu_\text{p}  B_0 m_s
+    </men>
+    where we have used equation <xref ref="eq_zComponent"/> for the <m>z</m>-component of the proton's spin.
+    Since <m>m_s = \pm 1 / 2</m> for a spin-<m>1/2</m> particle,
+    each of the orientations of the proton (spin-up or spin-down) corresponds to a different energy of the proton in the magnetic field
+    <md>
+      <mrow>U_+ = -  \mu_\text{p}  B_0 \amp  \mbox{\((m_s = +\frac{1}{2}\), spin-up)}</mrow>
+      <mrow>U_- = +  \mu_\text{p}  B_0 \amp  \mbox{\((m_s = -\frac{1}{2}\), spin-down)}  </mrow>
+    </md>.
+  </p>
+  <p>
+    Consequently,
+    the proton has a different energy depending on whether it is in the spin-up (<m>| +z \rangle</m>) state or the spin-down (<m>| -z \rangle</m>) state.
+    Therefore the states <m>| +z \rangle</m> and <m>| -z \rangle</m>,
+    in addition to being states of definite <m>z</m>-component of spin <m>S_z</m>,
+    are also states of definite energy <m>U_+</m> and <m>U_-</m>,
+    respectively.
+    Thus when placed in a magnetic field,
+    the state of the proton splits into two possible energy states,
+    as shown in <xref ref="fig_levelsplitting">Figure</xref> separated in energy by
+    <men xml:id="eq_deltaE">
+      \Delta E_\text{ proton }  \equiv |U_+ - U_-| =  2\mu_\text{p}  B_0
+    </men>.
+  </p>
+  <figure xml:id="fig_levelsplitting">
+    <caption>Splitting of energy levels of a <em>proton</em> in a magnetic field</caption>
+    <image width="73%" source="images/levelsplitting"/>
+  </figure>
+  <p>
+    <xref ref="fig_levelsplitting">Figure</xref>
+    suggests that for a spin-up proton
+    <m>| +z \rangle</m> placed in a magnetic field <m>\vec{B} = B_0 \hat{z}</m>,
+    if the proton then absorbs a photon of energy <m>E_\text{ photon } = \Delta E_\text{ proton } = 2 \mu_\text{p} B_0</m>,
+    then the proton will make a transition to the spin-down state
+    <m>| -z \rangle</m>, which has higher energy.
+    The reversal of spin component <m>S_z</m> is called <em>spin-flipping</em>.
+  </p>
+  <example xml:id="example_spinFlip">
+    <title>Spin-flip transitions of protons in a magnetic field</title>
+    <statement>
+      <p>
+        Consider a proton that is placed in a magnetic field such that it is in the spin-up state <m>| +z \rangle</m>.
+        If the magnitude of the magnetic field is <m>B_0 = 24.8 \Xunits{mT}</m>,
+        determine the frequency of the photon that would be absorbed by the proton causing it to make a transition to the spin-down state?
+      </p>
+      <p>
+        <em>Solution:</em> For the magnetic field strength given,
+        the energy difference between the spin-up and spin-down states is
+        <md>
+          <mrow>\Delta E_\text{ proton } =\mathstrut \amp  2 \mu_\text{p}  B_0</mrow>
+          <mrow>=\mathstrut \amp  2 (1.41 \times 10^{-26} \Xunits{J/T}) (24.8 \times 10^{-3} \Xunits{T})</mrow>
+          <mrow>\amp \approx\amp  6.99 \times 10^{-28} \Xunits{J} </mrow>
+        </md>.
+      </p>
+      <p>
+        Therefore the frequency associated with a photon of this energy is
+        <men>
+          f_\text{ photon }  = \frac{E_\text{ photon } }{h} = \frac{\Delta E_\text{ proton } }{h} = \frac{6.99 \times 10^{-28} \Xunits{J}}{6.63 \times 10^{-34} \Xunits{J \cdot s}} = 1.05 \times 10^{6} \Xunits{Hz} = 1.05 \Xunits{MHz}
+        </men>.
+      </p>
+      <p>
+        This frequency lies in the region of the electromagnetic spectrum associated with radio waves.
+      </p>
+    </statement>
+  </example>
+  <p>
+    Like the proton,
+    an electron also has intrinsic spin with spin quantum number <m>s = 1/2</m>.
+    In contrast to the proton,
+    the negative charge of an electron means its magnetic moment
+    <m>\vec{\mu}</m> points opposite the direction of <m>\vec{S}</m>.
+    The electron has <m>\mu_\text{e} = -9.28 \times 10^{-24} \Xunits{J/T}</m>,
+    where the negative sign denotes the opposing directions of <m>\vec{\mu}</m> and <m>\vec{S}</m>.
+    Replacing <m>\mu_\text{p}</m> with
+    <m>\mu_\text{e}</m> in <xref ref="eq_magPotential2">equation</xref>,
+    we find that the higher energy level for an electron occurs when the electron is spin-up and the lower energy level occurs when the electron is spin-down
+    (for the case where <m>\vec{B}</m> is pointing in the positive <m>z</m>-direction).
+  </p>
+  <p>
+    In a hydrogen atom,
+    the nucleus (a proton) and the electron both have spin magnetic moments.
+    Thus, the energy levels of the hydrogen atom are slightly split by the interaction between the electron spin and the nuclear spin,
+    a phenomenon known as <em>hyperfine splitting</em>.
+    When the electron's spin flips,
+    the atom transitions between two hyperfine energy levels and a photon can be emitted or absorbed in the process.
+    Because so much of the gas composing galaxies is neutral hydrogen,
+    this spin-flip transition allowed astronomers to map the spiral structure of the Milky Way for the first time.
+    In your homework, you'll take a closer look at hyperfine splitting.
+  </p>
+</section>

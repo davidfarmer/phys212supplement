@@ -1,0 +1,97 @@
+<section xml:id="sec_eightfold_way">
+  <title>The Eightfold Way and Quarks</title>
+  <p>
+    In the 1960's, newer and bigger accelerators came on line,
+    and the proliferation of newly created particles continued.
+    There are now literally hundreds of so-called elementary particles.
+    A classification scheme was needed,
+    and in 1962 Murray Gell-Mann and Yuval Ne'eman proposed the Eightfold Way.
+    Shortly thereafter, Gell-Mann suggested that the various hadrons were actually composed of yet smaller entities called quarks.
+  </p>
+  <p>
+    Gell-Mann and Ne'eman studied the relationships among various groups of particles.
+    They were looking especially for ways to organize the hadrons into groups with common dynamical properties.
+    For instance, particles that differ only in charge
+    (and slightly in mass)
+    are already given the same symbol
+    (like <m>\Sigma^+</m>, <m>\Sigma^0</m>, and <m>\Sigma^-</m>).
+    Experimental evidence indicates that these particles behave identically during strong interactions.
+    There is also good evidence from nuclear physics that the strong interaction does not depend on a particle's charge.
+    Another way to describe this independence is to say that the strong interaction possesses charge symmetry.
+  </p>
+  <p>
+    Another common dynamical property among hadrons seems to be strangeness.
+    Particles differing only in strangeness
+    (and slightly in mass)
+    are observed to behave identically during strong interactions.
+    Thus, the strong interaction also possesses strangeness symmetry.
+  </p>
+  <p>
+    Let's see how Gell-Mann and Ne'eman used these symmetry ideas to group the hadrons.
+    The classification scheme they devised, called the Eightfold Way,
+    grouped together hadrons having the same spin and baryon number but different charge and strangeness.
+    Because of charge and strangeness symmetry,
+    the particles within one group should be interchangeable with respect to their behavior in strong interactions and have masses in a fairly small range.
+  </p>
+  <figure xml:id="fig_baryon_SvsQ">
+    <caption>Strangeness vs.<nbsp/>charge plot for the eight spin 1/2
+    baryons.</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/baryon_SvsQ"/>
+      <image width="92.5%" source="images/meson_SvsQ"/>
+    </sidebyside>
+  </figure>
+  <p>
+    As an example, let's look at the eight known spin 1/2 baryons.
+    The upper part of <xref ref="table_baryons">Table</xref> lists their properties.
+    They all have the same spin and baryon number,
+    and their masses are in a fairly small range
+    (about 0.940 to <m>1.340\Xunits{GeV/ c^2 }</m>).
+    They do differ in charge and strangeness however.
+    When one plots the particles on a strangeness versus charge plot,
+    a distinctive hexagonal pattern emerges.
+    See <xref ref="fig_baryon_SvsQ">Figure</xref>.
+  </p>
+  <p>
+    Gell-Mann and Ne'eman noticed that this hexagonal pattern is the same as that which arises in the mathematical <em>group</em>
+    of <m>3\times 3</m> matrices called <m>\mathrm{SU}(3)</m>.
+    An important property of these matrices is that they can all be expressed in terms of eight special basis matrices.
+    Although a detailed explanation of the theory of groups is far beyond the scope of this text,
+    some development of the correspondence between particle plots and matrices is in order.
+  </p>
+  <p>
+    If we look at the strangeness versus charge plot,
+    we find that there are certain motions that go from one particle to another.
+    One can move along any of the three directions parallel to the sides of the hexagon.
+    The two horizontal motions
+    (left or right)
+    correspond to the symmetry that increases or decreases the charge by one unit.
+    The two vertical motions
+    (up or down)
+    correspond to increasing or decreasing the strangeness by one unit.
+    Finally, the diagonal motions will change both charge and strangeness by one unit.
+    These six operations,
+    plus one for measuring a particle's charge and another for measuring strangeness,
+    correspond to the eight basis matrices for the group of <m>3\times 3</m> matrices,
+    and lead to the name Eightfold Way.
+    The Eightfold Way is also a term from Eastern philosophy and refers to the steps along the Buddhist path to enlightenment.
+    But don't read too much into the name: Gell-Mann was just having fun with it.
+  </p>
+  <p>
+    Let's see how the Eightfold Way gives some structure to a different set of particles,
+    the nine known spin zero mesons.
+    Again, locating the particles on a strangeness versus charge plot shows the hexagonal pattern.
+    The operations that change or measure charge and strangeness are similar to those for the baryons.
+  </p>
+  <p>
+    It turns out that all the known particles fit into similar patterns.
+    In fact, Gell-Mann was so convinced that his patterns were correct that,
+    when he found a hole in the spin 3/2 baryons' pattern,
+    he predicted the existence of a new particle and described its properties.
+    Within weeks of his 1962 prediction,
+    the <m>\Omega^-</m> particle,
+    with the correct properties,
+    was discovered in bubble chamber photographs at Brookhaven National Laboratory,
+    providing strong experimental confirmation of Gell-Mann's theory.
+  </p>
+</section>

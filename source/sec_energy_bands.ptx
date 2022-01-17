@@ -1,0 +1,84 @@
+<section xml:id="sec_energy_bands">
+  <title>Energy Bands</title>
+  <p>
+    Quantized energies are found for particles confined in any system,
+    not just the infinite or finite square well potentials.
+    Schr&#xf6;dinger's Equation can be solved to determine the allowed energies for particles in any potential energy function.
+    (In fact, determining allowed energies for electrons in atoms is one fundamental aspect of physical chemistry.)
+    Each element
+    (and molecule)
+    has its own pattern of energy levels.
+    As we'll see later this chapter,
+    this has implications for the light that is absorbed and emitted by different elements and molecules.
+  </p>
+  <p>
+    But in addition to the case of a single electron trapped in a single potential well,
+    there are many systems composed of multiple electrons trapped in a repeating pattern of potential wells.
+    Consider a chunk of aluminum in a crystalline pattern,
+    for example.
+    The nuclei of the aluminum atoms produce a potential energy function that has repeating energy wells that mobile electrons experience.
+  </p>
+  <p>
+    An interesting thing happens to the quantized energy levels when there is more than one side-by-side potential well.
+    For simplicity,
+    we will consider the case of side-by-side, 1D, finite square-well potentials.
+    <xref ref="fig_PeriodicPotentials">Figure</xref>) shows a representation of what happens to the energy levels when more and more square-well potentials are added to the system.
+    Each energy level in the single finite-well potential
+    (<xref ref="fig_PeriodicPotentials">Figure</xref>a)
+    splits into two nearby levels for the double-well potential
+    (<xref ref="fig_PeriodicPotentials">Figure</xref>b).
+    If there are four side-by-side potential wells
+    (<xref ref="fig_PeriodicPotentials">Figure</xref>c),
+    there are four energy levels clustered around each value.
+    As the number of side-by-side wells increases,
+    the number of energy levels in each
+    <q>band</q>
+    increases accordingly.
+  </p>
+  <figure xml:id="fig_PeriodicPotentials">
+    <caption>Allowed energy levels for (a) infinite square well potential;
+    (b) double, side-by-side potential wells, separated by a thin, finite
+    barriers; and (c) four side-by-side potential wells.</caption>
+    <image width="84%" source="images/PeriodicPotentials"/>
+  </figure>
+  <p>
+    In a real solid
+    (such as aluminum),
+    there are many, many, many side-by-side potential wells,
+    so many that it becomes difficult to distinguish the individual energy levels within each band
+    (<xref ref="fig_bands">Figure</xref>).
+    They are still there <mdash/> in the figure,
+    it may look like a continuous band of allowed energies,
+    but there are still a finite number of allowed energy levels
+    (although a <em>very</em> large number of finite values)
+    in each energy band.
+    So, even though the energies appear continuous within each band,
+    they are still quantized.
+  </p>
+  <figure xml:id="fig_bands">
+    <caption>Valence and conduction bands for a typical solid composed of
+    many atoms. Each of these bands contains a large (but finite) number of
+    discrete energy levels.</caption>
+    <image width="46%" source="images/EnergyBands"/>
+  </figure>
+  <p>
+    In <xref ref="fig_bands">Figure</xref>,
+    we show only two bands of allowed energies,
+    although there are typically more.
+    The valence band is the highest energy band that is typically filled with electrons.<fn>
+    As we will see in <xref ref="chap_quantum_statistics">Chapter</xref>,
+    the Pauli Exclusion Principle argues that two electrons cannot occupy the same state,
+    so there is a finite number of electrons that can have energies in any band in a solid.
+    </fn> The conduction band always has available energy levels that are unoccupied.
+    In <xref ref="chap_3D_and_semiconductors">Chapter</xref>,
+    we'll discuss how the band structure discussed here is important in understanding electrical conductivity for solids,
+    and how the quantum properties of these bands have been used to develop some of the most important building blocks of modern electronics.
+  </p>
+  <figure xml:id="fig_absorption_emission">
+    <caption>(a) Absorption of a single photon, causing an electron in
+    the material to jump up to a higher (unoccupied) energy state. (b) Emission
+    of a photon by an electron that drops from a higher to lower energy
+    state.</caption>
+    <image width="46%" source="images/absorption_emission"/>
+  </figure>
+</section>

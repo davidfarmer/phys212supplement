@@ -1,0 +1,193 @@
+<section xml:id="sec_photons_interacting_matter">
+  <title>Photons Interacting with Matter</title>
+  <introduction>
+    <p>
+      In the previous section we argued why the photon picture resolved the dilemma of the UV catastrophe,
+      but many physicists at the time that Einstein proposed photons were skeptical of the idea.
+      But contained in Einstein's brilliant suggestion was the potential for a quantitative test of the idea,
+      through a phenomenon called the photoelectric effect.
+      This is the work for which he was awarded his only Nobel Prize.<fn>
+      Einstein should have received five Nobel Prizes,
+      for special relativity, the photoelectric effect, Brownian motion
+      (which demonstrated the existence of atoms),
+      general relativity, and Bose-Einstein condensation.
+      </fn>
+    </p>
+    <figure xml:id="fig_photoelectric_sketch">
+      <caption>A sketch of the photoelectric effect: light shines on a metal,
+      and electrons are released from the surface.</caption>
+      <image width="52%" source="images/photoelectric_sketch"/>
+    </figure>
+  </introduction>
+  <subsection>
+    <title>Photoelectric Effect</title>
+    <p>
+      Metals are materials in which electrons are free to move around <mdash/> this is why metals are good conductors,
+      why they are shiny, etc.
+      But the electrons cannot just freely hop off the surface.
+      They are bound to remain inside the material by a binding energy <m>U_\text{ bind }</m>.
+      It was discovered at the close of the 19<m>^\text{ th }</m> century that some electrons can be made to fly off the surface of a metal by shining light on it,
+      as sketched in <xref ref="fig_photoelectric_sketch">Figure</xref>.
+      This should seem reasonable:
+      the EM wave gives some extra energy to the electrons,
+      allowing them to break free of their binding to the metal.
+      The electron
+      <q>pays off</q>
+      its binding energy debt and leaves with the remaining energy in the form of kinetic energy.
+    </p>
+    <p>
+      Let's focus on how this effect should depend on the intensity and the frequency of the light.
+      With classical EM waves,
+      increasing the amplitude of the wave should cause a stronger force on the electrons and give them more energy.
+      This would suggest that increasing the intensity of light should increase the energy given to the electrons and they should come off with a higher final speed.
+      Also, the classical EM wave picture would predict that it should be possible to eject electrons from the metal for any frequency of light,
+      as long as the intensity is high enough.
+    </p>
+    <p>
+      By 1905 there were qualitative indications that this was not what was happening in experiments,
+      and Einstein's photon hypothesis provided a quantitative theory that could be tested experimentally.
+      In Einstein's theory,
+      which was quantitatively verified by experiments in 1916,
+      the intensity of the light has <em>no effect</em>
+      on the kinetic energy of the emitted electrons <mdash/> it is the frequency of the light that is related to the kinetic energy.
+      Shining low frequency light on the material results in no electrons being emitted,
+      regardless of the intensity, and when electrons are emitted,
+      the kinetic energy increases linearly with the frequency of the light.
+      The experimental results are illustrated graphically in the <xref ref="fig_photoelectric_data">Figure</xref>.
+    </p>
+    <figure xml:id="fig_photoelectric_data">
+      <caption>Left: the maximum kinetic energy of the emitted electrons is
+      independent of the intensity of light.  Also, electrons are not
+      emitted regardless of the intensity of light if the frequency <m>f</m> is
+      below some cutoff value <m>f_c</m>.  Right: the maximum kinetic energy of
+      the emitted electrons does depend on frequency, and the slope of the
+      graph is equal to Planck's constant.</caption>
+      <image width="93%" source="images/photoelectric_data"/>
+    </figure>
+    <p>
+      Einstein's theory of the photoelectric effect is based on the following key assumption:
+    </p>
+    <p>
+      <assemblage>
+        <p>
+          In the microscopic world of atoms and subatomic particles,
+          light interacts with matter in the form of
+          <em>single photons</em>.
+        </p>
+      </assemblage>
+    </p>
+    <p>
+      This means light of frequency <m>f</m> can only give a single photon's energy to an electron.
+      That photon, with energy <m>E_\text{ ph }  =hf</m>,
+      might or might not have enough energy to free the electron from the metal.
+      If the photon energy is below the binding energy (<m>E_\text{ ph }  \lt U_\text{ bind }</m>),
+      then no electrons will escape.
+      Since <m>E_\text{ ph }  = hf</m>,
+      this sets the cutoff frequency <m>f_c</m> when <m>E_\text{ ph }  = hf_c = U_\text{ bind }</m>.
+      If the photon energy is greater than the binding energy holding the electron to the metal (<m>E_\text{ ph }  > U_\text{ bind }</m>),
+      then the electron might escape
+      (it can always squander the energy and head off in the wrong direction,
+      or bump into an impurity in the metal).
+      But of those electrons that do escape,
+      there will be an <em>upper limit</em>
+      to their kinetic energy given by
+      <md>
+        <mrow>K_\text{ max }  =\mathstrut \amp  E_\text{ ph }  - U_\text{ bind }</mrow>
+        <mrow>=\mathstrut \amp  hf - U_\text{ bind } </mrow>
+      </md>.
+    </p>
+    <p>
+      That upper limit is obtained when the electron uses the energy absorbed from the photon optimally.
+      Note that the maximum electron kinetic energy depends only on the frequency of the light and not on its intensity.
+      This was Einstein's bold prediction,
+      and it was confirmed experimentally by Millikan,
+      who measured <m>K_\text{ max }</m> for various frequencies and found data of the form sketched on the right in <xref ref="fig_photoelectric_data">Figure</xref>.
+    </p>
+    <p>
+      Thus we see that the photon picture explains the experimental results for the photoelectric effect perfectly.
+      It also provides a quantitative measurement of Planck's constant <m>h</m> from the slope of the
+      <m>K_\text{ max }</m> versus <m>f</m> plot.
+    </p>
+    <example>
+      <title>Electrons emitted from copper</title>
+      <statement>
+        <p>
+          Copper has a binding energy of <m>4.7\Xunits{eV}</m>.
+          For light of <em> (a)</em> <m>200\Xunits{nm}</m> and <em>(b)</em>
+          <m>400\Xunits{nm}</m> shining on a piece of copper,
+          determine whether electrons are emitted and,
+          in the case they are emitted,
+          calculate their maximum kinetic energy.
+        </p>
+        <p>
+          <em>Solution: </em> First we calculate the photon energy.
+          A handy trick for getting photon energies in electron volts is the following:<fn>
+          The relation <m>hc=1240\Xunits{eV \cdot nm}</m> can save a lot of calculator typing for problems with photon energies in eV and wavelengths in nm.
+          </fn>
+          <men>
+            E_\text{ ph }  = hf = \frac{hc}{\lambda} =\frac{1240\Xunits{eV \cdot nm}}{\lambda}
+          </men>.
+        </p>
+        <p>
+          For (a), <m>\lambda = 200\Xunits{nm}</m>, so the photon energy is
+          <men>
+            E_\text{ ph } = \frac{1240\Xunits{eV \cdot nm}}{200\Xunits{nm}} = 6.2\Xunits{eV}
+          </men>.
+        </p>
+        <p>
+          When the photon is absorbed by the electron,
+          the electron gains enough energy to pay off its binding energy debt and escape with
+          <men>
+            K_\text{ max }  = E_\text{ ph }  - U_\text{ bind }  = 6.2 - 4.7 = 1.5\Xunits{eV}
+          </men>.
+        </p>
+        <p>
+          For (b) we have a photon energy of <m>1240/400= 3.1\Xunits{eV}</m>.
+          This is less than the binding energy,
+          so no electrons will be emitted.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Ionization</title>
+    <p>
+      Einstein's basic idea that photons are the energy chunks in the interaction of light with matter is able to explain more phenomena than just the photoelectric effect.
+      For example,
+      an electron in an atomic orbital is held in the atom by some binding energy.
+      For the case of hydrogen <mdash/> which is just a single electron orbiting a single proton <mdash/> the electron is usually in the lowest energy state possible,
+      called the ground state.
+      In the hydrogen ground state the binding energy for the electron is <m>13.6\Xunits{eV}</m>.
+      When lower frequency radiation (EM waves) shines on a gas of hydrogen,
+      then none of the electrons are freed from their atomic orbitals.
+      Radiation of higher frequency is able to liberate electrons from their host nucleus,
+      creating <em>ionized hydrogen</em>.
+      This higher frequency radiation is called,
+      rather sensibly, ionizing radiation.
+    </p>
+    <p>
+      This idea extends beyond simple hydrogen.
+      EM waves frequently induce chemical reactions,
+      from a photographic plate to photosynthesis to mutation of DNA. That is,
+      the energy of the absorbed photon is being used to break and possibly re-arrange some chemical bonds.
+      In the case of DNA mutation,
+      the relevant energy scale of the chemical bonds is in the 0.1 to
+      <m>10\Xunits{eV}</m> range; EM waves with photon energies comparable to or greater than these binding energies can cause mutations.
+      <em>This is a known mechanism for explaining why exposure to EM radiation with certain frequencies can cause cancer in humans.</em>
+      The photon nature of light is also critical for understanding various photo-detectors,
+      including the sensors in the digital camera in your cell phone.
+      We will explore these ideas in the assigned problems and in subsequent chapters.
+    </p>
+    <p>
+      Finally, we conclude this section with an important point:
+      light had previously been considered to be exclusively a wave phenomenon,
+      but with photons it has been shown to have particle characteristics.
+      But it's not an either/or situation.
+      It is not the case that the wave description is wrong;
+      after all, you have seen the interference phenomena yourself in lab.
+      So we are led to acknowledge that light can be both wave-like and particle-like.
+      What it does in a particular experiment depends on what the experiment is measuring.
+      This is very strange!
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,160 @@
+<section xml:id="sec_single_slit_diffraction">
+  <title>Single-Slit Diffraction</title>
+  <figure xml:id="singleSlitPhases">
+    <caption>Subdividing a single
+    slit of width <m>a</m> into <m>N</m> pieces of width <m>a/N</m>.</caption>
+    <image width="46%" source="images/singleSlitPhases"/>
+  </figure>
+  <p>
+    We've been assuming that all the slits used to produce diffraction patterns were very narrow.
+    This meant that the distance from any point on the slit to a given point on the distant screen was the same.
+    But what if we have a wide slit? (By wide,
+    we mean a slit whose width <m>a</m> is comparable to or larger than the wavelength <m>\lambda</m>,
+    but still very small compared with the distance to the screen <m>L</m>. ) For such a slit the light from different parts of the slit may travel different distances on its way to the screen,
+    and end up with different phase shifts.
+    This seems like a complicated problem,
+    but fortunately our phasor techniques are up to the job.
+  </p>
+  <p>
+    Here's the basic idea:
+    we'll divide the wide slit up into a bunch of narrow sub-slits.
+    We'll calculate the phasor corresponding to the wave from each sub-slit.
+    And we'll add the phasors together to get a total amplitude.
+  </p>
+  <p>
+    Specifically, let's call the width of the slit <m>a</m>,
+    and divide the slit into <m>N</m> pieces of width <m>a/N</m> as shown in <xref ref="singleSlitPhases">Figure</xref>.
+    We'll keep <m>N</m> a variable,
+    since we may want to divide the slit into 100 pieces,
+    or 1000, or 10,000, or even take the limit <m>N\rightarrow\infty</m>.
+    The phase difference between any two of our adjacent sub-slits is
+    <men>
+      \Delta\phi_{ adj.} = \frac{2\pi \Delta r_{ adj.}}{\lambda}
+    </men>.
+  </p>
+  <p>
+    And since the distance between two adjacent sub-slits is <m>d=a/N</m>,
+    the adjacent path-length difference is
+    <men>
+      \Delta r_{ adj.} = d\sin\theta= \frac{ a}{N} \sin\theta
+    </men>,
+    and the adjacent phase difference is
+    <men>
+      \Delta\phi_{ adj.} = \frac{2\pi a}{N\lambda}\sin\theta
+    </men>.
+  </p>
+  <p>
+    We'll assume each sub-slit is equally illuminated,
+    so the out-going wave from each sub-slit has the same amplitude <m>A</m>.
+    (Of course, as we divide the slit into more pieces,
+    the light power in each piece will go down,
+    so <m>A</m> will decrease.
+    But for a fixed value of <m>N</m> the amplitude <m>A</m> is just a constant.)
+  </p>
+  <figure xml:id="manySlitPhasorsGenFig">
+    <caption>General phasor diagram for the
+    single-slit diffraction pattern.</caption>
+    <image width="46%" source="images/manySlitPhasorsGeneral"/>
+  </figure>
+  <p>
+    We can now draw our phasor diagram.
+    It consists of <m>N</m> equal-length phasors,
+    each rotated by <m>\Delta\phi_{ adj.} = \frac{2\pi a}{N\lambda}\sin\theta</m> relative to its neighbor,
+    as seen in <xref ref="manySlitPhasorsGenFig">Figure</xref>.
+    The final phasor is rotated by <m>N</m> times <m>\Delta\phi_{ adj.}</m>, or
+    <men>
+      \Delta\phi_{ tot.}=\frac{2\pi a}{\lambda}\sin\theta
+    </men>.
+  </p>
+  <p>
+    (Note that this is the same as the phase difference between the phasor from the top of the slit and phasor from the bottom of the slit.) Since the lengths and angles in our phasor diagram are all equal,
+    the phasors together constitute a piece of a regular polygon.
+    Now imagine making <m>N</m> big.
+    For large enough <m>N</m>,
+    the regular polygon is indistinguishable from a circle.
+    So our phasor diagram is really just a circular arc.
+  </p>
+  <p>
+    Now we have all the information we need to calculate the amplitude of the diffraction pattern at some point on the screen.
+    Straight ahead at <m>\theta=0</m>,
+    the total phase difference is <m>\Delta\phi_\text{ tot. } = 0</m>,
+    so the phasor diagram is just a straight line,
+    with all the phasors pointing in the same direction,
+    as shown in <xref ref="manySlitPhasorsMaxFig">Figure</xref>.
+    As for our earlier double- and triple-slit interference patterns,
+    this must be a maximum,
+    since our chain of <m>N</m> phasors of length <m>A</m> is stretched as far from the origin as it can get, i.e.
+    <m>NA</m>.
+    If we move a certain distance away on the screen,
+    to angular position <m>\theta</m>,
+    the phasor diagram becomes a circular arc with the same length (<m>NA</m>),
+    starting horizontally at the origin and ending with its tangent at an angle <m>\Delta \phi_\text{ tot } = 2\pi a\sin\theta/\lambda</m>.
+    The resultant phasor is the chord of the circle,
+    stretching from the origin to the ending point.
+    By looking at <xref ref="manySlitPhasorsGenFig">Figure</xref>
+    we can see that the amplitude is smaller now,
+    since the phasors are no longer all pointing in the same direction.
+    By adding these phasors and doing some geometry,
+    we can now figure out how bright the pattern is anywhere on the screen.
+  </p>
+  <figure xml:id="manySlitPhasorsMaxFig">
+    <caption>Phasor diagram for the maximum of the
+    single-slit diffraction pattern.</caption>
+    <image width="46%" source="images/manySlitPhasorsMax"/>
+  </figure>
+  <example xml:id="exampleSingleSlit">
+    <title>Minimum of Single-Slit Diffraction Pattern</title>
+    <statement>
+      <p>
+        Light of wavelength <m>600\Xunits{nm}</m> illuminates a slit of width <m>2\,\mu</m>m.
+        Find the distance between the central maximum and the neighboring minimum on a screen <m>1.5\Xunits{m}</m> away.
+      </p>
+      <p>
+        <em>Solution:
+        </em> We want to find a minimum of the diffraction pattern,
+        i.e., a point at which the total amplitude goes to zero.
+        Then the starting point of our <m>N</m>-phasor diagram must be the same as the ending point,
+        so that the resultant has length zero.
+        How do we make a circular arc end up where it started?
+        By closing the circle,
+        as shown in <xref ref="manySlitPhasorsMinFig">Figure</xref>.
+        From the diagram, we can read off the phase difference
+        <m>\Delta\phi_\text{ tot }</m> between the first and last phasor<ndash/>the first phasor points right,
+        by the top of the circle it has rotated
+        <m>180^\circ</m> or <m>\pi</m> radians to point left, and by the end,
+        it has rotated around to <m>360^\circ</m> or <m>2\pi</m> radians.
+        Or, in other words,
+        going in a complete circle means rotating by <m>\Delta\phi_\text{ tot } =2\pi</m> radians.
+      </p>
+      <p>
+        Now we want to calculate where on the screen this minimum occurs.
+        From here on out,
+        it's the same calculation we've done with other slit patterns:
+        <md>
+          <mrow>\Delta\phi_\text{ tot } =2\pi\amp =\frac{2\pi a}{\lambda}\sin\theta</mrow>
+          <mrow>\lambda \amp = a\sin\theta</mrow>
+          <mrow>600\times 10^{-9}\,\text{m}  \amp = 2\times 10^{-6}\,\text{m}  \sin\theta</mrow>
+          <mrow>\theta\amp =\arcsin \left( \frac{6\times 10^{-7}}{2\times 10^{-6}} \right) =  \arcsin \left(0.3\right) = 0.305\,\text{ rad }</mrow>
+        </md>
+      </p>
+      <p>
+        Now, by the geometry of the right triangle formed by the line to the minimum on the screen,
+        the line to the central maximum, and the screen itself,
+        we can calculate the desired distance on the screen:
+        <md>
+          <mrow>y \amp = L \tan\theta</mrow>
+          <mrow>y\amp =1.5\,\text{m}  \tan\left( 0.305 \right)= \fbox{\,\,0.472\,m}</mrow>
+        </md>
+      </p>
+    </statement>
+  </example>
+  <figure xml:id="manySlitPhasorsMinFig">
+    <caption>Phasor diagram for a minimum of the
+    single-slit diffraction pattern.</caption>
+    <image width="37%" source="images/manySlitPhasorsMin"/>
+  </figure>
+  <figure xml:id="singleSlitFig">
+    <caption>Single-slit diffraction pattern.</caption>
+    <image width="54%" source="images/singleSlitPattern"/>
+  </figure>
+</section>

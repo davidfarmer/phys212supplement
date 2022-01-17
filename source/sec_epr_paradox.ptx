@@ -1,0 +1,137 @@
+<section xml:id="sec_epr_paradox">
+  <title>EPR Paradox</title>
+  <p>
+    You may have heard at some point that Einstein never accepted quantum mechanics.
+    There is a grain of truth in it: Einstein did not dispute the predictions of quantum theory,
+    but he never believed that quantum mechanics was a
+    <em>complete</em> theory.
+    For example,
+    he did not accept the idea that a particle does not have a definite position.
+    He was convinced that there must be some more information available that we simply haven't understood yet,
+    and that if we could work out this additional aspect to the theory then particles would once again have precise positions,
+    as in classical physics.
+    This additional information,
+    which is not in the quantum theory but Einstein felt must be a part of reality,
+    is called a <em>hidden variable</em>.
+  </p>
+  <p>
+    In trying to prove his point, Einstein,
+    along with Podolsky and Rosen,
+    formulated a thought experiment that leads to an apparent paradox,
+    called the EPR paradox.
+    Specifically,
+    consider creating an electron-positron pair in the Bell state
+    <men xml:id="eq_epr_bell_state">
+      \ket{\psi} = \frac{1}{\sqrt{2}}\ket{\uparrow\downarrow} - \frac{1}{\sqrt{2}}\ket{\downarrow\uparrow}
+    </men>.
+  </p>
+  <p>
+    This is fairly easy to do:
+    our particle accelerators create many electron-positron pairs in their collision events,
+    and conservation of angular momentum requires that the pair have a total angular momentum of zero.
+    Hence, they pop into existence in precisely this Bell state.
+  </p>
+  <p>
+    Now imagine that you have physically separated the electron-positron pair without disturbing their spin states.
+    Maybe, by chance,
+    you get a pair heading directly away from each other,
+    and you keep them from interacting with any other particles until they are a full meter away from each other.
+  </p>
+  <figure xml:id="fig_epr_experiment">
+    <caption>The EPR thought experiment.  An electron-positron pair is
+    created in state <m>\ket{\psi}</m> given in <xref ref="eq_epr_bell_state"/>.
+    The particles are physically separated and then their spins are measured by
+    Stern-Gerlach devices.</caption>
+    <image width="75%" source="images/epr_experiment"/>
+  </figure>
+  <p>
+    After they are separated,
+    you send the electron through a Stern-Gerlach device to measure its <m>S_z</m> spin component,
+    as shown in <xref ref="fig_epr_experiment">Figure</xref>.
+    The result is random, with an equal chance of spin up or spin down.
+    But as soon as you have made that measurement,
+    the positron spin is no longer random.
+    Essentially,
+    you have collapsed the state of both particles in that instant,
+    even though they are separated by a meter.
+  </p>
+  <p>
+    If that doesn't seem strange,
+    imagine first letting the particles get a kilometer apart and then doing the measurement.
+    Or even a light year apart.
+    Quantum theory says the distance is irrelevant:
+    if you can get the particles entangled and keep them entangled,
+    then collapse of state due to a measurement
+    <q>travels</q>
+    from one particle to the other instantly,
+    regardless of their separation.
+    This is what Einstein referred to as
+    <q>spooky action at a distance.</q>
+    And he felt that this argument proved that quantum mechanics was not a complete theory.
+  </p>
+  <p>
+    It is worth emphasizing again that Einstein did not dispute the result predicted by quantum theory.
+    But he thought a more natural explanation was that the state
+    <m>\ket{\psi}</m> in <xref ref="eq_epr_bell_state"/> is not really a complete description of the electron-positron pair.
+    Rather, there is some more information,
+    the <em>hidden variable</em>,
+    which if understood would cause these measurements to be not mysterious at all.
+    It helps to have a specific example of a hidden variable theory in mind to digest this.
+  </p>
+  <example xml:id="example_hidden_variable_theory">
+    <title>A Hidden Variable Theory</title>
+    <statement>
+      <p>
+        Imagine that,
+        contrary to what you learned about quantum mechanical spin in <xref ref="chap_spin">Chapter</xref>,
+        an electron really does have a definite spin vector <m>\vec S</m> with all three components precisely determined.
+        None of this probability stuff.
+        So this <m>\vec S</m> vector is the hidden variable.
+      </p>
+      <p>
+        We can reconcile this idea with the Stern-Gerlach experiment by claiming that we don't completely understand spin measurement.
+        When we measure <m>S_z</m>,
+        we somehow end up getting the value
+        <m>+\hbar/2</m> any time that <m>\vec S</m> has a positive <m>z</m>-component.
+        And we end up measuring the value
+        <m>-\hbar/2</m> any time <m>\vec S</m> has a negative <m>z</m>-component.
+      </p>
+    </statement>
+  </example>
+  <p>
+    This simple example of a hidden variable theory explains the EPR experimental results in a straightforward way.
+    The electron-positron pair are created with net angular momentum of zero,
+    so we must have <m>\vec S^\text{ elec } = -\vec S^\text{ pos }</m>.
+    These <m>\vec S</m> vectors are established at the beginning,
+    when the two particles are in contact.
+    And while we don't know the value of either
+    <m>\vec S^\text{ elec }</m> or <m>\vec S^\text{ pos }</m>,
+    we do know their <m>z</m>-components have opposite sign.
+    So the EPR experiment will always give opposite signs for the electron and positron <m>S_z</m> components,
+    but not due to any communication at a distance.
+  </p>
+  <p>
+    This is a pretty compelling argument!
+    But interestingly,
+    the EPR paradox did not sway most physicists to abandon quantum mechanics.
+    One reason was that Bohr showed that this instantaneous state collapse across a large distance did not actually violate special relativity.
+    No actual object travels from the electron to the positron.
+    But more significantly, no actual information travels either:
+    the person measuring the electron cannot send a signal via the state collapse (
+    <q>spin up if by land, spin down if by sea</q>
+    ) because they cannot control what they will find for the electron spin.
+    They just get a sequence of random results,
+    and the positron measurer also gets a sequence of random results.
+    Comparison later reveals that the random results are connected:
+    every time the electron observer measures <m>S_z^\text{ elec }</m> to be spin up,
+    the positron observer measures
+    <m>S_z^\text{ pos }</m> to be spin down and visa versa.
+  </p>
+  <p>
+    The main reason that the EPR paradox did not push physicists to abandon quantum mechanics, though,
+    is that it didn't seem to matter.
+    After all, the hidden variable theories predicted the same results as quantum mechanics.
+    Since physicists knew how to use quantum mechanics and it kept giving successful predictions about the microscopic world,
+    there was little motivation to worry about whether we should replace quantum mechanics with a hidden variable theory.
+  </p>
+</section>

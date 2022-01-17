@@ -1,0 +1,193 @@
+<section xml:id="sec_absorption_emission">
+  <title>Absorption, Emission, and Spectroscopy</title>
+  <p>
+    Okay, we are now ready to address some questions that you might have asked when you were a kid:
+    <q>Why is a tomato red?</q>
+    or
+    <q>How do glow-in-the-dark shirts work?</q>
+    or
+    <q>Why is it that black-light illumination
+    (which looks kinda deep violet in color)
+    cause certain pigments to glow orange</q>
+    or
+    <q>Why do certain laundry detergents make my clothes look so unnaturally bright white?</q>
+    These questions all fall under the category of the topic of photophysics or photochemistry,
+    i.e., the physics and chemistry of how light interacts with matter.
+    In addition to providing answers to these questions,
+    this subject also relates to the important topic of <em>spectroscopy</em>
+    which is a critical diagnostic technique that spans all fields of science and engineering.
+  </p>
+  <p>
+    There are a few different ways in which light
+    (and any electromagnetic radiation)
+    can interact with matter,
+    but two important processes are absorption and emission of individual photons of light.
+    <xref ref="fig_absorption_emission">Figure</xref> shows these two processes.
+    If a photon strikes a material,
+    it can be absorbed by an electron,
+    resulting in an increase in the energy of that electron from an initial (lower) value <m>E_1</m> to a higher value <m>E_2</m>,
+    as shown in <xref ref="fig_absorption_emission">Figure</xref>a.
+    This process must conserve energy,
+    which means that the energy gained by the electron must be the same as the energy of the absorbed photon:
+    <men xml:id="eq_photon_energy">
+      E_\text{ ph }  = \Delta E = |E_\text{ final }  - E_\text{ initial } |
+    </men>
+  </p>
+  <p>
+    Note that the upper energy level state must initially be unoccupied for this process to work.
+    As we'll see in <xref ref="chap_quantum_statistics">Chapter</xref>,
+    two electrons cannot occupy the same quantum state.
+  </p>
+  <p>
+    The process of emission is the same thing in reverse
+    (<xref ref="fig_absorption_emission">Figure</xref>b).
+    An electron in a higher energy state can drop to a lower-energy state
+    (if initially unoccupied),
+    releasing a single photon with an energy given by <xref ref="eq_photon_energy"/>.
+  </p>
+  <p>
+    These simple quantum principles now enable us to resolve the third of the great failures of classical physics <mdash/> the observation in the early 1900s that when energy is pumped into atoms,
+    they radiate EM waves only at certain distinct wavelengths;
+    i.e., the problem of discrete atomic spectral lines discussed in <xref ref="chap_beyond_classical">Chapter</xref>.
+    The explanation is actually quite simple:
+    each element or molecule has its own discrete,
+    quantized energy level structure (e.g., <xref ref="fig_energy_levels">Figure</xref>).
+    An electron in an atom can make transitions between the energy levels.
+    Any transition from a higher to a lower energy level will result in the emission of a photon.
+    But since there are only certain,
+    well-defined, quantized energy levels for the electron,
+    then there are only certain well-defined <em>differences</em>
+    <m>\Delta E</m> allowed for the transitions between these levels.
+    And since the photons emitted by these transitions have energy <m>E_\text{ ph }  = |\Delta E|</m>,
+    that means that the emitted photons have only certain,
+    well-defined energies.
+    And since the energy of the photon is related to the frequency and wavelength of the electromagnetic radiation via <m>E_\text{ ph }  = hf = hc/\lambda</m>,
+    that means that the light emitted by atoms has only certain,
+    well-defined, discrete wavelengths.
+  </p>
+  <figure xml:id="fig_energy_levels">
+    <caption>Example of an atom or molecule with four quantized energy
+    levels.</caption>
+    <image width="18%" source="images/energy_levels"/>
+  </figure>
+  <example xml:id="exam_emission">
+    <title>Light emitted from a molecule with four energy levels</title>
+    <statement>
+      <p>
+        For a molecule with the four-level system in <xref ref="fig_energy_levels">Figure</xref>,
+        assume that <m>E_0 = -11.5\Xunits{eV}</m>,
+        <m>E_1=-6.2\Xunits{eV}</m>, <m>E_2 = -5.4\Xunits{eV}</m>,
+        and <m>E_3 = -2.5\Xunits{eV}</m>. (a) Determine how many different wavelengths of EM radiation can be emitted from this molecule,
+        and calculate (b) the largest and (c) the smallest wavelengths of EM radiation that can be emitted from this molecule.
+      </p>
+      <p>
+        <em>Solution:</em> (a) There are several possible transitions that an electron can make that will emit a photon in this system.
+        An electron can drop from energy level 3 down to level 0, 1 or 2;
+        it can drop from energy level 2 down to level 0 or 1;
+        and it can drop from energy level 1 down to level 0.
+        Altogether, there are 6 possible downward energy transitions,
+        so there are 6 possible wavelengths of light that can be emitted.
+      </p>
+      <figure xml:id="fig_energy_levels2">
+        <caption>Possible transitions that result in emission of EM radiation
+        for the 4-level system of <xref ref="exam_emission">Example</xref>.</caption>
+        <image width="37%" source="images/energy_levels2"/>
+      </figure>
+      <p>
+        For parts (b) and (c), for any emitted photon,
+        the energy <m>E_text{ph} = |\Delta E|</m> and since <m>E_\text{ ph }  = hc/\lambda</m>,
+        it follows that <m>hc/\lambda = |\Delta E|</m> and <m>\lambda = hc/\Delta E</m>.
+        So, the largest and smallest wavelengths correspond to the smallest and largest energy differences
+        <m>\Delta E</m>. (b) The smallest energy difference
+        <m>\Delta E</m> given the allowed electron energies is the energy difference between levels 2 and 1.
+        So, the largest emitted wavelength is:
+        <men>
+          \lambda = \frac{hc}{\Delta E} = \frac{1240 \Xunits{eV \cdot nm}}{|-5.4 \Xunits{eV} - (-6.2 \Xunits{eV})|} = \frac{1240 \Xunits{eV \cdot nm}}{0.8 \Xunits{eV}} = 1550 \Xunits{nm}
+        </men>,
+        where we have used the result <m>hc = 1240\Xunits{eV \cdot nm}</m>,
+        which is convenient for spectra problems where the energy levels and differences are expressed in electron volts and the wavelengths of emitted and absorbed light are expressed in nanometers.
+        We could have converted everything into SI units and used typical values for <m>h</m> and <m>c</m>,
+        but that is more time-consuming.
+      </p>
+      <p>
+        Note that the longest wavelength emitted is a value beyond the visible spectrum
+        (this is in the infrared spectrum),
+        so the human eye wouldn't be able to see this emitted light. (c) For the shortest wavelength for emitted EM radiation,
+        we want the largest <m>\Delta E</m> possible for these four energy levels,
+        which corresponds to a transition from energy level 3 down to energy level 0.
+        <men>
+          \lambda = \frac{hc}{\Delta E} = \frac{1240 \Xunits{eV \cdot nm}}{|-2.5 \Xunits{eV} - (-11.5 \Xunits{eV})|} = \frac{1240 \Xunits{eV \cdot nm}}{9.0 \Xunits{eV}} = 138 \Xunits{nm}
+        </men>
+      </p>
+      <p>
+        This wavelength is also outside the visible spectrum
+        (it's ultraviolet, in this case).
+      </p>
+    </statement>
+  </example>
+  <p>
+    Everything in the previous example works the other way for absorption.
+    But instead of an electron dropping to a lower energy level and emitting a photon,
+    a photon is absorbed and the electron jumps up to a higher energy level.
+    But this only works if the incoming photon has the right energy.
+    From a practical perspective,
+    if you shine white light through a gas of a particle element or molecule,
+    all the light will pass through <em>except</em>
+    for light with particular wavelengths and energies corresponding to the energy differences <m>\Delta E</m> for the sample.
+  </p>
+  <p>
+    Since each element and each molecule has its own distinctive energy-level structure,
+    the spectrum of EM radiation emitted is unique to each,
+    as is the spectrum of radiation absorbed.
+    This
+    <q>fingerprint</q>
+    is often used to identify materials in systems as diverse as a microscopic sample of DNA<fn>
+    Spectroscopy is often used in the biological sciences.
+    We have had many biology majors in PHYS 212 in the past who have commented that they see these techniques used quite often in the biology labs at Bucknell.
+    </fn> up to astronomical-scale objects such as stars and planets;
+    large, nebular clouds that are collapsing to form new stars and planetary systems;
+    and accretion disks of gas spiraling into supermassive black holes at the centers of
+    <q>active</q>
+    galaxies.<fn>
+    Spectroscopy is the most important tool for identifying materials in distant astronomical objects.
+    It's not as though we can go collect a sample of gas from a nebula 100,000 light years away.
+    The light that we see from these objects is the only data that we have in most cases.
+    </fn>
+  </p>
+  <p>
+    So, why is a tomato red?
+    Answer: because it contains a pigment called lycopene that has electronic energy levels with an energy difference corresponding to the energy of red photons.
+    When an electron in an excited state in lycopene drops to a lower level,
+    it emits red photons.
+    (Lycopene is actually a fluorescent pigment;
+    fluorescence is discussed in the next section.)
+  </p>
+  <p>
+    Finally, absorption and emission also work for solids with band structures similar to that in <xref ref="fig_bands">Figure</xref>.
+    There are many, closely-spaced energy levels within the bands,
+    allowing for EM radiation with very large wavelengths to be emitted and absorbed.
+    But it is also possible for electrons to make transitions between the bands,
+    resulting in larger energy differences and smaller wavelengths for emitted or absorbed light.
+  </p>
+  <example xml:id="exam_absorption_bands">
+    <title>Absorption by a material with a band gap</title>
+    <statement>
+      <p>
+        A light detector uses a material with a filled valence band
+        (all available energy states occupied by an electron)
+        and an empty conduction band separated by a band gap energy of <m>3.2\Xunits{eV}</m>.
+        Calculate the largest wavelength of light most effectively absorbed by this detector.
+      </p>
+      <p>
+        <em>Solution:</em> The energy of the photon
+        <m>E_\text{ ph } = |\Delta E|</m> and since <m>E_\text{ ph } = hc/\lambda</m>,
+        it follows that <m>hc/\lambda = |\Delta E|</m>.
+        The largest wavelength corresponds to the smallest energy difference <m>\Delta E</m>.
+        Since the valence band is filled,
+        the nearest unoccupied energy level is at the bottom of the conduction band,
+        so <m>\Delta E_\text{ min } = 3.2\Xunits{eV}</m>.
+        So <m>\lambda_\text{ max } = hc/\Delta E = (1240\Xunits{eV \cdot nm})/(3.2 \Xunits{eV}) = 387.5\Xunits{nm}</m>.
+      </p>
+    </statement>
+  </example>
+</section>

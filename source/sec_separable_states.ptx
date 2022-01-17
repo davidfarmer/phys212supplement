@@ -1,0 +1,46 @@
+<section xml:id="sec_separable_states">
+  <title>Separable States</title>
+  <p>
+    Not all two particle states are entangled.
+    An example of a state that is not entangled would be the following:
+    <men xml:id="eq_separable_state">
+      \ket{\psi} = \frac{1}{2}\ket{\uparrow\uparrow} + \frac{1}{2}\ket{\uparrow\downarrow} + \frac{1}{2}\ket{\downarrow\uparrow} + \frac{1}{2}\ket{\downarrow\downarrow}
+    </men>.
+  </p>
+  <p>
+    Following the procedure of the previous section leads to
+    <md>
+      <mrow>\ket{\psi} \amp = \ket{\uparrow} \left(\frac{1}{2}\ket{\uparrow} +\frac{1}{2}\ket{\downarrow}\right) + \ket{\downarrow} \left(\frac{1}{2}\ket{\uparrow} +\frac{1}{2}\ket{\downarrow}\right)</mrow>
+      <mrow>\amp =\frac{1}{\sqrt{2}}\ket{\uparrow} \left(\frac{1}{\sqrt{2}}\ket{\uparrow} +\frac{1}{\sqrt{2}}\ket{\downarrow} \right) +\frac{1}{\sqrt{2}}\ket{\downarrow} \left(\frac{1}{\sqrt{2}}\ket{\uparrow} +\frac{1}{\sqrt{2}}\ket{\downarrow} \right)</mrow>
+    </md>
+    where in the second line we have made normalized positron states inside the parentheses.
+  </p>
+  <p>
+    And now something interesting has happened:
+    the two positron states inside parentheses are identical.
+    This means that if we measure the electron's spin,
+    the resulting state collapse leads to the same positron state,
+    regardless of what we obtain for the electron spin.
+    The positron is no longer entangled with the electron!
+  </p>
+  <p>
+    Mathematically,
+    we note that having the same positron state in both parentheses above means we can factor our state even further:
+    <men>
+      \ket{\psi} = \left(\frac{1}{\sqrt{2}}\ket{\uparrow} +\frac{1}{\sqrt{2}}\ket{\downarrow} \right) \left(\frac{1}{\sqrt{2}}\ket{\uparrow} +\frac{1}{\sqrt{2}}\ket{\downarrow} \right)
+    </men>
+  </p>
+  <p>
+    In this form we can see directly that the two-particle state is really just a product of a single-particle electron state and a single-particle positron state.
+    In general, whenever this happens that we can fully factor the two-particle state into
+    <men>
+      \ket{\psi} = \ket{\phi_\text{ electron } }\ket{\phi_\text{ positron } }
+    </men>.
+    then the particles are not entangled.
+    We call these <em>separable states</em>.
+  </p>
+  <p>
+    In summary, two-particle states are separable if they can be fully factored into a product of single-particle states.
+    And if they cannot be factored, then they are entangled.
+  </p>
+</section>

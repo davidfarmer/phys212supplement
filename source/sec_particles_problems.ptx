@@ -1,0 +1,211 @@
+<exercises xml:id="sec_particles_problems">
+  <title>Problems</title>
+  <exercise xml:id="prob_baryons_vs_leptons">
+    <statement>
+      <p>
+        Baryons and leptons are both fermions.
+        In what ways are they different?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_mesons_vs_baryons">
+    <statement>
+      <p>
+        Mesons and baryons are each sensitive to the strong force.
+        In what way are they different?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_conservation_laws_i">
+    <statement>
+      <p>
+        Test the conservation laws for energy,
+        charge, baryon number, lepton number,
+        and strangeness for each of the following proposed reactions.
+        Which ones are violated?
+        <ol>
+          <li>
+            <p>
+              <m>\mu^- \to \pi^- + \nu_\mu</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\pi^- + p \to \Lambda + \overline\nu_e</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_classify_particles">
+    <statement>
+      <p>
+        Classify each of the following particles as bosons, fermions,
+        hadrons, leptons, baryons, mesons and/or messengers.
+        Use as many of these terms as apply.
+      </p>
+      <p>
+        (a) photon (b) <m>\Lambda</m> (c) <m>\pi^+</m> (d) <m>\nu_e</m>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_rho0_rest_energy">
+    <statement>
+      <p>
+        A <m>\rho^0</m> particle initially at rest is observed to decay by <m>\rho^0 \to \pi^+ + \pi^-</m>.
+        The pions have a mass of <m>140\Xunits{MeV/ c^2 }</m>.
+        The magnitude of the momentum of each of the oppositely directed pions is measured to be <m>361.5\Xunits{MeV/ c }</m>.
+        Conserve energy and momentum to determine the rest energy of the <m>\rho^0</m>.
+        Compare to the value given in <xref ref="table_leptons">Table</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_identify_particle_x">
+    <statement>
+      <p>
+        Use the appropriate conservation laws in each of the strong reactions below to determine the additive properties of the unknown particle <m>x</m>.
+        Then identify the <m>x</m> particle using <xref ref="table_leptons">Tables</xref>
+        through <xref ref="table_baryons"></xref>.
+        <ol>
+          <li>
+            <p>
+              <m>p + p \to p + \Lambda + x</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>e^- + p \to n + \pi^0 + x</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>K^- + p \to \Xi^- + \pi^0 + x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_strangeness_and_strong_force">
+    <statement>
+      <p>
+        Check strangeness conservation to determine which of the following reactions may proceed by the strong interaction.
+        <ol>
+          <li>
+            <p>
+              <m>K^- + p \to \Lambda + \pi^0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\Xi^- \to \Lambda + \pi^-</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>K^+ \to \pi^+ + \pi^0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\Delta^{++} \to p + \pi^+</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_pion_and_muon_decay">
+    <statement>
+      <p>
+        Use the data in <xref ref="table_leptons">Tables</xref>
+        through <xref ref="table_baryons"></xref>
+        to check that <xref ref="eq_pion_decay"/> and <xref ref="eq_muon_decay"/> do not violate the laws of conservation of energy, charge,
+        lepton number, and baryon number.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_electron_stability">
+    <statement>
+      <p>
+        Can an electron decay by disintegrating into two neutrinos?
+        Why, or why not?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_neutron_decay">
+    <statement>
+      <p>
+        A neutron is massive enough to decay by the emission of a proton and two neutrinos.
+        Why does it not do so?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_Xi0_strangeness">
+    <statement>
+      <p>
+        Consider the reaction <m>\pi^- + p \to \Xi^0 + K^0 + K^0</m>.
+        Assuming this reaction occurs via the strong interaction,
+        determine the strangeness of the <m>\Xi^0</m>.
+        Compare to the value in <xref ref="table_baryons">Table</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_quark_constituents">
+    <statement>
+      <p>
+        What are the quark constituents for each of the following particles?
+      </p>
+      <p>
+        (a) <m>\Lambda</m> (b) <m>\Xi^-</m> (c) <m>\pi^+</m>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_quark_model">
+    <statement>
+      <p>
+        Use the quark model to explain why there is no baryon with <m>S = -2</m>,
+        <m>Q = +1</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_identify_from_quarks">
+    <statement>
+      <p>
+        Determine the additive quantum numbers (<m>B</m>, <m>Q</m>,
+        and <m>S</m>), and thus the identities,
+        of the particles formed from the following combinations of quarks.
+        Then use the tables in <xref ref="chap_particles">Chapter</xref> to identify each particle.
+        Note that a quark ingredient list does <em>not</em>
+        always identify a particle uniquely.
+        Sometimes several particles contain the same set of quarks.
+      </p>
+      <p>
+        (a) <m>ddu</m> (b) <m>uus</m> (c) <m>d\overline s</m> (d)
+        <m>\overline u\overline u\overline d</m> (e) <m>ssd</m> (f) <m>u\overline d</m>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_strangeness_vs_charge_plot">
+    <statement>
+      <p>
+        Consider the ten baryons with spin 3/2 listed in <xref ref="table_baryons">Table</xref>.
+        Make a strangeness vs.<nbsp/>charge plot for these baryons,
+        similar to <xref ref="fig_baryon_SvsQ">Figure</xref>.
+        Compare your plot with that in <xref ref="fig_baryon_SvsQ">Figure</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_reaction_products">
+    <statement>
+      <p>
+        Consider the reaction <m>\Lambda + \pi^- \to \mbox{baryon} + \mbox{meson}</m>.
+        What possible baryon-meson pairs can be produced?
+        Consider only the simplest cases,
+        in which no quarks are created or destroyed,
+        but merely rearrange themselves.
+      </p>
+    </statement>
+  </exercise>
+</exercises>

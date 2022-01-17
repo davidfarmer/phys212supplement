@@ -1,0 +1,134 @@
+<section xml:id="sec_lasers">
+  <title>Lasers</title>
+  <p>
+    The word
+    <q>laser</q>
+    is an acronym for <em>L</em>ight
+    <em>A</em>mplification by <em>S</em>timulated
+    <em>E</em>mission of <em>R</em>adiation.
+    Einstein predicted the essential process of
+    <em>stimulated emission</em>
+    (described below)
+    based on his analysis of how light interacts with atoms,
+    but it took nearly a half-century until we were able to construct an operating laser.
+    Now lasers appear in dozens of commercial products including supermarket scanners and blue-ray disc players.
+    They are also used for cutting and shaping in manufacturing,
+    as scalpels in delicate eye surgery,
+    and as tools in countless scientific experiments.
+  </p>
+  <figure xml:id="fig_photon_process">
+    <caption>Three processes in which photons interact with a two-level
+    atom.</caption>
+    <image width="90%" source="images/photon_process"/>
+  </figure>
+  <p>
+    So just what is stimulated emission?
+    Consider a pair of energy levels for an electron in an atom,
+    as shown in <xref ref="fig_photon_process">Figure</xref>,
+    with energy difference <m>\Delta E</m>.
+    These need not be neighboring energy levels.
+    We have learned already about the processes of absorption and spontaneous emission,
+    which are shown in parts (a) and (b) of <xref ref="fig_photon_process">Figure</xref>.
+    Recall that the absorbed or emitted photon must have energy
+    <m>E_\text{ ph } =\Delta E</m> due to energy conservation.
+  </p>
+  <p>
+    Einstein realized<fn>
+    Einstein used some interesting thermodynamics arguments to discover stimulated emission.
+    You can learn about these in PHYS 222.
+    </fn> there must also be a third process of stimulated emission,
+    which involves an incoming photon of energy
+    <m>E_\text{ ph } = \Delta E</m> and an electron in the upper energy level
+    (see <xref ref="fig_photon_process">Figure</xref>c).
+    This appears to be an unlikely candidate for a photon-electron interaction,
+    since the electron is already in the upper energy level.
+    But photons have spin <m>s=1</m>,
+    which makes them bosons, and that means photons are
+    <q>attracted</q>
+    to be in the same state.
+    The incoming photon induces the electron to jump down to the lower energy level and emit a second photon with the same energy,
+    in essence
+    <q>cloning</q>
+    itself.
+    In fact, this second photon is in exactly the same quantum state as the incoming photon.
+    This means, among other things,
+    that they have the same momentum vector,
+    and so they are traveling in the same direction.
+  </p>
+  <figure xml:id="fig_laser_cavity">
+    <caption>Schematic drawing of a gas laser showing laser cavity
+    containing atoms and radiation (photons). Empty circles <m>\circ</m> are
+    atoms in the lower energy states and filled circles <m>\bullet</m> are
+    atoms in a higher energy state.</caption>
+    <image width="82%" source="images/laser_cavity"/>
+  </figure>
+  <p>
+    So how do we make a laser from this?
+    The very first lasers consisted of a gas of atoms contained within a resonant cavity composed of a glass tube sealed at either end with mirrors,
+    as shown in <xref ref="fig_laser_cavity">Figure</xref>.
+    These atoms are chosen to have a suitable pair of energy levels,
+    <m>E_\text{ upper }</m> and <m>E_\text{ lower }</m>,
+    that will be used to create a population of photons with energy <m>E_\text{ ph } =E_\text{ upper } -E_\text{ lower }</m>.
+    By putting energy into the system,
+    many of the atoms are placed into the upper energy level.
+    These excited atoms will spontaneously emit photons in random directions.
+    Most of these photons end up simply absorbed by the walls,
+    but the occasional emitted photon will be moving directly horizontal and therefore will stay in the tube,
+    bouncing back and forth between the mirrors.
+    And that means this photon will eventually come near another excited state atom and use stimulated emission to create a second photon.
+    Now these two photons will stay in the tube and,
+    with stimulated emission, each produce more identical photons.
+    Eventually a large population of these horizontally moving photons will build up:
+    that's the <em>light amplification</em>.
+  </p>
+  <p>
+    But there is a villain lurking:
+    every atom that has emitted a photon,
+    either spontaneously or by stimulated emission,
+    is back down at the <m>E_\text{ lower }</m> energy level.
+    These atoms are ready to absorb exactly the photons that we are carefully building up.
+    The only way to win this battle is by numbers.
+    Each stimulated emission event increases the number of photons by one,
+    but each absorption event lowers it by one.
+    So we need to ensure there are more atoms in the upper energy level than in the lower energy level,
+    which is called a <em>population inversion</em>.<fn>
+    The reason this is called an <em>inversion</em>
+    is because normally a gas at equilibrium at a temperature <m>T</m> has more atoms in the lower state and fewer in the higher energy state.
+    </fn>
+  </p>
+  <p>
+    The technological challenge of making a laser was basically figuring out how to achieve the population inversion.
+    The most common way of maintaining a population inversion in the laser is by a method called
+    <em>optical pumping</em>
+    in which outside energy is applied to excite atoms from the ground state <m>E_1</m> to an excited state <m>E_3</m>,
+    as shown in <xref ref="fig_three_level_laser">Figure</xref>.
+    Some excited state atoms decay to the metastable state <m>E_2</m>,
+    which takes a long time to spontaneously decay.
+    As a result,
+    a larger number of atoms end up in the metastable state than in the ground state,
+    which means we have achieved population inversion.
+    Then stimulated emission from <m>E_2</m> to <m>E_1</m> is used to create the photons of energies <m>E_\text{ ph } =E_2 - E_1</m>.
+  </p>
+  <figure xml:id="fig_three_level_laser">
+    <caption>Processes in a gas laser.  Ground state atoms are quickly
+    excited up to the level <m>E_3</m> and quickly decay down to the
+    metastable <m>E_2</m>.  Thus, there are more atoms at level <m>E_2</m> than at
+    <m>E_1</m>.</caption>
+    <image width="56%" source="images/three_level_laser"/>
+  </figure>
+  <p>
+    What distinguishes laser light from ordinary light?
+    There are three main properties: (1) all the photons have the same energy,
+    or wavelength,
+    so the beam is <em>monochromatic</em>; (2) all the photons are traveling in the same direction,
+    so the beam is <em>collimated</em>;
+    and (3) all the photons have the same quantum phase,
+    so the beam is <em>coherent</em>.
+    While coherence is an interesting property <mdash/> it allows us to make holograms,
+    for example <mdash/> we will not be able to discuss it here.
+    The collimation of the beam is what makes lasers good for surgery and for laser pointers:
+    even after traveling some distance,
+    the beam stays narrow with all the intensity contained in a small cross section.
+    Finally, we used the fact that laser light was monochromatic when we did the two-slit interference lab.
+  </p>
+</section>

@@ -1,0 +1,161 @@
+<section xml:id="sec_diodes">
+  <title>Diodes, Photodiodes, and LEDs</title>
+  <p>
+    A p-n junction like that shown in <xref ref="fig_pnJunction">Figure</xref>
+    forms what is know in electronics as a <em>diode</em>
+    <mdash/> a device that enables current to pass only in one direction.
+    Diodes are used for <em>rectifiers</em> which turn AC
+    (alternating current)
+    power from the outlets in your house into DC
+    (direct current)
+    power needed for most devices.
+    Diodes are used to protect sensitive electronic devices from accidental reverse voltages.
+    And diodes form some of the fundamental elements in digital computer circuitry.<fn>
+    For a full appreciation of the importance of diodes <mdash/> and other electronic elements <mdash/> consider PHYS 235 (
+    <q>Applied Electronics</q>).
+    </fn>
+  </p>
+  <p>
+    To understand how a p-n junction works as a diode, consider Figs.
+    <xref ref="fig_pnJunction"></xref>
+    and <xref ref="fig_BiasedpnJunction"></xref>.
+    The key is the depletion zone (DZ) at the junction.
+    Since there are no mobile charge carriers in the DZ, then that part of the device is a good electrical insulator.
+    For a p-n junction to conduct,
+    the DZ has to be eliminated.
+  </p>
+  <p>
+    If you want to run an electrical current through a p-n junction,
+    you need to apply an electric field.
+    If the field points from the p-type to the n-type semiconductor
+    (as in <xref ref="fig_BiasedpnJunction">Figure</xref>a),
+    the holes in the p-type material are pulled in the direction of the electric field toward the junction,
+    and the electrons in the n-type material are pulled in the direction opposite the electric field,
+    also toward the junction.
+    Consequently, the DZ shrinks.
+    If the field is strong enough<fn>
+    It turns out that for silicon semiconductors, there is a
+    <q>turn-on voltage</q>
+    of 0.6 V that needs to be exceeded for a diode to conduct in the forward-biased direction.
+    </fn> the holes and electrons meet at the junction,
+    and the DZ is completely gone;
+    consequently,
+    the entire device conducts and the current can pass.
+    So, a strong enough electric field in this <em>forward-biased</em>
+    direction will eliminate the DZ and produce an electrical current.
+  </p>
+  <figure xml:id="fig_BiasedpnJunction">
+    <caption>(a) Forward-biased pn junction with an electric field
+    pointing from the p-type toward the n-type semiconductor. This electric
+    field pulls n-type charges (electrons) to the right and p-type charges
+    (holes) to the left, decreasing the size of the depletion zone.
+    (b) Reverse-biased pn junction with an enlarged depletion zone.</caption>
+    <image width="56%" source="images/BiasedpnJunction"/>
+  </figure>
+  <p>
+    On the other hand,
+    if an electric field is applied pointing from the n-type to the p-type semiconductor,
+    the field pushes the holes and mobile electrons
+    <em>away</em> from the junction,
+    making the DZ even larger.
+    With the DZ intact, the p-n junction won't conduct electricity in this
+    <em>reverse-biased</em> direction.
+    So, a p-n junction works as a diode <mdash/> it allows current to flow in one direction but not the other.<fn>
+    It isn't an ideal diode because of the turn-on voltage,
+    but there are ways of getting around this limitation.
+    </fn>
+  </p>
+  <p>
+    But more can be done with a diode (p-n junction) than just passing current only in one direction.
+    When a forward-biased diode is conducting a current,
+    mobile electrons and holes are continually annihilating each other at the junction.
+    Each time an electron-hole pair annihilates, a photon is emitted,
+    as shown in <xref ref="fig_LED_PhotoExcitation">Figure</xref>a.
+    This is the principle behind what are called
+    <em>light-emitting diodes</em> (LEDs),
+    which can be found in almost any piece of modern electronics.
+    The little red and blue indicator lights on your cell phone are LEDs.
+    The
+    <q>flash</q>
+    that your cell phone uses to take pictures at night
+    (which you probably use more as a flashlight when walking back to your dorm at night)
+    is an LED. Most scoreboards at games are made with LEDs.
+    And you can now buy LED light bulbs which are <em>significantly</em>
+    more efficient and reliable than standard, incandescent light bulbs.
+  </p>
+  <figure xml:id="fig_LED_PhotoExcitation">
+    <caption>(a) Photon emitted when an n-type charge carrier (an electron)
+    annihilates a p-type charge carrier (a hole); conceptually, the electron
+    drops into the open, lower-energy state represented by the hole.
+    (b) Excitation of a valence electron by an incoming photon.
+    The absorption of the photon results in the formation of an  n-
+    and p- charge carrier pair.</caption>
+    <image width="56%" source="images/LED_PhotoExcitation"/>
+  </figure>
+  <p>
+    The process works in reverse.
+    If a photon with suitable wavelength and energy hits a p-n junction
+    (<xref ref="fig_LED_PhotoExcitation">Figure</xref>b),
+    it can excite an electron from the valence to the conduction band,
+    producing an electron-hole pair in the DZ. Some residual electric fields in the DZ<fn>
+    We won't explain the origin of this residual electric field here.
+    </fn> sweep this electron and hole away from the DZ and produce a small electrical current that can be measured.
+    As a result,
+    a diode can be used as a light detector <mdash/> it is referred to as a
+    <em>photodiode</em> when used this way.
+    This is the basic idea behind the detectors used in modern digital cameras,
+    including the camera in your cell phone.
+  </p>
+  <p>
+    Finally, an introduction to semiconductor physics would not be complete with a discussion of the <em>transistor</em>,
+    the development of which completely revolutionized modern technology.
+    A basic transistor can be made out of a sandwich of a p-type semiconductor between two pieces of n-type semiconductors
+    (<xref ref="fig_transistor">Figure</xref>).
+    For your homework problems, you will explain
+    (by considering the depletion zones at each of the two p-n junctions)
+    how a transistor works.
+    The result is a device that will not pass an electrical current in <em>either</em>
+    direction unless a very small electrical current is provided at one of the p-n junctions.
+    That very small, second current effectively
+    <q>turns on</q>
+    or
+    <q>turns off</q>
+    the larger current flowing lengthwise through the device.
+    As you will also see in your homework,
+    the current can also be turned on by light shining on the p-n junction,
+    as shown in <xref ref="fig_transistor">Figure</xref>b for a device referred to as a phototransistor.
+  </p>
+  <figure xml:id="fig_transistor">
+    <caption>(a) An npn transistor. (b) Phototransistor.</caption>
+    <image width="56%" source="images/transistor"/>
+  </figure>
+  <p>
+    The use of a transistor as an electronic
+    <q>on-off switch</q>
+    has tremendous implications for modern technolgoy.
+    Without electronic switches,
+    most of modern electronic technology would be useless.
+    Simple examples of the use of transistor switches abound.
+    A transistor switch turns on the blue indicator light on your phone when you have a new email or the red indicator light if your phone is charging.
+    A transistor switch turns on and off the display of your phone or the LED light that you use to walk home at night.
+    In a computer,
+    billions of transistor switches are rapidly turning on and off small currents that enable the computer to perform its tasks.
+  </p>
+  <p>
+    Transistors are also very important for power amplification.
+    As an example,
+    your cell phone detects electromagnetic waves transmitted by a nearby cell tower,
+    but the detected signal is very weak.
+    A transistor amplifier makes the signal stronger so that your cell phone can decode the signal and produce a time-varying voltage which is then amplified by another transistor circuit to produce a sound loud enough for your ear to hear.
+  </p>
+  <p>
+    The npn transistor was the first truly electronic switch that didn't depend on vacuum-tube technology.<fn>
+    Vacuum tubes were common in all radios and TVs up until the 1950s,
+    but you will be hard-pressed to find them now.
+    </fn> There are many advantages to transistors over vacuum tubes,
+    the most significant being that they can be miniaturized and printed into integrated circuits.
+    Current computer CPUs have over a
+    <em>billion</em> transistors.
+    Think about that: that is a <em>lot</em> of transistors.
+  </p>
+</section>

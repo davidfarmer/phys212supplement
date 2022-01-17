@@ -1,0 +1,145 @@
+<section xml:id="sec_quantum_field_theory">
+  <title>Quantum Field Theory</title>
+  <p>
+    Modern physical theory seeks to explain all four of the fundamental interactions <mdash/> gravity,
+    electromagnetism,
+    strong, and weak <mdash/> in terms of quantum fields.
+    Here's how classical models explain how two particles exert forces on one another:
+    each particle sets up a <em>field</em>
+    that the other particle reacts to,
+    and these fields obey certain equations
+    (like Faraday's Law).
+    This, of course, isn't really an explanation at all,
+    because it doesn't really explain what a field is and why one particle should produce a field and why another particle should respond to this field.
+  </p>
+  <p>
+    In quantum field theory, the fields themselves are quantized;
+    changes in the fields occur in discrete lumps.
+    The lumps of energy and momentum can be considered particles,
+    often called <em>messenger particles</em>.
+    As an analogy, think of two people playing catch.
+    The ball passes back and forth between the players and transmits the exchange of momentum and energy.
+  </p>
+  <p>
+    Let's see how this works for electric forces.
+    The quantum field theory for electromagnetic interactions is called quantum electrodynamics or QED. In this theory an electrically charged particle <mdash/> an electron,
+    for instance <mdash/> makes its presence known not by setting up an electric field,
+    but by continually emitting and absorbing electromagnetic messenger particles,
+    or <em>photons</em>.
+    Because these photons are not detected as particles of light,
+    but serve only to transmit energy and momentum between particles,
+    they are also called <em>virtual photons</em>.
+    In fact, at any given time,
+    an electron is literally surrounded by a cloud of these virtual photons,
+    appearing and disappearing.
+  </p>
+  <p>
+    Where does the energy come from to create all these photons?
+    Doesn't energy have to be conserved?
+    The answer is that short-term violations of the law of conservation of energy are permitted by the quantum uncertainty relations,
+    as we have already seen in tunneling.
+    The uncertainty relation for time and energy,
+    analogous to <m>\Delta x\, \Delta p \geq \hbar/2</m>, is
+    <men xml:id="eq_energy_time">
+      \Delta E\, \Delta t \approx \hbar
+    </men>
+  </p>
+  <p>
+    In effect, <xref ref="eq_energy_time"/> permits particles to borrow an amount of energy
+    <m>\Delta E</m> from the surrounding space so long as the energy is returned within a time <m>\Delta t \approx \hbar/\Delta E</m>.
+    In this view, even empty space itself is loaded with activity,
+    as virtual particles and messengers pop into existence and then quickly disappear!<fn>
+    Experiments have measured these effects in
+    <q>empty</q>
+    space.
+    Specifically,
+    even a well-shielded vacuum is observed to have electromagnetic
+    <q>noise</q>
+    due to the blipping into and out of existence of these virtual photons.
+    </fn>
+  </p>
+  <p>
+    Current theory holds that there are messenger particles like photons that act as the intermediaries for all of the fundamental interactions.
+    For the weak interaction, they are the massive
+    (as in, having mass)
+    <em>vector bosons</em> <m>W^+</m>,
+    <m>W^-</m>, and <m>Z^0</m>.
+    For the strong interaction,
+    they are the colored <em>gluons</em>, which act between quarks.
+    The properties of the messenger particles are listed in <xref ref="table_messengers">Table</xref>.
+    You'll learn more about these messenger particles in this and the next chapter.
+    In addition, a particle called the <em>graviton</em>
+    is postulated as the messenger for gravity.
+  </p>
+  <table xml:id="table_messengers">
+    <title>The messenger particles.</title>
+    <tabular>
+      <row>
+        <cell>Symbol</cell>
+        <cell>Name</cell>
+        <cell>Mass (MeV/<m>c^2</m>)</cell>
+        <cell>Spin</cell>
+        <cell>Charge</cell>
+        <cell>Interaction</cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  ><m>\gamma</m></cell>
+        <cell>photon</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>Electromagnetic</cell>
+      </row>
+      <row>
+        <cell><m>W^-</m></cell>
+        <cell>double-you</cell>
+        <cell>80,400</cell>
+        <cell>1</cell>
+        <cell>-1</cell>
+        <cell>Weak</cell>
+      </row>
+      <row>
+        <cell><m>Z^0</m></cell>
+        <cell>zee-zero</cell>
+        <cell>91,200</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>Weak</cell>
+      </row>
+      <row>
+        <cell>gl</cell>
+        <cell>gluon</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>Strong</cell>
+      </row>
+      <row>
+        <cell>g</cell>
+        <cell>graviton?</cell>
+        <cell>0</cell>
+        <cell>2</cell>
+        <cell>0</cell>
+        <cell>Gravity</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    Note: the antiparticle of <m>W^-</m> is <m>W^+</m>, and the antiparticle of
+    a green-antired gluon is a red-antigreen gluon, etc.
+  </table>
+</section>

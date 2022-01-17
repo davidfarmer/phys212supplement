@@ -1,0 +1,10 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_quantized_energies">
+  <title>Quantized Energies and Spectra</title>
+  <xi:include  href="sec_quantized_energies_intro.ptx"/>
+  <xi:include  href="sec_infinite_sq_well.ptx"/>
+  <xi:include  href="sec_semi_infinite_sq_well.ptx"/>
+  <xi:include  href="sec_energy_bands.ptx"/>
+  <xi:include  href="sec_absorption_emission.ptx"/>
+  <xi:include  href="sec_fluorescence_phosphorescence.ptx"/>
+  <xi:include  href="sec_quantized_energies_problems.ptx"/>
+</chapter>

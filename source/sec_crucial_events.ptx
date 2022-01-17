@@ -1,0 +1,133 @@
+<section xml:id="sec_crucial_events">
+  <title>Crucial Events of the Early Universe</title>
+  <p>
+    The universe began some 14 billion years ago with a Big Bang and has been expanding and cooling ever since.
+    <xref ref="table_early_universe">Table</xref>
+    is a list of the crucial events that occurred early on,
+    most of which we will try to explain.
+  </p>
+  <p>
+    How can we possibly determine when these events occurred?
+    Except for the end of neutrino interactions and the time of quark confinement,
+    each of these events can be understood in terms of the energies available to maintain thermal equilibrium.
+    For instance,
+    the end of the electro-weak unification occurred when the massive gauge bosons of electro-weak theory
+    (the <m>W^+</m>, <m>W^-</m>, and <m>Z^0</m>)
+    could no longer be produced in prodigious amounts from random collisions of particles in thermal equilibrium.
+    In other words, as the universe cooled,
+    the ambient thermal energy became insufficient to create such massive particles.
+    When this occurred,
+    the large mass of the <m>W</m> and <m>Z</m> differentiated them from the massless photon,
+    the messenger particle of electromagnetic theory.
+    After this time the weak and electromagnetic interactions were observed to behave differently.
+  </p>
+  <table xml:id="table_early_universe">
+    <title>Events of the early universe</title>
+    <tabular>
+      <row>
+        <cell>Time</cell>
+        <cell>Event</cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  ><m>0</m></cell>
+        <cell>Big Bang</cell>
+      </row>
+      <row>
+        <cell><m>10^{-43}\Xunits{s}</m></cell>
+        <cell>Planck Time <mdash/> end of Universal Symmetry</cell>
+      </row>
+      <row>
+        <cell><m>10^{-34}\Xunits{s}</m></cell>
+        <cell>End of Grand Unification</cell>
+      </row>
+      <row>
+        <cell><m>10^{-10}\Xunits{s}</m></cell>
+        <cell>End of Electro-weak Unification</cell>
+      </row>
+      <row>
+        <cell><m>10^{-4}\Xunits{s}</m></cell>
+        <cell>Confinement of quarks into hadrons</cell>
+      </row>
+      <row>
+        <cell><m>1\Xunits{s}</m></cell>
+        <cell>Neutrinos stop interacting (decouple)</cell>
+      </row>
+      <row>
+        <cell><m>400\Xunits{s}</m></cell>
+        <cell>Protons and neutrons combine to form nuclei</cell>
+      </row>
+      <row>
+        <cell><m>10^5\Xunits{yr}</m></cell>
+        <cell>Nuclei and electrons combine to form atoms</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    So how can we relate the time of the splitting off of the weak interaction to properties of the <m>W</m>'s and <m>Z</m>'s?
+    Here's how.
+    The theoretical model for electro-weak unification,
+    the Weinberg-Salam theory of 1973,
+    predicted rest energies for <m>W</m> and <m>Z</m> in the range of 80<ndash/><m>100\Xunits{GeV}</m>.
+    This prediction was dramatically confirmed when the rest energies of <m>W</m> (<m>84\Xunits{GeV}</m>) and <m>Z</m> (<m>92\Xunits{GeV}</m>) were measured in the process of their experimental discovery at CERN in 1983.
+    If we round these rest energies up to <m>E=100\Xunits{GeV}=10^{11}\Xunits{eV}</m>,
+    we can use <xref ref="eq_early_univ_energy"/> to estimate the time when this much energy was available as ambient thermal energy.
+    We find
+    <men>
+      t = \left(\frac{10^6}{E}\right)^2 = \left(\frac{10^6}{10^{11}}\right)^2 = 10^{-10}\Xunits{s}
+    </men>
+    as shown in the table.
+    In general, the energy available at the time of all but two of the events above is related either to the rest energy of a particle or to a reaction energy associated with the event.
+    The problems expand on this relationship.
+  </p>
+  <p>
+    Finally, let's try to explain the remaining two events:
+    the decoupling of neutrinos from thermal equilibrium with the rest of the universe and the confinement of quarks inside hadrons.
+    Both of these events depend on the average density of the universe which,
+    as the universe expands, is continually decreasing.
+  </p>
+  <p>
+    Using some of the assumptions needed
+    (but not presented here)
+    to derive Eqs.<nbsp/><xref ref="eq_early_univ_temp"/> and <xref ref="eq_early_univ_energy"/>,
+    along with estimates of the present average density of the universe,
+    we find a density of <m>4\times 10^5\Xunits{g/cm ^3 }</m>
+    (and thus <m>4\times 10^5</m> times that of water)
+    for neutrino decoupling and
+    <m>4\times 10^{13}\Xunits{g/cm ^3 }</m> for quark confinement.
+    Now neutrinos are very penetrating particles.
+    Those produced in modern accelerators can penetrate miles of plate steel with less than one in a million being absorbed!
+    The high energy neutrinos of the early universe were even more penetrating.
+    When the universe's density fell to <m>4\times 10^5\Xunits{g/cm ^3 }</m>,
+    the absorption rate of neutrinos
+    (in reactions like <m>\nu+p \to n + e^+</m>)
+    fell significantly below their production rate,
+    and neutrinos could no longer exchange enough energy with the rest of the universe to maintain thermal equilibrium.
+  </p>
+  <p>
+    Quark confinement is explained by density considerations in a similar way.
+    Before <m>10^{-4}\Xunits{s}</m>, individual quarks were
+    <q>free</q>
+    in the sense that they did not travel around through space in groups of quark-quark-quark (baryons) or quark-antiquark
+    (mesons).
+    A single colored quark could go where it pleased.
+    But this was only because the density of the universe was comparable to the density of an atomic nucleus,
+    around <m>10^{14}\Xunits{g/cm ^3 }</m>.
+    The entire universe was one big nucleus!
+    As a result,
+    any individual quark was never far from lots of other quarks,
+    and the gluon
+    <q>rubber band</q>
+    never had to be stretched to give rise to confining forces.
+    After this time,
+    the density decreased enough that spaces started forming between nucleons and other particles,
+    and quarks became confined inside hadrons in colorless combinations.
+  </p>
+</section>

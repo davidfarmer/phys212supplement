@@ -1,0 +1,150 @@
+<section xml:id="sec_bell_experiment">
+  <title>Bell's Proposed Experiment</title>
+  <introduction>
+    <p>
+      Bell changed all that.
+      To everyone's great surprise,
+      in 1964 he constructed a thought experiment where quantum mechanics and hidden variable theories actually predict different results.
+      This thought experiment suddenly made it an experimental question,
+      so nature could tell us who was right!
+    </p>
+    <p>
+      Bell's clever idea rested on a variation of the EPR thought experiment where the Stern-Gerlach device that is measuring the positron spin is rotated.
+      The electron's spin is still measured the same way,
+      so we will find <m>S_z = +\hbar/2</m> or <m>-\hbar/2</m> as before.
+      But the positron's spin is measured along some direction <m>\hat n</m> that makes an angle <m>\theta</m> with respect to the <m>z</m> axis,
+      as shown in <xref ref="fig_bell_experiment">Figure</xref>.
+      For simplicity, we will take <m>\theta = 45^\circ</m>.
+    </p>
+    <figure xml:id="fig_bell_experiment">
+      <caption>The Bell thought experiment, which is the same as the EPR
+      experiment except that the positron Stern-Gerlach detector is rotated.</caption>
+      <image width="84%" source="images/bell_experiment"/>
+    </figure>
+  </introduction>
+  <subsection>
+    <title>QM Prediction for the Bell Experiment</title>
+    <p>
+      If we rotate our positron detector to be
+      <m>45^\circ</m> from the <m>z</m>-axis and measure this component of the spin,
+      call it <m>S_{45^\circ}</m>, what possible values will we find?
+      Just like with any spin component,
+      we'll find <m>+\hbar/2</m> and <m>-\hbar/2</m>.
+      And after the measurement,
+      the spin will be in either the
+      <m>\ket{\nearrow}</m> state or the <m>\ket{\swarrow}</m> state,
+      just as an <m>S_x</m> measurement results in either the
+      <m>\ket{+x}</m> or <m>\ket{-x}</m> states.
+    </p>
+    <p>
+      We can relate our familiar up and down spins to this new pair of states:
+      <md>
+        <mrow xml:id="eq_rotated_basis" number="yes">\ket{\uparrow} \amp =  b_+\ket{\nearrow} + b_-\ket{\swarrow} \amp \ket{\downarrow} \amp =  b_-\ket{\nearrow} - b_+\ket{\swarrow}</mrow>
+      </md>.
+    </p>
+    <p>
+      The coefficients, <m>b_+</m> and <m>b_-</m> are given by
+      <md>
+        <mrow xml:id="eq_b_variables" number="yes">b_+ \amp = \sqrt{\frac{1+\cos \theta}{2}}  \amp b_- \amp = \sqrt{\frac{1-\cos \theta}{2}}</mrow>
+      </md>,
+      where <m>\theta</m> is measured from the <m>z</m>-axis as shown in <xref ref="fig_bell_experiment">Figure</xref>.
+    </p>
+    <p>
+      We'll create an electron-positron pair in the initial state given by <xref ref="eq_epr_bell_state"/>.
+      Let's explore what quantum mechanics predicts for the Bell Experiment.
+      We're going to consider the case where an observer measures <m>S_z^\text{ elec }</m> to be spin down.
+      According to quantum mechanics,
+      a measurement of <m>S_z^\text{ elec }</m> =
+      <m>-\hbar/2</m> collapses the state of our electron-positron pair to be <m>\ket{\psi} = \ket{\downarrow\uparrow}</m>.
+      To put it another way,
+      if we measure the state of the electron to be <m>\ket{\downarrow}</m>,
+      quantum entanglement says that the state of the positron must be <m>\ket{\uparrow}</m>.
+      The subsequent positron measurement will find
+      <m>S_{45^\circ}</m> to be either <m>+\hbar/2</m> or
+      <m>-\hbar/2</m> with probabilities that depend on the <m>b_+</m> and <m>b_-</m> variables.
+      Since the positron state is <m>\ket{\uparrow}</m>,
+      the probability of measuring <m>S_{45^\circ}^\text{ pos }</m> = <m>+\hbar/2</m> is
+      <m>\left|b_+\right|^2</m> and the probability of measuring <m>S_{45^\circ}^\text{ pos }</m> =
+      <m>-\hbar/2</m> is <m>\left|b_-\right|^2</m>.
+      In your homework, you will calculate these probabilities.
+    </p>
+  </subsection>
+  <subsection xml:id="subsec_hidden_variable_for_bell">
+    <title>Hidden Variable Prediction for the Bell Experiment</title>
+    <p>
+      Now here is where it gets interesting: Bell constructed a proof that <em>any</em>
+      hidden variable theory<fn>
+      Technically, any <em>local</em> hidden variable theory,
+      to satisfy the lawyers and mathematicians.
+      </fn> with the detectors oriented as in <xref ref="fig_bell_experiment">Figure</xref>
+      and with <m>\theta=45^\circ</m> will result in probabilities that are incompatible with the predictions of quantum mechanics.
+      So, either the hidden variable theory or quantum mechanics must be wrong!
+    </p>
+    <p>
+      While we won't provide a proof of Bell's theorem in full generality here,
+      we will show how to determine the predictions of hidden variable theory introduced in <xref ref="example_hidden_variable_theory">Example</xref>
+      of <xref ref="sec_epr_paradox">Section</xref>.
+      According to this hidden variable theory,
+      the electron and positron have fully determined spin values <m>\vec S^\text{ elec } = -\vec S^\text{ pos }</m>,
+      but we just don't know them.
+    </p>
+    <figure xml:id="fig_hidden_variable_calculation">
+      <caption>The circle represents all possible <m>\vec S^ pos</m>
+      directions.  After a measurement of <m>S_z^ elec  =-\hbar/2</m>, the
+      possible directions of <m>\vec S^ pos</m> are limited to the upper
+      hemisphere (shaded region).</caption>
+      <image width="26%" source="images/hidden_variable_calculation"/>
+    </figure>
+    <p>
+      Picture the positron spin variable <m>\vec S^\text{ pos }</m>.
+      Since we don't know its value and we aren't in any way controlling how it is set when the electron-positron pair are created,
+      it is reasonable to assume it is equally likely to be pointing in any direction.
+      We can represent all possible directions of
+      <m>\vec S^\text{ pos }</m> by the surface of a sphere,
+      where the vector <m>\vec S</m> has its tail on the origin.
+      A circular cross section of this sphere is shown in <xref ref="fig_hidden_variable_calculation">Figure</xref>.
+      The dashed line in the figure is the boundary between the positive and negative values for <m>S_{45^\circ}^\text{ pos }</m>.
+      That is, for spins <m>\vec S^\text{ pos }</m> above and to the right of the dashed line a measurement would result in <m>S_{45^\circ}^\text{ pos }</m> = <m>+\hbar/2</m>.
+      The region below and to the left corresponds to <m>S_{45^\circ}^\text{ pos }</m> = <m>-\hbar/2</m>.
+    </p>
+    <p>
+      Now consider the case where we have measured the electron's <m>z</m>-component of spin and found <m>S_z^\text{ elec }</m> = <m>-\hbar/2</m>.
+      This happens half the time,
+      and when it happens the positron
+      <m>\vec S^\text{ pos }</m> must be somewhere in the upper hemisphere,
+      shown as the shaded region in <xref ref="fig_hidden_variable_calculation">Figure</xref>.
+      This agrees with the QM prediction so far,
+      where if we measure <m>S_z^\text{ elec }</m> = <m>-\hbar/2</m>,
+      we know that we would also measure <m>S_z^\text{ pos }</m> = <m>+\hbar/2</m>.
+      But, here, rather than the positron actually
+      <em>being in a spin up state</em>,
+      the hidden variable theory says that the original
+      <m>\vec S^\text{ pos }</m> should determine the probabilities for measuring <m>S_{45^\circ}^\text{ pos }</m> as spin up or down.
+      According to the figure,
+      a fraction 3/4 of the shaded region results in a value <m>S_{45^\circ}^\text{ pos }</m> = <m>+\hbar/2</m>.
+      Bell constructed a proof that for
+      <em>any</em> hidden variable theory,
+      this fraction of 3/4 is the <em>maximum</em>
+      probability of measuring <m>S_{45^\circ}^\text{ pos }</m> = <m>+\hbar/2</m>.
+    </p>
+    <p>
+      So, let's recap.
+      We create an electron-positron pair in the state:
+      <men>
+        \ket{\psi} = \frac{1}{\sqrt{2}}\ket{\uparrow\downarrow} - \frac{1}{\sqrt{2}}\ket{\downarrow\uparrow}
+      </men>.
+    </p>
+    <p>
+      We make a measurement of the <m>z</m>-component of the electron's spin,
+      and we find that the electron is spin down.
+      Quantum mechanics says that the positron is thus in the state <m>\ket{\uparrow}</m>,
+      which means the probability of measuring <m>S_{45^\circ}^\text{ pos }</m> =
+      <m>+\hbar/2</m> is <m>\left|b_+\right|^2</m>,
+      or 85%. The hidden variable theory says that the positron spin is determined by its original <m>\vec S^\text{ pos }</m>,
+      and we have a <m>\le</m>75% probability of measuring <m>S_{45^\circ}^\text{ pos }</m> = <m>+\hbar/2</m>.
+    </p>
+    <p>
+      <ellipsis/> so which is right?
+    </p>
+  </subsection>
+</section>

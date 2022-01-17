@@ -1,0 +1,175 @@
+<section xml:id="sec_superconductivity">
+  <title>Superconductivity</title>
+  <introduction>
+    <p>
+      Superconductivity, in principle,
+      is quite similar to superfluidity.
+      A superconductor is a material which,
+      if cooled sufficiently, has <em>zero</em> electrical resistance.
+      In other words,
+      a superconductor can carry an electrical current without any dissipative losses.
+      Again, though,
+      the material must be cooled below a critical temperature <m>T_c</m>.
+      Superconductivity has been observed in more than 20 metallic elements and in thousands of alloys.
+      The element with the highest critical temperature is niobium,
+      with a critical temperature of <m>9.3\, \mbox{K}</m>.
+    </p>
+    <p>
+      Recent breakthroughs have led to the discovery of layered copper oxide materials that have a critical temperatures as high at <m>115\,\mbox{K}</m>.
+      While this is still quite cold (<m>-158^\circ\, \mbox{C}</m>),
+      it is above the boiling temperature for liquid nitrogen,
+      which is easy to make and is relatively inexpensive.
+      Consequently, these <em>high temperature superconductors</em>,
+      as they are called, have many practical applications.
+      Here are some examples:
+      <ul>
+        <li>
+          <p>
+            Zero electrical resistance means that electromagnets can be made that require zero power to maintain.
+            Furthermore, since there is no dissipation,
+            the magnets don't heat up.
+            Once the current is initiated in the magnet,
+            it can continue indefinitely.
+            Magnetic resonance imaging (MRI) devices,
+            in particular, require very strong magnetic fields.
+            Using normal conductors,
+            an MRI device burns up a <em>lot</em> of electrical power.
+            Worse, massive refrigeration units are required to cool the electro-magnets
+            (solenoids).
+            Newer MRI devices use wires made of high-temperature superconducting materials,
+            which dramatically lowers the operating cost of the devices.
+          </p>
+        </li>
+        <li>
+          <p>
+            Power transmission: without any electrical resistance,
+            superconducting wires could be used to transmit electrical power without any dissipative loss.
+            (Note: this will really only be practical if materials can be found that go superconducting at ambient temperatures.)
+          </p>
+        </li>
+        <li>
+          <p>
+            Magnetic levitation: as will be discussed below,
+            superconductors have a property referred to as the
+            <em>Meissner effect</em>
+            which enables them to levitate magnets.
+            This principle could potentially be used in the future to make virtually frictionless trains at an economical cost.
+          </p>
+        </li>
+        <li>
+          <p>
+            High-speed electronics:
+            superconducting materials make it possible to make circuits with substantially higher switching speeds.
+          </p>
+        </li>
+        <li>
+          <p>
+            Magnetic energy storage:
+            a superconducting solenoid with a very large magnetic field can be used like a battery,
+            since the current in the solenoid won't die down.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Superconductors, like superfluids,
+      are based on the principle of Bose condensation,
+      but this time electrons are the particles.
+      Of course electrons are fermions and not bosons.
+      But the electrons pair into composite particles called
+      <q>Cooper pairs,</q>
+      and these Cooper pairs are then bosons, which can Bose condense.
+      This was not easy to show.
+      After the phenomenon of superconductivity was discovered experimentally,
+      it took almost 50 years for physicists to work out the subtleties of the pairing process and the Bose condensation.
+    </p>
+  </introduction>
+  <subsection>
+    <title>The Meissner Effect</title>
+    <p>
+      In addition to having zero resistance,
+      superconductors are also noted by a second important property,
+      called the Meissner effect.
+      When a material goes into its superconducting state,
+      any applied magnetic fields are expelled from the material.
+      Put another way,
+      inside a superconducting material the magnetic field is given by <m>\vec B=0</m>.
+      This expulsion process is sketched in <xref ref="fig_meissner">Figure</xref>.
+    </p>
+    <figure xml:id="fig_meissner">
+      <caption>The expulsion of the magnetic field in a superconductor, i.e.,\
+      the Meissner effect.</caption>
+      <image width="73%" source="images/meissner"/>
+    </figure>
+    <p>
+      The Meissner effect has some interesting implications.
+      First, if <m>\vec B= 0</m> inside the superconductor,
+      the superconductor itself must be acting like a magnet that opposes the externally applied magnetic field.
+      The total magnetic field is the sum of the applied field
+      <m>\vec B_\text{ app }</m> and the opposing magnetic field from the superconductor <m>\vec B_\text{ sc }</m>:
+      <men>
+        \vec B_\text{ total }  = \vec B_\text{ app }  + \vec B_\text{ sc }
+      </men>.
+    </p>
+    <p>
+      Inside the superconductor, <m>\vec B_\text{ total }  = 0</m>, so
+      <men>
+        \vec B_\text{ sc }  = -\vec B_\text{ app }
+      </men>
+      inside the superconductor.
+      In words, the Meissner effect requires that a superconductor in a magnetic field becomes a magnet that always opposes the applied field.<fn>
+      Be careful not to confuse this result with Lenz's Law.
+      Lenz's Law says that an induced current in a normal conductor opposes any changes in the magnetic flux.
+      Lenz's Law is inapplicable for superconductors, for which the
+      <q>induced</q>
+      (shielding) currents set up a magnetic field to oppose the applied field itself.
+      More about shielding currents in a moment.
+      </fn> As you will see in the homework assignment,
+      this simple result is the basis behind levitation of magnets over a superconductor
+      (or vice-versa).
+    </p>
+    <p>
+      The opposing field <m>\vec B_\text{ sc }</m> set up by the superconductor requires circulating currents within the superconductor.
+      These currents <mdash/> referred to as
+      <em>shielding currents</em>
+      <mdash/> flow along the outside of the superconductors.
+      In fact, all of the current passing through a superconductor flows in thin layers near the outside of the superconductor.
+      Because of Ampere's law,
+      if there were any currents within the superconductor,
+      the magnetic field wouldn't be zero inside.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Limits on Superconductivity</title>
+    <p>
+      Even for temperatures below the critical value (<m>T \lt T_c</m>),
+      the superconductivity can be destroyed by excessive magnetic fields and/or currents.
+      As we increase the strength of an externally applied magnetic field,
+      the magnitude of the shielding currents must also increase in order to provide a shielding field
+      <m>\vec B_\text{ sc }</m> that cancels the externally applied field within the bulk of the superconductor.
+      But there is only a finite amount of energy that is released by the condensation process,
+      so the shielding currents can only be so large.
+      Consequently,
+      there is only so much applied magnetic field that can be shielded.
+      The maximum applied magnetic field is referred to as the
+      <em>critical magnetic field strength</em> <m>B_c</m>.
+      If <m>B_\text{ app }</m> exceeds <m>B_c</m>,
+      then the shielding currents aren't strong enough to cancel the magnetic field within the material.
+      As a result, the material remains in its normal,
+      non-superconducting state even though the temperature is below <m>T_c</m>.
+      The critical magnetic field is typically independent of the geometry of the sample.
+    </p>
+    <p>
+      A phenomenon closely related to the critical magnetic field,
+      and of great practical importance,
+      is the existence of a <em>critical current</em>.
+      As an externally applied current
+      (not a circulating shielding current)
+      carried by a superconducting sample is increased,
+      there comes a point at which the superconductor becomes normal,
+      because the current carried by a superconductor produces a field at the surface of the material.
+      If the current is too large,
+      then the magnetic field at the surface can exceed the critical magnetic field <m>B_c</m>.
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,100 @@
+<section xml:id="sec_diffraction_gratings">
+  <title>Diffraction Gratings</title>
+  <p>
+    A diffraction grating consists of many very small, equally spaced slits.
+    A grating can be either a transmission grating (as pictured in <xref ref="fig_grating">Figure</xref>,
+    where the light comes from one side and gets diffracted out the other,
+    or a reflection grating,
+    where the light gets diffracted back on the same side of the grating that it came from.
+    The
+    <q>slits</q>
+    may consist of absorbing and transparent regions,
+    as with our double and triple slits,
+    or simply of ridges in a transparent material,
+    or of angled reflecting surfaces.
+    Historically,
+    the first diffraction gratings were made by painstakingly etching thousands of microscopic parallel grooves in glass using a diamond scribe.
+    Fortunately, the details of how the grooves, lines,
+    or slits are shaped doesn't affect where the light gets diffracted.
+    (It does affect how <em>much</em> light gets diffracted,
+    but we won't worry about calculating that.)
+  </p>
+  <p>
+    Everything we did for two and three slits carries over to a diffraction grating,
+    except that now we have a very large number of phasors
+    (in the range of 1000 to 10,000).
+    That means we can't easily draw them all and add them as vectors,
+    but we can still figure out what the diffraction pattern must look like.
+  </p>
+  <figure xml:id="gratingMaxFig">
+    <caption>Phasor diagram for a diffraction grating
+    at a maximum of the intensity.</caption>
+    <image width="45%" source="images/gratingPhasorMax"/>
+  </figure>
+  <p>
+    Suppose our grating is illuminated at normal incidence by light of wavelength <m>\lambda</m>,
+    so that the light reaches all the slits in phase.
+    Each slit re-radiates its own outgoing wave,
+    and these waves interfere on a distant screen.
+    We represent each interfering wave as a phasor on a phasor diagram.
+    To get a maximum from our many-phasor diagram,
+    we want all the phasors pointing in the same direction,
+    as in <xref ref="gratingMaxFig">Figure</xref>.
+    This happens when the phase difference between two adjacent phasors is <m>0</m>,
+    but also when it is <m>2\pi</m>,
+    <m>4\pi</m>,
+    etc., and when it is <m>-2\pi</m>, <m>-4\pi</m>, etc.
+    Thus we have maxima in the intensity for any integer multiple of <m>2\pi</m>,
+    provided the angle of the outgoing light is small enough that the light can actually reach the screen.
+    These maxima are often referred to as
+    <q>orders</q>
+    of diffraction,
+    where <m>\Delta\phi=0</m> is called the zeroth order,
+    <m>\Delta\phi=2\pi</m> is the first order,
+    <m>\Delta\phi = 4\pi</m> is the second order,
+    <m>\Delta\phi=-2\pi</m> the minus-first order, etc.
+  </p>
+  <figure xml:id="gratingNonMaxFig">
+    <caption>Phasor diagram for a diffraction grating
+    away from a maximum.</caption>
+    <image width="45%" source="images/gratingPhasorNonMax"/>
+  </figure>
+  <p>
+    What about points on the screen that <em>aren't</em> maxima?
+    If we move away from the central maximum by a small distance,
+    there's now some non-zero phase difference <m>\Delta\phi_\text{ adj. }</m>.
+    This means that each adjacent phasor is rotated by
+    <m>\Delta\phi_\text{ adj. }</m> relative to its neighbor.
+    But remember, we now have A LOT of phasors.
+    So the by the time we've gotten through our 1000 or 10,000 phasors,
+    the phasor diagram has wrapped itself up in a tight little circles,
+    as indicated in <xref ref="gratingNonMaxFig">Figure</xref>.
+    The amplitude won't be exactly zero,
+    but it will be much less than the amplitude at the maximum.
+    And the intensity, which is proportional to amplitude squared,
+    will be MUCH, MUCH less than at the maximum.
+    This is why the diffraction pattern from the grating consists of very narrow maxima,
+    where all the light is concentrated,
+    and wide expanses in between where essentially no light goes. (Incidentally,
+    you can see from conservation of energy that when the maxima get very bright,
+    they must also get very narrow<ndash/>otherwise the total light power reaching the screen would be bigger than the light power passing through the slit!)
+  </p>
+  <p>
+    You can think of the grating diffraction pattern as the limit of the <m>N</m>-slit pattern,
+    when <m>N</m> gets big.
+    As shown in <xref ref="gratingSlitPatterns">Figure</xref>,
+    the primary maxima of the multi-slit pattern get narrower and narrower as the number of slits increases
+    (assuming a constant slit spacing).
+    These maxima get correspondingly brighter,
+    since if the amplitude from each slit is <m>A</m>,
+    the combined amplitude from <m>N</m> slits at a maximum is <m>N A</m>,
+    and the combined intensity is proportional to <m>N^2 A^2</m>,
+    which grows rapidly as the number of slits increases.
+  </p>
+  <figure xml:id="gratingSlitPatterns">
+    <caption>The diffraction pattern of multiple
+    slits begins to resemble that of a diffraction grating as the number of
+    slits increases, with very narrow, very bright peaks.</caption>
+    <image width="50%" source="images/gratingSlitPatterns"/>
+  </figure>
+</section>

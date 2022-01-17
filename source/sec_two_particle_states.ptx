@@ -1,0 +1,242 @@
+<section xml:id="sec_two_particle_states">
+  <title>Entangled Two-Particle States</title>
+  <p>
+    For a single electron, any possible spin state can be written as
+    <men xml:id="eq_spin_half_state">
+      \ket{\psi} = c_+\ket{+z} + c_-\ket{-z} = c_+\ket{\uparrow} + c_-\ket{\downarrow}
+    </men>,
+    with the appropriate choice of the complex numbers <m>c_+</m> and <m>c_-</m>.
+    For notational simplicity we will switch to writing the spin states in terms of up and down arrows for the remainder of this chapter.
+  </p>
+  <p>
+    Now consider a two-particle state made up of two different kinds of particle.
+    To be specific, let's take an electron and a positron,
+    which is a particle with the same mass and spin as the electron,
+    but it has a <m>+e</m> charge.<fn>
+    You may have heard of positrons at least indirectly:
+    they are used in Positron Emission Tomography, also known as a PET scan.
+    </fn> What is the expression analogous to <xref ref="eq_spin_half_state"/> for any possible two-particle state?
+  </p>
+  <table xml:id="table_two_particle_basis">
+    <title>The four possible states with definite <m>S_z</m> values</title>
+    <tabular>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  >state</cell>
+        <cell>electron</cell>
+        <cell>positron</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\ket{\uparrow\uparrow} =
+          \ket{\uparrow}  \ket{\uparrow}</m> <nbsp/><nbsp/></cell>
+        <cell><m>S_z=+\hbar/2</m> <nbsp/><nbsp/></cell>
+        <cell><m>S_z=+\hbar/2</m></cell>
+      </row>
+      <row>
+        <cell><m>\ket{\uparrow\downarrow} =
+          \ket{\uparrow} \ket{\downarrow}</m></cell>
+        <cell><m>S_z=+\hbar/2</m></cell>
+        <cell><m>S_z=-\hbar/2</m></cell>
+      </row>
+      <row>
+        <cell><m>\ket{\downarrow\uparrow} =
+          \ket{\downarrow} \ket{\uparrow}</m></cell>
+        <cell><m>S_z=-\hbar/2</m></cell>
+        <cell><m>S_z=+\hbar/2</m></cell>
+      </row>
+      <row>
+        <cell><m>\ket{\downarrow\downarrow} =
+          \ket{\downarrow} \ket{\downarrow}</m></cell>
+        <cell><m>S_z=-\hbar/2</m></cell>
+        <cell><m>S_z=-\hbar/2</m></cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  ></cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    There are four possible states that have definite values for the <m>z</m>-component of the spin,
+    listed in <xref ref="table_two_particle_basis">Table</xref>.
+    These four states make a <em>basis</em>
+    in the sense that any possible two-particle state for the electron and positron is a superposition of these states:
+    <men xml:id="eq_general_two_particle_state">
+      |\psi\rangle = c_1 \ket{\uparrow\uparrow} + c_2 \ket{\uparrow\downarrow} + c_3 \ket{\downarrow\uparrow} + c_4 \ket{\downarrow\downarrow}
+    </men>.
+  </p>
+  <p>
+    If the two particles were both electrons,
+    we would need to build in indistinguishability by choosing coefficients <m>c_1</m> to <m>c_4</m> that make an anti-symmetric state.
+    But that's not the case here:
+    particle 1 is an electron and particle 2 is a positron,
+    so they are distinguishable from each other.
+    The state vector does not need to be anti-symmetric.
+  </p>
+  <p>
+    We have also introduced in <xref ref="table_two_particle_basis">Table</xref>
+    the notation that we can write a two-particle state with definite values of <m>S_z</m> in a factored form:
+    <m>\ket{\uparrow\downarrow} = \ket{\uparrow} \ket{\downarrow}</m>.
+    This is simply two different ways to write the same thing:
+    the electron has spin up and the positron has spin down.
+    Both notations have their advantage and we'll switch back and forth between them.
+    But be careful when using the
+    <q>factored</q>
+    states: the electron state vector must always be on the left and the positron state vector on the right.
+    In other words,
+    <m>\ket{\uparrow} \ket{\downarrow} \neq \ket{\downarrow} \ket{\uparrow}</m>.
+  </p>
+  <p>
+    Now let's examine the behavior of this two particle state with an example.
+    Consider an electron-positron pair in the state
+    <men xml:id="eq_example_state">
+      \ket{\psi} = 0.9 \ket{\uparrow\uparrow} + 0.1\ket{\uparrow\downarrow} + 0.3\ket{\downarrow\uparrow} + 0.3\ket{\downarrow\downarrow}
+    </men>.
+  </p>
+  <p>
+    First, let's compute the probabilities associated with a measurement of the positron's <m>S_z</m> spin component.
+  </p>
+  <p>
+    There are two ways that the positron could be found to have <m>S_z=+\hbar/2</m>,
+    as both the <m>\ket{\uparrow\uparrow}</m> state and the
+    <m>\ket{\downarrow\uparrow}</m> state have the positron spin up.
+    So we need to add together the probability of measuring
+    <m>\ket{\uparrow\uparrow}</m> and the probability of measuring <m>\ket{\downarrow\uparrow}</m>:
+    <md>
+      <mrow>\text{ Prob(positron spin up) }  \amp = \text{ Prob } (\ket{\uparrow\uparrow}) + \text{ Prob } (\ket{\downarrow\uparrow})</mrow>
+      <mrow>\amp =|0.9|^2 + |0.3|^2</mrow>
+      <mrow>\amp = 0.81+0.09 = 0.90</mrow>
+    </md>.
+  </p>
+  <p>
+    Note that we did not add the coefficients first and then square them.
+    That would have led to the <m>|0.9+0.3|^2 = 1.44</m>,
+    which is a nonsensical result for a probability!
+  </p>
+  <p>
+    Similarly, we calculate the probability of the positron being found with spin down by combining the probabilities of the
+    <m>\ket{\uparrow\downarrow}</m> and <m>\ket{\downarrow\downarrow}</m> states:
+    <men>
+      \text{ Prob(positron spin down) }  = |0.3|^2 + |0.1|^2 = 0.10
+    </men>.
+  </p>
+  <p>
+    Notice that we have a normalized state and the total probability of the positron having either spin up or spin down adds to one:
+    <m>0.90 + 0.10=1</m>.
+  </p>
+  <p>
+    Now let's pose a question that gets at the central topic of this chap:
+  </p>
+  <p>
+    <assemblage>
+      <p>
+        Suppose we start out again with the state
+        <m>\ket{\psi}</m> and first measure the electron's <m>S_z</m> value.
+        Will this measurement affect the state of the positron?
+      </p>
+    </assemblage>
+  </p>
+  <p>
+    Here's a way to approach it.
+    Let's write the basis states in their factored form,
+    and see if we can combine terms:
+    <md>
+      <mrow>\ket{\psi} \amp = 0.9 \ket{\uparrow} \ket{\uparrow}  + 0.1 \ket{\uparrow} \ket{\downarrow} + 0.3 \ket{\downarrow} \ket{\uparrow} + 0.3 \ket{\downarrow} \ket{\downarrow}</mrow>
+      <mrow>\amp = \ket{\uparrow}\Bigl( 0.9\ket{\uparrow} + 0.1\ket{\downarrow} \Bigr) + \ket{\downarrow}\Bigl( 0.3\ket{\uparrow} + 0.3\ket{\downarrow} \Bigr) </mrow>
+    </md>.
+  </p>
+  <p>
+    Look at what we have done here:
+    we have used a distributive rule to factor our two-particle state.
+    This is allowed,
+    but keep in mind that in any product we must keep the electron state vector on the left and the positron state vector on the right.
+  </p>
+  <p>
+    To make this expression more useful,
+    we would like the terms in parentheses to be normalized states.
+    We can achieve this by multiplying and dividing by the appropriate factor,
+    something like
+    <men xml:id="eq_factored_state">
+      \qquad \ket{\psi} = c_+\ket{\uparrow} \biggl(\frac{0.9}{c_+}\ket{\uparrow} + \frac{0.1}{c_+}\ket{\downarrow}\biggr) + c_-\ket{\downarrow}\biggl( \frac{0.3}{c_-}\ket{\uparrow} + \frac{0.3}{c_-}\ket{\downarrow} \biggr)
+    </men>.
+  </p>
+  <p>
+    As you will check in the homework,
+    the terms in parentheses will be normalized states as long as
+    <m>c_+ = \sqrt{0.82}</m> and <m>c_-=\sqrt{0.18}</m>.
+    Putting in those values gives
+    <men xml:id="eq_canonical_entangled">
+      \ket{\psi} = \sqrt{0.82} \ket{\uparrow}\ket{\phi_1} + \sqrt{0.18}\ket{\downarrow}\ket{\phi_2}
+    </men>
+    with the normalized <em>positron</em> states
+    <md>
+      <mrow>\ket{\phi_1} \amp = \frac{9}{\sqrt{82}}\ket{\uparrow} + \frac{1}{\sqrt{82}} \ket{\downarrow}</mrow>
+      <mrow xml:id="eq_positron_states" number="yes">\ket{\phi_2} \amp = \frac{1}{\sqrt{2}}\ket{\uparrow} + \frac{1}{\sqrt{2}} \ket{\downarrow} </mrow>
+    </md>.
+  </p>
+  <p>
+    Now, <m>\ket{\psi}</m> written in the form <xref ref="eq_canonical_entangled"/> is nothing other than the
+    <m>\ket{\psi}</m> we started with in <xref ref="eq_example_state"/>.
+    But it is now much more useful:
+    we can finally address our central question
+    (does an electron spin measurement affect the positron state)
+    using tools we've already learned for states.
+  </p>
+  <p>
+    An electron <m>S_z</m> measurement will have a probability of <m>0.82</m> of finding the electron spin up.
+    If this occurs, the state will collapse to the new state
+    <men>
+      \ket{\psi_\text{ new } } = \ket{\uparrow}\ket{\phi_1}
+    </men>.
+  </p>
+  <p>
+    Alternately,
+    there is a probability <m>0.18</m> of the electron being found to have spin down,
+    in which case the state collapses to
+    <men>
+      \ket{\psi_\text{ new } } = \ket{\downarrow}\ket{\phi_2}
+    </men>.
+  </p>
+  <p>
+    We can now determine the probabilities for the subsequent positron spin measurement by looking at the coefficients in the normalized states
+    <m>\ket{\phi_1}</m> and <m>\ket{\phi_2}</m>.
+    And here is what we find:
+    <ul>
+      <li>
+        <p>
+          If we do not measure the electron's spin,
+          the positron has a probability <m>9/10</m> of being spin up.
+        </p>
+      </li>
+      <li>
+        <p>
+          If we measure the electron's spin and find it to be spin up,
+          then the positron has a probability <m>81/82</m> of being spin up.
+        </p>
+      </li>
+      <li>
+        <p>
+          If our electron spin measurement had instead found it to be spin down,
+          then the positron has a probability <m>1/2</m> of being spin up.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    This is the essence of entanglement!
+    Measurements on one particle affect the state of the other particle.
+  </p>
+</section>

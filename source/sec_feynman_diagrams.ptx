@@ -1,0 +1,52 @@
+<section xml:id="sec_feynman_diagrams">
+  <title>Feynman Diagrams</title>
+  <p>
+    In putting the ideas of quantum field theory together in the 1940's, Richard Feynman developed a method of diagramming interactions.
+    These diagrams can actually be translated directly to equations using a set of Feynman rules that associates different parts of the diagram to various factors and terms in the equations.
+    We will not try to do that,
+    but we will use Feynman-like diagrams to sketch reactions.
+  </p>
+  <p>
+    Let's diagram the interaction of two electrons repelling each other via the electromagnetic interaction.
+    We've just seen that one electron emits a virtual photon as the messenger,
+    and the other electron receives it.
+    If we plot time upward and space horizontally
+    (like a space-time diagram)
+    we find the interaction looks like <xref ref="fig_electron_photon">Figure</xref>.
+  </p>
+  <figure xml:id="fig_electron_photon">
+    <caption>Feynman diagram of two electrons interacting
+    electromagnetically by the exchange of a photon.</caption>
+    <image width="30%" source="images/electron_photon"/>
+  </figure>
+  <p>
+    The particles that interact are drawn as solid straight lines,
+    indicating constant velocity before and after the interaction.
+    The lines can change direction only at a vertex,
+    the point where two solid lines and a squiggly photon line meet.
+    The vertex represents the emission or absorption of the messenger particle,
+    events which can change the properties of the interacting particles.
+    In this case,
+    the momentum of each electron changes at the vertex.
+  </p>
+  <p>
+    The weak and color interactions can also be illustrated in this way.
+    The messenger particles for the weak interactions are the <m>W^+</m>,
+    <m>W^-</m>, and <m>Z^0</m> bosons,
+    which on a diagram are represented by closely spaced parallel lines.
+    For the strong interaction between the quarks,
+    the messengers are colored gluons,
+    which appear as double squiggly curves.
+    Figs.
+    <xref ref="fig_muon_W"></xref> and <xref ref="fig_quark_gluon"></xref>
+    show examples of weak and strong interactions.
+  </p>
+  <figure xml:id="fig_muon_W">
+    <caption>Feynman diagram showing quarks interacting strongly by
+    exchanging a gluon.</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/muon_W"/>
+      <image width="92.5%" source="images/quark_gluon"/>
+    </sidebyside>
+  </figure>
+</section>

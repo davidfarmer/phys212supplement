@@ -1,0 +1,45 @@
+<section xml:id="sec_quantized_energies_intro">
+  <title>Introduction</title>
+  <p>
+    We have seen that particles have wave-like properties,
+    and that the de<nbsp/>Broglie relation,
+    connecting the properties of momentum and wavelength,
+    has far-reaching consequences for the behavior of atoms and other microscopic systems.
+    The main consequence is that the idea of a particle as a point-like object having a precise position at any given time has to be replaced with a probability density describing a distribution of positions where the particle is likely to be found.
+  </p>
+  <p>
+    In the previous chapter,
+    we introduced the idea of a wavefunction <m>\psi(x)</m> from which we can determine the probability density <m>P(x) = |\psi(x)|^2</m>.
+    We also discussed Heisenberg's uncertainty principle,
+    that states that there is a minimum combined spread in a particles position and momentum,
+    a principle that also leads to a minimum kinetic energy for any confined particle.
+    And at the end of the previous chapter,
+    we introduced the Schr&#xf6;dinger equation which enables us to determine wavefunctions for particles in regions of given potential energy.
+  </p>
+  <p>
+    In this chapter,
+    we show how Schr&#xf6;dinger's Equation predicts the <em>quantization</em>
+    of energies for confined particles,
+    i.e., only certain, well-defined energies are allowed.<fn>
+    This is where the
+    <q>quantum</q>
+    in the name
+    <q>quantum mechanics</q>
+    comes from.
+    </fn> Quantization of energies is a profound and distinctly quantum principle (i.e., not predicted at all from classical mechanics) which has extensive applications in modern technology.
+    We will illustrate quantization of particle energies with a simple system <mdash/> the
+    <em>particle in a box</em>
+    (also known as the <em>infinite square well potential</em>)
+    <mdash/> for which solutions of Schr&#xf6;dinger's Equation are readily obtained.
+    We will discuss the properties of this system,
+    which has recently led to the development of <em>quantum dots</em>
+    for use in numerous applications.
+  </p>
+  <p>
+    We will also discuss how quantum systems absorb and emit light,
+    a result that explains not only the colors that we see from many physical systems but which has also become a common tool for identifying the material constituents of a range of systems,
+    from biological systems in microscopic studies up to stars and star-forming regions millions
+    (and billions)
+    of light years from the Earth.
+  </p>
+</section>

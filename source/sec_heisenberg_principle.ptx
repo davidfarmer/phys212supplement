@@ -1,0 +1,123 @@
+<section xml:id="sec_heisenberg_principle">
+  <title>Heisenberg's Uncertainty Principle</title>
+  <p>
+    Okay, back to <xref ref="fig_wave_localization">Figure</xref>.
+    We have already commented that a particle moving with a well-defined momentum <m>p</m> has a wavefunction <m>\psi(x)</m> that is a pure sine wave,
+    as in <xref ref="fig_wave_localization">Figure</xref>(a).
+    But where is the particle when it is in this state?
+    The answer: it doesn't <em>have</em> a well-defined position.
+    There is a non-zero probability density for finding the particle anywhere where the wave is non-zero.
+    But a pure sine wave with a definite wavelength extends all the way from
+    <m>x = -\infty</m> to <m>x = +\infty</m>.
+    So a particle with a well-defined momentum could be found <em>anywhere</em>.
+    Phrased another way, the spread in the particle's location is infinite.
+    So, if the momentum of a particle is defined precisely,
+    the particle's position is completely undetermined <mdash/> it could be found anywhere.
+    (And remember:
+    it isn't just that we don't know where the particle is located,
+    but rather that the particle simply doesn't
+    <em>have</em> a location.)
+  </p>
+  <p>
+    But what if the particle's wavefunction looks like the one in <xref ref="fig_wave_localization">Figure</xref>(c)?
+    In this case,
+    <m>\psi(x) = 0</m> everywhere except in a narrow region where the sharp blip is.
+    So, its position is well-defined and predictable.
+    It is theoretically possible to make an arbitrarily narrow pulse-like wavefunction,
+    i.e., with a spread in position which is arbitrarily small.
+    <em>But what is the wavelength <mdash/> and therefore the momentum <mdash/> of this particle?</em>
+  </p>
+  <p>
+    Formally, we use the symbol
+    <m>\sigma_x</m> to denote the spread in a particle's position and
+    <m>\sigma_p</m> to denote the spread in a particle's momentum.<fn>
+    Mathematically,
+    <m>\sigma_x</m> is the same as the standard deviation
+    <men>
+      \sigma_x = \sqrt{\langle x^2 \rangle - \langle x\rangle^2 }
+    </men>.
+    where the averages <m>\langle x\rangle</m> and <m>\langle x^2\rangle</m> are defined as
+    <men>
+      \langle x\rangle = \int x\, P(x)\, dx \qquad \langle x^2\rangle = \int x^2\, P(x)\, dx
+    </men>
+    with <m>P(x)</m> being the probability density defined in the previous section.
+    </fn> For waves,
+    there is an important theorem called
+    <em>Fourier's theorem</em>
+    that says that any function <m>f(x)</m> <mdash/> which might be describing the height of a water wave or the pressure of a sound wave as a function of position or a quantum wavefunction <m>\psi</m> <mdash/> can be decomposed into a sum of sines and cosines.<fn>
+    Fourier's theorem is <em>really</em>
+    cool and forms the basis for the theory of music among other things.
+    The basilar membrane in your ear performs an operation very close to a Fourier transform,
+    with different portions of the membrane responding to different sound frequencies.
+    This process helps you to identify, say,
+    the individual sounds produced by flutes,
+    cellos and bass guitars that are all blended together during a concert.
+    And Fourier analysis is used to determine the characteristic
+    <q>fingerprint</q>
+    of different musical instruments and, in fact,
+    is used by designers of electronic music synthesizers to mimic  the sounds of real instruments.
+    </fn> We won't prove it here,
+    but Fourier's theorem shows that a pulse-like wave with
+    <m>\sigma_x = 0</m> can be produced by adding sine waves with wavelengths ranging from 0 up to <m>\infty</m>.
+    But since each wavelength corresponds to a different momentum,
+    that means that a particle with a well-defined position (i.e.,
+    <m>\sigma_x = 0</m>) could have any momentum from infinity down to zero (i.e., <m>\sigma_p = \infty</m>).
+  </p>
+  <p>
+    So, a particle can have a well-defined momentum
+    (but completely uncertain position)
+    or a well-defined position
+    (but completely uncertain momentum).
+    There is a third possibility:
+    <xref ref="fig_wave_localization">Figure</xref>(b) shows a wavepacket that is reasonably
+    (but not perfectly)
+    localized and one that can be decomposed into the addition of sine waves with a limited
+    (but non-zero)
+    spread of wavelengths.
+    In this case,
+    the particle is neither perfectly localized nor does it have a perfectly determined momentum,
+    but neither <m>\sigma_x</m> nor <m>\sigma_p</m> are infinite either.
+  </p>
+  <p>
+    A strict application of Fourier's theorem to matter waves shows that there is a minimum total spread in the particle's position and momentum:
+    <men xml:id="eq_heisenberg_uncertainty">
+      \sigma_x \sigma_p \geq \frac{\hbar}{2}
+    </men>,
+    where <m>\hbar \equiv h/2\pi</m>.
+    This is known as the Heisenberg uncertainty relation.
+    It is a profound result that caused Newton to roll over in his grave<fn>
+    Well, okay, maybe Newton didn't literally roll over in his grave,
+    but this result is <em>very</em>
+    different than anything envisioned by classical physics
+    </fn>,
+    because it says that we cannot simultaneously know a particle's position and momentum.
+    A precise position and a precise momentum would mean both <m>\sigma_x</m> and
+    <m>\sigma_p</m> are zero, but that is not allowed.
+  </p>
+  <p>
+    Recall when we solved for the motion of an object in classical mechanics,
+    say a blow dart shot straight upward,
+    we needed to know the initial position of the dart and the initial velocity.
+    The Heisenberg uncertainty relation says that is not possible.
+    The more precisely you are able to determine the position of some object,
+    the less you will be able to know about its momentum.
+  </p>
+  <p>
+    Now, <m>\hbar</m> is a really small constant.
+    For distances and momenta on our macroscopic scale, Heisenberg's uncertainty places no practical limitations.
+    But down at the atomic scale the Heisenberg uncertainty relation has a very big impact.
+    And, of course,
+    experiments have confirmed the uncertainty relation,
+    so it is not just a proposal but it is part of reality.
+  </p>
+  <p>
+    Many people,
+    when encountering the uncertainty relation for the first time,
+    assume that this is a statement about the limits of our ability to do experiments.
+    But that is not the case.
+    It's a property of nature obeyed by all matter,
+    even when we're not looking.
+    As we shall see,
+    the Heisenberg uncertainty relation is essentially the reason that atoms are stable.
+  </p>
+</section>

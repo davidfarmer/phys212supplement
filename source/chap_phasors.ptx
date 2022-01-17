@@ -1,0 +1,12 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_phasors">
+  <title>Phasors, Phasor Diagrams, and Wave Interference</title>
+  <xi:include  href="sec_phasors_intro.ptx"/>
+  <xi:include  href="sec_phasor_single.ptx"/>
+  <xi:include  href="sec_phasor_complex_notation.ptx"/>
+  <xi:include  href="sec_adding_phasors.ptx"/>
+  <xi:include  href="sec_phasors_multiple_source.ptx"/>
+  <xi:include  href="sec_single_slit_diffraction.ptx"/>
+  <xi:include  href="sec_diffraction_limit.ptx"/>
+  <xi:include  href="sec_diffraction_gratings.ptx"/>
+  <xi:include  href="sec_phasors_problems.ptx"/>
+</chapter>

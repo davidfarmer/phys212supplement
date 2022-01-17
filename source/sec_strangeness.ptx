@@ -1,0 +1,67 @@
+<section xml:id="sec_strangeness">
+  <title>Strangeness</title>
+  <p>
+    We now come to the first conservation law that is partially violated:
+    conservation of strangeness.
+    Strangeness is a property carried only by hadrons,
+    and it is conserved during strong and electromagnetic interactions,
+    but not necessarily conserved in weak interactions.
+    Its name arises from the strange behavior observed in the production and decays of certain hadrons.
+    Consider the following sequence,
+    a result of bombarding stationary protons with high energy pions:
+    <men xml:id="eq_lambda_k_production">
+      \pi^- + p \to \Lambda + K^0
+    </men>,
+    followed by
+    <men xml:id="eq_lambda_decay">
+      \Lambda \to p + \pi^- \qquad \mbox{lifetime}  \sim 3\times 10^{-10}\Xunits{s}
+    </men>
+    and
+    <men xml:id="eq_k_decay">
+      K^0 \to \pi^+ + \pi^- \qquad \mbox{lifetime}  \sim 10^{-9}\Xunits{s}
+    </men>.
+  </p>
+  <p>
+    Particles like <m>\Lambda</m> and <m>K</m> always seem to be produced in pairs.
+    One never sees either of the following candidate reactions.
+    <md>
+      <mrow>\pi^- + p \amp \to\amp  n + K^0</mrow>
+      <mrow xml:id="eq_strange_violation" number="yes">\pi^- + p \amp \to\amp  \Lambda + \pi^0</mrow>
+    </md>.
+  </p>
+  <p>
+    Let's analyze these reactions.
+    Since the <m>\Lambda</m> eventually decays to a proton,
+    it must be a baryon,
+    while <m>K</m> decays only to pions,
+    marking the kaon as a meson.
+    Then the reactions in both <xref ref="eq_lambda_k_production"/> and <xref ref="eq_strange_violation"/> conserve charge, spin,
+    and baryon number,
+    but <xref ref="eq_strange_violation"/> never occurs.
+    Why not?
+    The answer once again is that a new conservation law is being violated.
+    Lambdas and kaons must carry a new property
+    (in equal but opposite amounts)
+    that pions and protons don't have.
+    This new property, which particle physicists of the 1960's named
+    <em>strangeness</em>, comes in integer amounts.
+    The kaon, by convention,
+    has <m>S = +1</m> and the lambda has <m>S = -1</m>.
+    Strangeness then balances in <xref ref="eq_lambda_k_production"/> but not in <xref ref="eq_strange_violation"/>.
+    This, then, would
+    <q>explain</q>
+    why the reactions in <xref ref="eq_strange_violation"/> are never observed.
+  </p>
+  <p>
+    But what about the decays of <xref ref="eq_lambda_decay"/> and <xref ref="eq_k_decay"/>?
+    Don't they violate strangeness conservation?
+    The answer is yes, they do.
+    But these decays proceed by the weak interaction.
+    The clue that these are weak decays is the particles' relatively long lifetimes,
+    a topic we discuss further in <xref ref="chap_interactions">Chapter</xref>.
+    Suffice it to say that <m>\Lambda</m> and <m>K^0</m> are produced together by the strong interaction,
+    conserving strangeness,
+    but they decay separately by the weak interaction,
+    which does not conserve strangeness.
+  </p>
+</section>

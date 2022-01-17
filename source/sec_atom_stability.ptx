@@ -1,0 +1,122 @@
+<section xml:id="sec_atom_stability">
+  <title>The Stability of Atoms</title>
+  <p>
+    Now we are ready to address the second great failure of classical physics.
+    Maxwell's equations make a crystal clear prediction:
+    accelerating charges send out energy in the form of EM waves.
+    This is a big problem for the classical physics model of the atom.
+    If the electrons orbit the nucleus like the planets orbit the sun,
+    then they definitely have acceleration
+    (equal to <m>v^2/R</m>),
+    and so they are radiating away their energy.
+  </p>
+  <p>
+    But where would that energy come from?
+    It comes from the potential energy of the electron's electric force interaction with the proton.
+    To lower its potential energy,
+    the electron must come closer to the proton,
+    just like an object coming closer to the Sun lowers its gravitational potential energy.<fn>
+    Actually, only half of the potential energy is radiated away.
+    The other half goes into increased kinetic energy.
+    But the total mechanical energy is still decreasing.
+    </fn> So that is the classical solution:
+    the electron must radiate away energy by coming ever nearer to the nucleus.
+  </p>
+  <p>
+    Working out the numbers involved for a hydrogen atom,
+    we find that the electron should spiral in and essentially crash into the nucleus after a time of about <m>10^{-12}\Xunits{s}</m>.
+    That is, classical mechanics and electromagnetism predict that atoms aren't stable and shouldn't last long enough for them
+    (and us)
+    to still be around.
+    All the matter in our universe should be simply electrons sitting in the nucleus with the protons and neutrons.
+  </p>
+  <p>
+    Heisenberg's uncertainty principle resolves this dilemma.
+    An electron cannot sit on top of the nucleus because that would be a very precise position and a very precise momentum (namely,
+    at rest),
+    which violates the uncertainty relation,
+    so the best the electron can do is some compromise.
+    It accepts the minimal spread in position and momentum that it can and then is stuck there.
+    Since it cannot lower its energy further,
+    it quits radiating and is stable.<fn>
+    Thank goodness!
+    </fn>
+  </p>
+  <p>
+    Put another way, whenever a particle is confined <mdash/> i.e., if
+    <m>\sigma_x</m> is less than <m>\infty</m> <mdash/> then there is a minimum spread <m>\sigma_p \ne 0</m> in the momentum.
+    Assume the product <m>\sigma_x\sigma_p</m> in the Heisenberg uncertainty relation,
+    <xref ref="eq_heisenberg_uncertainty"/>,
+    to be as small as possible, namely,
+    <m>\sigma_x\sigma_p\approx \hbar/2</m>.
+    This gives us the inverse relation
+    <men xml:id="eq_sigmap_from_sigmax">
+      \sigma_p \approx\frac{\hbar}{2\sigma_x}
+    </men>.
+  </p>
+  <p>
+    If <m>\sigma_p \ne 0</m>, there is a non-zero kinetic energy.
+    The average momentum must again be zero by symmetry,
+    <m>\langle p\rangle=0</m>, so
+    <men>
+      \sigma_p^2 = \langle p^2\rangle - \cancelto{0}{\langle p\rangle^2} = \langle p^2\rangle
+    </men>.
+  </p>
+  <p>
+    The average kinetic energy can be related to the spread in momentum:
+    <men xml:id="eq_ke_from_spread">
+      \langle K\rangle = \frac{1}{2}m\langle v^2\rangle = \frac{1}{2m}\langle p^2\rangle = \frac{\sigma_p^2}{2m}
+    </men>.
+  </p>
+  <p>
+    Conceptually, the since the electron is confined,
+    it is forced to have some spread in velocity or momentum.
+    The larger this spread, the larger the resulting average kinetic energy.
+  </p>
+  <p>
+    So, what does this mean?
+    If an electron in an atom were to spiral into the center,
+    the spread in its position
+    <m>\sigma_x</m> would get smaller and smaller.
+    But smaller <m>\sigma_x</m> would result in a larger and larger <m>\sigma_p</m>
+    (by the uncertainty principle)
+    and a larger kinetic energy
+    (larger than the classical increase in <m>K</m> from spiraling inward).
+    For an electron in an atom, the reduction in its potential energy
+    (by moving closer to the center of the atom)
+    would be countered by an increase in its kinetic energy,
+    which grows toward infinity if the electron spirals all the way in.
+    There is an optimal radial distance where the mechanical energy <m>E = \langle K\rangle + \langle U\rangle</m> reaches its minimum.
+    So, the classical problem of an electron spiraling in doesn't apply,
+    because eventually the energy <em>increases</em>
+    if the electron gets closer and closer to the center of the atom.
+  </p>
+  <p>
+    So, the condition for the electron to spiral in all the way is gone.
+    It can't keep radiating radiating EM waves,
+    losing energy, and spiraling in to the nucleus of the atom.
+    Heisenberg's principle indicates that the energy of the electron is not a minimum at the center of the atom but rather at a finite radius.
+    So, an electron would need <em>more</em>
+    energy to fall further into the center of the atom,
+  </p>
+  <p>
+    This is, of course,
+    a simplification of the quantum explanation for the stability of atoms.
+    As we'll see in the next chapter,
+    the energy of an electron in an atom (and, in fact,
+    the energy of any confined particle) is quantized,
+    having only certain, discrete values.
+  </p>
+  <p>
+    In the meantime,
+    an important consequence of Heisenberg's Uncertainty is the following:
+  </p>
+  <p>
+    <assemblage>
+      <p>
+        A confined particle can never have zero kinetic energy.
+      </p>
+    </assemblage>
+    We will say a lot more about this in the next chapter.
+  </p>
+</section>

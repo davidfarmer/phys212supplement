@@ -1,0 +1,126 @@
+<section xml:id="sec_diffraction_limit">
+  <title>Diffraction Limit</title>
+  <p>
+    We can learn a lot from the single slit.
+    As seen in <xref ref="exampleSingleSlit">Example</xref>,
+    the first minimum of the single-slit pattern happens when
+    <m>\Delta\phi_\text{ tot } = 2\pi</m> or <m>\lambda = a\sin\theta</m>.
+    In many cases,
+    the wavelength <m>\lambda</m> is substantially smaller than the size of the slit,
+    and we can safely use the small-angle approximation <m>\sin\theta\approx\theta</m>.
+    Note that <m>\theta</m> must be in radians for this to be a good approximation<ndash/>try it out on your calculator for some large (<m>\theta</m> around 1 or bigger) and some small (<m>\theta</m> much less than 1) values of <m>\theta</m>,
+    to convince yourself you understand how this approximation works.
+    In this approximation, we can then rearrange this equation:
+    <men>
+      \theta \approx \frac{\lambda}{a}
+    </men>.
+  </p>
+  <p>
+    This equation is known as the <em>diffraction limit</em>.
+    It doesn't look like much,
+    but we can squeeze a lot of useful information out of it.
+    First of all,
+    it says that when we decrease the wavelength <m>\lambda</m>,
+    the waves spread out (diffract) by a smaller angle when they pass through a slit or aperture.
+    Similarly, if we use a bigger slit,
+    the waves also spread out less.
+  </p>
+  <p>
+    Why do we care how much wave spread out when they pass through an aperture?
+    Because that's how we see and hear things,
+    and how all optical instruments like telescopes,
+    binoculars, and microscopes work.
+  </p>
+  <example xml:id="exampleNakedEye">
+    <title>The Naked Eye</title>
+    <statement>
+      <p>
+        If your eye were limited solely by diffraction (i.e., your vision was perfect),
+        would you be able to distinguish how many fingers your friend was holding up at a distance of <m>10\Xunits{km}</m>?
+        If not, how large a telescope would you need to distinguish them?
+      </p>
+      <p>
+        <em>Solution:
+        </em> Let's estimate the distance between a person's fingers as about <m>\Delta x=1\Xunits{cm}</m>.
+        The distance between you and your friend is <m>L=10\Xunits{km}</m>.
+        So the angle between your friend's two fingers, as viewed by you, is
+        <men>
+          \theta_\text{ fingers } =2\arctan\frac{\Delta x}{2L}=2\arctan\frac{1\Xunits{cm}}{2\cdot 10\Xunits{km}}\approx 10^{-6}\Xunits{rad}
+        </men>.
+      </p>
+      <p>
+        The diameter of your eye
+        (the iris, or aperture)
+        is around <m>0.5\Xunits{cm}</m>,
+        and let's assume we're using light in the middle of the visible spectrum,
+        around <m>500\Xunits{nm}</m>.
+        So, using the diffraction limit equation above,
+        <men>
+          \theta_\text{ diffraction } \approx \frac{500\times 10^{-9}\Xunits{m}}{0.5\times 10^{-2}\Xunits{m}} =10^{-4}\Xunits{rad}
+        </men>.
+      </p>
+      <p>
+        How can we interpret this?
+        Well, we calculated that the angle between two light rays coming from the two adjacent fingers are only separated by an angle of <m>\theta_\text{ fingers } =10^{-6}\Xunits{rad}</m>,
+        but when they pass through they aperture of the eye,
+        they diffract and are smeared out over an angle of about <m>\theta_\text{ diffraction } =10^{-4}\Xunits{rad}</m>.
+        As a result,
+        the light from the two fingers is smeared into one large blurry blob,
+        and you have no hope of distinguishing the two fingers.
+        (In fact, you can do the calculation and show that at a distance of <m>10\Xunits{km}</m>,
+        you'd be unable to distinguish any two objects closer than about a meter with the naked eye.)
+      </p>
+      <p>
+        What if we had a telescope?
+        Then we'd effectively be able to make the diameter of the aperture bigger.
+        How much bigger would <m>a</m> have to be for you to see your friends fingers?
+        Well, our diffraction angle was a factor of 100 bigger than the angular separation of the fingers.
+        So we'd have to drop <m>\theta_\text{ diffraction }</m> by a factor of 100.
+        If we're not going to change <m>\lambda</m>,
+        we'll have to increase the aperture by a factor of 100,
+        which means using a telescope of diameter <m>a_\text{ telescope }  = 100a_\text{ eye }  \approx 0.5\Xunits{m}</m>.
+        That's a pretty hefty telescope <mdash/> probably not one you'll want to carry around with you!
+      </p>
+    </statement>
+  </example>
+  <p>
+    This example highlights the concept of <em>resolution</em>,
+    which you may have encountered in other contexts,
+    like photography or computer monitors.
+    A high-resolution image is a very crisp,
+    clear one, with minimal blurring.
+    Since the two fingers in <xref ref="exampleNakedEye">Example</xref>
+    were blurred together by diffraction,
+    we say that they were not resolved.
+  </p>
+  <p>
+    Since blurring is a fairly fuzzy concept,
+    we usually won't try to distinguish exactly when two objects go from being resolved to being unresolved.
+    Mostly we'll be interested just in whether they're clearly resolved or not.
+    As a side note, though,
+    there is a clear criterion called Rayleigh's criterion that's sometimes used to state whether two objects are resolved or not.
+    Rayleigh's criterion for determining the cutoff when two objects go from being resolved to unresolved is that when the maximum of one object's diffraction pattern lines up with the minimum of the other's diffraction pattern,
+    then the objects go from being resolved to being unresolved.
+  </p>
+  <p>
+    The diffraction limit helps us understand many practical applications of waves.
+    We've focused on making the aperture larger or smaller for light waves,
+    but another option is to make <m>\lambda</m> smaller,
+    either by using blue or ultraviolet light or by switching to electrons.
+    It turns out, as we'll see when we study quantum mechanics,
+    that electrons also have a wavelength,
+    and for typical energies the electron wavelength is much shorter than an optical wavelength.
+    Thus using electrons to image small objects can produce images with much higher resolution than is achievable with light.
+    This is the fundamental principle behind the electron microscope.
+    Going to shorter wavelengths
+    (and higher frequencies)
+    is also the basis of medical ultrasound measurements,
+    which use very high-frequency sound waves to probe the internal structure of the human body.
+    Using regular low-frequency sound waves would result extremely blurry images,
+    since the diffraction angle would be large.
+  </p>
+  <figure xml:id="fig_grating">
+    <caption>Light incident on a diffraction grating.</caption>
+    <image width="46%" source="images/grating"/>
+  </figure>
+</section>

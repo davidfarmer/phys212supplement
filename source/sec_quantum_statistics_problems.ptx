@@ -1,0 +1,334 @@
+<exercises xml:id="sec_quantum_statistics_problems">
+  <title>Problems</title>
+  <exercise>
+    <statement>
+      <p>
+        In filling up the energy states of an infinite square well potential while obeying the Pauli exclusion principle,
+        it is often stated that one electron can go in spin up and the other electron can go in spin down.
+        This statement is reasonably correct,
+        but it becomes incorrect if you interpret it to mean that the two electrons are in the state <m>|E_1\hspace{-1mm}\uparrow \hspace{2mm} E_1\hspace{-1mm}\downarrow\rangle</m>
+        <ol>
+          <li>
+            <p>
+              Explain why this cannot describe the two electrons in the ground state.
+            </p>
+          </li>
+          <li>
+            <p>
+              Write down the correct state that is intended when two electrons are put into the ground state.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the case of an electron and a muon
+        (the electron's cousin, also a spin-1/2 fermion)
+        in a two-particle quantum state.
+        <ol>
+          <li>
+            <p>
+              Is <m>|e\hspace{-1mm}\uparrow\hspace{2mm} \mu\hspace{-1mm}\downarrow\rangle</m> a possible two-particle state?
+              Explain your reasoning.
+            </p>
+          </li>
+          <li>
+            <p>
+              Is <m>|e\hspace{-1mm}\uparrow\hspace{2mm} \mu\hspace{-1mm}\uparrow\rangle</m> a possible two-particle state?
+              Explain your reasoning.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider two identical particles that are to be put into two single-particle states labeled by
+        <m>|\alpha\rangle</m> and <m>|\beta\rangle</m>.
+        <ol>
+          <li>
+            <p>
+              Make three charts like <xref ref="fig_quantum_statistics">Figure</xref>
+              describing all the possible ways that you can make a two-particle state for classical particles, bosons,
+              and fermions.
+              Use the symbols <m>\bullet</m> and <m>\circ</m> to represent the two distinguishable classical particles,
+              and two <m>\bullet</m>'s to represent the indistinguishable quantum particles.
+            </p>
+          </li>
+          <li>
+            <p>
+              How many states are there for the classical particles?
+              For the bosons?
+              For the fermions?
+            </p>
+          </li>
+          <li>
+            <p>
+              Assuming that the microstates are equally likely,
+              what is the probability of finding the two particles in the same single-particle state for classical particles?
+              For bosons?
+            </p>
+          </li>
+          <li>
+            <p>
+              Are your results consistent with the idea that bosons have an enhanced probability
+              (relative to classical particles)
+              of being in the same state?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Neutrons have spin <m>s=1/2</m>.
+        Six neutrons are placed in an infinite square well with ground state energy <m>E_1 = 3\Xunits{eV}</m>.
+        Determine the minimum combined energy these neutrons can have.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Explain briefly why a population inversion is necessary for the operation of a laser.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_transitions">
+    <statement>
+      <p>
+        The sketches in <xref ref="fig_stim_emission">Figure</xref>
+        show the state of a two-level atom and possibly a photon.
+        For each
+        <q>Before</q>
+        sketch, make a corresponding
+        <q>After</q>
+        sketch and name the process.
+      </p>
+      <figure xml:id="fig_stim_emission">
+        <caption><xref ref="prob_transitions">Problem</xref></caption>
+        <image width="65%" source="images/transitions"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <em>Superconductors.</em> (Do in Problem Session) Here we investigate some magnetic properties of superconductors.
+        <ol>
+          <li>
+            <p>
+              Closely observe the little cube hovering over the disk.
+              Comment on what you observe.
+              What evidence do you have that this is a superconductor?
+              Can you make the cube spin?
+            </p>
+          </li>
+          <li>
+            <p>
+              Explain how the superconductor can levitate the magnet.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_he3_superfluid">
+    <statement>
+      <p>
+        Why would you not expect helium-3 to act as a superfluid at low temperatures,
+        even though helium-4 does?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_barmagnet">
+    <statement>
+      <p>
+        Sketch the magnetic field lines outside the north-pole end of a bar magnet
+        (the field points generally away from the north pole).
+        Now, using the right-hand rule that relates magnetic field to current,
+        sketch the shielding currents that must flow in a flat superconducting plate when the north-pole end of the bar magnet is held just above the plate.
+        Pay particular attention to the direction of the shielding current.
+        Does the current in the plate repel or attract the bar magnet?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_superconducting_magnets">
+    <statement>
+      <p>
+        <em>Superconducting magnets.</em>
+        One of the most productive uses of superconductors is in the fabrication of strong electromagnets (e.g., for magnetic resonance imaging in hospitals,
+        or in massive particle accelerators).
+        Consider a superconducting magnet constructed from a solenoid of 1000 turns of superconducting wire with radius
+        <m>50\, \mbox{cm}</m> and length <m>1\, \mbox{m}</m>.
+        A current <m>I</m> is applied,
+        resulting in a magnetic field of 10<nbsp/>Tesla.
+        Once the magnetic field is produced,
+        what power would have to be provided to the electromagnet to maintain the magnetic field?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        What would happen if dice were indistinguishable bosons?
+        Of course, real dice are too large for quantum effects to be significant,
+        so they are classical, distinguishable objects.
+        As a result,
+        rolling a pair of classical dice yields 36 possible results (1-1, 1-2, 1-3, <ellipsis/>, 6-5, 6-6).
+        <ol>
+          <li>
+            <p>
+              Calculate the probability of rolling doubles with real (classical) dice.
+            </p>
+          </li>
+          <li>
+            <p>
+              If dice were indistinguishable bosons,
+              then rolling a 2-5 combination would be exactly the same as rolling a 5-2 combination.
+              How many different results are possible for bosonic dice?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many different ways of rolling doubles are possible with bosonic dice?
+            </p>
+          </li>
+          <li>
+            <p>
+              Use your results from (a) and (b) to calculate the probability of rolling doubles with bosonic dice.
+              Is the probability higher, lower,
+              or the same as the classical result?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Is it possible to create a quantum state in which one electron in an infinite square-well potential is in the <m>n=2</m> state with spin up and another electron is in the ground state (<m>n=1</m>) with spin up?
+        If so, write it out and make sure that it is antisymmetric.
+        If not, explain why not.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider <em>three</em> identical particles that are to be put into two single-particle states labeled by
+        <m>|\alpha\rangle</m> and <m>|\beta\rangle</m>.
+        <ol>
+          <li>
+            <p>
+              Make three charts like <xref ref="fig_quantum_statistics">Figure</xref>
+              describing all the possible ways that you can make a three-particle state for classical particles, bosons,
+              and fermions.
+              Use the symbols <m>\bullet</m>,
+              <m>\circ</m> and <times/> to represent the three distinguishable classical particles,
+              and three <m>\bullet</m>'s to represent the indistinguishable quantum particles.
+            </p>
+          </li>
+          <li>
+            <p>
+              How many states are there for the classical particles?
+              For the bosons?
+              For the fermions?
+            </p>
+          </li>
+          <li>
+            <p>
+              Assuming that the microstates are equally likely,
+              what is the probability of finding the three particles all in the same single-particle state for classical particles?
+              For bosons?
+            </p>
+          </li>
+          <li>
+            <p>
+              Show how your results are consistent with the idea that bosons have an enhanced probability
+              (relative to classical particles)
+              of being in the same state, and consistent with the Pauli exclusion principle.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_ruby_laser">
+    <statement>
+      <p>
+        A ruby laser is a solid-state laser that uses a synthetic ruby crystal as the medium in which stimulated emission occurs as opposed to individual atoms in a gas laser.
+        The diagram below shows the energy levels used in the ruby crystal along with their approximate energies relative to the ground state.
+        <ol>
+          <li>
+            <p>
+              What is the frequency of the radiation needed to optically pump the ruby crystal and therefore create the necessary population inversion?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the wavelength of the emitted laser beam due to stimulated emission?
+            </p>
+          </li>
+        </ol>
+      </p>
+      <figure xml:id="fig_ruby_laser">
+        <caption>Ruby laser energy level diagram for <xref ref="prob_ruby_laser">Problem</xref></caption>
+        <image width="45%" source="images/ruby_laser"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A superconducting wire of circular cross section has a radius of <m>1.5\Xunits{cm}</m>.
+        The critical magnetic field that this particular superconductor can withstand is <m>B_c=20\Xunits{T}</m>.
+        Based on this information,
+        calculate the maximum current that this superconducting wire is capable of carrying.
+        <em>Hint:</em> use Ampere's law.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        This problem refers to <xref ref="fig_quantum_statistics">Figure</xref>,
+        which shows all the possible ways to put two particles into three states <m>\ket{\alpha}</m>,
+        <m>\ket{\beta}</m>, and <m>\ket{\gamma}</m>.
+        <ol>
+          <li>
+            <p>
+              For classical particles,
+              take the solid circle to represent particle<nbsp/>1 and the open circle to represent particle 2.
+              Then the two-particle state represented in row 4 would be written <m>\ket{\alpha\;\beta}</m>,
+              while the two-particle state in row 7 would be <m>\ket{\beta\; \alpha}</m>.
+              Using this notation,
+              write out the classical two-particle states for each of the nine states given.
+            </p>
+          </li>
+          <li>
+            <p>
+              For bosons, the two-particle states must be symmetric under interchange of particles 1 and 2.
+              Write out the appropriate two-particle states for each of the six states given.
+            </p>
+          </li>
+          <li>
+            <p>
+              For fermions,
+              the two-particle states must be antisymmetric under interchange of particles 1 and 2.
+              Write out the appropriate two-particle states for each of the three states given.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</exercises>

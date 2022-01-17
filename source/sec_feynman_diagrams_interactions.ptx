@@ -1,0 +1,154 @@
+<section xml:id="sec_feynman_diagrams_interactions">
+  <title>Feynman Diagrams and Particle Interactions</title>
+  <p>
+    We now have all the pieces that we need to produce diagrams corresponding to the particle interactions that we discussed in the previous class.
+    All of the conservation laws that were used to analyze those interactions will be incorporated into these
+    <em>interaction diagrams</em>.
+  </p>
+  <p>
+    In the previous section,
+    we reviewed the key features of Feynman diagrams as they pertain to the various interactions.
+    A quark or lepton goes along,
+    then emits a messenger particle,
+    changing the properties of the original particle.
+    Another particle receives and absorbs the messenger,
+    and the interaction is complete.
+    Or perhaps the messenger decays into a quark-antiquark or lepton-antilepton pair.
+  </p>
+  <p>
+    We can expand the Feynman diagram idea to composite particles like hadrons by just
+    <q>carrying along</q>
+    the non-interacting constituents.
+    Here's the key point: in every diagram,
+    you should consider very carefully each vertex where a messenger is emitted or absorbed.
+    Every vertex must conserve both charge and color.
+    The net charge before the emission/absorption process is the same as the net charge after the process.
+    Similarly, (net color before) =
+    (net color after).
+    If you are careful to conserve both charge and color,
+    then your diagrams will most likely be correct.
+  </p>
+  <figure xml:id="fig_neutron_decay">
+    <caption>Interaction diagram for neutron decay, a weak interaction.</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/neutron_decay"/>
+    </sidebyside>
+  </figure>
+  <p>
+    A few examples will best illustrate this.
+    Consider the beta-decay of a free neutron,
+    a process governed by the weak interaction:
+    <men>
+      n \to p + e^- + \overline{\nu_e}
+    </men>.
+  </p>
+  <p>
+    To show the internal structure,
+    simply expand the composite particle into quarks and antiquarks and let the reaction go.
+    See <xref ref="fig_neutron_decay">Figure</xref>.
+    Note the two types of <m>W</m>-boson vertices in the diagram:
+    one changes the flavor of a quark and the other creates a lepton-antilepton pair.
+  </p>
+  <p>
+    Take a look at the two vertices in this diagram.
+    The first is the vertex corresponding to the emission of the <m>W^-</m> from the down quark,
+    which is changed to an up quark by the emission.
+    Ignore the up and down quark at the left of the diagram and consider only the particles involved at that vertex.
+    If you draw a horizontal dotted line,
+    then everything below the line is what was present before the emission and everything above the line is what was present after the emission.
+    Now, consider charge conservation.
+    Charge before: <m>Q_{ before} = Q_d = -1/3</m>
+    (recall that <m>Q</m> refers to the charge of the particle).
+    Charge after:
+    <m>Q_{ after} = Q_u + Q_{W^-} = +2/3 - 1 = -1/3</m>,
+    so this vertex conserves charge.
+    Note: we won't draw the horizontal dotted lines anymore.
+  </p>
+  <blockquote>
+    <em>Checkpoint 1:</em> convince yourself that charge is also conserved at
+    the second vertex: the decay of the <m>W^-</m> into the <m>e^-</m> and <m>\overline\nu_e</m>.
+  </blockquote>
+  <p>
+    Note that color is automatically conserved at both of these vertices,
+    since the <m>W</m> particles never have any net color,
+    nor do the <m>e^-</m> and <m>\overline\nu_e</m>.
+  </p>
+  <p>
+    For the strong interaction there are several possibilities.
+    The simplest type is an <em>exchange reaction</em>,
+    an example of which is shown in <xref ref="fig_pp_reaction">Figure</xref>.
+    The quarks just get jumbled up in the collision and then rearrange themselves to make up the end products.
+    Note that there is still the exchange of a gluon here.
+    Also, note that color is conserved at the vertices at both ends of the gluon.
+    At the first (lower) vertex, the color is initially <m>R</m>
+    (for the <m>d</m> quark in the proton).
+    After the vertex, the color is <m>B</m>
+    (for the <m>d</m> quark)
+    + <m>R\overline B</m>
+    (for the gluon that has just been emitted).
+  </p>
+  <blockquote>
+    <em>Checkpoint 2:</em> convince yourself that color is also conserved at
+    the second vertex.
+  </blockquote>
+  <figure xml:id="fig_pp_reaction">
+    <caption>Interaction diagram for <m>\pi^- + p \to \Lambda + K^0</m>, a strong
+    interaction.</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/pp_reaction"/>
+      <image width="92.5%" source="images/pi_p_reaction"/>
+    </sidebyside>
+  </figure>
+  <p>
+    Another possibility is to annihilate and create quark-antiquark pairs,
+    mediated by a gluon.
+    Consider the bombardment of a stationary proton with a high-energy pions,
+    as shown in <xref ref="fig_pi_p_reaction">Figure</xref>.
+    There are several ways in which the colors could be labeled in this diagram.
+    Let's assume that the two quarks in the <m>\pi^-</m> before the reaction have colors <m>G</m> and <m>\overline G</m>.
+    The three quarks in the <m>p</m> must always have colors <m>R</m>,
+    <m>G</m>, and <m>B</m>, according to the colorless rule.
+    The gluon will then have the color combination <m>R\overline G</m>.
+  </p>
+  <p>
+    A couple of additional points to note about the reaction in <xref ref="fig_pi_p_reaction">Figure</xref>.
+    First, since strange quarks are more massive than up quarks,
+    considerable kinetic energy
+    (of the <m>\pi^-</m>)
+    must be converted to mass-energy for this reaction to occur.
+    In fact, a <m>\pi^-</m> hitting a stationary proton must have a kinetic energy of at least
+    <m>770\Xunits{MeV}</m> to produce a <m>\Lambda</m> and <m>K^0</m>.
+    Second, the gluons that mediate the strong interaction cannot change the net
+    <em>flavor</em> of the quarks.
+    Up and antiup are destroyed together;
+    strange and antistrange are created together.
+    As a result, the additive properties like strangeness,
+    baryon number and charge are automatically conserved.
+  </p>
+  <figure xml:id="fig_sigma-minus_decay">
+    <caption>Reaction diagram for the strong decay <m>\Sigma^{\ast -} \to
+    \Lambda(1116) + \pi^-(135)</m>.</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/sigma-minus_decay"/>
+      <image width="92.5%" source="images/weak_sigma-minus_decay"/>
+    </sidebyside>
+  </figure>
+  <p>
+    A third possibility for the strong interaction involves the decay of
+    <em>excited states</em> of quark configurations.
+    This can occur whenever the mass of the parent particle is high enough to have energy available for creating a quark-antiquark pair.
+    See <xref ref="fig_sigma-minus_decay">Figure</xref> for an example.
+  </p>
+  <p>
+    Consider the decays of the particles labeled
+    <m>\Sigma^-(1197)</m> and <m>\Sigma^{*-}(1387)</m>
+    (the numbers in parenthesis are the masses in MeV/<m>c^2</m>).
+    A proposed decay scheme might be like that shown in <xref ref="fig_sigma-minus_decay">Figure</xref>.
+    Note that we've shown the colors on this diagram since it involves emission and decay of a gluon.
+    However, when we check conservation of energy,
+    we find that the mass of the products is greater than
+    <m>1197\Xunits{MeV/ c^2 }</m> but less than <m>1387\Xunits{MeV/ c^2 }</m>.
+    This means the <m>\Sigma^{*-}(1387)</m> has enough rest energy to decay this way but the <m>\Sigma^-(1197)</m> does not.
+    It must find another way.
+  </p>
+</section>

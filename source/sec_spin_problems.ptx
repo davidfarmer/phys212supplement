@@ -1,0 +1,566 @@
+<exercises xml:id="sec_spin_problems">
+  <title>Problems</title>
+  <exercise xml:id="prob_spin_poem">
+    <statement>
+      <p>
+        Write either a poem, a song,
+        or a few sentences explaining what it is about spin <mdash/> on a quantum level <mdash/> that can't be explained by classical laws of physics.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_spin_i">
+    <statement>
+      <p>
+        Suppose an electron is known to have a <m>z</m>-component of spin <m>S_z</m> of <m>+\hbar/2</m>;
+        that is, we know it is in the <m>| +z \rangle</m> state.
+        <ol>
+          <li>
+            <p>
+              Find the probability that a measurement of its spin along the <m>x</m>-axis gives the value <m>+\hbar/2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the probability that a measurement of its spin along the <m>y</m>-axis gives the value <m>-\hbar/2</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_SuperpositionProbs">
+    <statement>
+      <p>
+        Assume that a particle is in the state
+        <me>
+          \vert \psi \rangle = \frac{1}{\sqrt{2}} \vert \phi_1 \rangle + i \frac{1}{\sqrt{2}} \vert \phi_2 \rangle
+        </me>
+        where <m>\vert \phi_1 \rangle</m> and
+        <m>\vert \phi_2 \rangle</m> are a normalized set of basis states.
+        <ol>
+          <li>
+            <p>
+              A measurement is made on the particle.
+              Calculate the probability that this measurement will result in a value corresponding to the state <m>\vert \phi_1 \rangle</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let's say that the measurement made in part (a) <em>does</em>, in fact,
+              produce a result corresponding to the state <m>\vert \phi_1 \rangle</m>.
+              The measurement is then immediately repeated.
+              Calculate the probability that this <em>second</em>
+              measurement will result in a value corresponding to the state <m>\vert \phi_2 \rangle</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Another particle is prepared in the original state <m>\vert \psi \rangle</m>.
+              A measurement is made on this new particle.
+              Calculate the probability that <em>this</em>
+              measurement will result in a value corresponding to the state <m>\vert \phi_2 \rangle</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_spin_ii">
+    <statement>
+      <p>
+        An electron is known to be in the spin state <m>|\psi\rangle = \frac{3}{5}| +z \rangle + \frac{4}{5}| -z \rangle</m>.
+        <ol>
+          <li>
+            <p>
+              The electron is sent through a device that measures its spin angular momentum along the <m>x</m>-direction.
+              Compute the probability of obtaining the result
+              <m>+\hbar/2</m> for the <m>x</m>-component of spin.
+              Compute the probability of obtaining
+              <m>-\hbar/2</m> for this measurement.
+              (Check to make sure that your probabilities add up to 1.)
+            </p>
+          </li>
+          <li>
+            <p>
+              The electron initially in the state
+              <m>|\psi\rangle</m> specified above is sent through a device that measures its spin angular momentum along the <m>y</m>-direction.
+              Compute the probability of obtaining the result
+              <m>+\hbar/2</m> for the <m>y</m>-component of spin.
+              Compute the probability of obtaining
+              <m>-\hbar/2</m> for this measurement.
+            </p>
+          </li>
+          <li>
+            <p>
+              Note that you get different answers for parts (a) and (b).
+              Mathematically, this comes from the factor of
+              <q><m>i</m></q>
+              in the equations for <m>| +y \rangle</m> and <m>| -y \rangle</m>.
+              Conceptually,
+              this is another example of some quantum weirdness<nbsp/><mdash/> you would think that a state that is a superposition of stuff solely in the <m>z</m>-direction would give the same results for <m>x-</m> and <m>y</m>-components,
+              but that isn't the case.
+              Think about this for a moment,
+              and convince yourself that this is weird.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_spin_iv">
+    <statement>
+      <p>
+        Assume that you have an electron that is in a superposition of
+        <q>spin-up</q>
+        and
+        <q>spin-down</q>
+        states:
+        <me>
+          \vert\psi_1\rangle = i \sqrt{\frac{1}{5}}\vert +z \rangle + \sqrt{\frac{4}{5}}\vert -z \rangle
+        </me>.
+        <ol>
+          <li>
+            <p>
+              You measure the vertical component of spin.
+              What is the probability that you will find <m>S_z = + \hbar/2</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Another electron is in the same state <m>|\psi_1\rangle</m>.
+              You now measure the <m>y</m>-component of spin.
+              What is the probability that you will find <m>S_y = + \hbar/2</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Another electron is prepared in a superposition state
+              <me>
+                |\psi_2\rangle = \sqrt{\frac{1}{5}}\vert +z \rangle +  \sqrt{\frac{4}{5}} | -z \rangle
+              </me>.
+              What is the probability that a measurement of <em>this</em>
+              electron's <m>y</m>-component of spin will find <m>S_y = + \hbar/2</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Now, assume that you do find <m>S_y = + \hbar/2</m>.
+              You measure <m>S_y</m> again for the same particle.
+              What is the probability that you'll find <m>S_y = -\hbar/2</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_SuperpositionProbs2">
+    <statement>
+      <p>
+        A particle is in the state given by
+        <me>
+          \vert \phi \rangle = \frac{1}{\sqrt{2}} \vert \psi_1 \rangle - \frac{i}{\sqrt{2}} \vert \psi_2 \rangle
+        </me>
+        where <m>\vert \psi_1 \rangle</m> and
+        <m>\vert \psi_2 \rangle</m> are a normalized set of basis states.
+        <ol>
+          <li>
+            <p>
+              A measurement is made on the particle.
+              Calculate the probability that the measurement will result in a value corresponding to the state <m>\vert \psi_1 \rangle</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Another particle is prepared in the state <m>\vert \phi \rangle</m>,
+              and a measurement is made on <em>this</em> particle.
+              Calculate the probability that <em>this</em>
+              measurement will result in a value corresponding to the state <m>\vert \psi_2 \rangle</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_PhotonProbs">
+    <statement>
+      <p>
+        The quantum state of a photon propagating along the <m>z</m>-direction can be written in terms of the states
+        <m>\vert X \rangle</m> and <m>\vert Y \rangle</m>,
+        where <m>\vert X \rangle</m> represents a photon polarized along the <m>x</m>-direction and
+        <m>\vert Y \rangle</m> represents a photon polarized along the <m>y</m>-direction.
+        A photon in an arbitrary polarization state can be written as a linear superposition of the states
+        <m>\vert X \rangle</m> and <m>\vert Y \rangle</m> as
+        <me>
+          \vert\theta\rangle = \cos{\theta} \vert X \rangle + \sin{\theta} \vert Y \rangle
+        </me>
+        where <m>\theta</m> is the angle of polarization of the photon measured with respect to the <m>x</m>-axis.
+        <ol>
+          <li>
+            <p>
+              Assuming that the states <m>\vert X \rangle</m> and <m>\vert Y \rangle</m> form a basis,
+              show that the state <m>\vert\theta\rangle</m> is normalized.
+            </p>
+          </li>
+          <li>
+            <p>
+              A polarizer is a device that measures the polarization of a photon along a certain direction.
+              Let's say that a polarizer is oriented along the <m>x</m>-direction, that is,
+              it is measuring for the state <m>\vert X \rangle</m>.
+              For an incident beam of photons in the state <m>\vert \theta \rangle</m> as given above,
+              what is the probability that the polarizer measures the state
+              <m>\vert X \rangle</m> (i.e., the photons go through the polarizer)?
+              What is the state of the photons after making this measurement?
+            </p>
+          </li>
+          <li>
+            <p>
+              Let's say we have a beam of photons in polarization state
+              <m>\vert X \rangle</m> incident on a polarizer oriented in a direction making an angle <m>\theta</m> with respect to the <m>x</m>-axis.
+              What is the probability that the photons pass through the polarizer oriented at angle <m>\theta</m>? (Hint:
+              think about the previous question in the reverse order of events).
+              What is the state of the photons after making this measurement?
+            </p>
+          </li>
+          <li>
+            <p>
+              Following up on part (c),
+              the beam in state <m>\vert \theta \rangle</m> is incident on a second polarizer oriented along the <m>y</m>-axis.
+              What is the probability that the photons pass through the second polarizer?
+            </p>
+          </li>
+          <li>
+            <p>
+              Now, putting this all together,
+              photons pass through polarizer #1 oriented along the <m>x</m>-axis,
+              then pass through polarizer #2 oriented at an angle <m>\theta</m>,
+              then on to polarizer #3 oriented along the <m>y</m>-axis.
+              What is the total probability that a photon passing through polarizer #1 will also pass through polarizer #3? [Note: Compare your result with what you did in Lab #18
+              <q>Polarization of Light.</q>
+              ]
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Using a technique similar to that used in <xref ref="exam_ztox">Example</xref>,
+        show that you can write the spin-down <m>S_z</m> state
+        <m>\vert -z \rangle</m> as a linear superposition of the states <m>\vert +x \rangle</m> and
+        <m>\vert -x \rangle</m> Compare your results with those given in <xref ref="table_spinTransform">Table</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Using equations<nbsp/><xref ref="eq_plusy"/> and <xref ref="eq_minusy"/>,
+        write expressions for the states <m>\vert +z \rangle</m> and
+        <m>\vert -z \rangle</m> in terms of linear combinations of the states
+        <m>\vert +y \rangle</m> and <m>\vert -y \rangle</m>.
+        Compare your results with those given in <xref ref="table_spinTransform">Table</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_ElectronSpinState">
+    <statement>
+      <p>
+        An electron is placed in a spin state given by
+        <me>
+          \vert \psi \rangle = \frac{1}{2}\vert +z \rangle -\frac{\sqrt{3}}{2}\vert -z \rangle
+        </me>.
+        <ol>
+          <li>
+            <p>
+              Calculate the probability of obtaining a value of
+              <m>-\hbar/2</m> when the <m>z</m>-component of spin <m>S_z</m> is measured.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that an electron in state
+              <m>\vert \psi \rangle</m> will be measured to have an <m>x</m>-component of spin <m>S_x</m> of <m>+\hbar/2</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_ElectronSpinState2">
+    <statement>
+      <p>
+        An electron is placed in the spin state
+        <me>
+          \vert \psi \rangle = \sqrt{\frac{2}{3}}\vert +z \rangle +\sqrt{\frac{1}{3}}\vert -z \rangle
+        </me>
+        as is the case in <xref ref="exam_spinsProbabilities">Example</xref>.
+        An experiment is performed to measure the <m>y</m>-component <m>S_y</m> of spin.
+        Calculate the probability that this measurement results in a value of <m>-\hbar/2</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_atomic_energies">
+    <statement>
+      <p>
+        An electron in a particular system can have any of the discrete energies <m>E_n = (-8.00\Xunits{eV})/n^2</m>,
+        where <m>n = 1, 2, 3, \dots</m>.
+        Assume that the electron is in a state
+        <me>
+          |\psi\rangle = 0.7\,|1\rangle + 0.5\,|2\rangle + 0.4\,|3\rangle + 0.3\,|4\rangle + 0.1\,|5\rangle
+        </me>.
+        <ol>
+          <li>
+            <p>
+              Show that this state is normalized.
+            </p>
+          </li>
+          <li>
+            <p>
+              If the energy of the electron is measured,
+              what is the probability that the result of the measurement will be <m>E_2 = -2.0\Xunits{eV}</m>?
+              What is the probability of the measured energy being <m>E_4 = -0.5\Xunits{eV}</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that the result of measuring the energy would be either <m>E_1</m>,
+              <m>E_3</m>, or <m>E_5</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Assume that 10,000 electrons are prepared to be in the same state
+              <m>|\psi\rangle</m> and that the energy is measured for each of these electrons.
+              Approximately how many of these electrons will be measured to have energy <m>E_1</m>?
+              <m>E_2</m>?
+              <m>E_3</m>? <m>E_4</m>? <m>E_5</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Protons placed in a magnetic field can be either in the spin-up <m>\vert +z \rangle</m> or spin-down
+        <m>\vert -z \rangle</m> state with an energy difference between these two states <m>\Delta E_\text{ proton }</m>.
+        Incident photons of frequency
+        <m>2.20 \Xunits{MHz}</m> are absorbed causing transitions of the protons from the spin-up
+        <m>\vert +z \rangle</m> state to the spin-down <m>\vert -z \rangle</m> state.
+        Determine the magnitude of the total magnetic field <m>B</m> in which these protons are placed.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_H_hyperfine">
+    <statement>
+      <p>
+        The bulk of gas in our galaxy is atomic hydrogen
+        (composed of a proton and an electron)
+        in the ground electronic state.
+        Astronomers map the location of this neutral hydrogen by detecting photons that are emitted when the spin of the <em>electron</em>
+        flips from being parallel with the spin of the proton to being anti-parallel.
+        The effective magnetic field experienced by the electron in a hydrogen atom is <m>0.0507 \Xunits{T}</m>.
+        Determine the wavelength of the photon emitted when the electron undergoes a spin flip.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_H_zeeman">
+    <statement>
+      <p>
+        In the presence of a strong magnetic field,
+        the energy levels of an atom change due to the interaction of the electronic spins with the magnetic field.
+        This is known as the <em>
+        <q>anomalous</q>
+        Zeeman effect</em>,
+        and can be used to determine the strength of magnetic fields on the Sun.
+        <ol>
+          <li>
+            <p>
+              Magnetically active regions of the Sun have typical magnetic fields strengths of <m>0.4 \Xunits{T}</m>.
+              Determine the energy difference
+              (in eV)
+              between electrons that are aligned with the magnetic field and anti-aligned with the magnetic field.
+            </p>
+          </li>
+          <li>
+            <p>
+              This difference in energy causes a split in each electronic energy level of the atom.
+              Imagine that we have a 2-level atom where the 1<m>^\text{ st }</m> excited state is
+              <m>0.1 \Xunits{eV}</m> above the ground state.
+              Draw energy level diagrams for this atom:
+              i) when there is no magnetic field and ii) in the presence of the magnetic field from part (a).
+            </p>
+          </li>
+          <li>
+            <p>
+              How would we expect the spectrum of photons absorbed by this atom to change in the presence of a strong magnetic field versus in the absence of a magnetic field?
+              How would this spectrum change as the strength of the magnetic field increases?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_sterngerlach">
+    <statement>
+      <p>
+        Let's use a simulation of the Stern-Gerlach experiment to explore quantum states and spin.
+        Go to
+      </p>
+      <p>
+         <c>http://phet.colorado.edu/sims/stern-gerlach/stern-gerlach_en.html</c> By default,
+        the atoms start in the state <m>\vert +x \rangle</m>,
+        and the device is setup to make a measurement of the <m>z</m>-component of spin.
+        <ol>
+          <li>
+            <p>
+              To get a feel for how this works, try firing a few atoms.
+              You'll notice a counter at the bottom of the page keeping track of how many atoms have been measured to be spin up or spin down as measured along the <m>z</m> axis.
+              Can you predict whether an individual atom will have a measured <m>z</m>-component of spin up or down?
+            </p>
+          </li>
+          <li>
+            <p>
+              For atoms starting in the state <m>\vert +x \rangle</m>,
+              what is the probability that a measurement of the <m>z</m>-component of spin results in <m>S_z = +\hbar/2</m>?
+              To determine this, turn on
+              <q>Auto Fire</q>
+              and keep it running until the percentages are not longer changing.
+            </p>
+          </li>
+          <li>
+            <p>
+              For atoms starting in the state <m>\vert +x \rangle</m>,
+              what is the probability that a measurement of the <m>x</m>-component of spin results in <m>S_x = +\hbar/2</m>?
+              To measure the <m>x</m>-component of spin, change the
+              <q>angle</q>
+              in the simulation to <m>-90^\circ</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now, change the number of magnets to 2.
+              Orient the first magnet so that it is measuring the z-component of spin (angle<nbsp/>=<nbsp/>0) and orient the second magnet so that it is measuring the x-component of spin
+              (<m>\mbox{angle} = -90^\circ</m>).
+              In this setup the simulation starts with atoms in the state
+              <m>\vert +x \rangle</m> and measures the <m>z</m>-component of spin.
+              For atoms with measured <m>S_z = +\hbar/2</m>,
+              it then measures the <m>x</m>-component of spin.
+              For an atom that started in the state <m>\vert +x \rangle</m>,
+              for which we then measure <m>S_z = +\hbar/2</m>,
+              what is the probability that a subsequent measurement of the <m>x</m>-component of spin results in <m>S_x = +\hbar/2</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Based on your answer to part (c),
+              what is the state of the atom immediately after a measurement of its <m>z</m>-component of spin results in <m>S_z = +\hbar/2</m>?
+              Hint: Think about collapse of state!
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_energystates">
+    <statement>
+      <p>
+        Suppose the possible energies that a particle can have are <m>E_1</m>,
+        <m>E_2</m>, <m>E_3</m>, <m>E_4</m>,
+        <ellipsis/><nbsp/>Consider a particle in a state given by the following linear superposition of energy basis states:
+        <men>
+          |\psi\rangle = \frac{1+2 i}{6} |E_1\rangle + \frac{2-3  i}{6} |E_3\rangle + c_4 |E_4\rangle
+        </men>,
+        where <m>c_4</m> is an undetermined constant.
+        <ol>
+          <li>
+            <p>
+              Calculate the probability of obtaining a value <m>E_3</m> in a measurement of the energy of this particle.
+            </p>
+          </li>
+          <li>
+            <p>
+              The particle is prepared again in the state <m>|\psi\rangle</m>.
+              Calculate the probability of obtaining a value <m>E_2</m> in a measurement of the energy of this particle?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many possible values are there for the constant <m>c_4</m>?
+              Determine <em>two</em> possible values for this constant.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A quantum particle is in the following superposition of energy states
+        <me>
+          \ket{\psi} = \frac{1}{3}\ket{E_1} - \frac{4+6 i}{9}\ket{E_2} -\frac{4i - 2}{9}\ket{E_3}
+        </me>.
+        <ol>
+          <li>
+            <p>
+              Determine the probability that a measurement of the energy will yield the value <m>E_3</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              You measure the energy and do, in fact,
+              find the energy to be <m>E_3</m>.
+              Write down a correct expression for the new state of the particle just after this energy measurement.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_SG1">
+    <statement>
+      <p>
+        Each of the following diagrams shows a beam of electrons inititally with random spin orientations passing through a series of Stern-Gerlach (SG) apparatuses of different orientations.
+        In each case,
+        determine whether a beam will come out of one, both,
+        or neither of the two exits of the final SG apparatus,
+        and also determine how the intensity of any non-zero beam will compare with the intensity of the initial beam of electrons.
+        <ol>
+          <li>
+            <p>
+              <image width="84%" source="images/SGDeviceA"/>
+            </p>
+          </li>
+          <li>
+            <p>
+              <image width="84%" source="images/SGDeviceB"/>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider the following Stern-Gerlach (SG) experiment.
+        A beam of electrons, prepared in a certain state <m>\ket{\psi}</m>,
+        is emitted from an electron source.
+        The beam passes into a Stern-Gerlach device which measures the <m>z</m>-component of spin <m>S_z</m> as shown below.
+        A total of 1000 electrons go through this apparatus,
+        of which exactly 400 emerge with
+        <m>S_z=+\hbar/2</m> (spin-up along the <m>z</m>-axis) and exactly 600 emerge with <m>S_z=-\hbar/2</m>
+        (spin-down along the <m>z</m>-axis).
+        <image width="73%" source="images/SGDevice"/>
+      </p>
+      <p>
+        Write a possible normalized state
+        <m>\ket{\psi}</m> for the electrons in the initial beam that corresponds to the observations in this experiment.
+      </p>
+    </statement>
+  </exercise>
+</exercises>

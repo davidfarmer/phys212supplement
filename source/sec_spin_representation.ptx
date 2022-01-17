@@ -1,0 +1,230 @@
+<section xml:id="sec_spin_representation">
+  <title>State Representation for Spin</title>
+  <p>
+    We can now apply the mathematical framework of state vectors from the previous sections to the case of spin states for particles.
+    When considering the spin state of an electron,
+    the component of spin measured along a certain direction has only two possible states, either
+    <q>spin-up</q>
+    or
+    <q>spin-down</q>; i.e., with a component of either <m>+\hbar/2</m> or <m>-\hbar/2</m>.
+    For the component of spin in the <m>z</m>-direction, we can denote the
+    <q>spin-up</q>
+    and
+    <q>spin-down</q>
+    states by the kets <m>| +z \rangle</m> and <m>| -z \rangle</m>,
+    respectively.
+    For example, in <xref ref="fig_SGDevice">Figure</xref>,
+    the electrons exiting the top and bottom of the SG device are in states
+    <m>| +z \rangle</m> and <m>| -z \rangle</m>, respectively.
+    Measurement of the <m>z</m>-component of spin <m>S_z</m> for the state
+    <m>| +z \rangle</m> will always produce the value <m>+\hbar/2</m>
+    (as indicated by the experiment in <xref ref="fig_SGDevice2">Figure</xref>),
+    and the same measurement for the
+    <m>| -z \rangle</m> state will always produce a value <m>S_z = -\hbar/2</m>.
+    Similarly, we can define the states <m>| +x \rangle</m> and
+    <m>| -x \rangle</m> as the states with <m>x</m>-component of spin
+    <m>S_x = +\hbar/2</m> and <m>S_x = -\hbar/2</m>, respectively.
+    Similar definitions apply for the states
+    <m>| +y \rangle</m> and <m>| -y \rangle</m>.
+  </p>
+  <p>
+    In the experiment depicted in <xref ref="fig_SGDevice4">Figure</xref>
+    we found that a measurement of the <m>z</m>-component of spin for an electron in the state
+    <m>| +x \rangle</m> will produce either <m>+\hbar/2</m> or <m>-\hbar/2</m>.
+    This implies that it should be possible to write
+    <m>| +x \rangle</m> as a superposition of the states
+    <m>| +z \rangle</m> and <m>| -z \rangle</m>:
+    <men xml:id="eq_superState">
+      | +x \rangle = c_+ | +z \rangle + c_- | -z \rangle
+    </men>
+    where <m>c_+</m> and <m>c_-</m> are constants.
+    We interpret this equation in the following way:
+    if an electron is in a state
+    <m>| +x \rangle</m> and we measure the <m>z</m>-component of spin <m>S_z</m>,
+    then the probabilities that the measurement will yield the result <m>+\hbar/2</m> or
+    <m>-\hbar/2</m> are <m>|c_+|^2</m> and <m>|c_-|^2</m>,
+    respectively.
+  </p>
+  <p>
+    Since the results of the experiment in <xref ref="fig_SGDevice4">Figure</xref>
+    give beams of equal intensity from the third SG device measuring <m>S_z</m>,
+    this means that <m>|c_+|^2 = |c_-|^2 = 1/2</m>.
+    Therefore the simplest linear superposition of states representing
+    <m>| +x \rangle</m> consistent with this result is
+    <men>
+      | +x \rangle = \sqrt{\frac{1}{2}}| +z \rangle + \sqrt{\frac{1}{2}}| -z \rangle
+    </men>.
+  </p>
+  <p>
+    The same can be done for the states <m>| -x \rangle</m>,
+    <m>| +y \rangle</m>, and <m>| -y \rangle</m>.
+    The linear superpositions for these states in terms of the states <m>| +z \rangle</m> and
+    <m>| -z \rangle</m> are presented below without proof:
+    <md>
+      <mrow xml:id="eq_plusx" number="yes">| +x \rangle =\mathstrut \amp \sqrt{\frac{1}{2}} \,| +z \rangle + \sqrt{\frac{1}{2}} \,| -z \rangle</mrow>
+      <mrow xml:id="eq_minusx" number="yes">| -x \rangle =\mathstrut \amp  \sqrt{\frac{1}{2}} \,| +z \rangle - \sqrt{\frac{1}{2}} \,| -z \rangle</mrow>
+      <mrow xml:id="eq_plusy" number="yes">| +y \rangle =\mathstrut \amp \sqrt{\frac{1}{2}} \,| +z \rangle + i\sqrt{\frac{1}{2}} \,| -z \rangle</mrow>
+      <mrow xml:id="eq_minusy" number="yes">| -y \rangle =\mathstrut \amp  \sqrt{\frac{1}{2}} \,| +z \rangle - i\sqrt{\frac{1}{2}} \,| -z \rangle  </mrow>
+    </md>.
+  </p>
+  <p>
+    <em>Don't forget the factors of
+    <q><m>i</m></q>
+    in the equations for <m>| +y \rangle</m> and <m>| -y \rangle</m>;
+    they are important.</em>
+  </p>
+  <example xml:id="exam_ztox">
+    <title>Spin-up and spin-down states of <m>S_z</m> in terms of spin-up and spin-down states of <m>S_x</m></title>
+    <statement>
+      <p>
+        Using <xref ref="eq_plusx">Equations</xref>
+        and <xref ref="eq_minusx"></xref>,
+        show that we can write the spin-up <m>S_z</m> state
+        <m>| +z \rangle</m> as a linear superposition of the states
+        <m>| +x \rangle</m> and <m>| -x \rangle</m>.
+      </p>
+      <p>
+        <em>Solution:
+        </em> If we add <xref ref="eq_plusx">equations</xref>
+        and <xref ref="eq_minusx"></xref> we obtain
+        <md>
+          <mrow>| +x \rangle + | -x \rangle =\mathstrut \amp  \left[ \sqrt{\frac{1}{2}}| +z \rangle + \sqrt{\frac{1}{2}}| -z \rangle \right] + \left[ \sqrt{\frac{1}{2}}| +z \rangle - \sqrt{\frac{1}{2}}| -z \rangle \right]</mrow>
+          <mrow>=\mathstrut \amp  2 \cdot \sqrt{\frac{1}{2}} | +z \rangle </mrow>
+        </md>.
+      </p>
+      <p>
+        Solving for <m>| +z \rangle</m> we get
+        <men>
+          | +z \rangle = \sqrt{\frac{1}{2}}\ | +x \rangle + \sqrt{\frac{1}{2}}\ | -x \rangle
+        </men>.
+      </p>
+      <p>
+        Similarly, if we subtract <xref ref="eq_plusx">equations</xref>
+        and <xref ref="eq_minusx"></xref>
+        and solve for <m>| -z \rangle</m> we obtain
+        <men>
+          | -z \rangle = \sqrt{\frac{1}{2}} | +x \rangle - \sqrt{\frac{1}{2}} | -x \rangle
+        </men>.
+      </p>
+      <p>
+        In a similar manner we can use <xref ref="eq_plusx">equations</xref>
+        <m>-</m><xref ref="eq_minusy"></xref>
+        to determine any of the basis spin vectors in terms of the others.
+        The complete set of transformations among the basis spin states appears in <xref ref="table_spinTransform">Table</xref>.
+      </p>
+    </statement>
+  </example>
+  <table xml:id="table_spinTransform">
+    <title>Transformation of the basis spin vectors</title>
+    <tabular>
+      <row>
+        <cell><m>| +z \rangle</m></cell>
+        <cell><m>=</m></cell>
+        <cell><m>\sqrt{\frac{1}{2}} | +x \rangle + \sqrt{\frac{1}{2}} | -x \rangle</m></cell>
+        <cell><m>=</m></cell>
+        <cell><m>\sqrt{\frac{1}{2}} | +y \rangle + \sqrt{\frac{1}{2}} | -y \rangle</m></cell>
+      </row>
+      <row>
+        <cell><m>| -z \rangle</m></cell>
+        <cell><m>=</m></cell>
+        <cell><m>\sqrt{\frac{1}{2}} | +x \rangle - \sqrt{\frac{1}{2}} | -x \rangle</m></cell>
+        <cell><m>=</m></cell>
+        <cell><m>-i\sqrt{\frac{1}{2}} | +y \rangle + i\sqrt{\frac{1}{2}} | -y \rangle</m></cell>
+      </row>
+    </tabular>
+    <tabular>
+      <row>
+        <cell><m>| +x \rangle</m></cell>
+        <cell><m>=</m></cell>
+        <cell><m>\sqrt{\frac{1}{2}} | +z \rangle + \sqrt{\frac{1}{2}} | -z \rangle</m></cell>
+      </row>
+      <row>
+        <cell><m>| -x \rangle</m></cell>
+        <cell><m>=</m></cell>
+        <cell><m>\sqrt{\frac{1}{2}} | +z \rangle - \sqrt{\frac{1}{2}} | -z \rangle</m></cell>
+      </row>
+      <row>
+        <cell><m>| +y \rangle</m></cell>
+        <cell><m>=</m></cell>
+        <cell><m>\sqrt{\frac{1}{2}} | +z \rangle + i\sqrt{\frac{1}{2}} | -z \rangle</m></cell>
+      </row>
+      <row>
+        <cell><m>| -y \rangle</m></cell>
+        <cell><m>=</m></cell>
+        <cell><m>\sqrt{\frac{1}{2}} | +z \rangle - i\sqrt{\frac{1}{2}} | -z \rangle</m></cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    The previous example demonstrates exactly what we discovered in the experiment of <xref ref="fig_SGDevice3">Figure</xref>.
+    If we have a beam of electrons in the state
+    <m>| +z \rangle</m> and measure the <m>x</m>-component of spin <m>S_x</m>,
+    we find that we obtain <m>S_x = +\hbar /2</m> (spin-up along <m>x</m>) and
+    <m>S_x = -\hbar /2</m> (spin-down along <m>x</m>) with equal probabilities <m>|\frac{1}{\sqrt{2}}|^2 = \frac{1}{2}</m>.
+  </p>
+  <example xml:id="exam_spinsProbabilities">
+    <title>Spins and probabilities</title>
+    <statement>
+      <p>
+        Consider an electron in the state given by
+        <men xml:id="eq_ex3">
+          |\psi\rangle = \sqrt{\frac{2}{3}}| +z \rangle + \sqrt{\frac{1}{3}}| -z \rangle
+        </men>.
+      </p>
+      <p>
+        (a) Calculate the probability of obtaining the value <m>+\hbar/2</m> and <m>-\hbar/2</m> when the <m>z</m>-component of the spin angular momentum is measured. (b) Calculate the probability that an electron in the state
+        <m>|\psi\rangle</m> will be measured to have an <m>x</m>-component of spin of
+        <m>-\hbar/2</m>. (c) Calculate the probability that an electron in the state
+        <m>|\psi\rangle</m> will be measured to have a <m>y</m>-component of spin of <m>-\hbar/2</m>.
+        <em>Solution: </em> (a) This is straightforward because
+        <m>|\psi\rangle</m> is written as a superposition of the <m>| \pm z \rangle</m>-states.
+        The probability of the spin being found as
+        <q>spin up</q>
+        is the square of the coefficient of the base state <m>| +z \rangle</m>.
+        That is,
+        <men>
+          \mbox{Prob} \bigl(\mbox{spin measured to be spin-up} \bigr) = P(+z) = \left|\sqrt{\frac{2}{3}}\right|^2 = \frac{2}{3}
+        </men>.
+      </p>
+      <p>
+        Likewise, the probability of the spin being found as
+        <q>spin down</q>
+        is
+        <men>
+          \mbox{Prob} \bigl(\mbox{spin measured to be spin-down} \bigr) = P(-z) = \left|\sqrt{\frac{1}{3}}\right|^2 = \frac{1}{3}
+        </men>.
+      </p>
+      <p>
+        (b) For the <m>x</m>-component of spin,
+        we need to rewrite <m>| \psi \rangle</m> as a linear superposition of the <m>S_x</m> basis states
+        <m>| +x \rangle</m> and <m>| -x \rangle</m>.
+        This can be accomplished by using the results of <xref ref="exam_ztox">Example</xref>
+        and <xref ref="table_spinTransform">Table</xref>
+        to write the states <m>| +z \rangle</m> and
+        <m>| -z \rangle</m> in terms of the basis states
+        <m>| +x \rangle</m> and <m>| -x \rangle</m>.
+        <md>
+          <mrow>| \psi \rangle =\mathstrut \amp  \sqrt{\frac{2}{3}} \left[ \sqrt{\frac{1}{2}} \left[ | +x \rangle + | -x \rangle \right] \right] + \sqrt{\frac{1}{3}} \left[ \sqrt{\frac{1}{2}} \left[ | +x \rangle - | -x \rangle \right] \right]</mrow>
+          <mrow>=\mathstrut \amp  \sqrt{\frac{1}{2}} \left[ \sqrt{\frac{2}{3}} + \sqrt{\frac{1}{3}} \right] | +x \rangle + \sqrt{\frac{1}{2}} \left[ \sqrt{\frac{2}{3}} - \sqrt{\frac{1}{3}} \right] | -x \rangle</mrow>
+          <mrow>=\mathstrut \amp  \left( \sqrt{\frac{1}{3}} + \sqrt{\frac{1}{6}}\right)| +x \rangle +  \left( \sqrt{\frac{1}{3}} - \sqrt{\frac{1}{6}}\right)| -x \rangle </mrow>
+        </md>.
+      </p>
+      <p>
+        Therefore, the probability that the electron is in the spin-down state of <m>S_x</m> is equal to the square of the coefficient of the <m>| -x \rangle</m> basis state
+        <men>
+          \mbox{Prob} \bigl(\mbox{spin-down in \(S_x\)} \bigr) = \left|\sqrt{\frac{1}{3}} - \sqrt{\frac{1}{6}}\right|^2 \approx 0.029
+        </men>.
+      </p>
+      <p>
+        (c) The calculation here is very similar to that for part (b) <em>except</em>
+        that we should write the states
+        <m>| \pm z \rangle</m> in terms of the basis states <m>| \pm y \rangle</m>.
+        Since we are interested in measuring a value of the <m>y</m>-component of spin,
+        <m>S_y</m>,
+        we need to express our quantum state as a superposition of the <m>S_y</m> basis states.
+        We will leave this to you to finish,
+        but you should obtain an answer of 0.5 for the probability.
+      </p>
+    </statement>
+  </example>
+</section>

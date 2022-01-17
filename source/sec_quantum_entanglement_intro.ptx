@@ -1,0 +1,25 @@
+<section xml:id="sec_quantum_entanglement_intro">
+  <title>Introduction</title>
+  <p>
+    In our final chapter on quantum mechanics we introduce the concept of <em>entanglement</em>.
+    This is a feature of two-particle states
+    (or multi-particle states)
+    in which the probabilities of the particles are linked in ways that cannot be described by classical physics.
+    Entanglement is at the heart of current research in quantum cryptography,
+    quantum computing, and quantum teleportation.
+    As we shall see,
+    it also leads to some extremely counter-intuitive behavior.
+    We can construct entangled states in which particle 1 is a large distance away from particle 2, and yet a measurement on particle 1 can instantly influence particle 2.
+    Einstein called this
+    <q>spooky action at a distance.</q>
+  </p>
+  <p>
+    Finally, we will be able address the question of
+    <em>completeness</em> of quantum states.
+    When we say a spin has a probability of being measured in the spin up state,
+    is this probability just a reflection of our ignorance <mdash/> the spin really has some value and we just don't know it <mdash/> or is the particle's spin fundamentally not determined until we make the measurement?
+    For decades physicists assumed that this was an unanswerable question,
+    but in recent years we have found ways to turn this into an experimental test.
+    To learn what the experiments have found, read on!
+  </p>
+</section>

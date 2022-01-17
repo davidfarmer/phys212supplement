@@ -1,0 +1,53 @@
+<section xml:id="sec_statistics_and_spin">
+  <title>Relation between Statistics and Spin</title>
+  <p>
+    All fundamental particles are either fermions or bosons.
+    Strangely enough,
+    which category they fall into is directly determined by their value of spin.
+    <ul>
+      <li>
+        <p>
+          All particles with spin <m>s=0</m>, <m>1</m>,
+          <m>2</m>, <ellipsis/> or integer spin, are bosons:
+          their two-particle states must be symmetric.
+          This includes the photon and some more exotic particles that we will encounter in Unit 4.
+        </p>
+      </li>
+      <li>
+        <p>
+          All particles with spin <m>s=1/2</m>, <m>3/2</m>,
+          etc, which we call half-integer spin, are fermions:
+          their two-particle states must be antisymmetric.
+          These include electrons, protons,
+          neutrons, and quarks, and more.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    The connection between the spin of a particle and its symmetry under exchange (swap) does not have a simple origin,
+    and we will not try to explain it here.
+    But it is another rule strictly obeyed by every particle.
+  </p>
+  <p>
+    Note that in some cases a collection of particles can act as a single particle.
+    For example, a proton is really made up of three quarks.
+    Each quark is a fermion,
+    so if we imagine exchanging a pair of protons,
+    we are really exchanging three pairs of quarks.
+    Each quark exchange brings in a minus sign,
+    so the net effect of exchanging the protons in a two-proton state is a factor of <m>(-1)^3=-1</m>.
+    Thus, the proton will act like a fermion,
+    as long as it makes sense to think of the proton as a unit, that is,
+    as long as we are not considering some process that rips apart the protons.
+  </p>
+  <p>
+    A similar game can be played with entire atoms.
+    A helium-4 atom consists of two protons and two neutrons in the nucleus,
+    orbited by two electrons.
+    That is an even number of fermions,
+    so if we make a two-atom state out of two helium atoms,
+    they will be symmetric under exchange of the atoms.
+    So the helium-4 atom, if it stays intact, acts as a boson.
+  </p>
+</section>

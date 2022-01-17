@@ -1,0 +1,352 @@
+<section xml:id="sec_schrodinger_eqn">
+  <title>Schr&#xf6;dinger's Wave Equation</title>
+  <introduction>
+    <p>
+      We have talked about the idea of a wavefunction <m>\psi(x)</m> that describes the wave-nature of a particle,
+      and we have introduced the idea that the wave represents probability amplitudes,
+      with the probability density <m>P(x)</m> for locating a particle being given by <m>P(x) = |\psi(x)|^2</m>.
+      But how can we determine what that wavefunction is for a specific problem?
+    </p>
+    <p>
+      In 1926, Erwin Schr&#xf6;dinger proposed a differential equation whose solutions give the wavefunctions corresponding to matter waves.
+      For a particle of mass <m>m</m> and total energy <m>E</m>, Schr&#xf6;dinger's equation written in one spatial dimension is
+      <men xml:id="eq_schrodinger">
+        -\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + U(x)\psi(x) = E\psi(x)
+      </men>,
+      where <m>U(x)</m> is the potential energy function of the particle.
+      Schr&#xf6;dinger's equation is similar in form to the types of equations that describe other wave phenomena,
+      such as sound waves and electromagnetic waves.
+      The basic idea here is that,
+      given a particle with mass <m>m</m> and a potential energy <m>U(x)</m>, Schr&#xf6;dinger's equation will allow us to determine the possible energies <m>E</m> and associated wavefunction solutions <m>\psi(x)</m>.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Testing Solutions to an Equation</title>
+    <p>
+      There are advanced techniques from the theory of differential equations that we could use to start finding solutions to Schr&#xf6;dinger's equation from scratch.
+      But for this course, we use only the
+      <q>guess and check</q>
+      method, which is also a standard technique in solving differential equations.
+      (In lab, you will solve Schr&#xf6;dinger's equation using a numerical iteration method.)
+      The approach is quite simple:
+      you guess a particular function,
+      you put it into the equation and see if it works.
+      If it works for all values of <m>x</m>,
+      then you say that it is a solution.
+      If it doesn't, then you say that it
+      <em>isn't</em> a solution.
+    </p>
+    <p>
+      We will illustrate the
+      <q>guess and check</q>
+      approach with an example:
+    </p>
+    <example>
+      <title>Testing solutions to an equation</title>
+      <statement>
+        <p>
+          Some equations have solutions which are functions, instead of just a number.
+          Let's say you are trying to determine the function <m>f(x)</m> that solves the following equation:
+          <men xml:id="eq_TestEx1">
+            \left[f(x)\right]^2 - x^2 + 8x - 16 = 0
+          </men>.
+        </p>
+        <p>
+          You can probably solve this with algebra techniques,
+          but let's pretend that you don't know how to solve it.
+          Instead, we are going to test trial solutions.
+          <ol>
+            <li>
+              <title>(a)</title>
+              <p>
+                Test the solution <m>f(x) = ax+b</m> to see if it satisfies <xref ref="eq_TestEx1"/>.
+                If it does, determine the values of the constants <m>a</m> and <m>b</m> for the solution.
+              </p>
+            </li>
+            <li>
+              <title>(b)</title>
+              <p>
+                Test the solution <m>f(x) = ax</m> to see if it satisfies <xref ref="eq_TestEx1"/>.
+                If it does, determine the value of the constant <m>a</m> for the solution.
+              </p>
+            </li>
+            <li>
+              <title>(c)</title>
+              <p>
+                Test the solution <m>f(x) = ax^2+b</m> to see if it satisfies <xref ref="eq_TestEx1"/>.
+                If it does, determine the values of the constants <m>a</m> and <m>b</m> for the solution.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          <em>Solution: (a)</em> Substituting
+          <m>f(x) = ax+b</m> into <xref ref="eq_TestEx1"/>, we get
+          <md>
+            <mrow>\left[f(x)\right]^2-x^2+8x-16 =\mathstrut \amp  (ax+b)^2-x^2+8x-16</mrow>
+            <mrow>=\mathstrut \amp  a^2x^2+2abx+b^2-x^2+8x-16</mrow>
+            <mrow>=\mathstrut \amp  (a^2-1)x^2+x(2ab+8)+(b^2-16)</mrow>
+          </md>
+        </p>
+        <p>
+          The question is whether this can all add up to zero for all values of <m>x</m>.
+          The answer to that question is yes
+          <em>only</em> if the constants,
+          the <m>x</m>-terms and the <m>x^2</m> terms all separately add to zero.
+          That means that all of the terms in parentheses above need to add to zero separately. (You can't satisfy this by making <m>x=0</m>,
+          because then the function would only work for that particular value of <m>x</m>).
+          So
+          <md>
+            <mrow>b^2-16 = 0 \rightarrow b = \pm 4</mrow>
+            <mrow>2ab+8 = 0 \rightarrow 2ab=-8 \rightarrow a=-4/b</mrow>
+            <mrow>a^2-1=0 \rightarrow a= \pm1</mrow>
+          </md>
+        </p>
+        <p>
+          All three of these relations work if <m>b=4</m> and <m>a=-1</m> or if <m>b=-4</m> and <m>a=1</m>.
+          So, we can say that <m>f(x)=ax+b</m> <em>is</em>
+          a solution to <xref ref="eq_TestEx1"/> if <m>b=4</m> and <m>a=-1</m> or if <m>b=-4</m> and <m>a=1</m>,
+          i.e., <m>f(x) = -x+4</m> and <m>f(x)=x-4</m> are both solutions.
+        </p>
+        <p>
+          <em>(b)</em> Now let's substitute
+          <m>f(x) = ax</m> into <xref ref="eq_TestEx1"/>:
+          <md>
+            <mrow>\left[f(x)\right]^2-x^2+8x-16 =\mathstrut \amp  (ax)^2-x^2+8x-16</mrow>
+            <mrow>=\mathstrut \amp  a^2x^2-x^2+8x-16</mrow>
+            <mrow>=\mathstrut \amp  (a^2-1)x^2+8x-16</mrow>
+          </md>
+        </p>
+        <p>
+          We could get rid of the <m>x^2</m> term by making <m>a = \pm 1</m>,
+          but we would still be left with <m>8x - 16 = 0</m>.
+          The only way to make that work would be to say <m>x</m> must be equal to 2.
+          But that means that the test solution <m>f(x) = ax</m>
+          (with <m>a = 1</m>)
+          would only work at <m>x = 2</m>.
+          If <m>f(x)</m> only works at one particular value of <m>x</m>,
+          then it isn't a solution of the equation.
+          (Solutions must work for <em>every</em> value of <m>x</m>.)
+        </p>
+        <p>
+          <em>(c)</em> Now let's substitute
+          <m>f(x) = ax^2+b</m> into <xref ref="eq_TestEx1"/>:
+          <md>
+            <mrow>\left[f(x)\right]^2-x^2+8x-16 =\mathstrut \amp  (ax^2+b)^2-x^2+8x-16</mrow>
+            <mrow>=\mathstrut \amp  a^2x^4+2abx^2+b^2-x^2+8x-16</mrow>
+            <mrow>=\mathstrut \amp  a^2x^4+(2ab^2-1)x^2+ (8)x +(b^2-16)</mrow>
+          </md>
+        </p>
+        <p>
+          This would work only if the coefficients of the <m>x^4</m>,
+          <m>x^2</m>, <m>x</m> and constant terms were all zero.
+          We can make the <m>x^4</m> term disappear by making <m>a=0</m> and we can make the constant term disappear by making <m>b=\pm 4</m>,
+          but that would leave non-zero coefficients for the <m>x^2</m> and <m>x</m> terms.
+          There is no combination of <m>a</m> and <m>b</m> that can make all four terms disappear,
+          so there is no function of the form
+          <m>f(x) = ax^2+b</m> that can satisfy <xref ref="eq_TestEx1"/>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      The same approach works for <em>any</em> equation,
+      including <em>differential equations</em>
+      (i.e., equations that have derivatives in them).
+    </p>
+  </subsection>
+  <subsection xml:id="sec_test_Solution">
+    <title>Testing Solutions of Schr&#xf6;dinger's Equation</title>
+    <p>
+      Okay, let's look at Schr&#xf6;dinger's equation now.
+      We won't
+      <q>solve</q>
+      this equation
+      (that requires mathematics beyond the scope of this course),
+      but we will test possible solutions to see if they work.
+      First, since Schr&#xf6;dinger's equation is a generalization of de<nbsp/>Broglie's result,
+      we should get the same result for a free particle (i.e., if <m>U(x)=0</m>).
+      De<nbsp/>Broglie says that a free particle with a momentum <m>p</m> can be described as a sine wave with a wavelength <m>\lambda=h/p</m>.
+      So, let's try a test solution
+      <m>\psi_1(x)=A\sin(kx)</m> and see if this satisfies Schr&#xf6;dinger's equation.
+    </p>
+    <p>
+      With <m>U(x) = 0</m>, Schr&#xf6;dinger's equation becomes
+      <men xml:id="eq_schroed_with_0pe">
+        -\frac{\hbar^2}{2m}\frac{d^2\psi_1(x)}{dx^2} + 0 = E\,\psi_1(x)
+      </men>.
+    </p>
+    <p>
+      The Schr&#xf6;dinger equation has the second derivative of the wavefunction in it,
+      so let's calculate that derivative for our trial solution:
+      <men>
+        \frac{d\psi_1}{dx} = kA\cos(kx) \hspace{0.5in}  \mbox{and}  \hspace{0.5in} \frac{d^2\psi_1}{dx^2} = -k^2A\sin(kx)
+      </men>.
+    </p>
+    <p>
+      Next, substitute the second derivative and the wavefunction into <xref ref="eq_schroed_with_0pe"/>
+      <men>
+        -\frac{\hbar^2}{2m}\left[-k^2A\sin(kx)\right] + 0 = E\left[A\sin(kx)\right]
+      </men>
+      and combine the <m>\sin(kx)</m> terms
+      <men>
+        A\sin(kx)\left[\frac{\hbar^2k^2}{2m}-E\right] = 0
+      </men>.
+    </p>
+    <p>
+      This works for <m>A=0</m>,
+      but that isn't interesting because then <m>\psi(x)</m> would just be <m>0</m>.
+      But <m>\psi_1(x)</m> also works if the terms in brackets add up to zero, i.e., if
+      <men>
+        \frac{\hbar^2k^2}{2m} - E = 0 \longrightarrow E = \frac{\hbar^2k^2}{2m}
+      </men>
+      and
+      <men>
+        k=\pm\frac{\sqrt{2mE}}{\hbar}
+      </men>,
+      where <m>k</m> is the wavenumber <m>k=2\pi/\lambda</m>.
+      The mechanical energy <m>E</m> is equal to the kinetic energy <m>K</m> in this case
+      (since <m>U = 0</m> everywhere),
+      so
+      <men>
+        \frac{2\pi}{\lambda}=\pm \frac{\sqrt{2m\left(\frac{1}{2}mv^2\right)}}{h/2\pi} = \frac{2\pi\sqrt{m^2v^2}}{h} \ = \frac{2\pi p}{h}
+      </men>.
+    </p>
+    <p>
+      We have dropped the <m>\pm</m> since a negative wavelength doesn't have any physical relevance.) So, we can say that a test solution <m>\psi_1(x) = A\sin(kx)</m> <em>does</em>
+      satisfy Schr&#xf6;dinger's equation for a free particle (<m>U = 0</m>),
+      assuming the wavenumber <m>k</m> has a value that corresponds to a wavelength <m>\lambda = h/p</m>,
+      as expected by de<nbsp/>Broglie's relation.
+    </p>
+    <p>
+      (Note that this process has not determined the value of <m>A</m> in our test solution.
+      The trial function <m>\psi_1(x) = A\sin(kx)</m> works for any value of <m>A</m>
+      (assuming the correct <m>k</m>).
+      The value of <m>A</m> needs to be determined by normalization conditions.
+      We'll discuss this in the next chapter.)
+    </p>
+    <p>
+      For contrast, let's try a test solution that does <em>not</em>
+      satisfy Schr&#xf6;dinger's equation.
+    </p>
+    <example>
+      <title>Trying another test solution for a free particle</title>
+      <statement>
+        <p>
+          Test the trial solution <m>\psi_1(x) = Bx^2</m> to see whether or not it satisfies Schr&#xf6;dinger's equation for a free particle.
+        </p>
+        <p>
+          <em>Solution:</em> With <m>U=0</m>, Schr&#xf6;dinger's equation is
+          <men>
+            -\frac{\hbar^2}{2m}\frac{d^2\psi_1(x)}{dx^2} + 0 = E\,\psi_1(x)
+          </men>.
+        </p>
+        <p>
+          Calculate the second derivative for our trial solution:
+          <men>
+            \frac{d\psi_1}{dx} = 2Bx \hspace{0.5in} \mbox{and}  \hspace{0.5in} \frac{d^2\psi_1}{dx^2} = 2B
+          </men>.
+        </p>
+        <p>
+          Next, substitute the second derivative and the wavefunction into Schr&#xf6;dinger's equation:
+          <men>
+            -\frac{\hbar^2}{2m}\left[2B\right] + 0 = E\left[Bx^2\right]
+          </men>,
+          and cancel common factors and simplify, giving
+          <men>
+            E B x^2 + \frac{\hbar^2 B}{m} = 0
+          </men>.
+        </p>
+        <p>
+          In this equation there is no physically-meaningful choice of <m>E</m> and <m>B</m> that could make this true for
+          <em>all</em> <m>x</m>,<fn>
+          <m>B=0</m> would work, but then you'd have <m>\psi_1(x) = 0</m>,
+          which isn't a physically relevant solution,
+          because <m>\psi_1(x) = 0</m> means that there is no probability of finding the particle anywhere.
+          </fn> so <m>\psi_1(x)</m> is
+          <em>not</em> a solution.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Finally, let's illustrate a harder problem,
+      the quantum harmonic oscillator.
+    </p>
+    <example>
+      <title>Test solution for a particle in a harmonic oscillator potential</title>
+      <statement>
+        <p>
+          Recall that the spring potential energy is given by <m>U(x) = \frac{1}{2}k_{ sp}x^2 = \frac{1}{2}m\omega^2x^2</m>,
+          where <m>\omega = \sqrt{k_{ sp}/m}</m>.
+          Inserting this into the Schr&#xf6;dinger equation, we find
+          <men xml:id="eq_schroed_spring">
+            \frac{-\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + \frac{1}{2}k_\text{ sp } x^2\,\psi(x) = E\,\psi(x)
+          </men>.
+        </p>
+        <p>
+          Try the test function <m>\psi_2(x)=xe^{-ax^2}</m> to see if this is a solution to Schr&#xf6;dinger's equation for a harmonic oscillator.
+          If it is, determine the unknown constant <m>a</m> in the solution and the unknown energy <m>E</m>.
+        </p>
+        <p>
+          <em>Solution: </em> Again,
+          we must calculate the second derivative of this function.
+          We will leave the calculation of the second derivative for you to do
+          (remember to be careful to correctly use the product rule and the chain rule).
+          The final result for the second derivative is
+          <men xml:id="eq_2ndDerivative">
+            \frac{d^2 \psi_2(x)}{dx^2} = \left(4 a^2 x^3 - 6 a x \right) e^{- a x^2}
+          </men>.
+        </p>
+        <p>
+          Now substitute this and <m>\psi_2(x)</m> into Schr&#xf6;dinger's equation,
+          <xref ref="eq_schroed_spring"/>:
+          <men>
+            -\frac{\hbar^2}{2m}\left(4a^2x^3 - 6ax\right) e^{-ax^2} +\frac{1}{2}k_\text{ sp } x^2\left(x \,e^{-ax^2}\right) = E\left(x \,e^{-ax^2}\right)
+          </men>.
+        </p>
+        <p>
+          Every term has the same exponential factor in it, so we cancel those to get
+          <men>
+            \frac{-2\hbar^2a^2}{m}x^3 + 3\frac{a\hbar^2}{m}x + \frac{1}{2}k_\text{ sp } x^3 = Ex
+          </men>.
+        </p>
+        <p>
+          Now to finish,
+          move <m>Ex</m> to the left hand side and collect common powers of <m>x</m>:
+          <men>
+            x^3\left(\frac{1}{2}k_\text{ sp }  - \frac{2\hbar^2a^2}{m}\right) + x\left(3\frac{a\hbar^2}{m} - E\right) = 0
+          </men>.
+        </p>
+        <p>
+          For this equation to hold for all <m>x</m>,
+          we must make the coefficient of <em>each</em>
+          power of <m>x</m> vanish separately.
+          So both the coefficient of <m>x^3</m> <em>and</em>
+          the coefficient of <m>x</m> are set to zero:
+          <md>
+            <mrow>\frac{1}{2}k_\text{ sp }  - \frac{2\hbar^2a^2}{m} = 0  \text{ and } 3\frac{a\hbar^2}{m} - E = 0</mrow>
+          </md>.
+        </p>
+        <p>
+          Solving these for <m>a</m> and <m>E</m>, we find
+          <men>
+            a = \frac{m\omega}{2\hbar} \mathbf{ and}  E = 3\frac{a\hbar^2}{m} = 3\left(\frac{m\omega}{2\hbar}\right)\frac{\hbar^2}{m} = \frac{3}{2}\hbar\omega
+          </men>.
+        </p>
+        <p>
+          We see that <m>\psi_2(x) = x e^{-ax^2}</m> <em>is</em>
+          a solution to the Schr&#xf6;dinger equation if the constants <m>a</m> and <m>E</m> are as given in the previous equation.
+          We see that Schr&#xf6;dinger's equation gives us the energy <m>E</m> for this state,
+          and also determines the unknown constant <m>a</m> in our trial wavefunction,
+          <m>\psi_2</m>.
+          This wavefunction solution is actually the first excited state of the quantum oscillator:
+          <m>\psi_2(x) = x\,e^{-(m\omega/2\hbar)x^2}</m> with definite energy <m>E_2 = \frac{3}{2}\hbar\omega</m>.
+          In one of the assigned problems at the end of the chapter,
+          you will test the wavefunction solution corresponding to the ground state of the harmonic oscillator.
+        </p>
+      </statement>
+    </example>
+    <p>
+      We'll say a lot more about quantization of energy states in the next chapter.
+    </p>
+  </subsection>
+</section>

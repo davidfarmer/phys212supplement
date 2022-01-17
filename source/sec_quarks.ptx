@@ -1,0 +1,209 @@
+<section xml:id="sec_quarks">
+  <title>Quarks</title>
+  <p>
+    Nice as these patterns of the Eightfold Way are, many questions remain.
+    For instance,
+    why are there two particles at the center of the baryon hexagon of <xref ref="fig_baryon_SvsQ">Figure</xref>,
+    and three in the center of the meson pattern in <xref ref="fig_meson_SvsQ">Figure</xref>?
+    Why don't other patterns occur?
+  </p>
+  <p>
+    The fact that the elementary particles fall into neat patterns is reminiscent of the construction of the periodic table of elements.
+    There it was found that when elements were arranged in (approximate) order of increasing mass number,
+    certain groups of elements
+    (the columns of the table)
+    emerged with similar chemical properties.
+    Once the periodic table was well established,
+    the jump was quickly made to understanding atomic structure,
+    with electrons in shells, subshells, and orbitals.
+  </p>
+  <p>
+    This idea that regular patterns of particle properties could indicate a regular underlying structure occurred to Gell-Mann,
+    and in 1964 he proposed the <em>quark model</em>
+    of elementary particle structure.
+    Gell-Mann's quark model states that all hadrons are composed of a small number of constituent particles called quarks.
+    The quarks of Gell-Mann's model come in three different varieties
+    (or flavors)
+    called up, down, and strange.
+    The quarks' properties are summarized in <xref ref="table_quarks">Table</xref>.
+    The vast variety of hadrons comes about as different combinations and configurations of the quarks,
+    just as the hundreds of different isotopes of atoms arise from different combinations of protons,
+    neutrons,
+    and electrons.
+  </p>
+  <p>
+    The mass of a hadron is not simply the sum of the masses of its constituent quarks <mdash/> the energies of the bound quarks can affect the mass of the hadron.<fn>
+    Don't forget the equivalence of energy and mass from relativity.
+    </fn> Most of our discussion will focus on quarks combined together in ground state configurations.
+    But it is possible for the same set of quarks to be configured into higher energy states (i.e., higher mass particles),
+    which usually decay quickly.
+    (Since Gell-Mann's original model,
+    three more flavors of quarks have been identified,
+    but we will not study them in detail.)
+  </p>
+  <p>
+    Let's see how different combinations of quarks can be assembled to make various particles.
+    Consider a neutron, a neutral, non-strange baryon.
+    Whenever we combine quarks to make a particle,
+    the particle's additive properties (<m>Q</m>, <m>B</m>,
+    and <m>S</m>) are simply the sum of the constituent quarks' properties.
+    Since quarks have <m>B = 1/3</m>,
+    we need at least three quarks to make a baryon. let's try to make a neutron from just three.
+    If we use a strange quark, the resulting particle would carry strangeness.
+    So to make a neutron, we should use only ups and downs.
+    But how many of each?
+    We can find out by making the charge come out to zero:
+    the result is one up and two downs.
+    Thus, in symbols, <m>n = (udd)</m>.
+  </p>
+  <table xml:id="table_quarks">
+    <title>Quark properties</title>
+    <tabular>
+      <row>
+        <cell>Flavor</cell>
+        <cell>Name</cell>
+        <cell>Spin</cell>
+        <cell><m>Q</m></cell>
+        <cell><m>B</m></cell>
+        <cell><m>S</m></cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  ><m>u</m></cell>
+        <cell>up</cell>
+        <cell>1/2</cell>
+        <cell><m>+2/3</m></cell>
+        <cell><m>1/3</m></cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>d</m></cell>
+        <cell>down</cell>
+        <cell>1/2</cell>
+        <cell><m>-1/3</m></cell>
+        <cell><m>1/3</m></cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>s</m></cell>
+        <cell>strange</cell>
+        <cell>1/2</cell>
+        <cell><m>-1/3</m></cell>
+        <cell><m>1/3</m></cell>
+        <cell><m>-1</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    <em>Note:</em> the antiquarks (<m>\overline u</m>, <m>\overline d</m>, <m>\overline s</m>)
+    have the same spin but the opposite <m>Q</m>, <m>B</m>, and <m>S</m>.
+  </table>
+  <p>
+    To make a meson is even simpler.
+    Since the baryon number must come out zero,
+    a quark plus an antiquark will do it.
+    Let's make a positive pion, a non-strange meson.
+    Since <m>S= 0</m>, we could try <m>\pi^+ =(s\overline s)</m>,
+    but then the charge would be <m>-\frac{1}{3} + \frac{1}{3}</m>,
+    which isn't right.
+    Thus pions are constructed using just
+    <em>ups</em> and <em>downs</em>.
+  </p>
+  <p>
+    We can summarize our findings about constructing hadrons out of quarks with the following:
+  </p>
+  <p>
+    <assemblage>
+    </assemblage>
+    <ul>
+      <li>
+        <title>baryons</title>
+        <p>
+          contain three quarks (<m>qqq</m>)
+        </p>
+      </li>
+      <li>
+        <title>antibaryons</title>
+        <p>
+          contain three antiquarks (<m>\overline q\overline q\overline q</m>)
+        </p>
+      </li>
+      <li>
+        <title>mesons</title>
+        <p>
+          contain a quark-antiquark (<m>q\overline q</m>)
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    The quark model is especially convincing because it explains so well the Eightfold Way patterns of particles.
+    Consider again the spin zero mesons.
+    <xref ref="fig_meson_SvsQ">Figure</xref>
+    showed a hexagonal pattern with three particles in the center.
+    When we make a similar plot of the nine possible quark-antiquark pairs,
+    we get the pattern shown in <xref ref="fig_quarkpair_SvsQ">Figure</xref>.
+    There are nine combinations in exactly the same places on the plot as in <xref ref="fig_meson_SvsQ">Figure</xref>.
+    A similar situation occurs when we make three-quark combinations for baryons.
+    In fact, every possible combination of up, down,
+    and strange quarks has been observed as a particle,
+    and every known hadron can be built of quarks.
+  </p>
+  <figure xml:id="fig_quarkpair_SvsQ">
+    <caption>The nine quark-antiquark combinations on a strangeness
+    vs. charge plot.  Note the striking similarity to
+    Figure<nbsp/>\<xref ref="fig_meson_SvsQ">protect</xref>.</caption>
+    <image width="92.5%" source="images/quarkpair_SvsQ"/>
+  </figure>
+  <p>
+    Once one accepts the idea of quarks,
+    the strong interaction conservation laws become almost automatic.
+    Consider the reaction
+    <men>
+      \pi^- + p \to \Lambda + K^0
+    </men>
+  </p>
+  <p>
+    By now you could easily check that angular momentum,
+    charge, baryon number, and strangeness are all conserved.
+    But write the reaction in terms of quarks:
+    <men xml:id="eq_quark_reaction">
+      (d+\overline u) + (u+u+d) \to (d+u+s) + (\overline s+d)
+    </men>
+  </p>
+  <p>
+    Then simply note that quark conservation <em>implies</em>
+    conservation of all the additive physical quantities,
+    since each quark retains those properties regardless of configuration.
+    By quark conservation,
+    we mean that a quark can be created or destroyed only if its antiquark is created or destroyed simultaneously,
+    as occurs with a <m>u\overline u</m> pair and the
+    <m>s\overline s</m> pair in <xref ref="eq_quark_reaction"/>.
+    You'll see this quark description of reactions more vividly when you learn about reaction diagrams in <xref ref="chap_interactions">Chapter</xref>.
+  </p>
+  <example xml:id="ex_delta">
+    <statement>
+      <p>
+        {Quark content of the <m>\Delta^{++}</m>.} Construct from quarks a baryon with charge <m>+2</m>,
+        the <m>\Delta^{++}</m>.
+        <em>Solution: </em> Since a baryon contains three quarks,
+        and only an up quark has a charge of <m>+2/3</m>,
+        it would require three such quarks to obtain a charge of <m>+2</m>.
+        Thus, the <m>\Delta^{++}</m> must be made of <m>(uuu)</m>.
+      </p>
+    </statement>
+  </example>
+</section>

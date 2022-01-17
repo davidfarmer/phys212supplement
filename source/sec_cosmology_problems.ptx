@@ -1,0 +1,130 @@
+<exercises xml:id="sec_cosmology_problems">
+  <title>Problems</title>
+  <exercise xml:id="prob_grand_unification">
+    <statement>
+      <p>
+        Use the time in <xref ref="table_early_universe">Table</xref>
+        to calculate the rest energy associated with the end of Grand Unification.
+        What particles would have about this mass?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_Lambda_pair_production">
+    <statement>
+      <p>
+        About how long after the Big Bang would there be insufficient energy to create <m>\Lambda</m>-<m>\overline\Lambda</m> pairs?
+        The rest energy of a <m>\Lambda</m> is <m>1116\Xunits{MeV}</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_baryon_abundance">
+    <statement>
+      <p>
+        Assuming that one photon is released in each baryon-antibaryon annihilation,
+        why are there <m>10^9</m> photons/baryon after annihilation and not some other number?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_electron_pair_production">
+    <statement>
+      <p>
+        What is the thermal energy per particle available at <m>t = 1\Xunits{s}</m>?
+        How does this compare with the combined rest energies of an electron-positron pair?
+        What happens to positrons after this time?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_particles_and_epochs">
+    <statement>
+      <p>
+        List the types of particles you might expect to find abundantly in the early universe during the following epochs:
+        <ol>
+          <li>
+            <p>
+              <m>10^{-10}</m> s to <m>10^{-4}</m> s after the Big Bang
+            </p>
+          </li>
+          <li>
+            <p>
+              1 s to 400 s after the Big Bang
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>10^5</m> years after the Big Bang
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_quark_confinement">
+    <statement>
+      <p>
+        What particle energy is associated with the time of quark confinement?
+        What hadron has about this rest energy?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_background_radiation">
+    <statement>
+      <p>
+        Use <xref ref="eq_early_univ_temp"/> to estimate the photon temperature at the present time
+        (<m>\sim</m>10<ndash/>15 billion years after the Bang).
+        Note that this is an overestimate since the assumptions of <xref ref="eq_early_univ_temp"/> have broken down.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_transparent_universe">
+    <statement>
+      <p>
+        Transition energies for typical atomic states are about 1<ndash/><m>10\Xunits{eV}</m>.
+        That is, photons in this energy range are captured by atoms to excite upward transitions.
+        Use <xref ref="eq_early_univ_energy"/> to estimate when in the early universe this
+        <q>capture effect</q>
+        became energetically impossible.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_X_asymmetry">
+    <statement>
+      <p>
+        The <m>X</m> and <m>\overline X</m> bosons decay slightly differently because of a small flaw in charge conjugation invariance.
+        Suppose the decay scheme for <m>X</m> had the following branching ratios:
+        <image width="92.5%" source="images/X_decay"/> That is,
+        there is a 90% probability that <m>X</m> decays to two quarks,
+        and a 10% chance that <m>X</m> decays to an antiquark plus an antilepton.
+        Similarly suppose <m>\overline X</m> decays by <image width="92.5%" source="images/antiX_decay"/>
+        <ol>
+          <li>
+            <p>
+              Take 3000 random <m>X</m>'s and 3000 random <m>\overline X</m>'s.
+              How many each of quarks, leptons, antiquarks,
+              and antileptons would appear after all <m>X</m>'s and <m>\overline X</m>'s decayed?
+            </p>
+          </li>
+          <li>
+            <p>
+              Let all the quarks combine into baryons,
+              and all the antiquarks combine into antibaryons.
+              How many of each are there?
+            </p>
+          </li>
+          <li>
+            <p>
+              Now let all the particles and antiparticles annihilate as completely as possible.
+              What's left over?
+              Assume one photon is released from each annihilation.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the photon to baryon ratio for this (<m>X</m>,
+              <m>\overline X</m>) decay scheme.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</exercises>

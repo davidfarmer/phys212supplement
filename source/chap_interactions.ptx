@@ -1,0 +1,9 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_interactions">
+  <title>Fundamental Forces and Interactions II</title>
+  <xi:include  href="sec_interactions_intro.ptx"/>
+  <xi:include  href="sec_feynman_diagrams_interactions.ptx"/>
+  <xi:include  href="sec_particle_lifetimes.ptx"/>
+  <xi:include  href="sec_gut_theories.ptx"/>
+  <xi:include  href="sec_universal_symmetry.ptx"/>
+  <xi:include  href="sec_interactions_problems.ptx"/>
+</chapter>

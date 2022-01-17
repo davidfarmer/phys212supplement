@@ -1,0 +1,13 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_quantum_statistics">
+  <title>Quantum Statistics and Applications</title>
+  <xi:include  href="sec_quantum_statistics_intro.ptx"/>
+  <xi:include  href="sec_quantum_statistics_indistinguishability.ptx"/>
+  <xi:include  href="sec_statistics_and_spin.ptx"/>
+  <xi:include  href="sec__pauli_exclusion_principle.ptx"/>
+  <xi:include  href="sec_bosons.ptx"/>
+  <xi:include  href="sec_lasers.ptx"/>
+  <xi:include  href="sec_superfluidity.ptx"/>
+  <xi:include  href="sec_superconductivity.ptx"/>
+  <xi:include  href="sec_backto_original_question.ptx"/>
+  <xi:include  href="sec_quantum_statistics_problems.ptx"/>
+</chapter>

@@ -1,0 +1,130 @@
+<section xml:id="sec_3D_quantum">
+  <title>Quantum in 3D</title>
+  <p>
+    In earlier chapters we have seen how to use the Schr&#xf6;dinger equation to solve for the wavefunctions of a particle in one dimension.
+    In three dimensions,
+    the Schr&#xf6;dinger equation can be written in spherical coordinates <m>(r, \theta, \phi)</m> as:
+    <men xml:id="eq_3Dschrodinger">
+      -\frac{\hbar^2}{2mr^2} \left[ \frac{\partial}{\partial r} \left( r^2 \frac{\partial \psi}{\partial r} \right) + \frac{1}{\sin{\theta}} \frac{\partial}{\partial \theta} \left( \sin{\theta} \frac{\partial \psi}{\partial \theta} \right) + \frac{1}{\sin^2{\theta}} \frac{\partial^2 \psi}{\partial \phi^2} \right] + U \psi = E \psi
+    </men>.
+  </p>
+  <p>
+    At this point, you might be hyperventilating,
+    but don't worry <mdash/> we will restrict ourselves to cases where everything is spherically-symmetric
+    (with no <m>\theta</m>- or <m>\phi</m>-dependence),
+    so most of the terms in this equation drop out.
+    And we won't ask you to <em>solve</em> this equation,
+    but will instead use the approach from earlier where we give you a solution and ask for you to test to see if it does or does not satisfy the equation.
+  </p>
+  <example>
+    <statement>
+      <p>
+        {Schr&#xf6;dinger equation for 3D Harmonic Oscillator} Show that the test wavefunction
+        <m>\psi(r) = Ae^{-br^2}</m> is a solution to <xref ref="eq_3Dschrodinger"/> for the harmonic oscillator with potential energy function <m>U =\frac{1}{2}kr^2</m>.
+        If it is a solution
+        (which it is),
+        determine the energy of the quantum state.
+      </p>
+      <p>
+        <em>Solution</em>: If you have never seen a partial derivative such as <m>\partial \psi/\partial r</m>,
+        fear not <mdash/> it is the same thing as a regular derivative where everything else
+        (in this case, <m>\theta</m> and <m>\phi</m>)
+        is treated as constant.
+        And since the test wavefunction for this example doesn't have any <m>\theta</m> or <m>\phi</m>'s in it,
+        we can quickly simplify Schr&#xf6;dinger's equation by dropping out any terms that have derivatives with respect to <m>\theta</m> or <m>\phi</m>.
+        So, we now have:
+        <men xml:id="eq_ReducedSE">
+          -\frac{\hbar^2}{2mr^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial \psi}{\partial r} \right) + \frac{1}{2}kr^2 \psi = E \psi
+        </men>.
+      </p>
+      <p>
+        The derivative <m>\partial \psi/\partial r = Ae^{-br^2}(-2br)</m> and the expression <m>\frac{\partial}{\partial r}(r^2\frac{\partial \psi}{\partial r}) = -6br^2Ae^{-br^2} +4b^2r^4Ae^{-br^2}</m>.
+        So, <xref ref="eq_ReducedSE"/> becomes:
+        <men>
+          -\frac{\hbar^2}{2mr^2} \left[-6br^2Ae^{-br^2}+4b^2r^4Ae^{-br^2}\right] + \frac{1}{2}kr^2 \psi = E \psi
+        </men>.
+      </p>
+      <p>
+        The terms <m>Ae^{-br^2}</m> are present in each term, so they cancel.
+        Simplifying,
+        <md>
+          <mrow>\frac{3b\hbar^2}{m} - \frac{2b^2\hbar^2}{m}r^2 + \frac{1}{2}kr^2 = E</mrow>
+          <mrow>\rightarrow r^2\left(\frac{1}{2}k-\frac{2b^2\hbar^2}{m}\right) + \left(\frac{3b\hbar^2}{m} - E\right) = 0</mrow>
+        </md>
+        and this is satisfied only if both the constant and <m>r^2</m> terms separately add to zero.
+        Setting the <m>r^2</m> terms to zero gives us
+        <m>b = \frac{\sqrt{mk}}{2\hbar}</m> and <m>E = \frac{3b\hbar^2}{m} = \frac{3\hbar^2}{m}\frac{\sqrt{mk}}{2\hbar} = \frac{3}{2}\hbar\sqrt{k/m}</m>.
+      </p>
+      <p>
+        So, <em>yes</em>, the test function
+        <m>\psi(r) = Ae^{-br^2}</m> satisfies Schr&#xf6;dinger's equation for a harmonic oscillator as long as <m>b</m> and <m>E</m> are given by the values above.
+      </p>
+    </statement>
+  </example>
+  <p>
+    A particularly important case for the 3D Schr&#xf6;dinger equation
+    (<xref ref="eq_3Dschrodinger"/>)
+    is that of a hydrogen atom where the potential energy function <m>U = -ke^2/r</m>.
+    The complete general solutions for this equation,
+    describing all possible states for an electron in a hydrogen atom,
+    are beyond the scope of this course.<fn>
+    But not beyond the scope of a class in physical chemistry or upper-level quantum mechanics <mdash/> something to look forward to if you are a chemistry or physics major!
+    </fn> We'll be content with checking a few of the simplest cases
+    (you'll be doing this for homework,
+    using an approach very similar to the example above).
+    But certain general observations will be made.
+  </p>
+  <p>
+    The first observation is that the spatial wavefunction
+    <m>\psi(x,y,z)</m> for any single-particle, 3D quantum system involves three quantum numbers.
+    For atoms, each of the three quantum numbers (<m>n, l</m>,
+    and <m>m_l</m>) which arise in solving this particular 3D problem can be associated with a particular spherical coordinate.
+    The principal quantum number <m>n</m> is associated with the radial coordinate <m>r</m>,
+    and is related to the number of nodes in the wavefunction as you move outward from the origin on a radial line.
+    The orbital quantum number <m>l</m> is associated with the polar angle <m>\theta</m>
+    (measured from the
+    <q>North pole</q>).
+    When <m>l=0</m>,
+    the associated wavefunction has no dependence on <m>\theta</m>.
+    The orbital magnetic quantum number <m>m_l</m> is associated with the azimuthal angle <m>\phi</m>;
+    when <m>m_l = 0</m>, there is no <m>\phi</m>-dependence.<fn>
+    In other math classes you have taken you may have used <m>\phi</m> for the polar angle and <m>\theta</m> for the azimuthal angle.
+    This is just a matter of convention.
+    In this course we will consistently use the definitions given in the text above.
+    </fn>
+  </p>
+  <p>
+    Actually, there is a fourth quantum number <m>m_s</m> associated with the spin angular momentum of the electron <mdash/> this is the same quantum number that we discussed in the previous chapter.
+    So, a full description of the state of an electron in an atom requires the specification of four quantum numbers:
+    <m>|n,l,m_l,m_s\rangle</m>.
+  </p>
+  <p>
+    The second observation is that the quantum numbers are directly connected to measurable physical quantities of the atom.
+    For solutions of <xref ref="eq_3Dschrodinger"/>,
+    the energy of the electron in hydrogen is determined to a high degree of accuracy by the principal quantum number <m>n</m>.<fn>
+    For real atoms,
+    there are slight modifications to the energy based on the other quantum numbers,
+    but we won't discuss those slight corrections in this course.
+    </fn> The energy formula for an electron in a state of quantum number <m>n</m> is
+    <men xml:id="eq_hydrogenE">
+      E_n = -\frac{1}{n^2} \frac{m k^2 e^4}{2 \hbar^2} = - \frac{13.6 \Xunits{eV}}{n^2}
+    </men>.
+  </p>
+  <p>
+    Another useful physical quantity is the electron's orbital angular momentum <m>\vec{L}</m>,
+    whose magnitude is given in terms of the orbital quantum number <m>l</m> as
+    <men xml:id="eq_Lmag">
+      |\vec{L}| = \sqrt{l (l + 1)} \hbar
+    </men>.
+  </p>
+  <p>
+    The <m>z</m>-component of the orbital angular momentum <m>L_z</m> is given by
+    <men xml:id="eq_Lcomponent">
+      L_z = m_l \hbar
+    </men>,
+    and the <m>z</m>-component of the spin angular moment <m>S_z</m> is given by
+    <men xml:id="eq_Scomponent">
+      S_z = m_s \hbar
+    </men>.
+  </p>
+</section>

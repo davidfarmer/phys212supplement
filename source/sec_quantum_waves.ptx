@@ -1,0 +1,342 @@
+<section xml:id="sec_quantum_waves">
+  <title>Quantum Waves</title>
+  <introduction>
+    <p>
+      Let's consider a particle moving with a well-defined momentum <m>p</m>.
+      According to de<nbsp/>Broglie,
+      this particle can also be thought of as a wave with a wavelength <m>\lambda = h/p</m>.
+      We can represent this graphically as a simple sine wave,
+      as shown in <xref ref="fig_wave_localization">Figure</xref>(a).<fn>
+      Actually, a state with well-defined momentum has a complex wavefunction
+      <m>\psi(x) = Ae^{2\pi ipx/h}</m> whose real and imaginary parts are simple cosine and sine waves.
+      </fn> But a wave doesn't have to be a simple sine wave.
+      The <em>wavefunction</em> <m>\psi(x)</m> describing a particle's wave-like nature can take any shape.
+      <xref ref="fig_wave_localization">Figure</xref>(b) shows a wavepacket-shaped wavefunction,
+      and <xref ref="fig_wave_localization">Figure</xref>(c) shows a pulse-like wavefunction.
+      Later in this chapter,
+      we will explain how the specific wavefunction can be determined for different physical situations.
+    </p>
+    <figure xml:id="fig_wave_localization">
+      <caption>Wavefunctions <m>\psi(x)</m> discussed in the text: (a) a pure
+      sine wave, (b) a partially localized function, and (c) a localized blip.</caption>
+      <image width="92.5%" source="images/wave_localization2"/>
+    </figure>
+    <p>
+      But first: what exactly <em>is</em> the wave here?
+      An answer to that question was provided in 1926 by Max Born who argued that the wavefunction contains information about the probability for finding the particle.
+      Specifically,
+      given a wavefunction <m>\psi(x)</m> that describes the wave properties of a particle, Born argued that <m>\psi(x)</m> represents
+      <em>probability amplitude</em>,
+      and taking the magnitude squared of the wavefunction produces the
+      <em>probability density</em>
+      <m>P(x)</m> <mdash/> probability per unit distance for a one-dimensional problem <mdash/> for finding the particle:
+      <men xml:id="eq_probdensity">
+        P(x) = |\psi(x)|^2
+      </men>.
+    </p>
+    <p>
+      This tells us that according to quantum physics,
+      a particle has a range of possible positions,
+      described by a probability density.
+      We don't know where the particle is located <mdash/> there is a possibility that it could be found anywhere where the wavefunction <m>\psi(x)</m> is non-zero.
+      But it isn't just a statement that we don't
+      <em>know</em> where the particle is;
+      rather, <em>the particle doesn't HAVE a position</em>
+      until we make a measurement and locate it.
+    </p>
+    <p>
+      The interpretation of matter waves as probability amplitudes has tremendous implications,
+      which we will explore later in this chapter and in the next few chapters.
+      But before we explore those implications,
+      we need to develop the mathematics of probability densities.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Probability Densities</title>
+    <p>
+      The concept of probability density can be tricky <mdash/> it's not the same as probability!
+      In one spatial dimension we write the probability density as <m>P(x)</m>,
+      since it can vary with the position <m>x</m>.
+      To get probability from <m>P(x)</m>,
+      you must multiply by a length interval since it is really
+      <em>probability per unit length</em>.
+      Specifically,
+      <men>
+        P(x)\, dx = \left(\begin{array}{l} \text{ Probability of finding the particle within }  \\ \text{ an interval from \(x\) to \(x+dx\). } \end{array} \right)
+      </men>.
+    </p>
+    <p>
+      If the probability density is uniform,
+      then it is easy to find probability for any interval.
+      To illustrate,
+      suppose you are playing golf on a dark night (don't ask why) and after driving the ball you know it landed somewhere along the left edge of the fairway,
+      between 200 to 250 meters from the tee.<fn>
+      This is physics, so golf is played using the metric system.
+      </fn> You want to find it and learn about probability density at the same time.
+    </p>
+    <p>
+      The total probability of finding your ball between <m>=200\Xunits{m}</m> and
+      <m>x = 250\Xunits{m}</m> is 1 <mdash/> it is definitely somewhere in that interval.
+      Furthermore, the probability density is uniform.
+      That is, the ball is equally likely to be found anywhere in the interval.
+      Then the probability density <m>P(x)</m> is given by
+      <men>
+        P(x) = \frac{\text{ Total Probability } }{\text{ Total Length of Interval } } \hspace{0.2in}\text{ (uniform \(P(x)\) only) }
+      </men>,
+      so in this case
+      <men>
+        P(x) = \frac{1}{(250\Xunits{m}-200\Xunits{m})} = \frac{1}{50}\Xunits{m^{-1}}
+      </men>.
+    </p>
+    <p>
+      If you limit your search to the region between
+      <m>x_1 = 210\Xunits{m}</m> and <m>x_2 = 215\Xunits{m}</m>,
+      then your probability of finding the ball is
+      <md>
+        <mrow>\text{ Probability }  \amp = (\text{ Probability Density } )\times (\text{ Length of Interval of Interest } )</mrow>
+        <mrow>\amp = \frac{1}{50\Xunits{m}} \left(215\Xunits{m}-210\Xunits{m}\right) = 0.1 \text{ or 10\% } </mrow>
+      </md>.
+    </p>
+    <p>
+      On the other hand,
+      if the probability density is not uniform, you have to integrate:
+      <men>
+        \text{ Probability of finding ball between \(x_1\) and \(x_2\) } = \int_{x_1}^{x_2} P(x)\, dx
+      </men>.
+    </p>
+    <p>
+      This is the general relation you should use to determine probabilities for 1-D problems.
+    </p>
+    <p>
+      Finally, we note a useful graphical connection to probability.
+      Since integrals have the nice interpretation of being area under a curve,
+      lots of understanding of these concepts can be gained by plotting <m>P(x)</m> vs.<nbsp/><m>x</m>,
+      and simply calculating areas.
+    </p>
+    <example>
+      <title>Probability Density I</title>
+      <statement>
+        <p>
+          A plot of a non-uniform probability density for finding your ball near a different hole is shown below,
+          in <xref ref="fig_prob_density_golf">Figure</xref>.
+        </p>
+        <figure xml:id="fig_prob_density_golf">
+          <caption>Probability density for location of a golf ball.</caption>
+          <image width="90%" source="images/prob_density_golf"/>
+        </figure>
+        <ol>
+          <li>
+            <p>
+              Show that the total probability of finding your ball is 1.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use the plot to find the probability of finding your ball between 150 and 200 m from the tee.
+            </p>
+          </li>
+        </ol>
+        <p>
+          <em>Solution: </em>
+          <ol>
+            <li>
+              <p>
+                Since the total probability is the sum over the probabilities of being at all possible positions,
+                we must integrate the probability density over all possible values of <m>x</m>,
+                i.e., find the total area under the graph.
+                The total net area is a triangle with a base of
+                <m>100\Xunits{m}</m> and a height of <m>0.02\Xunits{m</m>^{-1}<m>}</m>, so
+                <men>
+                  \text{ Probability }  = \text{ Area }  = {\textstyle\frac{1}{2}}\times 100 \times 0.02 = 1
+                </men>..
+              </p>
+            </li>
+            <li>
+              <p>
+                The probability is equal to <m>\int_{150}^{200}P(x)\, dx</m>,
+                which is the area of the shaded trapezoid.
+                The trapezoid can be considered as a rectangle
+                (of base <m>b = 50</m> and height <m>h = 0.01</m>)
+                plus a triangle
+                (of base <m>b = 50</m> and height <m>h = 0.01</m>).
+                Therefore the total probability is
+                <md>
+                  <mrow>\text{ Probability }  = \text{ Area under curve } \amp = bh +  {\textstyle\frac{1}{2}b h}</mrow>
+                  <mrow>\amp = 50 (0.01) + {\textstyle\frac{1}{2}}50 (0.02 - 0.01)</mrow>
+                  <mrow>\amp = 0.75 \text{ or 75\% } </mrow>
+                </md>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <subsection xml:id="sec_ProbDensity">
+    <title>Probabilities and Wavefunctions</title>
+    <p>
+      While a general wavefunction may be very complicated,
+      the prescription for its interpretation is always the same:
+      from <m>\psi(x)</m>, calculate
+      <m>|\psi(x)|^2</m>, its magnitude squared.
+      Then the probability density is given by <m>P(x)=|\psi(x)|^2</m>.
+    </p>
+    <p>
+      One of the complications of a general wavefunction is that it may be complex-valued,
+      involving factors of the imaginary number <m>i = \sqrt{-1}</m>.
+      When this occurs <m>|\psi(x)|^2</m> does not just mean
+      <q>square the wavefunction</q>
+      to get the magnitude squared.
+      Rather you should follow this three-step process:
+      <ol>
+        <li>
+          <title>1</title>
+          <p>
+            Write the <em>complex conjugate</em>
+            of the wavefunction, <m>\psi^*</m>,
+            by replacing every occurrence of
+            <q><m>i</m></q>
+            with
+            <q><m>-i</m></q>
+            in the wavefunction.
+            For example if <m>\psi(x) = 2 e^{i3x} - 5 i x^2</m>,
+            then <m>\psi^*(x) = 2 e^{-i3x} + 5 i x^2</m>.
+          </p>
+        </li>
+        <li>
+          <title>2</title>
+          <p>
+            Multiply <m>\psi(x)</m> times <m>\psi^*(x)</m>.
+          </p>
+        </li>
+        <li>
+          <title>3</title>
+          <p>
+            Replace any occurrences of
+            <q><m>i^2</m></q>
+            with
+            <q><m>-1</m></q>
+            and simplify.
+            Your result should be real
+            (no left-over
+            <q><m>i</m></q>
+            s)
+            and non-negative for all values of <m>x</m>,
+            as required for a probability density.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <example xml:id="exam_CalcProbDensity">
+      <title>Calculating probability density</title>
+      <statement>
+        <p>
+          A particle in a region of space with <m>x > 0</m> is represented by the wavefunction
+          <men>
+            \psi(x) = \sqrt{5} e^{ikx} \sin(2x) e^{-x}
+          </men>
+          where <m>k</m> is a real constant.
+          Calculate the probability density for this particle.
+        </p>
+        <p>
+          <em>Solution:</em> According to the prescription given above,
+          the probability density for this particle is calculated to be
+          <md>
+            <mrow>\left| \psi(x) \right| ^2 =\mathstrut \amp  \psi(x) \cdot \psi^*(x)</mrow>
+            <mrow>=\mathstrut \amp  \left( \sqrt{5} e^{ikx} \sin(2x) e^{-x} \right) \left( \sqrt{5} e^{-ikx} \sin(2x) e^{-x} \right)</mrow>
+            <mrow>=\mathstrut \amp  5 \sin^2(2x) e^{-2x}</mrow>
+          </md>,
+          where we have used the fact that
+          <md>
+            <mrow>(e^{ikx}) (e^{ikx})^* =\mathstrut \amp  (e^{ikx}) (e^{-ikx})</mrow>
+            <mrow>=\mathstrut \amp  e^{(ikx-ikx)} = e^0 = 1</mrow>
+          </md>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      <xref ref="fig_prob_density_integral">Figure</xref>
+      is the graph of a probability density for a particle in some quantum state.
+      The quantity <m>P(x_0)\, dx</m> represents the probability for finding the particle within a narrow interval from <m>x_0</m> to <m>x_0+dx</m>,
+      shown as the shaded area in the figure.
+      If we would like to know the probability of finding the particle anywhere between the two positions <m>x_a</m> and <m>x_b</m>,
+      then we need to <em>integrate</em> the probability density:
+    </p>
+    <figure xml:id="fig_prob_density_integral">
+      <caption>Determining the probability over a range of positions.</caption>
+      <image width="75%" source="images/prob_density_integral"/>
+    </figure>
+    <men xml:id="eq_IntegralprobDensity">
+      \left( \begin{array}{l}
+      \mbox{Probability of finding the particle}  \\
+      \mbox{in the region <m>[x_a, x_b]</m>}
+      \end{array}  \right) = \int_{x_a}^{x_b} P(x)\, dx
+      = \int_{x_a}^{x_b} |\psi(x)|^2\, dx
+    </men>,
+    <p>
+      which is the area under the curve from <m>x_a</m> to <m>x_b</m>.
+      <xref ref="eq_IntegralprobDensity"/> brings up an important property of wavefunctions and probability densities.
+      What if the region we are interested in is the entire <m>x</m>-axis, that is,
+      <m>[x_a, x_b] = (-\infty, +\infty)</m>?
+      Another way of saying this is,
+      <sq>What is the probability of finding the particle anywhere?</sq> Certainly the answer to this question is <m>100\%</m> ! This implies that the wavefunction must be given such that
+      <men xml:id="eq_normalization">
+        \int_{-\infty}^{+\infty} |\psi(x)|^2\, dx = 1
+      </men>.
+    </p>
+    <p>
+      When a wavefunction satisfies this requirement,
+      it is said to be <em>normalized</em>.
+      Normalization is usually accomplished by multiplying the wavefunction by a suitable constant factor,
+      as we will see in the following examples.
+    </p>
+    <example xml:id="ex_probabilityI">
+      <title>Probability of finding a particle I</title>
+      <statement>
+        <p>
+          <xref ref="fig_example_wavefunction">Figure</xref>
+          shows the wavefunction for a certain particle,
+          where <m>A</m> is a positive constant. (a) Determine a value for the constant <m>A</m> such that the wavefunction is properly normalized. (b) What is the probability of finding the particle in the region between
+          <m>x = 2\Xunits{nm}</m> and <m>x = 4\Xunits{nm}</m>?
+        </p>
+        <figure xml:id="fig_example_wavefunction">
+          <caption>Wavefunction for <xref ref="ex_probabilityI">Example</xref>.</caption>
+          <image width="65%" source="images/prob_density_example"/>
+        </figure>
+        <p>
+          <em>Solution: (a)</em> To determine probabilities we must first determine
+          <m>|\psi(x)|^2</m> for the given wavefunction.
+          We do this by computing the value of
+          <m>|\psi(x)|^2</m> at every position on the graph which results in the graph of <xref ref="fig_example_prob_density">Figure</xref>.
+        </p>
+        <figure xml:id="fig_example_prob_density">
+          <caption>Probability density for <xref ref="ex_probabilityI">Example</xref>.</caption>
+          <image width="65%" source="images/prob_density_example_a"/>
+        </figure>
+        <p>
+          The total probability of finding the particle anywhere is the total area under the curve of <xref ref="fig_example_prob_density">Figure</xref>:
+          <md>
+            <mrow>\int_{-\infty}^{+\infty} |\psi(x)|^2\, dx =\mathstrut \amp  A^2 (2 - 1) + \left( - \frac{A}{2} \right)^2 (4 - 2)</mrow>
+            <mrow>=\mathstrut \amp  A^2 + \frac{A^2}{2} = \frac{3}{2} A^2 </mrow>
+          </md>.
+        </p>
+        <p>
+          For the wavefunction to be properly normalized, this area must equal one.
+          Therefore, the value for the constant <m>A</m> must be
+          <men>
+            \frac{3}{2} A^2 = 1 \hspace{0.3in} \longrightarrow \hspace{0.3in} A = \sqrt{\frac{2}{3}}
+          </men>.
+        </p>
+        <p>
+          <em>(b)</em> Now that we know the value for the constant <m>A</m> that properly normalizes the wavefunction,
+          the probability of finding the particle in the region between <m>x = 2\Xunits{nm}</m> and
+          <m>x = 4\Xunits{nm}</m> is just the area under the curve of the probability density between
+          <m>x = 2\Xunits{nm}</m> and <m>x = 4\Xunits{nm}</m>:
+          <men>
+            \text{ Prob } ([2, 4]) = \frac{A^2}{4} (4 - 2) = \frac{A^2}{2} = \frac{1}{3}
+          </men>.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

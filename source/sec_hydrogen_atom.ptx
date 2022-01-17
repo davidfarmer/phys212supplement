@@ -1,0 +1,149 @@
+<section xml:id="sec_hydrogen_atom">
+  <title>The Hydrogen Atom</title>
+  <p>
+    We are now ready to talk about the actual wavefunctions of the simplest atom:
+    hydrogen.
+    Specifically,
+    we consider the wavefunctions for the electron that
+    <q>orbits</q>
+    around the single proton in the nucleus.
+    We put the word
+    <q>orbits</q>
+    in quotes because the behavior of the electron is quite different from the behavior of a satellite orbiting around the Earth.
+    Because of the small mass of an electron and the small size of an atom,
+    quantum wave-like effects are quite significant.
+  </p>
+  <p>
+    Because of the Uncertainty Principle,
+    we can't specify both the position and the velocity of the electron.
+    An electron orbiting in an atom is typically smeared out into a probability wave around the atom,
+    so there really <em>isn't</em> a
+    <q>position</q>
+    per se.
+    And because of the fact that the motion of the electron
+    (whatever <em>motion</em> really means in the quantum world)
+    isn't in a straight line,
+    it isn't meaningful to specify the velocity or momentum of the electron.
+    Instead we solve the Schr&#xf6;dinger equation <xref ref="eq_3Dschrodinger"/> to find wavefunctions representing various states of the hydrogen atom.
+    As usual, the square of the magnitude of the wavefunction is to be interpreted as a probability density,
+    in this case, probability per unit
+    <em><em>volume</em></em>.
+  </p>
+  <p>
+    By solving Schr&#xf6;dinger's equation <xref ref="eq_3Dschrodinger"/>,
+    each hydrogen wavefunction solution is characterized by three quantum numbers <m>\left(n, l, m_l\right)</m>,
+    and is written as <m>\psi_{nlm}(r,\theta,\phi)</m>.
+    (The quantum number <m>m_s</m> isn't needed to specify the wavefunction.)
+    For instance,
+    the lowest energy (ground) state wavefunction of hydrogen (<m>n=1, l=0, m_l=0</m>) is calculated to be
+    <men xml:id="eq_H100">
+      \psi_{100} = \frac{1}{\sqrt{\pi a_0^3}}\ e^{-r/a_0}
+    </men>.
+  </p>
+  <p>
+    The excited state (<m>n=2, l=1, m_l=0</m>) is given by
+    <men xml:id="eq_H210">
+      \psi_{210} = \frac{1}{\sqrt{32\pi a_0^3}} \left( \frac{r}{a_0} \right) e^{-r/2a_0} \cos{\theta}
+    </men>
+    and the excited states (<m>n=2, l=1, m_l=+1</m>) and (<m>n=2, l=1, m_l=-1</m>) are
+    <men xml:id="eq_H211">
+      \psi_{211} = -\frac{1}{\sqrt{64\pi a_0^3}} \left( \frac{r}{a_0} \right) e^{-r/2a_0} \sin{\theta}\, e^{i\phi}
+    </men>.
+    <men xml:id="eq_H21-1">
+      \psi_{21-1} = \frac{1}{\sqrt{64\pi a_0^3}} \left( \frac{r}{a_0} \right) e^{-r/2a_0} \sin{\theta}\, e^{-i\phi}
+    </men>,
+  </p>
+  <figure xml:id="fig_hydrogen100Dot">
+    <caption>Plot of probability density for an electron in state
+    <m>\psi_{100}</m> of hydrogen.</caption>
+    <image width="56%" source="images/hydrogen100Dot"/>
+  </figure>
+  <p>
+    respectively.
+    We can use these wavefunctions to calculate their probability densities
+    <m>\left|\psi_{nlm_l}\right|^2</m> and then plot these probability densities to get a visualization of the
+    <q>location</q>
+    of the electron in this state.
+    <xref ref="fig_hydrogen100Dot">Figure</xref>
+    shows such a plot for the ground state <m>\psi_{100}</m>.
+    In this plot,
+    the probability density for finding the electron at any location is related to the density of dots in the plot.
+    Thus, the probability density is greatest at the center <m>r=0</m> and drops off exponentially as you move away from the origin,
+    in agreement with the wavefunction in Eq.<xref ref="eq_H100"/>.
+    Also we notice that the probability density is spherically symmetric,
+    implying that it doesn't depend on the direction in space,
+    which follows from <xref ref="eq_H100"/> since there is no dependence on the coordinates <m>\theta</m> and <m>\phi</m>.
+  </p>
+  <p>
+    In the case of the excited states (<m>n=2</m>,
+    <m>l=1</m>, <m>m_l=1</m>, 0,-1),
+    it is actually real linear combinations of the wavefunctions given in equations <xref ref="eq_H211"/> and <xref ref="eq_H21-1"/> that make up the familiar atomic <m>p</m>-orbitals that are important in chemical bonding.
+    For instance, the linear combination
+    <md>
+      <mrow>\psi_{2p_x} \amp = -\frac{1}{\sqrt{2}} \left[ \psi_{211} - \psi_{21-1} \right]</mrow>
+      <mrow>\amp = \frac{1}{\sqrt{32 \pi a_0^3}}\ \left( \frac{r}{a_0} \right) \ e^{-r/2a_0} \sin{\theta} \cos{\phi}</mrow>
+    </md>
+    corresponds to what is known as the
+    <q><m>p_x</m></q>
+    orbital that you might have seen in chemistry textbooks.
+    The probability density is shown in <xref ref="fig_hydrogen21xDot">Figure</xref>.
+    In this case you will notice that the probability density is not spherically symmetric as in the ground state,
+    but instead has two lobes that extend outward along the <m>x</m>-axis.
+  </p>
+  <figure xml:id="fig_hydrogen21xDot">
+    <caption>Plot of probability density for an electron in an orbital state <m>\psi_{2p_x}</m> of hydrogen.</caption>
+    <image width="56%" source="images/hydrogen21xDot"/>
+  </figure>
+  <p>
+    Finally, here are a few rules relating the atomic quantum numbers <m>n,
+    l, m_l</m>.
+    We won't derive them here in PHYS 212.
+    You'll have to take PHYS 222 for more details about this.
+    <ul>
+      <li>
+        <p>
+          The possible values for the principal quantum number <m>n</m> are
+          <men>
+            n = \mbox{1, 2, 3, \dots}
+          </men>
+        </p>
+      </li>
+      <li>
+        <p>
+          Given a principle quantum number <m>n</m> for an electron,
+          the orbital quantum number <m>l</m> can have the following values
+          <men xml:id="eq_lquantumnumber">
+            l= 0,\, 1,\, \dots,\, n-1
+          </men>.
+          So, for example, if <m>n=1</m>,
+          then <m>l</m> can only be 0.
+          If <m>n=2</m>, then <m>l</m> can be 0 or 1.
+          If <m>n=3</m>, then <m>l</m> can be 0, 1, or 2.
+          Etc.
+        </p>
+      </li>
+      <li>
+        <p>
+          Given an orbital quantum number <m>l</m>,
+          the magnetic quantum number <m>m_l</m> can have the following values
+          <men xml:id="eq_mlquantumnumber">
+            m_l=-l,\, -(l-1),\, \dots,\, -1,\, 0,\, 1,\, \dots,\, l-1,\, l
+          </men>.
+          So, for example, if <m>l=0</m>,
+          then <m>m_l</m> can only be 0.
+          If <m>l=1</m>, then <m>m_l</m> can be <m>-1</m>, 0, or 1.
+          If <m>l=2</m>,
+          then <m>m_l</m> can be <m>-2</m>, <m>-1</m>, 0, 1, 2,  etc.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    The rule for the quantum number <m>m_s</m> is the same as was discussed in <xref ref="chap_spin">Chapter</xref> for an electron:
+    <m>m_s = -1/2</m> or <m>+1/2</m>,
+    regardless of the other three quantum numbers <m>n, l</m> and <m>m_l</m>.
+  </p>
+  <p>
+    Some of the consequences of these rules will be explored in the problems.
+  </p>
+</section>

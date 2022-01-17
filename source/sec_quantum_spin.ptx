@@ -1,0 +1,216 @@
+<section xml:id="sec_quantum_spin">
+  <title>Spin</title>
+  <p>
+    We would now like to introduce a new property of particles that lends itself nicely to being described using the new mathematical formalism that we have just introduced.
+    In addition to the angular momentum associated with a particle's motion about some origin,
+    many types of elementary particles have an
+    <em>intrinsic</em> angular momentum,
+    as though the particle were a tiny sphere rotating about an internal axis.
+    This internal angular momentum is given the name <em>spin</em>
+    and is represented by the vector symbol <m>\vec{S}</m>.
+    Every particle is characterized by a spin quantum number,
+    <m>s</m>,
+    and the magnitude and <m>z</m>-component of spin angular momentum are given by
+    <men>
+      |\vec{S}| = \sqrt{s(s+1)}\hbar
+    </men>,
+    <men xml:id="eq_zComponent">
+      S_z = m_s \hbar
+    </men>.
+  </p>
+  <p>
+    An important issue for spin angular momentum is the allowed values associated with the quantum numbers <m>s</m>.
+    These values can be determined from a complicated mathematical analysis whose details are beyond the level of this class.
+    However, the interesting result is that the possible values for spin quantum numbers are integer multiples of <m>1/2</m>,
+    i.e., <m>s = 0</m>, 1/2, 1, 3/2, 2, 5/2, <ellipsis/>,
+    which differ from the allowed values of <m>l</m> because the list now includes half-integer values.
+    Electrons, protons, neutrons,
+    and <m>^3</m>He nuclei all have the same spin quantum number <m>s=1/2</m>
+    (sometimes referred to as
+    <q>spin-<m>\frac{1}{2}</m></q>
+    );
+    photons have <m>s=1</m> (or
+    <q>spin-<m>1</m></q>
+    ); He<m>^4</m> nuclei have <m>s=0</m>
+    (or
+    <q>spin-<m>0</m></q>).
+  </p>
+  <p>
+    Every kind of particle has its particular value of <m>s</m> <mdash/> for example electrons have <m>s=1/2</m>.
+    This means that every electron in the universe has <em>exactly</em>
+    the same intrinsic angular momentum magnitude:
+    <m>\vert \vec{S}\vert = (\sqrt{3}/2)\hbar</m>.
+    For classical, macroscopic-sized objects,
+    we can change the spin angular momentum by changing the rotation rate of the object.
+    However, in quantum mechanics we are stuck with a constant magnitude of spin angular momentum for elementary particles.
+  </p>
+  <p>
+    All elementary particles are classified according to their spin quantum numbers <m>s</m>.
+    All particles with integer spin quantum numbers (<m>s</m> = 0, 1, 2, <ellipsis/> ) are called <em>bosons</em>,
+    and all particles with half-odd integer spin quantum numbers (<m>s</m> = 1/2, 3/2, 5/2, <ellipsis/> ) are called <em>fermions</em>.
+    This distinction is crucial in determining the behavior of systems consisting of many of these particles,
+    as will be discussed in later chapters.
+  </p>
+  <p>
+    Equation<nbsp/><xref ref="eq_zComponent"/> gives the possible values one can measure for the component of spin in the <m>z</m>-direction,
+    <m>S_z</m>.
+    For spin quantum number <m>s</m>,
+    the possible values of <m>S_z</m> are given by <m>m_s\hbar</m>,
+    where he quantum number <m>m_s</m> can assume values
+    <men>
+      m_s = -s,\ -s+1,\ -s+2,\ \dots\, s-2\, s-1\, s
+    </men>.
+  </p>
+  <p>
+    For a spin<ndash/>1/2 particle, for instance,
+    <m>S_z</m> can be <m>-\hbar/2</m> or <m>+\hbar/2</m>.
+    For a spin-1 particle,
+    <m>S_z</m> can be <m>-\hbar</m>, 0 or <m>+\hbar</m>.
+    For a spin-3/2 particle, <m>S_z</m> can be <m>-3\hbar/2</m>,
+    <m>-\hbar/2</m>, <m>+\hbar/2</m>, or <m>+3\hbar/2</m>.
+  </p>
+  <p>
+    The points raised in the previous paragraphs should make your head spin (no pun intended)<fn>
+    Okay, so maybe the pun isn't <em>entirely</em> unintentional.
+    </fn>.
+    There are a few issues here that are inherently quantum in nature:
+    <ul>
+      <li>
+        <title>(1)</title>
+        <p>
+          The word <em>spin</em> glosses over just how strange this phenomena actually is.
+          It is easy to envision, say,
+          a basketball that is spinning on its axis,
+          resulting in the ball having angular momentum.
+          However, elementary particles can have spin angular momentum
+          <em>even if the particle has no spatial extent!</em> The electron,
+          for instance, is a point-particle
+          (as far as our best measurements can determine),
+          as are quarks, and yet these particles carry angular momentum.
+          A photon doesn't even have any mass and yet it,
+          too, carries angular momentum.
+        </p>
+      </li>
+      <li>
+        <title>(2)</title>
+        <p>
+          A spinning basketball could always be stopped,
+          such that its angular momentum becomes zero.
+          This is not the case for an elementary particle.
+          An electron can't be stopped from
+          <q>spinning</q>
+          <mdash/> the spin angular momentum is always there.
+        </p>
+      </li>
+      <li>
+        <title>(3)</title>
+        <p>
+          Although spin angular momentum is a vector with both a magnitude and direction,
+          measuring <em>components</em> of that vector along different directions produces results that simply can't be explained classically.
+          For instance, if a basketball were spinning,
+          you could define a direction for the angular momentum <m>\vec{S}</m>.
+          Measurement of the component of the angular momentum perpendicular to <m>\vec{S}</m> would produce a value of zero.
+          This is often not the case for spin angular momentum for elementary particles.
+          For instance, for an electron it is <em>impossible</em>
+          to obtain a value of zero from <em>any</em>
+          measurement of <em>any</em>
+          component of spin angular momentum.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <figure xml:id="fig_SGDevice">
+    <caption>Stern-Gerlach apparatus for measuring the <m>z</m>-component of spin.</caption>
+    <image width="73%" source="images/SGDevice"/>
+  </figure>
+  <p>
+    To illustrate some of these issues,
+    we will introduce a device capable of measuring the <m>z</m>-component of spin,
+    <m>S_z</m>, for a particle.
+    This device is called a
+    <q>Stern-Gerlach</q>
+    (SG) device,
+    named after the two physicists who first performed experiments like those we describe.
+    Although the technical details of the device are not important to our discussion,
+    the significant thing is that this device is capable of separating a beam of particles according to the <m>z</m>-component of their spins,
+    where the <m>z</m>-axis is determined by the orientation of the SG device.
+  </p>
+  <figure xml:id="fig_SGDevice2">
+    <caption>Consecutive measurements of <m>z</m>-component for spin-up electrons.</caption>
+    <image width="84%" source="images/SGDevice2"/>
+  </figure>
+  <p>
+    If we take a source of electrons with random spin component
+    (say from a heated filament)
+    and direct a beam of these electrons through a SG device to measure <m>S_z</m>,
+    as shown in <xref ref="fig_SGDevice">Figure</xref>,
+    we find that the SG device splits the beam into two beams:
+    one composed of electrons with <m>S_z = +\hbar/2</m> (called
+    <q>spin-up</q>
+    ) and the other with <m>S_z = -\hbar/2</m>
+    (called
+    <q>spin-down</q>).
+    Approximately equal numbers of electrons appear in the two beams.
+  </p>
+  <p>
+    If we now direct the spin-up beam from the SG device to a second SG device,
+    as shown in <xref ref="fig_SGDevice2">Figure</xref>,
+    the second SG device outputs only a spin-up beam (<m>S_z = +\hbar/2</m>) and
+    <em>no</em> spin-down beam.
+    What does this mean?
+    Obviously if you measure <m>S_z = +\hbar/2</m> in the first SG device,
+    then if you measure <m>S_z</m> again you will always get the same result.
+    This means that all of the electrons entering the second SG device are spin-up electrons,
+    or are in the spin-up
+    <q>state.</q>
+  </p>
+  <p>
+    Now imagine that we take the spin-up beam from the first SG device and direct it to a second SG device which measures the <m>x</m>-component of spin <m>S_x</m>,
+    as in <xref ref="fig_SGDevice3">Figure</xref>.
+    This can be accomplished by orienting a SG device along the <m>x</m>-axis as shown.
+    What will be the result of the measurement made by this second SG device?
+  </p>
+  <figure xml:id="fig_SGDevice3">
+    <caption>Measurement of <m>S_x</m> after measuring <m>S_z</m>.</caption>
+    <image width="73%" source="images/SGDevice3"/>
+  </figure>
+  <p>
+    The measurement of <m>S_x</m> results in two beams with approximately equal count rates,
+    one of <m>S_x = +\hbar/2</m> (spin-up along <m>x</m>) and the other of <m>S_x = -\hbar/2</m>
+    (spin-down along <m>x</m>).
+    This result is true regardless of whether we had used the spin-up or spin-down beam from the first SG device.
+    Also if we send the electrons into the second SG device one at a time,
+    what we observe from the output is an electron randomly coming out of the second SG device as either
+    <m>S_x = +\hbar/2</m> or <m>S_x = -\hbar/2</m>.
+    So the result of this experiment is that we have measured <m>S_z</m> to be
+    <m>+\hbar/2</m> for an electron in the first SG device and <m>S_x</m> to be either <m>+\hbar/2</m> or
+    <m>-\hbar/2</m> for the same electron in the second SG device.
+  </p>
+  <figure xml:id="fig_SGDevice4">
+    <caption>Measurement of <m>S_z</m> after measuring <m>S_x</m>.</caption>
+    <image width="73%" source="images/SGDevice4"/>
+  </figure>
+  <p>
+    Now we perform a very interesting experiment.
+    As shown in <xref ref="fig_SGDevice4">Figure</xref>,
+    we select electrons in the state spin-up along <m>z</m> in the first SG device and then select electrons in the state spin-down along <m>x</m> in the second SG device.
+    If we now pass these electrons through a third SG device to measure <m>S_z</m> once again,
+    what will be the result?
+    Shouldn't we get just all electrons coming out in the spin-up (<m>S_z = +\hbar/2</m>) beam,
+    since that is what we measured in the first SG device?
+  </p>
+  <p>
+    The answer is <mdash/> <em>
+    <q>NO!</q>
+    </em> The measurement of <m>S_z</m> in the third SG device shows electrons coming out as either spin-up (<m>S_z = +\hbar/2</m>) or spin-down (<m>S_z = -\hbar/2</m>) with equal count rate.
+    This certainly is not the classically expected result!
+    It is as if the electrons lost all memory of being in the spin-up state from the first SG device.
+  </p>
+  <p>
+    <em>This stuff should really bother you!</em>
+    There is simply no classical way to explain the observations
+    (and these results are from <em>experimental observations</em>)
+    about spin and its components.
+    But that's the way in which sub-atomic particles work.
+  </p>
+</section>

@@ -1,0 +1,270 @@
+<section xml:id="sec_infinite_sq_well">
+  <title>Solutions for the Infinite Square Well</title>
+  <p>
+    To demonstrate how we use Schr&#xf6;dinger's equation to derive wavefunction solutions,
+    let's consider the simplest example of a
+    <q>particle in a box,</q>
+    i.e., a particle trapped in one dimension
+    (and unable to move in the other two dimensions)
+    between two impenetrable walls located at <m>x = 0</m> and <m>x = L</m>.
+    Since the particle feels no force in the region between the walls,
+    the potential energy in this region is constant,
+    and therefore we will take it to be zero.
+    Since the walls are impenetrable,
+    the potential energy must become infinite at <m>x = 0</m> and <m>x = L</m>.
+    Therefore the graph of the potential energy <m>U(x)</m> as a function of position is shown in <xref ref="fig_infinite_sq_well">Figure</xref>.
+    This configuration is usually referred to as the
+    <em>infinite square well potential</em>.
+    For this example we will consider solutions for which the energy of the particle <m>E</m> is positive.
+    (Solutions for <m>E \lt 0</m> for this potential actually do not exist due to the fact that the potential energy goes to infinity at the boundaries of the well.)
+  </p>
+  <figure xml:id="fig_infinite_sq_well">
+    <caption>Graph of the infinite square well potential as a function of
+    position.</caption>
+    <image width="60%" source="images/infinite_sq_well"/>
+  </figure>
+  <p>
+    Since there is no chance that the particle can penetrate either of the barriers at <m>x = 0</m> or <m>x = L</m>,
+    the wavefunction <m>\psi(x)</m> must be exactly zero in the regions <m>x \le 0</m> and <m>x > L</m>.
+    Inside the well,
+    where <m>U(x) = 0</m>, Schr&#xf6;dinger's equation can be written as
+    <men xml:id="eq_squarewell_1">
+      \frac{d^2\psi(x)}{dx^2}  = - \left(\frac{2mE}{\hbar^2}\right)\psi(x)
+    </men>.
+  </p>
+  <p>
+    Our job is to determine what mathematical function is consistent with <xref ref="eq_squarewell_1"/>, that is,
+    can we find a function <m>\psi(x)</m> whose second derivative is equal to <em>minus</em>
+    a positive constant <m>(2 m E/ \hbar^2)</m> times the original function?
+    We already testing a solution to this equation in <xref ref="sec_test_Solution">Section</xref>.
+    In that section,
+    we found that the wavefunction <m>\psi_1(x) = A\sin(kx)</m> works if
+    <men xml:id="eq_squarewell_2">
+      E = \frac{\hbar^2 k^2}{2m}
+    </men>.
+    from which it follows that <m>k = \pm\sqrt{2mE}/\hbar</m>.
+    This isn't the only possible solution <mdash/> the wavefunction
+    <m>\psi_1(x) = B\cos(kx)</m> also satisfies <xref ref="eq_squarewell_1"/>.
+    Since either of these functions satisfies Schr&#xf6;dinger's equation,
+    we can write a general solution as a linear combination of these two functions:
+    <men xml:id="eq_squarewell_3">
+      \psi(x) = A \sin{(kx)} + B \cos{(kx)}
+    </men>.
+  </p>
+  <p>
+    In order for this solution to work,
+    we must adjust the values of the constants <m>A</m>, <m>B</m>,
+    and <m>k</m> such that the wavefunction inside the well matches up with the value of the wavefunction at positions <m>x = 0</m> and <m>x = L</m>,
+    where we previously concluded that the value of the wavefunction should be zero.
+    This process is called <em>matching the boundary conditions</em>.
+    At <m>x = 0</m>,
+    the wavefunction inside the well given by <xref ref="eq_squarewell_3"/> becomes <m>\psi(0) = B</m>,
+    so in order for the wavefunction to equal zero at the boundary <m>x = 0</m>,
+    we must choose the value <m>B = 0</m>.
+    Thus the interior wavefunction must be given simply as <m>\psi(x) = A \sin{(kx)}</m>.
+  </p>
+  <p>
+    Continuing, we now look at the boundary condition at <m>x = L</m>.
+    Again, the wavefunction must be zero here, so this requires that
+    <men xml:id="eq_squarewell_4">
+      A \sin{(k L)} = 0
+    </men>.
+  </p>
+  <p>
+    From our knowledge of the sine function,
+    we know that this function is zero for values such that
+    <m>k L = 0, \pi, 2\pi, 3\pi, \cdots = n \pi</m> for any integer <m>n</m>.
+    Therefore this second boundary condition tells us that the possible values the constant <m>k</m> can assume are
+    <men xml:id="eq_squarewell_5">
+      k_n = \frac{n \pi}{L} . \hspace{0.5in} (n = 1, 2, 3, \dots)
+    </men>
+  </p>
+  <p>
+    We have thrown out the <m>k = 0</m> solution because that would correspond to a wavefunction
+    <m>\psi(x) = 0</m> which corresponds to a particle that has zero probability of being found anywhere, (i.e., the particle doesn't exist).
+    Combining these values for <m>k</m> with <xref ref="eq_squarewell_2"/>,
+    we find that the possible energies <m>E_n</m> that the particle can have inside the well are given by
+    <men xml:id="eq_squarewell_6">
+      E_n = n^2 \frac{\pi^2 \hbar^2}{2mL^2} = n^2 \frac{h^2}{8 m L^2} \hspace{0.2in} (n = 1, 2, 3, \dots)
+    </men>,
+    and the wavefunctions associated with each of these energies are
+    <men xml:id="eq_squarewell_7">
+      \psi_n(x) = A \sin{\left(\frac{n \pi}{L}x\right)}
+    </men>.
+  </p>
+  <p>
+    <xref ref="fig_infinite_sq_well_energy">Figure</xref>
+    shows a graph of the allowed energies <m>E_n</m> for a particle in an infinite square well potential superimposed on the graph of potential energy <m>U(x)</m> and <xref ref="fig_infinite_sq_well_solutions">Figure</xref>
+    shows the wavefunctions <m>\psi_n(x)</m> for the four lowest allowed energies.
+  </p>
+  <p>
+    A few general remarks are in order about these solutions.
+  </p>
+  <figure xml:id="fig_infinite_sq_well_energy">
+    <caption>The allowed energies for a particle bound in an infinite
+    square well potential. The energies are expressed in terms of the
+    lowest (ground state) energy <m>E_1</m>.</caption>
+    <image width="60%" source="images/infinite_sq_well_energy"/>
+  </figure>
+  <figure xml:id="fig_infinite_sq_well_solutions">
+    <caption>The wavefunction solutions for the infinite square well
+    potential for the four lowest energy states.</caption>
+    <image width="90%" source="images/infinite_sq_well_sols"/>
+  </figure>
+  <ul>
+    <li>
+      <p>
+        Notice that the lowest allowed energy for a particle is <em> not</em> zero!
+        This coincides with our discussion in <xref ref="chap_uncertainty">chapter</xref>
+        in which Heisenberg's uncertainty principle requires a minimum non-zero energy for a particle that is confined to a finite region of space.
+      </p>
+    </li>
+    <li>
+      <p>
+        There are only certain values of the energy <m>E</m> for which there are well-behaved solutions to Schr&#xf6;dinger's equation.
+        When a particle is trapped in a finite region of space,
+        its energy cannot be any continuous value but rather can only be one of many discrete values of energy.
+        In the language of quantum mechanics,
+        the energy is <em>quantized</em>.
+      </p>
+    </li>
+    <li>
+      <p>
+        The integer <m>n</m> is referred to as the
+        <em>quantum number</em> of the particle.
+        For this problem,
+        specifying a value for <m>n</m> uniquely determines the state of the particle.
+        As we shall see in more complicated systems,
+        more than one quantum number will often be needed to completely specify a state.
+      </p>
+    </li>
+    <li>
+      <p>
+        The wavefunctions as given in <xref ref="eq_squarewell_7"/> and <xref ref="fig_infinite_sq_well_solutions">Figure</xref> should look familiar to you.
+        Aren't these the same functions we used when describing the standing wave patterns on a vibrating string fixed at both ends?
+        Indeed they are!
+        In fact, standing waves on a string are determined by a differential equation similar to <xref ref="eq_squarewell_1"/>.
+        Standing waves on a string exhibit their own form of quantization <mdash/>   in this case,
+        the properties that are quantized are the wavelengths and frequencies.
+      </p>
+    </li>
+  </ul>
+  <example xml:id="exam_nanoTube">
+    <title>Electron trapped in a 1-D nanotube</title>
+    <statement>
+      <p>
+        Carbon atoms can be bonded into a cylindrical arrangement called a carbon nanotube.
+        Carbon nanotubes can be fabricated with length-to-diameter ratios that are extremely large.
+        These nanotubes have a broad range of applications including uses as conducting nano-wires and mechanical
+        <q>scaffolding</q>
+        for growing new bone cells.
+      </p>
+      <p>
+        A carbon nanotube of length <m>L</m> can be approximated as an infinite square well of width <m>L</m>.
+        Consider a particular carbon nanotube of length
+        <m>L = 10.0\Xunits{nm}</m> and negligible diameter.
+        Calculate the ground state energy for an electron trapped inside of this carbon nanotube.
+      </p>
+      <p>
+        <em>Solution:</em> Approximating the carbon nanotube as an infinite square well,
+        the possible allowed energies for the electron are given by <xref ref="eq_squarewell_6"/>.
+        For the ground state energy, where <m>n = 1</m>, the energy is given as
+        <men>
+          E_1 = (1)^2 \frac{h^2}{8 m_\text{e}  L^2}
+        </men>.
+      </p>
+      <p>
+        Because the length is given in nm,
+        and eV's are convenient units for energy at the microscopic scale,
+        it makes calculations easier if we multiply both the numerator and denominator by <m>c^2</m>, giving
+        <men>
+          E_1 = (1)^2 \frac{(hc)^2}{8 (m_\text{e} c^2) L^2}
+        </men>.
+      </p>
+      <p>
+        Then we can insert the values
+        <m>hc = 1240\Xunits{eV \cdot nm}</m>, <m>L = 10\Xunits{nm}</m>,
+        and <m>m_\text{e} c^2 = 0.511\Xunits{MeV} = 511\times 10^3\Xunits{eV}</m>, giving
+        <md>
+          <mrow>E_1 =\mathstrut \amp  (1)^2 \frac{(1240\Xunits{eV \cdot nm})^2} {8\times 511\times 10^3\Xunits{eV}\times (10\Xunits{nm})^2  }.</mrow>
+          <mrow>=\mathstrut \amp  3.8\Xunits {meV}</mrow>
+        </md>
+      </p>
+      <p>
+        It is, of course, valid to use SI units for <m>h</m>,
+        <m>m_\text{e}</m>, and <m>L</m>,
+        but this entails calculations with large exponents and more unit conversions.
+      </p>
+    </statement>
+  </example>
+  <p>
+    We can use the idea of normalization
+    (see Sec.
+    <xref ref="sec_ProbDensity"></xref>)
+    to assign a value to the constant <m>A</m> in the wavefunction solutions of the infinite square well potential given in <xref ref="eq_squarewell_7"/>.
+    Given that the wavefunction is zero outside of the well,
+    the total probability of finding the particle within the well should be one.
+    Therefore,
+    <men>
+      \int_0^L |\psi_2(x)|^2\, dx = \int_0^L A^2 \sin^2\left(\frac{n \pi}{L}x\right)\, dx = 1
+    </men>.
+  </p>
+  <p>
+    Using the table of integrals in Appendix A of your Wolfson text,
+    we can evaluate the integral using
+    <men>
+      \int_0^L \sin^2\left(\frac{n \pi}{L} x\right) = \frac{L}{2}
+    </men>.
+  </p>
+  <p>
+    Therefore
+    <men>
+      A^2 \left( \frac{L}{2} \right) = 1 \hspace{0.3in} \mbox{and}  \hspace{0.3in} A = \sqrt{\frac{2}{L}}
+    </men>.
+  </p>
+  <p>
+    Notice that this value of <m>A</m> is the same for all of the solutions,
+    independent of <m>n</m>.
+  </p>
+  <example>
+    <title>Probability of finding a particle in an infinite square well potential</title>
+    <statement>
+      <p>
+        A particle of mass <m>m</m> is placed in an infinite square well of width <m>L</m> in a quantum state for which <m>n = 2</m>. (a) In the vicinity of what position(s) is the particle most likely to be found within the well? (b) What is the probability of finding the particle between positions <m>x = L/4</m> and <m>x = L/2</m>?
+      </p>
+      <p>
+        <em>Solution: (a)</em> The wavefunction for this particle is shown as
+        <m>\psi_2(x)</m> in <xref ref="fig_infinite_sq_well_solutions">Figure</xref>.
+        Using <xref ref="eq_squarewell_7"/>, the probability density for this wavefunction is
+        <men>
+          |\psi_2(x)|^2 = \left(\sqrt{\frac{2}{L}} \right)^2 \sin^2\left(\frac{2 \pi}{L}x\right)
+        </men>,
+      </p>
+      <figure xml:id="fig_ProbState_2">
+        <caption>Probability density for a particle in the <m>n=2</m> state of an infinite square well.</caption>
+        <image width="56%" source="images/ProbState_2"/>
+      </figure>
+      <p>
+        as shown in <xref ref="fig_ProbState_2">Figure</xref>.
+        The positions near which the particle is most likely to be found are where the probability density is the greatest.
+        By examining the graph of probability density,
+        these positions are located at <m>x = L/4</m> and <m>x = 3L/4</m>.
+        <em>(b)</em> To calculate the probability of finding the particle between <m>x = L/4</m> and <m>x = L/2</m>,
+        we use <xref ref="eq_IntegralprobDensity"/>:
+        <md>
+          <mrow>\mbox{Prob} \left[\frac{L}{4}, \frac{L}{2}\right] =\mathstrut \amp  \int_{L/4}^{L/2} |\psi_2(x)|^2\, dx</mrow>
+          <mrow>=\mathstrut \amp  \int_{L/4}^{L/2} \left(\frac{2}{L}\right) \sin^2\left(\frac{2 \pi}{L}x\right)\, dx</mrow>
+          <mrow>=\mathstrut \amp  \frac{2}{L} \left[\frac{x}{2} - \frac{L}{8 \pi}\sin \left(\frac{4 \pi}{L}x\right) \right]_{L/4}^{L/2}</mrow>
+          <mrow>=\mathstrut \amp   \frac{1}{4}</mrow>
+        </md>
+        where the integral can be evaluated using techniques that you learned in your calculus class or the table of integrals in Appendix A of your Wolfson text.
+      </p>
+      <p>
+        Because of the symmetry of the probability density,
+        the area under the curve of
+        <m>\left|\psi\right|^2</m> between <m>x = L/4</m> and <m>x = L/2</m> is one-quarter of the total area,
+        therefore it makes sense that the probability is <m>\frac{1}{4}</m>.
+      </p>
+    </statement>
+  </example>
+</section>

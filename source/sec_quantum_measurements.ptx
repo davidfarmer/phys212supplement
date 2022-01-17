@@ -1,0 +1,85 @@
+<section xml:id="sec_quantum_measurements">
+  <title>Quantum Measurements</title>
+  <p>
+    As discussed earlier, a quantum state
+    <m>| \phi \rangle</m> can be written as a linear superposition of a set of states called a basis.
+    As shown before,
+    this basis could be a set of states each representing a specific energy <m>E_1</m>,
+    <m>E_2</m>,
+    <m>E_3</m>,
+    <ellipsis/> . The same quantum state
+    <m>| \phi \rangle</m> could also be written in terms of a basis of states having definite values of some other measurable quantity,
+    say momentum
+    (<m>p_1</m>, <m>p_2</m>, <m>p_3</m>, <ellipsis/>).
+    Thus the same state could be written as either
+    <men xml:id="eqn_EnergyBasis">
+      |\phi\rangle = c_1 |E_1\rangle + c_2 |E_2\rangle + c_3 |E_3\rangle + \cdots  \hspace{1.0cm} \mbox{(Energy)}
+    </men>
+    or
+    <men>
+      \phi\rangle = d_1 |p_1\rangle + d_2 |p_2\rangle + d_3 |p_3\rangle + \cdots . \hspace{1.0cm} \mbox{(Momentum)}
+    </men>
+  </p>
+  <p>
+    Which linear superposition we use depends upon which quantity we want to measure.
+    If we are interested in doing an experiment in which we measure the energy of the particles,
+    we would therefore use equation <xref ref="eqn_EnergyBasis"/> to compute the probabilities for obtaining the allowed energy values
+    <m>E_1, E_2, E_3, \ldots</m> from the probability amplitudes <m>c_1</m>,
+    <m>c_2</m>, <m>c_3</m>, <ellipsis/>.
+  </p>
+  <p>
+    In quantum mechanics we consider the measurement of a quantity
+    (say energy <m>E</m>)
+    associated with a particle in the state
+    <m>| \phi \rangle</m> in the following way,
+    as indicated in <xref ref="fig_Measurement">Figure</xref>.
+    First, a particle is prepared in some quantum state
+    <m>| \phi \rangle</m> and then is sent into some device
+    (which I have called an <em>Energy Device</em> in the figure)
+    which is capable of measuring the particle's energy.
+    As a result of the measurement,
+    the device displays the value obtained in the measurement.
+    The value displayed by the device can be <em>only</em>
+    one of the discrete values <m>E_1</m>,
+    <m>E_2</m>, <m>E_3</m>, <ellipsis/>, and nothing else!
+    Before the measurement is made,
+    we cannot predict what the resulting value of measured energy will be for a particle in a state such as given by <xref ref="eqn_EnergyBasis"/>.
+    We can only calculate the probability of getting a particular value.
+    For instance, <xref ref="fig_Measurement">Figure</xref>
+    shows the result of a particular measurement yielding the energy value <m>E_2</m>.
+    The probability of obtaining this result is <m>P(E_2) = |c_2|^2</m>.
+  </p>
+  <figure xml:id="fig_Measurement">
+    <caption>Conceptual device for measuring the energy of a particle in a state <m>| \phi \rangle</m>. In this example, the result of the measurement is the energy value <m>E_2</m> and the state of the particle collapses to <m>| E_2 \rangle</m>.</caption>
+    <image width="73%" source="images/Measurement"/>
+  </figure>
+  <p>
+    Quantum mechanics also has something new to say about the state of the particle
+    <em>after</em> the measurement is made.
+    In terms of classical physics,
+    the measurement leaves the system untouched and the system is left in the same state as it was before the measurement.
+    On the other hand,
+    quantum mechanics says something completely different:
+  </p>
+  <p>
+    <assemblage>
+      <p>
+        <em>Collapse of the State:</em>
+        An ideal measurement of the state of a system forces the system,
+        at the instant of measurement,
+        into a particular basis state vector corresponding to the measured value.
+      </p>
+    </assemblage>
+  </p>
+  <p>
+    As indicated in <xref ref="fig_Measurement">Figure</xref>,
+    if a particle is in the state
+    <m>| \phi \rangle</m> and a measurement of the energy results in obtaining a value of <m>E_2</m>,
+    then the state of the system
+    <q>collapses</q>
+    into the state <m>| E_2 \rangle</m>.
+    In general, <em>measurements made on quantum systems affect <mdash/> and often change <mdash/> the state of the system.</em>
+    This is a profound statement for it says that the particle being measured and the measurement device can not be treated independently.
+    The measurement device must be considered as part of the system being measured!
+  </p>
+</section>

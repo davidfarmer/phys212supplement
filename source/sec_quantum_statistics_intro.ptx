@@ -1,0 +1,19 @@
+<section xml:id="sec_quantum_statistics_intro">
+  <title>Introduction</title>
+  <p>
+    We have encountered already a number of peculiar features of quantum mechanics such as wave-particle duality,
+    spatially spread out states,
+    and point particles with nonzero spin angular momentum.
+    Now we are going to add another peculiar feature called
+    <em>quantum indistinguishability</em>
+    that arises when we make the step up from one particle to two particles.
+  </p>
+  <p>
+    What we will see is that quantum particles are indistinguishable in a way that classical particles cannot be.
+    And this indistinguishability has very real consequences,
+    ranging from lasers to superconductors to white dwarfs.
+    Most importantly,
+    it is this indistinguishability of quantum particles that leads to the periodic table and the chemical properties of the elements, which,
+    needless to say, play a pretty big role in our everyday existence.
+  </p>
+</section>

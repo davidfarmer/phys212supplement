@@ -1,0 +1,144 @@
+<section xml:id="sec_wave_particle_duality">
+  <title>Wave-Particle Duality</title>
+  <introduction>
+    <p>
+      Planck and Einstein made the first big steps towards quantum mechanics by introducing photons and showing the role they play when light interacts with matter.
+      The next breakthrough was made by de<nbsp/>Broglie
+      (pronounced de-BROY),
+      who proposed what is now called
+      <em>wave-particle duality.</em>
+    </p>
+    <p>
+      Basically, de<nbsp/>Broglie noticed how strange the wave and photon character of light is and pondered whether this was perhaps not limited to light,
+      but rather was a new feature of nature.
+      Since light, which had been considered a wave,
+      could turn out to have particle properties,
+      perhaps things which are considered particles,
+      like protons and electrons, could turn out to have wave properties.
+      Perhaps <em>everything</em> in the microscopic world exhibits wave-particle duality.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Electron Interference</title>
+    <p>
+      What would this mean for an electron or a proton to have wave-like properties?
+      The clear signature of waves is interference,
+      so we could try to make electrons interfere like waves.
+      Imagine an experiment where a beam of electrons is sent towards a double-slit apparatus,
+      much like you did with a beam of light in lab.
+      If the electrons are strictly particles with no wave character,
+      we would expect to find two spots on the screen where the electrons are striking:
+      one bright spot is the electrons that passed through the left slit and the other is the electrons that passed through the right slit.
+      However, if the electrons are acting as waves,
+      we should expect to see a full interference pattern on the screen,
+      with a sequence of bright and dark spots.
+    </p>
+    <figure xml:id="fig_electron_double_slit">
+      <caption>Electrons are sent through a double slit apparatus and then
+      strike a screen.  The dots represent where the electrons hit the
+      screen.  As the number of electron detections grows, the
+      interference pattern becomes clear. (Simulated data.)</caption>
+      <image width="75%" source="images/simulated_electron_double_slit"/>
+    </figure>
+    <p>
+      These experiments have been done.
+      We show here a simulation of the data in <xref ref="fig_electron_double_slit">Figure</xref>.
+      This figure demonstrates that once enough electrons have reached the screen,
+      an interference pattern develops.
+      Electrons can act as waves!
+    </p>
+    <p>
+      There is an extremely peculiar aspect to this experiment.
+      First, note that the bright spots in the interference pattern are simply the regions where an electron hit more often.
+      Equivalently,
+      they are regions where an electron has a higher probability to hit.
+      The electrons go through the double slit apparatus one at a time,
+      and somehow they know where the higher and lower probability regions are.
+      But the interference pattern is a property of both slits.
+      For example, if the slit spacing is changed,
+      the distance between interference bright spots is changed.
+      This implies that somehow each single electron
+      <q>experiences</q>
+      both slits, since it passes through them knowing the probabilities of where to hit on the screen.
+      This is very strange!
+    </p>
+    <p>
+      But very real.
+      In fact, the wave-like property of electrons is the basis of a handy tool called the
+      <em>electron microscope</em>.<fn>
+      Bucknell has one.
+      Some of you may have used it.
+      </fn> This microscope can probe length scales significantly shorter than visible light to study,
+      for example, cell organelles.
+    </p>
+  </subsection>
+  <subsection>
+    <title>The de<nbsp/>Broglie Relation</title>
+    <p>
+      de<nbsp/>Broglie went further than just proposing this wave-particle duality;
+      he made a specific prediction for what the wavelengths should be for things we normally think of as particles.
+      The de<nbsp/>Broglie relation,
+      <men xml:id="eq_deBroglie_first">
+        \lambda = \frac{h}{p}
+      </men>
+      says that the wavelength of a
+      <q>particle</q>
+      depends on its momentum and on Planck's constant.
+    </p>
+    <p>
+      Let us check that this relation works for photons:
+      recall from the relativity unit of PHYS 211 that massless photons have an energy <m>E_\text{ ph }  = c|p_\text{ ph } |</m>.
+      The de<nbsp/>Broglie relation says that the photon momentum and wavelength should be related by <m>p=h/\lambda</m>,
+      so all together this gives
+      <men>
+        E_\text{ ph }  = c |p_\text{ ph } | = c\frac{h}{\lambda} = hf
+      </men>.
+    </p>
+    <p>
+      Indeed, for photons <xref ref="eq_deBroglie_first"/> is equivalent to Einstein's photon energy relation.
+    </p>
+    <p>
+      So de<nbsp/>Broglie's proposal was that
+      <m>\lambda=h/p</m> holds for all particles, not just for photons.
+      Let's see how this works out for an electron microscope.
+    </p>
+    <example>
+      <title>Electron microscope</title>
+      <statement>
+        <p>
+          You wish to use an electron microscope to resolve features of a cell organelle that are on the scale of <m>1\Xunits{nm}</m>.
+          To do this, you
+          <q>shine</q>
+          a beam of electrons on the sample.
+          What is the minimum speed that these electrons could have?
+          <em>Solution:
+          </em> Recall that to resolve features on a certain scale,
+          we need a wavelength at least that small,
+          so we will need <m>\lambda \leq 1\Xunits{nm}</m>.
+        </p>
+        <p>
+          According to the de<nbsp/>Broglie relation, this implies
+          <men>
+            p = \frac{h}{\lambda} \geq \frac{h}{1\Xunits{nm}}
+          </men>
+          or
+          <men>
+            p \geq \frac{6.63\times 10^{-34}\Xunits{J \cdot s}}{10^{-9}\Xunits{m}} = 6.6\times 10^{-25}\Xunits{kg \cdot m/s}
+          </men>.
+        </p>
+        <p>
+          Now that we have the minimum for the momentum,
+          we can find the minimum speed simply by <m>p=mv</m> (we are neglecting relativistic effects):
+          <men>
+            v = \frac{p}{m} \geq \frac{6.6\times 10^{-25}\Xunits{kg \cdot m/s}} {9.11\times 10^{-31}\Xunits{kg}} = 7.3\times 10^5\Xunits{m/s}
+          </men>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      So, we have seen that de<nbsp/>Broglie argued (successfully) that particles act like waves.
+      But <em>waves of what</em>?
+      We will discuss this further in the next chapter.
+    </p>
+  </subsection>
+</section>

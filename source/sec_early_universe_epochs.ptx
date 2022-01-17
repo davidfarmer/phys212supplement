@@ -1,0 +1,118 @@
+<section xml:id="sec_early_universe_epochs">
+  <title>Epochs of the Early Universe</title>
+  <p>
+    Let's now see what was going on in the universe during each epoch,
+    the intervals between the crucial events of <xref ref="sec_crucial_events">Section</xref>,
+    and explain briefly why.
+    <ul>
+      <li>
+        <title>Bang to <m>\mathbf{10^{-43}}\Xunits{s}</m>:</title>
+        <p>
+          Very speculative.
+          This would be the time of universal symmetry,
+          with quantized gravity incorporated with the other three interactions.
+          Nobody really knows how.
+        </p>
+      </li>
+      <li>
+        <title><m>\mathbf{10^{-43}}</m> to <m>\mathbf{10^{-34}}\Xunits{s}</m>:</title>
+        <p>
+          Grand unification prevails.
+          The strong, weak and electromagnetic interactions are on equal footings.
+          Quarks and leptons are not yet distinct,
+          since there are plenty of <m>X</m> bosons to facilitate interconversion.
+        </p>
+      </li>
+      <li>
+        <title><m>\mathbf{10^{-34}}</m> to <m>\mathbf{10^{-10}}\Xunits{s}</m>:</title>
+        <p>
+          The strong interaction acts separately from the electro-weak.
+          The <m>X</m> bosons are now too heavy to be produced in random collisions and they decay away quickly leaving distinct quarks,
+          antiquarks, leptons and antileptons.
+          However, due to a very subtle flaw in symmetry
+          (which we won't explain here),
+          the <m>X</m> boson and its antiparticle (<m>\overline X</m>) decay slightly differently.
+          This leaves a slight excess
+          (about one part in <m>10^9</m>)
+          of quarks over antiquarks.
+          The universe now consists of a hot
+          <q>soup</q>
+          of quarks, leptons,
+          and gauge bosons (<m>W</m>'s and <m>Z</m>'s, gluons,
+          photons) all in exact thermal equilibrium.
+        </p>
+      </li>
+      <li>
+        <title><m>\mathbf{10^{-10}}</m> to <m>\mathbf{10^{-4}}\Xunits{s}</m>:</title>
+        <p>
+          The weak interaction now acts separately from electromagnetism,
+          because <m>W</m>'s and <m>Z</m>'s are no longer produced abundantly.
+          By the end of this epoch,
+          the density of the universe has fallen sufficiently that quarks begin collecting into hadrons.
+        </p>
+      </li>
+      <li>
+        <title><m>\mathbf{10^{-4}}</m> to 1 s:</title>
+        <p>
+          With quarks permanently confined, the
+          <q>soup</q>
+          now consists of hadrons and leptons.
+          Energies are now insufficient to create exotic particles or to produce hadronic particle-antiparticle pairs.
+          Thus annihilation of antiparticles occurs rapidly and essentially all baryonic antimatter is wiped out,
+          leaving the small original
+          (since the time <m>t=10^{-34}\Xunits{s}</m>)
+          excess of matter.
+          We are left with primarily protons, neutrons, electrons,
+          positrons, neutrinos and photons in thermal equilibrium.
+          So much radiation is released from the annihilation of quarks that there are approximately <m>10^9</m> photons/baryon,
+          the value we observe today.
+        </p>
+      </li>
+      <li>
+        <title>1 to 400 s:</title>
+        <p>
+          The universe is now diffuse enough (
+          <q>only</q>
+          about 400,000 times as dense as water) that neutrinos don't interact enough to stay in equilibrium with the rest.
+          From 1 second on they evolve separately.
+          This means that inverse beta decay:
+          <men>
+            \overline\nu_e + p \to n + e^+
+          </men>
+          stops turning protons back into neutrons.
+          But a neutron can spontaneously decay to a proton,
+          with 10 percent decaying every 100 seconds.
+          So the ratio of protons to neutrons starts growing.
+          Also during this epoch the available thermal energy falls below that required to create electron-positron pairs and so positrons pretty much disappear.
+          At the same time,
+          thermal energies start to fall below the binding energies of small nuclei,
+          most notably the deuteron.
+          This means that protons and neutrons can start coalescing to form helium and lithium nuclei without being blasted apart by high energy photons.
+          By the end of this period,
+          essentially all the neutrons are bound into light nuclei.
+          The ratio of protons to neutrons and the relative abundances of primordial elements are fixed at this time.
+        </p>
+      </li>
+      <li>
+        <title>400 s to <m>10^5</m> years:</title>
+        <p>
+          The universe consists of a plasma of protons,
+          helium nuclei, electrons and photons, and decoupled neutrinos.
+          Any remaining free neutrons have long since decayed away.
+          The photons interact easily with the free electrons via the Compton effect and thermal equilibrium between radiation and matter is maintained.
+        </p>
+      </li>
+      <li>
+        <title><m>10^5</m> years to the present:</title>
+        <p>
+          At last it is cool enough that electrons and nuclei can combine to form atoms,
+          since the photon energies are too low to easily ionize the atoms.
+          Later the photon energies fall below even that level necessary to excite atomic transitions,
+          so there is no longer any efficient way for photons to transfer energy.
+          The universe becomes transparent to light as the photons decouple from the matter.
+          Those primordial photons are still wandering around the universe.
+        </p>
+      </li>
+    </ul>
+  </p>
+</section>

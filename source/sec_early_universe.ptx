@@ -1,0 +1,78 @@
+<section xml:id="sec_early_universe">
+  <title>The Early Universe</title>
+  <p>
+    The standard theory of cosmology is the Big Bang model,
+    in which the universe began as a hot dense ball of stuff and has been expanding and cooling ever since.
+    The first and primary evidence for this model was Edwin Hubble's discovery in the 1920's that the universe is expanding.
+    From analysis of Doppler shifted spectra and other observations, Hubble showed that most distant galaxies are receding from our galaxy.
+    Furthermore,
+    their velocity of recession is roughly proportional to their distance from us.
+  </p>
+  <p>
+    To see how this could happen,
+    imagine baking a giant loaf of raisin bread.
+    As the dough expands, each raisin gets farther from all the others and,
+    if the expansion is uniform,
+    the recessional rates at any instant of time are proportional to the separations.
+    The recession rates of galaxies in the expanding universe are similarly proportional to the separation between galaxies.
+    The proportionality can be expressed simply as
+    <men>
+      V = HR  \qquad\mbox{(Hubble's Relation)}
+    </men>
+    where <m>V</m> is the velocity of recession,
+    <m>R</m> is the galaxy distance and <m>H</m> is Hubble's constant.
+    By constant,
+    we mean it is the same number for many different galaxies,
+    not that it doesn't change with time.
+    In fact we argue below that it must be decreasing with time.
+    Its current accepted value is
+    <m>20.8\Xunits{km/s}</m> per million light-years.
+    This means that if galaxy <m>B</m> is a million light years more distant than galaxy <m>A</m>,
+    then <m>B</m> is receding <m>20.4\Xunits{km/s}</m> faster than <m>A</m>.
+  </p>
+  <p>
+    Okay, now here is the key point:
+    if the universe is expanding,
+    then it is also cooling down.
+    Especially when considering the early moments of the universe,
+    you can compare it to a gas that is undergoing an adiabatic expansion
+    (no heat flow into or out of the system,
+    which is the entire universe in this case).
+    Recall from PHYS 211 that a gas cools down when undergoing an adiabatic expansion.
+    It can be shown that<fn>
+    <q>It can be shown that</q>
+    is physics-lingo for
+    <q>the derivation is a royal pain-in-the-neck,
+    so we will just skip it here.</q>
+    </fn> the temperature <m>T</m> of the universe during its early stages <mdash/> during the
+    <q>radiation-dominated</q>
+    epochs, i.e., the first million years <mdash/> is given roughly by the equation
+    <men xml:id="eq_early_univ_temp">
+      T = \frac{10^{10}}{\sqrt t}
+    </men>,
+    where time <m>t</m> is in seconds and temperature <m>T</m> is in Kelvin.
+    Even though the assumptions of this derivation<fn>
+    Which we haven't told you.
+    </fn> are very much oversimplified,
+    <xref ref="eq_early_univ_temp"/> gives results correct within a factor of 2 or 3 up to <m>t = 10^6</m> years.
+    After that time,
+    the universe is cool enough to start acting like a collection of material particles rather than a bunch of photons.<fn>
+    One of the assumptions that we haven't explained.
+    </fn> Thus, for times near the present,
+    <xref ref="eq_early_univ_temp"/> overestimates the temperature of radiation considerably.
+  </p>
+  <p>
+    A useful relation can be obtained from <xref ref="eq_early_univ_temp"/>.
+    Recall from kinetic theory (PHYS 211) that for particles in equilibrium,
+    the average kinetic energy equals <m>\frac{3}{2}kT</m>,
+    where Boltzmann's constant <m>k= 8.63\times 10^{-5}\Xunits{eV/K}</m>.
+    If we round these figures to the same accuracy as <xref ref="eq_early_univ_temp"/>,
+    we find <m>E \simeq kT</m> with <m>k \simeq 10^{-4}\Xunits{eV/K}</m>,
+    and thus typical particle energies of the early universe are given by
+    <men xml:id="eq_early_univ_energy">
+      E \simeq kT \simeq \frac{10^6}{\sqrt t}
+    </men>,
+    where energy <m>E</m> is in eV and time <m>t</m> is again in seconds.
+    Equations<nbsp/><xref ref="eq_early_univ_temp"/> and <xref ref="eq_early_univ_energy"/> are handy relations that will be used throughout the chapter.
+  </p>
+</section>

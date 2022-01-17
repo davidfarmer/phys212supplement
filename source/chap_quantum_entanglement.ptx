@@ -1,0 +1,11 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_quantum_entanglement">
+  <title>Quantum Entanglement</title>
+  <xi:include  href="sec_quantum_entanglement_intro.ptx"/>
+  <xi:include  href="sec_two_particle_states.ptx"/>
+  <xi:include  href="sec_separable_states.ptx"/>
+  <xi:include  href="sec_bell_states.ptx"/>
+  <xi:include  href="sec_epr_paradox.ptx"/>
+  <xi:include  href="sec_bell_experiment.ptx"/>
+  <xi:include  href="sec_aspect_experiment.ptx"/>
+  <xi:include  href="sec_quantum_entanglement_problems.ptx"/>
+</chapter>

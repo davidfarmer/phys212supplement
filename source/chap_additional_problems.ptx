@@ -1,0 +1,3012 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_additional_problems">
+  <title>Additional Problems</title>
+<exercises>
+  <exercise>
+    <title>Repulsive and attractive tape</title>
+    <statement>
+      <p>
+        Take some magic Scotch tape and tear off a piece about 6 inches long.
+        Attach it to the edge of a desk or table so that it hangs down.
+        Then get another piece and stick the new (top) piece to the non-sticky side of the first (bottom) piece.
+        Then quickly pull them apart and hang both of them from edge of the table.
+        Label the strip that had been initially on the top
+        <q>T</q>
+        and label the other one
+        <q>B.</q>
+        <ol>
+          <li>
+            <p>
+              Next hold them so that the ends can come near each other.
+              Do they attract?
+              Repel?
+              Neither?
+              Try to write down a brief explanation.
+            </p>
+          </li>
+          <li>
+            <p>
+              Take two more pieces of tape and repeat the above so that you have two T's and two B's.
+              Which pairs attract and which repel?
+              Why?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Repulsive balloons</title>
+    <statement>
+      <p>
+        Blow up two balloons
+        (not quite as full as possible)
+        and tie them so they don't leak.
+        Take a piece of string and attach
+        (tie or tape)
+        a balloon to each end,
+        then hold the string in the middle and let the balloons at each end hang down.
+        <ol>
+          <li>
+            <p>
+              Now charge up the balloons by rubbing them against a fuzzy sweater or whatever you're wearing.
+              Be sure to turn the balloon so that all parts get charged.
+              Holding the string in the middle
+              (and keeping your body parts away from the balloons!),
+              what do you observe about the way the balloons hang?
+              Make a sketch.
+              Then make a force diagram for one of the balloons,
+              showing all of the forces acting on the balloon (tension,
+              electric and gravitational) and their relative magnitudes.
+              <em>Note:</em> Since the balloons are in equilibrium,
+              your force vectors should add up to zero.
+              Make sure that they are drawn to reflect this.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now, carefully grab one balloon and push it slowly toward the other.
+              Make sure that the balloons stay at the same height,
+              so that a line through their centers remains roughly horizontal.
+              What happens to the distance between the balloons as the string on the non-held balloon makes bigger and bigger angles with the vertical?
+              When you have moved the held balloon enough so that the distance between the balloons is clearly different from that in part (a),
+              make a force diagram for the non-held balloon,
+              showing all the forces and their relative magnitudes. (The sizes of the arrows should also reflect any changes in the forces with respect to part (a).) <em>Comments:
+              </em> Again, the balloon is in equilibrium,
+              so the force vectors should add up to zero.
+              But since your tension force is closer to horizontal now,
+              what has to happen to its magnitude to keep the net force in the <m>y</m>-direction zero?
+              What has to happen to the electric force to keep the net force in the <m>x</m>-direction zero?
+              Make sure that your diagram is consistent with your observation about the distance between the balloons.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_balloons">
+    <title>Attractive balloons</title>
+    <statement>
+      <p>
+        The figure shows two balloons,
+        one with a positive charge <m>q</m> and one with a negative charge <m>q</m>,
+        each hung from the ceiling by a thread, as shown.
+        The system is in equilibrium,
+        and each thread makes an angle <m>\theta</m> with respect to the vertical.
+        Show that the charge <m>q</m> on the balloons is given by <m>q = x\sqrt{\frac{mg\tan\theta}{k}}</m>.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_balloons">A</xref></caption>
+        <image width="92.5%" source="images/ballooncalc"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Electric field simulations</title>
+    <statement>
+      <p>
+        Do Problem 1 on Electric Fields,
+        accessible from the Lecture 1 calendar page.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>More E-Field Simulations</title>
+    <statement>
+      <p>
+        Do Problem 2 on Electric Fields,
+        accessible from the Lecture 1 calendar page.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_addEfields">
+    <title>Addition of electric fields</title>
+    <statement>
+      <p>
+        Two charges, each <m>+5~\mu</m>C, are on the <m>y</m>-axis,
+        one at the origin and the other at <m>y=6\Xunits{m}</m>.
+        Find the electric field on the <m>y</m>-axis at (a)
+        <m>y=-3\Xunits{m}</m>, (b) <m>y = +3\Xunits{m}</m>,
+        and (c) <m>y = +9\Xunits{m}</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_integ1">
+    <statement>
+      <p>
+        {Determining <m>\vec{E}</m> using integrals <mdash/> semi-infinite rod.} Point <em>P</em>
+        is located a distance <m>a</m> from the bottom of a semi-infinite rod with uniform linear charge density <m>\lambda</m>.
+        <ol>
+          <li>
+            <p>
+              Calculate the <m>x</m>-component of the electric field at point <em>P</em>;
+              you should set up and work through the integral.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the <m>y</m>-component of the electric field at point <em>P</em>;
+              you should set up and work through the integral.
+              (Somewhat surprisingly the <m>x</m> and <m>y</m>-components have the same magnitude.)
+            </p>
+          </li>
+        </ol>
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_integ1">A</xref></caption>
+        <image width="92.5%" source="images/integ1"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_arc1">
+    <statement>
+      <p>
+        {Determining <m>\vec{E}</m> using integrals <mdash/> arc.} The figure shows a quarter of a ring with radius <m>R</m> in the <m>x</m>-<m>y</m> plane with a total charge <m>q</m>,
+        which is distributed uniformly over the quarter-ring.
+        Working through the appropriate integral,
+        determine the electric field at the origin
+        (point <em>P</em>).
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_arc1">A</xref></caption>
+        <image width="73%" source="images/arc1"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_ComputerMonitors">
+    <title>Computer monitors</title>
+    <statement>
+      <p>
+        In a computer monitor
+        (the old-fashioned tube-type monitor, not the flat panel ones),
+        electrons are fired from the back toward the screen.
+        Assume that the electrons start from rest and are accelerated through a potential difference of 50,000 V.
+        <ol>
+          <li>
+            <p>
+              What is the energy of the electrons when they hit the screen in electron volts?
+            </p>
+          </li>
+          <li>
+            <p>
+              in Joules?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the speed of impact of the electrons with the screen of the monitor? (You can neglect relativistic effects here,
+              although you should note that the speeds aren't <em>that</em>
+              much below the speed of light.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_arc2">
+    <title>Directions of electric fields from continuous sources</title>
+    <statement>
+      <p>
+        The figure shows half of a ring in the <m>x</m>-<m>y</m> plane with a varying charge density <m>\lambda</m> which depends on the angle <m>\theta</m> from the <m>+x</m>-axis.
+        <ol>
+          <li>
+            <p>
+              Determine the <em>direction</em>
+              of the electric field at the origin
+              (point <em>P</em>)
+              if <m>\lambda = \lambda_0 \sin{\theta}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the <em>direction</em>
+              of the electric field at the origin
+              (point <em>P</em>)
+              if <m>\lambda = \lambda_0 \cos{\theta}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_arc2">A</xref></caption>
+        <image width="92.5%" source="images/arc2"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_plates">
+    <title>Potential and electric field</title>
+    <statement>
+      <p>
+        The sketch shows three large parallel plate conductors held at the potentials shown.
+        (Assume that the plates are infinitely large.)
+        Find the direction and magnitude of the uniform electric field in each of the two interior regions.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_plates">A</xref></caption>
+        <image width="92.5%" source="images/plates"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_dimmer">
+    <title>Resistance and Dimmer Switches</title>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Make a circuit with two batteries and a light bulb,
+            all in series, and note the brightness.
+            Now add a full length of one of your nichrome wires
+            (bare silvery wire)
+            to your circuit between the positive side of your batteries and the bulb.
+            What happens to the brightness of the bulb?
+            Explain briefly.
+          </p>
+        </li>
+        <li>
+          <p>
+            Repeat with the other equal length piece of nichrome wire.
+            Which wire has a larger resistance?
+            Explain how you know.
+            Examine the two wires carefully.
+            Do you note any difference?
+          </p>
+        </li>
+        <li>
+          <p>
+            Now use just the higher resistance wire in the circuit.
+            Carefully unclip the lead on the wire nearest the battery,
+            and touch it onto the wire at various places.
+            How is the bulb's brightness affected?
+            This is basically how a dimmer switch works!
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Flashlight circuit</title>
+    <statement>
+      <p>
+        Make a circuit with two batteries and two bulbs, all in series.
+        <ol>
+          <li>
+            <p>
+              Now replace one of the bulb holders in the circuit with the higher resistance nichrome wire,
+              and slide the alligator lead from the batteries along the wire
+              (see Prob.<nbsp/><xref ref="prob_dimmer">A</xref>)
+              until the remaining bulb is about as bright as before with the two bulbs.
+              This means the resistance of that length of nichrome is the same as a bulb.
+              Measure this length.
+            </p>
+          </li>
+          <li>
+            <p>
+              The wire has a diameter of <m>0.25\Xunits{mm}</m>,
+              and the resistivity of nichrome is <m>\rho = 1.0 \times 10^{-6}\Xunits{ \Omega\cdot m}</m>.
+              Calculate the resistance of the length of wire,
+              and therefore of the bulb.
+              <em>Continued</em><m>\rightarrow</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              From the battery voltage and the resistance that you just determined for one bulb,
+              determine the current through the original circuit with two bulbs and two batteries.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_compass">
+    <title>Fun with magnets</title>
+    <statement>
+      <p>
+        Take two cylindrical magnets and let them come together (N of one and S of other) around the end of a piece of thread
+        (see <xref ref="fig_compass">Figure</xref>).
+        You'll end up with what is effectively one long magnet
+        (from the two in combination)
+        with a string coming up from in between the two
+        (now connected)
+        magnets.
+        Hold the other end of the string and let the magnet dangle.
+        Now gently twist the string from the top.
+        Is there a preferred orientation for the magnet?
+        What is this orientation?
+        Explain briefly.
+      </p>
+      <figure xml:id="fig_compass">
+        <caption>Problem <xref ref="prob_compass">A</xref></caption>
+        <image width="92.5%" source="images/compass"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Mapping the field of a permanent magnet</title>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Draw a sketch of a cylindrical magnet including the direction of the magnetic field in the surrounding region.
+            Mark the direction of the magnetic field with little arrows at various locations around the magnet.
+          </p>
+        </li>
+        <li>
+          <p>
+            Now put your cylindrical magnet down on a flat surface and keep it from rolling.
+            Next place your compass in various positions around the magnet and draw a sketch of what you observe.
+            Your sketch should show a long rectangle
+            (the magnet)
+            surrounded by circles
+            (the compass in various locations)
+            with an arrow on each circle showing the direction that the red part of the compass needle pointed there.
+            How did your measurements compare to your prediction?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Destroying your TV or computer monitor</title>
+    <statement>
+      <p>
+        (Optional) BE CAREFUL with this one.
+        A strong permanent magnet can magnetize parts of your monitor.
+        This causes distortion of the images in both shape and color.
+        Most monitors automatically can get rid of these extra fields using something called a
+        <q>de-gausser</q>, but the de-gausser doesn't usually activate except when the monitor is turned on
+        (and is cold),
+        so it might not fix the damage for a while,
+        assuming the de-gausser is working.
+        Thus the caution.
+        Most monitors receive no permanent damage,
+        but you never know, so don't go wrecking someone else's stuff.
+      </p>
+      <p>
+        Bring one of your magnets close to a CRT, like a computer monitor or TV. Move the magnet around the front and along the top and sides.
+        Write down your observations.
+        Why does this happen?
+        What is a CRT anyway?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_magforce">
+    <title>Magnetic force on a moving particle</title>
+    <statement>
+      <p>
+        The figure shows a charged particle
+        (with charge <m>-5.0\Xunits{ \mu C}</m>)
+        moving with a speed <m>1.3 \times 10^5\Xunits{m/s}</m> in a vertically-directed magnetic field with magnitude <m>0.8\Xunits{T}</m>.
+        The particle is moving at an angle
+        <m>30^{\circ}</m> with respect to the horizontal.
+        Calculate the magnitude of the magnetic force on this particle,
+        and state the <em> direction</em> of the force.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_magforce">A</xref></caption>
+        <image width="73%" source="images/magforce"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_railgun">
+    <title>Rail guns</title>
+    <statement>
+      <p>
+        A very simple application of magnetic forces can be used to make a nifty device called a
+        <q>rail gun.</q>
+        These have been proposed as devices that could be used to send back to earth
+        (or the moon)
+        raw materials mined from an asteroid.
+        The idea is shown in the figure below.
+        A bar of mass <m>m</m> can slide on two parallel rails separated by a distance <m>H</m>,
+        and the whole apparatus is in a uniform magnetic field with magnitude <m>B</m> pointing into the plane of the paper.
+        The rails are hooked up to a current source,
+        and a current <m>I</m> passes through the rails and through the bar,
+        which experiences a force that accelerates it down a track of length <m>D</m>.
+        A bucket can be put on the bar,
+        and anything in the bucket gets thrown off when the bar reaches the end of the rail.
+      </p>
+      <p>
+        Given the information above,
+        determine the speed of the bar just before it reaches the end of the rails.
+        (Hint: Think work.)
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_railgun">A</xref></caption>
+        <image width="92.5%" source="images/railgun"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Canceling the Earth's magnetic field</title>
+    <statement>
+      <p>
+        A 100-turn circular coil with radius
+        <m>30\Xunits{cm}</m> is to produce a field at its center that will just cancel the earth's magnetic field at the equator,
+        which is <m>7.0 \times 10^{-5}\Xunits{T}</m> directed north
+        (horizontal).
+        Find the current in the loop and make a sketch that shows the orientation of the loop and the current.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Why aren't there magnetic fields all around your
+    house?</title>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            The wire to a 100 Watt lamp carries about 1 amp of current to light the lamp.
+            Calculate the magnetic field
+            <m>5\Xunits{mm}</m> from a wire carrying a steady current of 1 amp.
+            Compare this to the Earth's field of approximately <m>7 \times 10^{-5}\Xunits{T}</m>.
+          </p>
+        </li>
+        <li xml:id="prob_PowerCords">
+          <p>
+            Put your compass near various wires in your room leading to electrical appliances and lights.
+            Describe the compass deflections.
+            Why don't you see much? (Hint: The power cords aren't just one wire but are a pair that carry the current both <em>to</em>
+            and <em>back from</em> the appliance/light.)
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>An electromagnet</title>
+    <statement>
+      <p>
+        Take your large and small nail and put them on a table top.
+        Clip one end of an alligator lead to a battery
+        (or two in series).
+        Clip another to the opposite side of the battery.
+        Wrap the piece of red insulated wire many,
+        many times around the larger nail.
+        Hold the wrapped nail in one hand and using the other,
+        hook the leads from the batteries onto the ends of the wrapped wire to complete the circuit.
+        You're making an electromagnet!
+      </p>
+      <p>
+        Try to pick up the small nail with the point of the large nail.
+        Once it is off the table, disconnect the leads and see what happens.
+        On your paper, explain briefly why the nail becomes a magnet.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_solenoid">
+    <title>Solenoid</title>
+    <statement>
+      <p>
+        A solenoid with 2000 turns is <m>1.3\Xunits{m}</m> long,
+        has a radius <m>2.5\Xunits{cm}</m> and carries a current of <m>3.0\Xunits{A}</m>.
+        What is the approximate magnitude of the magnetic field on the axis near the center of the solenoid?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_ElecGen">
+    <title>Electrical generation</title>
+    <statement>
+      <p>
+        Commercial electricity generation uses big strong magnets,
+        multi-turn coils, and rapid relative motion.
+        Suppose you could move a large
+        <m>1.0\Xunits{T}</m> magnet over the face of a
+        <m>10\Xunits{cm}</m> diameter 200-turn coil.
+        What time interval between maximum flux and no flux would you need to produce an average emf of <m>120\Xunits{V}</m>?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_faraday">
+    <title>Faraday with derivatives</title>
+    <statement>
+      <p>
+        A ring with radius <m>r</m> and resistance <m>R</m> lies in the <m>x</m>-<m>y</m> plane.
+        The ring is located in a spatially uniform,
+        but time-dependent magnetic field <m>\vec{B} = B_0(2-t+3t^2)\, \widehat{k}</m>.
+        Calculate the magnitude of the electrical current <m>I(t)</m> in the ring as a function of time.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Eddy damping and brakes</title>
+    <statement>
+      <p>
+        Describe how eddy currents could be used to make brakes for a train or a car that don't require any friction.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>The Electromagnetic Spectrum</title>
+    <statement>
+      <p>
+        Consider the different types of electromagnetic waves:
+        radio waves, microwaves, infrared,
+        visible light, ultraviolet light, x-rays and gamma rays.
+        Why do you think there are different names for these different kinds of electromagnetic waves?
+        Is there a meaningful distinction?
+        What are the differences between,
+        say, gamma rays and infrared waves?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Electromagnetic waves and you</title>
+    <statement>
+      <p>.
+        Think about your life,
+        your experiences and things which you may <em>not</em>
+        have experienced but which clearly affect your life.
+        There are numerous situations in which electromagnetic waves play a significant role in affecting your life.
+        List <em>at least</em> four distinct and unique examples.
+        These list might include things like examples of modern technology which rely on electromagnetic waves,
+        as well as important electromagnetic wave phenomena which occur in the natural world.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_bu_em_falling-loop">
+    <title>Falling loops</title>
+    <statement>
+      <p>
+        A long rectangular wire loop with mass <m>m</m> and resistance <m>R</m> is falling out of a region with a magnetic field with magnitude <m>B_0</m> that is pointing out of the plane of the paper.
+        The rectangle has a width <m>w</m> and a length that is so large that part of the loop is inside the region with the magnetic field and part is outside that region;
+        <ol>
+          <li>
+            <p>
+              Determine the current in the wire when the rectangle is falling from the magnetic field with a speed <m>v</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              When dropped from rest the speed of the loop increases from <m>0</m> up to the terminal velocity,
+              and then remains constant at this terminal velocity.
+              Determine the terminal velocity for the falling loop.
+              (Assume that the terminal velocity is reached before the top of the loop leaves the magnetic field.)
+            </p>
+          </li>
+        </ol>
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_bu_em_falling-loop">A</xref></caption>
+        <image width="92.5%" source="images/bu_em_falling-loop"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Fetal heartbeat monitors</title>
+    <statement>
+      <p>
+        The <em>Babycom</em><m>^{ TM}</m>
+        <em>Home Doppler Fetal Heartbeat Monitor</em>
+        uses ultrasonic waves with frequency <m>2.5\Xunits{MHz}</m>,
+        and can measure Doppler shifts as low as <m>100\Xunits{Hz}</m>.
+        Calculate the approximate speed of the fetal movements
+        (blood flow)
+        that account for these <m>100\Xunits{Hz}</m> frequency shifts.
+        (The speed of sound in air is <m>340\Xunits{m/s}</m>,
+        and the speed of sound in soft tissue <mdash/> and water <mdash/> is about <m>1500\Xunits{m/s}</m>.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Electromagnetic waves</title>
+    <statement>
+      <p>
+        Consider an EM wave with electric field
+        <m>\vec{E} = (6.6 \times 10^4\Xunits{N/C})\cos(1.2\pi x - 3.6 \times 10^8 \pi t)\, \hat{\jmath}</m> with <m>x</m> in meters and <m>t</m> in seconds.
+        Find the expression for the corresponding magnetic field.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_reradiation">
+    <title>Re-radiated Light Waves</title>
+    <statement>
+      <p>
+        Consider a beam of light propagating along the <m>y</m>-axis.
+        It is polarized along the <m>z</m>-axis as it enters a diffuse vapor cloud.
+        <ol>
+          <li>
+            <p>
+              Along which axis does the electric field of the light wave oscillate (<m>\pm x</m>,
+              <m>\pm y</m>, or <m>\pm z</m>)?
+              How do you know?
+            </p>
+          </li>
+          <li>
+            <p>
+              Along which axis does the <em>magnetic</em>
+              field of the light wave oscillate (<m>\pm x</m>,
+              <m>\pm y</m>, or <m>\pm z</m>)?
+              How do you know?
+            </p>
+          </li>
+          <li>
+            <p>
+              The wave strikes some electrons in the vapor cloud,
+              and they start oscillating.
+              Along which axis do the electrons oscillate (<m>\pm x</m>,
+              <m>\pm y</m>, or <m>\pm z</m>)?
+              How do you know?
+            </p>
+          </li>
+          <li>
+            <p>
+              These oscillating electrons generate a new re-radiated light wave.
+              Along which axis does the electric field of the re-radiated wave oscillate (<m>\pm x</m>,
+              <m>\pm y</m>, or <m>\pm z</m>)?
+              How do you know?
+            </p>
+          </li>
+          <li>
+            <p>
+              The re-radiated light wave cannot propagate in all directions.
+              Along which axis (axes) can the new wave propagate (<m>\pm x</m>,
+              <m>\pm y</m>, or <m>\pm z</m>)?
+            </p>
+          </li>
+          <li>
+            <p>
+              For each answer to part (e),
+              give the axis along which the <em>magnetic</em>
+              field of the re-radiated wave oscillates
+              (<m>\pm x</m>, <m>\pm y</m>, or <m>\pm z</m>).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="a_travwave">
+    <title>Traveling Waves on a Magic Spring</title>
+    <statement>
+      <p>
+        Take your Magic Spring and attach one end to a door knob,
+        bed post or a friend.
+        Hold the other end and walk away so the spring is stretched to about 6 feet.
+        Grab a few of the coils and pull them toward you and release so that a longitudinal compression wave travels along the spring,
+        bounces off the other end, and goes back and forth.
+        See how far the pulse goes in five seconds (# of round trips times round-trip distance) and estimate the wave speed.
+        Repeat by pulling the coils sideways to get a transverse wave,
+        and find its wave speed.
+        Are they different?
+        Compare to the speeds found in Question <xref ref="a_standingwave">A</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="a_standingwave">
+    <title>Standing Waves on a Magic Spring</title>
+    <statement>
+      <p>
+        Find a friend to help you time and count Magic Spring standing wave oscillations.
+        <ol>
+          <li>
+            <p>
+              Hold the spring with one end in each hand and generate standing waves as demonstrated in lecture.
+              Get at least the fundamental and the next two higher harmonics. (Prize if you can demonstrate the <m>n=5</m> mode or higher!) Notice how the frequency you need to use changes for as the mode number increases.
+            </p>
+          </li>
+          <li>
+            <p>
+              For quantitative analysis,
+              set up the spring just as you had it when you measured pulse speeds in Question <xref ref="a_travwave">A</xref>.
+              Set up the lowest frequency standing wave by shaking one end of the spring and count ten full oscillations while your friend measures the time for these ten oscillations.
+              Determine the period, frequency,
+              and wavelength for this mode.
+              Repeat your measurements for the <m>n=2</m> and <m>n=3</m> modes,
+              making sure that you keep the length of the spring
+              (the distance between your
+              <q>shaking hand</q>
+              and the fixed end)
+              approximately the same for all of your measurements.
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the ratio of the frequency of the <m>n = 2</m> mode to the fundamental frequency?
+              What is the ratio of the frequency of <m>n = 3</m> mode to the fundamental?
+              Is this what you expect?
+            </p>
+          </li>
+          <li>
+            <p>
+              Use the wavelength and corresponding frequency for each mode to determine a wave speed.
+              Compare these to the speed of transverse waves measured in Question <xref ref="a_travwave">A</xref>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>A musical octave</title>
+    <statement>
+      <p>
+        Use your slide whistle for this one.
+        <ol>
+          <li>
+            <p>
+              Extend the slide all the way out.
+              Blow softly on the whistle and note the pitch.
+              Now push the slide in as you continue to blow.
+              What do you hear?
+              Explain <em>why</em> you hear the changes in the pitch that you hear when the slide is pushed inward.
+            </p>
+          </li>
+          <li>
+            <p>
+              Extend the slide all the way out again.
+              Again, blow softly on the whistle and note the pitch.
+              Now continue to play the whistle as you push the slide inward,
+              and stop when you reach a note that is an octave above what you started with.
+              (This may take many tries to match.)
+              What determines how far the slide should be pushed in to increase the pitch by one octave?
+              Try to see if you can make a simple (approximate) measurement to verify your theory.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Annoying your roommate</title>
+    <statement>
+      <p>
+        Here is another opportunity to play with your slide whistle.
+        <ol>
+          <li>
+            <p>
+              Play the slide whistle softly with the slide mostly or all the way out.
+              Make a sketch of the standing wave in the air column associated with this note.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now blow harder on the slide whistle until the pitch changes.
+              How is the frequency of this new
+              (and most assuredly less-pleasant-sounding)
+              note related to the one from part (a)?
+              Draw a sketch of the standing wave to support your answer.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now plug your ears and blow even harder.
+              You should be able to get the pitch to jump again
+              (and to attract any stray dogs that are in the neighborhood,
+              along with a few irate hall-mates).
+              How is the frequency of <em>this</em>
+              note related to the one from part (a)?
+              Draw a sketch of the standing wave to support your answer.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_OrganPipes">
+    <title>Organ pipes</title>
+    <statement>
+      <p>
+        Consider a <m>10\Xunits{m}</m> organ pipe, open at both ends.
+        <ol>
+          <li>
+            <p>
+              Sketch the standing wave pattern for the three longest wavelength modes.
+            </p>
+          </li>
+          <li>
+            <p>
+              From each sketch,
+              determine the wavenumber <m>k</m> and the wavelength <m>\lambda</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Given your answers for (a) and (b),
+              and given the speed of sound in air (<m>340\Xunits{m/s}</m>),
+              determine the frequency of each mode.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Stringed instruments</title>
+    <statement>
+      <p>
+        The lowest note that can be played on a bass fiddle is E1 (frequency 41.2 Hz) on a string of length <m>1.2\Xunits{m}</m>
+        (secured at both ends).
+        <ol>
+          <li>
+            <p>
+              Sketch the standing wave pattern for the three longest wavelength modes.
+            </p>
+          </li>
+          <li>
+            <p>
+              From each sketch,
+              determine the wavenumber <m>k</m> and the wavelength <m>\lambda</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the wave speed for this string.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Beats</title>
+    <statement>
+      <p>
+        Find someone else who is taking PHYS 212.
+        One of you should blow (softly) your slide whistle with the slide somewhere in the middle.
+        Hold the note while the other person blows his/her whistle and slowly adjusts his/her slide around the position of your slide.
+        Listen for the beats and comment on how they change as the frequency of the second whistle is varied.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Polarized light</title>
+    <statement>
+      <p>
+        Take your polarized disks and look at the following things and comment on what you observe:
+        <ol>
+          <li>
+            <p>
+              Go outside on a sunny day when the sun is low in the sky,
+              preferably early or late in the day and look straight up at the sky,
+              looking through one of the Polaroid disks.
+              Then turn the disk.
+              What do you observe?
+              What does this tell you about light scattered from the sky?
+            </p>
+          </li>
+          <li>
+            <p>
+              Look at various different LCDs (liquid-crystal displays):
+              your calculator, a laptop or flat-screen monitor,
+              a gas station pump readout, etc.
+              Rotate the Polaroid disk and comment on what you observe.
+              What does this tell you about liquid-crystal displays?
+            </p>
+          </li>
+          <li>
+            <p>
+              How could you determine definitively if some sunglasses that you were buying at Wal-Mart<m>^{TM}</m> were polarized? (Don't trust the labels:
+              my wife once bought
+              <q>polarized</q>
+              sunglasses that turned out to be fakes.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Soap films and bubbles</title>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Here's one to try in the shower!
+            Get your hands very wet and soapy.
+            Then slowly slide your forefinger along your thumb stretching a soap film bigger and bigger.
+            You can catch it on your other hand as demoed in lecture to make a big thin film.
+            In fact, if your hands are wet,
+            you can catch soap bubbles without popping them.
+            (This is a great thing to do on a day just after it has rained <mdash/> blow a bunch of soap bubbles on the wet pavement.
+            They won't pop.)
+            If you are not good at this,
+            try using bubbles from the soap bubble bottle in your kit.
+            Blow a big bubble, catch it on the wand,
+            and hold it while it thins out.
+            Now with the light behind you,
+            look at the reflections off the film.
+            You should see some really cool patterns of colors!
+            Try to sketch the patterns (later) and show where each color is.
+            In a few sentences,
+            try to explain what you see in terms of thin films that you studied in class.
+          </p>
+        </li>
+        <li>
+          <p>
+            (Optional if weather cooperates.) After it has rained,
+            look at the pavement in the street or parking lots where cars are or have been.
+            You might see a blotch of color.
+            This usually indicates that a drop of oil has fallen on the ground. (A good place to look for these splotches is underneath cars driven by Bucknell faculty.) If you see one of these colorful oil spots,
+            try stepping on it or brushing your foot over it.
+            Comment on what you see and try to explain what you see in terms of the thin films that you studied in class.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Fiber optics toy</title>
+    <statement>
+      <p>
+        Load up your fiber optics flashlight toy (Galaxy Wand) with the two little batteries
+        (this may have already been done for you).
+        Turn it on and notice how the cool colors of light come out the ends of the fibers but not out the sides.
+        Take one of the fibers and bend it until it kinks.
+        (If it breaks, try again.)
+        Some of the light in that fiber will escape.
+        Why does it escape?
+        Why doesn't it escape if you make smooth curves in the fiber rather than a kink?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Thin film interference</title>
+    <statement>
+      <p>
+        Assume that light with a wavelength
+        <m>\lambda_0</m> in air falls on a thin film composed mostly of water
+        (index of refraction <m>n_w</m>)
+        and with a thickness <m>t</m>.
+        Assume that the water is on top of a mirror which inverts the EM wave when it reflects it.
+        <ol>
+          <li>
+            <p>
+              What is the wavelength of the light inside the film (in terms of <m>\lambda_0</m> and <m>n_w</m>)?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the path length difference between the light reflected off the front of the film and that which goes through the film,
+              reflects off the mirror,
+              and <em>then</em> comes back through the film and out the front?
+            </p>
+          </li>
+          <li>
+            <p>
+              Are either (or both) of the two beams of reflected light inverted due to the reflection?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the phase difference between the two reflected beams? (Hint:
+              use the wavelength of the light
+              <em>inside</em> the water film.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>n_w = 1.33</m> and the film has a thickness <m>t = 300\Xunits{nm}</m>,
+              what is the largest wavelength of light
+              (when in air)
+              for completely destructive interference?
+              For completely constructive interference?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Son of thin film interference</title>
+    <statement>
+      <p>
+        Assume that light with a wavelength
+        <m>\lambda_0</m> falls on a thin film composed mostly of water
+        (index of refraction <m>n_w</m>)
+        and with a thickness <m>t</m>.
+        Assume that the film is surrounded by air on both sides.
+      </p>
+      <p>
+        If <m>n_w = 1.33</m> and the film has a thickness <m>t = 300\Xunits{nm}</m>,
+        what is the longest wavelength of light
+        (when in air)
+        for completely destructive interference in the reflected light?
+        For completely constructive interference?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Interference in music</title>
+    <statement>
+      <p>
+        Sitting at your desk, you are listening to music from your stereo.
+        Your right ear is <m>2.2\Xunits{m}</m> from one speaker and <m>2.6\Xunits{m}</m> from the other.
+        Nostalgic for your formative childhood years,
+        you are listening to a <em>Barney's Greatest Hits</em>
+        CD, and there is a particular solo by Barney in which the frequency of his tune ranges up to <m>1800\Xunits{Hz}</m>.
+        Ignoring reflections,
+        determine the two smallest frequencies at which there will be destructive interference of the sound at your right ear;
+        i.e., where the sound will be weakest.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_dvds">
+    <title>DVDs</title>
+    <statement>
+      <p>
+        If you shine laser light with wavelength
+        <m>650\Xunits{nm}</m> at normal incidence onto the surface of DVD, you'll find first-order intensity maxima coming back from the surface at an angle about <m>65^{\circ}</m> from the normal.
+        Use this information to estimate (a) the spacing between adjacent grooves on a DVD (we know,
+        it's one big spiral,
+        but we want the spacing between the adjacent loops in the spiral);
+        and (b) the approximate number of grooves
+        (or loops of the spiral)
+        on the disk,
+        assuming a radius of approximately <m>4\Xunits{cm}</m> for the disk.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Compact disks</title>
+    <statement>
+      <p>
+        Take a copy of your favorite CD
+        (or your least favorite one <mdash/> it doesn't matter)
+        and look at the groovy side in strong light.
+        Tip the CD at different angles.
+        Why do you see colors?
+        Do they change for different tip angles?
+        Explain briefly.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Resolution</title>
+    <statement>
+      <p>
+        Go out to the Academic Quad at the end opposite the library.
+        Looking at the clock on the library tower,
+        walk toward the library until you can just distinguish the five separate lines that make up the Roman numeral 8 (VIII).
+        Now pace off your distance to the library doors.
+        Add <m>30\Xunits{ft}</m> to get the distance between your former position and the clock face.
+        (Assume that each pace is about <m>75\Xunits{cm}</m>.)
+      </p>
+      <p>
+        Now using Rayleigh's criterion,
+        calculate the minimum separation of objects on the clock face that you could distinguish with the naked eye.
+        Assume that the visible light you use has a wavelength of <m>500\Xunits{nm}</m>.
+        How does your calculated separation compare with Prof.
+        Bowen's estimate of the actual separation between lines (<m>5\Xunits{cm}</m>)?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_complex_traveling_wave">
+    <title>Complex traveling wave</title>
+    <statement>
+      <p>
+        The electric field of a traveling wave is represented by
+        <me>
+          \vec E(x,t) = 6\times 10^4\, e^{i(0.5\times 10^7 x - 1.5\times 10^{15}t)}\,\hat k
+        </me>
+        with <m>E</m> in N/C, <m>x</m> in meters, and <m>t</m> in seconds.
+        <ol>
+          <li>
+            <p>
+              Calculate the wavelength, period,
+              and wave speed of this wave.
+              What kind of EM wave is this?
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the amplitude of the associated magnetic field wave
+              (in Tesla).
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the direction of propagation for this wave.
+            </p>
+          </li>
+          <li>
+            <p>
+              Using the gnuplot graphing program,
+              plot the real part of <m>E_z</m> at both <m>t=0</m> and <m>t=10^{-15}\Xunits{s}</m>.
+              Did the wave move visibly in this short time?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Wave nature of light</title>
+    <statement>
+      <p>
+        Here's an easy way to see a manifestation of the wave nature of visible light.
+        Put on your diffraction glasses and look at a small bright light source.
+        Sketch the pattern in your notes.
+        Explain briefly why this pattern is indicative of the light's wave properties.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Implications of photoelectric effect</title>
+    <statement>
+      <p>
+        Professor Quack doesn't believe in quantum theory.
+        To make his point he does a photoelectric experiment.
+        He takes a white light source and two filters <mdash/> one filter allows blue light to pass,
+        and one filter allows green light to pass.
+        He measures the current when the blue filter is in place and finds that it is <em>less</em>
+        than the current he measures with the green filter in place.
+        He argues that according to quantum theory blue photons should have more energy than green photons,
+        so the blue light should result in a greater current than that caused by the green light.
+        What do you have to say to Professor Quack?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_proton_in_box">
+    <title>Proton in a box</title>
+    <statement>
+      <p>
+        A proton is confined to a one-dimensional infinite potential well with a width of <m>2 \times 10^{-14}</m> m.
+        Assume that it is in its first excited state (i.e., not the ground state,
+        but the next state).
+        <ol>
+          <li>
+            <p>
+              Draw a sketch of the wavefunction <m>\psi</m> corresponding to this state,
+              and indicate the locations where you would never expect to find the proton.
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the wavelength of the quantum wave associated with the proton.
+            </p>
+          </li>
+          <li>
+            <p>
+              Using your answer to part (b),
+              determine the magnitudes of the momentum and energy of the proton in the first excited state.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Electron in a box</title>
+    <statement>
+      <p>
+        An electron is confined to a one-dimensional infinite potential well of width <m>b</m>,
+        and is in its second excited state.
+        The energy of the electron is <m>75\Xunits{eV}</m>.
+        (Remember that the energy is all kinetic in this case.)
+        <ol>
+          <li>
+            <p>
+              Calculate the momentum of the electron.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use your result from part (a) to calculate the wavelength of the electron.
+            </p>
+          </li>
+          <li>
+            <p>
+              Draw a sketch of the wavefunction <m>\psi</m> corresponding to this state,
+              and indicate the locations where you would never expect to find the electron.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use your answers from parts (b) and (c) to calculate the width of the potential well <m>b</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Whirl-a-Tune and quantization</title>
+    <statement>
+      <p>
+        Take your
+        <q>whirl-a-tune</q>
+        tube and hold the end with the little neck.
+        Then whirl the tube slowly over your head and listen for a tone.
+        Whirl faster and slower and note the pitch that you hear.
+        Can you get any frequency or just certain discrete tones?
+        Explain briefly why only certain frequencies are heard.
+        The
+        <q>quantization</q>
+        of frequencies that you hear in this case involves the same sort of wave mechanics as the quantization of energy levels in a (small) confined system.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_uncertainty">
+    <title>Uncertainty</title>
+    <statement>
+      <p>
+        A wide beam of particles with mass <m>m</m> and horizontal momentum
+        <m>\vec{p}_1</m> is sent toward a vertical slit of width <m>a</m>.
+        Consider one particle that you know makes it through the slit,
+        but you know absolutely nothing else about the particle.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_uncertainty">A</xref></caption>
+        <image width="73%" source="images/uncertainty"/>
+      </figure>
+      <ol>
+        <li>
+          <p>
+            What is the approximate uncertainty in the vertical position of the particle right after it passes through the slit? (Don't make this harder than it is;
+            the answer should be obvious.)
+          </p>
+        </li>
+        <li>
+          <p>
+            Determine the approximate minimum uncertainty in the vertical momentum of the particle right after it passes through the slit.
+            <figure>
+              <caption>Problem <xref ref="prob_uncertainty">A</xref></caption>
+              <image width="73%" source="images/uncertainty2"/>
+            </figure>
+          </p>
+        </li>
+        <li>
+          <p>
+            If the particle is detected on a faraway screen,
+            show that you expect to find particles hit the screen over a range of angles <m>\pm \theta</m>,
+            where <m>\theta \simeq \tan^{-1}[\lambda/(2\pi a)]</m>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_moreuncertainty">
+    <title>More uncertainty</title>
+    <statement>
+      <p>
+        The position of a macroscopic particle of mass
+        <m>0.04\Xunits{kg}</m> is measured to an accuracy of <m>\approx 10^{-12}\Xunits{m}</m>.
+        (This can actually be done using interferometers.)
+        Compute the minimum uncertainty in the velocity of the object.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Magic Springs and the Particle-in-a-Box</title>
+    <statement>
+      <p>
+        Hold both ends of your Magic Spring,
+        and get standing waves in the first, second,
+        and third lowest frequency modes.
+        Sketch the wave patterns and compare them to the wave functions for the three lowest energy states of a
+        <q>particle in a box.</q>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Schr&#xf6;dinger equation for a classically allowed
+    situation</title>
+    <statement>
+      <p>
+        Consider a particle of mass <m>m</m> in a region in which the potential energy is constant,
+        i.e., <m>U(x)=U_0</m>,
+        and assume that the total energy of the particle <m>E</m> is greater than the potential energy,
+        i.e., <m>E>U_0</m>.
+        (This is the case for classically allowed motion.)
+        To determine the wave function we must find a function <m>\psi(x)</m> that satisfies the one-dimensional Schr&#xf6;dinger equation
+        <me>
+          -\frac{\hbar^2}{2m} \frac{d^2\psi(x)}{dx^2} + U(x)\psi(x) = E\psi(x)
+        </me>.
+      </p>
+      <p>
+        In this problem you will try three
+        <q>guesses</q>
+        for <m>\psi(x)</m> and see if they satisfy the Schr&#xf6;dinger equation.
+        The three
+        <q>guesses</q>
+        are
+        <ul>
+          <li>
+            <p>
+              <m>\psi_1(x) = Ax^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\psi_2(x) = B\sin(kx)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\psi_3(x) = Ce^{-\kappa x}</m>,
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        where <m>A</m>, <m>B</m>, <m>C</m>,
+        <m>k</m>, and <m>\kappa</m> are undetermined real constants.
+        <ol>
+          <li>
+            <p>
+              Rearrange the Schr&#xf6;dinger equation so that the second derivative
+              <m>d^2\psi/dx^2</m> is alone on the left.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_1(x)</m> into the Schr&#xf6;dinger equation and see if there is any choice for the constant <m>A</m> that will make
+              <m>\psi_1(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_2(x)</m> into the Schr&#xf6;dinger equation and see if there is any choice for the constants <m>B</m> and <m>k</m> that will make
+              <m>\psi_2(x)</m> satisfy the equation for all values of <m>x</m> .
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_3(x)</m> into the Schr&#xf6;dinger equation and see if there is any choice for the constants <m>C</m> and <m>\kappa</m> that will make
+              <m>\psi_3(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              You should have found that
+              <m>\psi_2(x)</m> can be a solution for the proper choice of <m>k</m>.
+              Determine the wavelength of the oscillations in terms of <m>\hbar</m>,
+              <m>m</m>,
+              <m>E</m>,
+              and <m>U_0</m>. (i.e., solve for <m>k</m> and remember from the waves unit that
+              <m>k=2\pi/\lambda</m>.) Is your result consistent with that predicted from the de<nbsp/>Broglie relationship? (Hint:
+              <m>E-U_0</m> is the kinetic energy <m>K = p^2/2m</m>.
+              Re-write things in terms of the momentum and the answer should drop into your lap.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Schr&#xf6;dinger equation for classically forbidden
+    situation</title>
+    <statement>
+      <p>
+        Consider a particle of mass <m>m</m> in a region with a constant potential energy <m>U_0</m>,
+        and assume that the total energy of the particle <m>E</m> is <em>less</em>
+        than the potential energy, i.e., <m>E\lt U_0</m>.
+        (This isn't possible for classical motion, but continue anyway.)
+        To determine the wave function we must find a function <m>\psi(x)</m> that satisfies the one-dimensional Schr&#xf6;dinger equation
+        <me>
+          -\frac{\hbar^2}{2m} \frac{d^2\psi(x)}{dx^2} + U(x)\psi(x) = E\psi(x)
+        </me>.
+      </p>
+      <p>
+        In this problem you will try three
+        <q>guesses</q>
+        for <m>\psi(x)</m> and see if they satisfy the Schr&#xf6;dinger equation.
+        The three
+        <q>guesses</q>
+        are
+        <ul>
+          <li>
+            <p>
+              <m>\psi_1(x) = Ax^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\psi_2(x) = B\sin(kx)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              and <m>\psi_3(x) = Ce^{-\kappa x}</m>,
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        where <m>A</m>, <m>B</m>, <m>C</m>,
+        <m>k</m>, and <m>\kappa</m> are undetermined real constants.
+        <ol>
+          <li>
+            <p>
+              Rearrange the Schr&#xf6;dinger equation so that the second derivative
+              <m>d^2\psi/dx^2</m> is alone on the left.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_1(x)</m> into the Schr&#xf6;dinger equation and see if there is any choice for the constant <m>A</m> that will make
+              <m>\psi_1(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_2(x)</m> into the Schr&#xf6;dinger equation and see if there is any choice for the constants <m>B</m> and <m>k</m> that will make
+              <m>\psi_2(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_3(x)</m> into the Schr&#xf6;dinger equation and see if there is any choice for the constants <m>C</m> and <m>\kappa</m> that will make
+              <m>\psi_3(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_tunneltime">
+    <title>Tunneling and time-energy uncertainty</title>
+    <statement>
+      <p>
+        Consider an electron hitting a barrier.
+        Assume the electron has an energy <m>E = 50\Xunits{eV}</m>,
+        and the barrier has a height <m>U = 100\Xunits{eV}</m>.
+        Semi-classically, to tunnel through the barrier, the electron must
+        <q>borrow</q>
+        enough energy to get over the barrier,
+        and must hold this energy long enough to travel the width of the barrier.
+        The best-case scenario is if the energy fluctuates up to a value of <m>2U - E</m> or <m>150\Xunits{eV}</m>.
+        (See
+        <q>Optional problem</q>
+        below if you want to see where this comes from.)
+        <ol>
+          <li>
+            <p>
+              Using the energy-time uncertainty relation <m>\Delta E \Delta t \approx \hbar</m>,
+              approximate the typical duration of the energy fluctuation (i.e., determine <m>\Delta t</m>).
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the classical velocity of the electron in the barrier region if it has an energy of <m>150\Xunits{eV}</m>.
+              (Warning: the kinetic energy of the electron is not <m>150\Xunits{eV}</m> here.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the maximum width <m>L</m> of the barrier such that the electron will make it through in a time <m>\Delta t</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The width <m>L</m> that you have just determined is a width for which you would expect a reasonable probability for an electron to tunnel through a barrier.
+              You can calculate the transmission probability <m>T</m> explicitly by <m>T = e^{-2\alpha L}</m>,
+              where <m>\alpha = \sqrt{2m(U-E)/\hbar^2}</m>.
+              Use your value of <m>L</m> and the information given above to verify that you get a reasonable value for <m>T</m>. (by
+              <q>reasonable,</q>
+              we mean that you should get a probability greater than 0.1, but,
+              of course, it must be less than 1.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Optional for mathophiles <ellipsis/></title>
+    <statement>
+      <p>
+        (You don't have to hand this in.) For the preceding
+        <q>A</q>
+        problem, show that the semi-classical approach discussed for tunneling gives the largest value of the barrier width <m>L</m> if the particle borrows enough energy
+        <m>\Delta E</m> to get to an energy of <m>(2U - E)</m>.
+        Hint: Use the approach from the previous problem to find the maximum barrier width <m>L</m> if the particle fluctuates up to an energy of <m>E_{ high}</m>.
+        Then take the derivative <m>dL/dE_{ high}</m> and set this equal to zero to figure out the optimal <m>E_{ high}</m>.
+        Note: conceptually,
+        the optimal energy is a small enough energy such that <m>\Delta t</m> is relatively long,
+        but large enough such that the electron still has some kinetic energy while traveling across the barrier.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Semi-infinite square-well potential</title>
+    <statement>
+      <p>
+        Download the Excel worksheet <c>semi-finite.xls</c> from either the <em>Handouts</em>
+        page or from the Calendar page.
+        This sheet shows the calculations for determining the wavefunctions for a potential well that is infinite at <m>x=0</m> but of finite magnitude on the right side of the well
+        (which is at <m>x=5</m> in this problem).
+        You'll see two graphs: the top one shows the semi-infinite potential well
+        (in purple)
+        along with a non-normalized plot of the calculated wavefunction so you can see it along with the potential.
+        The bottom graph shows the normalized wavefunction,
+        corresponding to the second-to-last column in the worksheet.
+      </p>
+      <p>
+        When you bring up the worksheet,
+        the energy will be set for the value for the ground state.
+        Some questions:
+        <ol>
+          <li>
+            <p>
+              Sketch or print out
+              (just the first page!)
+              the wavefunctions that are displayed for the ground state along with at least two of the excited states.
+              To display the 1<m>^{ st}</m> and <m>2^{ nd}</m> excited states,
+              type in 0.64282 and 1.4144 respectively in the framed box for energy.
+            </p>
+          </li>
+          <li>
+            <p>
+              What happens if you type in an energy that <em>isn't</em>
+              one of the well-defined energies for the problem?
+              Try it out, and comment on what happens.
+              Had we not told you what the allowed energies were,
+              how might you figure them out? (You'll be doing this in lab later this semester.)
+              <em>Continued</em> <m>\rightarrow</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              For any of the allowed states,
+              show that the state plotted in the bottom graph is normalized.
+              Hint: we have already created a column for the square of the normalized wavefunction
+              (the right-most column).
+              You might want to take advantage of the <c>sum(start:end)</c> routine in Excel.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Classically allowed and classically forbidden
+    probabilities</title>
+    <statement>
+      <p>
+        Load the <c>semi-finite.xls</c> worksheet
+        (the same one from the previous problem).
+        The ground state should be displayed initially.
+        <ol>
+          <li>
+            <p>
+              If a measurement were done on this system,
+              what would be the probability that the particle would be found in the region <m>x \lt 5</m>?
+              Explain briefly how you calculated this from the Excel worksheet.
+              <em>Hint:</em> Remember that for a continuous wavefunction <m>\psi(x)</m>,
+              the probability of finding the particle in a particular region is <m>\int_{x_1}^{x_2} P(x)\, dx = \int |\psi (x)|^2\, dx</m>.
+              However, we don't actually have a wave function to integrate;
+              we have a numerical solution instead.
+              But we can do a <em>Riemann Sum</em>
+              and add up the contributions:
+              <m>\sum_i P(x_i)\, \Delta x = \sum |\psi(x_i)|^2\, \Delta x</m>.
+              You'll have to determine what
+              <m>\Delta x</m> is in this Excel worksheet.
+            </p>
+          </li>
+          <li>
+            <p>
+              What would be the probability that the particle would be found in the region <m>x > 5</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              What would be the answer to questions (a) and (b) if this was a classical particle in a semi-infinite square-well potential with energy less than <m>U_0</m> (i.e., no quantum effects)?
+            </p>
+          </li>
+          <li>
+            <p>
+              Answer questions (a) and (b) again,
+              but for the second excited state
+              (with <m>E = 1.4144</m>).
+              Compare your answers with those for the ground state.
+              Do the results make sense, considering the higher energy?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              What do you think would happen if the potential dropped back to 0 at <m>x=6</m>?
+              Would the particle remain trapped indefinitely?
+              Explain why or why not, and refer to the graphs to support your answer.
+              (You might want to sketch them or print them out.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_psi-u">
+    <title>Wavefunctions and potential energy</title>
+    <statement>
+      <p>
+        The illustrated graph gives the wavefunction for bound state of an electron in some one-dimensional potential well.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_psi-u">A</xref></caption>
+        <image width="73%" source="images/wavefunction"/>
+      </figure>
+      <p>
+        Make a qualitative sketch of the potential energy <m>U(x)</m> versus <m>x</m> that could give rise to this wavefunction.
+        Include an indication of the total energy <m>E</m> on your sketch.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_wavefn">
+    <title>Wavefunctions and probabilities</title>
+    <statement>
+      <p>
+        Using the sketch below, of the wavefunction <m>\psi (x)</m>,
+        identify which letters indicate locations where the particle is: (a) most likely to be found and (b) least likely to be found.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_wavefn">A</xref></caption>
+        <image width="73%" source="images/wavefunction2"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Barrier tunneling:  Calculating approximate
+    probabilities</title>
+    <statement>
+      <p>
+        A <m>15\Xunits{eV}</m> electron is incident on a potential barrier of height
+        <m>22\Xunits{eV}</m> and width of <m>0.05\Xunits{nm}</m>.
+        <ol>
+          <li>
+            <p>
+              Use the transmission probability discussed in part (d) of Problem <xref ref="prob_tunneltime">A</xref>
+              to estimate the order of magnitude of the probability that the electron will tunnel through the barrier.
+            </p>
+          </li>
+          <li>
+            <p>
+              If one million electrons with energy <m>15\Xunits{eV}</m> hit this barrier,
+              roughly how many of them would you expect to get through?
+            </p>
+          </li>
+          <li>
+            <p>
+              Repeat parts (a) and (b) for a barrier width of <m>0.5\Xunits{nm}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Annoying your roommate, Part 2</title>
+    <statement>
+      <p>
+        or <em>Superposition of states.</em>
+        Take your slide whistle and with the slide most or all the way out,
+        blow gently into the whistle.
+        As we discussed in the previous unit,
+        the note that you hear is due to the fundamental mode of the slide whistle.
+        If you blow harder, the pitch will jump to a higher value,
+        corresponding to the second standing-wave mode.
+      </p>
+      <p>
+        It is possible to blow hard enough <mdash/> but not too hard <mdash/> such that you hear two notes at the same time.
+        Do this, and comment on what you hear.
+        Now, consider the analogous quantum problem.
+        If these were two matter waves instead of sound waves,
+        what would the different pitches that you hear correspond to?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Life in a quantum world</title>
+    <statement>
+      <p>
+        Last semester we asked you to describe some relativistic effects that you would notice if the physical
+        <q>speed limit</q>
+        of light were <m>4\Xunits{mph}</m> instead of <m>3 \times 10^8\Xunits{m/s}</m>.
+        Now imagine that the quantum constant <m>\hbar</m> were 1 Joule-sec.
+        <ol>
+          <li>
+            <p>
+              The uncertainty principle in this world would be
+              <m>\sigma_x \sigma_p \geq \frac{1}{2}\Xunits{kg</m>\cdot<m>m</m>^2<m>/s}</m>.
+              Imagine that someone throws a ball to you.
+              Describe what you would experience trying to catch the ball.
+            </p>
+          </li>
+          <li>
+            <p>
+              Consider the energy of a photon.
+              With light frequencies still in the <m>10^{14}\Xunits{Hz}</m> range,
+              describe how it would feel to be sunbathing on a beach.
+            </p>
+          </li>
+          <li>
+            <p>
+              What would your approximate de<nbsp/>Broglie wavelength be when walking?
+              What would happen when you walk through a doorway?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_transition">
+    <title>Transitions</title>
+    <statement>
+      <p>
+        The sketches below show the state of a two-level atom and possibly a photon.
+        For each
+        <q>Before</q>
+        sketch make a corresponding
+        <q>After</q>
+        sketch and name the process.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_transition">A</xref></caption>
+        <image width="65%" source="images/transitions"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Population inversion</title>
+    <statement>
+      <p>
+        Explain briefly why a population inversion is necessary for the operation of a laser.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Superconductors</title>
+    <statement>
+      <p>
+        (Do in Problem Session) Here we investigate some magnetic properties of superconductors.
+        <ol>
+          <li>
+            <p>
+              Closely observe the little cube hovering over the disk.
+              Comment on what you observe.
+              What evidence do you have that this is a superconductor?
+              Can you make the cube spin?
+            </p>
+          </li>
+          <li>
+            <p>
+              Explain how the superconductor can levitate the magnet.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Flipping magnets</title>
+    <statement>
+      <p>
+        Find a friend to help you explore magnetic resonance.
+        Take your magnet and tie string around it so it is supported in the center and hangs horizontally when you hold the string above and below the magnet.
+        Have your friend bring his/her magnet nearby and note that your magnet tries to align.
+        Keeping the string fairly tight,
+        use your hand to twist the magnet slightly.
+        Are you putting energy into the system?
+        What happens when you release the magnet?
+        On the atomic scale, where does this released energy go?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_spinflip">
+    <title>Electron spin resonance</title>
+    <statement>
+      <p>
+        What is the wavelength of a photon that will induce a transition of an electron spin from parallel to anti-parallel orientation in a magnetic field of magnitude 0.20 T? (From Halliday, Resnick,
+        and Walker p.<nbsp/>1048.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_nmr">
+    <title>Nuclear magnetic resonance</title>
+    <statement>
+      <p>
+        Electromagnetic waves with frequency
+        <m>f = 34\Xunits{MHz}</m> illuminate a sample that contains hydrogen atoms.
+        Resonance is observed when the strength of the constant external magnetic field equals 0.78 T. Calculate the strength of the local magnetic field at the site of the protons that are undergoing spin flips,
+        assuming the external and local fields are parallel there. (adapted from Halliday, Resnick,
+        and Walker p.<nbsp/>1048.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Flipping inside atoms</title>
+    <statement>
+      <p>
+        The proton, like the electron,
+        has a spin quantum number <m>s</m> of 1/2.
+        In the hydrogen atom in its ground state (<m>n = 1</m> and <m>l = 0</m>),
+        there are two energy levels,
+        depending on whether the electron and proton spins are parallel or anti-parallel.
+        If the electron of an atom has a spin flip from the state of higher energy to that of lower energy,
+        a photon of wavelength 21 cm is emitted.
+        Radio astronomers observe this 21 cm radiation coming from deep space.
+        What is the effective magnetic field
+        (due to the magnetic dipole moment of the proton)
+        experienced by the electron emitting this radiation? (From Halliday, Resnick,
+        and Walker p.<nbsp/>1048.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>MRI</title>
+    <statement>
+      <p>
+        Assume that the magnetic field along a line passing through a patient's brain in an MRI scan is described by the function <m>B(x) = 0.5 + 0.6x</m>,
+        where <m>B</m> is in Tesla and <m>x</m> is in meters.
+        <ol>
+          <li>
+            <p>
+              What is the location in the brain where protons will flip in response to a 30 MHz oscillating magnetic field? (Give your answer as <m>x = \mbox{\underline{\hspace{0.2in}}} \Xunits{m}</m>.)
+            </p>
+          </li>
+          <li>
+            <p>
+              If you want to probe a possible tumor at a position of <m>x = 0.50\Xunits{m}</m>,
+              at what frequency should you oscillate the magnetic field?
+            </p>
+          </li>
+          <li>
+            <p>
+              For your answer in part (b),
+              what is the energy of the photons that are probing your patient (in eV)?
+              Considering that the weakest molecular bonding energies are around 0.1 eV, is this safe for your patient?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Particle decay</title>
+    <statement>
+      <p>
+        This exercise simulates the conversion of rest and kinetic energies in a particle decay.
+        Take 10 coins
+        (or any 10 objects <mdash/> pencils,
+        bottle caps, small elephants, ...)
+        and lump them together on a table or desktop.
+        Each item represents 1 unit of energy.
+        <ol>
+          <li>
+            <p>
+              Assume your pile represents a single massive particle with <m>m = 10</m> in some units.
+              Now assume this particle decays in to 2 particles with mass 5 and 4 units.
+              Split your pile up into these two particles.
+              How many extra items are left?
+              What do these extra items represent?
+            </p>
+          </li>
+          <li>
+            <p>
+              Start again with a single pile representing a single particle of rest energy 10 units.
+              Now have the particle decay into two particles,
+              one of rest energy 5 units,
+              the other of 6 units. (No borrowing from friends!) Why can't you have a decay result in a larger total rest energy?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Exchanging virtual particles</title>
+    <statement>
+      <p>
+        (OPTIONAL): Find a friend and a pen.
+        The pen represents a virtual force carrier
+        (messenger particle)
+        that will be exchanged between you and your friend.
+        <ol>
+          <li>
+            <p>
+              Hold a pen in one hand, aiming the point of the pen toward your friend.
+              The direction the pen points is the direction of the momentum of the messenger.
+              Now give the pen to your friend and conserve momentum.
+              To do this, you should each modify your motion to reflect the momentum exchange.
+              For example, if you give away leftward momentum,
+              you must move rightward to compensate.
+              Describe your relative motions after the exchange of pen.
+            </p>
+          </li>
+          <li>
+            <p>
+              Repeat, but have the pen initially pointing away from your friend.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>The expanding universe</title>
+    <statement>
+      <p>
+        Take a balloon and draw some stars, planets,
+        and galaxies on the surface of the deflated balloon.
+        <ol>
+          <li>
+            <p>
+              Now blow up the balloon and watch how the distance between adjacent galaxies changes as the universe expands.
+              Record your observations.
+            </p>
+          </li>
+          <li>
+            <p>
+              With the balloon partially inflated,
+              choose a reference galaxy.
+              Find two objects nearby,
+              with one about as twice as far from the reference galaxy as the other.
+              Measure the distance.
+              Then blow up the balloon and measure the distances again.
+              How do their rates of change of distance compare?
+              Compare this to Hubble's Law.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>A moving wave</title>
+    <statement>
+      <p>
+        A wave is described by <m>\psi(z,t) = 5 \cos\left(\pi z/2 + \pi t/4\right)</m>,
+        where <m>z</m> is in meters, and <m>t</m> is in seconds.
+        <ol>
+          <li>
+            <p>
+              Plot <m>\psi</m> versus <m>z</m> at time <m>t=0</m> between <m>z = -3</m> and <m>z = 3</m>.
+              Make another plot of <m>\psi</m> versus <m>z</m> at time <m>t=1\Xunits{s}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Find a point of zero displacement at <m>t=0</m>.
+              Where is this point of zero displacement at time
+              <m>t=1\Xunits{s}</m>? (Take into consideration the direction the wave is traveling.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Use your answers to parts (a) and (b) to calculate the speed of the wave.
+              Does your answer agree with the speed determined from <m>\omega/k</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_TwoAntennas">
+    <title>Two antennas</title>
+    <statement>
+      <p>
+        Two antennas are <m>\lambda/4</m> apart.
+        Each emits a wave with the same amplitude and the same phase.
+        A receiver is located far away from the antennas,
+        but is placed such that the receiver and the antennas fall on a single straight line.
+        Individually,
+        each antenna gives a wave of amplitude <m>A</m> at the receiver.
+        Calculate, in terms of <m>A</m>,
+        the total amplitude at the receiver when both antennas are emitting.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Find the third maximum</title>
+    <statement>
+      <p>
+        Laser light of wavelength <m>633\Xunits{nm}</m> shines on a double slit arrangement with a slit separation of <m>0.003\Xunits{mm}</m>.
+        The interference pattern is viewed on a screen several meters away.
+        At what angle <m>\theta</m> does one observe the third maximum away from the central maximum?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_speakers">
+    <title>Two loudspeakers</title>
+    <statement>
+      <p>
+        Two loudspeakers, <m>3.0\Xunits{m}</m> apart,
+        are driven at the same frequency and in phase.
+        They emit sound with a wavelength of <m>2.0\Xunits{m}</m>.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_speakers">A</xref></caption>
+        <image width="73%" source="images/speakers"/>
+      </figure>
+      <ol>
+        <li>
+          <p>
+            Point <em>P</em> is <m>4.0\Xunits{m}</m> from the line joining the speakers and is directly in front of one speaker.
+            Is the intensity at <em>P</em> a maximum, a minimum, or neither?
+          </p>
+        </li>
+        <li>
+          <p>
+            Point <em>Q</em> is <m>5.0\Xunits{m}</m> from the midpoint between the speakers and equidistant from them.
+            The intensity at <em>Q</em> when only one speaker is on is <m>I_0</m>,
+            and when only the other speaker is on the intensity at
+            <em>Q</em> is <m>4I_0</m>.
+            Find the intensity at <em>Q</em>
+            when both speakers are on.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_speakers2">
+    <title>Three loudspeakers</title>
+    <statement>
+      <p>
+        Three loudspeakers are arranged on a line and separated by <m>3.0\Xunits{m}</m>,
+        as shown in <xref ref="fig_speakers2">Figure</xref>.
+        They are driven at the same frequency and in phase.
+        They emit sound with a wavelength of <m>2.0\Xunits{m}</m>.
+        Point <em>P</em> is <m>4.0\Xunits{m}</m> from the line joining the speakers and is directly in front of the central speaker.
+        The sound intensity at <em>P</em>
+        when any one speaker is on is <m>I_0</m>.
+      </p>
+      <figure xml:id="fig_speakers2">
+        <caption>Problem <xref ref="prob_speakers2">A</xref></caption>
+        <image width="73%" source="images/speakers2"/>
+      </figure>
+      <ol>
+        <li>
+          <p>
+            Draw a phasor diagram representing the sound waves at point <em>P</em>.
+            Include a phasor for the wave from each speakers,
+            and a phasor for the total wave that results from the superposition of these three waves.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the intensity
+            (in terms of <m>I_0</m>)
+            at <em>P</em> when all three speakers are on.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_wave_to_eq">
+    <title>Find the formula</title>
+    <statement>
+      <p>
+        The illustration shows two snapshots of a traveling wave,
+        one taken at <m>t=0\Xunits{s}</m> and one taken at <m>t = 0.25\Xunits{s}</m>.
+        Determine a formula for the function <m>y(x,t)</m> that describes this traveling wave.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_wave_to_eq">A</xref></caption>
+        <image width="73%" source="images/wave_to_eq"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_wave_to_phasor_1">
+    <title>Adding waves graphically</title>
+    <statement>
+      <p>
+        The graph in <xref ref="fig_wave_to_phasor_1">Figure</xref>
+        shows a snapshot of two traveling waves at the same instant of time.
+        The waves have the same speed and frequency.
+        Add these two waves graphically to find their sum.
+      </p>
+      <figure xml:id="fig_wave_to_phasor_1">
+        <caption>Problem <xref ref="prob_wave_to_phasor_1">A</xref></caption>
+        <image width="73%" source="images/wave_to_phasor"/>
+      </figure>
+      <p>
+        <em>NOTE:</em> There is no calculation to be performed in this graphical addition.
+        You should be thinking about this as filling in entries in a table like the following by reading values from the graph,
+        and then plotting the last column, <m>y_{ sum}</m> vs.
+        <m>x</m> on the graph.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>y_{ solid}</m></cell>
+          <cell><m>y_{ dotted}</m></cell>
+          <cell><m>y_{ sum}</m></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  >-0.5</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>-0.25</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>0.0</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>0.25</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>\mbox{etc.}</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_wave_to_phasor_2">
+    <title>Adding waves with phasors</title>
+    <statement>
+      <p>
+        The graph in <xref ref="fig_wave_to_phasor_2">Figure</xref>
+        shows a snapshot of two traveling waves at the same instant of time.
+        The waves have the same speed and frequency.
+      </p>
+      <figure xml:id="fig_wave_to_phasor_2">
+        <caption>Problem <xref ref="prob_wave_to_phasor_2">A</xref></caption>
+        <image width="73%" source="images/wave_to_phasor"/>
+      </figure>
+      <ol>
+        <li>
+          <p>
+            Draw two phasors representing these two waves.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the amplitude of the superposition of these waves.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the phase shift of the resultant wave with respect to solid wave in the illustration.
+          </p>
+        </li>
+        <li>
+          <p>
+            Compare your resultant amplitude and phase with the graphical result you got in Problem <xref ref="prob_wave_to_phasor_1">A</xref>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_parking_lot_2">
+    <title>Parking Lot</title>
+    <statement>
+      <p>
+        John, the aspiring physics student/parking attendant
+        (see Supp.
+        Ch. 3, Problem # <xref ref="prob_parking_lot_1"></xref>)
+        gets a job at a new hotel that has a more conventional parking lot.
+        The parking lot has a rectangular shape on an <m>x</m>-<m>y</m> coordinate system with dimensions <m>100\Xunits{m}\times 50\Xunits{m}</m>,
+        and the lot is divided into three sections,
+        <em>A</em>, <em>B</em>, and <em>C</em>
+        (see figure).
+        Although the lot is more conventional, John still tells car owners the whereabouts of their cars in terms of probabilities and probability densities,
+        only now the probability densities are given in terms of
+        <em>probability per unit area</em>
+        instead of of <em>probability per unit length</em>,
+        and they are functions of two variables, <m>x</m> and <m>y</m>.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_parking_lot_2">A</xref></caption>
+        <image width="73%" source="images/parking_lot_2"/>
+      </figure>
+      <ol>
+        <li>
+          <p>
+            Mr.<nbsp/>Vanderbilt is told that his car
+            <q>could be anywhere in the lot,</q>
+            which means that the probability density is constant everywhere (i.e., there is no difference between the sections).
+            Calculate the value of this uniform probability density <m>P(x,y)</m> for Mr.<nbsp/>Vanderbilt to find his car at a position <m>(x,y)</m> on the coordinate system of the lot.
+            (Your answer should be in units of probability/m<m>^2</m>.)
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the probability that Mr.<nbsp/>V's car is in section <em>A</em> of the lot.
+          </p>
+        </li>
+        <li>
+          <p>
+            Mrs.<nbsp/>Reeve is told that the probability density to find her car is a constant <m>P_A</m> in section <em>A</em>,
+            a second constant <m>P_B = 4P_A/3</m> in section <em>B</em>,
+            and a third constant <m>P_C = 2P_A/3</m> in section <em>C</em>.
+            Find the constants <m>P_A</m>,
+            <m>P_B</m>, and <m>P_C</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Based on your results from part (c),
+            calculate the probability that Mrs.<nbsp/>Reeve's car is located in the lower left quarter of the lot,
+            i.e, in the region where <m>0\leq x\leq 50</m> and <m>0\leq y \leq 25</m>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_parking_lot_3">
+    <title>Daughter of parking lot</title>
+    <statement>
+      <p>
+        John, the aspiring physics student/parking attendant
+        (see Problems Supp.
+        Ch.<nbsp/>3 # <xref ref="prob_parking_lot_1"></xref>
+        and <em> <xref ref="prob_parking_lot_2">A</xref></em>)
+        gets a job at this one has a circular parking lot with radius
+        <m>40\Xunits{m}</m> laid out on a <m>r</m>-<m>\theta</m> polar coordinate system,
+        and the lot is divided into two sections,
+        <em>A</em> and <em>B</em>.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_parking_lot_3">A</xref></caption>
+        <image width="73%" source="images/parking_lot_3"/>
+      </figure>
+      <ol>
+        <li>
+          <p>
+            Mr.<nbsp/>Vanderbilt is told that his car
+            <q>could be anywhere in the lot,</q>
+            which means that the probability density is constant everywhere (i.e., there is no difference between the sections).
+            Calculate the value of this uniform probability density
+            <m>P(r,\theta)</m> for Mr.<nbsp/>Vanderbilt to find his car at a position
+            <m>(r,\theta)</m> on the coordinate system of the lot.
+            (Your answer should be in units of probability/m<m>^2</m>.)
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the probability that Mr.<nbsp/>V's car is in section <em>A</em> of the lot.
+          </p>
+        </li>
+        <li>
+          <p>
+            Mrs.<nbsp/>Reeve is told that the probability density to find her car is a constant <m>P_A</m> in section <em>A</em>
+            and a second constant <m>P_B = P_A/2</m> in section <em>B</em>.
+            Find the constants <m>P_A</m> and <m>P_B</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Based on your results from part (c),
+            calculate the probability that Mrs.<nbsp/>Reeve's car is located within
+            <m>30\Xunits{m}</m> of the center of the lot.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>More practice with complex numbers</title>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Given the number <m>z_1 = 0.25</m>,
+            determine the complex conjugate of <m>z_1</m>,
+            i.e., determine <m>z_1^\ast</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Given the number <m>z_2 = 0.25i</m>,
+            determine the complex conjugate of <m>z_2</m>,
+            i.e., determine <m>z_2^\ast</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Given the number <m>z_3 = 0.5 + 0.3i</m>,
+            determine the magnitude-squared of <m>z_3</m>,
+            i.e., determine <m>\vert z_3\vert^2</m>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_ComplexPractice">
+    <title>Practice with the complex exponential</title>
+    <statement>
+      <p>
+        This is a series of exercises that review material from your calculus courses,
+        and to give you practice with imaginary numbers in an exponent.
+        Recall from your calculus classes the following Taylor series expansions:
+        <md>
+          <mrow>e^x =\mathstrut \amp   1+ x +\frac{x^2}{2!}+\frac{x^3}{3!}+ \frac{x^4}{4!} + \cdots</mrow>
+          <mrow>\cos x =\mathstrut \amp  1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \cdots</mrow>
+          <mrow>\sin x =\mathstrut \amp   x- \frac{x^3}{3!} + \frac{x^5}{5!} + \cdots</mrow>
+        </md>
+      </p>
+      <ol>
+        <li>
+          <p>
+            Use the expansion for <m>e^x</m> from above,
+            and write a series for expression for <m>e^{i\theta}</m>,
+            where <m>\theta</m> is a real number.
+            In your answer, don't leave any <m>i^2</m>,
+            <m>i^3</m> or <m>i^4</m> factors, (i.e., substitute in the result that <m>i^2=-1</m> whenever possible).
+          </p>
+        </li>
+        <li>
+          <p>
+            Regroup the terms in your answer from part (a) to show that
+            <me>
+              e^{i\theta}=\cos\theta +i\sin\theta
+            </me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use the expansion for <m>e^x</m> from above,
+            and write a series for expression for <m>e^{-i\theta}</m>,
+            where <m>\theta</m> is a real number.
+            In your answer, don't leave any <m>i^2</m>,
+            <m>i^3</m> or <m>i^4</m> factors, (i.e., substitute in the result that <m>i^2=-1</m> whenever possible)
+          </p>
+        </li>
+        <li>
+          <p>
+            Regroup the terms in your answer from part (c) to show that
+            <me>
+              e^{-i\theta}=\cos\theta - i\sin\theta
+            </me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Add the expressions in for <m>e^{i\theta}</m> and
+            <m>e^{-i\theta}</m> from the results of parts (b) and (d) to show that
+            <me>
+              \cos\theta = \frac{e^{i\theta} + e^{-i\theta}}{2}
+            </me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find the difference of the expressions for <m>e^{i\theta}</m> and
+            <m>e^{-i\theta}</m> from the results parts (b) and (d) to show that
+            <me>
+              \sin\theta = \frac{e^{i\theta} - e^{-i\theta}}{2i} = \frac{-i}{2}\left(e^{i\theta} - e^{-i\theta}\right)
+            </me>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the number <m>e^{0.5i}</m> in the form <m>a + ib</m>,
+            where <m>a</m> and <m>b</m> are real numbers.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the number <m>e^{-0.5i}</m> in the form <m>a + ib</m>,
+            where <m>a</m> and <m>b</m> are real numbers.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the number <m>e^{0.5i} + e^{-0.5i}</m> in the form <m>a + ib</m>,
+            where <m>a</m> and <m>b</m> are real numbers.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the number <m>e^{0.5i} - e^{-0.5i}</m> in the form <m>a + ib</m>,
+            where <m>a</m> and <m>b</m> are real numbers.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the number <m>\cos(0.3)</m> in terms of complex exponentials.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the number <m>\sin(0.3)</m> in terms of complex exponentials.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate <m>|e^{0.3i}|^2</m>.
+            Do this two different ways:
+          </p>
+          <ol>
+            <li>
+              <p>
+                Write the complex exponential in the form <m>a + ib</m> and find the magnitude-squared of this number by multiplying <m>a+ib</m> by its complex conjugate.
+              </p>
+            </li>
+            <li>
+              <p>
+                Find the complex conjugate of
+                <m>e^{0.3i}</m> directly (i.e., leave everything in exponential form) and multiply
+                <m>e^{0.3i}</m> by this complex conjugate.
+              </p>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <p>
+            For reference, calculate <m>(e^{0.3i})^2</m>.
+            (Note that this is just squaring rather than taking the magnitude-squared.)
+            How does your answer compare with the result of the previous part?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_timedependence_1">
+    <title>Time-dependent particle-in-box</title>
+    <statement>
+      <p>
+        Assume that an electron is trapped in a one-dimensional box.
+        The energy of the ground state (<m>|1\rangle</m>) is <m>E_1</m> and the energy of the first excited state (<m>|2\rangle</m>) is <m>4E_1</m>.
+        At time <m>t=0</m> the electron is in the state
+        <me>
+          |\psi(t=0)\rangle = \sqrt{\frac{3}{5}}|1\rangle + \sqrt{\frac{2}{5}}|2\rangle
+        </me>.
+        <ol>
+          <li>
+            <p>
+              Calculate the expectation value of the energy for the electron at time <m>t=0</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Write down the time-dependent state <m>|\psi(t)\rangle</m>
+              (with complex exponentials in the coefficients).
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the expectation value of the energy for the electron at an arbitrary time <m>t</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_qm_precess_1">
+    <title>Precessing spins I</title>
+    <statement>
+      <p>
+        In lecture we considered a particle like a proton
+        (with <m>s=1/2</m> and magnetic moment parallel to the spin angular momentum)
+        situated in a magnetic field and initially in the state <m>| +x \rangle</m>,
+        and we worked out the time-dependent probabilities for measurements of the <m>x</m>-component of the spin angular momentum to yield <m>+\hbar/2</m> and <m>-\hbar/2</m>.
+        In this problem you will repeat the calculation done in lecture,
+        but this time for measurements of the <m>y</m>-component of spin angular momentum.
+        Don't panic <mdash/> we'll take you through this step-by-step.
+        <ol>
+          <li>
+            <p>
+              Assume that a particle with magnetic moment <m>\mu</m> starts off at time <m>t=0</m> in the state <m>| +x \rangle</m>;
+              i.e., a measurement of <m>S_x</m> would definitely produce a result of <m>+\hbar /2</m>.
+              Write down the state <m>|\psi(0)\rangle</m> in terms of the
+              <q>spin-up</q>
+              and
+              <q>spin-down</q>
+              states <m>| +z \rangle</m> and <m>| -z \rangle</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now assume that the particle is in a magnetic field <m>\vec{B}=B_0 \widehat{k}</m>.
+              In a field pointing in the positive <m>z</m> direction like this,
+              the states of definite energy are
+              <m>| +z \rangle</m> and <m>| -z \rangle</m>.
+              Write down expressions for the energies of these two states.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use the energies from part (b) to write down an expression for the <em>time-dependent</em>
+              state <m>|\psi(t)\rangle</m>.
+              As a short-hand,
+              feel free to use the frequency <m>\omega \equiv 2\mu B_0/\hbar</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that a measurement of the <m>y</m>-component of the spin will give a value <m>+\hbar/2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that a measurement of the <m>y</m>-component of the spin will give a value <m>-\hbar/2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that the expectation value for measurements of the <m>y</m>-component of spin angular momentum for particles in state
+              <m>|\psi(t)\rangle</m> is <m>(-\hbar/2)\sin(\omega t)</m>,
+              where <m>\omega = 2\mu B/\hbar</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_time_dependent_wavefunctions">
+    <title>Time-dependence of wave functions for particle-in-box</title>
+    <statement>
+      <p>
+        In previous chapters we discussed wavefunctions for particles rather than the abstract state-vector representation we have been using for properties like
+        <q>spin.</q>
+        The time dependence of wavefunctions can be handled in the same way as the time dependence of spin states.
+        First, we write the wavefunction as a normalized linear combination of wavefunctions for states with definite energies,
+        and each piece of the sum gets a factor of <m>e^{-iE_it/\hbar}</m>.
+        Consider a
+        <q>particle in a box</q>
+        that starts in a linear combination of the ground state and the first excited state.
+        The initial wavefunction is
+        <me>
+          \psi(t=0) = \sqrt{\frac{1}{L}}\sin\left(\frac{\pi x}{L}\right)+ \sqrt{\frac{1}{L}}\sin\left(\frac{2\pi x}{L}\right)
+        </me>,
+        and at a later time the wave function is
+        <me>
+          \psi(t) = e^{-iE_1t/\hbar}\sqrt{\frac{1}{L}}\sin\left(\frac{\pi x}{L}\right)+ e^{-iE_2t/\hbar}\sqrt{\frac{1}{L}}\sin\left(\frac{2\pi x}{L}\right)
+        </me>,
+        where <m>E_1 = \frac{h^2}{8mL^2}</m> and
+        <m>E_2 = \frac{h^2}{2mL^2}</m> are the energies of the two lowest states of a particle in a box.
+        In your work for parts (a) and (b) you should leave the energies as <m>E_1</m> and <m>E_2</m>.
+        <ol>
+          <li>
+            <p>
+              Determine the function <m>|\psi(x,t)|^2</m> for the probability density as a function of time for this system.
+            </p>
+          </li>
+          <li>
+            <p>
+              Compare the answer that you got for part (a) here with the results from Supplementary Reading Chapter 2, problem 5 and comment on the similarities.
+              (Hint: you should find that the answer here alternates in time between the three different solutions that you found in Supp.<nbsp/>2-5.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Download the Excel worksheet <c>p_in_box.xls</c> from the calendar page for Lecture 21.
+              This worksheet plots the probability density function that you found in part (b).
+              Try changing the time in the highlighted box at the top <mdash/> try <m>t = 0</m>, 0.1, 0.2, 0.3, 0.4, 0.5, <m>\dots</m> up through 2.1.
+              Comment on what you observe with the graphs and what these results imply about where you would expect to find the particle after measurement of position.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Precessing spins II</title>
+    <statement>
+      <p>
+        In this problem you will complete calculations analogous to those you performed in problem
+        <em><xref ref="prob_qm_precess_1">A</xref></em>,
+        except this time you will start with the same particle in the state <m>| +y \rangle</m>.
+        <ol>
+          <li>
+            <p>
+              Assume that a spin one-half particle with magnetic moment <m>\mu</m> oriented parallel to the spin starts off at time <m>t=0</m> in the state <m>| +y \rangle</m>;
+              i.e., a measurement of <m>S_y</m> would definitely produce a result of <m>+\hbar /2</m>.
+              Write down the state <m>|\psi(0)\rangle</m> in terms of the
+              <q>spin-up</q>
+              and
+              <q>spin-down</q>
+              states <m>| +z \rangle</m> and <m>| -z \rangle</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now assume that the particle is in a magnetic field <m>\vec{B}=B_0 \widehat{k}</m>.
+              In a field pointing in the positive <m>z</m> direction like this,
+              the states of definite energy are
+              <m>| +z \rangle</m> and <m>| -z \rangle</m>.
+              Write down expressions for the energies of these two states.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use the energies from part (b) to write down an expression for the <em>time-dependent</em>
+              state <m>|\psi(t)\rangle</m>.
+              As a short-hand,
+              feel free to use the frequency <m>\omega \equiv 2\mu B_0/\hbar</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that a measurement of the <m>y</m>-component of the spin will give a value <m>+\hbar/2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that a measurement of the <m>y</m>-component of the spin will give a value <m>-\hbar/2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that the expectation value for measurements of the <m>y</m>-component of spin angular momentum for particles in state
+              <m>|\psi(t)\rangle</m> is <m>(\hbar/2)\cos(\omega t)</m>,
+              where <m>\omega = 2\mu B/\hbar</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_efield_from_ring">
+    <title>Electric field from a ring of charge</title>
+    <statement>
+      <p>
+        A ring with a radius <em>R</em>
+        and total charge <em>Q</em>
+        (distributed uniformly)
+        lies in the x-y plane.
+        Determine the electric field at the point <em>P</em>
+        on the z-axis at a height <em>h</em>
+        above the center of the ring.
+        <em>Show all the steps needed to set up and evaluate the integral.</em>
+      </p>
+      <figure xml:id="fig_a102">
+        <caption>Figure for problem <xref ref="prob_efield_from_ring">A</xref>.</caption>
+        <image width="45%" source="images/a102fig"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_phasors_and_waveforms">
+    <title>Phasors and waveforms</title>
+    <statement>
+      <p>
+        The graphs below show snapshots of two traveling waves on a string at the same instant of time.
+        <image width="93%" source="images/a103fig"/>
+        <ol>
+          <li>
+            <p>
+              Draw a phasor diagram which represents the superposition of these two waves.
+              The diagram should be clearly labeled to show what represents
+              <q>Wave A,</q>
+              what represents
+              <q>Wave B,</q>
+              and what represents the superposition of the two (
+              <q>A+B</q>).
+            </p>
+          </li>
+          <li>
+            <p>
+              From the phasor diagram,
+              determine the amplitude of the superposition of waves A and B.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Phasors and waveforms II</title>
+    <statement>
+      <p>
+        The graphs below show snapshots of two traveling waves on a string at the same instant of time.
+      </p>
+      <p>
+        <image width="93%" source="images/a104fig"/>
+        <ol>
+          <li>
+            <p>
+              Draw a phasor diagram which represents the superposition of these two waves.
+              The diagram should be clearly labeled to show what represents
+              <q>Wave A,</q>
+              what represents
+              <q>Wave B,</q>
+              and what represents the superposition of the two (
+              <q>A+B</q>).
+            </p>
+          </li>
+          <li>
+            <p>
+              From the phasor diagram,
+              determine the amplitude of the superposition of waves A and B.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Radio towers</title>
+    <statement>
+      <p>
+        Three equally spaced AM radio towers are located to the left of a receiver as illustrated.
+        The towers broadcast in-phase radio waves of equal amplitude and with wavelength of 500 m.
+      </p>
+      <p>
+        <image width="84%" source="images/a105fig"/>
+        <ol>
+          <li>
+            <p>
+              Draw a phasor diagram representing the combined radio wave at the receiver.
+            </p>
+          </li>
+          <li>
+            <p>
+              Assuming the amplitude of the wave reaching the receiver from each tower individually is <em>A</em>,
+              determine the amplitude of the combined wave at the receiver.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_Feynman_fun">
+    <title>Feynman fun</title>
+    <statement>
+      <p>
+        Fill in the missing particles
+        (including color and/or charge labels where necessary)
+        for the following three Feynman diagrams.
+        <image width="92.5%" source="images/Feynman_fun"/>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Strings and quantum mechanics</title>
+    <statement>
+      <p>
+        This problem compares the time-dependence for a standing wave on a string with the time-dependence of the quantum wave function for a particle in a box.
+        <ol>
+          <li>
+            <p>
+              A string of length <m>L</m> vibrates in its 3rd lowest-frequency mode.
+              Make a sketch of this mode and then write the wavefunction in the form
+              <me>
+                \psi(x) = A \sin (kx)
+              </me>,
+              inserting the value of the wave number <m>k</m> that you determine from the sketch.
+            </p>
+          </li>
+          <li>
+            <p>
+              For waves on strings,
+              the angular frequency <m>\omega</m> is related to the wave number through <m>v = \omega / k</m>.
+              Use this relation to write the time-dependent standing wave function,
+              <me>
+                \Psi(x,t) = A \sin (kx) e^{-i\omega t}
+              </me>,
+              by expressing both <m>\omega</m> and <m>k</m> in terms of constants and properties of the string.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now consider a particle of mass <m>m</m>,
+              confined to 1-D box of length <m>L</m> in its third lowest energy state.
+              Make a sketch of this state and then write the wave function in the form
+              <me>
+                \psi(x) = A \sin (kx)
+              </me>,
+              inserting the value of the wave number <m>k</m> that you determine from the sketch.
+            </p>
+          </li>
+          <li>
+            <p>
+              For a quantum particle,
+              the angular frequency <m>\omega</m> is related to the particle's energy by <m>E=\hbar\omega</m>.
+              For a particle free to move within the box,
+              the energy is all kinetic:
+              <me>
+                E=K = \frac{1}{2}mv^2 = \frac{p^2}{2m}= \frac{(\hbar k)^2}{2m}
+              </me>.
+              Use this relation to write the time-dependent quantum wavefunction,
+              <me>
+                \Psi(x,t) = A \sin (kx) e^{-iEt/\hbar}
+              </me>
+              by expressing both <m>E</m> and <m>k</m> in terms of constants and properties of the particle and the box.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Quantum mass-spring</title>
+    <statement>
+      <p>
+        A quantum mass of <m>2.5 \times 10^{-10}\Xunits{kg}</m> hangs from a quantum spring with spring constant <m>3.5 \times 10^{-5}\Xunits{N/m}</m>.
+        <ol>
+          <li>
+            <p>
+              Recall that classically,
+              the classical angular frequency
+              <m>\omega_c</m> of a mass-spring system is independent of amplitude,
+              and given by <m>\omega_c = \sqrt{k_\text{ sp } /m}</m>.
+              Calculate this oscillator's classical period.
+            </p>
+          </li>
+          <li>
+            <p>
+              The time-dependent quantum wavefunction for this oscillator depends on time as
+              <m>e^{- iEt/\hbar}</m> and thus also oscillates.
+              Calculate the period of the <em>wavefunction's</em>
+              oscillation in its 3rd excited state,
+              and compare to your answer in part (a).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_charges_on_square">
+    <title>A square of charges</title>
+    <statement>
+      <p>
+        Three identical charges <m>q</m> and a fourth charge <m>-q</m> form a square with sides of length <m>a</m>.
+        Find the electric force vector acting on a charge <m>Q</m> placed at the center of the square.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_charges_on_square">A</xref>.</caption>
+        <image width="32%" source="images/charges_on_square"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_two_wires">
+    <title>Parallel currents</title>
+    <statement>
+      <p>
+        Two parallel wires oriented perpendicular to the page are separated by <m>10.0\Xunits{cm}</m>.
+        Each wire carries a current of
+        <m>1.5\Xunits{A}</m> directed out of the page.
+        Determine the magnitude of the total magnetic field at a point
+        <em>P</em> in the figure,
+        a distance <m>12.0\Xunits{cm}</m> above the midpoint of the line connecting the two wires.
+      </p>
+      <figure>
+        <caption>Problem <xref ref="prob_two_wires">A</xref>.</caption>
+        <image width="37%" source="images/two_wires"/>
+      </figure>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_ampere_wire">
+    <title>Magnetic field from a wire</title>
+    <statement>
+      <p>
+        A long straight wire <m>1.0\Xunits{cm}</m> in diameter carries a current of
+        <m>5.0\Xunits{A}</m> which is evenly distributed over its cross-section.
+        Find the magnetic field strength
+        <ol>
+          <li>
+            <p>
+              at a point <m>5.0\Xunits{mm}</m> from the surface of the wire;
+            </p>
+          </li>
+          <li>
+            <p>
+              at the surface of the wire;
+            </p>
+          </li>
+          <li>
+            <p>
+              at a point <m>2.5\Xunits{mm}</m> from the axis of the wire.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_whirly_tube">
+    <title>Whirly Tubes</title>
+    <statement>
+      <p>
+        Get out your whirly tube and give it a whirl.
+        Observe it is possible to get different notes from it,
+        but not any frequency you want;
+        only a certain frequencies seem to be allowed.
+        Let's understand where those are coming from.
+      </p>
+      <p>
+        Your whirly tube has a length of
+        <m>75\Xunits{cm}</m> and is open at both ends.
+        <ol>
+          <li>
+            <p>
+              Sketch the standing wave pattern for the three longest wavelength modes that fit these end conditions.
+            </p>
+          </li>
+          <li>
+            <p>
+              From each sketch,
+              determine the corresponding wavelength <m>\lambda</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Given your answers for (a) and (b),
+              and given the speed of sound in air (<m>340\Xunits{m/s}</m>),
+              determine the frequency of each mode.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now lets check the values you calculated.
+              Go the website <c>plasticity.szynalski.com/tone-generator.htm</c> and enter one of the frequencies you calculated.
+              How does it compare with the sound made when you whirl the tube?
+              Check all three of the frequencies this way.
+            </p>
+          </li>
+          <li>
+            <p>
+              The sound made by the whirly tube may not perfectly matching the calculated frequencies.
+              Some questions: (a) Is the lowest frequency note that you are hearing,
+              in fact, the lowest possible mode?
+              For some tubes, the lowest note that you hear is actually the
+              <em>second</em> lowest mode.
+              So, instead of hearing the lowest three (1, 2 and 3),
+              you might be hearing modes 2, 3 and 4. (b) The antinodes don't occur exactly at the ends of the tube.
+              Adjust the frequency of the online tone generator up or down until the match is better.
+              What does this tell you?
+              Are the anti-nodes separated by a distance greater 75<nbsp/>cm or less than 75<nbsp/>cm?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</exercises>
+</chapter>

@@ -1,0 +1,93 @@
+<section xml:id="sec_quark_color">
+  <title>Quark Color</title>
+  <p>
+    At first glance,
+    the quark model of the hadrons as outlined by Gell-Mann is very appealing in that it seems to explain the occurrence of most of the observed particles.
+    But several problems come forward when a closer look is taken.
+    Consider the three up quarks that make up the
+    <m>\Delta^{++}</m> on <xref ref="ex_delta">page</xref>
+    in <xref ref="chap_particles">Chapter</xref>.
+    The <m>\Delta^{++}</m> is the lowest mass doubly-charged baryon,
+    so presumably the quarks are each in the ground state.<fn>
+    That is, there are other,
+    higher mass baryons with <m>+2</m> charge that are also made up of three up quarks,
+    but these correspond to excited state configurations of the quarks.
+    </fn> But quarks are fermions (spin 1/2) and so the Pauli exclusion principle should apply!
+    How can three identical quarks all occupy the same state?
+  </p>
+  <p>
+    The way around this problem is to postulate that the three up quarks in <m>\Delta^{++}</m>
+    (or the three quarks in any baryon)
+    are not identical, but are each a different
+    <q>color.</q>
+    Now of course they don't actually appear colored,
+    but for the reasons described below we call this extra property of quarks color,
+    and a quark can be red (<m>R</m>) or blue (<m>B</m>) or green
+    (<m>G</m>).
+    The antiquarks come in anti-colors:
+    anti-red (<m>\overline R</m>),
+    anti-blue (<m>\overline B</m>), or anti-green
+    (<m>\overline G</m>).
+    No kidding, we really use these labels.
+  </p>
+  <p>
+    There is a single simple rule about quark color and here it is:
+  </p>
+  <p>
+    <assemblage>
+      <p>
+        <em>The Colorless Rule:</em> No physically observable particle ever carries net color.
+      </p>
+    </assemblage>
+  </p>
+  <p>
+    By never carrying a net color,
+    we mean that the colors of the constituent quarks in a particle must cancel out,
+    so that the composite particle is colorless.
+    This can happen in three ways.
+    <ul>
+      <li>
+        <title>1</title>
+        <p>
+          A particle can contain a colored quark and an anti-quark of opposite color,
+          i.e., <m>R\overline R</m>,
+          <m>B\overline B</m>, or <m>G\overline G</m>.
+        </p>
+      </li>
+      <li>
+        <title>2</title>
+        <p>
+          A particle can contain three quarks,
+          one of each color (i.e., <m>RBG</m>).
+          The colors cancel out in much the same way as the three primary colors of light mix to give white (colorless) light.
+          This is the reason we say quarks carry color rather than using some other name.
+        </p>
+      </li>
+      <li>
+        <title>3</title>
+        <p>
+          A particle can contain three antiquarks,
+          one of each anti-color (i.e., <m>\overline R\overline B\overline G</m>).
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    The colorless rule automatically picks out those combinations of quarks that actually occur in nature.
+    We never see a lone quark,
+    or combinations such as <m>qq</m>,
+    <m>q\overline q\overline q</m>,
+    or <m>qqq\overline q</m>, because these would of necessity show net color.
+    Furthermore,
+    the rule automatically forbids the possibility of observing particles with fractional baryon number or fractional charge.
+    The Rule is crafted so that we are only allowed to observe what we in fact do observe.
+  </p>
+  <p>
+    The colorless rule is actually a simplified way of describing a very deep symmetry in nature,
+    <em>color symmetry</em>.
+    Since net color can never be observed,
+    it really can't matter whether we label the quarks in a proton as <m>RBG</m> or <m>RGB</m> or <m>BGR</m> or <m>BRG</m> or <m>GRB</m> or <m>GBR</m>.
+    We'll see in the next section how the colorless rule is enforced by the exchange of <em>gluons</em>,
+    the messenger particles that actually hold the quarks together and keep them confined inside hadrons.
+  </p>
+</section>

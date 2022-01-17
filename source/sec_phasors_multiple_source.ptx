@@ -1,0 +1,257 @@
+<section xml:id="sec_phasors_multiple_source">
+  <title>Phasor Diagrams for Multiple Source Interference</title>
+  <p>
+    Sometimes, more than two waves will interfere at a single point.
+    In these cases,
+    the total amplitude of the combined oscillation will be the superposition of all of the incident waves.
+    The phasor addition technique can be used to calculate the total amplitude in these complicated cases.
+    Consider, for example, three oscillations,
+    all with the same angular frequency <m>\omega</m>,
+    but with different amplitudes and phases:
+    <md>
+      <mrow>y_1(t) =\mathstrut \amp  A_1\cos{(\omega t + \phi_1)},</mrow>
+      <mrow>y_2(t) =\mathstrut \amp  A_2\cos{(\omega t + \phi_2)}, \ { and}</mrow>
+      <mrow>y_3(t) =\mathstrut \amp  A_3\cos{(\omega t + \phi_3)}</mrow>
+    </md>.
+  </p>
+  <p>
+    These three oscillations can be expressed graphically,
+    as shown in <xref ref="fig_phasor15">Figure</xref>,
+    and their superposition, <m>y_{ tot} = y_1 + y_2 + y_3</m>,
+    can be determined from vector addition of the three phasors.
+  </p>
+  <figure xml:id="fig_phasor15">
+    <caption>Phasors for the three oscillations <m>y_1</m>, <m>y_2</m>,
+    and <m>y_3</m>.</caption>
+    <image width="92.5%" source="images/phasor15"/>
+  </figure>
+  <p>
+    One of the most common multi-source interference problems is an extension of the two-slit problem considered in class.
+    Imagine a light source passing through a screen containing not two but <em>three</em> slits,
+    each separated from its neighbor by a distance <m>d</m>,
+    as shown in <xref ref="fig_phasor16">Figure</xref>.
+    The interference pattern for this arrangement of slits will look different from the interference pattern for a two-slit setup.
+  </p>
+  <figure xml:id="fig_phasor16">
+    <caption>Three closely spaced slits, illuminated straight-on
+    from the right. The interference pattern is observed on a distant screen to the right.</caption>
+    <image width="92.5%" source="images/phasor16"/>
+  </figure>
+  <figure xml:id="fig_phasor17">
+    <caption>Light rays exiting the three slits
+    parallel to the normal.</caption>
+    <image width="92.5%" source="images/phasor17"/>
+  </figure>
+  <p>
+    If the interference pattern illuminates a screen a distance <m>L</m> from the slits,
+    where <m>L\gg d</m>,
+    then we can assume that the light rays from each of the slits to any particular point on the screen are parallel.
+    (This is the same approximation we made in the two-slit case.)
+    For example,
+    light passing straight through the slits and continuing straight to the screen produce the central maximum in the interference pattern,
+    as in <xref ref="fig_phasor17">Figure</xref>.
+    These rays combine constructively because there's no difference in the path length for the three light rays,
+    i.e., <m>\Delta r = 0</m> for all three rays.
+  </p>
+  <p>
+    Now consider the light rays traveling at an angle <m>\theta</m> to the normal,
+    as in <xref ref="fig_phasor18">Figure</xref>.
+    Just as in the two-slit case,
+    these rays do not travel the same distance to reach the screen.
+    Light from the bottom slit travels the shortest distance,
+    while light from the middle slit travels an extra distance <m>\Delta r_{21}</m>,
+    and light from the top slit travels the same amount of extra distance (<m>\Delta r_{32} = \Delta r_{21}</m>) compared to light from the middle slit (Here, I've implicitly labeled the slits, #1, 2, and 3 for bottom, middle,
+    and top.).
+  </p>
+  <figure xml:id="fig_phasor18">
+    <caption>Light rays exiting at an angle <m>\theta</m> to
+    the normal.</caption>
+    <image width="92.5%" source="images/phasor18"/>
+  </figure>
+  <figure xml:id="fig_phasor19">
+    <caption>Geometry of path-length difference
+    between rays from three slits. As for the double slit, the path length
+    difference for adjacent slits is <m>d\sin\theta</m> if the rays are nearly parallel.</caption>
+    <image width="92.5%" source="images/phasor19"/>
+  </figure>
+  <p>
+    From the geometry of the problem
+    (shown in <xref ref="fig_phasor19">Figure</xref>),
+    it's clear that <m>\Delta r_{32} = \Delta r_{21} = d\sin{\theta}</m>.
+    We can then calculate the phase difference between light from adjacent slits,
+    <men>
+      \Delta \phi = 2\pi \frac{\Delta r}{\lambda} = 2\pi \frac{d\sin{\theta}}{\lambda}
+    </men>.
+  </p>
+  <p>
+    With knowledge of the phase difference,
+    we can draw a phasor diagram and plot phasors for all three light rays,
+    as shown in <xref ref="fig_phasor20">Figure</xref>.
+    We've assumed that the amplitudes of all three phasors is the same,
+    and connected the phasors head-to-tail instead of placing all three with tails at the origin.
+    Note that <m>\Delta\phi</m> is the phase difference between
+    <em>adjacent</em> phasors.
+    The total amplitude of the combined rays is just the vector sum of the phasors:
+  </p>
+  <figure xml:id="fig_phasor20">
+    <caption>Three phasors, with adjacent phase difference
+    <m>\Delta\phi_ adj</m>..</caption>
+    <image width="92.5%" source="images/phasor20"/>
+  </figure>
+  <figure xml:id="fig_phasor21">
+    <caption>The resultant phasor is the vector sum of the
+    three phasors corresponding to waves from the three slits.</caption>
+    <image width="92.5%" source="images/phasor21"/>
+  </figure>
+  <example xml:id="exampleThreeBeams">
+    <title>Combining Three Beams</title>
+    <statement>
+      <p>
+        Light of wavelength <m>\lambda = 478\Xunits{nm}</m> passes through a three-slit system where the slits are separated by a distance <m>d = 1.5 \times 10^{-6}\Xunits{m}</m>,
+        and produces an interference pattern on a distant screen.
+        What is the amplitude of the light directed at an angle
+        <m>\theta = 1.2^\circ</m> from the direction to the central maximum in the interference pattern?
+        Assume that the amplitude of the light from each slit individually is <m>A</m>.
+        <em>Solution:
+        </em> This is a direct application of the method described above.
+        The phase difference between adjacent slits is
+        <md>
+          <mrow>\Delta \phi =\mathstrut \amp  2\pi \frac{\Delta r}{\lambda}</mrow>
+          <mrow>=\mathstrut \amp  2\pi \frac{d\sin{\theta}}{\lambda}</mrow>
+          <mrow>=\mathstrut \amp  2\pi \frac{1.5 \times 10^{-6}\times \sin{(1.2^\circ)}} {478 \times 10^{-9}}</mrow>
+          <mrow>=\mathstrut \amp  0.41\Xunits{rad}</mrow>
+        </md>.
+      </p>
+      <p>
+        Therefore, our phasor diagram looks like <xref ref="fig_phasor22">Figure</xref>.
+        To calculate the total amplitude,
+        we again add the phasors as vectors:
+      </p>
+      <figure xml:id="fig_phasor22">
+        <caption>Phasor diagram for <xref ref="exampleThreeBeams">Example</xref>.</caption>
+        <image width="92.5%" source="images/phasor22"/>
+      </figure>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><nbsp/><nbsp/> Phasor<nbsp/><nbsp/></cell>
+          <cell><nbsp/><nbsp/> real part (horizontal) <nbsp/><nbsp/></cell>
+          <cell><nbsp/><nbsp/> imaginary part (vertical) <nbsp/><nbsp/></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  >1</cell>
+          <cell><m>A\cos\left(0\right) = A</m></cell>
+          <cell><m>A\sin\left(0\right) = 0</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell><m>A\cos\left(0.41\right)= 0.92A</m></cell>
+          <cell><m>A\sin\left(0.41\right) = 0.40A</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell><m>A\cos\left(0.82\right)=0.68A</m></cell>
+          <cell><m>A\sin\left(0.82\right)=0.73A</m></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  >Total</cell>
+          <cell><m>2.6A</m></cell>
+          <cell><m>1.13A</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <p>
+        So the amplitude of the resultant phasor is
+        <men>
+          A_{ tot} = \sqrt{(2.6A)^2 + (1.13A)^2} = 2.83A
+        </men>.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <title>Minimum Light</title>
+    <statement>
+      <p>
+        For the same setup as in the previous example,
+        at what angle <m>\theta</m> would you expect to find the first minimum?
+        <em>Solution:
+        </em> A minimum in the interference pattern will occur when the amplitude of the resultant phasor is zero,
+        so we need to arrange the three phasors such that they add to zero.
+        When we had only two phasors,
+        this was quite easy <mdash/> we chose <m>\Delta \phi = \pi</m>.
+        In this case, however, we need to make
+        <em>three</em> phasors add to zero,
+        and <m>\Delta \phi = \pi</m> won't work (what would a phasor diagram with three phasors,
+        each differing in phase from its neighbor by <m>\Delta \phi = \pi</m> look like?)
+      </p>
+      <figure xml:id="fig_phasor23">
+        <caption>Phasor diagram at the first minimum of the three-slit
+        interference pattern.</caption>
+        <image width="92.5%" source="images/phasor23"/>
+      </figure>
+      <p>
+        To get three phasors to add to zero,
+        we need a diagram like <xref ref="fig_phasor23">Figure</xref>,
+        where the phase difference between adjacent phasors is <m>\Delta\phi = \frac{2\pi}{3}\Xunits{rad}</m>.
+        Make sure you understand why this arrangement yields a total amplitude of zero.
+      </p>
+      <p>
+        Now that we know the required value for <m>\Delta\phi</m>,
+        we can relate this to the path length difference between adjacent slits:
+        <men>
+          \Delta r = \frac{\Delta\phi}{2\pi} \lambda
+        </men>.
+      </p>
+      <p>
+        Since <m>\Delta r = d\sin{\theta}</m>,
+        we can solve for <m>\sin{\theta}</m>:
+        <md>
+          <mrow>\sin{\theta} =\mathstrut \amp  \frac{\Delta r}{d}</mrow>
+          <mrow>=\mathstrut \amp  \frac{\Delta\phi\lambda}{2\pi d}</mrow>
+          <mrow>=\mathstrut \amp  \frac{2\pi(478 \times 10^{-9})}{6 \pi (1.5 \times 10^{-6})}</mrow>
+          <mrow>=\mathstrut \amp  0.106</mrow>
+        </md>
+        and therefore <m>\theta = \sin^{-1}{(0.106)} = 6.1^\circ</m>.
+      </p>
+      <figure xml:id="fig_phasor24">
+        <caption>Phasor diagram at second minimum of the
+        three-slit interference pattern.</caption>
+        <image width="92.5%" source="images/phasor24"/>
+      </figure>
+      <p>
+        There's actually another way to make three phasors add to zero,
+        and the phasor diagram looks like <xref ref="fig_phasor24">Figure</xref>: In this case,
+        <m>\Delta\phi = \frac{4\pi}{3}</m>,
+        and you can show that this minimum will occur for <m>\theta = 12.3^\circ</m>.
+      </p>
+    </statement>
+  </example>
+</section>

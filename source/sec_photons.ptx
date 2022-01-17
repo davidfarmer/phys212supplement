@@ -1,0 +1,139 @@
+<section xml:id="sec_photons">
+  <title>Photons</title>
+  <p>
+    The resolution of the ultraviolet catastrophe,
+    reached in stages by Planck and Einstein,
+    is that Maxwell's theory of electricity and magnetism is incomplete.
+    In 1905<fn>
+    1905 was Einstein's
+    <q>Miracle Year</q>
+    <mdash/> the year that he published his first paper on relativity,
+    a paper that explained molecular diffusion,
+    and a paper introducing the concept of a photon.
+    </fn> Einstein introduced the concept of a photon: a
+    <q>particle</q>
+    of light whose energy is related to the EM wave frequency via
+    <men>
+      E_\text{ ph }  = hf
+    </men>
+    where
+    <men>
+      h = 6.63\times 10^{-34}\Xunits{J \cdot s} = 4.14\times 10^{-15}\Xunits{eV \cdot s}
+    </men>
+    is known as Planck's constant.
+    Einstein's claim was that an EM wave of frequency <m>f</m> can be viewed as a gas of photons,
+    each with this energy.
+    Photons are not part of Maxwell's equations;
+    they are in some sense a supplementary property of EM waves.<fn>
+    The complete theory of electricity and magnetism,
+    including the full reconciliation with quantum mechanics and relativity,
+    is called <em>quantum electrodynamics</em>
+    and wasn't fully developed until the 1950s.
+    We will get a flavor of this theory in Unit 4.
+    </fn>
+  </p>
+  <example>
+    <title>Number of photons</title>
+    <statement>
+      <p>
+        An EM wave of wavelength <m>\lambda=420\Xunits{nm}</m> has a total energy of <m>1.80\Xunits{J}</m>.
+        How many photons are in this wave?
+      </p>
+      <p>
+        <em>Solution:
+        </em> Each photon is contributing an energy <m>E_\text{ ph }  = hf</m>.
+        Using <m>f = c/\lambda</m> we can calculate the energy per photon,
+        <md>
+          <mrow>E_\text{ ph }  =\mathstrut \amp  \frac{hc}{\lambda}</mrow>
+          <mrow>=\mathstrut \amp  \frac{(6.63\times 10^{-34}\Xunits{J \cdot s}) (3.00\times 10^8\Xunits{m/s})} {420\times 10^{-9}\Xunits{m}}</mrow>
+          <mrow>=\mathstrut \amp  4.74\times 10^{-19}\Xunits{J}</mrow>
+        </md>.
+      </p>
+      <p>
+        The total energy <m>E</m> is given by <m>N E_\text{ ph }</m>,
+        where <m>N</m> is the number of photons, so
+        <men>
+          N = \frac{E}{E_\text{ ph } } = \frac{1.80\Xunits{J}}{4.74\times 10^{-19}\Xunits{J}} = 3.80\times 10^{18}
+        </men>.
+      </p>
+      <p>
+        Evidently, EM waves with macroscopic energies contain a lot of photons!
+      </p>
+    </statement>
+  </example>
+  <p>
+    The idea of light being composed of particle-like photons is tremendously important with numerous implications throughout all of science and engineering.
+    The photon picture also resolves the problem of infinite energy in a cavity.
+    Imagine sorting all the EM wave modes in the cavity from lowest frequency to highest frequency.
+    Since <m>E_\text{ ph } =hf</m>,
+    the photons in the lowest frequency mode have low energy,
+    while the photons in the high frequency modes have higher energy.
+    But the total energy of each mode must be <m>\textstyle{\frac{1}{2}}k_B T</m>,
+    which means each EM wave mode has exactly the same energy.
+  </p>
+  <p>
+    How can higher energy photons add up to the same energy?
+    There must be fewer of them.
+    So as we go to higher and higher frequency modes,
+    we must have fewer and fewer photons in each mode.
+    Eventually we will reach a high frequency mode with only one photon,
+    and that's the end of the line.
+    There can be no higher frequency modes.
+    And so the ultraviolet catastrophe is averted.
+  </p>
+  <p>
+    In <xref ref="prob_cavity_freq">Problems</xref>
+    and <xref ref="prob_largest_mode"></xref> at the end of this chapter,
+    you will do this quantitatively.
+    You will find that the mode number
+    <m>j_\text{ max }</m> where the number of photons drops to below <m>1</m> in a one-dimensional cavity is
+    <men xml:id="eq_jmax">
+      j_\text{ max }  =  \frac{L k_B T}{h c}
+    </men>.
+  </p>
+  <p>
+    For modes with larger <m>j</m>,
+    there is not enough thermal energy to produce even a single photon.
+    Given this result, we can find the total energy in the cavity.
+    We have modes <m>j=1</m>, <m>2</m>,
+    <ellipsis/>, <m>j_\text{ max }</m>,
+    each contributing an energy <m>\textstyle{\frac{1}{2}}k_BT</m>.
+    That adds up to
+    <men xml:id="eq_EM_wave_thermal_energy_1D">
+      E =  j_\text{ max } \times \Bigl(\frac{1}{2}k_BT\Bigr) = \frac{L (k_BT)^2}{2hc}
+    </men>.
+  </p>
+  <p>
+    This answer is a much nicer result for the thermal energy of the EM fields,
+    because it's not infinite!
+  </p>
+  <p>
+    Let's reflect a moment on what we have just done.
+    We argued that EM waves,
+    which in classical physics can have any continuous value of energy,
+    instead come in energy chunks.
+    When the number of these photon chunks is large,
+    some <m>10^{18}</m> or so,
+    then we can ignore the chunkiness and treat the EM waves classically.
+    Then the equipartition holds and we can use <xref ref="eq_EM_wave_equipartition"/>.
+  </p>
+  <p>
+    But for really high frequency (UV) waves,
+    the photons have so much energy that there are only a few of them in a mode.
+    At this point,
+    the classical physics result <xref ref="eq_EM_wave_equipartition"/> no longer holds.
+    Essentially,
+    there is simply not enough thermal energy available to create even a single photon for these modes.
+    So we counted an energy of
+    <m>\textstyle{\frac{1}{2}}k_BT</m> for each mode until we hit this wall,
+    and then we stopped counting.
+    The result is <xref ref="eq_EM_wave_thermal_energy_1D"/>.
+  </p>
+  <p>
+    Note that this result only applies to a one-dimensional system.
+    Real materials, of course, are three dimensional.
+    We won't go through the full derivation for a three-dimensional cavity.
+    That would require working with the thermodynamics of a photon gas,
+    something that we do in our PHYS 317 Thermodynamics course.
+  </p>
+</section>

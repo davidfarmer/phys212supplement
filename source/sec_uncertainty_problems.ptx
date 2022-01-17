@@ -1,0 +1,514 @@
+<exercises xml:id="sec_uncertainty_problems">
+  <title>Problems</title>
+  <exercise xml:id="prob_dice">
+    <statement>
+      <p>
+        <em>Probabilities with dice.</em>
+        This problem gets at the idea of a probability distribution.
+        Take two of your dice, roll them,
+        and record the sum of the spots showing on the top faces. (This should be a number between 2 and 12!) Repeat until you have recorded 20 results.
+        <ol>
+          <li>
+            <p>
+              Collect your results in three
+              <q>bins.</q>
+              How many trials do you find in the bin containing numbers 2, 3, 4, or 5?
+              How many in the 6, 7, or 8 bin?
+              In the 9, 10, 11, or 12 bin?
+              Try to explain any patterns.
+            </p>
+          </li>
+          <li>
+            <p>
+              In problem session,
+              combine your results with others to estimate the probabilities of getting a roll in each of the three bins.
+            </p>
+          </li>
+          <li>
+            <p>
+              Can you calculate theoretical probabilities?
+              How do they compare with individual or class results?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_parking_lot_1">
+    <statement>
+      <p>
+        <em>Classical probabilities for finding your car.</em> John,
+        an aspiring physics student, works part-time parking cars at a downtown hotel.
+        The lot is a long, underground tunnel,
+        with all the cars parked in a single long row,
+        <m>600\Xunits{m}</m> long.
+        When owners return for their cars,
+        instead of telling them exactly where to find their cars,
+        he describes the location in terms of probability and probability density.
+        <ol>
+          <li>
+            <p>
+              Mr.<nbsp/>Vanderbilt is told that his car
+              <q>could be anywhere in the lot,</q>
+              which means that the probability density is constant.
+              Calculate the value of this uniform probability density <m>P(x)</m> for Mr.<nbsp/>Vanderbilt to find his car a distance <m>x</m> from one end of the lot.
+              (Answer in units of probability/m.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Find the probability that Mr.<nbsp/>Vanderbilt's car is in the first <m>100\Xunits{m}</m> of the lot.
+            </p>
+          </li>
+          <li>
+            <p>
+              Mrs.<nbsp/>Reeve is told that the probability density to find her car is a constant <m>P_1</m> from <m>x = 0</m> to <m>x=200\Xunits{m}</m>,
+              and a second constant \mbox{<m>P_2</m> = <m>P_1/3</m>} in for <m>x=200</m> to <m>x=600\Xunits{m}</m>.
+              Find the different constant probability densities <m>P_1</m> for
+              <m>0 \lt x \lt 200\Xunits{m}</m> and <m>P_2</m> for <m>200\Xunits{m} \lt x \lt 600\Xunits{m}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Based on your results from part (c),
+              find the probability that Mrs.<nbsp/>Reeve's car is in the first <m>400\Xunits{m}</m> of the lot.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The probability amplitude <m>\psi(x)</m> for a certain particle to be at position <m>x</m> is
+        <me>
+          \psi(x) = \frac{\sqrt{x}}{a\sqrt{2}}, \hspace{0.2in}\text{ for \(0\leq x \leq a\). }
+        </me>
+        <ol>
+          <li>
+            <p>
+              Explain what the quantity <m>|\psi(x)|^2</m> tells us about the particle.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that the particle is found between <m>x=0</m> and <m>x = a</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that the particle is found anywhere else (i.e., <em>not</em>
+              between <m>x=0</m> and <m>x=a</m>).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_WavefunctionProbs">
+    <statement>
+      <p>
+        Determine the probability of finding a particle between <m>x = 1.0</m> and <m>x = 2.0</m> for the following wavefunctions:
+        <ol>
+          <li>
+            <p>
+              <m>\psi(x) = 0.10x+0.50</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\psi(x) = 0.10x+0.50i</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_UncertaintyHelectron">
+    <statement>
+      <p>
+        An electron in a hydrogen atom has a spread in position typically around <m>\sigma_x = 5\times 10^{-11}\Xunits{m}</m>.
+        <ol>
+          <li>
+            <p>
+              Use the Heisenberg uncertainty relation to find a lower bound on the spread in momentum,
+              <m>\sigma_{p_x}</m>, for the electron.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now find a lower bound on the spread in velocity, <m>\sigma_{v_x}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_UncertaintyBlowDart">
+    <statement>
+      <p>
+        The Heisenberg uncertainty relation does not pose much of a limitation on our macroscopic scale.
+        Consider a blow dart of mass <m>2.5\Xunits{g}</m>.
+        Let's imagine a measurement of the dart's position with a precision limited to <m>1\Xunits{ \mu m}</m>.
+        Determine the lower bound on the spread in velocity imposed by the Heisenberg uncertainty relation.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_NanoscaleUncertainty">
+    <statement>
+      <p>
+        Fabrication of nano-scale devices requires the ability to position atoms and molecules with very small spatial spread <m>\sigma_x</m>.
+        <ol>
+          <li>
+            <p>
+              Use Heisenberg's uncertainty principle to make a rough estimate of the precision by which a carbon atom
+              (mass <m>2.00 \times 10^{-26}\Xunits{kg}</m> and radius <m>70\Xunits{pm}</m>)
+              can be confined (i.e., determine the smallest
+              <m>\sigma_x</m>) to keep its minimum kinetic energy below typical molecular binding energies of around <m>1\Xunits{eV}</m>.
+              Would you expect the uncertainty principle to be a problem if you wanted to arrange carbon atoms in a nanotech device with a precision of around one-hundredth of the radius of a carbon atom?
+            </p>
+          </li>
+          <li>
+            <p>
+              Repeat the calculations in part (a) for a proton
+              (mass <m>1.67 \times 10^{-27}\Xunits{kg}</m>),
+              also with <m>\langle K\rangle</m> below <m>1\Xunits{eV}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Compare your result from (b) to the size of the nucleus of a carbon atom
+              (<m>2.7 \times 10^{-15}\Xunits{m}</m>).
+              What does this imply about a proton confined inside a carbon nucleus?
+              I.e., what must be true for a proton to remain bound inside a carbon nucleus?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Back in 1975, Gordon Moore proposed that the number of transistors per area on integrated circuits roughly doubles every two years.
+        This principle (
+        <q>Moore's Law</q>
+        ) has worked surprisingly well for 40 years now,
+        with transistors introduced in 2012 as small as
+        <m>22\Xunits{nm}</m> and techniques are continually being developed to make them even smaller.
+        But Moore's Law will eventually fail due to limitations imposed by the uncertainty principle.
+        <ol>
+          <li>
+            <p>
+              Use the uncertainty principle to calculate the smallest spread
+              <m>\sigma_x</m> for an electron such that its minimum kinetic energy
+              (due to uncertainty)
+              is below the work function
+              (binding energy)
+              of silicon, which is <m>4.05\Xunits{eV}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let's assume that the smallest possible transistor has an area 100 times the square of the
+              <m>\sigma_x</m> that you calculated in part (a).
+              Given the area
+              (approximated as the square of <m>22\Xunits{nm}</m>)
+              for the best transistors from 2012,
+              if Moore's Law continues to hold into the future,
+              roughly what year will transistors reach this quantum limit?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Explain in a few sentences why classical physics (Newtonian mechanics and Electricity and Magnetism) predict that atoms with electrons orbiting around a nucleus are unstable and can't exist indefinitely.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_MinK">
+    <statement>
+      <p>
+        Use the uncertainty principle to estimate the minimum <m>\langle K\rangle</m> for
+        <ol>
+          <li>
+            <p>
+              an electron confined to a region of
+              <m>50\Xunits{pm}</m> (roughly the radius of a hydrogen atom);
+            </p>
+          </li>
+          <li>
+            <p>
+              a DNA molecule (<m>1.0 \times 10^{-25}\Xunits{kg}</m>) confined to the nucleus of a cell <m>3.0\Xunits{ \mu m}</m> radius; and
+            </p>
+          </li>
+          <li>
+            <p>
+              a <m>5.0\Xunits{mg}</m> grain of sand in a pill box with width <m>2.0\Xunits{cm}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Use the uncertainty principle to explain in 2 or 3 sentences
+        <ol>
+          <li>
+            <p>
+              why it is not possible for a confined particle to have zero kinetic energy; and
+            </p>
+          </li>
+          <li>
+            <p>
+              why everyday-size objects
+              (even something as small as a speck of dust)
+              often seem to have zero kinetic energy,
+              even when confined to a small region.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Given the equation <m>df/dx = 4.0\sin(0.25x)</m>, test
+        (by direct substitution)
+        to determine if the following functions are solutions.
+        If so, determine possible values of any constants.
+        <ol>
+          <li>
+            <p>
+              <m>f(x) = Bx^2</m>,
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(x) = B\sin(kx)</m>,
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(x) = B\cos(kx)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_SubstitutionPractice">
+    <statement>
+      <p>
+        Given the equation <m>d^2f/dx^2 = 5x + 6</m>, test
+        (by direct substitution)
+        to determine if the following functions are solutions.
+        If so, determine possible values of any constants.
+        <ol>
+          <li>
+            <p>
+              <m>f(x) = Ax^3+Bx^2+Cx</m>;
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>f(x) = A\sin(kx)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_TestSchrod">
+    <statement>
+      <p>
+        <em>Schr&#xf6;dinger equation for a classically allowed situation.</em>
+        Consider a particle of mass <m>m</m> in a region in which the potential energy is constant,
+        i.e., <m>U(x)=U_0</m>,
+        and assume that the total energy of the particle <m>E</m> is greater than the potential energy,
+        i.e., <m>E>U_0</m>.
+        (This is the case for classically allowed motion.)
+        To determine the wave function we must find a function <m>\psi(x)</m> that satisfies the one-dimensional Schr&#xf6;dinger equation
+        <me>
+          -\frac{\hbar^2}{2m} \frac{d^2\psi(x)}{dx^2} + U(x)\psi(x) = E\psi(x)
+        </me>.
+      </p>
+      <p>
+        In this problem you will try three
+        <q>guesses</q>
+        for <m>\psi(x)</m> and see if they satisfy Schr&#xf6;dinger's equation.
+        The three
+        <q>guesses</q>
+        are
+        <ul>
+          <li>
+            <p>
+              <m>\psi_1(x) = Ax^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\psi_2(x) = B\sin(kx)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\psi_3(x) = Ce^{-\kappa x}</m>,
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        where <m>A</m>, <m>B</m>, <m>C</m>,
+        <m>k</m>, and <m>\kappa</m> are undetermined real constants.
+        <ol>
+          <li>
+            <p>
+              Rearrange Schr&#xf6;dinger's equation so that the second derivative
+              <m>d^2\psi/dx^2</m> is alone on the left.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_1(x)</m> into Schr&#xf6;dinger's equation and see if there is any choice for the constant <m>A</m> that will make
+              <m>\psi_1(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_2(x)</m> into Schr&#xf6;dinger's equation and see if there is any choice for the constants <m>B</m> and <m>k</m> that will make
+              <m>\psi_2(x)</m> satisfy the equation for all values of <m>x</m> .
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_3(x)</m> into Schr&#xf6;dinger's equation and see if there is any choice for the constants <m>C</m> and <m>\kappa</m> that will make
+              <m>\psi_3(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              You should have found that
+              <m>\psi_2(x)</m> can be a solution for the proper choice of <m>k</m>.
+              Determine the wavelength of the oscillations in terms of <m>\hbar</m>,
+              <m>m</m>,
+              <m>E</m>,
+              and <m>U_0</m>. (i.e., solve for <m>k</m> and remember from the waves unit that
+              <m>k=2\pi/\lambda</m>.) Is your result consistent with that predicted from the de<nbsp/>Broglie relationship? (Hint:
+              <m>E-U_0</m> is the kinetic energy <m>K = p^2/2m</m>.
+              Re-write things in terms of the momentum and the answer should drop into your lap.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <em>Schr&#xf6;dinger equation for classically forbidden situation.</em>
+        Consider a particle of mass <m>m</m> in a region with a constant potential energy <m>U_0</m>,
+        and assume that the total energy of the particle <m>E</m> is <em>less</em>
+        than the potential energy, i.e., <m>E\lt U_0</m>.
+        (This isn't possible for classical motion, but continue anyway.)
+        To determine the wave function we must find a function <m>\psi(x)</m> that satisfies the one-dimensional Schr&#xf6;dinger equation
+        <me>
+          -\frac{\hbar^2}{2m} \frac{d^2\psi(x)}{dx^2} + U(x)\psi(x) = E\psi(x)
+        </me>.
+      </p>
+      <p>
+        In this problem you will try three
+        <q>guesses</q>
+        for <m>\psi(x)</m> and see if they satisfy Schr&#xf6;dinger's equation.
+        The three
+        <q>guesses</q>
+        are
+        <ul>
+          <li>
+            <p>
+              <m>\psi_1(x) = Ax^2</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\psi_2(x) = B\sin(kx)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              and <m>\psi_3(x) = Ce^{-\kappa x}</m>,
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        where <m>A</m>, <m>B</m>, <m>C</m>,
+        <m>k</m>, and <m>\kappa</m> are undetermined real constants.
+        <ol>
+          <li>
+            <p>
+              Rearrange Schr&#xf6;dinger's equation so that the second derivative
+              <m>d^2\psi/dx^2</m> is alone on the left.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_1(x)</m> into Schr&#xf6;dinger's equation and see if there is any choice for the constant <m>A</m> that will make
+              <m>\psi_1(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_2(x)</m> into Schr&#xf6;dinger's equation and see if there is any choice for the constants <m>B</m> and <m>k</m> that will make
+              <m>\psi_2(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Plug <m>\psi_3(x)</m> into Schr&#xf6;dinger's equation and see if there is any choice for the constants <m>C</m> and <m>\kappa</m> that will make
+              <m>\psi_3(x)</m> satisfy the equation for all values of <m>x</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_harmonic_oscillator">
+    <statement>
+      <p>
+        A special case of the quantum harmonic oscillator is described by Schr&#xf6;dinger's equation of the form
+        <me>
+          -\frac{d^2\psi}{dx^2} + 4x^2 \psi = E\psi
+        </me>.
+      </p>
+      <p>
+        Substitute the trial solution
+        <m>\psi = Ae^{-x^2}</m> and determine the value of the energy <m>E</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_harmonicOsc_ground">
+    <statement>
+      <p>
+        The general case Schr&#xf6;dinger equation for the one-dimensional harmonic oscillator is
+        <me>
+          -\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2} + \frac{1}{2}m\omega^2 x^2 \psi = E\psi
+        </me>.
+      </p>
+      <p>
+        Substitute the trial solution <m>\psi(x) = Ae^{-ax^2}</m>
+        (with <m>a>0</m>)
+        into this equation and determine the constants <m>a</m> and <m>E</m>.
+        This is the ground state of the oscillator.
+      </p>
+    </statement>
+  </exercise>
+</exercises>

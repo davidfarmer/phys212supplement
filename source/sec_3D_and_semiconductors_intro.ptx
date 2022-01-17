@@ -1,0 +1,27 @@
+<section xml:id="sec_3D_and_semiconductors_intro">
+  <title>Introduction</title>
+  <p>
+    The basics of quantum mechanics and its interpretation can be understood by first looking at one-dimensional problems.
+    This is what we have done so far in this unit.
+    But the real world has three spatial dimensions,
+    and most real systems have more than one particle to keep track of.
+    The extension of the Schr&#xf6;dinger equation to three dimensions is straight-forward,
+    but the math can get a little complicated.
+  </p>
+  <p>
+    We will confine our study primarily to the case of electrons in atoms.
+    A key feature of wavefunctions in three dimensions (3D) is that the allowed quantum states are described by <em>three</em>
+    quantum numbers instead of one.
+    For the states of electrons in atoms,
+    each quantum number has a distinct physical interpretation,
+    as we will see.
+  </p>
+  <p>
+    Also in this chapter we describe the basics of semiconductor physics,
+    which follows from the discussion of energy bands in <xref ref="chap_quantized_energies">Chapter</xref>.
+    We will explain how the conductivity of materials can be understood in terms of these bands,
+    and we'll discuss how these quantum properties have led to some really cool
+    (and tremendously important)
+    techniques that form the basis of modern electronics.
+  </p>
+</section>

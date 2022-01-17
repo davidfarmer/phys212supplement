@@ -1,0 +1,108 @@
+<section xml:id="sec_bosons">
+  <title>Bosons</title>
+  <p>
+    Now let's turn to bosons,
+    the particles that form symmetric combinations
+    <m>|\psi_S\rangle</m> in their two-particle states.
+    These particles do not exhibit a Pauli exclusion principle.
+    In fact, it's quite the opposite:
+    bosons like to be in the same state,
+    relative to distinguishable particles.<fn>
+    Okay, no one has actually managed to interview a boson to confirm their feelings on the matter,
+    but we can observe their behavior and draw some conclusions.
+    </fn>
+  </p>
+  <p>
+    Demonstrating this effect is a little bit tricky.
+    Let us consider the following scenario:
+    imagine that there are three different states,
+    which we'll call <m>|\alpha\rangle</m>,
+    <m>|\beta\rangle</m>, and <m>|\gamma\rangle</m>,
+    and there are two particles which will be put into those states.
+    How many possible two-particle states are there?
+  </p>
+  <p>
+    For classical distinguishable particles,
+    each particle can be in one of three possible states,
+    so there are <m>3\times 3=9</m> possible two-particle states.
+    These are illustrated in the chart on the left in <xref ref="fig_quantum_statistics">Figure</xref>.
+    Since the particles are distinguishable,
+    we use different symbols for them:
+    <q><m>\bullet</m></q>
+    for particle 1 and
+    <q><m>\circ</m></q>
+    for particle 2.
+  </p>
+  <figure xml:id="fig_quantum_statistics">
+    <caption>The distinguishable classical particles are indicated by a
+    filled circle <m>\bullet</m> and an empty circle <m>\circ</m>.  The
+    indistinguishable quantum particles are both indicated by a filled
+    circle.</caption>
+    <image width="90%" source="images/quantum_statistics_table"/>
+  </figure>
+  <p>
+    Now consider indistinguishable bosons,
+    shown in the middle chart of <xref ref="fig_quantum_statistics">Figure</xref>.
+    Now any two states that differ by an exchange of particles only gets counted once.
+    For example,
+    the classical case of having the <m>\bullet</m> particle in state <m>\alpha</m> and the <m>\circ</m> particle in state <m>\beta</m> (row 4) is different from the case where the two particles are switched
+    (row 7).
+    But for indistinguishable bosons these are the same state,
+    so it only appears once
+    (row 4 for the bosons).
+  </p>
+  <p>
+    Finally, for fermions it is pretty straightforward.
+    They are indistinguishable,
+    so we just use <m>\bullet</m> for both particles,
+    and we add in the Pauli exclusion principle,
+    which eliminates the cases where both particles are in the same state.
+    This gives the chart on the right in <xref ref="fig_quantum_statistics">Figure</xref>.
+  </p>
+  <p>
+    What do we learn from these charts?
+    Let's consider the case where the three states,
+    <m>|\alpha\rangle</m>, <m>|\beta\rangle</m>,
+    and <m>|\gamma\rangle</m>, all have the same energy.
+    If these quantum states are in thermal equilibrium,
+    we can appeal to ergodicity to argue that every two-particle microstate is equally probable.
+    And this gives us something interesting.
+  </p>
+  <p>
+    Look at the probability of finding two particles in the same state.
+    For the distinguishable classical particles,
+    there are 3 cases out of 9 where the particles are in the same state,
+    so it's a probability of <m>1/3</m>.
+    But for the bosons,
+    there are 3 cases of out 6 where they are in the same state,
+    so a probability of <m>1/2</m>.
+    Indistinguishability has given the bosons an <em>enhanced</em>
+    probability of being in the same state.
+    It is almost as if the bosons have an attractive force pulling them into the same state,
+    but really it's just a property of their statistics.
+  </p>
+  <p>
+    And this turns out to have quite an impact.
+    When there are a large number of identical bosons in a system,
+    the statistical
+    <q>attraction</q>
+    becomes even more powerful and it is sometimes possible to get a macroscopic fraction of the particles to cram together into the same quantum state.
+    This state is called then a Bose condensate.
+    When we achieve this,
+    we end up with a material that exhibits quantum mechanical properties on our everyday macroscopic scale,
+    which is truly bizarre.
+  </p>
+  <p>
+    We have managed to make Bose condensates with a number of different types of bosons.
+    When we do this with photons, we get a laser.
+    When we do this with helium-4 atoms, we get a superfluid.
+    When we do this with electrons paired up to be bosons
+    (more below),
+    we get a superconductor.
+    Most recently,
+    physicists have figured out how to get a gas of large atoms,
+    such as rubidium, to form a Bose-Einstein condensate.
+    These are all very different systems with very different properties,
+    and we devote the remainder of the chapter to describing some of them.
+  </p>
+</section>

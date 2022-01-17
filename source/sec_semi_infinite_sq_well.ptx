@@ -1,0 +1,206 @@
+<section xml:id="sec_semi_infinite_sq_well">
+  <title>Semi-infinite Square Well Potential and Quantum Tunneling</title>
+  <p>
+    If we want to determine the wavefunction solutions for a particle confined in a region where the potential energy is some known function <m>U(x)</m>,
+    then we perform a procedure similar to what we did for the example of the infinite square well potential.
+    However, this time the potential is not zero
+    (or a constant)
+    but changes with position.
+    Solving Schr&#xf6;dinger's equation for the case of a general potential energy function <m>U(x)</m> can be very complicated and certainly this is beyond the scope of this course.
+    In fact, there are very few potential energy functions for which the Schr&#xf6;dinger equation can be solved exactly.
+  </p>
+  <p>
+    However, we can give a slightly more complicated example of solving Schr&#xf6;dinger's equation where the potential energy has different constant values in two different regions of space,
+    as shown in <xref ref="fig_semiInfiniteSquareWell">Figure</xref>.
+    In this case,
+    the potential differs from the infinite square well potential in that the boundary at <m>x = L</m> is now set to the finite value
+    <m>U(x) = U_0</m> for <m>x > L</m> instead of being infinite.
+    If we consider a solution for a total energy <m>E</m> which is less than the potential energy step <m>U_0</m>,
+    then we see that Schr&#xf6;dinger's equation is different in the two regions <m>(0 \lt x \lt L)</m> and <m>(x > L)</m>.
+    Rearranging Schr&#xf6;dinger's equation, we obtain
+  </p>
+  <figure xml:id="fig_semiInfiniteSquareWell">
+    <caption>The semi-infinite square well potential energy function.</caption>
+    <image width="60%" source="images/semiInfinite_sq_well"/>
+  </figure>
+  <men>
+    \frac{d^2\psi(x)}{dx^2}  = \frac{2m}{\hbar^2}\left(U(x)-E\right)\psi(x)
+  </men>.
+  <p>
+    We see that in the region <m>0 \lt  x \lt  L</m>, Schr&#xf6;dinger's equation reduces again to <xref ref="eq_squarewell_1"/> so we should expect wavefunction solutions in that region to be similar to sinusoidal functions as given in <xref ref="eq_squarewell_3"/>.
+    However, in the region <m>(x > L)</m> the total energy is less than the potential energy (<m>E \lt  U_0</m>) and Schr&#xf6;dinger's equation becomes
+    <men xml:id="eq_SchrodingerE_U">
+      \frac{d^2\psi(x)}{dx^2} = \frac{2m}{\hbar^2}\left(U_0-E\right)\psi(x) \hspace{0.5in}\mbox{for  <m>x > L</m>}
+    </men>.
+  </p>
+  <p>
+    As we did before,
+    we must determine a mathematical function <m>\psi(x)</m> that is consistent with <xref ref="eq_SchrodingerE_U"/>,
+    remembering that the quantity
+    <m>\left[U_0 - E\right]</m> is a positive quantity.
+    This time the second derivative of <m>\psi(x)</m> is equal to a <em>positive</em>
+    number times the same function.
+    In this case, sinusoidal functions will not work,
+    but again, if we think back to our calculus course,
+    we recall that another set of functions we know is the right choice here <mdash/> the exponential functions
+    <m>C e^{+\kappa x}</m> and <m>D e^{-\kappa x}</m>, where <m>C, D</m>,
+    and <m>\kappa</m> are constants, with <m>\kappa > 0</m>.
+  </p>
+  <example xml:id="ex_SolutionElessU">
+    <title>Wavefunction solutions for <m>E &lt; U</m></title>
+    <statement>
+      <p>
+        Given the potential shown in <xref ref="fig_semiInfiniteSquareWell">Figure</xref>,
+        show that the function <m>C e^{\kappa x}</m> is a solution to Schr&#xf6;dinger's equation<nbsp/><xref ref="eq_SchrodingerE_U"/> and determine what the constant <m>\kappa</m> must be for this to be a solution.
+      </p>
+      <p>
+        <em>Solution:</em> To see if <m>\psi(x) = C e^{+\kappa x}</m> is a solution,
+        we first evaluate the left hand side of <xref ref="eq_SchrodingerE_U"/> by calculating the second derivative of <m>\psi(x)</m>:
+        <md>
+          <mrow>\frac{d \psi(x)}{dx} =\mathstrut \amp  \kappa  C e^{\kappa x}</mrow>
+          <mrow>\frac{d^2 \psi(x)}{dx^2} =\mathstrut \amp  \kappa^2 C e^{\kappa x}</mrow>
+        </md>.
+      </p>
+      <p>
+        Inserting this into Schr&#xf6;dinger's equation<nbsp/><xref ref="eq_SchrodingerE_U"/> we find
+        <men>
+          \kappa^2 C e^{\kappa x} = \frac{2m}{\hbar^2}\left( U_0 - E \right) C e^{\kappa x}
+        </men>.
+      </p>
+      <p>
+        In order for <m>\psi(x) = C e^{+\kappa x}</m> to be a solution,
+        the left side of this equation must equal the right side,
+        and therefore
+        <men>
+          \kappa^2 = \frac{2m}{\hbar^2}\left( U_0 - E \right)
+        </men>.
+      </p>
+    </statement>
+  </example>
+  <example xml:id="ex_SolutionSemiInf">
+    <title>Complete wavefunction solution for the semi-infinite square well</title>
+    <statement>
+      <p>
+        The complete wavefunction for the semi-infinite square well is made by combining the three solutions to Schr&#xf6;dinger's equation in the three regions, (<m>x\lt 0</m>), (<m>0 \lt x \lt  L</m>),
+        and (<m>x > L</m>):
+        <men>
+          \psi(x) =  \left\{\begin{array}{ll} 0                       \amp  \mbox{for \(x\lt 0\)}   \\ A \sin(kx) + B \cos(kx) \amp  \mbox{for \(0\lt x\lt L\)}  \\ C e^{+\kappa x} + D e^{- \kappa x} \amp  \mbox{for \(x > L\)} \end{array}  \right.
+        </men>.
+      </p>
+      <p>
+        As we did in the previous section,
+        we can further simplify this solution by matching this solution to what the wavefunction should be at <m>x = 0</m> and as <m>x \rightarrow \infty</m>.
+        At <m>x = 0</m>, the wavefunction should be zero so that it matches
+        <m>\psi(x)=0</m> for <m>(x \lt  0)</m>.
+        This requires that the constant <m>B = 0</m> so the function <m>\cos{(kx)}</m> does not appear.
+        As <m>x \rightarrow \infty</m>,
+        the function <m>e^{+ \kappa x}</m> would become infinite and is therefore a not well-behaved solution.
+        So we choose <m>C = 0</m> to eliminate that function from our solution and the final solution becomes
+        <men xml:id="eq_two_regions_wavefunction">
+          \psi(x) =  \left\{\begin{array}{ll} 0                \amp  \mbox{for <m>x\lt 0</m>}  \\ A \sin(kx)       \amp   \mbox{for <m>0 \lt  x \lt  L</m>r}  \\ D e^{- \kappa x} \amp  \mbox{for <m>x > L</m>} \end{array}  \right.
+        </men>.
+      </p>
+      <p>
+        The wavefunctions in the two regions given in <xref ref="eq_two_regions_wavefunction"/> must match at position <m>x = L</m> such the the wavefunction and its first derivative make a smooth transition from the region <m>x\lt L</m> to the region <m>x>L</m>.
+        The mathematics is beyond the scope of this course,
+        but there are only certain values of <m>k</m>, and hence <m>E</m>,
+        for which the wavefunctions make a smooth transition.
+        Graphs of the wavefunctions for the two lowest energy states <m>\psi_1(x)</m> and
+        <m>\psi_2(x)</m> are shown in <xref ref="fig_Semi_Inf_States">Figure</xref>.
+      </p>
+      <figure xml:id="fig_Semi_Inf_States">
+        <caption>The lowest two energy states of a particle in a semi-infinite
+        potential well.</caption>
+        <image width="90%" source="images/Semi_Inf_States"/>
+      </figure>
+      <p>
+        In some of the problems at the end of the chapter you will use an Excel spreadsheet to determine solutions to the semi-infinite square well using a numerical method.
+      </p>
+    </statement>
+  </example>
+  <p>
+    An examination of <xref ref="fig_Semi_Inf_States">Figure</xref>
+    leaves us the following important conclusions:
+    <ul>
+      <li>
+        <p>
+          Wavefunctions in the region where <m>E > U</m> are sinusoidal functions similar to those in the infinite square well potential.
+          The wavelength depends on the difference <m>\left|E - U\right|</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Wavefunctions in the region where <m>E \lt U</m> are exponential functions.
+        </p>
+      </li>
+      <li>
+        <p>
+          In the case of the semi-infinite well,
+          the length of the well <m>L</m> is not exactly an integer or half-integer multiple of the wavelength as in the infinite square well
+          (see <xref ref="fig_infinite_sq_well_solutions">Figure</xref>).
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    <em>Note also</em> that in the region where <m>E \lt U</m> the wavefunction <m>\psi(x)</m> is <em>not zero</em>.
+    This might not seem at first glance to be all that surprising until you consider that a particle's kinetic energy <m>K = E - U</m>,
+    and the region where <m>E \lt U</m> is a classically forbidden region (i.e., a particle can't ever be found in that region,
+    classically) since classical mechanics forbids a particle ever from having a negative kinetic energy.
+    But even though classical mechanics says that a particle can never enter a region where <m>E \lt U</m>,
+    we can see from this example that quantum theory predicts a non-zero probability for a particle to be found in this region.
+  </p>
+  <figure xml:id="fig_tunneling">
+    <caption>For this potential, a particle with energy <m>E</m> in the region
+    <m>0 \lt  x \lt  L_1</m> would remain trapped forever, according to classical
+    physics. But quantum theory predicts that the particle can
+    <q>tunnel</q>
+    through the thin barrier and escape.</caption>
+    <image width="56%" source="images/tunnel_potential"/>
+  </figure>
+  <p>
+    But what if there is a potential well such as the one shown in <xref ref="fig_tunneling">Figure</xref>?
+    If a particle confined in the region
+    <m>0 \lt x \lt L_1</m> has an energy <m>E \lt U_0</m>,
+    then according to classical theory,
+    that particle will remain trapped between <m>x = 0</m> and <m>x = L</m> forever,
+    since it can never pass through the classically-forbidden region <m>L_1 \lt x \lt L_2</m>.
+    But we just saw in our previous example that Schr&#xf6;dinger's Equation predicts a non-zero probability of a particle being found in a classically-forbidden region,
+    so presumably,
+    there is a non-zero probability that the particle in <xref ref="fig_tunneling">Figure</xref>
+    can be found in the region <m>L_1 \lt x \lt L_2</m>.
+    But if it can make it into that region,
+    then there is a non-zero probability that the particle can be found <em>outside</em>
+    the confined region, i.e. for <m>x > L_2</m>!
+    In other words, a classically-trapped particle can
+    <q>tunnel</q>
+    out of the trap in quantum mechanics.
+  </p>
+  <p>
+    We won't calculate the probabilities for tunneling.
+    But examination of <xref ref="fig_Semi_Inf_States">Figure</xref>
+    indicates that the probabilities tail off the wider the classically-forbidden region is.
+    So, the probabilities can become quite small unless the barrier is very narrow and unless the energy <m>E</m> is close to the barrier height <m>U_0</m>.
+    Despite these limitations,
+    quantum mechanical tunneling can play a very important role in various processes,
+    and has already found its way into some useful applications:
+    <ul>
+      <li>
+        <p>
+          Scanning tunneling microscopes (STMs) have been developed that use tunneling to produce images of surfaces that can resolve individual atoms.
+        </p>
+      </li>
+      <li>
+        <p>
+          Josephson junctions and tunneling diodes have become tools of modern electronics.
+        </p>
+      </li>
+      <li>
+        <p>
+          Tunneling is being proposed as a new mechanism for developing transistors,
+          which could improve the performance of integrated circuits in the future.
+        </p>
+      </li>
+    </ul>
+  </p>
+</section>

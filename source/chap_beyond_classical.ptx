@@ -1,0 +1,11 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_beyond_classical">
+  <title>Beyond Classical Physics: Photons
+  and Wave-Particle Duality</title>
+  <xi:include  href="sec_beyond_classical_intro.ptx"/>
+  <xi:include  href="sec_three_great_failures.ptx"/>
+  <xi:include  href="sec_uv_catastrophe.ptx"/>
+  <xi:include  href="sec_photons.ptx"/>
+  <xi:include  href="sec_photons_interacting_matter.ptx"/>
+  <xi:include  href="sec_wave_particle_duality.ptx"/>
+  <xi:include  href="sec_beyond_classical_problems.ptx"/>
+</chapter>

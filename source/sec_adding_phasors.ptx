@@ -1,0 +1,283 @@
+<section xml:id="sec_adding_phasors">
+  <title>Adding Phasors</title>
+  <figure xml:id="fig_phasor08">
+    <caption>Phasor diagram showing separate phasors
+    for oscillations <m>y_1</m> and <m>y_2</m> rotating together with the
+    same angular frequency.</caption>
+    <image width="92.5%" source="images/phasor08"/>
+  </figure>
+  <p>
+    The power and utility of the phasor representation really show up when combining oscillations.
+    Consider two oscillations,
+    both with the same angular frequency <m>\omega</m>,
+    but with different amplitudes and phases:
+    <men>
+      y_1(t) = A_1\cos{(\omega t + \phi_1)} \text{ and } y_2(t) = A_2\cos{(\omega t + \phi_2)}
+    </men>.
+  </p>
+  <p>
+    The superposition of these two oscillations,
+    <m>y_{ tot} = y_1 + y_2</m>,
+    will be sinusoidal with the same angular frequency <m>\omega</m>,
+    but it is very messy to calculate the new amplitude and phase shift algebraically;
+    it is actually much simpler using the complex phasor method.
+    Because the oscillation's have the same frequency,
+    the phasors rotate together as time passes,
+    as illustrated in <xref ref="fig_phasor08">Figure</xref>.
+    That is, the angle between the phasors will always be <m>\Delta\phi = \phi_2-\phi_1</m>.
+  </p>
+  <p>
+    The resultant phasor, with its own amplitude and phase,
+    is illustrated in <xref ref="fig_phasor09">Figure</xref>.
+    We can determine the amplitude and phase of the resultant phasor by adding the two input phasors the same way we add vectors.
+    The amplitude of the resultant will be less than the sum of the two original phasor amplitudes
+    (unless <m>\Delta\phi = 0</m>)
+    and the phase of the resultant will be something between the phases of the two original phasors.
+  </p>
+  <figure xml:id="fig_phasor09">
+    <caption>The combined oscillation is described by
+    a phasor that is the vector sum of the two separate phasors.</caption>
+    <image width="92.5%" source="images/phasor09"/>
+  </figure>
+  <example xml:id="example4">
+    <title>Rock Your Boat</title>
+    <statement>
+      <p>
+        You're sitting in a boat in the middle of a calm lake.
+        Suddenly a motor boat drives by,
+        producing waves that would oscillate your boat up and down as follows:
+        <men>
+          y_1(t) = A_1\cos{(\omega t + \phi_1)}
+        </men>,
+        where <m>A_1 = 25\Xunits{cm}</m>,
+        <m>\omega = \frac{2\pi}{3}</m>,
+        and <m>\phi_1 = \frac{\pi}{6}</m>.
+        At the same time, another motor boat drives by,
+        producing waves that would oscillate your boat up and down as follows:
+        <men>
+          y_2(t) = A_2\cos{(\omega t + \phi_2)}
+        </men>,
+        where <m>A_2 = 15\Xunits{cm}</m>,
+        <m>\omega = \frac{2\pi}{3}</m>,
+        and <m>\phi_1 = \frac{\pi}{3}</m>.
+        However, since both waves act on the boat simultaneously,
+        the actual oscillation of your boat is the superposition of these two waves.
+        How much does your boat move up and down as a result of the combination of these waves?
+        <em>Solution:
+        </em> The phasor diagram for these two separate oscillations is shown in <xref ref="fig_phasor10">Figure</xref>.
+        The resultant phasor can be determined from the vector addition of the phasors shown in <xref ref="fig_phasor11">Figure</xref>.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><nbsp/><nbsp/> Phasor<nbsp/><nbsp/></cell>
+          <cell><nbsp/><nbsp/> real part (horizontal) <nbsp/><nbsp/></cell>
+          <cell><nbsp/><nbsp/> imaginary part (vertical) <nbsp/><nbsp/></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  >1</cell>
+          <cell><m>25\cos\left(\frac{\pi}{6}\right) = 21.6</m></cell>
+          <cell><m>25\sin\left(\frac{\pi}{6}\right) = 12.5</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell><m>15\cos\left(\frac{\pi}{3}\right) =7.5</m></cell>
+          <cell><m>15\sin\left(\frac{\pi}{3}\right) =13.0</m></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  >Total</cell>
+          <cell><m>29.1</m></cell>
+          <cell><m>25.5</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <figure xml:id="fig_phasor10">
+        <caption>Phasor diagram for
+        two water waves in <xref ref="example4">Example</xref>.</caption>
+        <image width="92.5%" source="images/phasor10"/>
+      </figure>
+      <p>
+        So, the amplitude of the resultant phasor is
+        <men>
+          A_{ tot} = \sqrt{29.1^2 + 25.5^2} =38.7\Xunits{cm}
+        </men>,
+        and its initial phase is
+        <men>
+          \phi_{ tot} = \tan^{-1}{\left(\frac{25.5}{29.1}\right)} = 0.72\Xunits{rad}
+        </men>.
+      </p>
+      <figure xml:id="fig_phasor11">
+        <caption>Phasor addition  for
+        two water waves in <xref ref="example4">Example</xref>.</caption>
+        <image width="92.5%" source="images/phasor11"/>
+      </figure>
+      <p>
+        We can write the superposition as
+        <md>
+          <mrow>y_{ tot}(t) =\mathstrut \amp  A_{ tot}\cos{(\omega t + \phi_{ tot})}</mrow>
+          <mrow>=\mathstrut \amp  38.7\cos{(\omega t + 0.72)}</mrow>
+        </md>,
+        with <m>y</m> in cm and <m>t</m> in sec.
+      </p>
+    </statement>
+  </example>
+  <example xml:id="exampleTwoTowers">
+    <title>Two Towers</title>
+    <statement>
+      <figure xml:id="fig_phasor12">
+        <caption>Illustration of radio towers in
+        <xref ref="exampleTwoTowers">Example</xref>.</caption>
+        <image width="92.5%" source="images/phasor12"/>
+      </figure>
+      <p>
+        Two radio towers, A and B, separated by <m>20\Xunits{m}</m>,
+        broadcast the same radio signal of wavelength <m>\lambda = 12\Xunits{m}</m>.
+        You're standing at the point <m>P</m> indicated in the figure with your radio wave amplitude meter.
+        With only tower A broadcasting,
+        you measure a wave amplitude of 7
+        (in some unspecified unit).
+        With only tower B broadcasting,
+        you measure a wave amplitude of 5.
+        What amplitude do you measure when both towers are broadcasting?
+        <em>Solution:
+        </em> Here we're interested in the superposition of the waves from the two towers.
+        We aren't explicitly given the phase difference between the wave signals that arrive at <m>P</m> from the two towers,
+        but we can figure it out because we know the distances from point <m>P</m> to each tower.
+        If the waves leave the two towers in phase,
+        they won't necessarily be in phase when they reach point <m>P</m> because the waves from Tower B have to travel farther.
+        How much farther?
+        Well, the distance between Tower B and point <m>P</m> is <m>\sqrt{50^2 + 20^2} = 53.85\Xunits{m}</m>,
+        so the waves from Tower B have to travel <m>3.85\Xunits{m}</m> farther.
+        That means the waves from Tower A will be
+        <m>3.85\Xunits{m}</m> ahead of the waves from Tower B.
+      </p>
+      <p>
+        We can turn that distance difference into a phase difference for the waves.
+        The path length difference
+        <m>\Delta r = 3.85\Xunits{m}</m> produces <m>\frac{3.85}{12} = 0.32</m> <em>wavelengths</em>
+        of difference between the two waves as they arrive at point <m>P</m>.
+        If the waves from Tower A arrived exactly one wavelength ahead of the waves from Tower B, the signals would add constructively.
+        The phase difference would be <m>2\pi</m>,
+        and peaks and troughs of the two waves would be aligned.
+        In this case, however, the waves from Tower A arrive only
+        <m>0.32\Xunits{wavelengths}</m> ahead of the waves from Tower B. Consequently,
+        the phase difference <m>\Delta\phi</m> is
+        <men>
+          \Delta\phi = 2\pi \frac{\Delta r}{\lambda} = 2\pi \frac{3.85}{12} = 2.0\Xunits{rad}
+        </men>.
+      </p>
+      <p>
+        We can then write expressions for the two oscillations at point <m>P</m> as follows:
+        <men>
+          y_A(t) = 7\cos{\left(\omega t + 2.0\right)} y_B(t) = 5\cos{\left(\omega t\right)}
+        </men>.
+      </p>
+      <p>
+        Why did I pick zero initial phase for the signal from Tower B? Because I could.
+        In this case
+        (and in most cases we'll deal with),
+        we're only interested in the phase difference between signals.
+        Therefore, I can always choose to describe one wave with zero initial phase,
+        and then put the phase difference into the expression for the other wave.
+        With one phasor on the horizontal axis,
+        the phasor addition is just easier.
+      </p>
+      <p>
+        Now we can construct a phasor diagram for the two oscillations,
+        shown in <xref ref="fig_phasor13">Figure</xref>.
+      </p>
+      <figure xml:id="fig_phasor13">
+        <caption>Phasor diagram for radio waves in
+        <xref ref="exampleTwoTowers">Example</xref>.</caption>
+        <image width="92.5%" source="images/phasor13"/>
+      </figure>
+      <p>
+        Once again, the resultant phasor can be determined from the vector addition of the phasors.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><nbsp/><nbsp/> Phasor</cell>
+          <cell><nbsp/><nbsp/> real part (horizontal) <nbsp/><nbsp/></cell>
+          <cell><nbsp/><nbsp/> imaginary part (vertical)</cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  >1</cell>
+          <cell><m>5\cos{\left(0\right)}=5</m></cell>
+          <cell><m>5\sin{\left(0\right)}=0</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell><m>7\cos{\left(2.0\right)}=-2.9</m></cell>
+          <cell><m>7\sin{\left(2.0\right)}=6.4</m></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  >Total</cell>
+          <cell><m>2.1</m></cell>
+          <cell><m>6.4</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <p>
+        So, the amplitude of the resultant phasor is
+        <men>
+          A_{ tot} = \sqrt{2.1^2 + 6.4^2} = 6.7
+        </men>,
+        and its initial phase is
+        <men>
+          \phi_{ tot} = \tan^{-1}{\left(\frac{6.4}{2.1}\right)} = 1.25\Xunits{rad}
+        </men>,
+        and we can thus write the superposed oscillation as
+        <men>
+          y_{ tot}(t) = 6.7\cos{(\omega t + 1.25)}
+        </men>.
+      </p>
+    </statement>
+  </example>
+</section>

@@ -1,0 +1,10 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_uncertainty">
+  <title>Waves, Probabilities, and
+  Uncertainty</title>
+  <xi:include  href="sec_uncertainty_intro.ptx"/>
+  <xi:include  href="sec_quantum_waves.ptx"/>
+  <xi:include  href="sec_heisenberg_principle.ptx"/>
+  <xi:include  href="sec_atom_stability.ptx"/>
+  <xi:include  href="sec_schrodinger_eqn.ptx"/>
+  <xi:include  href="sec_uncertainty_problems.ptx"/>
+</chapter>

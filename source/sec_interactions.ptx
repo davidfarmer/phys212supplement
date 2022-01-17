@@ -1,0 +1,215 @@
+<section xml:id="sec_interactions">
+  <title>Interactions and Messenger Bosons</title>
+  <figure xml:id="fig_feynman_electron_photon">
+    <caption>Feynman diagrams of typical electromagnetic interactions.
+    An electron changes momentum by (a) emitting a photon (<m>e^- \rightarrow
+    e^- + \gamma</m>), or (b) absorbing a photon (<m>e^- + \gamma \rightarrow e^-</m>).</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/feynman_electron_photon"/>
+    </sidebyside>
+  </figure>
+  <p>
+    Before describing the weak interaction on a fundamental level,
+    let's review how photons and gluons serve as the messengers for the electromagnetic and strong interactions between leptons and quarks.
+    Messenger particles that transmit interactions, such as photons, gluons,
+    and the <m>W</m>'s and <m>Z^0</m>'s, are also called intermediate bosons,
+    because they mediate interactions and carry integer spin.
+  </p>
+  <p>
+    Consider first the most familiar lepton, an electron,
+    emitting or absorbing a photon.
+    The basic interaction occurs at a vertex in a Feynman diagram.
+    See <xref ref="fig_feynman_electron_photon">Figure</xref>.
+    As the electron emits or absorbs a photon,
+    its energy and momentum change,
+    but it remains an electron.
+  </p>
+  <p>
+    Turn now to the description of a quark emitting or absorbing a gluon.
+    See <xref ref="fig_feynman_quark_gluon">Figure</xref>.
+    Notice that only gluons carrying red (<m>R\overline R</m>,
+    <m>R\overline B</m>,
+    or <m>R\overline G</m>) can be emitted by red quarks,
+    while only gluons carrying antired (<m>R\overline R</m>,
+    <m>B\overline R</m>,
+    or <m>G\overline R</m>) can be absorbed by red quarks.
+    Similar rules apply for the gluons emitted or absorbed by blue or green quarks.
+    As the quarks in the diagram emit or absorb a gluon, their energy,
+    momentum,
+    and color may all change, but the
+    <em>flavor</em> remains the same,
+    i.e., a down quark remains a down quark,
+    an up quark remains an up quark, etc.
+  </p>
+  <figure xml:id="fig_feynman_quark_gluon">
+    <caption>Feynman diagrams of typical quark-gluon interactions.  An
+    up quark changes color by (a) emitting a gluon (<m>Ru \rightarrow
+    Bu + R\bar{B}gl</m>), or (b) absorbing a gluon (<m>Ru + B\bar{R}gl \rightarrow
+    Bu</m>).</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/feynman_quark_gluon"/>
+    </sidebyside>
+  </figure>
+  <p>
+    The weak interaction,
+    mediated by the <m>W^\pm</m> and <m>Z^0</m> bosons,
+    is probably the hardest one to understand.
+    You saw in <xref ref="chap_particles">Chapter</xref>
+    that the weak interaction violates strangeness conservation,
+    and it is known that certain other symmetries are violated as well.
+    We know that both quarks and leptons seem to
+    <q>feel</q>
+    the weak interaction,
+    but it affects quarks and leptons somewhat differently.
+    Since the <m>W^\pm</m> bosons carry electric charge,
+    the particle emitting or absorbing a <m>W</m> boson must change its identity in a major way.
+  </p>
+  <p>
+    Consider first how <m>W</m> bosons interact with quarks.
+    A <m>W</m> boson <em>changes a quark's flavor</em>.
+    That is, if an up quark emits or absorbs a <m>W</m>,
+    then it is no longer an up quark.
+    In <xref ref="fig_feynman_quark_W">Figure</xref>,
+    we see a red strange quark emitting or absorbing a W and becoming a red up quark.
+    Its energy, momentum, charge and flavor change,
+    but the quark color remains red.
+  </p>
+  <p>
+    While <xref ref="fig_feynman_quark_W">Figure</xref>
+    shows typical interactions at a quark-<m>W</m> vertex,
+    we can derive several other versions based on the symmetry properties of Feynman diagrams.
+    Look at <xref ref="table_weak_quarks">Table</xref>.
+    Each operation is based on the standard version.
+    Also, any <em>combination</em> of these operations yields a valid quark-<m>W</m> interaction.
+  </p>
+  <figure xml:id="fig_feynman_quark_W">
+    <caption>Feynman diagrams of typical quark-<m>W</m> boson interactions.
+    A
+    strange quark changes flavor by (a) emitting a <m>W^-</m> (<m>Rs \rightarrow
+    Ru + W^-</m>), or (b) absorbing a <m>W^+</m> (<m>Rs + W^+ \rightarrow Ru</m>).</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/feynman_quark_W"/>
+    </sidebyside>
+  </figure>
+  <table xml:id="table_weak_quarks">
+    <title>Weak interactions of quarks</title>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>standard version</cell>
+        <cell><m>s \to u + W^-</m></cell>
+      </row>
+      <row>
+        <cell>reverse arrow</cell>
+        <cell><m>u + W^- \to s</m></cell>
+      </row>
+      <row>
+        <cell>particle out <m>=</m> anti-particle in</cell>
+        <cell><m>\overline u + s \to W^-</m></cell>
+      </row>
+      <row>
+        <cell>change to antiparticles</cell>
+        <cell><m>\overline s \to \overline u + W^+</m></cell>
+      </row>
+      <row>
+        <cell>replace <m>s</m> with <m>d</m></cell>
+        <cell><m>d \to u + W^-</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    Finally, let's look at how <m>W</m>'s interact with leptons.
+    A <m>W</m> boson <em>changes a lepton's
+    <q>family membership.</q>
+    </em> We saw earlier that there are three types or families of leptons:
+    electron, muon, and tauon.
+    Each family contains a negative particle,
+    a positive antiparticle, and a neutrino and antineutrino.
+    The basic interaction is that a lepton emits a <m>W^+</m> or <m>W^-</m> and changes into a different lepton of the same family.
+    This process of changing to a different lepton of the same family is what we mean by the phrase
+    <q>change of family membership.</q>
+    As <xref ref="fig_feynman_lepton_W">Figure</xref> illustrates,
+    the electron emits a <m>W^-</m> or absorbs a <m>W^+</m> and changes its charge and family membership,
+    becoming an electron neutrino.
+    But, it maintains its lepton number, <m>L_e = +1</m>.
+  </p>
+  <p>
+    As with the quark interactions,
+    we can derive several versions of the lepton-<m>W</m> interaction.
+    These are listed in <xref ref="table_weak_leptons">Table</xref>.
+    Each operation is based on the standard version.
+    Again, any combination of these operations yields a valid lepton-<m>W</m> interaction.
+  </p>
+  <figure xml:id="fig_feynman_lepton_W">
+    <caption>Feynman diagrams of typical lepton-<m>W</m> boson
+    interactions.  An electron changes its family membership by
+    (a) emitting a <m>W^-</m> (<m>e^- \rightarrow \nu_e + W^-</m>), or
+    (b) absorbing a <m>W^+</m> (<m>e^- + W^+ \rightarrow \nu_e</m>).</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/feynman_lepton_W"/>
+    </sidebyside>
+  </figure>
+  <table xml:id="table_weak_leptons">
+    <title>Weak interactions of leptons</title>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>standard version</cell>
+        <cell><m>e^- \to \nu_e + W^-</m></cell>
+      </row>
+      <row>
+        <cell>reverse arrow</cell>
+        <cell><m>\nu_e + W^- \to e^-</m></cell>
+      </row>
+      <row>
+        <cell>particle in <m>=</m> antiparticle out</cell>
+        <cell><m>\overline\nu_e + e^- \to W^-</m></cell>
+      </row>
+      <row>
+        <cell>change to antiparticles</cell>
+        <cell><m>e^+ \to \overline\nu_e + W^+</m></cell>
+      </row>
+      <row>
+        <cell>replace <m>e</m> with <m>\mu</m> or <m>\tau</m></cell>
+        <cell><m>\mu^- \to \nu_\mu + W^-</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    An important thing to note here is the equivalence in these processes and in the diagrams between a particle
+    <q>going forward in time</q>
+    and an antiparticle
+    <q>going backward in time.</q><fn>
+    As an example of this seemingly-crazy idea,
+    try drawing a Feynman diagram for the annihilation of an electron and positron,
+    resulting in the production of two photons.
+    Mathematically,
+    you could describe the same process as an electron moving along,
+    emitting two photons, and then going backwards in time.
+    (Or, alternately, an electron emits a photon, gets deflected,
+    then emits another photon, and then goes backwards in time.)
+    Note that this does not mean that quantum theory predicts the possibility of macroscopic objects traveling backwards in time <mdash/> it does not.
+    </fn> In <xref ref="fig_feynman_lepton_W">Figure</xref>,
+    for instance,
+    an electron is changed into a <m>\nu_e</m> neutrino either by emitting a <m>W^-</m> or by absorbing a <m>W^+</m>.
+    This can result in some ambiguity:
+    a process in which particle <m>A</m> emits a <m>W^-</m>,
+    which is then absorbed by particle <m>B</m>,
+    could just as easily be re-written as a process in which particle <m>B</m> emits a <m>W^+</m>,
+    which is then absorbed by particle <m>A</m>.
+  </p>
+</section>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <docinfo>
+<macros>
+\newcommand{\solution}{
+\textbf{Solution: }}
+\renewcommand{\labelenumi}{\textbf{\arabic{chapter}.\arabic{enumi}}}
+\newcommand{\Xunits}[1]{\,\mbox{#1}}
+\renewcommand{\arraystretch}{2.0}
+\newcommand{\Xunits}[1]{\,\mathrm{#1}}
+\renewcommand{\arraystretch}{1.0}
+\newcommand{\ket}[1]{\,| #1 \rangle}
+\renewcommand{\arraystretch}{2.0}
+\renewcommand{\arraystretch}{1.0}
+\renewcommand{\arraystretch}{2.0}
+\renewcommand{\arraystretch}{1.0}
+\renewcommand{\arraystretch}{1.2}
+</macros>
+<latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usetikzlibrary{patterns}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix,arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{through,intersections,decorations,shadows,fadings}
+\usepackage{pgfplots}
+</latex-image-preamble>
+  </docinfo>
+  <book>
+    <title>Bucknell Physics 212 Supplement</title>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>Spring, 2022</personname>
+        </author>
+      </titlepage>
+    </frontmatter>
+    <xi:include href="./chap_additional_problems.ptx"/>
+    <xi:include href="./chap_phasors.ptx"/>
+    <xi:include href="./chap_beyond_classical.ptx"/>
+    <xi:include href="./chap_uncertainty.ptx"/>
+    <xi:include href="./chap_quantized_energies.ptx"/>
+    <xi:include href="./chap_spin.ptx"/>
+    <xi:include href="./chap_quantum_statistics.ptx"/>
+    <xi:include href="./chap_3D_and_semiconductors.ptx"/>
+    <xi:include href="./chap_quantum_entanglement.ptx"/>
+    <xi:include href="./chap_particles.ptx"/>
+    <xi:include href="./chap_quarks.ptx"/>
+    <xi:include href="./chap_interactions.ptx"/>
+    <xi:include href="./chap_cosmology.ptx"/>
+    <xi:include href="./chap_selected_answers.ptx"/>
+    <backmatter>
+      <xi:include href="./bibliography.ptx"/>
+    </backmatter>
+  </book>
+</pretext>

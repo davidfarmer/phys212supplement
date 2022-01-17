@@ -1,0 +1,9 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_cosmology">
+  <title>Cosmology</title>
+  <xi:include  href="sec_cosmology_intro.ptx"/>
+  <xi:include  href="sec_early_universe.ptx"/>
+  <xi:include  href="sec_crucial_events.ptx"/>
+  <xi:include  href="sec_early_universe_epochs.ptx"/>
+  <xi:include  href="sec_observational_tests.ptx"/>
+  <xi:include  href="sec_cosmology_problems.ptx"/>
+</chapter>

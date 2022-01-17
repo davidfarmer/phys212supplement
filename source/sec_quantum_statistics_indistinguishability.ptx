@@ -1,0 +1,125 @@
+<section xml:id="sec_quantum_statistics_indistinguishability">
+  <title>Quantum Statistics</title>
+  <p>
+    The whole phenomenon of indistinguishability results from considering pairs of quantum particles and asking the following:
+  </p>
+  <blockquote>
+    In a two-particle system where particles 1 and 2 are of the same type,
+    say, both photons or both electrons, is it possible to tell which is
+    particle 1 and which is particle 2?
+  </blockquote>
+  <p>
+    To be specific, let's consider the ground state of a helium atom.
+    Helium has two electrons orbiting the nucleus and both electrons can be in the ground state energy level.
+    In classical physics, the two electrons
+    <em>must</em> be distinguishable:
+    zoom in with a detailed enough probe and you could see which electron is where.
+    You could name them electron-Fred and electron-George,
+    and then follow their motion with a fast camera and keep track of which was Fred and which was George.
+    So the classical physics answer to the question above is yes:
+    with enough technology we can tell which is which.
+  </p>
+  <p>
+    But the microscopic world isn't classical,
+    and in quantum mechanics things are different.
+    Heisenberg's uncertainty principle has already demanded that the electrons in the ground state have some spread in position and spread in momentum.
+    Since the two electrons are overlapping in this smeared out
+    <q>Fred-George-blob</q>
+    state, Heisenberg is prohibiting us from tracking the two particles separately,
+    no matter how fast or high resolution our camera is.
+    Therefore it is at least possible for quantum mechanical particles to be
+    <em>indistinguishable</em>.
+    But that just leaves the question open.
+    To demonstrate quantum indistinguishability we will have to work out its implications and then test them against nature.
+  </p>
+  <p>
+    Let's develop some notation.
+    If particle 1 is in state <m>|\alpha\rangle</m> and particle 2 in state <m>|\beta\rangle</m>
+    (these might be spin states, or energy levels, or whatever),
+    we can write the two-particle state as <m>|\psi\rangle = |\alpha\,\beta\rangle</m>.
+    Here we read the particle 1 state as the first symbol and the particle 2 state as the second symbol.
+  </p>
+  <p>
+    But if these quantum particles are indistinguishable we cannot really have the state <m>|\alpha\,\beta\rangle</m>,
+    since that notation says we know it's particle 1 in state <m>|\alpha\rangle</m>,
+    and by assumption we can't know this.
+    What we really want to say is
+    <q>one of the particles is in
+    <m>|\alpha\rangle</m> and the other particle is in
+    <m>|\beta\rangle</m> and that's all we know.</q>
+    We can achieve this by making a superposition:
+    <men>
+      |\psi_S\rangle = \frac{1}{\sqrt 2} |\alpha\,\beta\rangle + \frac{1}{\sqrt 2}|\beta\,\alpha\rangle
+    </men>.
+  </p>
+  <p>
+    The state <m>|\psi_S\rangle</m> truly makes no distinction between particle 1 and particle 2.
+    You can see this by consider the effect of swapping the particle labels 1 and 2:
+    <men xml:id="eq_swap_operation">
+      |\alpha\,\beta\rangle \;\xrightarrow[\text{ swap }  1\leftrightarrow 2]{} \; |\beta\,\alpha\rangle
+    </men>.
+  </p>
+  <p>
+    If we apply this
+    <q>swap</q>
+    operation on <m>|\psi_S\rangle</m>,
+    we find that we get the same state back:
+    <men>
+      |\psi_S\rangle \; \xrightarrow[\text{ swap }  1\leftrightarrow 2]{} \; \frac{1}{\sqrt 2} |\beta\,\alpha\rangle + \frac{1}{\sqrt 2} |\alpha\,\beta\rangle = |\psi_S\rangle
+    </men>.
+  </p>
+  <p>
+    Therefore the state <m>|\psi_S\rangle</m>,
+    which is the <em>symmetric</em>
+    superposition of <m>|\alpha\,\beta\rangle</m> and <m>|\beta\,\alpha\rangle</m>,
+    is a candidate state to describe indistinguishable particles.<fn>
+    The <m>1/\sqrt{2}</m> coefficients are required for normalization.
+    </fn>
+  </p>
+  <p>
+    There is another possibility, though.
+    Recall that the overall sign of a wavefunction or state has no impact on any measurable quantity.
+    All the measurements we can make amount to probabilities,
+    which come from squaring the coefficients in front of the states.
+    So we could also make indistinguishable particle states with the
+    <em>antisymmetric</em> combination
+    <men>
+      |\psi_A\rangle =  \frac{1}{\sqrt 2} |\alpha\,\beta\rangle - \frac{1}{\sqrt 2}|\beta\,\alpha\rangle
+    </men>.
+  </p>
+  <p>
+    This state picks up exactly an overall minus sign under the
+    <q>swap</q>
+    operation:
+    <men>
+      |\psi_A\rangle \;\xrightarrow[\text{ swap }  1\leftrightarrow 2]{}  \; \frac{1}{\sqrt 2} |\beta\,\alpha\rangle - \frac{1}{\sqrt 2} |\alpha\,\beta\rangle = -|\psi_A\rangle
+    </men>.
+  </p>
+  <p>
+    So we have two possibilities for quantum indistinguishability:
+    the two-particle states can either be the symmetric
+    <m>|\psi_S\rangle</m> or the antisymmetric <m>|\psi_A\rangle</m>.
+    And now for a strong statement.
+  </p>
+  <p>
+    <assemblage>
+      <p>
+        Every particle that has ever been discovered exhibits quantum indistinguishability!
+      </p>
+    </assemblage>
+  </p>
+  <p>
+    This includes photons, electrons,
+    protons, neutrons, the quarks that make up protons and neutrons,
+    and more exotic particles like the <m>W</m> and <m>Z</m> bosons.
+    It seems to be a fundamental property of the quantum world obeyed by everything,
+    just like wave-particle duality.
+  </p>
+  <p>
+    The particles that are symmetric under swap are called <em>bosons</em>,<fn>
+    In honor of the Indian physicist Satyendra Bose.
+    </fn> and the particles that are antisymmetric under swap are called <em>fermions</em>.<fn>
+    In honor of the Italian-American physicist Enrico Fermi.
+    </fn> We will consider both cases in detail below.
+  </p>
+</section>

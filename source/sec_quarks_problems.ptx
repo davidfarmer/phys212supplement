@@ -1,0 +1,161 @@
+<exercises xml:id="sec_quarks_problems">
+  <title>Problems</title>
+  <exercise xml:id="prob_think_about_forces">
+    <statement>
+      <p>
+        Think about what you are doing
+        (or not doing)
+        right at this minute. (a) Identify
+        (and write down)
+        as many forces as you can that are acting on you right now and/or are affecting your environment. (b) Describe what your life would be like if there were no forces or interactions at all.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_pair_production">
+    <statement>
+      <p>
+        (a) What is the minimum energy fluctuation
+        <m>\Delta E</m> required to create a virtual electron-positron pair? (b) Roughly how long could such a virtual pair survive?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_Z_boson">
+    <statement>
+      <p>
+        The <m>Z</m>-boson
+        (one of the mediators of the weak force)
+        has a mass of <m>91.2\Xunits{GeV/ c^2 }</m>.
+        <ol>
+          <li>
+            <p>
+              What is the minimum energy fluctuation required to create a virtual <m>Z</m>-boson?
+            </p>
+          </li>
+          <li>
+            <p>
+              Roughly how long could such a virtual <m>Z</m> survive?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the farthest that this particle could travel during this lifetime?
+            </p>
+          </li>
+          <li>
+            <p>
+              How does this result compare with the known range of the weak force (<m>\sim 10^{-3}\Xunits{fm}</m>)?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_fifth_force">
+    <statement>
+      <p>
+        Several years ago,
+        a group of physicists claimed to have discovered a fifth force with a range of approximately <m>100\Xunits{m}</m>.
+        If this force had turned out to be valid
+        (few people believe this to be the case),
+        what would have been the approximate
+        (order of magnitude)
+        mass of its messenger particle?
+        Express your answer in eV/<m>c^2</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_pair_annihilation_diagram">
+    <statement>
+      <p>
+        Draw a Feynman diagram corresponding to the annihilation of an electron-positron pair.
+        An electron moves to the right and hits a positron moving to the left.
+        They annihilate each other,
+        resulting in the formation of two photons,
+        one moving left and the other moving right.
+        <em>Hint:</em> You will need two vertices.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_gumby">
+    <statement>
+      <p>
+        A Feynman diagram can be played with like a Gumby doll.
+        You can bend all the branches up and down,
+        as long as you follow one simple rule:
+        every time you bend an upward-going branch downward
+        (or a downward-going branch upward),
+        you replace the particle with its antiparticle.
+        For example, in <xref ref="fig_muon_W">Figure</xref>,
+        if the <m>\nu_\mu</m> branch is bent downward,
+        you can get the interaction <m>\overline\nu_\mu + \mu^- \to \overline\nu_e + e^-</m>.
+        <ol>
+          <li>
+            <p>
+              Verify that this new reaction satisfies all the appropriate conservation laws.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use the Gumby approach to come up with several other possibilities for interactions,
+              starting with <xref ref="fig_muon_W">Figure</xref>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_colorless_rule">
+    <statement>
+      <p>
+        Show with some examples that the colorless rule yields particles with integer charge.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_quark_color">
+    <statement>
+      <p>
+        An antiblue antiquark emits a green-antiblue gluon.
+        What color is the antiquark after emission?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_camouflage">
+    <statement>
+      <p>
+        Explain in your own words how <em>camouflage</em>
+        leads to confinement of quarks inside hadrons.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="problem_gumby_quark_W">
+    <statement>
+      <p>
+        Draw a diagram like <xref ref="fig_feynman_quark_W">Figure</xref>
+        for each of the reactions in <xref ref="table_weak_quarks">Table</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="problem_gumby_lepton_W">
+    <statement>
+      <p>
+        Draw a diagram like <xref ref="fig_feynman_lepton_W">Figure</xref>
+        for each of the reactions in <xref ref="table_weak_leptons">Table</xref>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_identify_missing_property">
+    <statement>
+      <p>
+        For each vertex diagram below,
+        identify the missing particles, colors,
+        or flavors denoted by a question mark.
+        In other words, wherever you see a <sq>?</sq>,
+        replace it with a type of particle,
+        a color, or a type of quark.
+      </p>
+      <p>
+        <image width="75%" source="images/missing_particles_1"/>
+      </p>
+    </statement>
+  </exercise>
+</exercises>

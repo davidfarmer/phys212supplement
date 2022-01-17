@@ -1,0 +1,162 @@
+<section xml:id="sec_gut_theories">
+  <title>Grand Unified Theories (GUTs)</title>
+  <p>
+    Unification of the electrical and magnetic forces was explained in the late 1800's by Maxwell's comprehensive theory of electricity and magnetism,
+    which showed that the two forces are really just different forms of the same fundamental force.
+    More recently,
+    the discovery of the <m>W</m> and <m>Z</m> messenger particles (in 1983) verified the <em>Standard Model</em>
+    that unifies electromagnetic forces with weak forces
+    (now referred to in one word as
+    <q>electroweak</q>
+    forces).
+    But Einstein's dream of unification of the fundamental forces is not yet complete,
+    since strong forces and gravitational forces have not yet been included in the model.
+    However, attempts are being made to include the strong force with the electroweak.
+  </p>
+  <p>
+    To see how this inclusion would be possible,
+    we must consider one more type of interaction,
+    one that could change quarks into leptons and vice versa.
+    This interaction is one of the key ideas of
+    <em>grand unified theories</em>.
+    But first let us reflect on the striking parallel between the set of quarks and leptons.
+    We expand the lepton family to include quarks and call the resulting group a generation.
+    See <xref ref="table_particle_generations">Table</xref>.
+  </p>
+  <p>
+    Only the first generation is really
+    <q>needed.</q>
+    All the normal everyday material of nuclei, atoms,
+    and objects are made from these.
+    The other generations are extra pieces of the puzzle of physics.
+    When grouped this way,
+    one might ask if there isn't some scheme that unites the quarks and leptons.
+    In fact there is.
+    This is the job of grand unified theories (GUTs).
+  </p>
+  <table xml:id="table_particle_generations">
+    <title>Generations of particles</title>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell>Leptons</cell>
+        <cell>Quarks</cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell></cell>
+        <cell>red</cell>
+        <cell>blue</cell>
+        <cell>green</cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  >1st generation</cell>
+        <cell><m>e^-</m></cell>
+        <cell><m>u</m></cell>
+        <cell><m>u</m></cell>
+        <cell><m>u</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\nu_e</m></cell>
+        <cell><m>d</m></cell>
+        <cell><m>d</m></cell>
+        <cell><m>d</m></cell>
+      </row>
+      <row>
+        <cell>2nd generation</cell>
+        <cell><m>\mu^-</m></cell>
+        <cell><m>s</m></cell>
+        <cell><m>s</m></cell>
+        <cell><m>s</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\nu_\mu</m></cell>
+        <cell><m>c</m></cell>
+        <cell><m>c</m></cell>
+        <cell><m>c</m></cell>
+      </row>
+      <row>
+        <cell>3rd generation</cell>
+        <cell><m>\tau^-</m></cell>
+        <cell><m>b</m></cell>
+        <cell><m>b</m></cell>
+        <cell><m>b</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\nu_\tau</m></cell>
+        <cell><m>t</m></cell>
+        <cell><m>t</m></cell>
+        <cell><m>t</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+  </table>
+  <p>
+    The term <em>grand unification</em>
+    refers to the attempt to unify, in a single theory,
+    the strong, electromagnetic, and weak interactions.
+    That there is any hope for this to succeed comes from the fact that the strengths of the interactions seem to approach each other at short distances and thus at high energies
+    (recall that to explore ever smaller-sized details requires more and more energetic probes).
+    We saw in the previous chapters that camouflage effects tend to make the effective color charge
+    (and therefore the interaction strength of the strong force)
+    <em>smaller</em> at closer distances.
+    On the other hand, the weak and electromagnetic interactions get
+    <em>stronger</em> at closer distances.
+    In fact, the theories describing these interactions are sufficiently well understood that the distance
+    (and thus the energy)
+    at which the interaction strengths become comparable can be estimated to within a factor of 10.
+    See <xref ref="fig_GUT">Figure</xref>.
+  </p>
+  <figure xml:id="fig_GUT">
+    <caption>Effective strength vs.<nbsp/>energy for strong, weak, and
+    electromagnetic interactions.</caption>
+    <image width="92.5%" source="images/GUT"/>
+  </figure>
+  <p>
+    The energy for grand unification,
+    as seen from the figure, is around <m>10^{17}\Xunits{MeV}</m>.
+    This corresponds to the rest energy of the proposed messenger particle,
+    the <m>X</m>-boson or <em>leptoquark</em>.
+    The <m>X</m>-boson's job is to mediate interactions in which quarks turn into leptons and vice-versa.
+    With its tremendous mass of about <m>10^{14}</m> proton masses,
+    it could never be produced on earth as a real particle.
+    Even in its transitory virtual state as a messenger,
+    it would have to borrow so much energy from the surrounding vacuum,
+    that reactions involving the <m>X</m>
+    (under present-day earth-like conditions at least)
+    are expected to be quite unlikely.
+    However, this boson would make possible the startling reaction shown in <xref ref="fig_proton_decay">Figure</xref>.
+  </p>
+  <figure xml:id="fig_proton_decay">
+    <caption>Proton decay, mediated by the <m>X</m>-boson.</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/proton_decay"/>
+    </sidebyside>
+  </figure>
+  <p>
+    If <m>X</m>-bosons are real,
+    the reaction pictured <mdash/> proton decay <mdash/> would become possible,
+    although extremely rare.
+    According to present theories,
+    the mean lifetime of the proton would be greater than <m>10^{30}</m> years.
+    Even though this is 20 orders of magnitude longer than the lifetime of the universe,
+    it may still be testable here on earth
+    (see Problem<nbsp/> <xref ref="prob_proton_decay"></xref>).
+  </p>
+</section>

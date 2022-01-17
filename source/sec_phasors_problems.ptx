@@ -1,0 +1,264 @@
+<exercises xml:id="sec_phasors_problems">
+  <title>Problems</title>
+  <exercise>
+    <statement>
+      <p>
+        Draw phasor diagrams depicting the oscillations described below at the noted times:
+        <ol>
+          <li>
+            <p>
+              For the oscillation <m>x(t) = 3\cos\left(\frac{\pi}{3}t\right)</m>,
+              draw phasor diagrams for <m>t = 0</m>, 1, 2, 3, 5, and <m>6\Xunits{s}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              For the oscillation
+              <me>
+                x(t) = 3e^{i\left(\frac{\pi}{3}t + \frac{\pi}{3}\right)}
+              </me>
+              draw complex phasor diagrams for <m>t = 0</m>, 1, 2, 3, 5, and <m>6\Xunits{s}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_waterwaves">
+    <statement>
+      <p>
+        Consider water waves passing by a fixed point with a period of
+        <m>6\Xunits{s}</m> and a height <m>30\Xunits{cm}</m>.
+        Imagine that <m>t=0</m> corresponds to the moment when the water surface returns to its equilibrium position just after a crest passes.
+        <ol>
+          <li>
+            <p>
+              Draw phasor diagrams for the displacement of the water for times
+              <m>t = 0, 1, 2, 3, 5</m>, and <m>6\Xunits{s}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Write an expression for this oscillation in the form
+              <me>
+                x(t) = Ae^{i\left(\omega t + \phi_0\right)}
+              </me>
+              specifying <m>A</m>, <m>\omega</m>, and <m>\phi_0</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Draw a phasor diagram describing these oscillations:
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle\hspace{0.1in}x(t) = 4 \cos\left(\frac{\pi}{4}t + \frac{\pi}{2}\right) \hspace{0.2in} \mbox{at time <m>t=3\Xunits{s}</m>}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\displaystyle\hspace{0.1in}x(t) = 4 e^{i\left(\frac{\pi}{2} - \frac{\pi}{4}t\right)} \hspace{0.2in} \mbox{at time <m>t=3\Xunits{s}</m>}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Write the superposition of the following two oscillations
+        <me>
+          x_1(t) = 3\cos\left(\frac{\pi}{4}t\right) x_2(t) = 5\cos\left(\frac{\pi}{4}t + \frac{\pi}{3}\right)
+        </me>
+        in the form
+        <me>
+          x_3(t) = A_3 \cos\left(\omega t + \phi_3\right)
+        </me>
+        and determine <m>A_3</m> and <m>\phi_3</m>. (Hint: Use phasor addition!)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_between_towers">
+    <statement>
+      <p>
+        You're standing at the point <m>P</m> on a line between two radio towers, A and B.
+      </p>
+      <p>
+        <image width="92.5%" source="images/phasor26"/>
+      </p>
+      <p>
+        Both towers broadcast the same radio signal of wavelength <m>\lambda = 12\Xunits{m}</m>.
+        With only tower A broadcasting,
+        you measure a wave amplitude of 6
+        (in some unspecified unit).
+        With only tower B broadcasting,
+        you measure a wave amplitude of 3.
+        What amplitude do you measure when both towers are broadcasting?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        You're sitting in the Weis Center listening to the
+        <q>Sonorous Symphony in C,</q>
+        which consists of a single 128 Hz tone played through two speakers separated by <m>5\Xunits{m}</m> on stage.
+        Both speakers emit sound waves in phase.
+      </p>
+      <p>
+        <image width="92.5%" source="images/phasor14"/>
+      </p>
+      <p>
+        You happen to be sitting at the point <m>P</m> in the above diagram,
+        <m>5\Xunits{m}</m> to the left of the leftmost speaker,
+        and <m>15\Xunits{m}</m> back from the stage.
+      </p>
+      <p>
+        If the wave amplitude at your location from each speaker individually is <m>A</m>,
+        what is the amplitude of the combined waves from both speakers at your location?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_three_towers">
+    <statement>
+      <p>
+        Three radio towers, arrayed as indicated in the figure,
+        each broadcast the same in-phase signal with wavelength <m>\lambda = 5\Xunits{m}</m>.
+      </p>
+      <p>
+        <image width="92.5%" source="images/phasor25"/>
+      </p>
+      <p>
+        If the amplitude from each tower individually at point <m>P</m> is <m>A</m>,
+        what is the amplitude of the combined signal from the three towers?
+      </p>
+      <p>
+        (<em>Hint:</em> <m>d\sin{\theta}</m> won't work here.
+        Calculate the distances and figure out the path length differences directly.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Light of wavelength <m>\lambda = 617\Xunits{nm}</m> passes through a three-slit system where the slits are separated by a distance <m>d = 1.4 \times 10^{-5}\Xunits{m}</m>,
+        and produces an interference pattern on a distant screen.
+        Determine the amplitude of the light directed at an angle
+        <m>\theta = 0.23^\circ</m> from the direction to the central maximum in the interference pattern.
+        Assume that the amplitude of the light from each slit individually is <m>A</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_four_slits">
+    <statement>
+      <p>
+        Light of wavelength <m>\lambda = 532\Xunits{nm}</m> passes through a four-slit system where the slits are separated by a distance <m>d = 1.7 \times 10^{-5}\Xunits{m}</m>,
+        and produces an interference pattern on a distant screen.
+        <ol>
+          <li>
+            <p>
+              Draw phasor diagrams for the <em>three</em>
+              minima between the central maximum and the first side maximum in the interference pattern,
+              and determine the values of <m>\Delta\phi</m> for each situation.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the angles
+              (relative to the direction to the central maximum)
+              where each of these minima occurs.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Light of wavelength <m>600\Xunits{nm}</m> is incident normally on a grating with <m>850</m> lines per millimeter.
+        The diffraction pattern is observed on a distant screen.
+        <ol>
+          <li>
+            <p>
+              Sketch a phasor diagram for the light at the second-order maximum of the diffraction pattern.
+              Be sure to indicate the phase difference between adjacent phasors on your diagram.
+              (Don't worry about the fact that you can't draw all the thousands of phasors<ndash/>just draw 5 or 6 representative phasors.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Using your phasor diagram and the adjacent phase difference you determined in part (a),
+              find the angle to the normal at which the second-order diffraction maximum occurs.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Sodium has two emission lines with
+        <m>\lambda_1=589.00\Xunits{nm}</m>and <m>\lambda_2=589.59\Xunits{nm}</m>.
+        You send light made up of both wavelengths through a transmission grating with <m>1000</m> lines per millimeter and onto a screen one meter distant.
+        By what distance will the first-order bright spots formed by the two wavelengths be separated?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        You wish to design a spectrometer,
+        using a transmission diffraction grating to spread light of different wavelengths out horizontally for observation on a distant screen.
+        Your design specifications state that the second-order diffracted light must all fit on a screen
+        <m>1.3\Xunits{m}</m> away and <m>1.7\Xunits{m}</m> wide,
+        with the zero-order light hitting the center of the screen.
+        The wavelengths you intend to analyze with the spectrometer fall between
+        <m>450\Xunits{nm}</m> and <m>800\Xunits{nm}</m>.
+        <ol>
+          <li>
+            <p>
+              Determine the maximum allowed number of lines per millimeter for the grating.
+            </p>
+          </li>
+          <li>
+            <p>
+              Using your answer for part (a),
+              determine whether or not the first and second-order bands of diffracted light will overlap.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Light of wavelength <m>500\Xunits{nm}</m> illuminates a single slit of width <m>5\Xunits{ \mu m}</m>.
+        At the center of the diffraction pattern on a screen <m>1\Xunits{m}</m> away,
+        the amplitude of the light is <m>A</m>.
+        Determine the amplitude of the light on the screen a distance of
+        <m>2.5\Xunits{cm}</m> away from the center of the central maximum.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A telescope is being designed to detect distant binary-star systems.
+        The telescope should be able to detect stars separated by
+        <m>10^{-4}\Xunits{lt-yr}</m> at a distance of <m>300\Xunits{lt-yr}</m>,
+        using near infrared light of wavelength <m>1\Xunits{ \mu m}</m>.
+        Approximately what minimum diameter should the telescope have,
+        if its performance is limited by diffraction?
+      </p>
+    </statement>
+  </exercise>
+</exercises>

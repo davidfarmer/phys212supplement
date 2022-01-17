@@ -1,0 +1,426 @@
+<exercises xml:id="sec_quantized_energies_problems">
+  <title>Problems</title>
+  <exercise xml:id="prob_PinBox">
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Draw a sketch of the wavefunction <m>\psi(x)</m> for the
+            <m>3^\text{ rd }</m> lowest energy state for an electron trapped in a one-dimensional,
+            infinite square well potential (i.e., the
+            <q>particle in a box</q>).
+          </p>
+        </li>
+        <li>
+          <p>
+            Interpreting your drawing from part (a) as a standing wave pattern,
+            determine the wavelength <m>\lambda</m>
+            (in terms of the width <m>L</m> of the box)
+            of this standing wave.
+          </p>
+        </li>
+        <li>
+          <p>
+            Substitute the wavefunction
+            <m>\psi(x) = \sqrt{2/L}\sin(2\pi x/\lambda)</m> with your value of <m>\lambda</m> from (b) into Schr&#xf6;dinger's Equation for the infinite square well potential.
+            Verify that this is a solution for the region <m>0 \lt x \lt L</m>,
+            and determine the energy of the state.
+            Compare your result with what you get when using the formula from <xref ref="eq_squarewell_6"/>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_QuantumWire">
+    <statement>
+      <p>
+        Find the energies
+        (in eV)
+        of an electron in (a) the ground state;
+        and (b) the first excited state of a
+        <m>1.0 \Xunits{nm}</m> one-dimensional infinite square well potential.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A particle is in the ground state of an infinite square well between <m>x = 0</m> and <m>x = L</m>.
+        What is the probability of finding the particle in the region between <m>x=0</m> and <m>x= L/3</m> ? (<em>NOTE:</em>
+        You may want to make use of the Table of Integrals in Appendix A of your Wolfson text for this problem!)
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_WhereInPInBox">
+    <statement>
+      <p>
+        Sketch the probability density for the <m>n=2</m> state
+        (first excited state)
+        of an infinite square well extending from <m>x=0</m> to <m>x=L</m>.
+        In the vicinity of what position(s) is the particle most likely to be found?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Let's apply what we have learned about infinite square wells to a macromolecule confined to a biological cell.
+        Consider a protein of mass <m>250,000 \Xunits{u}</m>
+        (where <m>1\Xunits{u} = 1.661 \times 10^{-27}\Xunits{kg}</m>)
+        confined to a <m>10 \Xunits{ \mu m}</m>-diameter cell.
+        Treating this as a particle in a one-dimensional square well,
+        find the energy difference between the ground state and the first excited state.
+        Given that biochemical reactions typically involve energies on the order of <m>1\Xunits{eV}</m>,
+        what so you conclude about the role of quantization in these reactions?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_finite_sq_well">
+    <statement>
+      <p>
+        The potential energy for the one-dimensional <em>finite</em>
+        square well is shown in <xref ref="fig_finite_sq_well">Figure</xref>,
+        with dotted lines representing the energies of the ground state and the first excited state.
+      </p>
+      <figure xml:id="fig_finite_sq_well">
+        <caption>Plot of <m>U(x)</m> versus <m>x</m>, for <xref ref="prob_finite_sq_well">Problem</xref>.</caption>
+        <image width="48%" source="images/finite_sq_well"/>
+      </figure>
+      <ol>
+        <li>
+          <p>
+            Using general principles developed in <xref ref="ex_SolutionElessU">Examples</xref>
+            and <xref ref="ex_SolutionSemiInf"></xref>,
+            sketch the ground state wavefunction versus position,
+            including regions in which <m>E\lt U</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Compared to the ground state wavefunction of the infinite square well with the same width,
+            is the wavelength in the classically-allowed region longer or shorter?
+            Is the energy larger or smaller?
+          </p>
+        </li>
+        <li>
+          <p>
+            Repeat a) and b) for the first excited state.
+          </p>
+        </li>
+        <li>
+          <p>
+            If you did (a) - (c) correctly,
+            you should notice that the wavefunction isn't zero for <m>x \lt 0</m> or for <m>x > L</m>,
+            so there is a non-zero probability that the particle could be located in these regions.
+            Why is this a violation of classical physics? (Hint:
+            what can you say about the kinetic energy and speed of the particle when it is in one of these regions?)
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The wavefunction solution to the semi-infinite square well was given in <xref ref="eq_two_regions_wavefunction"/> for the two regions <m>0 \lt  x \lt  L</m> and <m>x > L</m>:
+        <men>
+          \psi(x) =  \left\{\begin{array}{ll} A \sin(kx)       \amp  \mbox{for \(0 \lt  x \lt   L\)}  \\ D e^{- \kappa x} \amp  \mbox{for \(x > L\)} \end{array}  \right.
+        </men>
+      </p>
+      <p>
+        In order for the wavefunction solution to be continuous and smooth across the boundary at <m>x = L</m>,
+        the value of the wavefunction and its first derivative for the two solutions must match up at the boundary at <m>x = L</m>.
+        <ol>
+          <li>
+            <p>
+              Using the solutions given in <xref ref="eq_two_regions_wavefunction"/>,
+              write an equation that states that the two wavefunction solutions are equal at the boundary <m>x = L</m>.
+              (Your equation should only contain the symbols
+              <m>k, \kappa, A, D</m> and numerical constants.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Using the solutions given in <xref ref="eq_two_regions_wavefunction"/>,
+              write an equation that states that the {derivatives} of the two wavefunction solutions are equal at the boundary <m>x = L</m>.
+              (Your equation should only contain the symbols
+              <m>k, \kappa, A, D</m> and numerical constants.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Using the Schr&#xf6;dinger equation,
+              it can be shown that the quantities <m>k</m> and <m>\kappa</m> are related to the energy <m>E</m> of the particle according to
+              <men>
+                k^2 = \frac{2 m E}{\hbar^2} \hspace{0.5in} \mbox{and}  \hspace{0.5in} \kappa^2 = \frac{2m \left( U_0 - E \right)}{\hbar^2}
+              </men>
+              where <m>m</m> is the mass of the particle and <m>U_0</m> is the height of the potential well.
+              Given these relations and the results of parts<nbsp/>(a) and (b),
+              do you think that the particle can have <em>any</em>
+              value of energy <m>E</m> in the well?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <em>Semi-infinite square-well potential.</em>
+        Download the Excel worksheet <c>semi-finite.xls</c> from either the <em>Handouts</em>
+        page or from the Calendar page.
+        This sheet shows the calculations for determining the wavefunctions for a potential well that is infinite at <m>x=0</m> but of finite magnitude on the right side of the well
+        (which is at <m>x=5</m> in this problem).
+        You'll see two graphs: the top one shows the semi-infinite potential well
+        (in purple)
+        along with a non-normalized plot of the calculated wavefunction so you can see it along with the potential.
+        The bottom graph shows the normalized wavefunction,
+        corresponding to the second-to-last column in the worksheet.
+      </p>
+      <p>
+        When you bring up the worksheet,
+        the energy will be set for the value for the ground state.
+        Some questions:
+        <ol>
+          <li>
+            <p>
+              Sketch or print out
+              (just the first page!)
+              the wavefunctions that are displayed for the ground state along with at least two of the excited states.
+              To display the 1<m>^{ st}</m> and <m>2^{ nd}</m> excited states,
+              type in 0.64282 and 1.4144 respectively in the framed box for energy.
+            </p>
+          </li>
+          <li>
+            <p>
+              What happens if you type in an energy that <em>isn't</em>
+              one of the well-defined energies for the problem?
+              Try it out, and comment on what happens.
+              Had we not told you what the allowed energies were,
+              how might you figure them out? (You'll be doing this in lab later this semester.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        For the potential energy function <m>U(x)</m> and total mechanical energy <m>E</m> in <xref ref="fig_tunneling">Figure</xref>:
+        <ol>
+          <li>
+            <p>
+              Use classical physics to argue that if a particle starts out in the region <m>0 \lt x \lt L_1</m>,
+              it will remain there forever.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use quantum arguments (specifically,
+              refer to wavefunction) to argue that a particle that starts in the region <m>0 \lt x \lt L_1</m> can escape
+              (tunnel).
+              Can you predict <em>the precise moment</em>
+              when the particle will escape? (Hint: no.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_TunnelSemiInfinite">
+    <statement>
+      <p>
+        Given the solution to Schr&#xf6;dinger's Equation for an electron in the semi-infinite square well potential
+        (see <xref ref="ex_SolutionElessU">Examples</xref>
+        and <xref ref="ex_SolutionSemiInf"></xref>).
+        Assume that <m>U_0 = 12\Xunits{eV}</m> and the electron is in a state with an energy <m>E = 10\Xunits{eV}</m>.
+        <ol>
+          <li>
+            <p>
+              Calculate the value of the constant <m>\kappa</m> in the exponent
+              <m>e^{-\kappa x}</m> for the wavefunction in the classically-forbidden region.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the distance into the classically-forbidden region beyond <m>x = L</m> where the probability density is a factor of 2 smaller than that at <m>x = L</m> (i.e., calculate the value of <m>d</m> such that <m>|\psi(L+d)|^2/|\psi(L)|^2 = e^{-2\kappa d} = 0.5</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Now, let's assume that the particle is a ball with mass <m>0.5\Xunits{kg}</m>,
+              and assume that <m>U_0</m> and <m>E</m> have everyday values of, say,
+              <m>100\Xunits{J}</m> and <m>50\Xunits{J}</m>, respectively.
+              Repeat the calculations from parts (a) and (b).
+            </p>
+          </li>
+          <li>
+            <p>
+              Now consider the potential energy function in <xref ref="fig_tunneling">Figure</xref>.
+              What do you think is needed to get a reasonable
+              (not ridiculously small)
+              probability for the particle to tunnel through the barrier?
+              Why do you think we never experience quantum tunneling for everyday objects?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Consider a proton (<m>m_p = 1.67 \times 10^{-27}\Xunits{kg}</m>) confined in an infinite potential well of size <m>L = 10^{-14}\Xunits{m}</m>.
+        Calculate the energy of a photon emitted when the proton makes a transition from the <m>n=4</m> state to the <m>n=3</m> state.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_EmittedWavelengths">
+    <statement>
+      <p>
+        Electrons in an ensemble of
+        <m>10\Xunits{nm}</m> wide one-dimensional infinite square-well potentials are all initially in the <m>n=4</m> state.
+        Find the wavelengths of all possible photons emitted as electrons make transitions to the ground state.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_QuantumDot">
+    <statement>
+      <p>
+        Calculate the radius of a quantum dot made from CdSe
+        (band gap energy <m>1.74\Xunits{eV}</m> and <m>\eta = 16.5</m>)
+        so that the largest emitted wavelength will be <m>629\Xunits{nm}</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_UVAbsorption">
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Ozone (O<m>_3</m>) in the atmosphere absorbs ultraviolet radiation that can damage the skin and cause cancer.
+            It does this via a photochemistry process <m>\mbox{O} _3 + \gamma \rightarrow \mbox{O} _2 + \mbox{O}</m>,
+            where <m>\gamma</m> is a photon.
+            If the dissociation energy of ozone is <m>3.94\Xunits{eV}</m>,
+            calculate the maximum wavelength of UV radiation that is absorbed by this photochemical process.
+          </p>
+        </li>
+        <li>
+          <p>
+            Diatomic oxygen (O<m>_2</m>) also absorbs UV radiation with smaller wavelengths via the process <m>\mbox{O} _2 + \gamma \rightarrow \mbox{O} + \mbox{O}</m>.
+            Given a dissociation energy of
+            <m>5.17\Xunits{eV}</m> for an O<m>_2</m> molecule,
+            calculate the maximum wavelength of UV radiation that is absorbed by this process.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Titanium dioxide is one of many different possible ingredients used in sunblock lotions.
+        It has a band gap energy of <m>3.2\Xunits{eV}</m>.
+        Calculate the maximum wavelength of radiation that you would expect TiO<m>_2</m> to absorb via an absorption process that promotes electrons from the valence to the conduction band.
+        Is your answer consistent with the use of TiO<m>_2</m> as an ingredient in sunblock lotions?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_CO2">
+    <statement>
+      <p>
+        Carbon dioxide has first and second excited vibrational states which are <m>0.083\Xunits{eV}</m> and
+        <m>0.166\Xunits{eV}</m> above the ground state.
+        Calculate the wavelengths of electromagnetic radiation that you would expect to be most readily absorbed by transitions between these vibrational energy levels in CO<m>_2</m>.
+      </p>
+      <p>
+        The wavelengths that you will find are in the infrared range of
+        <m>700\Xunits{nm}</m> to <m>1\Xunits{mm}</m>.
+        This is one of the reasons why carbon dioxide contributes to global warming as IR radiation is one of the ways in which the Earth radiates heat,
+        assuming it isn't absorbed in the atmosphere.
+        (Note, though, that this is a simplification,
+        as there are rotational energy levels in CO<m>_2</m> as well that aren't included in this problem.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Class 3 (neutral phenol) Green Fluorescence Protein (GFP) used in cell and molecular biology studies has an excitation wavelength of
+        <m>399\Xunits{nm}</m> (near-UV) and an emission wavelength of <m>511\Xunits{nm}</m>
+        (green, duh).
+        <ol>
+          <li>
+            <p>
+              Determine a 3-level energy diagram
+              (with ground state energy zero)
+              that is consistent with these data.
+              (There are two answers that are consistent with the given data.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Based on your diagram,
+              you might expect to see two different colors of emitted light.
+              Why do you see only green light emitted from a sample tagged
+              (or genetically mutated)
+              with Class 3 GFP?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The spec sheets for Lumidot<m>^{TM}</m> quantum dots from Sigma-Aldrich scientific supply company specifies the following core sizes
+        (radius of the quantum dots)
+        and wavelengths for their various dots.
+      </p>
+      <tabular>
+        <row>
+          <cell>Radius (nm)</cell>
+          <cell>Wavelength (nm)</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>3.0</cell>
+          <cell>510</cell>
+        </row>
+        <row>
+          <cell>3.3</cell>
+          <cell>530</cell>
+        </row>
+        <row>
+          <cell>3.4</cell>
+          <cell>560</cell>
+        </row>
+        <row>
+          <cell>4.0</cell>
+          <cell>590</cell>
+        </row>
+        <row>
+          <cell>5.2</cell>
+          <cell>610</cell>
+        </row>
+        <row>
+          <cell>6.3</cell>
+          <cell>640</cell>
+        </row>
+      </tabular>
+      <p>
+        Use this data to verify the <m>1/R^2</m> dependence of <xref ref="eq_QDot"/> and to find the band gap energy.
+        (Hint: Calculate <m>E_\text{ ph }</m> for each of these wavelengths,
+        and then plot <m>E_\text{ ph }</m> versus <m>1/R^2</m>;
+        a computer can make the calculations,
+        plotting, and fitting easier.)
+      </p>
+    </statement>
+  </exercise>
+</exercises>

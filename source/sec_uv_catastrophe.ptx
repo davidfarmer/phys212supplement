@@ -1,0 +1,99 @@
+<section xml:id="sec_uv_catastrophe">
+  <title>Ultraviolet Catastrophe</title>
+  <p>
+    Electromagnetism and thermodynamics were well-developed and successful theories by the end of the 19<m>^\text{ th }</m> century.
+    The theory of electromagnetism (Maxwell's equations) demonstrated the unification of electricity and magnetism,
+    and led to the realization that light is an electromagnetic wave.
+    This, in turn,
+    led to the technology of generating and receiving radio waves,
+    which was the second great step in the information technology revolution.<fn>
+    The printing press was the first.
+    </fn> Similarly,
+    our theories of thermodynamics explained the states of matter and provided an understanding of the engines that powered the industrial revolution.
+  </p>
+  <p>
+    There was just one big problem:
+    classical E&amp;M and thermodynamics are incompatible.
+    Here is the basic issue.
+    Picture some substance at a temperature <m>T</m>.
+    The particles in that substance are vibrating around with thermal motion.
+    This amounts to accelerating charges,
+    and accelerating charges emit EM waves.
+    Conclusion: we expect matter at a temperature <m>T</m> to be radiating away some of its energy into electric and magnetic fields.
+  </p>
+  <p>
+    But the energy exchange goes both ways.
+    These EM fields exert forces on the charged particles,
+    giving them back some energy.
+    So all together we see that energy sloshes between the moving particles and the EM fields,
+    much like it sloshes from particle to particle within the substance.
+    Then we should expect the EM fields, like the particle motion,
+    to have some thermal equilibrium values determined by the temperature <m>T</m>.
+  </p>
+  <p>
+    So far, so good.
+    Let us now try to calculate what the thermal equilibrium EM fields should be for the simplest case we can construct.
+    Imagine a cavity bounded by a pair of walls separated by a distance <m>L</m> (i.e., a one-dimensional box),
+    and to keep things simple we will only have one spatial dimension.
+    The situation is illustrated in <xref ref="fig_cavity">Figure</xref>.
+    The charges in the walls are in thermal equilibrium at temperature <m>T</m>,
+    so they are moving and creating electric and magnetic fields.
+    What form can these EM fields take?
+    Basically, we get all the possible standing wave modes,
+    just like waves on a string or sound waves in a tube.
+    As we found in the waves unit,
+    the longest wavelength is <m>\lambda=2L</m>,
+    the second longest <m>\lambda=L</m>,
+    the third longest is <m>\lambda=2L/3</m>, and so on.
+    The actual EM fields contain all those modes and can be expressed as some superposition of these waves.
+  </p>
+  <figure xml:id="fig_cavity">
+    <caption>EM waves in cavity of length <m>L</m>.  These EM waves are
+    created by the thermal motion of the charges in the walls.</caption>
+    <image width="84%" source="images/cavity"/>
+  </figure>
+  <p>
+    Now let's try to calculate the amplitude of these waves.
+    First, recall that the energy of a wave is proportional to the amplitude squared.
+    For a superposition of wave modes the energy turns out to be the superposition of the energies of each individual wave:
+    <men>
+      E = \alpha A_1^2 + \alpha A_2^2 + \alpha A_3^2 + \dots
+    </men>
+    where <m>\alpha</m> is some constant and <m>A_n</m> is the amplitude of the
+    <m>n^\text{ th }</m> longest wavelength mode of the EM wave.
+    Now comes the thermodynamics:
+    the equipartition theorem says that in thermal equilibrium any quadratic term in the energy has an average value of <m>\textstyle\frac{1}{2}k_BT</m>.
+    Therefore we can conclude
+    <men xml:id="eq_EM_wave_equipartition">
+      \langle \alpha A_1^2\rangle = \langle \alpha A_2^2\rangle = \langle \alpha A_3^2\rangle = \dots = \frac{1}{2}k_BT
+    </men>.
+  </p>
+  <p>
+    The equipartition theorem implies that each of those modes has to have the same average value,
+    and they are all related to the temperature <m>T</m>.
+    It's a powerful theorem!
+  </p>
+  <p>
+    And now we are ready to compute the total energy in the EM fields.
+    All we need to do is count the number of modes in the cavity (<m>n=1</m>,
+    <m>2</m>,
+    <m>3</m>,
+    <ellipsis/>) and then multiply by <m>\textstyle\frac{1}{2}k_BT</m>.
+    But here is the problem: <em>There are an infinite number of modes!</em>
+  </p>
+  <p>
+    We can keep drawing waves with shorter and shorter wavelength,
+    and we never run out of modes.
+    Each new one we draw brings another <m>\textstyle\frac{1}{2}k_BT</m> to the energy.
+    So we are led to conclude that there is an infinite amount of energy in the EM fields.
+    This is clearly wrong <mdash/> thankfully,
+    or we would all be blasted by the infinite radiation all around us.
+    And now we can see why this is called the ultraviolet catastrophe:
+    it is the infinite piling up of shorter and shorter wavelengths,
+    or higher and higher frequencies,
+    that is where something in the theories are breaking down.
+  </p>
+  <p>
+    So where did it go wrong?
+  </p>
+</section>

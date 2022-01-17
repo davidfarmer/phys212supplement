@@ -1,0 +1,173 @@
+<section xml:id="sec_conservation_laws">
+  <title>Conservation Laws</title>
+  <p>
+    Let's now try to analyze a simple reaction like you might see in a bubble chamber,
+    in which part of the incoming energy is used to create a new particle,
+    say a pion.
+    <men xml:id="eq_create_pion">
+      p + p \to p + p + \pi
+    </men>
+  </p>
+  <p>
+    To analyze this reaction, we use conservation laws.
+    Three conservation laws of particle physics have analogs in classical physics:
+    conservation of charge, conservation of energy,
+    and conservation of angular momentum.
+    First use the law of conservation of charge,
+    which states that in any reaction the total charge before and after the reaction must be equal.
+    Protons carry a single unit of positive charge,
+    but pions come in three varieties:
+    <m>\pi^+</m>, <m>\pi^0</m>, and <m>\pi^-</m>.
+    We can thus use conservation of charge to determine which variety of pion appears in the reaction <xref ref="eq_create_pion"/>.
+    The answer is the neutral pion, <m>\pi^0</m>.
+  </p>
+  <p>
+    Next, let's see how to apply the conservation of energy.
+    Here is a caution about applying energy conservation to reactions in which <em>two or more</em>
+    particles are present initially.
+    Unless you are told about the incident particles' kinetic energies,
+    energy conservation alone cannot rule out any reaction.
+    But in a decay, when only a <em>single</em>
+    particle is present before the reaction,
+    energy conservation requires that the decay products be less massive than the original particle.
+    In a decay, a single unstable particle disappears to be replaced by two or more less massive particles. (Can you see why at least two particles are needed?)
+  </p>
+  <p>
+    Here are some typical decays.
+    A positive pion can decay into an antimuon (<m>\mu^+</m>) and a mu-neutrino (<m>\nu_\mu</m>) with a mean life of <m>2.6 \times 10^{-8}\Xunits{s}</m>:
+    <men xml:id="eq_pion_decay">
+      \pi^+ \to \mu^+ + \nu_\mu
+    </men>
+  </p>
+  <p>
+    The muon is also unstable and decays on the average after <m>2.2 \times 10^{-6}\Xunits{s}</m>:
+    <men xml:id="eq_muon_decay">
+      \mu^+ \to e^+ + \nu_e + \overline\nu_\mu
+    </men>
+  </p>
+  <p>
+    Finally let's see how to apply angular momentum conservation.
+    In particle physics, angular momentum is quite complicated,
+    since it is a quantized vector quantity that includes contributions from both spin and orbital angular momentum.
+    A complete description of this conservation law would thus require techniques beyond the scope of this course.
+    However, we can derive one simple rule, easy to apply,
+    based on the fact that an even number of half-integral spins always combine to give integral spin.
+  </p>
+  <p>
+    <assemblage>
+      <p>
+        <em>The Fermion Rule for angular momentum conservation:</em>
+        A reaction can only occur if the number of fermions before the reaction and the number after are either both odd or both even.
+      </p>
+    </assemblage>
+  </p>
+  <p>
+    These three conservation laws <mdash/> charge,
+    energy, and angular momentum <mdash/> are absolute:
+    they apply in all known reactions.
+  </p>
+  <p>
+    In addition to the absolute conservation laws of charge,
+    energy, and angular momentum,
+    there are two other well-tested conservation laws,
+    those for lepton number and baryon number.
+    Although some modern field theories predict their violation in reactions like proton decay,
+    these violations have never been conclusively observed.
+    So until we discuss <em>grand unified theories</em>
+    in <xref ref="chap_interactions">Chapter</xref>,
+    we will assume that lepton and baryon numbers are conserved.
+  </p>
+  <p>
+    So what is lepton number?
+    Actually it's quite simple.
+    Each lepton is assigned a lepton number of <m>L = +1</m>.
+    The antiparticles of leptons have <m>L = -1</m>.
+    All other particles have <m>L = 0</m>.
+    Now consider a reaction like pion decay,
+    <xref ref="eq_pion_decay"/>.
+    The pion is not a lepton, so it has <m>L = 0</m>.
+    The <m>\mu^+</m> is the antiparticle of the <m>\mu^-</m>,
+    a lepton,
+    so <m>\mu^+</m> has <m>L = -1</m>.
+    Finally, a neutrino is a lepton, with <m>L = 1</m>.
+    Lepton number is an additive quantity,
+    so simple addition shows that both sides total <m>L = 0</m>,
+    and the decay is allowed.
+  </p>
+  <p>
+    Actually, conservation of lepton number is slightly more complicated than this simple example implies.
+    Consider, for example, the following muon decay
+    <men xml:id="eq_muon_decay_q">
+      \mu^+ \to e^+ + \nu_? + \overline\nu_?
+    </men>,
+    and a possible alternative decay
+    <men xml:id="eq_not_muon_decay">
+      \mu^+ \to e^+ + \gamma
+    </men>.
+  </p>
+  <p>
+    The second decay seems simpler and also appears to conserve lepton number,
+    but in fact,
+    a decay like <xref ref="eq_not_muon_decay"/> has never been observed.
+    A situation like this is a puzzle for physicists.
+    Why doesn't <xref ref="eq_not_muon_decay"/> ever occur?
+    There must be something new going on that prevents it.
+    This
+    <q>something new</q>
+    is the existence of a previously undiscovered conservation law!
+  </p>
+  <p>
+    The new law is this: Each of the three types of leptons is conserved separately.
+    Thus, there are electron neutrinos (<m>\nu_e</m>),
+    muon neutrinos (<m>\nu_\mu</m>), and tau neutrinos
+    (<m>\nu_\tau</m>).
+    The electron and its neutrino each carry <m>L_e = +1</m>,
+    <m>L_\mu = L_\tau = 0</m>, and similarly for the other leptons.
+    Thus, the muon decay of <xref ref="eq_muon_decay"/> is actually
+    <men>
+      \mu^+ \to e^+ + \nu_e + \overline\nu_\mu
+    </men>
+    and the candidate decay <xref ref="eq_not_muon_decay"/> is ruled out because neither <m>L_e</m> nor <m>L_\mu</m> is conserved.
+    So when we say
+    <q>conserve lepton number,</q>
+    it really means
+    <q>conserve all three types of lepton number:
+    <m>L_e</m>, <m>L_\mu</m>, and <m>L_\tau</m>.</q>
+    <em>REMEMBER: There are THREE separate lepton numbers,
+    and each needs to be conserved separately.</em>
+    E.g., if <m>L_e = 1</m> and <m>L_\mu = L_\tau = 0</m> before a reaction,
+    and <m>L_e = 0, L_\mu = 1</m>,
+    and <m>L_\tau = 0</m> after the reaction,
+    then this violates lepton number conservation since <m>L_e</m> isn't conserved and <m>L_\mu</m> isn't conserved.
+  </p>
+  <p>
+    Similar observations lead to the formulation of the law of conservation of baryon number.
+    Consider the two candidate reactions below:
+    <men xml:id="eq_baryon_allowed">
+      \pi^0 \to \gamma + \gamma
+    </men>
+    and
+    <men xml:id="eq_not_baryon_allowed">
+      n + n \to \gamma + \gamma
+    </men>
+  </p>
+  <p>
+    Both are allowed by all the conservation laws described so far,
+    but the first occurs all the time,
+    while the second never occurs.
+    Why not?
+    A new conservation law must be operating:
+    conservation of baryon number.
+    Neutrons are baryons, so they each have <m>B = 1</m>.
+    Photons and pions are not baryons so <m>B = 0</m> for them.
+    Any antiparticles of baryons have <m>B = -1</m>.
+    Finally, since baryon number is additive,
+    we have that the decay in <xref ref="eq_baryon_allowed"/> is allowed because <m>0=0</m>,
+    while the reaction in <xref ref="eq_not_baryon_allowed"/> is forbidden because <m>2 \neq 0</m>.
+  </p>
+  <p>
+    These sorts of <em>ad hoc</em> conservation laws seem to be begging the question.
+    Later on we'll encounter a deeper reason for these laws,
+    especially the law of conservation of baryon number.
+  </p>
+</section>

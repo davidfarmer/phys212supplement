@@ -1,0 +1,99 @@
+<section xml:id="sec_phasor_complex_notation">
+  <title>Phasors as Complex Numbers</title>
+  <p>
+    You may have encountered complex numbers in your math classes.
+    Recall that a complex number <m>z</m> can be written as
+    <men>
+      z = a + ib
+    </men>
+    with <m>a</m> and <m>b</m> real numbers,
+    and that <m>i</m> is the imaginary unit, <m>i = \sqrt{-1}</m>.
+    Here <m>a</m> is called the <em>real part</em>
+    of <m>z</m> [written <m>\mbox{Re} (z)</m>], while <m>b</m> is called the <em>imaginary part</em>
+    of <m>z</m> [written <m>\mbox{Im} (z)</m>].
+  </p>
+  <p>
+    It's easy to represent a complex number graphically.
+    Just plot the real part complex number along the horizontal,
+    or real axis,
+    and the imaginary part along the vertical, or imaginary axis,
+    as shown in <xref ref="fig_complexPlane">Figure</xref>.
+  </p>
+  <figure xml:id="fig_complexPlane">
+    <caption>A complex number can be represented
+    graphically as a point in the complex plane.</caption>
+    <image width="41%" source="images/complex_plane"/>
+  </figure>
+  <p>
+    The length of the diagonal line from the origin to the point representing the complex number <m>z</m> is the
+    <em>magnitude</em> of <m>z</m>,
+    and corresponds the amplitude of the oscillation <m>A</m>,
+    and the angle with respect to the positive real axis corresponds to the phase angle <m>\phi</m>,
+    as shown in <xref ref="fig_complexPhasor">Figure</xref>,
+    which is really just a phasor diagram!
+  </p>
+  <figure xml:id="fig_complexPhasor">
+    <caption>Phasors correspond to complex numbers.</caption>
+    <image width="41%" source="images/complex_phasor"/>
+  </figure>
+  <p>
+    Applying simple trig to the diagram gives
+    <men>
+      a = \mbox{Re} (z) = A \cos\phi\hspace{0.5in}b = \mbox{Im} (z) = A\sin\phi
+    </men>.
+  </p>
+  <p>
+    It is the real part of the complex number that corresponds to the physical oscillation,
+    but using the complex representation actually simplifies many calculations.
+  </p>
+  <p>
+    The connection to phasors gets even stronger when we make use of the Euler identity
+    <men xml:id="eq_euler">
+      e^{i\phi} = \cos\phi + i\sin\phi
+    </men>,
+    so that
+    <md>
+      <mrow>z = a + ib =\mathstrut \amp  A\cos\phi + i A\sin\phi</mrow>
+      <mrow>=\mathstrut \amp  A(\cos\phi + i\sin\phi)</mrow>
+      <mrow>=\mathstrut \amp  Ae^{i\phi}</mrow>
+    </md>.
+  </p>
+  <p>
+    Thus, if we have an oscillation represented in complex exponential form,
+    we can immediately draw its phasor picture: Make an arrow of length <m>A</m> at angle <m>\phi</m> from the real (horizontal) axis.
+  </p>
+  <example xml:id="example3">
+    <title>Another Day at the Beach</title>
+    <statement>
+      <p>
+        The change in water level at your location is now represented with the following complex function (whose real part is the actual water height):
+        <men>
+          y(t) = 25 \, e^{i(\pi/4\, t + \pi/2)}
+        </men>,
+        with <m>y</m> in cm and <m>t</m> in sec.
+        Draw a phasor diagram to depict the level of the water at <m>t = 2</m>, 3 and <m>4\Xunits{s}</m>.
+        <em>Solution: </em> Draw the real and imaginary axes.
+        Starting at the real axis, go counterclockwise for <m>\pi/2</m> radians
+        (the phase constant <m>\phi_0</m>).
+        Then keep going counterclockwise <m>\pi/4</m> radians for each second of elapsed time.
+        The phasors are shown in <xref ref="fig_phasorRotation">Figure</xref>.
+      </p>
+      <figure xml:id="fig_phasorRotation">
+        <caption>Phasors for the water level in
+        <xref ref="example3">Example</xref> at times <m>t=2\Xunits{s}</m>, <m>t=3\Xunits{s}</m>, and
+        <m>t=4\Xunits{s}</m>.</caption>
+        <image width="73%" source="images/phasor_rotation"/>
+      </figure>
+      <p>
+        To find actual water levels, take the real part
+        (the horizontal projection).
+        The water levels are thus
+        <md>
+          <mrow>\amp \amp \mbox{at \(t=2\Xunits{s}\)} : \hspace{0.5in}-25\Xunits{cm}</mrow>
+          <mrow>\amp \amp \mbox{at \(t=3\Xunits{s}\)} : \hspace{0.5in}-25\cos(\pi/4)= -\frac{25}{\sqrt{2}}\simeq-17.7\Xunits{cm}</mrow>
+          <mrow>\amp \amp \mbox{at \(t=4\Xunits{s}\)} :\hspace{0.5in}0</mrow>
+        </md>
+      </p>
+    </statement>
+  </example>
+</section>

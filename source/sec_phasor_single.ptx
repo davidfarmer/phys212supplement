@@ -1,0 +1,206 @@
+<section xml:id="sec_phasor_single">
+  <title>A Phasor Diagram for a Single Oscillation</title>
+  <figure xml:id="fig_phasor01">
+    <caption>Mass on a spring.</caption>
+    <image width="92.5%" source="images/phasor01"/>
+  </figure>
+  <p>
+    Consider a simple oscillating system,
+    like a mass on a spring moving back and forth on a frictionless horizontal surface.
+    We can write an expression for the displacement of the mass as follows:
+    <men>
+      x(t) = A\cos{(\omega t)}
+    </men>,
+    where <m>A</m> is the amplitude of the oscillation,
+    and <m>\omega</m> is the angular frequency in units of rad/s.
+    That means that <m>A</m> is the value of the largest deviation
+    (plus or minus)
+    of the mass from its equilibrium position,
+    and the value of <m>\omega</m> governs the time it takes for the mass to complete one oscillation
+    (recall that the period of the oscillation, <m>T = 2\pi/\omega</m>,
+    so a small <m>\omega</m> means a long period while a large <m>\omega</m> means a short period).
+    Together, <m>A</m> and <m>\omega</m> completely define the oscillation.
+  </p>
+  <p>
+    We can represent these two quantities,
+    and therefore the oscillation itself, with a phasor diagram.
+    A phasor is nothing more than a vector with magnitude <m>A</m> that <em>rotates</em>
+    with angular velocity <m>\omega</m>.
+    The concept of a rotating vector is a little strange,
+    but it works out really well for oscillations.
+    For the oscillation defined above,
+    <m>x(0) = A</m> since <m>\cos{(0)} = 1</m>.
+    We can represent the oscillation at this time with a phasor of length <m>A</m> that lies on the horizontal axis,
+    as seen in <xref ref="fig_phasor02">Figure</xref>.
+  </p>
+  <figure xml:id="fig_phasor02">
+    <caption>Oscillator and phasor at time <m>t=0</m>.</caption>
+    <image width="92.5%" source="images/phasor02"/>
+  </figure>
+  <p>
+    Not very interesting yet, I know,
+    but here's the cool part: let time advance.
+    As time passes,
+    the mass moves back toward its equilibrium position.
+    At the same time,
+    the phasor rotates in the counterclockwise direction.
+    The phasor's magnitude doesn't change,
+    but the projection of the phasor onto the horizontal axis (i.e., the horizontal component of the vector describing the phasor) gets smaller,
+    as shown in <xref ref="fig_phasor03">Figure</xref>.
+  </p>
+  <figure xml:id="fig_phasor03">
+    <caption>Oscillator and phasor a little bit later.</caption>
+    <image width="92.5%" source="images/phasor03"/>
+  </figure>
+  <figure xml:id="fig_phasor04">
+    <caption>Time evolution of the oscillator
+    and corresponding phasor.</caption>
+    <image width="92.5%" source="images/phasor04"/>
+  </figure>
+  <p>
+    Now if <m>\phi = \omega t</m> in the phasor diagram,
+    then the projection of the phasor on the horizontal axis is <m>A\cos{(\phi)} = A\cos{(\omega t)}</m>,
+    and that's precisely the expression for the displacement of the mass at time <m>t</m>.
+    This means that if the phasor rotates with angular velocity <m>\omega</m> and starts in the horizontal position at <m>t = 0</m>,
+    its projection onto the horizontal axis will always describe the displacement of the oscillation,
+    as seen in <xref ref="fig_phasor04">Figure</xref>.
+  </p>
+  <p>
+    Note that the phasor does not change length;
+    rather, it's just the projection of the phasor onto the horizontal axis that changes to describe the oscillation's changing displacement.
+    This diagram should also give you a better idea of why we talk about
+    <q>angular frequency</q>
+    for oscillations.
+    We're matching up the frequency of the oscillation with the angular velocity of the rotating phasor.
+  </p>
+  <example xml:id="example1">
+    <title>A Day at the Beach</title>
+    <statement>
+      <p>
+        Imagine you're at the beach and you walk into the surf until you're waist-deep in the water.
+        You feel the waves passing by you,
+        and you realize that you can express the change in the level of the water at your location with the expression
+        <men>
+          y(t) = A\cos{(\omega t)}
+        </men>,
+        where <m>A = 20\Xunits{cm}</m> and <m>\omega = \frac{\pi}{3}\Xunits{rad/s}</m>.
+        Draw a phasor diagram to depict the level of the water at time <m>t = 3\Xunits{s}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The phasor describing this oscillation will have magnitude <m>A = 20\Xunits{cm}</m>,
+        so we need a vector of that length.
+        At time <m>t = 3\Xunits{s}</m>,
+        the phasor will have rotated so that
+        <men>
+          \phi (t) = \omega t = \frac{\pi}{3}\times 3 = \pi\Xunits{rad}
+        </men>.
+      </p>
+      <p>
+        The phasor diagram is illustrated in <xref ref="fig_phasor05">Figure</xref>.
+        The projection of the phasor onto the horizontal axis is <m>-20\Xunits{cm}</m>,
+        so at this time, the wave height is at a minimum (i.e., a trough).
+      </p>
+      <figure xml:id="fig_phasor05">
+        <caption>Phasor diagram for <xref ref="example1">Example</xref>.</caption>
+        <image width="92.5%" source="images/phasor05"/>
+      </figure>
+      <p>
+        <em>Important Note:</em> Even though this problem is about an oscillation in the vertical direction, I still measure the displacement of the oscillation by the projection of the phasor onto the
+        <em>horizontal</em> axis.
+        There is no <m>x</m>- or <m>y</m>-axis on a phasor diagram,
+        so don't go and try to match up the orientation of the oscillation with the phasor diagram.
+      </p>
+    </solution>
+  </example>
+  <example xml:id="example2">
+    <title>Alarm Bells</title>
+    <statement>
+      <p>
+        A fire alarm goes off in your dorm.
+        You run outside and stand in the cold weather waiting for the fire department to arrive and turn off the alarm
+        (it's yet another false alarm).
+        While you're waiting,
+        you get out your pocket oscilloscope and measure the change in density of the air at your location due to the compression from the sound waves from the fire alarm.
+        You measure the density change
+        <m>\Delta \rho(t)</m> to be described by the following expression:
+        <men>
+          \Delta \rho(t) = A\cos{\left(\omega t + \phi_0\right)}
+        </men>,
+        where <m>A = 0.012\Xunits{kg/m ^3 }</m>,
+        <m>\omega =5000\pi\Xunits{rad/s}</m>,
+        and <m>\phi_0 = \frac{\pi}{4}</m>.
+        You decide to draw a phasor diagram describing the density at time <m>t= 0.1\Xunits{ms}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        This problem is a little trickier because of the non-zero <m>\phi_0</m> inside the cosine.
+        Conceptually,
+        it means that when you decided to define time <m>t=0</m>,
+        the oscillation wasn't at a maximum.
+        Instead, at time <m>t=0</m>,
+        <men>
+          \Delta \rho(t) = A\cos{(\phi_0)} = 0.012\, \cos{\left(\frac{\pi}{4}\right)} = 0.0085\Xunits{kg/m ^3 }
+        </men>.
+      </p>
+      <figure xml:id="fig_phasor06">
+        <caption>Phasor corresponding to an oscillator
+        with a phase shift.</caption>
+        <image width="92.5%" source="images/phasor06"/>
+      </figure>
+      <p>
+        There's nothing wrong with this,
+        but it will affect how we draw our phasor diagram.
+        The amplitude of the oscillation is <m>A = 0.012\Xunits{kg/m ^3 }</m>,
+        so that must be the length of our phasor.
+        However, if the projection of this phasor onto the horizontal axis at time <m>t = 0</m> is to be <m>0.0085\Xunits{kg/m ^3 }</m>,
+        then the phasor must be rotated.
+        By how much?
+        By <m>\phi_0</m>
+        (see <xref ref="fig_phasor06">Figure</xref>).
+      </p>
+      <p>
+        <xref ref="fig_phasor06">Figure</xref> is the
+        <q>starting point</q>
+        for our phasor diagram.
+        To produce the phasor diagram for <m>t = 0.1\Xunits{ms}</m>,
+        we need to let this phasor rotate for that time interval.
+        It will rotate by
+        <men>
+          \Delta \phi(t) = \omega t = 5000\pi\times 0.0001 = \frac{\pi}{2}
+        </men>
+      </p>
+      <p>
+        <em>from the starting point</em>
+        of <m>\phi_0 = \frac{\pi}{4}</m>.
+        So our phasor diagram will look like <xref ref="fig_phasor07">Figure</xref>.
+      </p>
+      <figure xml:id="fig_phasor07">
+        <caption>Phasor diagram of oscillator in
+        <xref ref="example2">Example</xref> at <m>t=0.1</m></caption>
+        <image width="92.5%" source="images/phasor07"/>
+      </figure>
+      <p>
+        The projection of the phasor at this time is
+        <men>
+          A\cos{\left(\frac{3\pi}{4}\right)} = -0.0085\Xunits{kg/m ^3 }
+        </men>.
+      </p>
+      <p>
+        That's the same value we get from the algebraic expression for <m>\Delta \rho (t)</m>:
+        <md>
+          <mrow>\Delta \rho (t) =\mathstrut \amp  A \cos{\left( \omega t + \phi_0\right)}</mrow>
+          <mrow>=\mathstrut \amp  0.012\, \cos{\left(5000\pi\times 0.1 + \frac{\pi}{4}\right)}</mrow>
+          <mrow>=\mathstrut \amp  0.012\, \cos{\left(\frac{3\pi}{4}\right)}</mrow>
+          <mrow>=\mathstrut \amp   -0.0085\Xunits{kg/m ^3 }</mrow>
+        </md>.
+      </p>
+      <p>
+        The change in density at this moment is negative,
+        so the density is lower than its equilibrium value due to the passing sound wave.
+      </p>
+    </solution>
+  </example>
+</section>

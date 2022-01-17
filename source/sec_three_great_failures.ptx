@@ -1,0 +1,58 @@
+<section xml:id="sec_three_great_failures">
+  <title>Three Great Failures of Classical Physics</title>
+  <p>
+    What emerged in the early years of the 20<m>^\text{ th }</m> century were puzzles and mysteries that our well-developed and successful theories of Newtonian mechanics,
+    electricity and magnetism,
+    and thermodynamics <mdash/> what we now call
+    <em>classical physics</em>
+    <mdash/> were unable to solve.
+    Three of these mysteries stood out above the others.
+    <ul>
+      <li>
+        <title>The ultraviolet catastrophe</title>
+        <p>
+          Combining classical electromagnetism with thermodynamics led to the (wrong) result that the thermal motion of matter <mdash/> the acceleration of jiggling charges <mdash/> would create an infinite amount of electromagnetic energy.
+          Oops!
+        </p>
+      </li>
+      <li>
+        <title>The stability of atoms</title>
+        <p>
+          Combining classical electromagnetism (EM) with classical mechanics led to the result that electrons orbiting the nucleus of an atom would radiate away their energy and collapse into the nucleus after about <m>10^{-12}\Xunits{s}</m>.
+          So atoms shouldn't be stable.
+          Oops again!
+        </p>
+      </li>
+      <li>
+        <title>Atomic spectral lines</title>
+        <p>
+          Experiments showed that when energy is pumped into atoms,
+          say by heating a gas,
+          the atoms then radiate EM waves back out,
+          but only at certain distinct wavelengths.
+          Hydrogen atoms emit one set of wavelengths,
+          helium atoms a different set, and so on.
+          Nothing in classical physics could come close to explaining this phenomenon.
+          Strike three!
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    The attempt to resolve these issues led to the revolutionary,
+    paradigm-changing, development of quantum mechanics.
+    In this unit we will show how a new quantum theory was able to address successfully these shortcomings of the classical theory.
+  </p>
+  <p>
+    The story begins with Planck and Einstein,
+    who introduced the notion that EM waves,
+    for example light waves, can also act as particles.
+    This is a phenomenon called <em>wave-particle duality</em>:
+    light is neither just a wave nor just particles, but has aspects of both.
+    In this chapter we will look closer at the ultraviolet catastrophe <mdash/> the incompatibility of thermodynamics and electromagnetism <mdash/> and show that the particle aspect of light resolves the problem.
+    Then we will explore the implications for the interaction between light and matter
+    (explaining, for example,
+    why you should wear sunscreen when you are outside for long periods on a sunny day).
+    Finally, we conclude with de<nbsp/>Broglie's stunning and ultimately correct hypothesis that not just light but all matter in the universe exhibits wave-particle duality.
+  </p>
+</section>

@@ -1,0 +1,33 @@
+<section xml:id="sec_particles_intro">
+  <title>Introduction</title>
+  <p>
+    One of the deepest and most persistent questions in physics is
+    <q>What is the universe made of?</q>
+    In this chapter we begin to address this question.
+    The answer seems to be <em>particles</em>,
+    and the harder we bang protons or electrons together,
+    the more new types of particles appear.
+    In this chapter,
+    we discuss our current understanding of the fundamental building blocks of nature.
+    Specifically, we discuss categories for particle types,
+    some of their properties, and the way particles behave in various reactions.
+    And most importantly,
+    you'll see how conservation laws begin to make sense of the jumble of
+    <q>elementary</q>
+    particles.
+    In the next two chapters,
+    we will discuss how these particles interact with each.
+  </p>
+  <p>
+    A word about the term <em>elementary particle</em>:
+    ideally, an elementary particle has a set of fixed properties,
+    like mass,
+    spin, charge,
+    etc., and cannot be further subdivided into smaller constituents.
+    Atoms were once considered elementary until they were found to be made of protons,
+    neutrons,
+    and electrons.
+    Only a few of the particles discussed in this chapter are truly elementary.
+    Thus the use of quotes.
+  </p>
+</section>

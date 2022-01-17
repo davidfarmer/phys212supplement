@@ -1,0 +1,263 @@
+<section xml:id="sec_conductors_semiconsuctors_insulators">
+  <title>Conductors, Semiconductors, and Insulators</title>
+  <introduction>
+    <p>
+      For the second half of this chapter,
+      we return to our discussion from <xref ref="chap_quantized_energies">Chapter</xref>
+      of quantized energy levels and band structure.
+      It turns out that some clever manipulations of these materials can result in some really important electronic components.
+      The material in this chapter is the basis behind some of the most important developments in modern electronics.
+    </p>
+    <figure xml:id="fig_FermiLevel">
+      <caption>Highest valence and lowest conduction bands (with Fermi Level) for:
+      (a) an insulator; (b) a semiconductor; and (c) a conductor. The dark shading
+      denotes filled energy levels.</caption>
+      <image width="93%" source="images/FermiLevel"/>
+    </figure>
+    <p>
+      We return to the discussion of energy bands from <xref ref="chap_quantized_energies">Chapter</xref>.
+      First, we need to discuss the electrical conductivity of a material and how it relates to the band structure.
+      <xref ref="fig_FermiLevel">Figure</xref> shows the highest energy,
+      filled valence band and the lowest energy,
+      unfilled conduction band for a typical material.
+      We define an energy level referred to as the
+      <q>Fermi energy</q>
+      <m>E_F</m> that denotes the boundary between the highest energy filled level and the lowest unfilled level for a material at a temperature of absolute zero
+      (<m>T = 0</m> K).
+      By convention,
+      for a situation like that in <xref ref="fig_FermiLevel">Figure</xref>,
+      <m>E_F</m> is in the middle of the forbidden energy gap.
+    </p>
+    <p>
+      The electrical properties of a material depend critically on the band gap energy <m>E_g</m>.
+      For the case in <xref ref="fig_FermiLevel">Figure</xref>a,
+      the band gap energy is so large that electrons in the filled valence band rarely jump up to the conduction band.
+      Since the valence band is completely full,
+      there is no possibility for electrical conduction if an electric field is applied to this material,
+      because there is no way for any electron in the valence band to change its energy since all the other energy levels in the valence band are filled.
+      (Recall: Pauli's Exclusion Principle applies here,
+      since electrons are fermions.)
+      And there are no electrons in the conduction band either.
+      So, <xref ref="fig_FermiLevel">Figure</xref>a corresponds to an electrical insulator.
+    </p>
+    <p>
+      An electrical conductor is shown in <xref ref="fig_FermiLevel">Figure</xref>c.
+      In this case, the band gap energy <m>E_g = 0</m>,
+      so if an electrical field is applied,
+      electrons in the valence band can easily be excited into one of the available energy levels in the conduction band.
+    </p>
+    <p>
+      <xref ref="fig_FermiLevel">Figure</xref>b corresponds to a
+      <q>semiconductor.</q>
+      The energy band structure is similar to the insulator of <xref ref="fig_FermiLevel">Figure</xref>a,
+      except that the band gap energy <m>E_g</m> is smaller.
+      This is important because the smaller but non-zero <m>E_g</m> makes it possible to
+      <q>turn on</q>
+      and
+      <q>turn off</q>
+      electrical conductivity, a <em>very</em> useful property.
+    </p>
+    <p>
+      We discuss two ways in which a semiconductor can be manipulated to produce good conductivity.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Temperature Dependence of Conductivity for a Semiconductor</title>
+    <p>
+      If the temperature of the material is not zero,
+      then there is thermal energy that can cause electrons in the valence band to become excited into the conduction band.
+      The larger the temperature,
+      the larger the interatomic collision energies that can excite electrons.
+      The temperature dependence is captured well by the <em>Fermi-Dirac</em>
+      probability distribution function:
+      <men xml:id="eq_Fermi-Dirac">
+        p(E) = \frac{1}{1+e^{(E-E_F)/k_BT}}
+      </men>.
+    </p>
+    <p>
+      This relation is plotted in <xref ref="fig_Fermi-Dirac">Figure</xref>a for three different temperatures.
+      For a material at absolute zero (<m>T = 0</m>),
+      all of the energy levels for
+      <m>E \lt E_F</m> are filled (with probability <m>p(E) = 1</m>),
+      whereas all energy levels for <m>E > E_F</m> are empty (<m>p(E) = 0</m>).
+      If the temperature is not zero, though,
+      thermal excitations result in a decrease in <m>p</m> for
+      <m>E \lt E_F</m> and an increase for <m>E > E_F</m>.
+    </p>
+    <figure xml:id="fig_Fermi-Dirac">
+      <caption>(a) Fermi-Dirac relation <xref ref="eq_Fermi-Dirac"/> for
+      three temperatures. (b) Energy band diagram for a temperature large
+      enough to excite several electrons from the valence to conduction bands.</caption>
+      <image width="93%" source="images/Fermi-Dirac"/>
+    </figure>
+    <p>
+      If the temperature is large enough,
+      then the probability <m>p(E)</m> for electrons to be found for energies in the conduction band may become non-negligible,
+      and there may be sufficient electrons excited into the conduction band for the material to become a good conductor.
+      An important question: <em>how large is
+      <q>large enough?</q>
+      </em> The answer to this question can be seen by noticing the factor of <m>k_BT</m> in <xref ref="eq_Fermi-Dirac"/>.
+      This factor should look familiar to you from our thermodynamics unit from PHYS 211 <mdash/> this is the well-known
+      <em>Boltzmann factor</em>
+      that gives a characteristic energy for thermal collisions.
+      If the temperatue in a semiconductor is such that <m>k_BT</m> is comparable to or greater than the band gap energy <m>E_g</m>,
+      then there will be sufficient thermal energy for the semiconductor to be a good conductor.
+      This is shown conceptually in <xref ref="fig_Fermi-Dirac">Figure</xref>b:
+      for a sufficiently large temperature,
+      some of the higher energy levels in the valence band become empty and some of the lower energy bands in the conduction band contain electrons.
+      This enables conduction not only for electrons in the conduction band but also for electrons in the valence band who now have open energy levels if an electric field is applied.
+    </p>
+    <example xml:id="ex_FD">
+      <title>Probabilities from Fermi-Dirac</title>
+      <statement>
+        <p>
+          Lead sulfide (PbS) has a band gap energy of
+          <m>0.37\Xunits{eV}</m>. (a) Use an approximation where
+          <m>k_BT \approx E_g</m> to determine a temperature for which you would expect PbS to be an excellent conductor. (b) Calculate the probability of finding an electron with energy at the bottom of the conduction band for temperatures of 400K and 4000K.
+        </p>
+        <p>
+          <em>Solution</em>: (a) As a reasonable approximation,
+          if the temperature is such that <m>k_BT \approx E_g</m>,
+          then there should be sufficient energy from thermal collisions to excite electrons from the valence to the conduction band.
+          So, <m>T \approx E_g/k_B = (0.37\Xunits{eV})/(8.62\times 10^{-5}\Xunits{eV\cdot K^{-1}}) = 4290\Xunits{K}</m>.
+        </p>
+        <p>
+          (b) We can calculate probabilities from the Fermi-Dirac equation
+          (<xref ref="eq_Fermi-Dirac"/>).
+          Since the Fermi energy <m>E_F</m> is in the center of the band gap,
+          the lowest conduction band energy <m>E = E_F + E_g/2</m>,
+          so for <m>T = 400\Xunits{K}</m>,
+          <md>
+            <mrow>p(E) \amp = \frac{1}{1+e^{(E-E_F)/k_BT}} = \frac{1}{1+e^{E_g/2k_BT}}</mrow>
+            <mrow>\amp = \frac{1}{1+e^{(0.37\Xunits{eV\cdot K^{-1}})/(2 \times 8.62\times 10^{-5}\Xunits{eV\cdot K^{-1}}\cdot 400\Xunits{K})}}</mrow>
+            <mrow>\amp = 0.0047</mrow>
+          </md>
+        </p>
+        <p>
+          This temperature is about 10 times lower than the value that we calculated in part (a),
+          so it makes sense that the probability is small for finding an electron at the bottom level of the conduction band.
+        </p>
+        <p>
+          If you repeat the calculation for <m>T = 4000\Xunits{K}</m>,
+          you'll find a probability of 0.37, which is quite appreciable.
+          This is consistent with the result in part (a) which predicts a temperature of
+          <m>4290\Xunits{K}</m> for appreciable conduction.
+        </p>
+      </statement>
+    </example>
+    <p>
+      In the previous example,
+      it is tempting to say that if
+      <m>p(E) = 0.0047</m> for an electron to be found in the lowest conduction-band energy state,
+      then the material will be an insulator.
+      But remember how many electrons are in a typical solid (a
+      <em>lot</em>!), so even if the probabilities are low,
+      there will still be some electrons that can conduct electricity.
+      But with higher and higher temperatures there would be more and more conduction band electrons.
+    </p>
+    <p>
+      So, semiconductors conduct electricity better at higher temperatures.
+      That can be both a good thing and a bad thing.
+      On the good side,
+      this principle can be used to make very sensitive and precise temperature measurement devices called <em>thermistors</em>.
+      On the bad side,
+      the electronic devices that we'll discuss in the next section can fail if the semiconductor gets too hot.
+      This is why it is so critical for electronic devices to be cooled.
+    </p>
+  </subsection>
+  <subsection>
+    <title>Doping and n- and p-Type Semiconductors</title>
+    <figure xml:id="fig_Doping">
+      <caption>(a) n-type semiconductor; donor atom impurities are added to provide
+      some extra electrons which occupy some of the levels in the conduction band.
+      (b) p-type semiconductor; acceptor atom impurities are added that remove
+      electrons from the valence band, leaving conducting
+      <q>holes</q>
+      behind.</caption>
+      <image width="65%" source="images/Doping"/>
+    </figure>
+    <p>
+      There is another way that you can make a semiconductor conduct:
+      doping, i.e., add impurities to a semiconductor with a different number of valence electrons than the primary semiconductor material.
+      For example, silicon is a common
+      <q>Group IV</q>
+      semiconductor element with 4 valence electrons;
+      i.e., 4 electrons in the highest energy (unfilled) shell.
+      If a silicon semiconductor is doped with trace amounts of an impurity
+      <q>Group V</q>
+      element such as arsenic with 5 valence electrons, 4 of the valence electrons in the impurity will fill the valence band along with the silicon atoms,
+      but there will be one additional outer-shell electron for each impurity atom.
+      Arsenic is considered to be a
+      <q>donor impurity</q>
+      for silicon semiconductors since it donates an additional electron.
+      The additional donated electrons are mobile charge carriers in the conduction band,
+      as shown in <xref ref="fig_Doping">Figure</xref>a.<fn>
+      This is a simplification:
+      the impurities alter the band structure,
+      but the basic principle is the same.
+      </fn> Semiconductors doped with donor atoms are called
+      <q>n-type</q>
+      semiconductors,
+      because they have mobile charge carriers that have negative charge
+      (electrons).
+    </p>
+    <p>
+      Doping a semiconductor with
+      <q>acceptor impurities</q>
+      results in
+      <q>p-type</q>
+      semiconductors, as shown in <xref ref="fig_Doping">Figure</xref>b.
+      An example of a p-type semiconductor would be silicon (Group IV) doped with impurities from Group III (with 3 valence electrons),
+      such as boron.
+      Since the impurity atoms have only 3 valence electrons
+      (unlike the 4 for the bulk silicon atoms),
+      each impurity atom would fill only 3 out of the 4 available energy levels,
+      leaving an unfilled
+      <q>hole</q>
+      in the valence band.
+      This hole provides other electrons in the valence band with an opportunity to change their energies in response to an applied electric field.
+      Consequently,
+      the presence of holes in the valence band allows for conductivity.
+      An applied electric field results in electrons in the valence band moving opposite the field into available holes;
+      the result is that the holes move in the direction of the electric field.
+      Conceptually,
+      the holes themselves act like positive, mobile charge carriers;
+      hence the term <em>p-type</em> to describe these semiconductors.
+    </p>
+    <p>
+      Things become very interesting if a p-type semiconductor is joined with an n-type semiconductor.
+      <xref ref="fig_pnJunction">Figure</xref>a shows an n-type semiconductor
+      (on the left)
+      with mobile electrons
+      (dark circles)
+      connected to a p-type semiconductor
+      (on the right)
+      with mobile holes
+      (white circles).
+      But in the absence of an applied electric field,
+      the mobile electrons and holes diffuse around the material,
+      moving randomly in the sample,
+      including moving across the p-n junction.
+      Invariably, mobile electrons and holes near the junction come into contact with each other and <em>annihilate</em>,
+      with the mobile electron dropping into the open energy level left by the hole.
+      This annihilation process removes both the electron and the hole from the conduction process.
+      The result is that in the vicinity of the junction between the n- and p-type materials,
+      there is a <em>depletion zone</em>
+      (DZ) with no mobile charge carriers,
+      as shown in <xref ref="fig_pnJunction">Figure</xref>b.
+      The annihilation process at the junction produces a <em>bias</em>
+      electric field that eventually stops the diffusion of the electrons and holes across the junction,
+      stabilizing the width of the DZ.
+    </p>
+    <figure xml:id="fig_pnJunction">
+      <caption>(a) A pn junction (in the absence of diffusion or a depletion
+      zone) made by connecting an n-type semiconductor on the left (with
+      negative mobile charges <mdash/> black dots) and a p-type semiconductor
+      on the right (with positive mobile charges <mdash/> white dots).
+      (b) A more realistic pn junction; n-type electrons and p-type holes diffuse
+      across the junction and annihilate each other, resulting in a depletion
+      zone (DZ) around the junction with no mobile charge carriers.</caption>
+      <image width="56%" source="images/pnJunction"/>
+    </figure>
+  </subsection>
+</section>

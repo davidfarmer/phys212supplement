@@ -1,0 +1,370 @@
+<exercises xml:id="sec_3D_and_semiconductors_problems">
+  <title>Problems</title>
+  <exercise>
+    <statement>
+      <p>
+        The so-named Paschen series of radiation emitted by hydrogen corrersponds to transitions from states of principle quantum numbers <m>n = 4</m>, 5, 6, <ellipsis/>, to the state <m>n = 3</m>.
+        <ol>
+          <li>
+            <p>
+              Calculate the frequencies and wavelengths of the three lowest energy photons emitted from hydrogen in the Paschen series.
+            </p>
+          </li>
+          <li>
+            <p>
+              In what region of the electromagnetic spectrum are these photons?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        An electron in a hydrogen atom is in a state of principle quantum number <m>n = 4</m>.
+        Using the notation (<m>n, l, m_l, m_s</m>) to specify a state,
+        write all of the possible states for this electron. [ HINT: There should be a total of <m>32</m> states.]
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Find the maximum possible magnitude for the orbital angular momentum
+        <m>|\vec{L}|</m> of an electron in the state of principle quantum number <m>n = 7</m> of a hydrogen atom.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The orbital angular momentum of the electron in a hydrogen atom has a magnitude <m>|\vec{L}| = 2.585 \times 10^{-34} \Xunits{J \cdot s}</m>.
+        What is the minimum possible energy for this electron in the hydrogen atom?
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Determine the principle quantum number <m>n</m> and orbital quantum number <m>l</m> for a hydrogen atom whose electron has energy
+        <m>-0.850 \Xunits{eV}</m> and orbital angular momentum <m>|\vec{L}| = \sqrt{12} \hbar</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Show that the probability that a state with energy
+        <m>\Delta E</m> above the Fermi energy will be occupied is equivalent to the probability that a state with energy <m>\Delta E</m> <em>below</em>
+        the Fermi energy will be <em>unoccupied</em>.
+        Explain in 1 or 2 sentences why this result makes sense intuitively,
+        when considering how conduction works in a semiconductor.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A one-dimensional periodic potential composed of 10 side-by-side finite square well potentials has a valence band with 10 energy levels from a low of <m>0.81\Xunits{ eV}</m> to a high of
+        <m>1.10\Xunits{eV}</m> and a conduction band with 10 levels ranging from
+        <m>3.19\Xunits{eV}</m> to <m>4.39\Xunits{eV}</m> . The Fermi energy
+        (in the middle of the band gap)
+        is <m>2.145\Xunits{eV}</m> for this system.
+        Assume that there are 20 electrons in this system
+        (this is analogous to 10 atoms with 2 valence electrons each).
+        <ol>
+          <li>
+            <p>
+              Calculate the probability that an electron will be found in the energy state
+              <m>E_{11} = 3.19\Xunits{eV}</m> (i.e., in the lowest conduction band state) for <m>T = 300\Xunits{K}</m>(room temperature),
+              <m>3,000\Xunits{K}</m>, and <m>30,000\Xunits{K}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the values of <m>k_BT</m> for each of the temperatures from part (a).
+              Do the probabilities that you calculated in (a) make sense,
+              given these values for <m>k_BT</m>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Now, download the Excel sheet
+              <q>FDForTenWells.xlsx</q>
+              from the calendar page.
+              This worksheet calculates Fermi-Dirac probabilities for electrons to occupy any of the 10 conduction band energies.
+              The sheet also calculates an expected average number of electrons in each of these levels
+              (by multiplying the probability by 2, since there are two energy levels per state)
+              and adds up the total number of electrons expected in the conduction band.
+              Use this worksheet to calculate the estimated number of conduction band electrons for <m>T = 300</m>, 3000, and <m>30000\Xunits{K}</m>.
+              For each of these temperatures,
+              would you expect this system to be an electrical insulator or electrical conductor?
+            </p>
+          </li>
+          <li>
+            <p>
+              if there were only 10 electrons (e.g., 10 atoms with only 1 valence electron instead of 2),
+              how would that affect the conduction properties of this system?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Lead sulfide (PbS) has a band gap energy of <m>0.37\Xunits{eV}</m>.
+        <ol>
+          <li>
+            <p>
+              Calculate the value of <m>k_BT</m> for temperatures
+              <m>30\Xunits{K}</m>, <m>300\Xunits{K}</m>
+              (room temperature),
+              <m>3,000\Xunits{K}</m> and <m>30,000\Xunits{K}</m>.
+              At these temperatures would you expect PbS to be a poor,
+              moderate or good electrical conductor?
+            </p>
+          </li>
+          <li>
+            <p>
+              Use the Fermi-Dirac relation to calculate the probability of the lowest conduction band energy state being occupied for temperatures 30, 300, 3,000 and <m>30,000\Xunits{K}</m>.
+              Are these results consistent with your answers from (a)? (Note:
+              it's not necessary for <em>every</em>
+              conduction band level to be filled for a material to be a reasonable conductor,
+              but the probabilities should at least be on the order of <m>10^{-5}</m> or better.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Some recent studies have investigated the possibility of using DNA strands as fundamental building blocks of nanotechnology.
+        One possibility is the use of DNA for nanoelectronic devices.
+        Experimental studies of a particular DNA sequence (Poly(dA)*Poly(dT) with a B-type structure<fn>
+        <q>DNA Electronics,</q>
+        M. Taniguchi and T. Kawai, Physica E
+        <em>33</em>, 1-12 (2006).
+        </fn>) measured a band gap of
+        <m>2.7\Xunits{eV}</m> between valence and conduction bands.
+        Would you expect this DNA strand to be a good electrical conductor at room temperature?
+        Explain. (A
+        <q><m>k_BT</m></q>
+        analysis is sufficient <mdash/> you don't need to use Fermi-Dirac distributions here.) If it is a good conductor,
+        approximate how low a temperature would be needed to make it a poor conductor.
+        If it is a poor conductor,
+        approximate how large a temperature would be needed to make it a good conductor.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A silicon photodiode has a band gap energy of <m>1.17\Xunits{eV}</m>.
+        <ol>
+          <li>
+            <p>
+              Calculate the maximum wavelength of electromagnetic radiation that this photodiode can detect.
+            </p>
+          </li>
+          <li>
+            <p>
+              Why can't a silicon photodiode detect EM radiation with wavelengths larger than the value calculated in part (a)?
+            </p>
+          </li>
+          <li>
+            <p>
+              Give an argument as to how a silicon photodiode <em>can</em>
+              detect EM radiation with wavelengths <em>smaller</em>
+              than the value calculated in part<nbsp/>(a).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Calculate the wavelength
+        (and state the color <mdash/> or
+        <q>IR</q>
+        or
+        <q>UV</q>
+        if infrared or ultraviolet)
+        of electromagnetic radiation emitted from a light-emitting diode (LED) made from the following materials:
+        <ol>
+          <li>
+            <p>
+              Gallium arsenide (band gap <m>1.43\Xunits{eV}</m>);
+            </p>
+          </li>
+          <li>
+            <p>
+              Gallium (III) Phosphide (band gap <m>2.26 \Xunits{eV}</m>);
+            </p>
+          </li>
+          <li>
+            <p>
+              Gallium nitride
+              (band gap <m>3.4\Xunits{eV}</m>).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        White light LED bulbs can be made by using blue or violet LEDs that are coated with phosphor (fluorescent) coatings. (a) Explain in a few sentences how this kind of approach can produce light that appears white. (b) Why would it <em>not</em>
+        be possible to make a white light LED with a red LED as the source? (Note:
+        white-light LED bulbs can also be made with coatings of quantum dots or can be made with combinations of red,
+        green and blue LEDs.)
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Draw a sketch of a p-n junction in the absence of any imposed electric fields.
+            In the sketch,
+            show the depletion zone (DZ) and sketch mobile carriers within the p- and n-type semiconductors away from the DZ. Make sure that you have the correct type of charge carriers (+ or -) in the correct material.
+          </p>
+        </li>
+        <li>
+          <p>
+            Now, make a similar sketch,
+            but for the case with an applied electric field pointing from the n- to the p-type semiconductor.
+            Is the DZ larger or smaller in this case than for the case with <m>E = 0</m> from part (a) Explain why.
+            Do you expect this p-n junction to conduct electricity readily in the direction of this electric field?
+            Explain.
+          </p>
+        </li>
+        <li>
+          <p>
+            Repeat part (b),
+            but for an electric field pointing from the p- to the n-type semiconductor,
+            answering the same questions.
+          </p>
+        </li>
+        <li>
+          <p>
+            Does this device act like a diode;
+            i.e., a device that passes current readily in one direction but not in the other?
+            In what ways does a p-n junction deviate from an
+            <q>ideal</q>
+            diode?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <em>Transistors.</em> <xref ref="fig_transistor">Figure</xref>(a) is a sketch of a sandwich made of 2 n-type semiconductors with a thin p-type layer in between.
+        <ol>
+          <li>
+            <p>
+              A wire is connected to each of the ends of this npn sandwich.
+              Give a short explanation as to why this npn device would not be expected to conduct electricity in either direction.
+              (Hint: consider what happens to the DZ at each junction if you apply an electric field in either direction.)
+            </p>
+          </li>
+          <li>
+            <p>
+              A third wire is connected to the right pn junction.
+              If a very small current is fed into the device through this third wire,
+              there can be a significant conduction of electricity between the two end wires if the current is going to the left.
+              Explain why.
+              (Hint: consider the depletion zone and what happens if you inject some electrons or holes into it.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Instead of a third wire,
+              you can make a phototransistor that turns on and off the current between the ends by shining light on the p-type layer.
+              Explain why light can turn on the current.
+              (Hint: this will only work if the light has a wavelength smaller than a particular critical value.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The wavefunction for the ground state of the hydrogen atom \hbox{(<m>n=1, l=0, m_l=0</m>)} is
+        <me>
+          \psi_{100} = \frac{1}{\sqrt{\pi a_0^3}}\,  e^{-r/a_0}
+        </me>,
+        where <m>a_0</m> is a constant which can be written in terms of fundamental constants as <m>a_0 = \frac{\hbar^2}{m_e k e^2}</m>.
+        <ol>
+          <li>
+            <p>
+              Show that this wavefunction is a solution to the 3D Schr&#xf6;dinger equation
+              <me>
+                -\frac{\hbar^2}{2mr^2} \left[ \frac{\partial}{\partial r} \left( r^2 \frac{\partial \psi}{\partial r} \right) + \frac{1}{\sin{\theta}} \frac{\partial}{\partial \theta} \left( \sin{\theta} \frac{\partial \psi}{\partial \theta} \right) + \frac{1}{\sin^2{\theta}} \frac{\partial^2 \psi}{\partial \phi^2} \right] - \frac{k e^2}{r} \psi = E \psi
+              </me>
+              (Hint: since there are no <m>\theta</m> or <m>\phi</m> terms in the wavefunction,
+              the partial derivatives <m>\partial \psi/\partial \theta</m> and <m>\partial \psi/\partial \phi</m> are both zero.
+              That will simplify things a <em>lot</em>.)
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the value of <m>E</m> required for <m>\psi_{100}</m> to be a solution.
+              Compare your result with <xref ref="eq_hydrogenE"/>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_hydrogen_wavefn">
+    <statement>
+      <p>
+        The ground state wavefunction of the electron in the hydrogen atom is spherically symmetric which means that the wavefunction <m>\psi(r)</m> can be written solely in terms of the radial coordinate <m>r</m> representing the distance between the proton and electron.
+        <ol>
+          <li>
+            <p>
+              What does the quantity <m>|\psi(r)|^2</m> mean physically?
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that the volume of a thin spherical shell of radius <m>r</m> and thickness <m>dr</m> is <m>4\pi r^2\, dr</m>.
+              (You can use the approximation for small <m>dr</m> that the volume is the surface area of the sphere times <m>dr</m>.)
+            </p>
+          </li>
+          <li>
+            <p>
+              In spherical coordinates,
+              the ground state solution of the Schr&#xf6;dinger equation for the hydrogen atom is
+              <me>
+                \psi_{100} = \frac{1}{\sqrt{\pi a_0^3}}\,  e^{-r/a_0}
+              </me>,
+              where <m>a_0</m> is the same constant as from the previous problem.
+              Use the result of part<nbsp/>(b) to write an expression for the probability that the electron is in a spherical shell of radius <m>r</m> and thickness <m>dr</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the radius of the shell
+              (of constant thickness <m>dr</m>)
+              where the electron is most likely to be found.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</exercises>

@@ -1,0 +1,81 @@
+<section xml:id="sec_chromodynamics">
+  <title>Chromodynamics: The Theory of Colored Quarks</title>
+  <p>
+    Let's now investigate the strong interaction between quarks.
+    The strong interaction is actually a manifestation of the color property of quarks.
+    Just as with electric charges,
+    color charges repel if alike and attract if different.
+    Now a quark, like any particle of quantum field theory,
+    continually emits and absorbs messenger particles and is thus surrounded by a small cloud of virtual quarks and gluons.
+    Nearby quarks then detect the presence of the first quark by interacting with its cloud of colored gluons.
+  </p>
+  <figure xml:id="fig_quark_color_change">
+    <caption>Feynman diagram showing a quark changing color as it emits a
+    gluon.</caption>
+    <sidebyside>
+      <image width="92.5%" source="images/quark_color_change"/>
+    </sidebyside>
+  </figure>
+  <p>
+    It is important to understand what happens to a quark when emitting or absorbing gluons:
+    <em>as a quark emits a gluon, its color changes</em>.
+    This color change can be seen in <xref ref="fig_quark_color_change">Figure</xref>.
+    Note that a gluon carries both a color and an anticolor.
+    In the example,
+    the red up quark on the left emits a red-antiblue gluon and changes into a blue up quark.
+    You can think of this by saying that the red color leaves the quark and goes into the gluon.
+    The antiblue color of the gluon is also withdrawn from the quark,
+    leaving the quark blue.
+    The gluon may then carry color to another quark,
+    or it may return to the original quark to be re-absorbed.
+  </p>
+  <p>
+    An important aspect of the color force between quarks is how its interaction strength varies with distance.
+    We can best understand this concept through an analogy with electric forces.
+    As you recall from our study of Gauss' Law,
+    the electric flux through a surface depends only on the <em>net charge</em>
+    inside the enclosed volume.
+    Similarly, the color field depends only on the
+    <em>net color</em> inside a given volume.
+    We must thus consider the effect of the gluon messenger particles,
+    since they can carry the color charge away from a quark.
+  </p>
+  <p>
+    The color carried by a gluon leads to the effect called <em>camouflage</em>.
+    Consider a red quark.
+    Suppose while you are trying to test the color inside a certain region surrounding the quark,
+    it emits a red-antigreen gluon,
+    leaving behind a green quark.
+    The gluon can't go far without violating the uncertainty principle and unless it finds another quark,
+    it soon returns and is re-absorbed.
+    But during the time it's away,
+    the net color in a large region enclosing the fleeing gluon is still red,
+    while in a smaller region missing the gluon,
+    the net color of the quark looks green.
+    The combined effect of gluons continually leaving and returning is that the closer you get to the red,
+    the less red it appears.
+    Thus the effective color charge decreases as you move closer to it.
+  </p>
+  <p>
+    Detailed calculations show that this camouflage effect makes the color charge continually decrease at smaller and smaller separations.
+    In fact, it turns out that on distance scales smaller than a proton radius,
+    the effective quark color charge is so diminished that the three different colored quarks inside a proton hardly affect each other and move almost independently.
+    The gluon force between quarks thus acts like a rubber band tied between two balls.
+    The balls move freely until the rubber band gets stretched.
+    Then the more they try to move apart,
+    the harder the rubber band force pulls them back together.
+    Continuing the rubber-band analogy,
+    you can see that, as you try to separate quarks,
+    the effective color charge increases rapidly and the inter quark forces become huge.
+    In fact, the energy needed to pull apart quarks is so great that a quark-antiquark pair is created instead,
+    as shown in <xref ref="fig_no_free_quark">Figure</xref>.
+    Instead of a free quark, we just create a new meson.
+    This is why we've never observed free quarks;
+    all quarks are permanently confined inside hadrons.
+  </p>
+  <figure xml:id="fig_no_free_quark">
+    <caption>Trying to pull a quark out of a baryon fails.  The energy
+    creates a new meson instead.</caption>
+    <image width="75%" source="images/no_free_quark"/>
+  </figure>
+</section>

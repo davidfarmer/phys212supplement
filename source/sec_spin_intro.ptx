@@ -1,0 +1,24 @@
+<section xml:id="sec_spin_intro">
+  <title>Introduction</title>
+  <p>
+    In the previous chapters,
+    we have emphasized the use of the wavefunction <m>\psi(x)</m> to describe the quantum state of a particle.
+    This wavefunction formalism is mainly focused on answering the question
+    <q>Where is the particle?</q>
+    by virtue of the fact that the square of the magnitude of the wavefunction,
+    <m>\left| \psi(x) \right|^2</m>,
+    represents the probability density for finding the particle near the location <m>x</m>.
+    This wavefunction approach is useful in describing how electrons arrange themselves in an individual atom as well as describing how electrons behave in a conductor,
+    among other things.
+    On the other hand,
+    there are certain systems for which the wavefunction approach is neither appropriate nor meaningful,
+    as for example the quantum description of photon states and,
+    as we shall see later in this chapter,
+    the quantum description of spin.
+    Therefore in this chapter we will develop a more abstract mathematical structure in which to describe quantum systems that is more widely applicable and also reveals more of the non-intuitive quantum behavior.
+    We will use this new mathematical formalism to describe a property of elementary particles called spin angular momentum,
+    or simply <em>spin</em>,
+    and how the spin of the particle interacts with a magnetic field.
+    This description has important implications for understanding nuclear magnetic resonance (NMR) which is the basis for magnetic resonance imaging (MRI).
+  </p>
+</section>

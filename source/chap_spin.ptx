@@ -1,0 +1,10 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_spin">
+  <title>Quantum States and Spin</title>
+  <xi:include  href="sec_spin_intro.ptx"/>
+  <xi:include  href="sec_state_representation.ptx"/>
+  <xi:include  href="sec_quantum_measurements.ptx"/>
+  <xi:include  href="sec_quantum_spin.ptx"/>
+  <xi:include  href="sec_spin_representation.ptx"/>
+  <xi:include  href="sec_spin_magnetic_moment.ptx"/>
+  <xi:include  href="sec_spin_problems.ptx"/>
+</chapter>

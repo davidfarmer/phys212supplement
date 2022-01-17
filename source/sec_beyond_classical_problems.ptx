@@ -1,0 +1,281 @@
+<exercises xml:id="sec_beyond_classical_problems">
+  <title>Problems</title>
+  <exercise xml:id="prob_photonenergy">
+    <statement>
+      <p>
+        Calculate:
+        <ol>
+          <li>
+            <p>
+              the energy (in eV) of a <m>500\Xunits{nm}</m> wavelength photon, and
+            </p>
+          </li>
+          <li>
+            <p>
+              the non-relativistic kinetic energy for a <m>500\Xunits{nm}</m> electron.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A certain electron has the same wavelength as orange light,
+        <m>\lambda \simeq 600\Xunits{nm}</m>.
+        Calculate the speed of this electron.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_cutoff_freq">
+    <statement>
+      <p>
+        The electron binding energy for a particular metal is <m>2.25\Xunits{eV}</m>.
+        Calculate the cutoff frequency for the photoelectric effect in this metal.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_T4virus">
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Let's say that you want to probe the structure of a bacteriophage T4 virus.<fn>
+            These viruses <mdash/> which attack common bacteria <mdash/> are amazingly cool.
+            They are like little lunar landers that land on the surface of a bacterium,
+            after which they inject DNA into the bacterium,
+            which then produces many more of the viruses before exploding.
+            See, e.g., Kanamuru et al., Nature
+            <em>415</em>, p. 553 (2002).
+            </fn> One way to probe the virus is to look at it with electromagnetic waves.
+            If one wants to
+            <q>see</q>
+            the T4 structure with a resolution of about <m>1\Xunits{nm}</m>,
+            what must be the wavelength of the EM wave used?
+            What is the energy of a single photon with this wavelength?
+          </p>
+        </li>
+        <li>
+          <p>
+            Another way to probe the T4 is with an electron microscope.
+            What must the wavelength and energy of an electron used by the microscope if it is to resolve the T4 virus down to the same resolution of <m>10^{-9}\Xunits{m}</m>?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_deBmomentum">
+    <statement>
+      <p>
+        Use the de<nbsp/>Broglie relation to calculate the momentum of an X-ray photon of frequency <m>f=1.0\times 10^{18}\Xunits{Hz}</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_BindingEnergy">
+    <statement>
+      <p>
+        Photons of frequency <m>6.0\times 10^{14}\Xunits{Hz}</m> are directed towards a metal.
+        As a result,
+        electrons are ejected with kinetic energies up to <m>1.4\Xunits{eV}</m>.
+        Determine the binding energy for this metal.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_EMFhazards">
+    <statement>
+      <p>
+        A few years ago there was a flurry of attention given to the potential hazards of electromagnetic fields from overhead power lines.
+        The concern is that the alternating current (AC) in these power lines was emitting radiation that could cause cancer.
+        <ol>
+          <li>
+            <p>
+              The AC current in power lines alternates with a frequency of <m>60\Xunits{Hz}</m>.
+              Use this to determine the energy of photons emitted from the power lines
+              (express your answer in eV).
+            </p>
+          </li>
+          <li>
+            <p>
+              The weakest molecular bonds have binding energies around <m>0.1\Xunits{eV}</m>.
+              Use this explain why the scientific community is highly skeptical of the claims of cancer dangers.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        When a particular metal is illuminated with infrared radiation of wavelength <m>700\Xunits{nm}</m>,
+        electrons are emitted with kinetic energies that range up to <m>0.25\Xunits{eV}</m>.
+        Calculate the largest kinetic energy for ejected electrons if the same surface is illuminated with light of wavelength <m>400\Xunits{nm}</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_cavity_freq">
+    <statement>
+      <p>
+        A one-dimensional cavity of length <m>L</m> is filled with electromagnetic standing waves.
+        Show that the frequency of the
+        <m>j^\text{ th }</m> longest wavelength mode is given by <m>f_j = cj/(2L)</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_largest_mode">
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Given your results from <xref ref="prob_cavity_freq">Problem</xref>,
+            calculate the energy of a single photon for the
+            <m>j^\text{ th }</m> longest wavelength mode in a one-dimensional (1D) cavity with length <m>L</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Considering that the Equipartition Theorem predicts an average total energy of <m>\textstyle{\frac{1}{2}}k_BT</m> for each mode,
+            calculate the number of photons that you would expect to find
+            (on average)
+            for the <m>j^\text{ th }</m> longest wavelength mode in a 1D cavity with length <m>L</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Based on your answer to (b),
+            what would be the largest mode number <m>j</m> for which you would expect to find
+            (on average)
+            one or more photons in the cavity?
+          </p>
+        </li>
+        <li>
+          <p>
+            In one or two sentences,
+            explain why the photon nature of light resolves the problem of the UV catastrophe (i.e., the prediction of an infinite total energy).
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        As discussed in the reading, the Equipartition Theorem says that,
+        classically,
+        each electromagnetic wave mode should have an average energy of <m>\textstyle{\frac{1}{2}}k_BT</m>.
+        For simplicity,
+        we'll assume a one-dimensional cavity with a length of <m>2.0\Xunits{cm}</m>.
+        <ol>
+          <li>
+            <p>
+              Calculate the value of <m>\textstyle{\frac{1}{2}}k_BT</m> at room temperature of <m>22^{\circ}\Xunits{C}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the wavelength and frequency of the lowest frequency normal mode electromagnetic wave for this cavity.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the energy of one photon of light with this wavelength.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the number of photons that you would expect
+              (on the average)
+              for the lowest frequency mode in this cavity.
+            </p>
+          </li>
+          <li>
+            <p>
+              How many photons would you expect
+              (on average)
+              for the second lowest frequency mode in this cavity?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many photons would you expect for the
+              <m>10^\text{ th }</m> lowest frequency mode in this cavity?
+              The <m>100^\text{ th }</m> lowest mode?
+              The <m>1000^\text{ th }</m> mode?
+              The <m>10000^\text{ th }</m> lowest mode?
+            </p>
+          </li>
+          <li>
+            <p>
+              Do you think that the equipartition theorem holds for all of your answers in part (f)?
+              Why or why not?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The electromagnetic field in a one-dimensional cavity is in thermal equilibrium,
+        and the longest wavelength mode contains <m>4500</m> photons.
+        <ol>
+          <li>
+            <p>
+              Calculate the number of photons in the second-longest wavelength mode.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the number of photons in the third-longest wavelength mode.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate <m>j_\text{ max }</m>, the largest mode number.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prob_IonizeHAtom">
+    <statement>
+      <p>
+        An X-ray photon of wavelength
+        <m>60\Xunits{nm}</m> ionizes a hydrogen atom with an electron initially in its ground state
+        (with energy <m>-13.6\Xunits{eV}</m>).
+        Calculate the kinetic energy of the resulting free electron.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Wave-particle duality means that all the fundamental building blocks in the quantum microscopic world have both wave and particle properties.
+        This is demonstrated in the electron double slit experiment shown in <xref ref="fig_electron_double_slit">Figure</xref>.
+        <ol>
+          <li>
+            <p>
+              Describe an aspect of the experiment that involves electrons acting as particles.
+            </p>
+          </li>
+          <li>
+            <p>
+              Describe an aspect of the experiment that involves the same electrons acting as waves.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        A He-Ne laser emits light of wavelength <m>633\Xunits{nm}</m>.
+        Calculate how many photons per second are emitted by a <m>5\Xunits{mW}</m> He-Ne laser.
+      </p>
+    </statement>
+  </exercise>
+</exercises>

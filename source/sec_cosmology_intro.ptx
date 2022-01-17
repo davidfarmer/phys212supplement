@@ -1,0 +1,17 @@
+<section xml:id="sec_cosmology_intro">
+  <title>Introduction</title>
+  <p>
+    Cosmology is the study of the origins of the cosmos,
+    that is, the history of the universe.
+    The present standard model of cosmology is the subject of this chapter.
+  </p>
+  <p>
+    At the end of <xref ref="chap_interactions">Chapter</xref>,
+    we claimed that the temperature and available energy in the early universe were sufficient to achieve universal symmetry.
+    In this chapter we present a simple relation that shows how energy and temperature decrease with time.
+    We then look in detail at each of the major events that served to mark transitions from one phase of the universe to another.
+    We'll learn why these events occurred when they did,
+    and what ramifications these events had for the interactions that followed.
+    And finally we'll see what observational evidence exists that could test the microscopic theories of particle physics.
+  </p>
+</section>

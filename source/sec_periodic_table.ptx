@@ -1,0 +1,46 @@
+<section xml:id="sec_periodic_table">
+  <title>Periodic Table</title>
+  <p>
+    We now have the basic tools to explain the periodic table of the elements.
+    Electrons are fermions since they have a half-integral spin quantum number
+    (<m>s = 1/2</m> for an electron).
+    Consequently,
+    electrons obey the Pauli Exclusion Principle (see <xref ref="sec__pauli_exclusion_principle">Section</xref>):
+    no two electrons can be in the same state.
+    So, if there is more than one electron in an atom,
+    no two of them can have the same combination of quantum numbers <m>n,
+    l, m_l</m> and <m>m_s</m>.
+  </p>
+  <p>
+    Consider lithium,
+    which has three protons in the nucleus and three electrons orbiting it.
+    The first two electrons can go into the ground state,
+    but Pauli demands that the third electron go into a new state.
+    If the lithium atom is in its lowest possible energy state,
+    that third electron must be in some <m>n=2</m> orbital.
+    Most of the chemical behavior of atoms is due to the shape and size of their outer electron orbitals,
+    so the Pauli exclusion principle is what makes lithium act very differently than helium.
+  </p>
+  <p>
+    This process repeats many times over to make up the periodic table.
+    The more electrons there are,
+    the higher the energy levels must be filled,
+    similar to the five particle system in <xref ref="chap_quantum_statistics"/>, <xref ref="example_five_particles"/>.
+    For some specific orbital, meaning some specific values of <m>n</m>,
+    <m>\ell</m> and <m>m_\ell</m>,
+    there are two possible single-electron states:
+    <m>|n\,\ell\,m_\ell\uparrow\rangle</m> and <m>|n\,\ell\,m_\ell\downarrow\rangle</m>,
+    and we can put two electrons into the antisymmetric combination of these two states.
+    Any additional electrons will have to go into a new orbital.
+  </p>
+  <p>
+    Were it not for the Pauli Exclusion Principle (i.e., if it didn't apply to electrons in atoms),
+    then all elements would have all of their electrons in the lowest energy state with <m>n = 1</m>
+    (except when excited).
+    Were that the case,
+    then there would be no chemical diversity <mdash/> each element would behave almost identically to each other,
+    and there would be no chemical interactions.
+    Chemistry would be really dull in this case.
+    Even worse, we wouldn't be around to notice that chemistry had become dull.
+  </p>
+</section>

@@ -1,0 +1,11 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_quarks">
+  <title>Fundamental Forces and Interactions</title>
+  <xi:include  href="sec_quarks_intro.ptx"/>
+  <xi:include  href="sec_four_fundamental_forces.ptx"/>
+  <xi:include  href="sec_quantum_field_theory.ptx"/>
+  <xi:include  href="sec_feynman_diagrams.ptx"/>
+  <xi:include  href="sec_quark_color.ptx"/>
+  <xi:include  href="sec_chromodynamics.ptx"/>
+  <xi:include  href="sec_interactions.ptx"/>
+  <xi:include  href="sec_quarks_problems.ptx"/>
+</chapter>

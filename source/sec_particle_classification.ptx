@@ -1,0 +1,583 @@
+<section xml:id="sec_particle_classification">
+  <title>Classification of Particles</title>
+  <p>
+    Historically, particles were classified by their masses.
+    Two particles with exactly the same mass are almost surely identical,
+    unless some other obvious difference
+    (like different charges)
+    turns up.
+    Even then, physicists give the particles the same symbol
+    (like <m>e^-</m> for electrons, <m>e^+</m> for positrons)
+    and look for some underlying symmetry that causes them to have the same mass.
+  </p>
+  <p>
+    The first rough classification assigned the labels <em>leptons</em>,
+    <em>mesons</em>, and <em>baryons</em> to particles,
+    names derived from the Greek words for light, medium, and heavy.
+    Thus low mass particles like electrons were called leptons,
+    middle mass particles like pions were called mesons, and heavy particles
+    (protons and neutrons)
+    were called baryons.
+  </p>
+  <p>
+    As more particles entered the scene,
+    a scheme based just on mass became inadequate.
+    For instance, a muon has a mass close to that of a pion,
+    but behaves much more like an electron.
+    The present classification of particles is now based on two factors:
+    the type of force the particle
+    <q>feels,</q><fn>
+    We will be discussing the fundamental forces/interactions in the next chapter.
+    For the moment, though,
+    you should be aware that there are four fundamental forces:
+    the <em>strong</em> force, the <em>electromagnetic</em> force,
+    the <em>weak</em> force and the
+    <em>gravitational</em> force.
+    </fn> and the spin of the particle.
+    Apparently all particles feel the weak interaction,
+    but only some can feel the strong interaction.
+    The constituents of matter that feel the strong interaction are called <em>hadrons</em>;
+    those that do not are <em>leptons</em>.
+    (Messenger particles,<fn>
+    We will be discussing messenger particles in the next chapter as well.
+    </fn> like photons and <m>W</m>'s, are neither;
+    they are not constituents of matter but force carriers.)
+    As for a classification based on spin,
+    those particles with integral spin are called <em>bosons</em>,
+    those with half-integral spin are called
+    <em>fermions</em>, as we have seen.
+    Let's now look at the present definitions of leptons, mesons,
+    and baryons.
+  </p>
+  <p>
+    <em>Leptons.</em> Leptons are those particles that do not participate in the strong interaction.
+    All leptons have spin-<m>\textstyle{\frac{1}{2}}</m> and are thus fermions.
+    Their masses range from 0 to <m>1.78\Xunits{GeV/ c^2 }</m>.
+    Leptons appear to have no internal structure
+    (down to <m>10^{-18}\Xunits{m}</m> at least)
+    and thus appear to be true elementary particles.
+    There are only a handful of different kinds and they come in just three groups,
+    or families, as seen in <xref ref="table_leptons">Table</xref>.
+    Some examples are electrons, neutrinos, and muons.
+  </p>
+  <table xml:id="table_leptons">
+    <title>The leptons</title>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell></cell>
+        <cell>Mass</cell>
+        <cell></cell>
+        <cell>Additive</cell>
+        <cell>Anti-</cell>
+      </row>
+      <row>
+        <cell>Symbol/Name</cell>
+        <cell>(MeV/<m>c^2</m>)</cell>
+        <cell>Spin\hspace{4mm}</cell>
+        <cell><m>Q</m></cell>
+        <cell><m>L_e</m></cell>
+        <cell><m>L_\mu</m></cell>
+        <cell><m>L_\tau</m></cell>
+        <cell>particle</cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  ><m>e^-</m></cell>
+        <cell>electron</cell>
+        <cell>0.511</cell>
+        <cell>1/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell><m>e^+</m></cell>
+      </row>
+      <row>
+        <cell><m>\nu_e</m></cell>
+        <cell>electron-neutrino</cell>
+        <cell><m>\sim 0</m></cell>
+        <cell>1/2</cell>
+        <cell><m>0</m></cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell><m>\overline\nu_e</m></cell>
+      </row>
+      <row>
+        <cell>[0.5ex]
+          <m>\mu^-</m></cell>
+        <cell>muon</cell>
+        <cell>106</cell>
+        <cell>1/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell><m>\mu^+</m></cell>
+      </row>
+      <row>
+        <cell><m>\nu_\mu</m></cell>
+        <cell>mu-neutrino</cell>
+        <cell><m>\sim 0</m></cell>
+        <cell>1/2</cell>
+        <cell><m>0</m></cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell><m>\overline\nu_\mu</m></cell>
+      </row>
+      <row>
+        <cell>[0.5ex]
+          <m>\tau^-</m></cell>
+        <cell>tau</cell>
+        <cell>1777</cell>
+        <cell>1/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell><m>\tau^+</m></cell>
+      </row>
+      <row>
+        <cell><m>\nu_\tau</m></cell>
+        <cell>tau-neutrino</cell>
+        <cell><m>\sim 0</m></cell>
+        <cell>1/2</cell>
+        <cell><m>0</m></cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell><m>\overline\nu_\tau</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    Notes:
+    <ul>
+      <li>
+        <p>
+          All leptons have <m>B=0</m> and <m>S=0</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          For antiparticles, the signs of the additive properties are reversed.
+        </p>
+      </li>
+    </ul>
+  </table>
+  <p>
+    <em>Mesons.</em> Mesons are those particles that participate in the strong interaction and have integer spin.
+    That is, those hadrons that are also bosons are called mesons.
+    Their masses range from <m>0.135\Xunits{GeV/ c^2 }</m> up to <m>11\Xunits{GeV/ c^2 }</m> or more,
+    and more are still being discovered.
+    Only a few have lifetimes longer than about <m>10^{-20}\Xunits{s}</m>.
+    Unlike leptons or baryons the number of mesons is not conserved <mdash/> mesons can be created or destroyed in reactions.
+    Pions and kaons are two examples of meson types.
+    <xref ref="table_mesons">Table</xref> lists several others.
+  </p>
+  <table xml:id="table_mesons">
+    <title>Selected mesons</title>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell></cell>
+        <cell>Mass</cell>
+        <cell></cell>
+        <cell>Additive</cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>Symbol/Name</cell>
+        <cell>(MeV/<m>c^2</m>)</cell>
+        <cell>Spin\hspace{4mm}</cell>
+        <cell><m>Q</m></cell>
+        <cell><m>B</m></cell>
+        <cell><m>S</m></cell>
+        <cell>Antiparticle</cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  ><m>\pi^0</m></cell>
+        <cell>pion</cell>
+        <cell>135</cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell><m>\pi^0</m></cell>
+      </row>
+      <row>
+        <cell><m>\pi^+</m></cell>
+        <cell>pion</cell>
+        <cell>140</cell>
+        <cell>0</cell>
+        <cell><m>+1</m></cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell><m>\pi^-</m></cell>
+      </row>
+      <row>
+        <cell><m>K^+</m></cell>
+        <cell>kaon</cell>
+        <cell>494</cell>
+        <cell>0</cell>
+        <cell><m>+1</m></cell>
+        <cell>0</cell>
+        <cell><m>+1</m></cell>
+        <cell><m>K^-</m></cell>
+      </row>
+      <row>
+        <cell><m>K^0</m></cell>
+        <cell>kaon</cell>
+        <cell>498</cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell>0</cell>
+        <cell><m>+1</m></cell>
+        <cell><m>\overline K^0</m></cell>
+      </row>
+      <row>
+        <cell><m>\eta</m></cell>
+        <cell>eta</cell>
+        <cell>548</cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell><m>\eta</m></cell>
+      </row>
+      <row>
+        <cell><m>\eta'</m></cell>
+        <cell>eta-prime</cell>
+        <cell>958</cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell><m>\eta'</m></cell>
+      </row>
+      <row>
+        <cell><m>\rho^+</m></cell>
+        <cell>rho</cell>
+        <cell>775</cell>
+        <cell>1</cell>
+        <cell><m>+1</m></cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell><m>\rho^-</m></cell>
+      </row>
+      <row>
+        <cell><m>\rho^0</m></cell>
+        <cell>rho</cell>
+        <cell>775</cell>
+        <cell>1</cell>
+        <cell><m>0</m></cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell><m>\rho^0</m></cell>
+      </row>
+      <row>
+        <cell><m>\omega</m></cell>
+        <cell>omega</cell>
+        <cell>783</cell>
+        <cell>1</cell>
+        <cell><m>0</m></cell>
+        <cell>0</cell>
+        <cell><m>0</m></cell>
+        <cell><m>\omega</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    Notes:
+    <ul>
+      <li>
+        <p>
+          All mesons have <m>L_e=L_\mu=L_\tau = 0</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          For antiparticles, the signs of the additive properties are reversed.
+        </p>
+      </li>
+      <li>
+        <p>
+          Some mesons are their own antiparticles.
+        </p>
+      </li>
+    </ul>
+  </table>
+  <p>
+    <em>Baryons.</em> Baryons are those particles that participate in the strong interaction and have half-integer spin.
+    That is, hadrons that are also fermions are called baryons.
+    As a class, they are the heaviest and most numerous type of particle with hundreds of members and masses ranging from
+    <m>0.938\Xunits{GeV/ c^2 }</m> up to <m>2.6\Xunits{GeV/ c^2 }</m>.
+    Both mesons and baryons seem to have a size and internal structure on the scale of
+    <m>10^{-15}</m><ndash/><m>10^{-16}\Xunits{m}</m>.
+    Baryons are
+    <q>proton-like,</q>
+    in that all baryons eventually decay into protons, the lightest baryon.
+    Some other baryons are the neutron,
+    the lambda (<m>\Lambda</m>) and the omega minus
+    (<m>\Omega^-</m>).
+    A few baryons are listed in <xref ref="table_baryons">Table</xref>.
+  </p>
+  <table xml:id="table_baryons">
+    <title>Selected baryons</title>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell></cell>
+        <cell>Mass</cell>
+        <cell></cell>
+        <cell>Additive</cell>
+      </row>
+      <row>
+        <cell>Symbol/Name</cell>
+        <cell>(MeV/<m>c^2</m>)</cell>
+        <cell>Spin\hspace{4mm}</cell>
+        <cell><m>Q</m></cell>
+        <cell><m>B</m></cell>
+        <cell><m>S</m></cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  ><m>p</m></cell>
+        <cell>proton</cell>
+        <cell>938.3</cell>
+        <cell>1/2</cell>
+        <cell><m>+1</m></cell>
+        <cell>1</cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>n</m></cell>
+        <cell>neutron</cell>
+        <cell>939.6</cell>
+        <cell>1/2</cell>
+        <cell><m>0</m></cell>
+        <cell>1</cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>\Lambda</m></cell>
+        <cell>lambda</cell>
+        <cell>1116</cell>
+        <cell>1/2</cell>
+        <cell><m>0</m></cell>
+        <cell>1</cell>
+        <cell><m>-1</m></cell>
+      </row>
+      <row>
+        <cell><m>\Sigma^+</m></cell>
+        <cell>sigma</cell>
+        <cell>1189</cell>
+        <cell>1/2</cell>
+        <cell><m>+1</m></cell>
+        <cell>1</cell>
+        <cell><m>-1</m></cell>
+      </row>
+      <row>
+        <cell><m>\Sigma^0</m></cell>
+        <cell>sigma</cell>
+        <cell>1192</cell>
+        <cell>1/2</cell>
+        <cell><m>0</m></cell>
+        <cell>1</cell>
+        <cell><m>-1</m></cell>
+      </row>
+      <row>
+        <cell><m>\Sigma^-</m></cell>
+        <cell>sigma</cell>
+        <cell>1197</cell>
+        <cell>1/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>1</cell>
+        <cell><m>-1</m></cell>
+      </row>
+      <row>
+        <cell><m>\Delta^{++}</m></cell>
+        <cell>delta</cell>
+        <cell>1232</cell>
+        <cell>3/2</cell>
+        <cell><m>+2</m></cell>
+        <cell>1</cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>\Delta^+</m></cell>
+        <cell>delta</cell>
+        <cell>1232</cell>
+        <cell>3/2</cell>
+        <cell><m>+1</m></cell>
+        <cell>1</cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>\Delta^0</m></cell>
+        <cell>delta</cell>
+        <cell>1232</cell>
+        <cell>3/2</cell>
+        <cell><m>0</m></cell>
+        <cell>1</cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>\Delta^-</m></cell>
+        <cell>delta</cell>
+        <cell>1232</cell>
+        <cell>3/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>1</cell>
+        <cell><m>0</m></cell>
+      </row>
+      <row>
+        <cell><m>\Xi^0</m></cell>
+        <cell>cascade</cell>
+        <cell>1315</cell>
+        <cell>1/2</cell>
+        <cell><m>0</m></cell>
+        <cell>1</cell>
+        <cell><m>-2</m></cell>
+      </row>
+      <row>
+        <cell><m>\Xi^-</m></cell>
+        <cell>cascade</cell>
+        <cell>1322</cell>
+        <cell>1/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>1</cell>
+        <cell><m>-2</m></cell>
+      </row>
+      <row>
+        <cell><m>\Sigma^{*+}</m></cell>
+        <cell>sigma-star</cell>
+        <cell>1383</cell>
+        <cell>3/2</cell>
+        <cell><m>+1</m></cell>
+        <cell>1</cell>
+        <cell><m>-1</m></cell>
+      </row>
+      <row>
+        <cell><m>\Sigma^{*0}</m></cell>
+        <cell>sigma-star</cell>
+        <cell>1384</cell>
+        <cell>3/2</cell>
+        <cell><m>0</m></cell>
+        <cell>1</cell>
+        <cell><m>-1</m></cell>
+      </row>
+      <row>
+        <cell><m>\Sigma^{*-}</m></cell>
+        <cell>sigma-star</cell>
+        <cell>1387</cell>
+        <cell>3/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>1</cell>
+        <cell><m>-1</m></cell>
+      </row>
+      <row>
+        <cell><m>\Xi^{*0}</m></cell>
+        <cell>cascade-star</cell>
+        <cell>1532</cell>
+        <cell>3/2</cell>
+        <cell><m>0</m></cell>
+        <cell>1</cell>
+        <cell><m>-2</m></cell>
+      </row>
+      <row>
+        <cell><m>\Xi^{*-}</m></cell>
+        <cell>cascade-star</cell>
+        <cell>1535</cell>
+        <cell>3/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>1</cell>
+        <cell><m>-2</m></cell>
+      </row>
+      <row>
+        <cell><m>\Omega^-</m></cell>
+        <cell>omega-minus</cell>
+        <cell>1672</cell>
+        <cell>3/2</cell>
+        <cell><m>-1</m></cell>
+        <cell>1</cell>
+        <cell><m>-3</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    Notes:
+    <ul>
+      <li>
+        <p>
+          All baryons have <m>L_e = L_\mu = L_\tau = 0</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          An antiparticle is indicated with a bar,
+          e.g., <m>\overline p</m> is an antiproton.
+        </p>
+      </li>
+      <li>
+        <p>
+          For antiparticles, the signs of the additive properties are reversed.
+        </p>
+      </li>
+    </ul>
+  </table>
+</section>

@@ -1,0 +1,417 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_selected_answers">
+  <title>Answers to Selected Problems</title>
+  <p>
+    <em>Additional Problems</em>
+  </p>
+  <p>
+    <em><xref ref="prob_addEfields">A</xref></em><nbsp/>(a)<nbsp/><m>-5560\, \hat \jmath \Xunits{N/C}</m>; (b)<nbsp/><m>0</m>; (c)<nbsp/><m>5560\, \hat \jmath \Xunits{N/C}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_integ1">A</xref></em><nbsp/>(a)<nbsp/><m>k\lambda / a</m>; (b)<nbsp/><m>-k\lambda / a</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_arc1">A</xref></em><nbsp/><m>\frac{-2qk}{\pi R^2}(\hat\imath + \hat\jmath)</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_ComputerMonitors">A</xref></em><nbsp/>(a)<nbsp/><m>50,000\Xunits{eV}</m>; (b)<nbsp/><m>8.0 \times 10^{-15}\Xunits{J}</m>; (c)<nbsp/><m>1.33 \times 10^8\Xunits{m/s}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_plates">A</xref></em><nbsp/>left side:<nbsp/><m>1600\Xunits{V/m}</m> to left;
+    right side:<nbsp/><m>300\Xunits{V/m}</m> to right.
+  </p>
+  <p>
+    <em><xref ref="prob_railgun">A</xref></em><nbsp/><m>v_f = \sqrt{2IHBD/m}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_PowerCords">A</xref></em><nbsp/><m>4 \times 10^{-5}\Xunits{T}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_solenoid">A</xref></em><nbsp/><m>5.8 \times 10^{-3}\Xunits{T}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_ElecGen">A</xref></em><nbsp/><m>0.013\Xunits{s}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_faraday">A</xref></em><nbsp/><m>\pi r^2 B_0(6t-1)/R</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_reradiation">A</xref></em><nbsp/>(a)<nbsp/><m>\pm z</m>, (b)<nbsp/><m>\pm x</m>, (c)<nbsp/><m>\pm z</m>, (d)<nbsp/><m>\pm z</m>, (e)<nbsp/><m>\pm x</m>,
+    <m>\pm y</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_OrganPipes">A</xref></em><nbsp/>(a)<nbsp/><m>20\Xunits{m}</m>,
+    <m>10\Xunits{m}</m>,
+    <m>6.67\Xunits{m}</m>; (b)<nbsp/><m>\pi /10,\ \pi /5,\ 3\pi /10</m>; (c)<nbsp/><m>17\Xunits{Hz}</m>,
+    <m>34\Xunits{Hz}</m>, <m>51\Xunits{Hz}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_dvds">A</xref></em><nbsp/>(a)<nbsp/><m>717\Xunits{nm}</m>; (b)<nbsp/><m>55,800</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_complex_traveling_wave">A</xref></em><nbsp/>(a)<nbsp/><m>\lambda = 1257\Xunits{nm}</m>,
+    <m>T = 4.19\times 10^{-15}\Xunits{s}</m>,
+    <m>v = 3.0\times 10^8\Xunits{m/s}</m>,
+    infrared, (b)<nbsp/><m>B = 0.2\Xunits{mT}</m>;
+  </p>
+  <p>
+    <em><xref ref="prob_proton_in_box">A</xref></em><nbsp/>(b)<nbsp/><m>2 \times 10^{-14}\Xunits{m}</m>; (c)<nbsp/><m>p = 3.3 \times 10^{-20}\Xunits{kg \cdot m/s}</m>,
+    <m>K = .3.3 \times 10^{-13}\Xunits{J}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_moreuncertainty">A</xref></em><nbsp/><m>1.3 \times 10^{-21} \Xunits{m/s}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_tunneltime">A</xref></em><nbsp/>(a)<nbsp/><m>\Delta t = 6.6 \times 10^{-18}\Xunits{s}</m>; (b)<nbsp/><m>v = 4.2 \times 10^6\Xunits{m/s}</m>; (c)<nbsp/><m>L = 2.8 \times 10^{-11}\Xunits{m}</m>; (d)<nbsp/><m>0.13</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_spinflip">A</xref></em><nbsp/><m>5.4\Xunits{cm}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_nmr">A</xref></em><nbsp/><m>19.4\Xunits{mT}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_TwoAntennas">A</xref></em><nbsp/><m>1.41A</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_speakers">A</xref></em><nbsp/>(a)<nbsp/>minimum; (b)<nbsp/><m>9I_0</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_wave_to_eq">A</xref></em><nbsp/><m>y(x,t) = 2\cos{(\pi x - 2\pi t)}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_wave_to_phasor_2">A</xref></em><nbsp/>(b)<nbsp/><m>2.95</m>; (c)<nbsp/><m>0.5\Xunits{rad}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_parking_lot_3">A</xref></em><nbsp/>(a)<nbsp/><m>\frac{1}{1600\pi}\Xunits{m</m>^{-2}<m>}</m>; (b)<nbsp/><m>1/4</m>; (c)<nbsp/><m>P_A = \frac{1}{1000\pi}\Xunits{m</m>^{-2}<m>}</m>,
+    <m>P_B = \frac{1}{2000\pi}\Xunits{m</m>^{-2}<m>}</m>; (d)<nbsp/><m>13/20</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_ComplexPractice">A</xref></em><nbsp/>(a)<nbsp/><m>1 + i\theta - \theta^2/2! -i\theta^3/3! + \theta^4/4! + i\theta^5/5! - \theta^6/6! + \dots</m>; (c)<nbsp/><m>1 - i\theta - \theta^2/2! + i\theta^3/3! + \theta^4/4! - i\theta^5/5! - \theta^6/6! + \dots</m>; (g)<nbsp/><m>0.88 + 0.48i</m>; (h)<nbsp/><m>0.88 -0.48i</m>; (i)<nbsp/><m>1.76</m>; (j)<nbsp/><m>0.96i</m>; (k)<nbsp/><m>\left(e^{0.3i} + e^{-0.3i}\right)/2</m>; (l)<nbsp/><m>\left(e^{0.3i} - e^{-0.3i}\right)/2i</m>; (m)<nbsp/><m>1</m>; (n)<nbsp/><m>e^{0.6i}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_timedependence_1">A</xref></em><nbsp/>(a)<nbsp/><m>11E_1/5</m>; (b)<nbsp/><m>\sqrt{3/5}\ e^{-iE_1t/\hbar}|1\rangle + \sqrt{2/5}\ e^{-i4E_1t/\hbar}|2\rangle</m>; (c)<nbsp/><m>11E_1/5</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_qm_precess_1">A</xref></em><nbsp/>(a)<nbsp/><m>|\Psi(0)\rangle = | + x\rangle = \sqrt{1/2}\left(| + z\rangle + | - z\rangle \right)</m>; (b)<nbsp/><m>E_+ = -\mu B_0</m>,<m>E_- = +\mu B_0</m>; (c)<nbsp/><m>|\Psi(t)\rangle = \sqrt{1/2}\left(e^{i\omega t/2}| + z\rangle + e^{-i\omega t/2}| - z\rangle\right)</m>; (d)<nbsp/><m>\left(1 -\sin{\left(\omega t\right)}\right)/2</m>; (e)<nbsp/><m>\left(1 +\sin{\left(\omega t\right)}\right)/2</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_phasors_and_waveforms">A</xref></em><nbsp/>(b)<nbsp/><m>2</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_Feynman_fun">A</xref></em><nbsp/>(a)<nbsp/><m>e^+</m>,
+    <m>W^+</m>; (b)<nbsp/><m>e^+</m>,
+    <m>e^+</m>; (c)<nbsp/><m>Ru</m>, <m>Gd</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_two_wires">A</xref></em><nbsp/><m>4.3\times 10^{-6}\Xunits{T}</m>.
+  </p>
+  <p>
+    <em><xref ref="prob_ampere_wire">A</xref></em><nbsp/>(a)<nbsp/><m>0.1\Xunits{mT}</m>; (b)
+    <m>0.2\Xunits{mT}</m>; (c)<nbsp/><m>0.1\Xunits{mT}</m>.
+  </p>
+  <p>
+    <em><xref ref="chap_phasors">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_waterwaves"></xref>.</em><nbsp/>(b)<nbsp/><m>x(t) = 30 e^{i(\frac{\pi}{3}t + \pi/2)}\Xunits{cm}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_between_towers"></xref>.</em><nbsp/><m>3\sqrt{5}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_three_towers"></xref>.</em><nbsp/><m>1.00 A</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_four_slits"></xref>.</em><nbsp/>(b)<nbsp/><m>\theta = 0.45^\circ</m>,
+    <m>0.90^\circ</m>, <m>1.35^\circ</m>.
+  </p>
+  <p>
+    <em><xref ref="chap_beyond_classical">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_photonenergy"></xref>.</em><nbsp/><m>E_{ph} = 2.48\Xunits{eV}</m>,
+    <m>K = 6.0 \times 10^{-6}\Xunits{eV}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_cutoff_freq"></xref>.</em><nbsp/>(a)<nbsp/><m>f_c = 5.4 \times 10^{14}\Xunits{Hz}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_T4virus"></xref>.</em><nbsp/>(a)<nbsp/><m>10^{-9} \Xunits{m}</m> or smaller,
+    <m>E_{ph} = 1240 \Xunits{eV}</m>; (b)<nbsp/><m>10^{-9}\Xunits{m}</m> or smaller,
+    <m>K_{electron} = 1.5\Xunits{eV}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_deBmomentum"></xref>.</em><nbsp/><m>p = 4140\Xunits{eV/c}</m> or <m>2.21 \times 10^{-24}\Xunits{kg m/s}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_BindingEnergy"></xref>.</em><nbsp/><m>1.1\Xunits{eV}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_EMFhazards"></xref>.</em><nbsp/>(a)<nbsp/><m>E_{ph} = 2.48 \times 10^{-13}\Xunits{eV}</m>; (b)<nbsp/><m>E_{ph} \ll U_{bind}</m>,
+    so no chemical bonds affected, including those in DNA.
+  </p>
+  <p>
+    <em> <xref ref="prob_largest_mode"></xref>.</em><nbsp/>(a)<nbsp/><m>\frac{hc}{2L}j</m>; (b)<nbsp/><m>\frac{Lk_BT}{hc}\frac{1}{j}</m>; (c)<nbsp/><m>j_{max}=\frac{Lk_BT}{hc}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_IonizeHAtom"></xref>.</em><nbsp/><m>K_{max} = 7.1\Xunits{eV}</m>.
+  </p>
+  <p>
+    <em><xref ref="chap_uncertainty">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_WavefunctionProbs"></xref>.</em><nbsp/>(a) 0.42; (b) 0.27.
+  </p>
+  <p>
+    <em> <xref ref="prob_UncertaintyHelectron"></xref>.</em><nbsp/>(a)<nbsp/><m>1.06 \times 10^{-24}\Xunits{kg m/s}</m>; (b) <m>1.15 \times 10^6\Xunits{m/s}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_UncertaintyBlowDart"></xref>.</em><nbsp/><m>2.1\times 10^{-26}\Xunits{m/s}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_NanoscaleUncertainty"></xref>.</em><nbsp/>(a)<nbsp/><m>6.6\times 10^{-13}\Xunits{m}</m>; (b)<nbsp/><m>2.3\times 10^{-12}\Xunits{m}</m>; (c)<nbsp/>(Hint:
+    do you think the binding energy for a proton in a nucleus is 1 eV?)
+  </p>
+  <p>
+    <em> <xref ref="prob_MinK"></xref>.</em><nbsp/>(a)<nbsp/><m>6.1\times 10^{-19}\Xunits{J}</m> or
+    <m>3.8\Xunits{eV}</m>; (b)<nbsp/><m>1.5\times 10^{-33}\Xunits{J}</m> or
+    <m>9.6\times 10^{-15}\Xunits{eV}</m>; (c)<nbsp/><m>6.9\times 10^{-61}\Xunits{J}</m> or <m>4.3\times 10^{-42}\Xunits{eV}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_SubstitutionPractice"></xref>.</em><nbsp/>(a)<nbsp/>Works if <m>A = 5/6</m> and <m>B = 3</m>; (b)<nbsp/>Doesn't work for all values of <m>x</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_TestSchrod"></xref>.</em><nbsp/>(b)<nbsp/>Doesn't work; (c)<nbsp/>Works if <m>k = \pm \sqrt{2m(E-U_0)}/\hbar</m>,
+    which is fine since <m>E > U_0</m>; (d)<nbsp/>Would work if <m>\kappa = \pm \sqrt{2m(U_0-E)}/\hbar</m>,
+    but <m>E > U_0</m>, so this would be an imaginary <m>\kappa</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_harmonic_oscillator"></xref>.</em><nbsp/><m>E = 2</m> for a solution.
+  </p>
+  <p>
+    <em><xref ref="chap_quantized_energies">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_PinBox"></xref>.</em><nbsp/>(b)<nbsp/><m>2L/3</m>; (c)<nbsp/><m>E=\frac{9h^2}{8mL^2}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_QuantumWire"></xref>.</em><nbsp/>(a)<nbsp/><m>0.38\Xunits{eV}</m>; (b)<nbsp/><m>1.51 \Xunits{eV}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_WhereInPInBox"></xref>.</em><nbsp/><m>L/4</m> and <m>3L/4</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_TunnelSemiInfinite"></xref>.</em><nbsp/>(a)<nbsp/><m>7.2\times 10^9</m>m<m>^{-1}</m>; (b)<nbsp/><m>4.8\times 10^{-11}\Xunits{m}</m>; (c)<nbsp/><m>5.2\times 10^{-36}\Xunits{m}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_EmittedWavelengths"></xref>.</em><nbsp/><m>47.2\Xunits{ \mu m}</m>,
+    <m>27.5\Xunits{ \mu m}</m>,
+    <m>22.0\Xunits{ \mu m}</m>, <m>66.0\Xunits{ \mu m}</m>,
+    <m>41.2\Xunits{ \mu m}</m>, <m>110\Xunits{ \mu m}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_QuantumDot"></xref>.</em><nbsp/><m>5.18\Xunits{nm}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_UVAbsorption"></xref>.</em><nbsp/>(a)<nbsp/><m>315\Xunits{nm}</m>; (b)<nbsp/><m>240\Xunits{nm}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_CO2"></xref>.</em><nbsp/><m>15\Xunits{ \mu m}</m> and <m>7.5\Xunits{ \mu m}</m>.
+  </p>
+  <p>
+    <em><xref ref="chap_spin">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_SuperpositionProbs"></xref>.</em><nbsp/>(a)<nbsp/><m>\frac{1}{2}</m>; (b)<nbsp/><m>0</m>; (c)<nbsp/><m>\frac{1}{2}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_spin_iv"></xref>.</em><nbsp/>(a)<nbsp/><m>\frac{1}{5}</m>; (b)<nbsp/><m>\frac{1}{10}</m>; (c) <m>\frac{1}{2}</m>; (d) 0.
+  </p>
+  <p>
+    <em> <xref ref="prob_SuperpositionProbs2"></xref>.</em><nbsp/>(a)<nbsp/><m>\frac{1}{2}</m>; (b)<nbsp/><m>\frac{1}{2}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_PhotonProbs"></xref>.</em><nbsp/>(b)<nbsp/><m>\cos^2\theta</m>,
+    <m>\vert\mbox{X} \rangle</m>; (c)<nbsp/><m>\cos^2\theta</m>,
+    <m>\vert \theta \rangle</m>; (d)<nbsp/><m>\sin^2\theta</m>; (e)<nbsp/><m>\cos^2\theta\sin^2\theta</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_ElectronSpinState"></xref>.</em><nbsp/>(a)<nbsp/><m>0.75</m>; (b)<nbsp/><m>0.067</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_ElectronSpinState2"></xref>.</em><nbsp/><m>0.50</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_H_hyperfine"></xref>.</em><nbsp/><m>21\Xunits{cm}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_energystates"></xref>.</em><nbsp/>(a)<nbsp/><m>\frac{13}{36}</m>; (b)<nbsp/>0; (c)<nbsp/>There are numerous answers to this question.
+    The easiest are <m>\frac{\sqrt{2}}{2}</m> or <m>-\frac{\sqrt{2}}{2}</m> or
+    <m>i \frac{\sqrt{2}}{2}</m> or <m>-i \frac{\sqrt{2}}{2}</m>.
+    There are also numerous <m>a+i b</m> combinations that would work,
+    as long as <m>|a+i b|^2 = \frac{1}{2}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_SG1"></xref>.</em><nbsp/>(a) Two equal intensity beams (1/4 the intensity of the intensity of the initial electron beam) will emerge,
+    one with <m>S_z = +\hbar/2</m> and the other with
+    <m>S_z = -\hbar/2</m>. (b) A beam will emerge from just one of the two exits with <m>S_x = -\hbar/2</m>.
+    This beam will be 1/2 the intensity of the initial electron beam.
+  </p>
+  <p>
+    <em><xref ref="chap_quantum_statistics">Chapter</xref></em>
+  </p>
+  <p>
+    <em>1.</em><nbsp/>(a) electrons are indistinguishable, (b)<nbsp/><m>\frac{1}{\sqrt 2}\ket{E_1\uparrow\; E_1\downarrow} -\frac{1}{\sqrt 2}\ket{E_1\downarrow\; E_1\uparrow}</m>.
+  </p>
+  <p>
+    <em>2.</em><nbsp/>Yes for both (a) and (b).
+    Electrons and muons are distinguishable.
+  </p>
+  <p>
+    <em>3.</em><nbsp/>(b)<nbsp/>4 for classical, 3 for bosons, 1 for fermions; (c)<nbsp/><m>\frac{1}{2}</m> for classical,
+    <m>\frac{2}{3}</m> for bosons.
+  </p>
+  <p>
+    <em>4.</em><nbsp/><m>84\Xunits{eV}</m>.
+  </p>
+  <p>
+    <em>8.</em><nbsp/><m>^3</m>He is a fermion.
+  </p>
+  <p>
+    <em>10.</em><nbsp/>0
+    (that's the point!).
+  </p>
+  <p>
+    <em><xref ref="chap_3D_and_semiconductors">Chapter</xref></em>
+  </p>
+  <p>
+    <em>3.</em><nbsp/><m>6.84 \times 10^{-34}\Xunits{J \cdot s}</m>.
+  </p>
+  <p>
+    <em>4.</em><nbsp/><m>-1.51\Xunits{eV}</m>.
+  </p>
+  <p>
+    <em>7.</em><nbsp/>(a)<m>~2.8\times 10^{-18}</m>,
+    <m>0.017</m> and <m>0.40</m>, (b)<nbsp/><m>0.026\Xunits{eV}</m>,
+    <m>0.26\Xunits{eV}</m> and
+    <m>2.6\Xunits{eV}</m>; (c)<nbsp/><m>0</m>, <m>0</m>, and <m>7</m>.
+  </p>
+  <p>
+    <em>9.</em><nbsp/>Would expect poor conductivity at <m>300\Xunits{K}</m>,
+    moderate conductivity at <m>3,000\Xunits{K}</m>,
+    and excellent conductivity at <m>30,000\Xunits{K}</m>.
+  </p>
+  <p>
+    <em>11.</em><nbsp/>(a)<nbsp/><m>867\Xunits{nm}</m> (near-IR); (b)<nbsp/><m>549\Xunits{nm}</m>
+    (yellowish green);
+    (c)<nbsp/><m>365\Xunits{nm}</m>
+    (near-UV).
+  </p>
+  <p>
+    <em>15.</em><nbsp/>(b)<m>E = -\frac{mk^2e^4}{2\hbar^2}</m>.
+  </p>
+  <p>
+    <em><xref ref="chap_quantum_entanglement">Chapter</xref></em>
+  </p>
+  <p>
+    <em>1.</em><nbsp/>(a)<nbsp/>3/10, (b)<nbsp/>7/10.
+  </p>
+  <p>
+    <em>3.</em><nbsp/>(a)<nbsp/><m>c_+=\sqrt{3/10}</m>, <m>c_-=\sqrt{7/10}</m>,
+    <m>\ket{\phi_1} = \sqrt{1/3}\ket{\uparrow} + \sqrt{2/3}\ket{\downarrow}</m>,
+    <m>\ket{\phi_2} = \sqrt{2/7}\ket{\uparrow} + \sqrt{5/7}\ket{\downarrow}</m>.
+  </p>
+  <p>
+    <em>4.</em><nbsp/>(a)<nbsp/>0.55; (b)<nbsp/><m>\ket{\psi_\text{ new } } = 1.0\ket{\uparrow}\ket{\phi_1}</m>; (c)<nbsp/><m>\frac{1}{3}</m>.
+  </p>
+  <p>
+    <em>7.</em><nbsp/>0.854.
+  </p>
+  <p>
+    <em>9.</em><nbsp/>(a)<nbsp/>0.75, (b)<nbsp/>0.67.
+  </p>
+  <p>
+    <em><xref ref="chap_particles">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_mesons_vs_baryons"></xref>.</em><nbsp/>Mesons are bosons,
+    baryons are fermions.
+  </p>
+  <p>
+    <em> <xref ref="prob_identify_particle_x"></xref>.</em><nbsp/>(a)<nbsp/><m>K^+</m>, (b)<nbsp/><m>\nu_e</m>, (c)<nbsp/><m>K^+</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_strangeness_and_strong_force"></xref>.</em><nbsp/>(a)<nbsp/>yes, (b)<nbsp/>no, (c)<nbsp/>no, (d)<nbsp/>yes.
+  </p>
+  <p>
+    <em> <xref ref="prob_neutron_decay"></xref>.</em><nbsp/>Does not conserve charge.
+  </p>
+  <p>
+    <em> <xref ref="prob_Xi0_strangeness"></xref>.</em><nbsp/><m>S=-2</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_quark_constituents"></xref>.</em><nbsp/>(a)<nbsp/><m>uds</m>, (b)<nbsp/><m>dss</m>, (c)<nbsp/><m>u\bar d</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_quark_model"></xref>.</em><nbsp/>This requires two <m>s</m>-quarks,
+    with total charge <m>-2/3</m>.
+    No single quark can add <m>q=5/3</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_identify_from_quarks"></xref>.</em><nbsp/>(a)<nbsp/><m>n</m> or
+    <m>\Delta ^0</m>, (b)<nbsp/><m>\Sigma^+</m> or
+    <m>\Sigma^{*+}</m>, (c)<nbsp/><m>K^0</m>.
+  </p>
+  <p>
+    <em><xref ref="chap_quarks">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_pair_production"></xref>.</em><nbsp/>(a)<nbsp/>1.022 \mathrm{MeV}, (b)<nbsp/><m>6.5\times 10^{-22}\Xunits{s}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_Z_boson"></xref>.</em><nbsp/>(a)<nbsp/><m>91.2\Xunits{GeV}</m>, (b)<nbsp/><m>7\times 10^{-27}\Xunits{s}</m>, (c)<nbsp/><m>2\times 10^{-18}\Xunits{m}</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_quark_color"></xref>.</em><nbsp/>antigreen.
+  </p>
+  <p>
+    <em><xref ref="chap_interactions">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_proton_decay"></xref>.</em><nbsp/>About two protons should decay.
+  </p>
+  <p>
+    <em> <xref ref="prob_Sigma_minus_decay"></xref>.</em><nbsp/>Only <m>\Sigma^-\to n + \pi^-</m>.
+  </p>
+  <p>
+    <em> <xref ref="prob_identify_interaction"></xref>.</em><nbsp/>(a)<nbsp/>strong, (b)<nbsp/>electromagnetic, (c)<nbsp/>weak.
+  </p>
+  <p>
+    <em> <xref ref="prob_Omega_minus"></xref>.</em><nbsp/>(a)<nbsp/>There are no lighter baryons with <m>S=-3</m>, (b)<nbsp/>weak;
+    strangeness is not conserved, (c)<nbsp/>weak interaction is slower than strong or electromagnetic.
+  </p>
+  <p>
+    <em> <xref ref="prob_Xi_minus"></xref>.</em><nbsp/><m>\Xi^-(1535)</m> decays much faster;
+    it can decay by the strong interaction;
+    <m>\Xi^-(1535)\to \Xi^-(1322) + \pi^0</m>,
+    while the lighter <m>\Xi^-</m> must go by a weak interaction.
+  </p>
+  <p>
+    <em> <xref ref="prob_pion_decay"></xref>.</em><nbsp/>Photons or leptons.
+    Because the weak decay to leptons is much slower than the electromagnetic decay to photons.
+  </p>
+  <p>
+    <em><xref ref="chap_cosmology">Chapter</xref></em>
+  </p>
+  <p>
+    <em> <xref ref="prob_Lambda_pair_production"></xref>.</em><nbsp/>about <m>10^{-7}</m> to <m>10^{-6}\Xunits{s}</m>
+  </p>
+  <p>
+    <em> <xref ref="prob_quark_confinement"></xref>.</em><nbsp/>about <m>100\Xunits{MeV}</m>, pions
+  </p>
+  <p>
+    <em> <xref ref="prob_X_asymmetry"></xref>.</em><nbsp/>a)<nbsp/>5730<nbsp/><m>q</m>, 5640<nbsp/><m>\bar q</m>, 330<nbsp/><m>l</m>, 300<nbsp/><m>\bar l</m>,
+    b)<nbsp/>1910 baryons, 1880 antibaryons,
+    c)<nbsp/>30 baryons, 30 leptons, 2180 photons, d)<nbsp/>72.7
+  </p>
+</chapter>

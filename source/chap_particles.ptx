@@ -1,0 +1,12 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_particles">
+  <title><sq>Elementary</sq> Particles and
+  Conservation Laws</title>
+  <xi:include  href="sec_particles_intro.ptx"/>
+  <xi:include  href="sec_particle_types.ptx"/>
+  <xi:include  href="sec_particle_classification.ptx"/>
+  <xi:include  href="sec_conservation_laws.ptx"/>
+  <xi:include  href="sec_strangeness.ptx"/>
+  <xi:include  href="sec_eightfold_way.ptx"/>
+  <xi:include  href="sec_quarks.ptx"/>
+  <xi:include  href="sec_particles_problems.ptx"/>
+</chapter>

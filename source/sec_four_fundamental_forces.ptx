@@ -1,0 +1,64 @@
+<section xml:id="sec_four_fundamental_forces">
+  <title>The Four Fundamental Forces of Nature</title>
+  <p>
+    Throughout the year, we have discussed a wide variety of forces:
+    tension forces, normal forces,
+    friction forces, air and fluid drag, spring forces,
+    gravitational forces, electric and magnetic forces, etc.
+    But most of these forces are just different manifestations of the same fundamental force.
+    For instance, a normal force between two objects
+    <q>in contact with each other</q><fn>
+    We put
+    <q>in contact with each other</q>
+    in quotes because nothing ever really <em>touches</em>
+    anything else on a subatomic level.
+    The sensation or appearance of
+    <q>contact</q>
+    is the result of the repulsive force becoming very large.
+    </fn> is just electrostatic repulsion between the electrons at the surface of one object and those at the surface of the other object.
+  </p>
+  <p>
+    During the past century, physicists have typically talked about four
+    <q>fundamental</q>
+    forces: the strong force,
+    the electromagnetic force, the weak force,
+    and the gravitational force.
+    You are already familiar with the electromagnetic force
+    (which affects any particle with an electric charge)
+    and gravitational force
+    (which affects any particle with mass).
+    The strong force is the force that holds protons and neutrons together in the nuclei of atoms.
+    This is no small matter here:
+    the electric force is extremely repulsive between protons packed together in a nucleus,
+    so there clearly must be a force that is even stronger pulling them together.
+    But the strong force is only active over short distances,
+    those comparable to the sizes of atomic nuclei.
+    For separations greater than that,
+    the strong force is ineffective.
+    As discussed in the previous chapter,
+    the strong force affects all of the hadrons.
+    Actually, since the hadrons are all made up of quarks,
+    it can be said that the strong force is the force that is associated with quarks.
+  </p>
+  <p>
+    The weak force is somewhat of a
+    <q>miscellaneous/etc</q>
+    force; in fact,
+    all of the elementary particles can experience the weak force.
+    For quarks or charged particles, though,
+    the weak force is subordinate to the strong and/or electromagnetic force(s).
+    Only for uncharged leptons (i.e., neutrinos) is the weak force dominant.
+    But since the weak force is <em>so</em> weak,
+    neutrinos can pass through other objects with only minimal interactions.
+    Right now, over <m>10^7</m> neutrinos pass through you every second.
+    In fact, the vast majority of neutrinos that arrive at the Earth
+    (from the Sun)
+    pass through the entire planet without interacting with any other matter!
+  </p>
+  <p>
+    The weak force is also important in a lot of decay processes.
+    For example,
+    <m>\beta</m>-decay by which a neutron decays (<m>n \rightarrow p + e^- + \nu</m>) is a weak interaction.
+    In fact, the weak interaction was first proposed because this decay process couldn't be explained with any of the other fundamental interactions.
+  </p>
+</section>

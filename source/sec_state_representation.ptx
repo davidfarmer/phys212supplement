@@ -1,0 +1,169 @@
+<section xml:id="sec_state_representation">
+  <title>State Representation for Quantum Systems</title>
+  <p>
+    In order to proceed further with our discussion of quantum mechanics,
+    we will develop a mathematical framework in which to discuss the more general behavior of quantum systems that will allow us to perform calculations and make predictions that can be compared with experiment.
+    As stated above,
+    the wavefunction formalism gives a description of quantum behavior in which measurement of the position of the particle is of prime importance.
+    A more encompassing mathematical structure for describing quantum behavior was devised by the English theoretical physicist P.A.M. Dirac in 1930 that is capable of describing a wide variety of phenomena,
+    including photons and spin.
+  </p>
+  <p>
+    Fundamental to this new description is the concept of the quantum <em>state</em>.
+    Mathematically,
+    the state of a particle is represented by the symbol <m>| \phi \rangle</m> called a
+    <q>state</q>
+    or
+    <q>ket vector.</q>
+    The quantity <m>\phi</m> written inside the symbol
+    <m>|\mbox{\ \ } \rangle</m> usually gives some meaningful description which uniquely describes the state in which the particle is at a certain time.
+    For example,
+    if a particle was in a state of constant momentum <m>p</m>,
+    moving uniformly through space not subject to any forces,
+    then we could write <m>| p \rangle</m> for its state vector.
+    These state vectors satisfy a set of mathematical rules similar to those for ordinary vectors in 3-dimensional space
+    (like <m>\vec{A}, \vec{B}</m>, etc.),
+    hence the reason for referring to them as state <em>vectors</em>.
+  </p>
+  <p>
+    As an example,
+    we have seen that for a one-dimensional infinite potential square well,
+    a particle placed in this well can have a discrete set of possible energy values
+    (<m>E_1</m>, <m>E_2</m>,
+    <m>E_3</m>, <m>\ldots</m>, <m>E_n</m>, <m>\ldots</m>).
+    For each of these values of energy we can define a state vector (<m>| E_1 \rangle</m>,
+    <m>| E_2 \rangle</m>, <m>| E_3 \rangle</m>,
+    <m>\ldots</m>, <m>| E_n \rangle</m>,
+    <m>\ldots</m>) that represents the system in a state with that definite value of energy.
+    So for a particle that is placed in the infinite well in a state <m>| E_3 \rangle</m>,
+    if we were to measure the particle's energy we would definitely get the value <m>E_3</m> as a result of that measurement.
+    The collection of state vectors \{<m>| E_1 \rangle</m>,
+    <m>| E_2 \rangle</m>,
+    <m>| E_3 \rangle</m>,<m>\ldots</m>\} for all possible states is said to be a <em>basis</em>,
+    (in this case an <em>energy</em> basis).
+    This set of state vectors is analogous to the set of unit vectors \{<m>\hat{\imath}</m>,
+    <m>\hat{\jmath}</m>,
+    <m>\hat{k}</m>\} that we used with ordinary vectors in three-dimensions.
+    Recall that we could write any 3-dimensional vector <m>\vec{A}</m> as a linear combination of these unit vectors
+    <men>
+      \vec{A} = A_x\, \hat{\imath}  + A_y\, \hat{\jmath} + A_z\, \hat{k}
+    </men>
+    where <m>A_x</m>, <m>A_y</m>,
+    and <m>A_z</m> are the <m>x</m>-, <m>y</m>-, and <m>z</m>-components of <m>\vec{A}</m>.
+    In an analogous fashion we can write an expression for an arbitrary state of a quantum system as a linear combination of the energy basis states
+    <men xml:id="eqn_linearSuper">
+      | \phi \rangle = c_1 | E_1 \rangle + c_2 | E_2 \rangle + c_3 | E_3 \rangle + \cdots
+    </men>,
+    where the coefficients <m>c_1</m>,
+    <m>c_2</m>, <m>\ldots</m>, are complex numbers.<fn>
+    Recall that a complex number <m>z</m> is defined as <m>z = a + ib</m>,
+    where <m>a</m> and <m>b</m> are real numbers and <m>i</m> is the imaginary number <m>i=\sqrt{-1}</m>.
+    The
+    <q>real part</q>
+    of the complex number is <m>a</m>, and <m>b</m> is the
+    <q>imaginary part.</q>
+    The magnitude of a complex number is <m>|z| = \sqrt{z\ z^*}= \sqrt{a^2 + b^2}</m>,
+    where <m>z^*</m> is the complex conjugate as defined in the section <xref ref="sec_ProbDensity"/>.
+    </fn> In the mathematical structure of quantum mechanics,
+    these coefficients have a special significance when making predictions about the results of measurements on a system.
+    If we were to measure the energy of a particle in a state given by <xref ref="eqn_linearSuper"/>,
+    then the probability that we will measure a value <m>E_3</m>,
+    for instance, is given by <m>|c_3|^2</m>.
+    That is, the coefficients tell us something about the probability of finding a particle in a certain specific state of the measured quantity,
+    such as energy in this case.
+    It is for this reason that the coefficients <m>c_j</m> are referred to as
+    <em>probability amplitudes</em>.
+  </p>
+  <example xml:id="examp_Super">
+    <title>Superposition of states</title>
+    <statement>
+      <p>
+        Suppose the possible energies for a certain particle are <m>E_1</m>,
+        <m>E_2</m>, <m>E_3</m>, <m>E_4</m>,
+        <ellipsis/>, with the values of energy such that <m>E_1 \lt E_2 \lt  E_3 \lt  E_4 \lt  \ldots</m>.
+        Consider a particle in a state given by the following linear superposition of energy basis states:
+        <men>
+          | \phi \rangle = \frac{1}{\sqrt{6}} | E_1 \rangle + \frac{2 i}{\sqrt{6}} | E_3 \rangle + \frac{1}{\sqrt{6}} | E_4 \rangle
+        </men>.
+      </p>
+      <p>
+        (a) Calculate the probability of obtaining a value <m>E_3</m> when the energy of the particle is measured.
+        Calculate similar probabilities for obtaining <m>E_1</m> and <m>E_4</m>. (b) What is the probability of obtaining a value <m>E_2</m> in a measurement of the energy of this particle? (c) What is the probability of obtaining a value of either <m>E_1</m>,
+        <m>E_3</m>,
+        or <m>E_4</m> when measuring the energy of this particle?
+      </p>
+      <p>
+        <em>Solution: </em> (a) To calculate the probability,
+        we determine the coefficient of the basis state vector <m>| E_3 \rangle</m>,
+        which is the probability amplitude <m>c_3 = 2i/\sqrt{6}</m>,
+        and calculate its magnitude squared,
+        <men>
+          P(E_3) = |c_3|^2 = \left|\frac{2 i}{\sqrt{6}}\right|^2 = \left(\frac{2 i}{\sqrt{6}}\right) \left(\frac{-2 i}{\sqrt{6}} \right) = \frac{2}{3}
+        </men>.
+      </p>
+      <p>
+        In a similar manner, <m>P(E_1) = 1/6 = P(E_4)</m>.
+      </p>
+      <p>
+        (b) Since the basis state vector
+        <m>| E_2 \rangle</m> does not appear in the linear superposition,
+        this means that the probability amplitude <m>c_2 = 0</m> and therefore <m>P(E_2) = |c_2|^2 = 0</m>.
+        Therefore we would never obtain the value <m>E_2</m> when measuring the energy of the particle in this state.
+      </p>
+      <p>
+        (c) Since we want to know the probability of measuring any of these values,
+        we simply add the probabilities for measuring each of these values:
+        <men>
+          P(E_1, E_3, E_4) = P(E_1) + P(E_3) + P(E_4) = \frac{1}{6} + \frac{2}{3} + \frac{1}{6} = 1
+        </men>.
+      </p>
+      <p>
+        This makes sense because these are the only three values of energy that could be measured so that the probability of measuring any one of them is 100%.
+      </p>
+    </statement>
+  </example>
+  <p>
+    In part (c) of the previous example,
+    we see that if the squares of the probability amplitudes in a linear superposition state give us information about probabilities,
+    then the probability amplitudes must satisfy the property
+    <men xml:id="eqn_normalize">
+      |c_1|^2 + |c_2|^2 + |c_3|^2 + |c_4|^2 + \ldots = 1
+    </men>.
+  </p>
+  <p>
+    This condition is referred to as <em>normalization</em>
+    and a state vector that satisfies this condition is said to be <em>normalized</em>.
+    Therefore we conclude:
+  </p>
+  <blockquote>
+    <em>State vectors which properly describe the quantum state of a particle must be normalized.</em>
+  </blockquote>
+  <example xml:id="exam_Normalized">
+    <title>Normalization of states</title>
+    <statement>
+      <p>
+        Consider a particle in a state given by the following linear superposition of energy basis states
+        <men>
+          | \phi \rangle = \frac{1}{\sqrt{6}} | E_1 \rangle + \sqrt{\frac{3}{6}} | E_2 \rangle + c_3 | E_3 \rangle
+        </men>.
+      </p>
+      <p>
+        Determine some possible values for the probability amplitude <m>c_3</m> such that this state is properly normalized.
+      </p>
+      <p>
+        <em>Solution:
+        </em> We use the condition given in <xref ref="eqn_normalize">equation</xref>
+        <md>
+          <mrow>|c_1|^2 + |c_2|^2 + |c_3|^2 =\mathstrut \amp  1</mrow>
+          <mrow>\left|\frac{1}{\sqrt{6}}\right|^2 + \left|\sqrt{\frac{3}{6}}\right|^2 + |c_3|^2 =\mathstrut \amp  1</mrow>
+        </md>
+        which is satisfied for the value <m>|c_3|^2 = 1/3</m>.
+        The simplest solution for the value of the probability amplitude would be <m>c_3 = \sqrt{1/3}</m>.
+        However, the solution <m>c_3 = i \sqrt{1/3}</m> also works because
+        <men>
+          |c_3|^2 = \left| i \sqrt{\frac{1}{3}}\right|^2 = \left( i \sqrt{\frac{1}{3}} \right) \left( -i \sqrt{\frac{1}{3}} \right) = - i^2 \left(\frac{1}{3} \right) = + \frac{1}{3}
+        </men>.
+      </p>
+    </statement>
+  </example>
+</section>

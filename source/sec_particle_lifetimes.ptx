@@ -1,0 +1,207 @@
+<section xml:id="sec_particle_lifetimes">
+  <title>Particle Lifetimes</title>
+  <p>
+    Let's see how the quark model can help us predict particle lifetimes.
+    The two most important factors are the type of interaction involved and the amount of energy available.
+    We'll first illustrate with an example and then develop some general rules.
+  </p>
+  <p>
+    In doing Problem<nbsp/> <xref ref="prob_Sigma_minus_decay"></xref>,
+    you'll discover that energy considerations severely limit the possible decay modes for <m>\Sigma^-(1197)</m>.
+    In fact, only <m>\Sigma^- \to n + \pi^-</m> is allowed.
+    See <xref ref="fig_weak_sigma-minus_decay">Figure</xref>.
+    There is a flavor change,
+    because a strange quark has to turn into an up quark,
+    so a <m>W^-</m> boson must be involved,
+    indicating the weak interaction.
+    And because the weak interaction is much weaker than the strong,
+    it acts much more slowly and
+    <m>\Sigma^-(1197)</m> lives a relatively long time.
+    Compare the mean lifetimes:
+    <m>1.5 \times 10^{-10}\Xunits{s}</m> for <m>\Sigma^-(1197)</m> and
+    <m>2 \times 10^{-23}\Xunits{s}</m> for <m>\Sigma^{*-}(1387)</m>.
+    The fact that only a weak decay can occur allows
+    <m>\Sigma^-(1197)</m> to live 10 trillion times longer!
+  </p>
+  <p>
+    Here are some general rules about decay schemes and lifetimes.
+    <ul>
+      <li>
+        <p>
+          A decay proceeds by the strongest interaction allowed:
+          strong, then electromagnetic, then weak.
+          The typical times for these interactions are given in <xref ref="table_process_decay_times">Tables</xref>
+          and <xref ref="table_mass_lifetimes"></xref>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Particles can only decay to lighter particles.
+          The more excess energy available,
+          the faster the decay proceeds.
+        </p>
+      </li>
+      <li>
+        <p>
+          A baryon's decay products must include a baryon.
+        </p>
+      </li>
+      <li>
+        <p>
+          If quark flavor is not conserved,
+          the decay must proceed by the weak interaction
+          (because a <m>W</m> or <m>Z</m> boson must be involved).
+        </p>
+      </li>
+      <li>
+        <p>
+          If photons are involved,
+          the decay process proceeds by the electromagnetic interaction.
+        </p>
+      </li>
+      <li>
+        <p>
+          Hadrons tend to decay to more hadrons.
+          Only when a decay into hadrons is energetically impossible do hadrons decay to photons or leptons.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <table xml:id="table_process_decay_times">
+    <title>Decay times for various processes</title>
+    <tabular>
+      <row>
+        <cell>Process</cell>
+        <cell>Typical Decay Time</cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  >Strong</cell>
+        <cell><m>10^{-23}</m> s</cell>
+      </row>
+      <row>
+        <cell>Electromagnetic</cell>
+        <cell><m>10^{-20}</m> s</cell>
+      </row>
+      <row>
+        <cell>Weak <m>\to</m> hadrons</cell>
+        <cell><m>10^{-10}</m> s</cell>
+      </row>
+      <row>
+        <cell>Weak <m>\to</m> leptons</cell>
+        <cell><m>10^{-7}</m> s</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+  </table>
+  <table xml:id="table_mass_lifetimes">
+    <title>Selected particle masses and lifetimes</title>
+    <tabular>
+      <row>
+        <cell></cell>
+        <cell>Particle</cell>
+        <cell>Mass (MeV/<m>c^2</m>)</cell>
+        <cell>Lifetime</cell>
+        <cell>Comments</cell>
+      </row>
+      <row bottom="medium">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell  >Baryons</cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>p</m></cell>
+        <cell>938.3</cell>
+        <cell><m>>10^{30}\Xunits{yrs}</m></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>n</m></cell>
+        <cell>939.6</cell>
+        <cell>898 s</cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\Lambda</m></cell>
+        <cell>1116</cell>
+        <cell><m>2.6\times 10^{-10}</m> s</cell>
+        <cell>lightest <m>S = -1</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\Sigma^0</m></cell>
+        <cell>1193</cell>
+        <cell><m>6\times 10^{-20}</m> s</cell>
+        <cell><m>\to \Lambda + \gamma</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\Sigma^-</m></cell>
+        <cell>1197</cell>
+        <cell><m>1.5\times 10^{-10}</m> s</cell>
+        <cell><m>\to n + \pi^-</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\Sigma^{*-}</m></cell>
+        <cell>1387</cell>
+        <cell><m>2\times 10^{-23}</m> s</cell>
+        <cell><m>\to \Lambda + \pi^-</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\Omega^-</m></cell>
+        <cell>1672</cell>
+        <cell><m>8\times 10^{-11}</m> s</cell>
+        <cell>lightest <m>S = -3</m></cell>
+      </row>
+      <row>
+        <cell>Mesons</cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\pi^\pm</m></cell>
+        <cell>139.6</cell>
+        <cell><m>2.6\times 10^{-8}</m> s</cell>
+        <cell><m>\to \mu + \nu</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>\pi^0</m></cell>
+        <cell>135</cell>
+        <cell><m>0.8\times 10^{-16}</m> s</cell>
+        <cell><m>\to\gamma + \gamma</m></cell>
+      </row>
+      <row>
+        <cell></cell>
+        <cell><m>K^\pm</m></cell>
+        <cell>494</cell>
+        <cell><m>1.2\times 10^{-8}</m> s</cell>
+        <cell>lightest <m>S = \pm 1</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+  </table>
+</section>

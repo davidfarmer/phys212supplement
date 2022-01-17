@@ -1,0 +1,207 @@
+<section xml:id="sec_fluorescence_phosphorescence">
+  <title>Fluorescence and Phosphorescence</title>
+  <p>
+    Many materials can absorb one wavelength of EM radiation and emit EM radiation with a different wavelength.
+    Uranine dye
+    (sodium fluorescein),
+    for example,
+    readily absorbs near-UV radiation, but emits green light.
+    The principle <mdash/> which is called
+    <q>fluorescence</q>
+    <mdash/> is quite simple,
+    and is very common in materials with more than two possible electronic energy levels.
+  </p>
+  <figure xml:id="fig_fluorescence">
+    <caption><em>Fluorescence: </em> Energy-level diagram for a
+    three-level atom, showing
+    absorption of a photon with large energy and emission of two
+    photons with smaller energy.</caption>
+    <image width="28%" source="images/fluorescence"/>
+  </figure>
+  <p>
+    <xref ref="fig_fluorescence">Figure</xref>
+    shows the basic idea for fluorescence.
+    A large energy photon (e.g., corresponding to ultraviolet light) is absorbed by a low energy electron,
+    which jumps up more than one energy level.
+    The electron can later spontaneously drop back down to a lower energy level,
+    but in addition to dropping back down directly to the original state,
+    it can also drop back down to an intermediate state and then later drop to the original state.
+    For a three-level system like in <xref ref="fig_fluorescence">Figure</xref>,
+    there are three different energies possible for the emitted light:
+    <m>E_\text{ ph } = \Delta E_{31}</m>,
+    <m>\Delta E_{32}</m>, or <m>\Delta E_{21}</m>.
+  </p>
+  <p>
+    So, why does black light illumination cause certain pigments to glow at different colors?
+    Assume that the pigment has an energy level structure similar to that in <xref ref="fig_fluorescence">Figure</xref>.
+    An incoming photon from the black light <mdash/> which is really near-UV radiation with a
+    <q>color</q>
+    just beyond the visible
+    (although there is usually a little violet light that comes out of a black light as well)
+    <mdash/> has enough energy to cause an electron in the ground (<m>n = 0</m>) state to become excited to the <m>n = 2</m> state.
+    After an undetermined amount of time,
+    the electron spontaneously drops back down to a lower energy level.
+    If it drops directly back to the <m>n = 0</m> level,
+    it emits another near-UV photon,
+    which you don't really see.
+    But if it drops first to the <m>n = 1</m> level and then later to the <m>n = 0</m> level,
+    it emits two lower-energy photons, one of which
+    (and maybe both)
+    has energy in the visible part of the EM spectrum.
+    (For many fluorescent pigments,
+    one photon will be in the visible range, e.g., orange or green,
+    and the other will be an infrared photon which you can't see.)
+    So, that's why some materials fluoresce at a different color than they are illuminated with.
+  </p>
+  <p>
+    Fluorescent pigments can be found in many applications.
+    Of course, there are many toys with fluorescent pigments,
+    including Crayola<m>^{TM}</m> crayons
+    (with fluorescent colors such as
+    <em>screamin' green</em>,
+    <em>atomic tangerine</em>, and <em>unmellow yellow</em>).
+    Fluorescent dyes are also used in laundry detergents to make clothes appear brighter
+    (that's why white clothes glow when illuminated by black light).
+  </p>
+  <p>
+    But fluorescence is also a <em>very</em>
+    important tool used in scientific studies.
+    Fluorescent
+    <q>tags</q>
+    are often used in biological studies.
+    The basic idea is that if you can attach a fluorescent marker to a particular molecule in a biological system,
+    then if you illuminate your sample with near-UV radiation,
+    only the tagged regions will fluoresce in the visible,
+    enabling you to see
+    (usually under a microscope)
+    the particular molecules in question.
+    In recent years,
+    biologists have developed a fluorescent protein called
+    <q>green-fluorescent protein</q>
+    (or GFP for short) that can be attached to various molecules in a living cell.
+    Better yet, techniques have been developed to create targeted mutations in microorganisms that result in the GFP tag being an <em>inherited</em>
+    property of the organism (i.e., they are born fluorescing.)
+  </p>
+  <p>
+    Fluorescence is also being used to revolutionize surgery with a new
+    (as of 2017)
+    technique referred to as
+    <q>fluorescence image guided surgery.</q>
+    The idea is quite simple:
+    a fluorescent dye that preferentially bonds to cancerous cells is injected into a patient.
+    During surgery,
+    the region is illuminated with high-frequency light
+    (possibly near-UV),
+    and the fluorescent dye attached to the cancerous tumor glows,
+    enabling the surgeon to cut away the minimum amount of cancerous tissue without removing healthy tissue.
+    This is a technique that figures to significantly improve survival rates for cancer patients during the next decade.
+  </p>
+  <p>
+    Another very new technology is that of the
+    <q>quantum dot,</q>
+    which is a micro-engineered particle-in-a-box.
+    We talk a lot about the particle-in-a-box problem because it is easy to solve,
+    <em>but these things are actually being made!!</em>
+    And the nice thing about a quantum dot is that the energy level structure can be altered simply by changing the size of the quantum dot (i.e., the width of the square-well potential).
+  </p>
+  <p>
+    A quantum dot is a a semiconductor that is manufactured to be <em>so</em>
+    small (about 10 <mdash/> 50 atoms in diameter) that its charge carriers experience effects of quantum confinement,
+    including quantized energy levels.
+    The result is that the filled valence band and empty conduction band for the semiconductor are replaced by a smaller number of discrete energy levels,
+    similar to those of the particle-in-a-box.
+    But since the electrons are confined
+    (due to the small size of the dot),
+    the minimum conduction band energy is shifted upward
+    (away from the band)
+    gap by a particle-in-box energy.
+    Similarly, the maximum valence band energy is shifted downward.
+    The result is the lowest energy
+    <m>E_\text{ ph }</m> of an emitted photon for a quantum dot is
+    <men xml:id="eq_QDot">
+      E_\text{ ph } =E_g+\eta\, \frac{h^2}{8m_\text{e} R^2}
+    </men>,
+    where <m>m_\text{e}</m> is the electron mass and <m>\eta</m> is a factor that includes all of the material-specific semiconductor effects.<fn>
+    The constant <m>\eta</m> includes deviations from the standard particle-in-box energies due to the fact that this box isn't empty;
+    rather, the electron is moving within a semiconductor.
+    </fn> Since there are higher,
+    open energy levels an electron in the quantum dot can absorb smaller wavelength
+    (higher energy)
+    photons and then fluoresce by emitting larger wavelength
+    (smaller energy)
+    photons as it drops back down in energy.
+  </p>
+  <example>
+    <title>Quantum dot fluorescence</title>
+    <statement>
+      <p>
+        A quantum dot made from a CdTe semiconductor
+        (with band gap energy <m>1.38\Xunits{eV}</m> and <m>\eta = 20.5</m>)
+        is fabricated with a radius <m>4.22\Xunits{nm}</m>.
+        Calculate the longest wavelength emitted by this quantum dot.
+      </p>
+      <p>
+        <em>Solution:</em> The longest wavelength corresponds to the smallest energy
+        (<xref ref="eq_QDot"/>).
+        Since, <m>E_\text{ ph }  = hc/\lambda</m>,
+        and using the trick employed in <xref ref="exam_nanoTube">Example</xref>
+        of multiplying the numerator and denominator of the second term by <m>c^2</m>,
+        it follows that:
+        <md>
+          <mrow>\frac{hc}{\lambda} =\mathstrut \amp  E_g+\eta\,  \frac{h^2}{8m_\text{e} R^2}</mrow>
+          <mrow>=\mathstrut \amp  E_g + \eta\, \frac{(hc)^2}{8(m_\text{e} c^2) R^2}</mrow>
+          <mrow>=\mathstrut \amp  1.38\Xunits{eV} + 20.5\,  \frac{(1240\Xunits{eV \cdot nm})^2} {8 \times (511\times 10^3\Xunits{eV})\times (4.22\Xunits{nm})^2}</mrow>
+          <mrow>=\mathstrut \amp  1.81\Xunits{eV}</mrow>
+        </md>.
+      </p>
+      <p>
+        Rearranging this gives
+        <md>
+          <mrow>\lambda =\mathstrut \amp  \frac{hc}{1.81\Xunits{eV}}</mrow>
+          <mrow>=\mathstrut \amp  \frac{1240\Xunits{eV \cdot nm}}{1.81\Xunits{eV}}</mrow>
+          <mrow>=\mathstrut \amp  684\Xunits{nm}</mrow>
+        </md>.
+      </p>
+    </statement>
+  </example>
+  <p>
+    One final question in this chap:
+    <em>when will an excited electron drop back down in energy,
+    emitting a photon?</em> The answer: you can never know.
+    There is nothing in quantum theory that enables you to predict the precise moment when the emission process will happen.
+    <em>However</em>,
+    it is possible to calculate a probability that an emission process will occur within a certain time range,
+    similar to how we can calculate a probability for a particle to be found in a certain region,
+    and it is also possible to define a
+    <em>half-life</em> for emission processes;
+    i.e., the duration over which
+    (on the average)
+    half of the atoms in an excited state will have decayed back to the ground state,
+    emitting photons.
+  </p>
+  <p>
+    The half-life for spontaneous emission can vary dramatically from one material to another.
+    Usually, the half-life is a very short time;
+    e.g., nanoseconds and even picoseconds.
+    But there are some materials that have unnaturally long half-lives.
+    In these cases, the material will continue to emit light.
+    Some composites made from SrAl<m>_2</m>O<m>_4</m> have been made with half-lives of several minutes,
+    which means that an excited sample of this material will emit light for quite a long time after it is excited.
+  </p>
+  <p>
+    This is the principle
+    (called <em>phosphorescence</em>)
+    behind
+    <q>glow-in-the-dark</q>
+    pigments and materials.
+    You
+    <q>charge up</q>
+    the material by exposing it to visible or near-UV light,
+    promoting electrons in the pigment to excited energy levels.
+    These electrons then drop back to the lower energy levels,
+    but over the course of several minutes.
+    During that time, the pigment appears to
+    <q>glow,</q>
+    even if there are no lights around.
+  </p>
+</section>

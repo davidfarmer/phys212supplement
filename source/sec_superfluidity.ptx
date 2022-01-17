@@ -1,0 +1,38 @@
+<section xml:id="sec_superfluidity">
+  <title>Superfluidity</title>
+  <p>
+    A superfluid is a fluid
+    (liquid or a gas)
+    with <em>zero</em> viscosity.
+    In other words, a flow in a superfluid will
+    <em>never</em> slow down.
+    Superfluids are an example of a Bose condensate,
+    and the liquid must be composed of identical molecules that are bosons
+    (with spin <m>s = 0</m>, 1, 2, <ellipsis/>).
+    Helium-4 is the most common fluid used in studies of superfluidity.
+    It is necessary to cool the system down to a temperature <m>T</m> below a (small) critical value <m>T_c</m>,
+    since molecular motion associated with thermal energy knocks molecules out of the Bose condensate unless the system is very cold.
+  </p>
+  <p>
+    The lack of viscosity for a superfluid can be understood qualitatively by considering how viscous dissipation works.
+    In a flowing liquid,
+    molecules of the liquid moving with the flow will occasionally strike the side of the container or other liquid molecules and recoil in some other direction.
+    All of the molecules in the fluid undergo these collisions,
+    and the whole fluid eventually slows down to a stop as the energy is gradually converted from motion along the flow into motion in random directions,
+    which is just thermal motion.
+    For a superfluid, however,
+    a significant fraction of the molecules in the system are crammed into the same quantum state,
+    the Bose condensate.
+    An individual molecule in the condensate will not easily exchange energy with the container,
+    since the molecule would have to leave the Bose condensate if it were to move in a direction different than the flow.
+    Superfluidity has not achieved practical status yet because of the fact that the critical temperatures are typically only a couple of Kelvin.
+  </p>
+  <p>
+    Recently, large atom Bose condensation has been observed experimentally for the first time in gasses.
+    In this context it's called Bose-Einstein condensation,
+    since Einstein predicted this possibility.
+    This only happens at temperatures in the millionths of a Kelvin range,
+    so this was not easy to accomplish.
+    Recent Nobel-Prize winning advances in laser cooling techniques finally enabled physicists to reach these temperatures.
+  </p>
+</section>
