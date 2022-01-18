@@ -17,16 +17,19 @@
     but will instead use the approach from earlier where we give you a solution and ask for you to test to see if it does or does not satisfy the equation.
   </p>
   <example>
+<title>Schr&#xf6;dinger equation for 3D Harmonic Oscillator</title>
     <statement>
       <p>
-        {Schr&#xf6;dinger equation for 3D Harmonic Oscillator} Show that the test wavefunction
+        Show that the test wavefunction
         <m>\psi(r) = Ae^{-br^2}</m> is a solution to <xref ref="eq_3Dschrodinger"/> for the harmonic oscillator with potential energy function <m>U =\frac{1}{2}kr^2</m>.
         If it is a solution
         (which it is),
         determine the energy of the quantum state.
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution</em>: If you have never seen a partial derivative such as <m>\partial \psi/\partial r</m>,
+        If you have never seen a partial derivative such as <m>\partial \psi/\partial r</m>,
         fear not <mdash/> it is the same thing as a regular derivative where everything else
         (in this case, <m>\theta</m> and <m>\phi</m>)
         is treated as constant.
@@ -59,7 +62,7 @@
         So, <em>yes</em>, the test function
         <m>\psi(r) = Ae^{-br^2}</m> satisfies Schr&#xf6;dinger's equation for a harmonic oscillator as long as <m>b</m> and <m>E</m> are given by the values above.
       </p>
-    </statement>
+    </solution>
   </example>
   <p>
     A particularly important case for the 3D Schr&#xf6;dinger equation

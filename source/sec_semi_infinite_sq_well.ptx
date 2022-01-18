@@ -47,14 +47,16 @@
     and <m>\kappa</m> are constants, with <m>\kappa > 0</m>.
   </p>
   <example xml:id="ex_SolutionElessU">
-    <title>Wavefunction solutions for <m>E &lt; U</m></title>
+    <title>Wavefunction solutions for $E &lt; U$</title>
     <statement>
       <p>
         Given the potential shown in <xref ref="fig_semiInfiniteSquareWell">Figure</xref>,
         show that the function <m>C e^{\kappa x}</m> is a solution to Schr&#xf6;dinger's equation<nbsp/><xref ref="eq_SchrodingerE_U"/> and determine what the constant <m>\kappa</m> must be for this to be a solution.
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:</em> To see if <m>\psi(x) = C e^{+\kappa x}</m> is a solution,
+        To see if <m>\psi(x) = C e^{+\kappa x}</m> is a solution,
         we first evaluate the left hand side of <xref ref="eq_SchrodingerE_U"/> by calculating the second derivative of <m>\psi(x)</m>:
         <md>
           <mrow>\frac{d \psi(x)}{dx} =\mathstrut \amp  \kappa  C e^{\kappa x}</mrow>
@@ -75,7 +77,7 @@
           \kappa^2 = \frac{2m}{\hbar^2}\left( U_0 - E \right)
         </men>.
       </p>
-    </statement>
+    </solution>
   </example>
   <example xml:id="ex_SolutionSemiInf">
     <title>Complete wavefunction solution for the semi-infinite square well</title>

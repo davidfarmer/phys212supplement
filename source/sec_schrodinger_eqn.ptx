@@ -286,9 +286,10 @@
           Try the test function <m>\psi_2(x)=xe^{-ax^2}</m> to see if this is a solution to Schr&#xf6;dinger's equation for a harmonic oscillator.
           If it is, determine the unknown constant <m>a</m> in the solution and the unknown energy <m>E</m>.
         </p>
+      </statement>
+      <solution>
         <p>
-          <em>Solution: </em> Again,
-          we must calculate the second derivative of this function.
+          Again, we must calculate the second derivative of this function.
           We will leave the calculation of the second derivative for you to do
           (remember to be careful to correctly use the product rule and the chain rule).
           The final result for the second derivative is
@@ -343,7 +344,7 @@
           In one of the assigned problems at the end of the chapter,
           you will test the wavefunction solution corresponding to the ground state of the harmonic oscillator.
         </p>
-      </statement>
+      </solution>
     </example>
     <p>
       We'll say a lot more about quantization of energy states in the next chapter.

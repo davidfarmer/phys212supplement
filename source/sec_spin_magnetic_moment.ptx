@@ -87,8 +87,10 @@
         If the magnitude of the magnetic field is <m>B_0 = 24.8 \Xunits{mT}</m>,
         determine the frequency of the photon that would be absorbed by the proton causing it to make a transition to the spin-down state?
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:</em> For the magnetic field strength given,
+        For the magnetic field strength given,
         the energy difference between the spin-up and spin-down states is
         <md>
           <mrow>\Delta E_\text{ proton } =\mathstrut \amp  2 \mu_\text{p}  B_0</mrow>
@@ -105,7 +107,7 @@
       <p>
         This frequency lies in the region of the electromagnetic spectrum associated with radio waves.
       </p>
-    </statement>
+    </solution>
   </example>
   <p>
     Like the proton,

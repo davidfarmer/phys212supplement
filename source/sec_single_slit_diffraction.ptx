@@ -109,9 +109,10 @@
         Light of wavelength <m>600\Xunits{nm}</m> illuminates a slit of width <m>2\,\mu</m>m.
         Find the distance between the central maximum and the neighboring minimum on a screen <m>1.5\Xunits{m}</m> away.
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:
-        </em> We want to find a minimum of the diffraction pattern,
+        We want to find a minimum of the diffraction pattern,
         i.e., a point at which the total amplitude goes to zero.
         Then the starting point of our <m>N</m>-phasor diagram must be the same as the ending point,
         so that the resultant has length zero.
@@ -146,7 +147,7 @@
           <mrow>y\amp =1.5\,\text{m}  \tan\left( 0.305 \right)= \fbox{\,\,0.472\,m}</mrow>
         </md>
       </p>
-    </statement>
+    </solution>
   </example>
   <figure xml:id="manySlitPhasorsMinFig">
     <caption>Phasor diagram for a minimum of the

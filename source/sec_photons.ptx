@@ -39,9 +39,10 @@
         An EM wave of wavelength <m>\lambda=420\Xunits{nm}</m> has a total energy of <m>1.80\Xunits{J}</m>.
         How many photons are in this wave?
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:
-        </em> Each photon is contributing an energy <m>E_\text{ ph }  = hf</m>.
+        Each photon is contributing an energy <m>E_\text{ ph }  = hf</m>.
         Using <m>f = c/\lambda</m> we can calculate the energy per photon,
         <md>
           <mrow>E_\text{ ph }  =\mathstrut \amp  \frac{hc}{\lambda}</mrow>
@@ -59,7 +60,7 @@
       <p>
         Evidently, EM waves with macroscopic energies contain a lot of photons!
       </p>
-    </statement>
+    </solution>
   </example>
   <p>
     The idea of light being composed of particle-like photons is tremendously important with numerous implications throughout all of science and engineering.

@@ -80,8 +80,10 @@
         and <m>E_3 = -2.5\Xunits{eV}</m>. (a) Determine how many different wavelengths of EM radiation can be emitted from this molecule,
         and calculate (b) the largest and (c) the smallest wavelengths of EM radiation that can be emitted from this molecule.
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:</em> (a) There are several possible transitions that an electron can make that will emit a photon in this system.
+        (a) There are several possible transitions that an electron can make that will emit a photon in this system.
         An electron can drop from energy level 3 down to level 0, 1 or 2;
         it can drop from energy level 2 down to level 0 or 1;
         and it can drop from energy level 1 down to level 0.
@@ -123,7 +125,7 @@
         This wavelength is also outside the visible spectrum
         (it's ultraviolet, in this case).
       </p>
-    </statement>
+    </solution>
   </example>
   <p>
     Everything in the previous example works the other way for absorption.
@@ -178,9 +180,10 @@
         and an empty conduction band separated by a band gap energy of <m>3.2\Xunits{eV}</m>.
         Calculate the largest wavelength of light most effectively absorbed by this detector.
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:</em> The energy of the photon
-        <m>E_\text{ ph } = |\Delta E|</m> and since <m>E_\text{ ph } = hc/\lambda</m>,
+        The energy of the photon <m>E_\text{ ph } = |\Delta E|</m> and since <m>E_\text{ ph } = hc/\lambda</m>,
         it follows that <m>hc/\lambda = |\Delta E|</m>.
         The largest wavelength corresponds to the smallest energy difference <m>\Delta E</m>.
         Since the valence band is filled,
@@ -188,6 +191,6 @@
         so <m>\Delta E_\text{ min } = 3.2\Xunits{eV}</m>.
         So <m>\lambda_\text{ max } = hc/\Delta E = (1240\Xunits{eV \cdot nm})/(3.2 \Xunits{eV}) = 387.5\Xunits{nm}</m>.
       </p>
-    </statement>
+    </solution>
   </example>
 </section>

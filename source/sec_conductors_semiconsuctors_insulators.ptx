@@ -115,11 +115,13 @@
           <m>0.37\Xunits{eV}</m>. (a) Use an approximation where
           <m>k_BT \approx E_g</m> to determine a temperature for which you would expect PbS to be an excellent conductor. (b) Calculate the probability of finding an electron with energy at the bottom of the conduction band for temperatures of 400K and 4000K.
         </p>
+      </statement>
+      <solution>
         <p>
-          <em>Solution</em>: (a) As a reasonable approximation,
+          (a) As a reasonable approximation,
           if the temperature is such that <m>k_BT \approx E_g</m>,
           then there should be sufficient energy from thermal collisions to excite electrons from the valence to the conduction band.
-          So, <m>T \approx E_g/k_B = (0.37\Xunits{eV})/(8.62\times 10^{-5}\Xunits{eV\cdot K^{-1}}) = 4290\Xunits{K}</m>.
+          So, <m>T \approx E_g/k_B = (0.37\Xunits{eV})/(8.62\times 10^{-5}\Xunits{eV</m>\cdot<m>K</m>^{-1}<m>}) = 4290\Xunits{K}</m>.
         </p>
         <p>
           (b) We can calculate probabilities from the Fermi-Dirac equation
@@ -129,7 +131,7 @@
           so for <m>T = 400\Xunits{K}</m>,
           <md>
             <mrow>p(E) \amp = \frac{1}{1+e^{(E-E_F)/k_BT}} = \frac{1}{1+e^{E_g/2k_BT}}</mrow>
-            <mrow>\amp = \frac{1}{1+e^{(0.37\Xunits{eV\cdot K^{-1}})/(2 \times 8.62\times 10^{-5}\Xunits{eV\cdot K^{-1}}\cdot 400\Xunits{K})}}</mrow>
+            <mrow>\amp = \frac{1}{1+e^{(0.37\Xunits{eV$\cdot$K$^{-1}$})/(2 \times 8.62\times 10^{-5}\Xunits{eV$\cdot$K$^{-1}$}\cdot 400\Xunits{K})}}</mrow>
             <mrow>\amp = 0.0047</mrow>
           </md>
         </p>
@@ -143,7 +145,7 @@
           This is consistent with the result in part (a) which predicts a temperature of
           <m>4290\Xunits{K}</m> for appreciable conduction.
         </p>
-      </statement>
+      </solution>
     </example>
     <p>
       In the previous example,

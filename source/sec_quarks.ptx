@@ -199,11 +199,15 @@
       <p>
         {Quark content of the <m>\Delta^{++}</m>.} Construct from quarks a baryon with charge <m>+2</m>,
         the <m>\Delta^{++}</m>.
-        <em>Solution: </em> Since a baryon contains three quarks,
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since a baryon contains three quarks,
         and only an up quark has a charge of <m>+2/3</m>,
         it would require three such quarks to obtain a charge of <m>+2</m>.
         Thus, the <m>\Delta^{++}</m> must be made of <m>(uuu)</m>.
       </p>
-    </statement>
+    </solution>
   </example>
 </section>

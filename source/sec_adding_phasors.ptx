@@ -63,8 +63,11 @@
         However, since both waves act on the boat simultaneously,
         the actual oscillation of your boat is the superposition of these two waves.
         How much does your boat move up and down as a result of the combination of these waves?
-        <em>Solution:
-        </em> The phasor diagram for these two separate oscillations is shown in <xref ref="fig_phasor10">Figure</xref>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The phasor diagram for these two separate oscillations is shown in <xref ref="fig_phasor10">Figure</xref>.
         The resultant phasor can be determined from the vector addition of the phasors shown in <xref ref="fig_phasor11">Figure</xref>.
       </p>
       <tabular>
@@ -142,7 +145,7 @@
         </md>,
         with <m>y</m> in cm and <m>t</m> in sec.
       </p>
-    </statement>
+    </solution>
   </example>
   <example xml:id="exampleTwoTowers">
     <title>Two Towers</title>
@@ -162,8 +165,11 @@
         With only tower B broadcasting,
         you measure a wave amplitude of 5.
         What amplitude do you measure when both towers are broadcasting?
-        <em>Solution:
-        </em> Here we're interested in the superposition of the waves from the two towers.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Here we're interested in the superposition of the waves from the two towers.
         We aren't explicitly given the phase difference between the wave signals that arrive at <m>P</m> from the two towers,
         but we can figure it out because we know the distances from point <m>P</m> to each tower.
         If the waves leave the two towers in phase,
@@ -278,6 +284,6 @@
           y_{ tot}(t) = 6.7\cos{(\omega t + 1.25)}
         </men>.
       </p>
-    </statement>
+    </solution>
   </example>
 </section>

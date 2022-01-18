@@ -119,8 +119,10 @@
           in the case they are emitted,
           calculate their maximum kinetic energy.
         </p>
+      </statement>
+      <solution>
         <p>
-          <em>Solution: </em> First we calculate the photon energy.
+          First we calculate the photon energy.
           A handy trick for getting photon energies in electron volts is the following:<fn>
           The relation <m>hc=1240\Xunits{eV \cdot nm}</m> can save a lot of calculator typing for problems with photon energies in eV and wavelengths in nm.
           </fn>
@@ -146,7 +148,7 @@
           This is less than the binding energy,
           so no electrons will be emitted.
         </p>
-      </statement>
+      </solution>
     </example>
   </subsection>
   <subsection>

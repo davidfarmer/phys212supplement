@@ -111,8 +111,11 @@
           <q>shine</q>
           a beam of electrons on the sample.
           What is the minimum speed that these electrons could have?
-          <em>Solution:
-          </em> Recall that to resolve features on a certain scale,
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Recall that to resolve features on a certain scale,
           we need a wavelength at least that small,
           so we will need <m>\lambda \leq 1\Xunits{nm}</m>.
         </p>
@@ -133,7 +136,7 @@
             v = \frac{p}{m} \geq \frac{6.6\times 10^{-25}\Xunits{kg \cdot m/s}} {9.11\times 10^{-31}\Xunits{kg}} = 7.3\times 10^5\Xunits{m/s}
           </men>.
         </p>
-      </statement>
+      </solution>
     </example>
     <p>
       So, we have seen that de<nbsp/>Broglie argued (successfully) that particles act like waves.

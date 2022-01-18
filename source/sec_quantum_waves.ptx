@@ -85,7 +85,7 @@
       </men>,
       so in this case
       <men>
-        P(x) = \frac{1}{(250\Xunits{m}-200\Xunits{m})} = \frac{1}{50}\Xunits{m^{-1}}
+        P(x) = \frac{1}{(250\Xunits{m}-200\Xunits{m})} = \frac{1}{50}\Xunits{m$^{-1}$}
       </men>.
     </p>
     <p>
@@ -136,8 +136,9 @@
             </p>
           </li>
         </ol>
+      </statement>
+      <solution>
         <p>
-          <em>Solution: </em>
           <ol>
             <li>
               <p>
@@ -169,7 +170,7 @@
             </li>
           </ol>
         </p>
-      </statement>
+      </solution>
     </example>
   </subsection>
   <subsection xml:id="sec_ProbDensity">

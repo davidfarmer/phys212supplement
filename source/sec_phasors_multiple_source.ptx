@@ -112,8 +112,11 @@
         What is the amplitude of the light directed at an angle
         <m>\theta = 1.2^\circ</m> from the direction to the central maximum in the interference pattern?
         Assume that the amplitude of the light from each slit individually is <m>A</m>.
-        <em>Solution:
-        </em> This is a direct application of the method described above.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        This is a direct application of the method described above.
         The phase difference between adjacent slits is
         <md>
           <mrow>\Delta \phi =\mathstrut \amp  2\pi \frac{\Delta r}{\lambda}</mrow>
@@ -194,7 +197,7 @@
           A_{ tot} = \sqrt{(2.6A)^2 + (1.13A)^2} = 2.83A
         </men>.
       </p>
-    </statement>
+    </solution>
   </example>
   <example>
     <title>Minimum Light</title>
@@ -202,8 +205,11 @@
       <p>
         For the same setup as in the previous example,
         at what angle <m>\theta</m> would you expect to find the first minimum?
-        <em>Solution:
-        </em> A minimum in the interference pattern will occur when the amplitude of the resultant phasor is zero,
+      </p>
+    </statement>
+    <solution>
+      <p>
+        A minimum in the interference pattern will occur when the amplitude of the resultant phasor is zero,
         so we need to arrange the three phasors such that they add to zero.
         When we had only two phasors,
         this was quite easy <mdash/> we chose <m>\Delta \phi = \pi</m>.
@@ -252,6 +258,6 @@
         <m>\Delta\phi = \frac{4\pi}{3}</m>,
         and you can show that this minimum will occur for <m>\theta = 12.3^\circ</m>.
       </p>
-    </statement>
+    </solution>
   </example>
 </section>

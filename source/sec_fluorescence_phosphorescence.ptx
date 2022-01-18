@@ -140,8 +140,10 @@
         is fabricated with a radius <m>4.22\Xunits{nm}</m>.
         Calculate the longest wavelength emitted by this quantum dot.
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:</em> The longest wavelength corresponds to the smallest energy
+        The longest wavelength corresponds to the smallest energy
         (<xref ref="eq_QDot"/>).
         Since, <m>E_\text{ ph }  = hc/\lambda</m>,
         and using the trick employed in <xref ref="exam_nanoTube">Example</xref>
@@ -162,7 +164,7 @@
           <mrow>=\mathstrut \amp  684\Xunits{nm}</mrow>
         </md>.
       </p>
-    </statement>
+    </solution>
   </example>
   <p>
     One final question in this chap:

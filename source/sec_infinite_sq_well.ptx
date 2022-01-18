@@ -165,8 +165,10 @@
         <m>L = 10.0\Xunits{nm}</m> and negligible diameter.
         Calculate the ground state energy for an electron trapped inside of this carbon nanotube.
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:</em> Approximating the carbon nanotube as an infinite square well,
+        Approximating the carbon nanotube as an infinite square well,
         the possible allowed energies for the electron are given by <xref ref="eq_squarewell_6"/>.
         For the ground state energy, where <m>n = 1</m>, the energy is given as
         <men>
@@ -195,7 +197,7 @@
         <m>m_\text{e}</m>, and <m>L</m>,
         but this entails calculations with large exponents and more unit conversions.
       </p>
-    </statement>
+    </solution>
   </example>
   <p>
     We can use the idea of normalization
@@ -232,8 +234,10 @@
       <p>
         A particle of mass <m>m</m> is placed in an infinite square well of width <m>L</m> in a quantum state for which <m>n = 2</m>. (a) In the vicinity of what position(s) is the particle most likely to be found within the well? (b) What is the probability of finding the particle between positions <m>x = L/4</m> and <m>x = L/2</m>?
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution: (a)</em> The wavefunction for this particle is shown as
+        (a)} The wavefunction for this particle is shown as
         <m>\psi_2(x)</m> in <xref ref="fig_infinite_sq_well_solutions">Figure</xref>.
         Using <xref ref="eq_squarewell_7"/>, the probability density for this wavefunction is
         <men>
@@ -265,6 +269,6 @@
         <m>\left|\psi\right|^2</m> between <m>x = L/4</m> and <m>x = L/2</m> is one-quarter of the total area,
         therefore it makes sense that the probability is <m>\frac{1}{4}</m>.
       </p>
-    </statement>
+    </solution>
   </example>
 </section>

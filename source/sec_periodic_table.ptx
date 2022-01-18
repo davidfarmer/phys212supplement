@@ -5,7 +5,7 @@
     Electrons are fermions since they have a half-integral spin quantum number
     (<m>s = 1/2</m> for an electron).
     Consequently,
-    electrons obey the Pauli Exclusion Principle (see <xref ref="sec__pauli_exclusion_principle">Section</xref>):
+    electrons obey the Pauli Exclusion Principle (see <xref ref="sec_pauli_exclusion_principle">Section</xref>):
     no two electrons can be in the same state.
     So, if there is more than one electron in an atom,
     no two of them can have the same combination of quantum numbers <m>n,
@@ -25,7 +25,7 @@
     This process repeats many times over to make up the periodic table.
     The more electrons there are,
     the higher the energy levels must be filled,
-    similar to the five particle system in <xref ref="chap_quantum_statistics"/>, <xref ref="example_five_particles"/>.
+    similar to the five particle system in <xref ref="chap_quantum_statistics">Example</xref>- <xref ref="example_five_particles"></xref>.
     For some specific orbital, meaning some specific values of <m>n</m>,
     <m>\ell</m> and <m>m_\ell</m>,
     there are two possible single-electron states:

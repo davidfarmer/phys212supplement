@@ -39,9 +39,10 @@
         would you be able to distinguish how many fingers your friend was holding up at a distance of <m>10\Xunits{km}</m>?
         If not, how large a telescope would you need to distinguish them?
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:
-        </em> Let's estimate the distance between a person's fingers as about <m>\Delta x=1\Xunits{cm}</m>.
+        Let's estimate the distance between a person's fingers as about <m>\Delta x=1\Xunits{cm}</m>.
         The distance between you and your friend is <m>L=10\Xunits{km}</m>.
         So the angle between your friend's two fingers, as viewed by you, is
         <men>
@@ -81,7 +82,7 @@
         which means using a telescope of diameter <m>a_\text{ telescope }  = 100a_\text{ eye }  \approx 0.5\Xunits{m}</m>.
         That's a pretty hefty telescope <mdash/> probably not one you'll want to carry around with you!
       </p>
-    </statement>
+    </solution>
   </example>
   <p>
     This example highlights the concept of <em>resolution</em>,

@@ -74,7 +74,7 @@
     they are important.</em>
   </p>
   <example xml:id="exam_ztox">
-    <title>Spin-up and spin-down states of <m>S_z</m> in terms of spin-up and spin-down states of <m>S_x</m></title>
+    <title>Spin-up and spin-down states of $S_z$ in terms of spin-up and spin-down states of $S_x$</title>
     <statement>
       <p>
         Using <xref ref="eq_plusx">Equations</xref>
@@ -83,9 +83,10 @@
         <m>| +z \rangle</m> as a linear superposition of the states
         <m>| +x \rangle</m> and <m>| -x \rangle</m>.
       </p>
+    </statement>
+    <solution>
       <p>
-        <em>Solution:
-        </em> If we add <xref ref="eq_plusx">equations</xref>
+        If we add <xref ref="eq_plusx">equations</xref>
         and <xref ref="eq_minusx"></xref> we obtain
         <md>
           <mrow>| +x \rangle + | -x \rangle =\mathstrut \amp  \left[ \sqrt{\frac{1}{2}}| +z \rangle + \sqrt{\frac{1}{2}}| -z \rangle \right] + \left[ \sqrt{\frac{1}{2}}| +z \rangle - \sqrt{\frac{1}{2}}| -z \rangle \right]</mrow>
@@ -112,7 +113,7 @@
         to determine any of the basis spin vectors in terms of the others.
         The complete set of transformations among the basis spin states appears in <xref ref="table_spinTransform">Table</xref>.
       </p>
-    </statement>
+    </solution>
   </example>
   <table xml:id="table_spinTransform">
     <title>Transformation of the basis spin vectors</title>
@@ -176,7 +177,11 @@
         <m>|\psi\rangle</m> will be measured to have an <m>x</m>-component of spin of
         <m>-\hbar/2</m>. (c) Calculate the probability that an electron in the state
         <m>|\psi\rangle</m> will be measured to have a <m>y</m>-component of spin of <m>-\hbar/2</m>.
-        <em>Solution: </em> (a) This is straightforward because
+      </p>
+    </statement>
+    <solution>
+      <p>
+        (a) This is straightforward because
         <m>|\psi\rangle</m> is written as a superposition of the <m>| \pm z \rangle</m>-states.
         The probability of the spin being found as
         <q>spin up</q>
@@ -225,6 +230,6 @@
         We will leave this to you to finish,
         but you should obtain an answer of 0.5 for the probability.
       </p>
-    </statement>
+    </solution>
   </example>
 </section>
