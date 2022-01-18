@@ -25,7 +25,7 @@
     This process repeats many times over to make up the periodic table.
     The more electrons there are,
     the higher the energy levels must be filled,
-    similar to the five particle system in <xref ref="chap_quantum_statistics">Example</xref>- <xref ref="example_five_particles"></xref>.
+    similar to the five particle system in <xref ref="chap_quantum_statistics"/>,  <xref ref="example_five_particles"/>.
     For some specific orbital, meaning some specific values of <m>n</m>,
     <m>\ell</m> and <m>m_\ell</m>,
     there are two possible single-electron states:

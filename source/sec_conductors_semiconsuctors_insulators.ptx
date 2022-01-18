@@ -121,7 +121,7 @@
           (a) As a reasonable approximation,
           if the temperature is such that <m>k_BT \approx E_g</m>,
           then there should be sufficient energy from thermal collisions to excite electrons from the valence to the conduction band.
-          So, <m>T \approx E_g/k_B = (0.37\Xunits{eV})/(8.62\times 10^{-5}\Xunits{eV</m>\cdot<m>K</m>^{-1}<m>}) = 4290\Xunits{K}</m>.
+          So, <m>T \approx E_g/k_B = (0.37\Xunits{eV})/(8.62\times 10^{-5}\Xunits{eV\cdot K^{-1}}) = 4290\Xunits{K}</m>.
         </p>
         <p>
           (b) We can calculate probabilities from the Fermi-Dirac equation
