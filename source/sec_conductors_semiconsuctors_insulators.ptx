@@ -131,7 +131,7 @@
           so for <m>T = 400\Xunits{K}</m>,
           <md>
             <mrow>p(E) \amp = \frac{1}{1+e^{(E-E_F)/k_BT}} = \frac{1}{1+e^{E_g/2k_BT}}</mrow>
-            <mrow>\amp = \frac{1}{1+e^{(0.37\Xunits{eV$\cdot$K$^{-1}$})/(2 \times 8.62\times 10^{-5}\Xunits{eV$\cdot$K$^{-1}$}\cdot 400\Xunits{K})}}</mrow>
+            <mrow>\amp = \frac{1}{1+e^{(0.37\Xunits{eV\cdot K^{-1}})/(2 \times 8.62\times 10^{-5}\Xunits{eV\cdot K^{-1}}\cdot 400\Xunits{K})}}</mrow>
             <mrow>\amp = 0.0047</mrow>
           </md>
         </p>

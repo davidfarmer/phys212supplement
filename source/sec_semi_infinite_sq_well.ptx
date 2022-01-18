@@ -47,7 +47,7 @@
     and <m>\kappa</m> are constants, with <m>\kappa > 0</m>.
   </p>
   <example xml:id="ex_SolutionElessU">
-    <title>Wavefunction solutions for $E &lt; U$</title>
+    <title>Wavefunction solutions for <m>E &lt; U</m></title>
     <statement>
       <p>
         Given the potential shown in <xref ref="fig_semiInfiniteSquareWell">Figure</xref>,
