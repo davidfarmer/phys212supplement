@@ -131,9 +131,10 @@
     </statement>
   </exercise>
   <exercise xml:id="prob_integ1">
+    <title>Determining <m>\vec{E}</m> using integrals <mdash/> semi-infinite rod</title>
     <statement>
       <p>
-        {Determining <m>\vec{E}</m> using integrals <mdash/> semi-infinite rod.} Point <em>P</em>
+        Point <em>P</em>
         is located a distance <m>a</m> from the bottom of a semi-infinite rod with uniform linear charge density <m>\lambda</m>.
         <ol>
           <li>
@@ -158,9 +159,10 @@
     </statement>
   </exercise>
   <exercise xml:id="prob_arc1">
+   <title>Determining <m>\vec{E}</m> using integrals <mdash/> arc</title>
     <statement>
       <p>
-        {Determining <m>\vec{E}</m> using integrals <mdash/> arc.} The figure shows a quarter of a ring with radius <m>R</m> in the <m>x</m>-<m>y</m> plane with a total charge <m>q</m>,
+        The figure shows a quarter of a ring with radius <m>R</m> in the <m>x</m>-<m>y</m> plane with a total charge <m>q</m>,
         which is distributed uniformly over the quarter-ring.
         Working through the appropriate integral,
         determine the electric field at the origin
